@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="11*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="stPanViewSelector" HorizontalAlignment="Left" Height="421" VerticalAlignment="Top" Width="122" Margin="0,0,0,-0.333"/>
+
     </Grid>
 </Window>
