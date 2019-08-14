@@ -5,21 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CIDER"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="CIDER" Height="450" Width="800" MinHeight="452" MinWidth="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="11*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel x:Name="stPanViewSelector" HorizontalAlignment="Stretch" Height="421" VerticalAlignment="Stretch" Width="122" Margin="0,0,0,-0.333">
-            <Button Content="Load" Command="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Map - Route" Command="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Angle - Graph" Command="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Velocity - Graph" Command="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Map - Timed" Command="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Angle - Timed" Command="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Velocity - Timed" Command="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="About" Command="" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+        <StackPanel x:Name="stPanViewSelector" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,9.667">
+            <Button Content="Load" Command="{Binding Path=ChangeToLoadCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="Map - Route" Command="{Binding Path=ChangeToMapRouteCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="Angle - Graph" Command="{Binding Path=ChangeToAngleGraphCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="Velocity - Graph" Command="{Binding Path=ChangeToVelocityGraphCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="Map - Timed" Command="{Binding Path=ChangeToMapTimedCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="Angle - Timed" Command="{Binding Path=ChangeToAngleTimedCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="Velocity - Timed" Command="{Binding Path=ChangeToVelocityTimedCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="About" Command="{Binding Path=ChangeToAboutCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
         </StackPanel>
         <Frame Grid.Column="1" Margin="10,10,10.333,9.667" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="frmMain"/>
 

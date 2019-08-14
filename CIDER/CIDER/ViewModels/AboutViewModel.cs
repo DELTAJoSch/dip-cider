@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CIDER.MVVMBase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
-    class AboutViewModel
+    class AboutViewModel:ViewModelBase
     {
     }
 }
