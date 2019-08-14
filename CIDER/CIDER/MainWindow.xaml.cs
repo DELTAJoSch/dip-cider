@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CIDER.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,10 @@ namespace CIDER
         public MainWindow()
         {
             InitializeComponent();
+
+            var viewModel = new MainWindowViewModel(frmMain);
+
+            DataContext = viewModel;
         }
     }
 }

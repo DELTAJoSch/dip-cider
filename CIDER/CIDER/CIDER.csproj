@@ -56,7 +56,40 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Interfaces.cs" />
+    <Compile Include="MVVMBase\ViewModelBase.cs" />
     <Compile Include="SystemTime.cs" />
+    <Compile Include="ViewModels\AngleGraphViewModel.cs" />
+    <Compile Include="ViewModels\AngleTimedViewModel.cs" />
+    <Compile Include="ViewModels\LoadViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\MapRouteViewModel.cs" />
+    <Compile Include="ViewModels\MapTimedViewModel.cs" />
+    <Compile Include="ViewModels\VelocityGraphViewModel.cs" />
+    <Compile Include="ViewModels\VelocityTimedViewModel.cs" />
+    <Compile Include="Views\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AngleGraph.xaml.cs">
+      <DependentUpon>AngleGraph.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AngleTimed.xaml.cs">
+      <DependentUpon>AngleTimed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Load.xaml.cs">
+      <DependentUpon>Load.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MapRoute.xaml.cs">
+      <DependentUpon>MapRoute.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MapTimed.xaml.cs">
+      <DependentUpon>MapTimed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VelocityGraph.xaml.cs">
+      <DependentUpon>VelocityGraph.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VelocityTimed.xaml.cs">
+      <DependentUpon>VelocityTimed.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,6 +102,38 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AngleGraph.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AngleTimed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Load.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MapRoute.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MapTimed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VelocityGraph.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VelocityTimed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -92,6 +157,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="ViewModels\AboutViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
