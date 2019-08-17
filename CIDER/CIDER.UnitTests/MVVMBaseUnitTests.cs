@@ -8,7 +8,7 @@ using NUnit.Framework;
 using NSubstitute;
 using System.ComponentModel;
 
-namespace Tests
+namespace CIDER.UnitTests
 {
     class DelegateCommandUnitTests
     {

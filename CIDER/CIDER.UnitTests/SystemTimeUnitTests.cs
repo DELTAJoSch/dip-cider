@@ -2,7 +2,7 @@ using CIDER;
 using NUnit.Framework;
 using System;
 
-namespace Tests
+namespace CIDER.UnitTests
 {
     public class SystemTimeUnitTests
     {

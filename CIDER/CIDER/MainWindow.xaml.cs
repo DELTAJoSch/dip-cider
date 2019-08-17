@@ -1,18 +1,6 @@
 ﻿using CIDER.ViewModels;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CIDER
 {
@@ -25,7 +13,10 @@ namespace CIDER
         {
             InitializeComponent();
 
-            var viewModel = new MainWindowViewModel(frmMain);
+            var viewModel = new MainWindowViewModel(frmMain, new Uri("Views/About.xaml", UriKind.Relative), new Uri("Views/AngleGraph.xaml", UriKind.Relative), 
+                new Uri("Views/AngleTimed.xaml", UriKind.Relative), new Uri("Views/Load.xaml", UriKind.Relative), new Uri("Views/MapRoute.xaml", UriKind.Relative), 
+                new Uri("Views/MapTimed.xaml", UriKind.Relative), new Uri("Views/VelocityGraph.xaml", UriKind.Relative), 
+                new Uri("Views/VelocityTimed.xaml", UriKind.Relative), new FrameHandler());
 
             DataContext = viewModel;
         }

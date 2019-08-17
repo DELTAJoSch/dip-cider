@@ -58,6 +58,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FrameHandler.cs" />
     <Compile Include="Interfaces.cs" />
     <Compile Include="MVVMBase\ViewModelBase.cs" />
     <Compile Include="SystemTime.cs" />

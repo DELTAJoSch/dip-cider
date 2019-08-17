@@ -5,8 +5,8 @@ using System.Windows.Input;
 
 namespace CIDER.ViewModels
 {
-    //IMPORTANT!!!!!!!!!!! Still needs to be tested!
-    internal class MainWindowViewModel : ViewModelBase
+    //due to the .net core restrictions, this class is untestable as no frame can be created inside the unit test framework
+    public class MainWindowViewModel : ViewModelBase
     /*/Summary
      * This is the ViewModel for the Main Window (contains view selection buttons and frame)
      * This class handles the button presses - they change the views
@@ -32,27 +32,28 @@ namespace CIDER.ViewModels
 
         private Frame _frame;
 
-        //these are the uris to the views (pages) stored into variables - separated for readability
-        private Uri about = new Uri("Views/About.xaml", UriKind.Relative);
+        //these are the uris to the views (pages)
+        private Uri about;
 
-        private Uri angleGraph = new Uri("Views/AngleGraph.xaml", UriKind.Relative);
+        private Uri angleGraph;
 
-        private Uri angleTimed = new Uri("Views/AngleTimed.xaml", UriKind.Relative);
+        private Uri angleTimed;
 
-        private Uri load = new Uri("Views/Load.xaml", UriKind.Relative);
+        private Uri load;
 
-        private Uri mapRoute = new Uri("Views/MapRoute.xaml", UriKind.Relative);
+        private Uri mapRoute;
 
-        private Uri mapTimed = new Uri("Views/MapTimed.xaml", UriKind.Relative);
+        private Uri mapTimed;
 
-        private Uri velocityGraph = new Uri("Views/VelocityGraph.xaml", UriKind.Relative);
+        private Uri velocityGraph;
 
-        private Uri velocityTimed = new Uri("Views/VelocityTimed.xaml", UriKind.Relative);
+        private Uri velocityTimed;
 
-        public MainWindowViewModel(Frame frame)
+        private FrameHandler frameHandler;
+
+        public MainWindowViewModel(Frame frame, Uri aboutUri, Uri angleGraphUri, Uri angleTimeUri, Uri loadUri, Uri mapRouteUri, Uri mapTimedUri, Uri velocityGraphUri, Uri velocityTimedUri, FrameHandler handler)
         {
             _frame = frame;
-            _frame.Navigate(about);
 
             //connect delegate commands to icommand handlers
             _changeToLoadCommand = new DelegateCommand(OnChangeToLoad);
@@ -63,6 +64,19 @@ namespace CIDER.ViewModels
             _changeToMapTimedCommand = new DelegateCommand(OnChangeToMapTimed);
             _changeToVelocityGraphCommand = new DelegateCommand(OnChangeToVelocityGraph);
             _changeToVelocityTimedCommand = new DelegateCommand(OnChangeToVelocityTimed);
+
+            about = aboutUri;
+            angleGraph = angleGraphUri;
+            angleTimed = angleTimeUri;
+            load = loadUri;
+            mapRoute = mapRouteUri;
+            mapTimed = mapTimedUri;
+            velocityGraph = velocityGraphUri;
+            velocityTimed = velocityTimedUri;
+
+            frameHandler = handler;
+
+            frameHandler.Navigate(about, _frame);
         }
         public ICommand ChangeToAboutCommand => _changeToAboutCommand;
         public ICommand ChangeToAngleGraphCommand => _changeToAngleGraphCommand;
@@ -76,41 +90,41 @@ namespace CIDER.ViewModels
         //these functions are called on button presses
         private void OnChangeToAbout(object sender)
         {
-            _frame.Navigate(about);
+            frameHandler.Navigate(about, _frame);
         }
 
         private void OnChangeToAngleGraph(object sender)
         {
-            _frame.Navigate(angleGraph);
+            frameHandler.Navigate(angleGraph, _frame);
         }
 
         private void OnChangeToAngleTimed(object sender)
         {
-            _frame.Navigate(angleTimed);
+            frameHandler.Navigate(angleTimed, _frame);
         }
 
         private void OnChangeToLoad(object sender)
         {
-            _frame.Navigate(load);
+            frameHandler.Navigate(load, _frame);
         }
         private void OnChangeToMapRoute(object sender)
         {
-            _frame.Navigate(mapRoute);
+            frameHandler.Navigate(mapRoute, _frame);
         }
 
         private void OnChangeToMapTimed(object sender)
         {
-            _frame.Navigate(mapTimed);
+            frameHandler.Navigate(mapTimed, _frame);
         }
 
         private void OnChangeToVelocityGraph(object sender)
         {
-            _frame.Navigate(velocityGraph);
+            frameHandler.Navigate(velocityGraph, _frame);
         }
 
         private void OnChangeToVelocityTimed(object sender)
         {
-            _frame.Navigate(velocityTimed);
+            frameHandler.Navigate(velocityTimed, _frame);
         }
     }
 }
