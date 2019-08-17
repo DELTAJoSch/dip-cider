@@ -1,5 +1,7 @@
 ﻿using CIDER.MVVMBase;
+using CIDER.Views;
 using System;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
@@ -32,26 +34,9 @@ namespace CIDER.ViewModels
 
         private Frame _frame;
 
-        //these are the uris to the views (pages)
-        private Uri about;
+        private DataProvider dataProvider;
 
-        private Uri angleGraph;
-
-        private Uri angleTimed;
-
-        private Uri load;
-
-        private Uri mapRoute;
-
-        private Uri mapTimed;
-
-        private Uri velocityGraph;
-
-        private Uri velocityTimed;
-
-        private FrameHandler frameHandler;
-
-        public MainWindowViewModel(Frame frame, Uri aboutUri, Uri angleGraphUri, Uri angleTimeUri, Uri loadUri, Uri mapRouteUri, Uri mapTimedUri, Uri velocityGraphUri, Uri velocityTimedUri, FrameHandler handler)
+        public MainWindowViewModel(Frame frame)
         {
             _frame = frame;
 
@@ -65,18 +50,9 @@ namespace CIDER.ViewModels
             _changeToVelocityGraphCommand = new DelegateCommand(OnChangeToVelocityGraph);
             _changeToVelocityTimedCommand = new DelegateCommand(OnChangeToVelocityTimed);
 
-            about = aboutUri;
-            angleGraph = angleGraphUri;
-            angleTimed = angleTimeUri;
-            load = loadUri;
-            mapRoute = mapRouteUri;
-            mapTimed = mapTimedUri;
-            velocityGraph = velocityGraphUri;
-            velocityTimed = velocityTimedUri;
+            _frame.Navigate(new About());
 
-            frameHandler = handler;
-
-            frameHandler.Navigate(about, _frame);
+            dataProvider = new DataProvider();
         }
         public ICommand ChangeToAboutCommand => _changeToAboutCommand;
         public ICommand ChangeToAngleGraphCommand => _changeToAngleGraphCommand;
@@ -90,41 +66,41 @@ namespace CIDER.ViewModels
         //these functions are called on button presses
         private void OnChangeToAbout(object sender)
         {
-            frameHandler.Navigate(about, _frame);
+            _frame.Navigate(new About());
         }
 
         private void OnChangeToAngleGraph(object sender)
         {
-            frameHandler.Navigate(angleGraph, _frame);
+            _frame.Navigate(new AngleGraph());
         }
 
         private void OnChangeToAngleTimed(object sender)
         {
-            frameHandler.Navigate(angleTimed, _frame);
+            _frame.Navigate(new AngleTimed());
         }
 
         private void OnChangeToLoad(object sender)
         {
-            frameHandler.Navigate(load, _frame);
+            _frame.Navigate(new Load());
         }
         private void OnChangeToMapRoute(object sender)
         {
-            frameHandler.Navigate(mapRoute, _frame);
+            _frame.Navigate(new MapRoute());
         }
 
         private void OnChangeToMapTimed(object sender)
         {
-            frameHandler.Navigate(mapTimed, _frame);
+            _frame.Navigate(new MapTimed());
         }
 
         private void OnChangeToVelocityGraph(object sender)
         {
-            frameHandler.Navigate(velocityGraph, _frame);
+            _frame.Navigate(new VelocityGraph());
         }
 
         private void OnChangeToVelocityTimed(object sender)
         {
-            frameHandler.Navigate(velocityTimed, _frame);
+            _frame.Navigate(new VelocityTimed());
         }
     }
 }

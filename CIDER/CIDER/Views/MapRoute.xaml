@@ -4,11 +4,12 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CIDER.Views"
+      xmlns:m1="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MapRoute">
 
     <Grid>
-        
+        <m1:Map CredentialsProvider="4avtwkdDDDRXhvvdspWD~ikDGXG2tCgzUGYOPoDayiQ~Ao9jlosToNFwC_kjuZyX52JHGX-fNc2UKvN0_AISGz7CwUFE-6YV9tEPQuFGzz6R" Mode="AerialWithLabels"/>
     </Grid>
 </Page>
