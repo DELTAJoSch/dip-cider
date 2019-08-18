@@ -7,13 +7,11 @@ using System.Windows.Input;
 
 namespace CIDER.ViewModels
 {
-    //due to the .net core restrictions, this class is untestable as no frame can be created inside the unit test framework
+    //NOTICE: due to the .net core restrictions, this class is untestable as no frame can be created inside the unit test framework
     public class MainWindowViewModel : ViewModelBase
     /*/Summary
      * This is the ViewModel for the Main Window (contains view selection buttons and frame)
      * This class handles the button presses - they change the views
-     * Due to the frame control being broken/bugged a mvvm approach is not doable without using external frameworks like mvvmlight
-     * Therefor the frame is just passed to the constructor - this is not optimal but it works without problems. The only possible problem is the decreased readability
     /*/ 
     {
         private readonly DelegateCommand _changeToAboutCommand;
@@ -37,6 +35,8 @@ namespace CIDER.ViewModels
         private DataProvider dataProvider;
 
         public MainWindowViewModel(Frame frame)
+        ///Due to the frame control being broken/bugged a mvvm approach is not doable without using external frameworks like mvvmlight
+        ///Therefor the frame is just passed to the constructor - this is not optimal but it works without problems.The only possible problem is the decreased readability
         {
             _frame = frame;
 
@@ -81,7 +81,7 @@ namespace CIDER.ViewModels
 
         private void OnChangeToLoad(object sender)
         {
-            _frame.Navigate(new Load());
+            _frame.Navigate(new Load(dataProvider));
         }
         private void OnChangeToMapRoute(object sender)
         {

@@ -8,6 +8,7 @@ using System.Text;
 
 namespace CIDER.UnitTests
 {
+    [TestFixture]
     class AboutViewModelUnitTests
     {
         [Test]
@@ -19,6 +20,30 @@ namespace CIDER.UnitTests
             about.RequestNavigate.Execute(this);
 
             handler.ReceivedWithAnyArgs().Start(default);
+        }
+
+        [TestCase("AboutText")]
+        [TestCase("InfoText")]
+        public void AboutViewModel_ChangeAboutText_PropertyUpdated(string methodName)
+        {
+            var handler = Substitute.For<TestStarter>();
+            bool wasCalled = false;
+            AboutViewModel about = new AboutViewModel(handler);
+            about.PropertyChanged += (o, e) => { wasCalled = true; };
+
+            if(methodName == "AboutText")
+            {
+                about.AboutText = "Hello";
+            }else if(methodName == "InfoText")
+            {
+                about.InfoText = "Hello";
+            }
+            else
+            {
+                throw new AssertionException("Unknown TestCase");
+            }
+
+            Assert.IsTrue(wasCalled);
         }
     }
 

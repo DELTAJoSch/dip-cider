@@ -46,6 +46,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -65,7 +66,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataProvider.cs" />
-    <Compile Include="Interfaces.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="LoadIO\FileIO.cs" />
+    <Compile Include="LoadIO\FolderChecker.cs" />
+    <Compile Include="LoadIO\FolderSelector.cs" />
     <Compile Include="MVVMBase\ViewModelBase.cs" />
     <Compile Include="ProcessStarter.cs" />
     <Compile Include="SystemTime.cs" />
@@ -175,6 +179,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\forbidden.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\success.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

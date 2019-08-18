@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CIDER.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,13 @@ namespace CIDER.Views
     /// </summary>
     public partial class Load : Page
     {
-        public Load()
+        private DataProvider _dataProvider;
+        public Load(DataProvider data)
         {
             InitializeComponent();
+            _dataProvider = data;
+            LoadViewModel loadView = new LoadViewModel(_dataProvider, new CIDER.LoadIO.FolderChecker(), new CIDER.LoadIO.FolderSelector(), new CIDER.LoadIO.FileIO());
+            this.DataContext = loadView;
         }
     }
 }
