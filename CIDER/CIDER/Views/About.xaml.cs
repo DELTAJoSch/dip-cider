@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CIDER.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,9 @@ namespace CIDER.Views
         public About()
         {
             InitializeComponent();
+
+            var context = new AboutViewModel(new Starter());
+            this.DataContext = context;
         }
     }
 }

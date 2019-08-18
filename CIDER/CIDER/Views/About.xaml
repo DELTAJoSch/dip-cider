@@ -4,12 +4,18 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CIDER.Views"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="About">
+      mc:Ignorable="d" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+      Title="About" d:DesignHeight="288" d:DesignWidth="402">
 
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="591" Height="308" Margin="105,95,0,0"/>
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="197*"/>
+            <RowDefinition Height="21*"/>
+        </Grid.RowDefinitions>
 
+        <Button Content="E-Mail Us!" HorizontalAlignment="Stretch" Margin="0,0.667,0,0" Grid.Row="2" VerticalAlignment="Stretch" Command="{Binding Path=RequestNavigate}"/>
+        <TextBlock HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="{Binding Path=InfoText}" VerticalAlignment="Stretch" Width="auto" Margin="0,0,0,0.333"/>
+        <TextBlock HorizontalAlignment="Stretch" Margin="0,4.667,0,0" TextWrapping="Wrap" Text="{Binding Path=AboutText}" VerticalAlignment="Stretch" Height="auto" Width="auto" Grid.Row="1"/>
     </Grid>
 </Page>
