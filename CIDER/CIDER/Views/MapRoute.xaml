@@ -10,6 +10,6 @@
       Title="MapRoute">
 
     <Grid>
-        <m1:Map CredentialsProvider="4avtwkdDDDRXhvvdspWD~ikDGXG2tCgzUGYOPoDayiQ~Ao9jlosToNFwC_kjuZyX52JHGX-fNc2UKvN0_AISGz7CwUFE-6YV9tEPQuFGzz6R" Mode="AerialWithLabels"/>
+        <m1:Map CredentialsProvider="123" Mode="AerialWithLabels"/>
     </Grid>
 </Page>

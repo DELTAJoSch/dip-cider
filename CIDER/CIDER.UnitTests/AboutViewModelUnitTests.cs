@@ -47,7 +47,7 @@ namespace CIDER.UnitTests
         }
     }
 
-    public class TestStarter : ProcessStarter
+    public class TestStarter : IProcessStarter
     {
         public void Start(ProcessStartInfo info)
         {

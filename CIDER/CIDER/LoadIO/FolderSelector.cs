@@ -2,7 +2,7 @@
 
 namespace CIDER.LoadIO
 {
-    public class FolderSelector : FolderSelectionInterface
+    public class FolderSelector : IFolderSelectionInterface
     ///Summary
     ///This class implements the Folderselectioninterface. This class can show a Userinterface allowing the user to select a folder.
     ///If the user exits the dialog without selecting a folder, an exception will be thrown
@@ -30,7 +30,7 @@ namespace CIDER.LoadIO
         }
     }
 
-    public interface FolderSelectionInterface
+    public interface IFolderSelectionInterface
     ///Summary
     ///The Interface for the FolderSelcetion. Can be used as a seam for unit testing
     {

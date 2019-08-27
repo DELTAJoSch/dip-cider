@@ -17,9 +17,9 @@ namespace CIDER.ViewModels
         ///When the button in the view is pressed, the view model responds to it by calling the function fromn the processStarter interface
     {
         private readonly DelegateCommand _mailToClick;
-        private readonly ProcessStarter _handler;
+        private readonly IProcessStarter _handler;
 
-        public AboutViewModel(ProcessStarter starter)
+        public AboutViewModel(IProcessStarter starter)
         {
             _mailToClick = new DelegateCommand(mailto);
             AboutText = "This Software is Licensed under the GNU GPL - v3.\nThis Software was designed and written by Johannes Schiemer for his school diploma " +
@@ -53,7 +53,7 @@ namespace CIDER.ViewModels
         }
     }
 
-    public class Starter : ProcessStarter
+    public class Starter : IProcessStarter
     {
         public void Start(ProcessStartInfo info)
         {

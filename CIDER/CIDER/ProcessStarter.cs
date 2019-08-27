@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CIDER
 {
-    public interface ProcessStarter
+    public interface IProcessStarter
     ///Summary
     ///This interface is used as an abstraction. This is done so the classes using this class can be unit tested. It is a seam.
     {

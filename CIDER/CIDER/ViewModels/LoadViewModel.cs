@@ -14,12 +14,12 @@ namespace CIDER.ViewModels
         private DelegateCommand _selectClickCommand;
         private string _pathText;
         private string _checkImage;
-        private FolderSelectionInterface _folderSelector;
-        private FolderChecker _folderChecker;
+        private IFolderSelectionInterface _folderSelector;
+        private IChecker _folderChecker;
         private FileIO _fileIO;
         private string _path;
 
-        public LoadViewModel(DataProvider data, FolderChecker folderChecker, FolderSelectionInterface selector, FileIO fileIO)
+        public LoadViewModel(DataProvider data, IChecker folderChecker, IFolderSelectionInterface selector, FileIO fileIO)
         ///The constructor takes the different Objects as Arguments - this makes the code testable
         {
             _dataProvider = data;
@@ -45,11 +45,18 @@ namespace CIDER.ViewModels
             {
                 _path = _folderSelector.SelectFolder();
                 PathText = _path;
+
+                //Set the Is Valid Folder Icon
+                if (_folderChecker.IsCorrectFolder(_path) == true)
+                    CheckImage = @"~\..\..\Icons\success.png";
+                else
+                    CheckImage = @"~\..\..\Icons\forbidden.png";
             }
             catch (FileDialogExitedException e)
             {
                 PathText = "";
                 _path = null;
+                CheckImage = null;
             }
         }
 
