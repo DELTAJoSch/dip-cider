@@ -35,7 +35,7 @@ namespace CIDER.ViewModels
 
         private void OnLoadClick(object sender)
         {
-            throw new NotImplementedException();
+            _fileIO.ReadCSV(_dataProvider, _path);
         }
 
         private void OnSelectClick(object sender)

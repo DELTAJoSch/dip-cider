@@ -13,47 +13,106 @@ namespace CIDER.UnitTests
         [Test]
         public void LoadViewModel_OnSelectClicked_CallsFolderSelector()
         {
+            //Arrange
             FolderManager manager = Substitute.For<FolderManager>();
             DataProvider dataProvider = Substitute.For<DataProvider>();
             FolderChecker folderChecker = Substitute.For<FolderChecker>();
             FileIO fileIO = Substitute.For<FileIO>();
             LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO);
 
+            //Act
             viewModel.SelectClickCommand.Execute(this);
 
+            //Assert
             manager.Received().SelectFolder();
         }
 
         [Test]
         public void LoadViewModel_OnSelectClickedError_ReceivesSelectorError()
         {
+            //Arrange
             FolderManager manager = Substitute.For<FolderManager>();
             DataProvider dataProvider = Substitute.For<DataProvider>();
             FolderChecker folderChecker = Substitute.For<FolderChecker>();
             FileIO fileIO = Substitute.For<FileIO>();
             LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO);
 
+            //Act
             viewModel.SelectClickCommand.Execute(this);
 
             manager.ThrowError = true;
 
             viewModel.SelectClickCommand.Execute(this);
 
+            //Assert
             Assert.AreEqual("", viewModel.PathText);
         }
 
         [Test]
         public void LoadViewModel_OnSelectClicked_ReceivesStringOfSelectedFile()
         {
+            //Arrange
             FolderManager manager = Substitute.For<FolderManager>();
             DataProvider dataProvider = Substitute.For<DataProvider>();
             FolderChecker folderChecker = Substitute.For<FolderChecker>();
             FileIO fileIO = Substitute.For<FileIO>();
             LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO);
 
+            //Act
             viewModel.SelectClickCommand.Execute(this);
 
+            //Assert
             Assert.AreEqual("return", manager.LastSelected);
+        }
+
+        [Test]
+        public void LoadViewModel_OnSelectClicked_CallsFolderChecker()
+        {
+            //Arrange
+            FolderManager manager = Substitute.For<FolderManager>();
+            DataProvider dataProvider = Substitute.For<DataProvider>();
+            Checker folderChecker = Substitute.For<Checker>();
+            FileIO fileIO = Substitute.For<FileIO>();
+            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO);
+
+            //Act
+            viewModel.SelectClickCommand.Execute(this);
+
+            //Assert
+            folderChecker.Received().IsCorrectFolder("return");
+        }
+
+        [Test]
+        public void LoadViewModel_OnSelectClickekCorrectFolder_SetsCheckmark()
+        {
+            //Arrange
+            FolderManager manager = Substitute.For<FolderManager>();
+            DataProvider dataProvider = Substitute.For<DataProvider>();
+            Checker folderChecker = Substitute.For<Checker>();
+            FileIO fileIO = Substitute.For<FileIO>();
+            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO);
+
+            //Act
+            viewModel.SelectClickCommand.Execute(this);
+
+            //Assert
+            Assert.AreEqual(@"~\..\..\Icons\success.png", viewModel.CheckImage);
+        }
+
+        [Test]
+        public void LoadViewModel_OnSelectClickekWrongFolder_SetsBlocked()
+        {
+            FolderManager manager = Substitute.For<FolderManager>();
+            DataProvider dataProvider = Substitute.For<DataProvider>();
+            Checker folderChecker = Substitute.For<Checker>();
+            FileIO fileIO = Substitute.For<FileIO>();
+            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO);
+
+            folderChecker.ReturnTrue = false;
+
+            viewModel.SelectClickCommand.Execute(this);
+
+            Assert.AreEqual(@"~\..\..\Icons\forbidden.png", viewModel.CheckImage);
         }
 
         public FolderManager GetFolderManager()
@@ -86,6 +145,21 @@ namespace CIDER.UnitTests
             {
                 throw new FileDialogExitedException();
             }
+        }
+    }
+
+    public class Checker : IChecker
+    {
+        public Checker()
+        {
+            ReturnTrue = true;
+        }
+        public bool ReturnTrue { get; set; }
+        public bool IsCorrectFolder(string Path)
+        {
+            if (ReturnTrue)
+                return true;
+            return false;
         }
     }
 }

@@ -32,3 +32,4 @@ H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\bin\Debug\
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\CIDER.csproj.CopyComplete
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\bin\Debug\AccelerationControl.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\CIDER.csprojAssemblyReference.cache

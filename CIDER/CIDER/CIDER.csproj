@@ -86,6 +86,7 @@
     <Compile Include="LoadIO\FolderChecker.cs" />
     <Compile Include="LoadIO\FolderSelector.cs" />
     <Compile Include="MVVMBase\ViewModelBase.cs" />
+    <Compile Include="NmeaParser.cs" />
     <Compile Include="ProcessStarter.cs" />
     <Compile Include="SystemTime.cs" />
     <Compile Include="ViewModels\AngleGraphViewModel.cs" />

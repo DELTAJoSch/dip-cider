@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Maps.MapControl.WPF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,12 +12,23 @@ namespace CIDER
      * This class holds all the values used by the program concerning the current route
     /*/
     {
+        public DataProvider()
+        {
+            this._angles = new List<Tuple<float, float, float>>();
+            this._velocity = new List<Tuple<float, float, float>>();
+            this._pressure = new List<float>();
+            this._height = new List<float>();
+            this._route = new LocationCollection();
+        }
+
         private string _routeName;
         private DateTime _routeDate;
         private DateTime _routeStartTime;
         private DateTime _routeEndTime;
         private int _dataPoints;
-        //private LocationCollection _route;
+        private LocationCollection _route;
+        private List<float> _pressure;
+        private List<float> _height;
         private List<Tuple<float, float, float>> _angles;
         private List<Tuple<float, float, float>> _velocity;
         private bool _isValidRoute;
@@ -29,5 +41,8 @@ namespace CIDER
         public List<Tuple<float,float,float>> Velocity { get { return _velocity; } set { _velocity = value; } }
         public bool IsValidRoute { get { return _isValidRoute; } set { _isValidRoute = value; } }
         public int DataPoints { get { return _dataPoints; } set { _dataPoints = value; } }
+        public List<float> Pressure { get { return _pressure; } set { _pressure = value; } }
+        public List<float> Height { get { return _height; } set { _height = value; } }
+        public LocationCollection Route { get { return _route; } set { _route = value; } }
     }
 }
