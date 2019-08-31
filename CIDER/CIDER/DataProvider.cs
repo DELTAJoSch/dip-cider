@@ -19,6 +19,7 @@ namespace CIDER
             this._pressure = new List<float>();
             this._height = new List<float>();
             this._route = new LocationCollection();
+            _numberOfPoints = 0;
         }
 
         private string _routeName;
@@ -32,6 +33,8 @@ namespace CIDER
         private List<Tuple<float, float, float>> _angles;
         private List<Tuple<float, float, float>> _velocity;
         private bool _isValidRoute;
+        private int _averageSattelitesInUse;
+        private int _numberOfPoints;
 
         public string RouteName { get { return _routeName; } set { _routeName = value; } }
         public DateTime RouteDate { get { return _routeDate; } set { _routeDate = value; } }
@@ -44,5 +47,18 @@ namespace CIDER
         public List<float> Pressure { get { return _pressure; } set { _pressure = value; } }
         public List<float> Height { get { return _height; } set { _height = value; } }
         public LocationCollection Route { get { return _route; } set { _route = value; } }
+        public int AverageSattelitesInUse { get { return _averageSattelitesInUse; } set
+            {
+                if (_numberOfPoints == 0)
+                    _averageSattelitesInUse = value;
+                else
+                {
+                    float a = _numberOfPoints * _averageSattelitesInUse;
+                    _numberOfPoints++;
+                    float res = (a + value) / _numberOfPoints;
+                    _averageSattelitesInUse = (int)res;
+                }
+            }
+        }
     }
 }

@@ -36,11 +36,14 @@ namespace CIDER.ViewModels
         private void OnLoadClick(object sender)
         {
             _fileIO.ReadCSV(_dataProvider, _path);
+            _fileIO.ReadNmea(_dataProvider, _path);
+            logger.Debug("Load Clicked");
         }
 
         private void OnSelectClick(object sender)
         ///Select Button Clicked
         {
+            logger.Debug("Select Clicked");
             try
             {
                 _path = _folderSelector.SelectFolder();
@@ -57,6 +60,12 @@ namespace CIDER.ViewModels
                 PathText = "";
                 _path = null;
                 CheckImage = null;
+
+                logger.Debug(e, "File Dialog Exited");
+            }
+            catch(Exception ex)
+            {
+                logger.Warn(ex, "Selection failed");
             }
         }
 
