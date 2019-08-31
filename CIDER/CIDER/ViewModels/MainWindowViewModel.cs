@@ -71,7 +71,7 @@ namespace CIDER.ViewModels
 
         private void OnChangeToAngleGraph(object sender)
         {
-            _frame.Navigate(new AngleGraph());
+            _frame.Navigate(new AngleGraph(dataProvider));
         }
 
         private void OnChangeToAngleTimed(object sender)
