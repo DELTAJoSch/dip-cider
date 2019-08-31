@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 namespace CIDER.ViewModels
 {
     public class AngleGraphViewModel:ViewModelBase
+    ///Summary
+    ///This is the View Model for the AngleGraphViewModel
+    ///TODO: Make loading async or do it in an extra thread
     {
         PlotModel _plot;
         DataProvider _data;
@@ -18,6 +21,7 @@ namespace CIDER.ViewModels
         {
             _data = Data;
 
+            //Create a new PlotModel, associate the corresponding DataPoints and display it
             PlotModel CreatePlot = new PlotModel();
             CreatePlot.Title = "Acceleration";
 
@@ -53,6 +57,7 @@ namespace CIDER.ViewModels
         }
 
         public PlotModel Plot
+         //Data Binding for the Graph
         {
             get { return _plot; }
             set { SetProperty(ref _plot, value); }

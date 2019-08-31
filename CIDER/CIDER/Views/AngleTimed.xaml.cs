@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CIDER.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,13 @@ namespace CIDER.Views
     /// </summary>
     public partial class AngleTimed : Page
     {
-        public AngleTimed()
+        public AngleTimed(DataProvider data)
         {
             InitializeComponent();
+
+            AngleTimedViewModel model = new AngleTimedViewModel(data);
+
+            this.DataContext = model;
         }
     }
 }
