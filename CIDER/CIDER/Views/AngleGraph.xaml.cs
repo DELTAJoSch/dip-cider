@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CIDER.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,11 @@ namespace CIDER.Views
     /// </summary>
     public partial class AngleGraph : Page
     {
-        public AngleGraph()
+        public AngleGraph(DataProvider _data)
         {
             InitializeComponent();
+            AngleGraphViewModel model = new AngleGraphViewModel(_data);
+            this.DataContext = model;
         }
     }
 }
