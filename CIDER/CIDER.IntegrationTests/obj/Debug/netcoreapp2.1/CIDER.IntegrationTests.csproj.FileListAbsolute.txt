@@ -17,3 +17,12 @@ H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.Integratio
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\obj\Debug\netcoreapp2.1\CIDER.IntegrationTests.csproj.CopyComplete
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\obj\Debug\netcoreapp2.1\CIDER.IntegrationTests.dll
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\obj\Debug\netcoreapp2.1\CIDER.IntegrationTests.pdb
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\NLog.config
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\Microsoft.Maps.MapControl.WPF.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\NLog.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\OxyPlot.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\NmeaParser.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\Microsoft.Maps.MapControl.WPF.xml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\NLog.xml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\OxyPlot.pdb
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\OxyPlot.xml

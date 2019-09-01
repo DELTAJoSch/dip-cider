@@ -13,14 +13,13 @@ namespace CIDER.LoadIO
     {
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private int failedParses;
-        public void ReadCSV(DataProvider data, string path)
+        public void ReadCSV(DataProvider data, string path, IRead read)
         {
             logger.Debug("Starting CSV ingestion.");
-            string name = GetFolderName(path);
 
             try
             {
-                string[] lines = File.ReadAllLines(path + "\\" + name + ".csv");
+                string[] lines = read.ReadLinesCsv(path);
 
                 foreach (string line in lines)
                 {
@@ -75,16 +74,14 @@ namespace CIDER.LoadIO
             logger.Debug("CSV ingestion finished.");
         }
 
-        public void ReadNmea(DataProvider Data, string path)
+        public void ReadNmea(DataProvider Data, string path, IRead read)
         {
             failedParses = 0;
             bool first = true;
             logger.Debug("Starting NMEA ingestion.");
             try
             {
-                string name = GetFolderName(path);
-
-                string[] lines = File.ReadAllLines(path + "\\" + name + ".nmea");
+                string[] lines = read.ReadLinesNmea(path);
 
                 foreach (string line in lines)
                 {
@@ -157,6 +154,21 @@ namespace CIDER.LoadIO
             }
 
         }
+    }
+
+    public class Reader : IRead
+    {
+        public string[] ReadLinesCsv(string path)
+        {
+            string name = GetFolderName(path);
+            return File.ReadAllLines(path + "\\" + name + ".csv");
+        }
+
+        public string[] ReadLinesNmea(string path)
+        {
+            string name = GetFolderName(path);
+            return File.ReadAllLines(path + "\\" + name + ".nmea");
+        }
 
         private string GetFolderName(string path)
         {
@@ -167,7 +179,13 @@ namespace CIDER.LoadIO
 
     public interface IIO
     {
-        void ReadNmea(DataProvider data, string path);
-        void ReadCSV(DataProvider data, string path);
+        void ReadNmea(DataProvider data, string path, IRead read);
+        void ReadCSV(DataProvider data, string path, IRead read);
+    }
+
+    public interface IRead
+    {
+        string[] ReadLinesNmea(string path);
+        string[] ReadLinesCsv(string path);
     }
 }

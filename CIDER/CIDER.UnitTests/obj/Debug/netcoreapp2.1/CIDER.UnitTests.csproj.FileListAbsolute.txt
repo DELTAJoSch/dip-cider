@@ -41,3 +41,12 @@ H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\netcoreapp2.1\System.Windows.Input.Manipulations.xml
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\netcoreapp2.1\System.Windows.Forms.xml
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\netcoreapp2.1\System.Runtime.Serialization.Formatters.Soap.xml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\netcoreapp2.1\NLog.config
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\netcoreapp2.1\Microsoft.Maps.MapControl.WPF.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\netcoreapp2.1\NLog.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\netcoreapp2.1\OxyPlot.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\netcoreapp2.1\NmeaParser.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\netcoreapp2.1\Microsoft.Maps.MapControl.WPF.xml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\netcoreapp2.1\NLog.xml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\netcoreapp2.1\OxyPlot.pdb
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\netcoreapp2.1\OxyPlot.xml
