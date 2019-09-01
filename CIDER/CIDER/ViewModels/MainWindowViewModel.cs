@@ -95,7 +95,7 @@ namespace CIDER.ViewModels
 
         private void OnChangeToVelocityGraph(object sender)
         {
-            _frame.Navigate(new VelocityGraph());
+            _frame.Navigate(new VelocityGraph(dataProvider));
         }
 
         private void OnChangeToVelocityTimed(object sender)
