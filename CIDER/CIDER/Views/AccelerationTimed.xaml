@@ -17,15 +17,15 @@
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch">
             <TextBlock TextWrapping="Wrap" Text="Forward/Backward" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-            <AccelerationControl:LeftRightProgressBar LeftBrush="Orange" RightBrush="Azure" LeftMaximum="{Binding Path=LMaxFB}" RightMaximum="{Binding Path=RMaxFB}" LeftValue="{Binding Path=LValFB}" RightValue="{Binding Path=RValFB}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="112"/>
+            <AccelerationControl:LeftRightProgressBar LeftBrush="Crimson" RightBrush="LimeGreen" LeftMaximum="{Binding Path=LMaxFB}" RightMaximum="{Binding Path=RMaxFB}" LeftValue="{Binding Path=LValFB}" RightValue="{Binding Path=RValFB}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="112"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch" Grid.Row="1">
             <TextBlock TextWrapping="Wrap" Text="Left/Right" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-            <AccelerationControl:LeftRightProgressBar LeftBrush="Red" RightBrush="LawnGreen" LeftMaximum="{Binding Path=LMaxLR}" RightMaximum="{Binding Path=RMaxLR}" LeftValue="{Binding Path=LValLR}" RightValue="{Binding Path=RValLR}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="112"/>
+            <AccelerationControl:LeftRightProgressBar LeftBrush="DarkOrange" RightBrush="DeepSkyBlue" LeftMaximum="{Binding Path=LMaxLR}" RightMaximum="{Binding Path=RMaxLR}" LeftValue="{Binding Path=LValLR}" RightValue="{Binding Path=RValLR}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="112"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch" Grid.Row="2">
             <TextBlock TextWrapping="Wrap" Text="Up/Down" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-            <AccelerationControl:LeftRightProgressBar LeftBrush="SandyBrown" RightBrush="SkyBlue" LeftMaximum="{Binding Path=LMaxUD}" RightMaximum="{Binding Path=RMaxUD}" LeftValue="{Binding Path=LValUD}" RightValue="{Binding Path=RValUD}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="112"/>
+            <AccelerationControl:LeftRightProgressBar LeftBrush="Gold" RightBrush="DarkViolet" LeftMaximum="{Binding Path=LMaxUD}" RightMaximum="{Binding Path=RMaxUD}" LeftValue="{Binding Path=LValUD}" RightValue="{Binding Path=RValUD}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="112"/>
         </StackPanel>
     </Grid>
 </Page>
