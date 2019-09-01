@@ -50,7 +50,7 @@ namespace CIDER.LoadIO
                         }
                         try
                         {
-                            data.Angles.Add(new Tuple<float, float, float>(float.Parse(split[4]), float.Parse(split[5]), float.Parse(split[6])));
+                            data.Acceleration.Add(new Tuple<float, float, float>(float.Parse(split[4]), float.Parse(split[5]), float.Parse(split[6])));
                         }
                         catch (Exception ex)
                         {

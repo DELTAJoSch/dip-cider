@@ -71,12 +71,12 @@ namespace CIDER.ViewModels
 
         private void OnChangeToAngleGraph(object sender)
         {
-            _frame.Navigate(new AngleGraph(dataProvider));
+            _frame.Navigate(new AccelerationGraph(dataProvider));
         }
 
         private void OnChangeToAngleTimed(object sender)
         {
-            _frame.Navigate(new AngleTimed(dataProvider));
+            _frame.Navigate(new AccelerationTimed(dataProvider));
         }
 
         private void OnChangeToLoad(object sender)

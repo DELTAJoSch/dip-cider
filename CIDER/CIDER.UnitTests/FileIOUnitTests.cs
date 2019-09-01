@@ -71,7 +71,7 @@ namespace CIDER.UnitTests
             List<Tuple<float,float,float>> vs = new List<Tuple<float, float, float>> ();
             vs.Add(new Tuple<float, float, float>(17, 7, 38));
 
-            Assert.AreEqual(vs, data.Angles);
+            Assert.AreEqual(vs, data.Acceleration);
         }
 
         [Test]

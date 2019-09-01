@@ -17,14 +17,16 @@ using System.Windows.Shapes;
 namespace CIDER.Views
 {
     /// <summary>
-    /// Interaction logic for AngleGraph.xaml
+    /// Interaction logic for AngleTimed.xaml
     /// </summary>
-    public partial class AngleGraph : Page
+    public partial class AccelerationTimed : Page
     {
-        public AngleGraph(DataProvider _data)
+        public AccelerationTimed(DataProvider data)
         {
             InitializeComponent();
-            AngleGraphViewModel model = new AngleGraphViewModel(_data);
+
+            AccelerationTimedViewModel model = new AccelerationTimedViewModel(data);
+
             this.DataContext = model;
         }
     }

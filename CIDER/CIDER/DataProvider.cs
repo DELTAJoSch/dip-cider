@@ -14,7 +14,7 @@ namespace CIDER
     {
         public DataProvider()
         {
-            this._angles = new List<Tuple<float, float, float>>();
+            this._acceleration = new List<Tuple<float, float, float>>();
             this._velocity = new List<Tuple<float, float, float>>();
             this._pressure = new List<float>();
             this._height = new List<float>();
@@ -30,7 +30,7 @@ namespace CIDER
         private LocationCollection _route;
         private List<float> _pressure;
         private List<float> _height;
-        private List<Tuple<float, float, float>> _angles;
+        private List<Tuple<float, float, float>> _acceleration;
         private List<Tuple<float, float, float>> _velocity;
         private bool _isValidRoute;
         private int _averageSattelitesInUse;
@@ -40,7 +40,7 @@ namespace CIDER
         public DateTime RouteDate { get { return _routeDate; } set { _routeDate = value; } }
         public DateTime RouteStartTime { get { return _routeStartTime; } set { _routeStartTime = value; } }
         public DateTime RouteEndTime { get { return _routeEndTime; } set { _routeEndTime = value; } }
-        public List<Tuple<float,float,float>> Angles { get { return _angles; } set { _angles = value; } }
+        public List<Tuple<float,float,float>> Acceleration { get { return _acceleration; } set { _acceleration = value; } }
         public List<Tuple<float,float,float>> Velocity { get { return _velocity; } set { _velocity = value; } }
         public bool IsValidRoute { get { return _isValidRoute; } set { _isValidRoute = value; } }
         public int DataPoints { get { return _dataPoints; } set { _dataPoints = value; } }
