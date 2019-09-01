@@ -35,8 +35,8 @@ namespace CIDER.ViewModels
 
         private void OnLoadClick(object sender)
         {
-            _fileIO.ReadCSV(_dataProvider, _path);
-            _fileIO.ReadNmea(_dataProvider, _path);
+            _fileIO.ReadCSV(_dataProvider, _path, new Reader());
+            _fileIO.ReadNmea(_dataProvider, _path, new Reader());
             logger.Debug("Load Clicked");
         }
 
