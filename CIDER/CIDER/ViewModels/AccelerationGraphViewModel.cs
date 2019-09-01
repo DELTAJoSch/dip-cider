@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
-    public class AngleGraphViewModel:ViewModelBase
+    public class AccelerationGraphViewModel:ViewModelBase
     ///Summary
     ///This is the View Model for the AngleGraphViewModel
     ///TODO: Make loading async or do it in an extra thread
@@ -17,7 +17,7 @@ namespace CIDER.ViewModels
         PlotModel _plot;
         DataProvider _data;
 
-        public AngleGraphViewModel(DataProvider Data)
+        public AccelerationGraphViewModel(DataProvider Data)
         {
             _data = Data;
 
@@ -31,7 +31,7 @@ namespace CIDER.ViewModels
 
             double t = 0;
 
-            foreach (Tuple<float, float, float> tuple in _data.Angles)
+            foreach (Tuple<float, float, float> tuple in _data.Acceleration)
             {
                 XSeries.Points.Add(new DataPoint(t, (double)tuple.Item1));
                 YSeries.Points.Add(new DataPoint(t, (double)tuple.Item2));
