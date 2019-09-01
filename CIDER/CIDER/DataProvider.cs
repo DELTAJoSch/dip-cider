@@ -60,5 +60,32 @@ namespace CIDER
                 }
             }
         }
+
+        internal bool ClearData()
+        ///This allows the load function to clear the data. If if this is not done the data just keeps on being added to the end of the existing data - growing indefinitely
+        ///The only other option to this would be to create a new object to write into and then do a deep copy into this object.
+        {
+            try
+            {
+                this._acceleration = new List<Tuple<float, float, float>>();
+                this._velocity = new List<Tuple<float, float, float>>();
+                this._pressure = new List<float>();
+                this._height = new List<float>();
+                this._route = new LocationCollection();
+                this._numberOfPoints = 0;
+                this._routeDate = new DateTime();
+                this._routeEndTime = new DateTime();
+                this._routeStartTime = new DateTime();
+                this._isValidRoute = new bool();
+                this._routeName = null;
+                this._averageSattelitesInUse = new int();
+                this._dataPoints = new int();
+
+                return true;
+            }catch(Exception ex)
+            {
+                return false;
+            }
+        }
     }
 }
