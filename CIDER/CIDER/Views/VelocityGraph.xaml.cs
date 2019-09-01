@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CIDER.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,12 @@ namespace CIDER.Views
     /// </summary>
     public partial class VelocityGraph : Page
     {
-        public VelocityGraph()
+        public VelocityGraph(DataProvider data)
         {
             InitializeComponent();
+
+            VelocityGraphViewModel model = new VelocityGraphViewModel(data);
+            this.DataContext = model;
         }
     }
 }
