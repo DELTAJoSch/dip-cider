@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
-    public class AngleTimedViewModel:ViewModelBase
+    public class AccelerationTimedViewModel:ViewModelBase
     ///Summary
     ///This is the ViewModel for the AngleTimedView
     {
@@ -24,7 +24,7 @@ namespace CIDER.ViewModels
         private float _lMaxFB;
         private float _rMaxLR;
         private float _lMaxLR;
-        public AngleTimedViewModel(DataProvider data)
+        public AccelerationTimedViewModel(DataProvider data)
         {
             _data = data;
 

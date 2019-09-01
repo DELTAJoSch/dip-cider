@@ -105,8 +105,8 @@
     <Compile Include="MVVMBase\ViewModelBase.cs" />
     <Compile Include="ProcessStarter.cs" />
     <Compile Include="SystemTime.cs" />
-    <Compile Include="ViewModels\AngleGraphViewModel.cs" />
-    <Compile Include="ViewModels\AngleTimedViewModel.cs" />
+    <Compile Include="ViewModels\AccelerationGraphViewModel.cs" />
+    <Compile Include="ViewModels\AccelerationTimedViewModel.cs" />
     <Compile Include="ViewModels\LoadViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\MapRouteViewModel.cs" />
@@ -116,11 +116,11 @@
     <Compile Include="Views\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AngleGraph.xaml.cs">
-      <DependentUpon>AngleGraph.xaml</DependentUpon>
+    <Compile Include="Views\AccelerationGraph.xaml.cs">
+      <DependentUpon>AccelerationGraph.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AngleTimed.xaml.cs">
-      <DependentUpon>AngleTimed.xaml</DependentUpon>
+    <Compile Include="Views\AccelerationTimed.xaml.cs">
+      <DependentUpon>AccelerationTimed.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Load.xaml.cs">
       <DependentUpon>Load.xaml</DependentUpon>
@@ -153,11 +153,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\AngleGraph.xaml">
+    <Page Include="Views\AccelerationGraph.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\AngleTimed.xaml">
+    <Page Include="Views\AccelerationTimed.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
