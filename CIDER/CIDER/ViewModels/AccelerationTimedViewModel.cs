@@ -11,7 +11,11 @@ namespace CIDER.ViewModels
     ///Summary
     ///This is the ViewModel for the AngleTimedView
     {
-        DataProvider _data;
+        private DataProvider _data;
+
+        //private Data, all corresponding to the bindings
+        private int _slMaximum;
+        private int _slTickFrequency;
         private float _rValUD;
         private float _lValUD;
         private float _rValFB;
@@ -24,23 +28,93 @@ namespace CIDER.ViewModels
         private float _lMaxFB;
         private float _rMaxLR;
         private float _lMaxLR;
+        private string _udText;
+        private string _fbText;
+        private string _lrText;
+
         public AccelerationTimedViewModel(DataProvider data)
         {
             _data = data;
 
-            //test
-            RValUD = 10;
-            RValLR = 20;
-            RValFB = 30;
-            LValFB = 40;
-            LValLR = 50;
-            LValUD = 60;
-            RMaxUD = 100;
-            RMaxLR = 100;
-            RMaxFB = 100;
-            LMaxFB = 100;
-            LMaxLR = 100;
-            LMaxUD = 100;
+            slMaximum = _data.DataPointsAcceleration - 1;
+            if (slMaximum < 1000)
+                slTickFrequency = 2;
+            if (slMaximum > 1000 && slMaximum < 10000)
+                slTickFrequency = 10;
+            if (slMaximum > 10000 && slMaximum < 1000000)
+                slTickFrequency = 500;
+            if (slMaximum > 1000000)
+                slTickFrequency = 2000;
+
+            RMaxFB = LMaxFB = RMaxLR = LMaxLR = RMaxUD = LMaxUD = 400;
+
+            if ((_data.Acceleration.Count == 0) == false)
+            {
+                SliderValueChanged(0);
+            }
+            else
+            {
+                FBText = "Forwards/Backwards";
+                UDText = "Up/Down";
+                LRText = "Left/Right";
+            }
+
+        }
+
+        public int slMaximum
+        {
+            get { return _slMaximum; }
+            set { SetProperty(ref _slMaximum, value); }
+        }
+
+        public int slTickFrequency
+        {
+            get { return _slTickFrequency; }
+            set { SetProperty(ref _slTickFrequency, value); }
+        }
+
+        public void SliderValueChanged(int value)
+        ///Called when the slider changes its value (or when loading)
+        ///Sets the correct values of the double progress bars
+        {
+            var tuple = _data.Acceleration.ElementAt(value);
+
+            if (tuple.Item1 < 0)
+            {
+                LValFB = 0;
+                RValFB = -tuple.Item1;
+            }
+            else
+            {
+                LValFB = tuple.Item1;
+                RValFB = 0;
+            }
+
+            if (tuple.Item2 < 0)
+            {
+                LValLR = 0;
+                RValLR = -tuple.Item2;
+            }
+            else
+            {
+                LValLR = tuple.Item2;
+                RValLR = 0;
+            }
+
+            if (tuple.Item1 < 0)
+            {
+                LValUD = 0;
+                RValUD = -tuple.Item3;
+            }
+            else
+            {
+                LValUD = tuple.Item3;
+                RValUD = 0;
+            }
+
+            FBText = String.Format("Forwards/Backwards: {0} m/s^2", tuple.Item1);
+            UDText = String.Format("Up/Down: {0} m/s^2", tuple.Item3);
+            LRText = String.Format("Left/Right: {0} m/s^2", tuple.Item2);
         }
 
         //The following are the Data Bindings for the values
@@ -104,6 +178,21 @@ namespace CIDER.ViewModels
         {
             get { return _lMaxLR; }
             set { SetProperty(ref _lMaxLR, value); }
+        }
+        public string UDText
+        {
+            get { return _udText; }
+            set { SetProperty(ref _udText, value); }
+        }
+        public string LRText
+        {
+            get { return _lrText; }
+            set { SetProperty(ref _lrText, value); }
+        }
+        public string FBText
+        {
+            get { return _fbText; }
+            set { SetProperty(ref _fbText, value); }
         }
     }
 }
