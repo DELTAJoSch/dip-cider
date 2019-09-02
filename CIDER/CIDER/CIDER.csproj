@@ -103,6 +103,7 @@
     <Compile Include="LoadIO\FolderChecker.cs" />
     <Compile Include="LoadIO\FolderSelector.cs" />
     <Compile Include="MVVMBase\ViewModelBase.cs" />
+    <Compile Include="PlotManager.cs" />
     <Compile Include="ProcessStarter.cs" />
     <Compile Include="SystemTime.cs" />
     <Compile Include="ViewModels\AccelerationGraphViewModel.cs" />
