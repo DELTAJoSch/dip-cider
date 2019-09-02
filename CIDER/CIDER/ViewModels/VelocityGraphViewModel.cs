@@ -17,61 +17,26 @@ namespace CIDER.ViewModels
         {
             _data = data;
 
-            CreatePlot();
-        }
+            PlotManager manager = new PlotManager();
 
-        private async void CreatePlot()
-        {
-            Task<Tuple<List<DataPoint>, List<DataPoint>, List<DataPoint>>> getPoints = GetDataAsync();
+            List<float> x = new List<float>();
+            List<float> y = new List<float>();
+            List<float> z = new List<float>();
 
-            PlotModel model = new PlotModel();
-            model.Title = "Velocity";
-
-            LineSeries xSeries = new LineSeries();
-            LineSeries ySeries = new LineSeries();
-            LineSeries zSeries = new LineSeries();
-
-            xSeries.Title = "F/B";
-            ySeries.Title = "L/R";
-            zSeries.Title = "U/D";
-
-            xSeries.Color = OxyColor.FromRgb(252, 186, 3);
-            ySeries.Color = OxyColor.FromRgb(3, 219, 252);
-            zSeries.Color = OxyColor.FromRgb(252, 3, 78);
-
-            await getPoints;
-
-            var res = getPoints.Result;
-
-            xSeries.Points.AddRange(res.Item1);
-            ySeries.Points.AddRange(res.Item2);
-            zSeries.Points.AddRange(res.Item3);
-
-            model.Series.Add(xSeries);
-            model.Series.Add(ySeries);
-            model.Series.Add(zSeries);
-
-            Plot = model;
-        }
-
-        private async Task<Tuple<List<DataPoint>, List<DataPoint>, List<DataPoint>>> GetDataAsync()
-        {
-            List<DataPoint> x = new List<DataPoint>();
-            List<DataPoint> y = new List<DataPoint>();
-            List<DataPoint> z = new List<DataPoint>();
-
-            float t = 0;
-
-            foreach (Tuple<float, float, float> data in _data.Velocity)
+            Parallel.ForEach(_data.Velocity, tp =>
             {
-                x.Add(new DataPoint(t, data.Item1));
-                y.Add(new DataPoint(t, data.Item2));
-                z.Add(new DataPoint(t, data.Item3));
-                ++t;
-            }
+                x.Add(tp.Item1);
+                y.Add(tp.Item2);
+                z.Add(tp.Item3);
+            });
 
-            return new Tuple<List<DataPoint>, List<DataPoint>, List<DataPoint>>(x, y, z);
+            manager.AddLineSeries(x, "F/B", OxyColors.IndianRed);
+            manager.AddLineSeries(y, "L/R", OxyColors.Indigo);
+            manager.AddLineSeries(z, "U/D", OxyColors.Olive);
+
+            Plot = manager.GetPlotModel("Velocity");
         }
+
         public PlotModel Plot {
             get
             {
