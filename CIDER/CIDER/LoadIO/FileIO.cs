@@ -66,6 +66,9 @@ namespace CIDER.LoadIO
                         }
                     }
                 }
+
+                data.DataPointsVelocity = data.Velocity.Count;
+                data.DataPointsAcceleration = data.Acceleration.Count;
             }
             catch(Exception ex)
             {

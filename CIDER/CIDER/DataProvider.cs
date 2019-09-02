@@ -26,7 +26,8 @@ namespace CIDER
         private DateTime _routeDate;
         private DateTime _routeStartTime;
         private DateTime _routeEndTime;
-        private int _dataPoints;
+        private int _dataPointsVelocity;
+        private int _dataPointsAcceleration;
         private LocationCollection _route;
         private List<float> _pressure;
         private List<float> _height;
@@ -43,7 +44,8 @@ namespace CIDER
         public List<Tuple<float,float,float>> Acceleration { get { return _acceleration; } set { _acceleration = value; } }
         public List<Tuple<float,float,float>> Velocity { get { return _velocity; } set { _velocity = value; } }
         public bool IsValidRoute { get { return _isValidRoute; } set { _isValidRoute = value; } }
-        public int DataPoints { get { return _dataPoints; } set { _dataPoints = value; } }
+        public int DataPointsAcceleration { get { return _dataPointsAcceleration; } set { _dataPointsAcceleration = value; } }
+        public int DataPointsVelocity { get { return _dataPointsVelocity; } set { _dataPointsVelocity = value; } }
         public List<float> Pressure { get { return _pressure; } set { _pressure = value; } }
         public List<float> Height { get { return _height; } set { _height = value; } }
         public LocationCollection Route { get { return _route; } set { _route = value; } }
@@ -79,7 +81,8 @@ namespace CIDER
                 this._isValidRoute = new bool();
                 this._routeName = null;
                 this._averageSattelitesInUse = new int();
-                this._dataPoints = new int();
+                this._dataPointsAcceleration = new int();
+                this._dataPointsVelocity = new int();
 
                 return true;
             }catch(Exception ex)

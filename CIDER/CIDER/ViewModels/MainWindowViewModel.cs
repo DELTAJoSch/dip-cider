@@ -100,7 +100,7 @@ namespace CIDER.ViewModels
 
         private void OnChangeToVelocityTimed(object sender)
         {
-            _frame.Navigate(new VelocityTimed());
+            _frame.Navigate(new VelocityTimed(dataProvider));
         }
     }
 }
