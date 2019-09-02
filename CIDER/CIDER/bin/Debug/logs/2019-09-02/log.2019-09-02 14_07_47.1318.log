@@ -1,0 +1,86 @@
+2019-09-02 14:07:47.1318	FATAL	Unhandled exception in CIDER v1.0.0.0	CIDER.App.LogUnhandledException	Dispatcher.PushFrameImpl => UnsafeNativeMethods.DispatchMessage => HwndSubclass.SubclassWndProc => Dispatcher.LegacyInvokeImpl => ExceptionWrapper.TryCatchWhen => ExceptionWrapper.CatchException => Dispatcher.CatchExceptionStatic => Dispatcher.CatchException => App.<SetupExceptionHandling>b__2_1 => App.LogUnhandledException	"System.ArgumentOutOfRangeException: Der Index lag auﬂerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.ViewModels.VelocityTimedViewModel.SliderValueChanged(Int32 value) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\VelocityTimedViewModel.cs:Zeile 62.
+   bei CIDER.ViewModels.VelocityTimedViewModel..ctor(DataProvider data) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\VelocityTimedViewModel.cs:Zeile 45.
+   bei CIDER.Views.VelocityTimed..ctor(DataProvider data) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Views\VelocityTimed.xaml.cs:Zeile 29.
+   bei CIDER.ViewModels.MainWindowViewModel.OnChangeToVelocityTimed(Object sender) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 103.
+   bei CIDER.MVVMBase.DelegateCommand.Execute(Object parameter) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\MVVMBase\ViewModelBase.cs:Zeile 46.
+   bei MS.Internal.Commands.CommandHelpers.CriticalExecuteCommandSource(ICommandSource commandSource, Boolean userInitiated)
+   bei System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   bei System.Windows.Controls.Button.OnClick()
+   bei System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   bei System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   bei System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   bei System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   bei System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   bei System.Windows.Input.InputManager.ProcessStagingArea()
+   bei System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   bei System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   bei System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   bei System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   bei System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   bei System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)"	
+2019-09-02 14:07:49.9993	FATAL	Unhandled exception in CIDER v1.0.0.0	CIDER.App.LogUnhandledException	Application.RunInternal => Application.RunDispatcher => Dispatcher.PushFrame => Dispatcher.PushFrameImpl => UnsafeNativeMethods.DispatchMessage => HwndSubclass.SubclassWndProc => Dispatcher.LegacyInvokeImpl => ExceptionWrapper.TryCatchWhen => App.<SetupExceptionHandling>b__2_0 => App.LogUnhandledException	"System.ArgumentOutOfRangeException: Der Index lag auﬂerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.ViewModels.VelocityTimedViewModel.SliderValueChanged(Int32 value) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\VelocityTimedViewModel.cs:Zeile 62.
+   bei CIDER.ViewModels.VelocityTimedViewModel..ctor(DataProvider data) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\VelocityTimedViewModel.cs:Zeile 45.
+   bei CIDER.Views.VelocityTimed..ctor(DataProvider data) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Views\VelocityTimed.xaml.cs:Zeile 29.
+   bei CIDER.ViewModels.MainWindowViewModel.OnChangeToVelocityTimed(Object sender) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 103.
+   bei CIDER.MVVMBase.DelegateCommand.Execute(Object parameter) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\MVVMBase\ViewModelBase.cs:Zeile 46.
+   bei MS.Internal.Commands.CommandHelpers.CriticalExecuteCommandSource(ICommandSource commandSource, Boolean userInitiated)
+   bei System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   bei System.Windows.Controls.Button.OnClick()
+   bei System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   bei System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   bei System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   bei System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   bei System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   bei System.Windows.Input.InputManager.ProcessStagingArea()
+   bei System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   bei System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   bei System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   bei System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   bei System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   bei System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   bei System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   bei MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   bei System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   bei System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   bei System.Windows.Application.RunDispatcher(Object ignore)
+   bei System.Windows.Application.RunInternal(Window window)
+   bei System.Windows.Application.Run(Window window)
+   bei System.Windows.Application.Run()
+   bei CIDER.App.Main()"	
