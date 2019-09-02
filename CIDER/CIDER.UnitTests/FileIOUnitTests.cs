@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace CIDER.UnitTests
@@ -60,7 +61,7 @@ namespace CIDER.UnitTests
         }
 
         [Test]
-        public void ReadCSV_WhenCalled_CorrectAngles()
+        public void ReadCSV_WhenCalled_CorrectAcceleration()
         {
             FakeReader reader = new FakeReader();
             FileIO iO = new FileIO();
@@ -68,10 +69,19 @@ namespace CIDER.UnitTests
 
             iO.ReadCSV(data, "", reader);
 
-            List<Tuple<float,float,float>> vs = new List<Tuple<float, float, float>> ();
-            vs.Add(new Tuple<float, float, float>(17, 7, 38));
+            List<float> x = new List<float>();
+            List<float> y = new List<float>();
+            List<float> z = new List<float>();
 
-            Assert.AreEqual(vs, data.Acceleration);
+            x.Add(17);
+            y.Add(7);
+            z.Add(38);
+
+            iO.ReadCSV(data, "", reader);
+
+            Assert.AreEqual(x, data.XAcceleration);
+            Assert.AreEqual(y, data.YAcceleration);
+            Assert.AreEqual(z, data.ZAcceleration);
         }
 
         [Test]
@@ -81,12 +91,19 @@ namespace CIDER.UnitTests
             FileIO iO = new FileIO();
             DataProvider data = new DataProvider();
 
+            List<float> x = new List<float>();
+            List<float> y = new List<float>();
+            List<float> z = new List<float>();
+
+            x.Add(66);
+            y.Add(61);
+            z.Add(98);
+
             iO.ReadCSV(data, "", reader);
 
-            List<Tuple<float, float, float>> vs = new List<Tuple<float, float, float>>();
-            vs.Add(new Tuple<float, float, float>(66, 61, 98));
-
-            Assert.AreEqual(vs, data.Velocity);
+            Assert.AreEqual(x, data.XVelocity);
+            Assert.AreEqual(y, data.YVelocity);
+            Assert.AreEqual(z, data.ZVelocity);
         }
 
         [Test]

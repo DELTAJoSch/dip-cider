@@ -42,7 +42,11 @@ namespace CIDER.LoadIO
                     {
                         try
                         {
-                            data.Velocity.Add(new Tuple<float, float, float>(float.Parse(split[1]), float.Parse(split[2]), float.Parse(split[3])));
+                            var tp = new Tuple<float, float, float>(float.Parse(split[1]), float.Parse(split[2]), float.Parse(split[3]));
+
+                            data.XVelocity.Add(tp.Item1);
+                            data.YVelocity.Add(tp.Item2);
+                            data.ZVelocity.Add(tp.Item3);
                         }
                         catch (Exception ex)
                         {
@@ -50,7 +54,11 @@ namespace CIDER.LoadIO
                         }
                         try
                         {
-                            data.Acceleration.Add(new Tuple<float, float, float>(float.Parse(split[4]), float.Parse(split[5]), float.Parse(split[6])));
+                            var tp = new Tuple<float, float, float>(float.Parse(split[4]), float.Parse(split[5]), float.Parse(split[6]));
+
+                            data.XAcceleration.Add(tp.Item1);
+                            data.YAcceleration.Add(tp.Item2);
+                            data.ZAcceleration.Add(tp.Item3);
                         }
                         catch (Exception ex)
                         {
@@ -67,8 +75,10 @@ namespace CIDER.LoadIO
                     }
                 }
 
-                data.DataPointsVelocity = data.Velocity.Count;
-                data.DataPointsAcceleration = data.Acceleration.Count;
+                data.DataPointsVelocity = Math.Min(data.XVelocity.Count, data.YVelocity.Count);
+                data.DataPointsVelocity = Math.Min(data.DataPointsVelocity, data.ZVelocity.Count);
+                data.DataPointsAcceleration = Math.Min(data.XAcceleration.Count, data.YAcceleration.Count);
+                data.DataPointsAcceleration = Math.Min(data.DataPointsAcceleration, data.ZAcceleration.Count);
             }
             catch(Exception ex)
             {

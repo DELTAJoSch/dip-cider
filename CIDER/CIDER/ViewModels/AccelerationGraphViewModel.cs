@@ -23,20 +23,9 @@ namespace CIDER.ViewModels
 
             PlotManager manager = new PlotManager();
 
-            List<float> x = new List<float>();
-            List<float> y = new List<float>();
-            List<float> z = new List<float>();
-
-            Parallel.ForEach(_data.Acceleration, tp =>
-            {
-                x.Add(tp.Item1);
-                y.Add(tp.Item2);
-                z.Add(tp.Item3);
-            });
-
-            manager.AddLineSeries(x, "F/B", OxyColors.Blue);
-            manager.AddLineSeries(y, "L/R", OxyColors.Chartreuse);
-            manager.AddLineSeries(z, "U/D", OxyColors.Gold);
+            manager.AddLineSeries(_data.XAcceleration, "F/B", OxyColors.Blue);
+            manager.AddLineSeries(_data.YAcceleration, "L/R", OxyColors.Chartreuse);
+            manager.AddLineSeries(_data.ZAcceleration, "U/D", OxyColors.Gold);
 
             Plot = manager.GetPlotModel("Acceleration");
         }

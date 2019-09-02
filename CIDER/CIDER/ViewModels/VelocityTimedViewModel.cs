@@ -44,7 +44,7 @@ namespace CIDER.ViewModels
 
             RMaxFB = LMaxFB = RMaxLR = LMaxLR = RMaxUD = LMaxUD = 400;
 
-            if((_data.Velocity.Count == 0) == false)
+            if((_data.DataPointsVelocity == 0) == false)
             {
                 SliderValueChanged(0);
             }
@@ -71,44 +71,46 @@ namespace CIDER.ViewModels
 
         public void SliderValueChanged(int value)
         {
-            var tuple = _data.Velocity.ElementAt(value);
+            float x = _data.XVelocity.ElementAt(value);
+            float y = _data.YVelocity.ElementAt(value);
+            float z = _data.ZVelocity.ElementAt(value); ;
 
-            if (tuple.Item1 < 0)
+            if (x < 0)
             {
                 LValFB = 0;
-                RValFB = -tuple.Item1;
+                RValFB = -x;
             }
             else
             {
-                LValFB = tuple.Item1;
+                LValFB = x;
                 RValFB = 0;
             }
 
-            if (tuple.Item2 < 0)
+            if (y < 0)
             {
                 LValLR = 0;
-                RValLR = -tuple.Item2;
+                RValLR = -y;
             }
             else
             {
-                LValLR = tuple.Item2;
+                LValLR = y;
                 RValLR = 0;
             }
 
-            if (tuple.Item1 < 0)
+            if (z < 0)
             {
                 LValUD = 0;
-                RValUD = -tuple.Item3;
+                RValUD = -z;
             }
             else
             {
-                LValUD = tuple.Item3;
+                LValUD = z;
                 RValUD = 0;
             }
 
-            FBText = String.Format("Forwards/Backwards: {0} m/s", tuple.Item1);
-            UDText = String.Format("Up/Down: {0} m/s", tuple.Item3);
-            LRText = String.Format("Left/Right: {0} m/s", tuple.Item2); 
+            FBText = String.Format("Forwards/Backwards: {0} m/s", x);
+            UDText = String.Format("Up/Down: {0} m/s", y);
+            LRText = String.Format("Left/Right: {0} m/s", z); 
         }
 
         //The following are the Data Bindings for the values

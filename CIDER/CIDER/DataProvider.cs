@@ -14,8 +14,12 @@ namespace CIDER
     {
         public DataProvider()
         {
-            this._acceleration = new List<Tuple<float, float, float>>();
-            this._velocity = new List<Tuple<float, float, float>>();
+            this._xAcceleration = new List<float>();
+            this._xVelocity = new List<float>();
+            this._yAcceleration = new List<float>();
+            this._yVelocity = new List<float>();
+            this._zAcceleration = new List<float>();
+            this._zVelocity = new List<float>();
             this._pressure = new List<float>();
             this._height = new List<float>();
             this._route = new LocationCollection();
@@ -31,8 +35,12 @@ namespace CIDER
         private LocationCollection _route;
         private List<float> _pressure;
         private List<float> _height;
-        private List<Tuple<float, float, float>> _acceleration;
-        private List<Tuple<float, float, float>> _velocity;
+        private List<float> _xAcceleration;
+        private List<float> _yAcceleration;
+        private List<float> _zAcceleration;
+        private List<float> _xVelocity;
+        private List<float> _yVelocity;
+        private List<float> _zVelocity;
         private bool _isValidRoute;
         private int _averageSattelitesInUse;
         private int _numberOfPoints;
@@ -41,12 +49,16 @@ namespace CIDER
         public DateTime RouteDate { get { return _routeDate; } set { _routeDate = value; } }
         public DateTime RouteStartTime { get { return _routeStartTime; } set { _routeStartTime = value; } }
         public DateTime RouteEndTime { get { return _routeEndTime; } set { _routeEndTime = value; } }
-        public List<Tuple<float,float,float>> Acceleration { get { return _acceleration; } set { _acceleration = value; } }
-        public List<Tuple<float,float,float>> Velocity { get { return _velocity; } set { _velocity = value; } }
         public bool IsValidRoute { get { return _isValidRoute; } set { _isValidRoute = value; } }
         public int DataPointsAcceleration { get { return _dataPointsAcceleration; } set { _dataPointsAcceleration = value; } }
         public int DataPointsVelocity { get { return _dataPointsVelocity; } set { _dataPointsVelocity = value; } }
         public List<float> Pressure { get { return _pressure; } set { _pressure = value; } }
+        public List<float> XAcceleration { get { return _xAcceleration; } set { _xAcceleration = value; } }
+        public List<float> YAcceleration { get { return _yAcceleration; } set { _yAcceleration = value; } }
+        public List<float> ZAcceleration { get { return _zAcceleration; } set { _zAcceleration = value; } }
+        public List<float> XVelocity { get { return _xVelocity; } set { _xVelocity = value; } }
+        public List<float> YVelocity { get { return _yVelocity; } set { _yVelocity = value; } }
+        public List<float> ZVelocity { get { return _zVelocity; } set { _zVelocity = value; } }
         public List<float> Height { get { return _height; } set { _height = value; } }
         public LocationCollection Route { get { return _route; } set { _route = value; } }
         public int AverageSattelitesInUse { get { return _averageSattelitesInUse; } set
@@ -69,8 +81,12 @@ namespace CIDER
         {
             try
             {
-                this._acceleration = new List<Tuple<float, float, float>>();
-                this._velocity = new List<Tuple<float, float, float>>();
+                this._xAcceleration = new List<float>();
+                this._xVelocity = new List<float>();
+                this._yAcceleration = new List<float>();
+                this._yVelocity = new List<float>();
+                this._zAcceleration = new List<float>();
+                this._zVelocity = new List<float>();
                 this._pressure = new List<float>();
                 this._height = new List<float>();
                 this._route = new LocationCollection();
@@ -85,7 +101,7 @@ namespace CIDER
                 this._dataPointsVelocity = new int();
 
                 return true;
-            }catch(Exception ex)
+            }catch(Exception)
             {
                 return false;
             }

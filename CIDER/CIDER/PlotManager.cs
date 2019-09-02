@@ -13,7 +13,6 @@ namespace CIDER
     ///ToDo: Redesign in order to allow any List with floats
     {
         private PlotModel _plot;
-        private string _title;
         private List<LineSeries> Series;
         public PlotManager()
         {
@@ -31,7 +30,7 @@ namespace CIDER
         {
             //Create a new PlotModel
             PlotModel CreatePlot = new PlotModel();
-            CreatePlot.Title = _title;
+            CreatePlot.Title = Title;
 
             Parallel.ForEach(Series, x =>
             {
@@ -49,7 +48,8 @@ namespace CIDER
             {
                 var pdfExporter = new PdfExporter { Width = 600, Height = 400 };
                 pdfExporter.Export(_plot, stream);
-            }
+            }
+
         }
         private async Task<List<DataPoint>> GetLineSeriesAsync(List<float> data, int interval)
         ///This Task reads all the data points and convert them to line series
