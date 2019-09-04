@@ -17,11 +17,14 @@ namespace CIDER.ViewModels
         ///When the button in the view is pressed, the view model responds to it by calling the function fromn the processStarter interface
     {
         private readonly DelegateCommand _mailToClick;
+        private readonly DelegateCommand _setApiKey;
         private readonly IProcessStarter _handler;
+        private KeyManager _manager;
 
-        public AboutViewModel(IProcessStarter starter)
+        public AboutViewModel(IProcessStarter starter, KeyManager manager)
         {
             _mailToClick = new DelegateCommand(mailto);
+            _setApiKey = new DelegateCommand(setApiKey);
             AboutText = "This Software is Licensed under the GNU GPL - v3.\nThis Software was designed and written by Johannes Schiemer for his school diploma " +
                 "project. The software is designed to be used in conjunction with the FDR built and engineered by Klaus Obermüller and Alexander Stoiber.\nWe are NOT responsible for any " +
                 "damages created through misuse, user errors ore unexpected behaviour." +
@@ -30,12 +33,19 @@ namespace CIDER.ViewModels
                 "any of the other menu options where you can enjoy the full functionality of this program";
 
             _handler = starter;
+            _manager = manager;
         }
 
         public ICommand RequestNavigate => _mailToClick;
         private void mailto(object sender) //executed by button
         {
             _handler.Start(new ProcessStartInfo("mailto:deltajosch@gmail.com"));
+        }
+
+        public ICommand SetApiKey => _setApiKey;
+        private void setApiKey(object sender) //executed by button
+        {
+            _manager.Put();
         }
 
         private string _aboutText;

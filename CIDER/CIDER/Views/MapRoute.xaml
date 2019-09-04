@@ -10,6 +10,6 @@
       Title="MapRoute">
 
     <Grid>
-        <m1:Map CredentialsProvider="123" Mode="AerialWithLabels"/>
+        <m1:Map CredentialsProvider="{Binding Path=APIKey}" Mode="AerialWithLabels"/>
     </Grid>
 </Page>

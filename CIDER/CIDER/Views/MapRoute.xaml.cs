@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CIDER.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,12 @@ namespace CIDER.Views
     /// </summary>
     public partial class MapRoute : Page
     {
-        public MapRoute()
+        public MapRoute(DataProvider data)
         {
             InitializeComponent();
+
+            MapRouteViewModel model = new MapRouteViewModel(data);
+            this.DataContext = model;
         }
     }
 }

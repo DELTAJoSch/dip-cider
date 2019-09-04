@@ -21,11 +21,11 @@ namespace CIDER.Views
     /// </summary>
     public partial class About : Page
     {
-        public About()
+        public About(DataProvider data)
         {
             InitializeComponent();
 
-            var context = new AboutViewModel(new Starter());
+            var context = new AboutViewModel(new Starter(), new KeyManager(data));
             this.DataContext = context;
         }
     }

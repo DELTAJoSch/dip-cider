@@ -44,8 +44,10 @@ namespace CIDER
         private bool _isValidRoute;
         private int _averageSattelitesInUse;
         private int _numberOfPoints;
+        private string _apiKey;
 
         public string RouteName { get { return _routeName; } set { _routeName = value; } }
+        public string APIKey { get { return _apiKey; } set { _apiKey = value; } }
         public DateTime RouteDate { get { return _routeDate; } set { _routeDate = value; } }
         public DateTime RouteStartTime { get { return _routeStartTime; } set { _routeStartTime = value; } }
         public DateTime RouteEndTime { get { return _routeEndTime; } set { _routeEndTime = value; } }
