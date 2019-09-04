@@ -9,13 +9,19 @@ namespace CIDER
     /// </summary>
     public partial class MainWindow : Window
     {
+        MainWindowViewModel viewModel;
         public MainWindow()
         {
             InitializeComponent();
 
-            var viewModel = new MainWindowViewModel(frmMain);
+            viewModel = new MainWindowViewModel(frmMain);
 
             DataContext = viewModel;
+        }
+
+        private void OnUnloaded(object sender, RoutedEventArgs e)
+        {
+            viewModel.Dispose();
         }
     }
 }

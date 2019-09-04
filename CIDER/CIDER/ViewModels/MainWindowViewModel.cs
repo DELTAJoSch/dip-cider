@@ -1,6 +1,7 @@
 ﻿using CIDER.MVVMBase;
 using CIDER.Views;
 using System;
+using System.Diagnostics.Tracing;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -8,7 +9,7 @@ using System.Windows.Input;
 namespace CIDER.ViewModels
 {
     //NOTICE: due to the .net core restrictions, this class is untestable as no frame can be created inside the unit test framework
-    public class MainWindowViewModel : ViewModelBase
+    public class MainWindowViewModel : ViewModelBase, IDisposable
     /*/Summary
      * This is the ViewModel for the Main Window (contains view selection buttons and frame)
      * This class handles the button presses - they change the views
@@ -30,6 +31,8 @@ namespace CIDER.ViewModels
 
         private readonly DelegateCommand _changeToVelocityTimedCommand;
 
+        private bool _mapEnabled;
+
         private Frame _frame;
 
         private DataProvider dataProvider;
@@ -50,10 +53,26 @@ namespace CIDER.ViewModels
             _changeToVelocityGraphCommand = new DelegateCommand(OnChangeToVelocityGraph);
             _changeToVelocityTimedCommand = new DelegateCommand(OnChangeToVelocityTimed);
 
-            _frame.Navigate(new About());
+            _frame.Navigate(new About(dataProvider));
 
             dataProvider = new DataProvider();
+
+            MapEnabled = true;
+
+            KeyManager manager = new KeyManager(dataProvider);
+            if (!manager.Fetch())
+            {
+                MapEnabled = false;
+            }
+
+            KeyManager.MapKeyChangedEvent += KeyManager_MapKeyChangedEvent;
         }
+
+        private void KeyManager_MapKeyChangedEvent(object sender, EventArgs e)
+        {
+            UpdateMapStatus();
+        }
+
         public ICommand ChangeToAboutCommand => _changeToAboutCommand;
         public ICommand ChangeToAngleGraphCommand => _changeToAngleGraphCommand;
         public ICommand ChangeToAngleTimedCommand => _changeToAngleTimedCommand;
@@ -63,10 +82,23 @@ namespace CIDER.ViewModels
         public ICommand ChangeToVelocityGraphCommand => _changeToVelocityGraphCommand;
         public ICommand ChangeToVelocityTimedCommand => _changeToVelocityTimedCommand;
 
+        public bool MapEnabled { get { return _mapEnabled; } set { SetProperty(ref _mapEnabled, value); } }
+
+        private void UpdateMapStatus()
+        {
+            MapEnabled = true;
+
+            KeyManager manager = new KeyManager(dataProvider);
+            if (!manager.Fetch())
+            {
+                MapEnabled = false;
+            }
+        }
+
         //these functions are called on button presses
         private void OnChangeToAbout(object sender)
         {
-            _frame.Navigate(new About());
+            _frame.Navigate(new About(dataProvider));
         }
 
         private void OnChangeToAngleGraph(object sender)
@@ -85,7 +117,7 @@ namespace CIDER.ViewModels
         }
         private void OnChangeToMapRoute(object sender)
         {
-            _frame.Navigate(new MapRoute());
+            _frame.Navigate(new MapRoute(dataProvider));
         }
 
         private void OnChangeToMapTimed(object sender)
@@ -101,6 +133,11 @@ namespace CIDER.ViewModels
         private void OnChangeToVelocityTimed(object sender)
         {
             _frame.Navigate(new VelocityTimed(dataProvider));
+        }
+
+        public void Dispose()
+        {
+            KeyManager.MapKeyChangedEvent -= KeyManager_MapKeyChangedEvent;
         }
     }
 }

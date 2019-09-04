@@ -9,13 +9,15 @@
 
     <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
         <Grid.RowDefinitions>
-            <RowDefinition Height="69*"/>
-            <RowDefinition Height="197*"/>
-            <RowDefinition Height="21*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="141*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
         </Grid.RowDefinitions>
 
-        <Button Content="E-Mail Us!" HorizontalAlignment="Stretch" Margin="0,0.667,0,0" Grid.Row="2" VerticalAlignment="Stretch" Command="{Binding Path=RequestNavigate}"/>
-        <TextBlock HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="{Binding Path=InfoText}" VerticalAlignment="Stretch" Width="auto" Margin="0,0,0,0.333"/>
-        <TextBlock HorizontalAlignment="Stretch" Margin="0,4.667,0,0" TextWrapping="Wrap" Text="{Binding Path=AboutText}" VerticalAlignment="Stretch" Height="auto" Width="auto" Grid.Row="1"/>
+        <Button Content="E-Mail Us!" HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" Command="{Binding Path=RequestNavigate}" Margin="10"/>
+        <TextBlock HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="{Binding Path=InfoText}" VerticalAlignment="Stretch" Width="auto" Margin="0,0,0,1.667"/>
+        <TextBlock HorizontalAlignment="Stretch" Margin="0,3.333,0,1" TextWrapping="Wrap" Text="{Binding Path=AboutText}" VerticalAlignment="Stretch" Height="auto" Width="auto" Grid.Row="1"/>
+        <Button Content="Set API Key" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" Command="{Binding Path=SetApiKey}" Margin="10"/>
     </Grid>
 </Page>
