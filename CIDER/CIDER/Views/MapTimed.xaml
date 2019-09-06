@@ -4,11 +4,20 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CIDER.Views"
+      xmlns:m1="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MapTimed">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="199*"/>
+            <RowDefinition Height="26*"/>
+        </Grid.RowDefinitions>
+        <DockPanel VerticalAlignment="Stretch" Margin="10" Grid.Row="3" HorizontalAlignment="Stretch">
+            <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="40" />
+            <Slider Maximum="{Binding Path=slMaximum}" TickPlacement="BottomRight" TickFrequency="{Binding Path=slTickFrequency}" Name="slValue" ValueChanged="slValueChanged" SmallChange="1" LargeChange="10" IsSnapToTickEnabled="True" />
+        </DockPanel>
+        <m1:Map CredentialsProvider="{Binding Path=APIKey}" Center="48.236096, 14.188624" ZoomLevel="12.6" Mode="AerialWithLabels"/>
     </Grid>
 </Page>

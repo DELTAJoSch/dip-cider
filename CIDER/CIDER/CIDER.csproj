@@ -99,6 +99,7 @@
     </ApplicationDefinition>
     <Compile Include="DataProvider.cs" />
     <Compile Include="Exceptions.cs" />
+    <Compile Include="ExtraMath.cs" />
     <Compile Include="KeyManager.cs" />
     <Compile Include="LoadIO\FileIO.cs" />
     <Compile Include="LoadIO\FolderChecker.cs" />

@@ -24,5 +24,10 @@ namespace CIDER.Views
         {
             InitializeComponent();
         }
+
+        public void slValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
