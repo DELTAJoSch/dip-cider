@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CIDER.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,13 @@ namespace CIDER.Views
     /// </summary>
     public partial class MapTimed : Page
     {
-        public MapTimed()
+        MapTimedViewModel model;
+        public MapTimed(DataProvider data)
         {
             InitializeComponent();
+
+            model = new MapTimedViewModel(data);
+            this.DataContext = model;
         }
 
         public void slValueChanged(object sender, EventArgs e)

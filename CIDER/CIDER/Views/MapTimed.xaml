@@ -16,7 +16,7 @@
         </Grid.RowDefinitions>
         <DockPanel VerticalAlignment="Stretch" Margin="10" Grid.Row="3" HorizontalAlignment="Stretch">
             <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="40" />
-            <Slider Maximum="{Binding Path=slMaximum}" TickPlacement="BottomRight" TickFrequency="{Binding Path=slTickFrequency}" Name="slValue" ValueChanged="slValueChanged" SmallChange="1" LargeChange="10" IsSnapToTickEnabled="True" />
+            <Slider Maximum="{Binding Path=slMaximum}" VerticalAlignment="Stretch" TickPlacement="BottomRight" TickFrequency="{Binding Path=slTickFrequency}" Name="slValue" ValueChanged="slValueChanged" SmallChange="1" LargeChange="10" IsSnapToTickEnabled="True" />
         </DockPanel>
         <m1:Map CredentialsProvider="{Binding Path=APIKey}" Center="48.236096, 14.188624" ZoomLevel="12.6" Mode="AerialWithLabels"/>
     </Grid>
