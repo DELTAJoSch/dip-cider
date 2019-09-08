@@ -107,6 +107,7 @@
     <Compile Include="MVVMBase\ViewModelBase.cs" />
     <Compile Include="PlotManager.cs" />
     <Compile Include="ProcessStarter.cs" />
+    <Compile Include="RouteMaker.cs" />
     <Compile Include="SystemTime.cs" />
     <Compile Include="ViewModels\AccelerationGraphViewModel.cs" />
     <Compile Include="ViewModels\AccelerationTimedViewModel.cs" />

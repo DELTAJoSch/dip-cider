@@ -1,4 +1,5 @@
 ﻿using CIDER.ViewModels;
+using Microsoft.Maps.MapControl.WPF;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,11 +29,30 @@ namespace CIDER.Views
 
             model = new MapTimedViewModel(data);
             this.DataContext = model;
+
+            model.RouteChangedEvent += Model_RouteChangedEvent;
+
+            model.Init();
+        }
+
+        private void Model_RouteChangedEvent(object sender, EventArgs e)
+        {
+            map.Children.Clear();
+
+            foreach (MapPolyline line in model.MapPolylines)
+            {
+                map.Children.Add(line);
+            }
         }
 
         public void slValueChanged(object sender, EventArgs e)
         {
+            model.UpdateRoute((int)slValue.Value);
+        }
 
+        private void onUnload(object sender, RoutedEventArgs e)
+        {
+            model.RouteChangedEvent -= Model_RouteChangedEvent;
         }
     }
 }
