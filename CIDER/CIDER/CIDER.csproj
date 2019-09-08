@@ -99,6 +99,7 @@
     </ApplicationDefinition>
     <Compile Include="DataProvider.cs" />
     <Compile Include="Exceptions.cs" />
+    <Compile Include="ExtraMath.cs" />
     <Compile Include="KeyManager.cs" />
     <Compile Include="LoadIO\FileIO.cs" />
     <Compile Include="LoadIO\FolderChecker.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="MVVMBase\ViewModelBase.cs" />
     <Compile Include="PlotManager.cs" />
     <Compile Include="ProcessStarter.cs" />
+    <Compile Include="RouteMaker.cs" />
     <Compile Include="SystemTime.cs" />
     <Compile Include="ViewModels\AccelerationGraphViewModel.cs" />
     <Compile Include="ViewModels\AccelerationTimedViewModel.cs" />

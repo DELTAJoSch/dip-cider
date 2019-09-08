@@ -1,0 +1,116 @@
+2019-09-08 18:33:04.8195	DEBUG	element not available	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.ArgumentOutOfRangeException: Der Index lag außerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 62."	
+2019-09-08 18:33:04.8634	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	
+2019-09-08 18:33:05.6769	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	
+2019-09-08 18:33:06.4061	DEBUG	element not available	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.ArgumentOutOfRangeException: Der Index lag außerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 62."	
+2019-09-08 18:33:06.4271	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	
+2019-09-08 18:33:08.5630	DEBUG	element not available	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.ArgumentOutOfRangeException: Der Index lag außerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 62."	
+2019-09-08 18:33:08.5810	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	
+2019-09-08 18:33:08.7201	DEBUG	element not available	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.ArgumentOutOfRangeException: Der Index lag außerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 62."	
+2019-09-08 18:33:08.7371	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	
+2019-09-08 18:33:08.8775	DEBUG	element not available	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.ArgumentOutOfRangeException: Der Index lag außerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 62."	
+2019-09-08 18:33:08.8944	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	
+2019-09-08 18:33:09.0607	DEBUG	element not available	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.ArgumentOutOfRangeException: Der Index lag außerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 62."	
+2019-09-08 18:33:09.0776	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	
+2019-09-08 18:33:09.2535	DEBUG	element not available	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.ArgumentOutOfRangeException: Der Index lag außerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 62."	
+2019-09-08 18:33:09.2705	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	
+2019-09-08 18:33:09.4131	DEBUG	element not available	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.ArgumentOutOfRangeException: Der Index lag außerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 62."	
+2019-09-08 18:33:09.4281	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	
+2019-09-08 18:33:09.5239	DEBUG	element not available	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.ArgumentOutOfRangeException: Der Index lag außerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 62."	
+2019-09-08 18:33:09.5398	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	
+2019-09-08 18:33:09.6247	DEBUG	element not available	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.ArgumentOutOfRangeException: Der Index lag außerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 62."	
+2019-09-08 18:33:09.6479	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	
+2019-09-08 18:33:09.7368	DEBUG	element not available	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.ArgumentOutOfRangeException: Der Index lag außerhalb des Bereichs. Er darf nicht negativ und kleiner als die Sammlung sein.
+Parametername: index
+   bei System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   bei System.Collections.Generic.List`1.get_Item(Int32 index)
+   bei System.Collections.ObjectModel.Collection`1.get_Item(Int32 index)
+   bei System.Linq.Enumerable.ElementAt[TSource](IEnumerable`1 source, Int32 index)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 62."	
+2019-09-08 18:33:09.7538	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	
+2019-09-08 18:33:09.8976	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	RangeBase.OnValueChanged => UIElement.RaiseEvent => UIElement.RaiseEventImpl => EventRoute.InvokeHandlersImpl => RoutedEventHandlerInfo.InvokeHandler => RoutedEventArgs.InvokeHandler => RoutedPropertyChangedEventArgs`1.InvokeEventHandler => MapTimed.slValueChanged => MapTimedViewModel.UpdateRoute => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data, Int32 NumberOfPoints) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 77."	

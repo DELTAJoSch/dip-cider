@@ -122,7 +122,7 @@ namespace CIDER.ViewModels
 
         private void OnChangeToMapTimed(object sender)
         {
-            _frame.Navigate(new MapTimed());
+            _frame.Navigate(new MapTimed(dataProvider));
         }
 
         private void OnChangeToVelocityGraph(object sender)

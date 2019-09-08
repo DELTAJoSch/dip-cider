@@ -96,7 +96,8 @@ namespace CIDER
         private void RaiseEvent(EventArgs e)
         {
             EventHandler handler = MapKeyChangedEvent;
-            handler.Invoke(this, e);
+            if (handler != null)
+                handler.Invoke(this, e);
         }
     }
 }
