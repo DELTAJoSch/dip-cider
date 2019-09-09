@@ -31,6 +31,8 @@ namespace CIDER.ViewModels
 
         private readonly DelegateCommand _changeToVelocityTimedCommand;
 
+        private readonly DelegateCommand _changeToHeightCommand;
+
         private bool _mapEnabled;
 
         private Frame _frame;
@@ -44,6 +46,7 @@ namespace CIDER.ViewModels
             _frame = frame;
 
             //connect delegate commands to icommand handlers
+            _changeToHeightCommand = new DelegateCommand(OnChangeToHeight);
             _changeToLoadCommand = new DelegateCommand(OnChangeToLoad);
             _changeToAboutCommand = new DelegateCommand(OnChangeToAbout);
             _changeToAngleGraphCommand = new DelegateCommand(OnChangeToAngleGraph);
@@ -67,7 +70,6 @@ namespace CIDER.ViewModels
 
             KeyManager.MapKeyChangedEvent += KeyManager_MapKeyChangedEvent;
         }
-
         private void KeyManager_MapKeyChangedEvent(object sender, EventArgs e)
         {
             UpdateMapStatus();
@@ -81,6 +83,7 @@ namespace CIDER.ViewModels
         public ICommand ChangeToMapTimedCommand => _changeToMapTimedCommand;
         public ICommand ChangeToVelocityGraphCommand => _changeToVelocityGraphCommand;
         public ICommand ChangeToVelocityTimedCommand => _changeToVelocityTimedCommand;
+        public ICommand ChangeToHeightCommand => _changeToHeightCommand;
 
         public bool MapEnabled { get { return _mapEnabled; } set { SetProperty(ref _mapEnabled, value); } }
 
@@ -100,7 +103,6 @@ namespace CIDER.ViewModels
         {
             _frame.Navigate(new About(dataProvider));
         }
-
         private void OnChangeToAngleGraph(object sender)
         {
             _frame.Navigate(new AccelerationGraph(dataProvider));
@@ -133,6 +135,11 @@ namespace CIDER.ViewModels
         private void OnChangeToVelocityTimed(object sender)
         {
             _frame.Navigate(new VelocityTimed(dataProvider));
+        }
+
+        private void OnChangeToHeight(object sender)
+        {
+            _frame.Navigate(new Height(dataProvider));
         }
 
         public void Dispose()

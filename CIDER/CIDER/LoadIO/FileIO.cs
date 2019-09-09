@@ -72,6 +72,14 @@ namespace CIDER.LoadIO
                         {
                             logger.Error(ex, "Couldn't Convert to float");
                         }
+                        try
+                        {
+                            data.Height.Add(float.Parse(split[8]));
+                        }
+                        catch (Exception ex)
+                        {
+                            logger.Error(ex, "Couldn't Convert to float");
+                        }
                     }
                 }
 
