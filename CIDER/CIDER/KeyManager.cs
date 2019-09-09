@@ -14,20 +14,22 @@ namespace CIDER
         public static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         DataProvider _data;
         public static event EventHandler MapKeyChangedEvent;
-        public KeyManager(DataProvider data)
+        private IKeyManagerReader _reader;
+        public KeyManager(DataProvider data, IKeyManagerReader reader)
         {
             _data = data;
+            _reader = reader;
         }
 
         public bool Fetch()
         {
             try
             {
-                string[] cfg = File.ReadAllLines("CIDER.cfg");
+                string[] cfg = _reader.ReadAllLines("CIDER.cfg");
 
-                if (File.Exists(cfg[0]))
+                if (_reader.FileExists(cfg[0]))
                 {
-                    string[] key = File.ReadAllLines(cfg[0]);
+                    string[] key = _reader.ReadAllLines(cfg[0]);
 
                     _data.APIKey = key[0];
 
@@ -58,7 +60,7 @@ namespace CIDER
             OpenFileDialog dialog = new OpenFileDialog();
             try
             {
-                string[] cfg = File.ReadAllLines("CIDER.cfg");
+                string[] cfg = _reader.ReadAllLines("CIDER.cfg");
 
                 dialog.Title = "Select API Key File";
                 dialog.Filter = "key files(*.key) | *.key";
@@ -67,11 +69,11 @@ namespace CIDER
                 dialog.AddExtension = true;
                 dialog.DefaultExt = ".key";
 
-                if(dialog.ShowDialog() == DialogResult.OK)
+                if(_reader.ShowDialog(dialog) == DialogResult.OK)
                 {
                     cfg[0] = dialog.FileName;
 
-                    File.WriteAllLines("CIDER.cfg", cfg);
+                    _reader.WriteAllLines(cfg, "CIDER.cfg");
                     RaiseEvent(new EventArgs());
                     return true;
                 }
@@ -82,7 +84,7 @@ namespace CIDER
             }
             catch (IndexOutOfRangeException ex)
             {
-                File.WriteAllText("CIDER.cfg", dialog.FileName);
+                _reader.WriteAllText(dialog.FileName, "CIDER.cfg");
                 RaiseEvent(new EventArgs());
                 return true;
             }
@@ -98,6 +100,43 @@ namespace CIDER
             EventHandler handler = MapKeyChangedEvent;
             if (handler != null)
                 handler.Invoke(this, e);
+        }
+    }
+
+    public interface IKeyManagerReader
+    {
+        string[] ReadAllLines(string filename);
+        DialogResult ShowDialog(OpenFileDialog dialog);
+        void WriteAllLines(string[] lines, string filename);
+        void WriteAllText(string text, string filename);
+        bool FileExists(string filename);
+    }
+
+    public class KeyManagerReader : IKeyManagerReader
+    {
+        public bool FileExists(string filename)
+        {
+            return File.Exists(filename);
+        }
+
+        public string[] ReadAllLines(string filename)
+        {
+            return File.ReadAllLines(filename);
+        }
+
+        public DialogResult ShowDialog(OpenFileDialog dialog)
+        {
+            return dialog.ShowDialog();
+        }
+
+        public void WriteAllLines(string[] lines, string filename)
+        {
+            File.WriteAllLines(filename, lines);
+        }
+
+        public void WriteAllText(string text, string filename)
+        {
+            File.WriteAllText(filename, text);
         }
     }
 }

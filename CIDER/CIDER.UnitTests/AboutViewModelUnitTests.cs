@@ -15,7 +15,7 @@ namespace CIDER.UnitTests
         public void AboutViewModel_MailtoClick_CallsProcessStarter()
         {
             var handler = Substitute.For<TestStarter>();
-            AboutViewModel about = new AboutViewModel(handler);
+            AboutViewModel about = new AboutViewModel(handler, new KeyManager(new DataProvider(), new KeyManagerReader()));
 
             about.RequestNavigate.Execute(this);
 
@@ -28,7 +28,7 @@ namespace CIDER.UnitTests
         {
             var handler = Substitute.For<TestStarter>();
             bool wasCalled = false;
-            AboutViewModel about = new AboutViewModel(handler);
+            AboutViewModel about = new AboutViewModel(handler, new KeyManager(new DataProvider(), new KeyManagerReader()));
             about.PropertyChanged += (o, e) => { wasCalled = true; };
 
             if(methodName == "AboutText")
