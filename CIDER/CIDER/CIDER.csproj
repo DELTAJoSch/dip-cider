@@ -111,6 +111,7 @@
     <Compile Include="SystemTime.cs" />
     <Compile Include="ViewModels\AccelerationGraphViewModel.cs" />
     <Compile Include="ViewModels\AccelerationTimedViewModel.cs" />
+    <Compile Include="ViewModels\HeightViewModel.cs" />
     <Compile Include="ViewModels\LoadViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\MapRouteViewModel.cs" />
@@ -125,6 +126,9 @@
     </Compile>
     <Compile Include="Views\AccelerationTimed.xaml.cs">
       <DependentUpon>AccelerationTimed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Height.xaml.cs">
+      <DependentUpon>Height.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Load.xaml.cs">
       <DependentUpon>Load.xaml</DependentUpon>
@@ -162,6 +166,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\AccelerationTimed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Height.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

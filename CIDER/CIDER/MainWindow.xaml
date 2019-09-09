@@ -20,6 +20,7 @@
             <Button Content="Acc - Timed" Command="{Binding Path=ChangeToAngleTimedCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
             <Button Content="Velocity - Timed" Command="{Binding Path=ChangeToVelocityTimedCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
             <Button Content="About" Command="{Binding Path=ChangeToAboutCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="Height" Command="{Binding Path=ChangeToHeightCommand}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
         </StackPanel>
         <Frame Grid.Column="1" Margin="10,10,10.333,9.667" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="frmMain"/>
 
