@@ -17,9 +17,10 @@ namespace CIDER.ViewModels
         private IFolderSelectionInterface _folderSelector;
         private IChecker _folderChecker;
         private FileIO _fileIO;
+        private MainWindowViewModel _main;
         private string _path;
 
-        public LoadViewModel(DataProvider data, IChecker folderChecker, IFolderSelectionInterface selector, FileIO fileIO)
+        public LoadViewModel(DataProvider data, IChecker folderChecker, IFolderSelectionInterface selector, FileIO fileIO, MainWindowViewModel main)
         ///The constructor takes the different Objects as Arguments - this makes the code testable
         {
             _dataProvider = data;
@@ -28,6 +29,7 @@ namespace CIDER.ViewModels
             _folderChecker = folderChecker;
             _folderSelector = selector;
             _fileIO = fileIO;
+            _main = main;
         }
 
         public ICommand LoadClickCommand => _loadClickCommand;
@@ -37,8 +39,8 @@ namespace CIDER.ViewModels
         {
             _dataProvider.ClearData();
 
-            _fileIO.ReadCSV(_dataProvider, _path, new Reader());
-            _fileIO.ReadNmea(_dataProvider, _path, new Reader());
+            _fileIO.ReadCSV(_dataProvider, _path, new Reader(), _main);
+            _fileIO.ReadNmea(_dataProvider, _path, new Reader(), _main);
 
             logger.Debug("Load Clicked");
         }

@@ -46,3 +46,5 @@ H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\Views\AccelerationTimed.baml
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\Views\Height.g.cs
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\Views\Height.baml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\LoadBoxWindow.g.cs
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\LoadBoxWindow.baml

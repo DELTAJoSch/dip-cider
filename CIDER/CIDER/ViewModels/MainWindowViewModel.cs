@@ -35,6 +35,10 @@ namespace CIDER.ViewModels
 
         private bool _mapEnabled;
 
+        private bool _mapAvailable;
+
+        private bool _buttonEnabled;
+
         private object _frameContent;
 
         private DataProvider dataProvider;
@@ -59,12 +63,16 @@ namespace CIDER.ViewModels
             dataProvider = new DataProvider();
 
             MapEnabled = true;
+            _mapAvailable = true;
 
             KeyManager manager = new KeyManager(dataProvider, new KeyManagerReader());
             if (!manager.Fetch())
             {
                 MapEnabled = false;
+                _mapAvailable = false;
             }
+
+            ButtonState(true);
 
             KeyManager.MapKeyChangedEvent += KeyManager_MapKeyChangedEvent;
         }
@@ -85,15 +93,18 @@ namespace CIDER.ViewModels
 
         public bool MapEnabled { get { return _mapEnabled; } set { SetProperty(ref _mapEnabled, value); } }
         public object FrameContent { get { return _frameContent; } private set { _frameContent = value; } }
+        public bool ButtonEnabled { get { return _buttonEnabled; } set { SetProperty(ref _buttonEnabled, value); } }
 
         private void UpdateMapStatus()
         {
             MapEnabled = true;
+            _mapAvailable = true;
 
             KeyManager manager = new KeyManager(dataProvider, new KeyManagerReader());
             if (!manager.Fetch())
             {
                 MapEnabled = false;
+                _mapAvailable = false;
             }
         }
 
@@ -123,7 +134,7 @@ namespace CIDER.ViewModels
 
         private void OnChangeToLoad(object sender)
         {
-            FrameContent = new Load(dataProvider);
+            FrameContent = new Load(dataProvider, this);
             RaiseEvent(new EventArgs());
         }
         private void OnChangeToMapRoute(object sender)
@@ -163,6 +174,13 @@ namespace CIDER.ViewModels
                 handler.Invoke(this, e);
         }
 
+        public void ButtonState(bool state)
+        {
+            if (_mapAvailable)
+                MapEnabled = state;
+
+            ButtonEnabled = state;
+        }
         public void Dispose()
         {
             KeyManager.MapKeyChangedEvent -= KeyManager_MapKeyChangedEvent;

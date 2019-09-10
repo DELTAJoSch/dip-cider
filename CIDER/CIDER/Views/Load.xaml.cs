@@ -22,11 +22,11 @@ namespace CIDER.Views
     public partial class Load : Page
     {
         private DataProvider _dataProvider;
-        public Load(DataProvider data)
+        public Load(DataProvider data, MainWindowViewModel main)
         {
             InitializeComponent();
             _dataProvider = data;
-            LoadViewModel loadView = new LoadViewModel(_dataProvider, new CIDER.LoadIO.FolderChecker(), new CIDER.LoadIO.FolderSelector(), new CIDER.LoadIO.FileIO());
+            LoadViewModel loadView = new LoadViewModel(_dataProvider, new CIDER.LoadIO.FolderChecker(), new CIDER.LoadIO.FolderSelector(), new CIDER.LoadIO.FileIO(), main);
             this.DataContext = loadView;
         }
     }
