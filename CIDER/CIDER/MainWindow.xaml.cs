@@ -1,6 +1,7 @@
 ﻿using CIDER.ViewModels;
 using System;
 using System.Windows;
+using System.Windows.Interop;
 
 namespace CIDER
 {
@@ -11,6 +12,9 @@ namespace CIDER
     {
         public static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         MainWindowViewModel viewModel;
+        HwndSource source;
+        public static event EventHandler OnResizeStartEvent;
+        public static event EventHandler OnResizeEndEvent;
         public MainWindow()
         {
             InitializeComponent();
@@ -22,6 +26,13 @@ namespace CIDER
             viewModel.OnFrameChangeEvent += ViewModel_OnFrameChangeEvent;
 
             viewModel.Initalize();
+        }
+
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+            base.OnSourceInitialized(e);
+            HwndSource source = PresentationSource.FromVisual(this) as HwndSource;
+            source.AddHook(WndProc);
         }
 
         private void ViewModel_OnFrameChangeEvent(object sender, EventArgs e)
@@ -40,6 +51,35 @@ namespace CIDER
             viewModel.OnFrameChangeEvent -= ViewModel_OnFrameChangeEvent;
 
             viewModel.Dispose();
+        }
+
+        private void RaiseResizeStartEvent(EventArgs e)
+        {
+            EventHandler handler = OnResizeStartEvent;
+            if (handler != null)
+                handler.Invoke(this, e);
+        }
+
+        private void RaiseResizeEndEvent(EventArgs e)
+        {
+            EventHandler handler = OnResizeEndEvent;
+            if (handler != null)
+                handler.Invoke(this, e);
+        }
+
+        private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+        {
+            if(msg == 561)
+            {
+                RaiseResizeStartEvent(new EventArgs());
+            }
+
+            if(msg == 562)
+            {
+                RaiseResizeEndEvent(new EventArgs());
+            }
+
+            return IntPtr.Zero;
         }
     }
 }

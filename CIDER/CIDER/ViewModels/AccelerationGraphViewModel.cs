@@ -9,17 +9,19 @@ using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
-    public class AccelerationGraphViewModel:ViewModelBase
+    public class AccelerationGraphViewModel : ViewModelBase, IDisposable
     ///Summary
     ///This is the View Model for the AngleGraphViewModel
     ///TODO: Make loading async or do it in an extra thread
     {
         PlotModel _plot;
+        PlotModel data;
+        PlotModel blank;
         DataProvider _data;
 
-        public AccelerationGraphViewModel(DataProvider Data)
+        public AccelerationGraphViewModel(DataProvider dataProvider)
         {
-            _data = Data;
+            _data = dataProvider;
 
             PlotManager manager = new PlotManager();
 
@@ -27,7 +29,29 @@ namespace CIDER.ViewModels
             manager.AddLineSeries(_data.YAcceleration, "L/R", OxyColors.Chartreuse);
             manager.AddLineSeries(_data.ZAcceleration, "U/D", OxyColors.Gold);
 
-            Plot = manager.GetPlotModel("Acceleration");
+            data = manager.GetPlotModel("Acceleration");
+            blank = new PlotModel();
+            blank.Title = "Acceleration";
+            Plot = data;
+
+            MainWindow.OnResizeStartEvent += MainWindow_OnResizeStartEvent;
+            MainWindow.OnResizeEndEvent += MainWindow_OnResizeEndEvent;
+        }
+
+        private void MainWindow_OnResizeEndEvent(object sender, EventArgs e)
+        {
+            Plot = data;
+        }
+
+        private void MainWindow_OnResizeStartEvent(object sender, EventArgs e)
+        {
+            Plot = blank;
+        }
+
+        public void Dispose()
+        {
+            MainWindow.OnResizeStartEvent -= MainWindow_OnResizeStartEvent;
+            MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
         }
 
         public PlotModel Plot

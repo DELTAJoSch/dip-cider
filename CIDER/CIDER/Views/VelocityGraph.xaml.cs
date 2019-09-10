@@ -21,12 +21,18 @@ namespace CIDER.Views
     /// </summary>
     public partial class VelocityGraph : Page
     {
+        private VelocityGraphViewModel model;
         public VelocityGraph(DataProvider data)
         {
             InitializeComponent();
 
-            VelocityGraphViewModel model = new VelocityGraphViewModel(data);
+            model = new VelocityGraphViewModel(data);
             this.DataContext = model;
+        }
+
+        private void Page_Unloaded(object sender, RoutedEventArgs e)
+        {
+            model.Dispose();
         }
     }
 }

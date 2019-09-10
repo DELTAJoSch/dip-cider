@@ -7,7 +7,7 @@
       xmlns:oxy="http://oxyplot.org/wpf"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="VelocityGraph">
+      Title="VelocityGraph" Unloaded="Page_Unloaded">
 
     <Grid>
         <oxy:PlotView Model="{Binding Plot}" DisconnectCanvasWhileUpdating="true"/>
