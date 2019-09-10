@@ -13,7 +13,7 @@ namespace CIDER
     ///ToDo: Redesign in order to allow any List with floats
     {
         private PlotModel _plot;
-        private List<LineSeries> Series;
+        public List<LineSeries> Series;
         public PlotManager()
         {
             Series = new List<LineSeries>();

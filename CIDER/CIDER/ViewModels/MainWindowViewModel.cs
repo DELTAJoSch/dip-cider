@@ -35,34 +35,32 @@ namespace CIDER.ViewModels
 
         private bool _mapEnabled;
 
-        private Frame _frame;
+        private object _frameContent;
 
         private DataProvider dataProvider;
 
-        public MainWindowViewModel(Frame frame)
+        public event EventHandler OnFrameChangeEvent;
+
+        public MainWindowViewModel()
         ///Due to the frame control being broken/bugged a mvvm approach is not doable without using external frameworks like mvvmlight
         ///Therefor the frame is just passed to the constructor - this is not optimal but it works without problems.The only possible problem is the decreased readability
         {
-            _frame = frame;
-
             //connect delegate commands to icommand handlers
             _changeToHeightCommand = new DelegateCommand(OnChangeToHeight);
             _changeToLoadCommand = new DelegateCommand(OnChangeToLoad);
             _changeToAboutCommand = new DelegateCommand(OnChangeToAbout);
-            _changeToAngleGraphCommand = new DelegateCommand(OnChangeToAngleGraph);
-            _changeToAngleTimedCommand = new DelegateCommand(OnChangeToAngleTimed);
+            _changeToAngleGraphCommand = new DelegateCommand(OnChangeToAccelerationGraph);
+            _changeToAngleTimedCommand = new DelegateCommand(OnChangeToAccelerationTimed);
             _changeToMapRouteCommand = new DelegateCommand(OnChangeToMapRoute);
             _changeToMapTimedCommand = new DelegateCommand(OnChangeToMapTimed);
             _changeToVelocityGraphCommand = new DelegateCommand(OnChangeToVelocityGraph);
             _changeToVelocityTimedCommand = new DelegateCommand(OnChangeToVelocityTimed);
 
-            _frame.Navigate(new About(dataProvider));
-
             dataProvider = new DataProvider();
 
             MapEnabled = true;
 
-            KeyManager manager = new KeyManager(dataProvider);
+            KeyManager manager = new KeyManager(dataProvider, new KeyManagerReader());
             if (!manager.Fetch())
             {
                 MapEnabled = false;
@@ -86,60 +84,83 @@ namespace CIDER.ViewModels
         public ICommand ChangeToHeightCommand => _changeToHeightCommand;
 
         public bool MapEnabled { get { return _mapEnabled; } set { SetProperty(ref _mapEnabled, value); } }
+        public object FrameContent { get { return _frameContent; } private set { _frameContent = value; } }
 
         private void UpdateMapStatus()
         {
             MapEnabled = true;
 
-            KeyManager manager = new KeyManager(dataProvider);
+            KeyManager manager = new KeyManager(dataProvider, new KeyManagerReader());
             if (!manager.Fetch())
             {
                 MapEnabled = false;
             }
         }
 
+        public void Initalize()
+        {
+            FrameContent = new About(dataProvider);
+            RaiseEvent(new EventArgs());
+        }
+
         //these functions are called on button presses
         private void OnChangeToAbout(object sender)
         {
-            _frame.Navigate(new About(dataProvider));
+            FrameContent = new About(dataProvider);
+            RaiseEvent(new EventArgs());
         }
-        private void OnChangeToAngleGraph(object sender)
+        private void OnChangeToAccelerationGraph(object sender)
         {
-            _frame.Navigate(new AccelerationGraph(dataProvider));
+            FrameContent = new AccelerationGraph(dataProvider);
+            RaiseEvent(new EventArgs());
         }
 
-        private void OnChangeToAngleTimed(object sender)
+        private void OnChangeToAccelerationTimed(object sender)
         {
-            _frame.Navigate(new AccelerationTimed(dataProvider));
+            FrameContent = new AccelerationTimed(dataProvider);
+            RaiseEvent(new EventArgs());
         }
 
         private void OnChangeToLoad(object sender)
         {
-            _frame.Navigate(new Load(dataProvider));
+            FrameContent = new Load(dataProvider);
+            RaiseEvent(new EventArgs());
         }
         private void OnChangeToMapRoute(object sender)
         {
-            _frame.Navigate(new MapRoute(dataProvider));
+            FrameContent = new MapRoute(dataProvider);
+            RaiseEvent(new EventArgs());
         }
 
         private void OnChangeToMapTimed(object sender)
         {
-            _frame.Navigate(new MapTimed(dataProvider));
+            FrameContent = new MapTimed(dataProvider);
+            RaiseEvent(new EventArgs());
         }
 
         private void OnChangeToVelocityGraph(object sender)
         {
-            _frame.Navigate(new VelocityGraph(dataProvider));
+            FrameContent = new VelocityGraph(dataProvider);
+            RaiseEvent(new EventArgs());
         }
 
         private void OnChangeToVelocityTimed(object sender)
         {
-            _frame.Navigate(new VelocityTimed(dataProvider));
+            FrameContent = new VelocityTimed(dataProvider);
+            RaiseEvent(new EventArgs());
         }
 
         private void OnChangeToHeight(object sender)
         {
-            _frame.Navigate(new Height(dataProvider));
+            FrameContent = new Height(dataProvider);
+            RaiseEvent(new EventArgs());
+        }
+
+        private void RaiseEvent(EventArgs e)
+        {
+            EventHandler handler = OnFrameChangeEvent;
+            if (handler != null)
+                handler.Invoke(this, e);
         }
 
         public void Dispose()
