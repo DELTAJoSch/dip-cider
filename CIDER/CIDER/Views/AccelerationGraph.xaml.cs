@@ -21,11 +21,17 @@ namespace CIDER.Views
     /// </summary>
     public partial class AccelerationGraph : Page
     {
+        private AccelerationGraphViewModel model;
         public AccelerationGraph(DataProvider _data)
         {
             InitializeComponent();
-            AccelerationGraphViewModel model = new AccelerationGraphViewModel(_data);
+            model = new AccelerationGraphViewModel(_data);
             this.DataContext = model;
+        }
+
+        private void Page_Unloaded(object sender, RoutedEventArgs e)
+        {
+            model.Dispose(); 
         }
     }
 }

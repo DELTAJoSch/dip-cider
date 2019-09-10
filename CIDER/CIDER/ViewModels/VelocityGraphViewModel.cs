@@ -9,13 +9,15 @@ using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
-    public class VelocityGraphViewModel:ViewModelBase
+    public class VelocityGraphViewModel: ViewModelBase, IDisposable
     {
         private DataProvider _data;
         private PlotModel _plot;
-        public VelocityGraphViewModel(DataProvider data)
+        private PlotModel blank;
+        private PlotModel data;
+        public VelocityGraphViewModel(DataProvider dataProvider)
         {
-            _data = data;
+            _data = dataProvider;
 
             PlotManager manager = new PlotManager();
 
@@ -23,7 +25,29 @@ namespace CIDER.ViewModels
             manager.AddLineSeries(_data.YVelocity, "L/R", OxyColors.Indigo);
             manager.AddLineSeries(_data.ZVelocity, "U/D", OxyColors.Olive);
 
-            Plot = manager.GetPlotModel("Velocity");
+            data = manager.GetPlotModel("Velocity");
+            blank = new PlotModel();
+            blank.Title = "Velocity";
+            Plot = data;
+
+            MainWindow.OnResizeStartEvent += MainWindow_OnResizeStartEvent;
+            MainWindow.OnResizeEndEvent += MainWindow_OnResizeEndEvent;
+        }
+
+        private void MainWindow_OnResizeEndEvent(object sender, EventArgs e)
+        {
+            Plot = data;
+        }
+
+        private void MainWindow_OnResizeStartEvent(object sender, EventArgs e)
+        {
+            Plot = blank;
+        }
+
+        public void Dispose()
+        {
+            MainWindow.OnResizeStartEvent -= MainWindow_OnResizeStartEvent;
+            MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
         }
 
         public PlotModel Plot {

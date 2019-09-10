@@ -35,5 +35,10 @@ namespace CIDER.Views
         {
             model.slValueChanged((int)slValue.Value);
         }
+
+        private void Page_Unloaded(object sender, RoutedEventArgs e)
+        {
+            model.Dispose();
+        }
     }
 }

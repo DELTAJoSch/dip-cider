@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
-    public class HeightViewModel : ViewModelBase
+    public class HeightViewModel : ViewModelBase, IDisposable
     {
         private float _heightMaxL;
         private float _heightMaxR;
@@ -19,10 +19,12 @@ namespace CIDER.ViewModels
         private float _slMaximum;
         private float _slTickFrequency;
         private DataProvider _data;
+        private PlotModel data;
+        private PlotModel blank;
 
-        public HeightViewModel(DataProvider data)
+        public HeightViewModel(DataProvider dataProvider)
         {
-            _data = data;
+            _data = dataProvider;
 
             slMaximum = _data.Height.Count - 1;
             if (slMaximum < 1000)
@@ -47,8 +49,32 @@ namespace CIDER.ViewModels
 
             PlotManager manager = new PlotManager();
             manager.AddLineSeries(_data.Height, "Height",OxyColors.Coral);
-            Plot = manager.GetPlotModel("Height");
+
+            data = manager.GetPlotModel("Height");
+            blank = new PlotModel();
+            blank.Title = "Height";
+            Plot = data;
+
+            MainWindow.OnResizeStartEvent += MainWindow_OnResizeStartEvent;
+            MainWindow.OnResizeEndEvent += MainWindow_OnResizeEndEvent;
         }
+
+        private void MainWindow_OnResizeEndEvent(object sender, EventArgs e)
+        {
+            Plot = data;
+        }
+
+        private void MainWindow_OnResizeStartEvent(object sender, EventArgs e)
+        {
+            Plot = blank;
+        }
+
+        public void Dispose()
+        {
+            MainWindow.OnResizeStartEvent -= MainWindow_OnResizeStartEvent;
+            MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
+        }
+
         public float HeightMaxL { get { return _heightMaxL; } set { SetProperty(ref _heightMaxL, value); } }
         public float HeightMaxR { get { return _heightMaxR; } set { SetProperty(ref _heightMaxR, value); } }
         public float HeightValL { get { return _heightValL; } set { SetProperty(ref _heightValL, value); } }
