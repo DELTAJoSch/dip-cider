@@ -26,3 +26,9 @@ H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.Integratio
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\NLog.xml
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\OxyPlot.pdb
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\OxyPlot.xml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\MahApps.Metro.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\ControlzEx.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\System.Windows.Interactivity.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\MahApps.Metro.pdb
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\MahApps.Metro.xml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.IntegrationTests\bin\Debug\netcoreapp2.1\ControlzEx.pdb

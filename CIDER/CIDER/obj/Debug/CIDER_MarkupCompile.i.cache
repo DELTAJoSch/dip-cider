@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\App.xaml
-11-1355645380
+14-660222420
 1-2138471434
-38823056730
-129-96903513
-LoadBoxWindow.xaml;MainWindow.xaml;Views\About.xaml;Views\AccelerationGraph.xaml;Views\AccelerationTimed.xaml;Views\Height.xaml;Views\Load.xaml;Views\MapRoute.xaml;Views\MapTimed.xaml;Views\VelocityGraph.xaml;Views\VelocityTimed.xaml;
+41223482739
+1331251375725
+LoadBoxWindow.xaml;MainWindow.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;ThemeStyler.xaml;Views\About.xaml;Views\AccelerationGraph.xaml;Views\AccelerationTimed.xaml;Views\Height.xaml;Views\Load.xaml;Views\MapRoute.xaml;Views\MapTimed.xaml;Views\VelocityGraph.xaml;Views\VelocityTimed.xaml;
 
 True
 

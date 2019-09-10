@@ -16,15 +16,18 @@ namespace CIDER.ViewModels
         ///On init it also sets the text in the about and information TextBlocks. They can be changed afterwards, but this is not needed in normal operation
         ///When the button in the view is pressed, the view model responds to it by calling the function fromn the processStarter interface
     {
-        private readonly DelegateCommand _mailToClick;
-        private readonly DelegateCommand _setApiKey;
+        private readonly DelegateCommand _mailtoClickCommand;
+        private readonly DelegateCommand _setApiKeyCommand;
+        private readonly DelegateCommand _changeThemeCommand;
         private readonly IProcessStarter _handler;
         private KeyManager _manager;
 
         public AboutViewModel(IProcessStarter starter, KeyManager manager)
         {
-            _mailToClick = new DelegateCommand(mailto);
-            _setApiKey = new DelegateCommand(setApiKey);
+            _mailtoClickCommand = new DelegateCommand(mailto);
+            _setApiKeyCommand = new DelegateCommand(setApiKey);
+            _changeThemeCommand = new DelegateCommand(ChangeTheme);
+
             AboutText = "This Software is Licensed under the GNU GPL - v3.\nThis Software was designed and written by Johannes Schiemer for his school diploma " +
                 "project. The software is designed to be used in conjunction with the FDR built and engineered by Klaus Obermüller and Alexander Stoiber.\nWe are NOT responsible for any " +
                 "damages created through misuse, user errors ore unexpected behaviour." +
@@ -35,17 +38,23 @@ namespace CIDER.ViewModels
             _handler = starter;
             _manager = manager;
         }
-
-        public ICommand RequestNavigate => _mailToClick;
+        public ICommand RequestNavigateCommand => _mailtoClickCommand;
         private void mailto(object sender) //executed by button
         {
             _handler.Start(new ProcessStartInfo("mailto:deltajosch@gmail.com"));
         }
 
-        public ICommand SetApiKey => _setApiKey;
+        public ICommand SetApiKeyCommand => _setApiKeyCommand;
         private void setApiKey(object sender) //executed by button
         {
             _manager.Put();
+        }
+
+        public ICommand ChangeThemeCommand => _changeThemeCommand;
+        private void ChangeTheme(object obj)
+        {
+            ThemeStyler styler = new ThemeStyler();
+            styler.Show();
         }
 
         private string _aboutText;

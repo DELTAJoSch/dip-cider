@@ -1,0 +1,3 @@
+2019-09-10 22:01:07.4480	DEBUG	too little elements	CIDER.RouteMaker.CreateRoute	UIElement.OnMouseLeftButtonUpThunk => ButtonBase.OnMouseLeftButtonUp => Button.OnClick => ButtonBase.OnClick => CommandHelpers.CriticalExecuteCommandSource => DelegateCommand.Execute => MainWindowViewModel.OnChangeToMapRoute => MapRoute..ctor => MapRouteViewModel.Initialize => RouteMaker.CreateRoute	"System.InvalidOperationException: Die Sequenz enthält keine Elemente.
+   bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei CIDER.RouteMaker.CreateRoute(DataProvider _data) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\RouteMaker.cs:Zeile 32."	

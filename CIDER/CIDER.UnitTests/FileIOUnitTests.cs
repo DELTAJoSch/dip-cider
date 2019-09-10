@@ -16,7 +16,7 @@ namespace CIDER.UnitTests
             FileIO iO = new FileIO();
             DataProvider data = new DataProvider();
 
-            iO.ReadCSV(data, "", reader);
+            iO.ReadCSV(data, "", reader, new ViewModels.MainWindowViewModel());
 
             Assert.AreEqual(new DateTime(2019, 08, 26), data.RouteDate);
         }
@@ -28,7 +28,7 @@ namespace CIDER.UnitTests
             FileIO iO = new FileIO();
             DataProvider data = new DataProvider();
 
-            iO.ReadCSV(data, "", reader);
+            iO.ReadCSV(data, "", reader, new ViewModels.MainWindowViewModel());
 
             Assert.AreEqual("Test", data.RouteName);
         }
@@ -40,7 +40,7 @@ namespace CIDER.UnitTests
             FileIO iO = new FileIO();
             DataProvider data = new DataProvider();
 
-            iO.ReadCSV(data, "", reader);
+            iO.ReadCSV(data, "", reader, new ViewModels.MainWindowViewModel());
 
             Assert.AreEqual(new DateTime(2019, 08, 26), data.RouteDate);
         }
@@ -52,7 +52,7 @@ namespace CIDER.UnitTests
             FileIO iO = new FileIO();
             DataProvider data = new DataProvider();
 
-            iO.ReadCSV(data, "", reader);
+            iO.ReadCSV(data, "", reader, new ViewModels.MainWindowViewModel());
 
             List<float> vs = new List<float>();
             vs.Add(509);
@@ -67,7 +67,7 @@ namespace CIDER.UnitTests
             FileIO iO = new FileIO();
             DataProvider data = new DataProvider();
 
-            iO.ReadCSV(data, "", reader);
+            iO.ReadCSV(data, "", reader, new ViewModels.MainWindowViewModel());
 
             List<float> x = new List<float>();
             List<float> y = new List<float>();
@@ -77,7 +77,7 @@ namespace CIDER.UnitTests
             y.Add(7);
             z.Add(38);
 
-            iO.ReadCSV(data, "", reader);
+            iO.ReadCSV(data, "", reader, new ViewModels.MainWindowViewModel());
 
             
             Assert.AreEqual(y, data.YAcceleration);
@@ -100,7 +100,7 @@ namespace CIDER.UnitTests
             y.Add(61);
             z.Add(98);
 
-            iO.ReadCSV(data, "", reader);
+            iO.ReadCSV(data, "", reader, new ViewModels.MainWindowViewModel());
 
             Assert.AreEqual(x, data.XVelocity);
             Assert.AreEqual(y, data.YVelocity);
@@ -114,7 +114,7 @@ namespace CIDER.UnitTests
             FileIO iO = new FileIO();
             DataProvider data = new DataProvider();
 
-            iO.ReadNmea(data, "", reader);
+            iO.ReadNmea(data, "", reader, new ViewModels.MainWindowViewModel());
 
             DateTime dateTime = DateTime.Today;
             dateTime = dateTime.AddHours(09);
@@ -132,7 +132,7 @@ namespace CIDER.UnitTests
             FileIO iO = new FileIO();
             DataProvider data = new DataProvider();
 
-            iO.ReadNmea(data, "", reader);
+            iO.ReadNmea(data, "", reader, new ViewModels.MainWindowViewModel());
 
             Assert.AreEqual(12, data.AverageSattelitesInUse);
         }

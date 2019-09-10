@@ -30,6 +30,7 @@ namespace CIDER.MVVMBase
     {
         private readonly Action<object> _executeAction;
         private readonly Func<object, bool> _canExecuteAction;
+        private ICommand changeTheme;
 
         public DelegateCommand(Action<object> executeAction, Func<object, bool> canExecuteAction)
         {
@@ -41,6 +42,11 @@ namespace CIDER.MVVMBase
         {
             _executeAction = executeAction;
             _canExecuteAction = (object o) => { return true; };
+        }
+
+        public DelegateCommand(ICommand changeTheme)
+        {
+            this.changeTheme = changeTheme;
         }
 
         public void Execute(object parameter) => _executeAction(parameter);
