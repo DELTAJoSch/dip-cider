@@ -26,7 +26,7 @@ namespace CIDER
             return _plot;
         }
 
-        private void Create(string Title)
+        private async void Create(string Title)
         {
             //Create a new PlotModel
             PlotModel CreatePlot = new PlotModel();

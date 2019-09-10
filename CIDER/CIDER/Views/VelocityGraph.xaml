@@ -10,6 +10,6 @@
       Title="VelocityGraph">
 
     <Grid>
-        <oxy:PlotView Model="{Binding Plot}"/>
+        <oxy:PlotView Model="{Binding Plot}" DisconnectCanvasWhileUpdating="true"/>
     </Grid>
 </Page>
