@@ -1,5 +1,6 @@
 ﻿using CIDER.MVVMBase;
 using CIDER.Views;
+using MahApps.Metro;
 using System;
 using System.Diagnostics.Tracing;
 using System.Windows;
@@ -70,6 +71,19 @@ namespace CIDER.ViewModels
             {
                 MapEnabled = false;
                 _mapAvailable = false;
+            }
+
+            try
+            {
+                ColorWriter writer = new ColorWriter(new KeyManagerReader());
+                var thm = writer.GetSetTheming();
+
+                ThemeManager.ChangeAppStyle(App.Current, ThemeManager.GetAccent(thm.Item2), ThemeManager.GetAppTheme(thm.Item1));
+            }
+            catch(Exception ex)
+            {
+                logger.Warn(ex, "Error whilst reading theme. Reverting back to standard.");
+                ThemeManager.ChangeAppStyle(App.Current, ThemeManager.GetAccent("Blue"), ThemeManager.GetAppTheme("BaseLight"));
             }
 
             ButtonState(true);

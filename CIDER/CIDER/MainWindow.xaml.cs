@@ -2,13 +2,14 @@
 using System;
 using System.Windows;
 using System.Windows.Interop;
+using MahApps.Metro.Controls;
 
 namespace CIDER
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : MetroWindow
     {
         public static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         MainWindowViewModel viewModel;

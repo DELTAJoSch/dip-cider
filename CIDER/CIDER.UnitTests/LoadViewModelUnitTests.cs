@@ -18,7 +18,7 @@ namespace CIDER.UnitTests
             DataProvider dataProvider = Substitute.For<DataProvider>();
             FolderChecker folderChecker = Substitute.For<FolderChecker>();
             FileIO fileIO = Substitute.For<FileIO>();
-            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO);
+            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO, new ViewModels.MainWindowViewModel());
 
             //Act
             viewModel.SelectClickCommand.Execute(this);
@@ -35,7 +35,7 @@ namespace CIDER.UnitTests
             DataProvider dataProvider = Substitute.For<DataProvider>();
             FolderChecker folderChecker = Substitute.For<FolderChecker>();
             FileIO fileIO = Substitute.For<FileIO>();
-            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO);
+            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO, new ViewModels.MainWindowViewModel());
 
             //Act
             viewModel.SelectClickCommand.Execute(this);
@@ -56,7 +56,7 @@ namespace CIDER.UnitTests
             DataProvider dataProvider = Substitute.For<DataProvider>();
             FolderChecker folderChecker = Substitute.For<FolderChecker>();
             FileIO fileIO = Substitute.For<FileIO>();
-            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO);
+            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO, new ViewModels.MainWindowViewModel());
 
             //Act
             viewModel.SelectClickCommand.Execute(this);
@@ -73,7 +73,7 @@ namespace CIDER.UnitTests
             DataProvider dataProvider = Substitute.For<DataProvider>();
             Checker folderChecker = Substitute.For<Checker>();
             FileIO fileIO = Substitute.For<FileIO>();
-            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO);
+            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO, new ViewModels.MainWindowViewModel());
 
             //Act
             viewModel.SelectClickCommand.Execute(this);
@@ -90,7 +90,7 @@ namespace CIDER.UnitTests
             DataProvider dataProvider = Substitute.For<DataProvider>();
             Checker folderChecker = Substitute.For<Checker>();
             FileIO fileIO = Substitute.For<FileIO>();
-            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO);
+            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO, new ViewModels.MainWindowViewModel());
 
             //Act
             viewModel.SelectClickCommand.Execute(this);
@@ -106,7 +106,7 @@ namespace CIDER.UnitTests
             DataProvider dataProvider = Substitute.For<DataProvider>();
             Checker folderChecker = Substitute.For<Checker>();
             FileIO fileIO = Substitute.For<FileIO>();
-            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO);
+            LoadViewModel viewModel = new LoadViewModel(dataProvider, folderChecker, manager, fileIO, new ViewModels.MainWindowViewModel());
 
             folderChecker.ReturnTrue = false;
 
