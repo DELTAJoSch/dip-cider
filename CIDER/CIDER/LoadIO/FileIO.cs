@@ -25,6 +25,8 @@ namespace CIDER.LoadIO
                 {
                     string[] lines = read.ReadLinesCsv(path);
 
+                    List<Tuple<float, float>> DataLsb = new List<Tuple<float, float>>();
+
                     foreach (string line in lines)
                     {
                         string[] split = line.Split(';');
@@ -48,18 +50,6 @@ namespace CIDER.LoadIO
                             {
                                 var tp = new Tuple<float, float, float>(float.Parse(split[1]), float.Parse(split[2]), float.Parse(split[3]));
 
-                                data.XVelocity.Add(tp.Item1);
-                                data.YVelocity.Add(tp.Item2);
-                                data.ZVelocity.Add(tp.Item3);
-                            }
-                            catch (Exception ex)
-                            {
-                                logger.Error(ex, "Couldn't convert to touple");
-                            }
-                            try
-                            {
-                                var tp = new Tuple<float, float, float>(float.Parse(split[4]), float.Parse(split[5]), float.Parse(split[6]));
-
                                 data.XAcceleration.Add(tp.Item1);
                                 data.YAcceleration.Add(tp.Item2);
                                 data.ZAcceleration.Add(tp.Item3);
@@ -70,7 +60,35 @@ namespace CIDER.LoadIO
                             }
                             try
                             {
-                                data.Pressure.Add(float.Parse(split[7]));
+                                var tp = new Tuple<float, float>(float.Parse(split[4]), float.Parse(split[5]));
+
+                                var xGaussData = tp.Item1 * 0.48828125;
+                                var yGaussData = tp.Item2 * 0.48828125;
+
+                                double heading;
+
+                                if ((xGaussData == 0) && (yGaussData < 0))
+                                {
+                                    heading = 90;
+                                }
+                                else if ((xGaussData == 0) && (yGaussData >= 0))
+                                {
+                                    heading = 0;
+                                }
+                                else
+                                {
+                                    heading = Math.Atan(xGaussData / yGaussData) * (180 / Math.PI);
+                                }
+
+                                data.Heading.Add((float)heading);
+                            }
+                            catch (Exception ex)
+                            {
+                                logger.Error(ex, "Couldn't convert to touple");
+                            }
+                            try
+                            {
+                                data.Height.Add(float.Parse(split[6]));
                             }
                             catch (Exception ex)
                             {
@@ -78,7 +96,7 @@ namespace CIDER.LoadIO
                             }
                             try
                             {
-                                data.Height.Add(float.Parse(split[8]));
+                                data.Pressure.Add(float.Parse(split[7]));
                             }
                             catch (Exception ex)
                             {
@@ -87,8 +105,6 @@ namespace CIDER.LoadIO
                         }
                     }
 
-                    data.DataPointsVelocity = Math.Min(data.XVelocity.Count, data.YVelocity.Count);
-                    data.DataPointsVelocity = Math.Min(data.DataPointsVelocity, data.ZVelocity.Count);
                     data.DataPointsAcceleration = Math.Min(data.XAcceleration.Count, data.YAcceleration.Count);
                     data.DataPointsAcceleration = Math.Min(data.DataPointsAcceleration, data.ZAcceleration.Count);
                 });
@@ -123,6 +139,10 @@ namespace CIDER.LoadIO
                                 first = false;
                             }
                         }
+                        if(vs[0] == "$GPRMC")
+                        {
+                            RMC(line, Data, first);
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -135,6 +155,29 @@ namespace CIDER.LoadIO
             main.ButtonState(true);
         }
 
+        private void RMC(string Nmea, DataProvider Data, bool First)
+        {
+            NmeaStorage storage = new NmeaStorage();
+            Parser parser = new Parser();
+
+            try
+            {
+                parser.ParseRMC(Nmea, storage);
+
+                Data.Velocity.Add(storage.SpeedOverGround);
+                Data.DataPointsVelocity++;
+            }
+            catch (Exception ex)
+            {
+                logger.Debug(ex, "Error whilst parsing");
+                failedParses++;
+            }
+            finally
+            {
+                logger.Info("{0} parses failed.", failedParses);
+            }
+
+        }
 
         private void GGA(string Nmea, DataProvider Data, bool First)
         {

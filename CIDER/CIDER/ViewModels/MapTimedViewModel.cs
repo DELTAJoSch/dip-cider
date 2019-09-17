@@ -29,7 +29,7 @@ namespace CIDER.ViewModels
             //set the api key read from the key file
             APIKey = new ApplicationIdCredentialsProvider(data.APIKey);
 
-            slMaximum = _data.DataPointsAcceleration - 1;
+            slMaximum = _data.Route.Count() - 1;
             if (slMaximum < 1000)
                 slTickFrequency = 2;
             if (slMaximum > 1000 && slMaximum < 10000)

@@ -15,13 +15,12 @@ namespace CIDER
         public DataProvider()
         {
             this._xAcceleration = new List<float>();
-            this._xVelocity = new List<float>();
             this._yAcceleration = new List<float>();
-            this._yVelocity = new List<float>();
             this._zAcceleration = new List<float>();
-            this._zVelocity = new List<float>();
             this._pressure = new List<float>();
             this._height = new List<float>();
+            this._Velocity = new List<float>();
+            this._heading = new List<float>();
             this._route = new LocationCollection();
             _numberOfPoints = 0;
         }
@@ -38,9 +37,8 @@ namespace CIDER
         private List<float> _xAcceleration;
         private List<float> _yAcceleration;
         private List<float> _zAcceleration;
-        private List<float> _xVelocity;
-        private List<float> _yVelocity;
-        private List<float> _zVelocity;
+        private List<float> _Velocity;
+        private List<float> _heading;
         private bool _isValidRoute;
         private int _averageSattelitesInUse;
         private int _numberOfPoints;
@@ -58,9 +56,8 @@ namespace CIDER
         public List<float> XAcceleration { get { return _xAcceleration; } set { _xAcceleration = value; } }
         public List<float> YAcceleration { get { return _yAcceleration; } set { _yAcceleration = value; } }
         public List<float> ZAcceleration { get { return _zAcceleration; } set { _zAcceleration = value; } }
-        public List<float> XVelocity { get { return _xVelocity; } set { _xVelocity = value; } }
-        public List<float> YVelocity { get { return _yVelocity; } set { _yVelocity = value; } }
-        public List<float> ZVelocity { get { return _zVelocity; } set { _zVelocity = value; } }
+        public List<float> Heading { get { return _heading; } set { _heading = value; } }
+        public List<float> Velocity { get { return _Velocity; } set { _Velocity = value; } }
         public List<float> Height { get { return _height; } set { _height = value; } }
         public LocationCollection Route { get { return _route; } set { _route = value; } }
         public int AverageSattelitesInUse { get { return _averageSattelitesInUse; } set
@@ -84,11 +81,9 @@ namespace CIDER
             try
             {
                 this._xAcceleration = new List<float>();
-                this._xVelocity = new List<float>();
                 this._yAcceleration = new List<float>();
-                this._yVelocity = new List<float>();
                 this._zAcceleration = new List<float>();
-                this._zVelocity = new List<float>();
+                this._Velocity = new List<float>();
                 this._pressure = new List<float>();
                 this._height = new List<float>();
                 this._route = new LocationCollection();

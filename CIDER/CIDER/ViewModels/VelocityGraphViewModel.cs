@@ -21,9 +21,7 @@ namespace CIDER.ViewModels
 
             PlotManager manager = new PlotManager();
 
-            manager.AddLineSeries(_data.XVelocity, "F/B", OxyColors.IndianRed);
-            manager.AddLineSeries(_data.YVelocity, "L/R", OxyColors.Indigo);
-            manager.AddLineSeries(_data.ZVelocity, "U/D", OxyColors.Olive);
+            manager.AddLineSeries(_data.Velocity, "Vel", OxyColors.IndianRed);
 
             data = manager.GetPlotModel("Velocity");
             blank = new PlotModel();

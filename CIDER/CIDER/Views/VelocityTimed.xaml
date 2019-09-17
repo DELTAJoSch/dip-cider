@@ -11,27 +11,25 @@
 
     <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Grid.RowDefinitions>
-            <RowDefinition Height="131*"/>
-            <RowDefinition Height="131*"/>
-            <RowDefinition Height="131*"/>
-            <RowDefinition Height="58*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="31*"/>
         </Grid.RowDefinitions>
-        <DockPanel VerticalAlignment="Stretch" Margin="10" Grid.Row="3" HorizontalAlignment="Stretch">
-            <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="40" />
-            <Slider Maximum="{Binding Path=slMaximum}" TickPlacement="BottomRight" TickFrequency="{Binding Path=slTickFrequency}" Name="slValue" ValueChanged="slValueChanged" SmallChange="1" LargeChange="10" IsSnapToTickEnabled="True" />
-        </DockPanel>
-        <StackPanel HorizontalAlignment="Stretch" Margin="10,10,10,10.667" VerticalAlignment="Stretch">
-            <TextBlock TextWrapping="Wrap" Text="{Binding Path=FBText}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-            <AccelerationControl:LeftRightProgressBar LeftBrush="Crimson" RightBrush="LimeGreen" LeftMaximum="{Binding Path=LMaxFB}" RightMaximum="{Binding Path=RMaxFB}" LeftValue="{Binding Path=LValFB}" RightValue="{Binding Path=RValFB}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100"/>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Stretch" Margin="10,9.333,10,10.333" VerticalAlignment="Stretch" Grid.Row="1">
-            <TextBlock TextWrapping="Wrap" Text="{Binding Path=LRText}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-            <AccelerationControl:LeftRightProgressBar LeftBrush="DarkOrange" RightBrush="DeepSkyBlue" LeftMaximum="{Binding Path=LMaxLR}" RightMaximum="{Binding Path=RMaxLR}" LeftValue="{Binding Path=LValLR}" RightValue="{Binding Path=RValLR}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="100"/>
-        </StackPanel>
-        <StackPanel HorizontalAlignment="Stretch" Margin="10,8.667,10,10" VerticalAlignment="Stretch" Grid.Row="2">
-            <TextBlock TextWrapping="Wrap" Text="{Binding Path=UDText}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-            <AccelerationControl:LeftRightProgressBar LeftBrush="Gold" RightBrush="DarkViolet" LeftMaximum="{Binding Path=LMaxUD}" RightMaximum="{Binding Path=RMaxUD}" LeftValue="{Binding Path=LValUD}" RightValue="{Binding Path=RValUD}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="96"/>
-        </StackPanel>
+        <Grid VerticalAlignment="Stretch" Margin="10" Grid.Row="1" HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="636*"/>
+                <ColumnDefinition Width="145*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Right" Margin="10,10,10,10"  Grid.Column="1" Grid.ColumnSpan="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+            <Slider Maximum="{Binding Path=slMaximum}" TickPlacement="BottomRight" TickFrequency="{Binding Path=slTickFrequency}" Name="slValue" ValueChanged="slValueChanged" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SmallChange="1" LargeChange="10" IsSnapToTickEnabled="True" Margin="10,0,10.333,0" Grid.ColumnSpan="1" Grid.Column="0"/>
+        </Grid>
+        <Grid HorizontalAlignment="Stretch" Margin="10,10,10,11" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="200*"/>
+            </Grid.RowDefinitions>
 
+            <TextBlock TextWrapping="Wrap" Text="{Binding Path=Text}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,10" TextAlignment="Center"/>
+            <AccelerationControl:LeftRightProgressBar LeftBrush="Crimson" RightBrush="LimeGreen" LeftMaximum="{Binding Path=LMax}" RightMaximum="{Binding Path=RMax}" LeftValue="{Binding Path=LVal}" RightValue="{Binding Path=RVal}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,9.333,10,10.667" Grid.Row="1"/>
+        </Grid>
     </Grid>
 </Page>
