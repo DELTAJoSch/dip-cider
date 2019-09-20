@@ -62,3 +62,7 @@ H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\App.baml
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\ThemeStyler.g.cs
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\ThemeStyler.baml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\Views\AngleGraph.g.cs
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\Views\AngleTimed.g.cs
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\Views\AngleGraph.baml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\Views\AngleTimed.baml

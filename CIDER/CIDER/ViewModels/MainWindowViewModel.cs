@@ -34,6 +34,10 @@ namespace CIDER.ViewModels
 
         private readonly DelegateCommand _changeToHeightCommand;
 
+        private readonly DelegateCommand _changeToAccelerationGraphCommand;
+
+        private readonly DelegateCommand _changeToAccelerationTimedCommand;
+
         private bool _mapEnabled;
 
         private bool _mapAvailable;
@@ -54,8 +58,10 @@ namespace CIDER.ViewModels
             _changeToHeightCommand = new DelegateCommand(OnChangeToHeight);
             _changeToLoadCommand = new DelegateCommand(OnChangeToLoad);
             _changeToAboutCommand = new DelegateCommand(OnChangeToAbout);
-            _changeToAngleGraphCommand = new DelegateCommand(OnChangeToAccelerationGraph);
-            _changeToAngleTimedCommand = new DelegateCommand(OnChangeToAccelerationTimed);
+            _changeToAccelerationGraphCommand = new DelegateCommand(OnChangeToAccelerationGraph);
+            _changeToAccelerationTimedCommand = new DelegateCommand(OnChangeToAccelerationTimed);
+            _changeToAngleGraphCommand = new DelegateCommand(OnChangeToAngleGraph);
+            _changeToAngleTimedCommand = new DelegateCommand(OnChangeToAngleTimed);
             _changeToMapRouteCommand = new DelegateCommand(OnChangeToMapRoute);
             _changeToMapTimedCommand = new DelegateCommand(OnChangeToMapTimed);
             _changeToVelocityGraphCommand = new DelegateCommand(OnChangeToVelocityGraph);
@@ -96,14 +102,16 @@ namespace CIDER.ViewModels
         }
 
         public ICommand ChangeToAboutCommand => _changeToAboutCommand;
-        public ICommand ChangeToAngleGraphCommand => _changeToAngleGraphCommand;
-        public ICommand ChangeToAngleTimedCommand => _changeToAngleTimedCommand;
+        public ICommand ChangeToAccelerationGraphCommand => _changeToAccelerationGraphCommand;
+        public ICommand ChangeToAccelerationTimedCommand => _changeToAccelerationTimedCommand;
         public ICommand ChangeToLoadCommand => _changeToLoadCommand;
         public ICommand ChangeToMapRouteCommand => _changeToMapRouteCommand;
         public ICommand ChangeToMapTimedCommand => _changeToMapTimedCommand;
         public ICommand ChangeToVelocityGraphCommand => _changeToVelocityGraphCommand;
         public ICommand ChangeToVelocityTimedCommand => _changeToVelocityTimedCommand;
         public ICommand ChangeToHeightCommand => _changeToHeightCommand;
+        public ICommand ChangeToAngleTimedCommand => _changeToAngleTimedCommand;
+        public ICommand ChangeToAngleGraphCommand => _changeToAngleGraphCommand;
 
         public bool MapEnabled { get { return _mapEnabled; } set { SetProperty(ref _mapEnabled, value); } }
         public object FrameContent { get { return _frameContent; } private set { _frameContent = value; } }
@@ -178,6 +186,18 @@ namespace CIDER.ViewModels
         private void OnChangeToHeight(object sender)
         {
             FrameContent = new Height(dataProvider);
+            RaiseEvent(new EventArgs());
+        }
+
+        private void OnChangeToAngleTimed(object sender)
+        {
+            FrameContent = new AngleTimed(dataProvider);
+            RaiseEvent(new EventArgs());
+        }
+
+        private void OnChangeToAngleGraph(object sender)
+        {
+            FrameContent = new AngleGraph(dataProvider);
             RaiseEvent(new EventArgs());
         }
 

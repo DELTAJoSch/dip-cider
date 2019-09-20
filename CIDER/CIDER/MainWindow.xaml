@@ -15,10 +15,12 @@
         <StackPanel x:Name="stPanViewSelector" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,9.667">
             <Button Content="Load" Command="{Binding Path=ChangeToLoadCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
             <Button Content="Map - Route" Command="{Binding Path=ChangeToMapRouteCommand}" IsEnabled="{Binding Path=MapEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Acc - Graph" Command="{Binding Path=ChangeToAngleGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="Acc - Graph" Command="{Binding Path=ChangeToAccelerationGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="Angle - Graph" Command="{Binding Path=ChangeToAngleGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
             <Button Content="Velocity - Graph" Command="{Binding Path=ChangeToVelocityGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
             <Button Content="Map - Timed" Command="{Binding Path=ChangeToMapTimedCommand}" IsEnabled="{Binding Path=MapEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Acc - Timed" Command="{Binding Path=ChangeToAngleTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="Acc - Timed" Command="{Binding Path=ChangeToAccelerationTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="Angle - Timed" Command="{Binding Path=ChangeToAngleTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
             <Button Content="Velocity - Timed" Command="{Binding Path=ChangeToVelocityTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
             <Button Content="Height" Command="{Binding Path=ChangeToHeightCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
             <Button Content="About" Command="{Binding Path=ChangeToAboutCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>

@@ -32,15 +32,15 @@ namespace CIDER.ViewModels
             if (slMaximum > 1000000)
                 slTickFrequency = 2000;
 
-            RMax = LMax = _data.Velocity.Max() + 10;
-
             if((_data.DataPointsVelocity == 0) == false)
             {
                 SliderValueChanged(0);
+                RMax = LMax = _data.Velocity.Max() + 10;
             }
             else
             {
                 Text = "Velocity";
+                RMax = LMax = 10;
             }
                 
         }
