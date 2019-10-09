@@ -25,9 +25,9 @@ namespace CIDER.ViewModels
 
             PlotManager manager = new PlotManager();
 
-            manager.AddLineSeries(_data.XAcceleration, "Roll", OxyColors.Blue);
-            manager.AddLineSeries(_data.YAcceleration, "Pitch", OxyColors.Chartreuse);
-            manager.AddLineSeries(_data.ZAcceleration, "Yaw", OxyColors.Gold);
+            manager.AddLineSeries(_data.Roll, "Roll", OxyColors.Blue);
+            manager.AddLineSeries(_data.Pitch, "Pitch", OxyColors.Chartreuse);
+            manager.AddLineSeries(_data.Yaw, "Yaw", OxyColors.Gold);
 
             data = manager.GetPlotModel("Angle");
             blank = new PlotModel();

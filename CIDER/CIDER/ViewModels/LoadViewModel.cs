@@ -19,6 +19,7 @@ namespace CIDER.ViewModels
         private FileIO _fileIO;
         private MainWindowViewModel _main;
         private string _path;
+        private bool _loadEnabled;
 
         public LoadViewModel(DataProvider data, IChecker folderChecker, IFolderSelectionInterface selector, FileIO fileIO, MainWindowViewModel main)
         ///The constructor takes the different Objects as Arguments - this makes the code testable
@@ -30,6 +31,10 @@ namespace CIDER.ViewModels
             _folderSelector = selector;
             _fileIO = fileIO;
             _main = main;
+            _path = null;
+
+            if (String.IsNullOrEmpty(_path))
+                LoadEnabled = false;
         }
 
         public ICommand LoadClickCommand => _loadClickCommand;
@@ -59,6 +64,8 @@ namespace CIDER.ViewModels
                     CheckImage = @"~\..\..\Icons\success.png";
                 else
                     CheckImage = @"~\..\..\Icons\forbidden.png";
+
+                LoadEnabled = true;
             }
             catch (FileDialogExitedException e)
             {
@@ -72,6 +79,9 @@ namespace CIDER.ViewModels
             {
                 logger.Warn(ex, "Selection failed");
             }
+
+            if (String.IsNullOrEmpty(_path))
+                LoadEnabled = false;
         }
 
         public string PathText
@@ -86,6 +96,13 @@ namespace CIDER.ViewModels
         {
             get { return _checkImage; }
             set { SetProperty(ref _checkImage, value); }
+        }
+
+        public bool LoadEnabled
+        ///bool for enabling load button
+        {
+            get { return _loadEnabled; }
+            set { SetProperty(ref _loadEnabled, value); }
         }
     }
 }

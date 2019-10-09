@@ -16,47 +16,43 @@ namespace CIDER.ViewModels
         //private Data, all corresponding to the bindings
         private int _slMaximum;
         private int _slTickFrequency;
-        private float _rValUD;
-        private float _lValUD;
-        private float _rValFB;
-        private float _lValFB;
-        private float _rValLR;
-        private float _lValLR;
-        private float _rMaxUD;
-        private float _lMaxUD;
-        private float _rMaxFB;
-        private float _lMaxFB;
-        private float _rMaxLR;
-        private float _lMaxLR;
-        private string _udText;
-        private string _fbText;
-        private string _lrText;
+        private float _rValPitch;
+        private float _lValPitch;
+        private float _rValRoll;
+        private float _lValRoll;
+        private float _rValYaw;
+        private float _lValYaw;
+        private float _rMaxPitch;
+        private float _lMaxPitch;
+        private float _rMaxRoll;
+        private float _lMaxRoll;
+        private float _rMaxYaw;
+        private float _lMaxYaw;
+        private string _pitchText;
+        private string _rollText;
+        private string _yawText;
 
         public AngleTimedViewModel(DataProvider data)
         {
             _data = data;
 
-            slMaximum = _data.DataPointsAcceleration - 1;
-            if (slMaximum < 1000)
-                slTickFrequency = 2;
-            if (slMaximum > 1000 && slMaximum < 10000)
-                slTickFrequency = 10;
-            if (slMaximum > 10000 && slMaximum < 1000000)
-                slTickFrequency = 500;
-            if (slMaximum > 1000000)
-                slTickFrequency = 2000;
+            slMaximum = _data.DataPointsAngle - 1;
+            slTickFrequency = slMaximum / 200;
 
-            RMaxFB = LMaxFB = RMaxLR = LMaxLR = RMaxUD = LMaxUD = 400;
+            if (slTickFrequency < 1)
+                slTickFrequency = 1;
 
-            if ((_data.DataPointsAcceleration == 0) == false)
+            RMaxRoll = LMaxRoll = RMaxYaw = LMaxYaw = RMaxPitch = LMaxPitch = 180;
+
+            if ((_data.DataPointsAngle == 0) == false)
             {
                 SliderValueChanged(0);
             }
             else
             {
-                FBText = "Forwards/Backwards";
-                UDText = "Up/Down";
-                LRText = "Left/Right";
+                RollText = "Roll";
+                PitchText = "Pitch";
+                YawText = "Yaw";
             }
 
         }
@@ -73,128 +69,143 @@ namespace CIDER.ViewModels
             set { SetProperty(ref _slTickFrequency, value); }
         }
 
-        public void SliderValueChanged(int value)
+        public void SliderValueChanged(int Value)
         ///Called when the slider changes its value (or when loading)
         ///Sets the correct values of the double progress bars
         {
-            float x = _data.XAcceleration.ElementAt(value);
-            float y = _data.YAcceleration.ElementAt(value);
-            float z = _data.ZAcceleration.ElementAt(value);
+            var Roll = _data.Roll.ElementAt(Value);
+            var Pitch = _data.Pitch.ElementAt(Value);
+            var Yaw = _data.Yaw.ElementAt(Value);
 
-            if (x < 0)
+            if (Roll > 180)
+                Roll -= 360;
+            if (Roll < -180)
+                Roll += 360;
+
+            if (Pitch > 180)
+                Pitch -= 360;
+            if (Pitch < -180)
+                Pitch += 360;
+
+            if (Yaw > 180)
+                Yaw -= 360;
+            if (Yaw < -180)
+                Yaw += 360;
+
+            if (Roll < 0)
             {
-                LValFB = 0;
-                RValFB = -x;
+                LValRoll = 0;
+                RValRoll = -(float)Roll;
             }
             else
             {
-                LValFB = x;
-                RValFB = 0;
+                LValRoll = (float)Roll;
+                RValRoll = 0;
             }
 
-            if (y < 0)
+            if (Yaw < 0)
             {
-                LValLR = 0;
-                RValLR = y;
+                LValYaw = 0;
+                RValYaw = -(float)Yaw;
             }
             else
             {
-                LValLR = y;
-                RValLR = 0;
+                LValYaw = (float)Yaw;
+                RValYaw = 0;
             }
 
-            if (z < 0)
+            if (Pitch < 0)
             {
-                LValUD = 0;
-                RValUD = -z;
+                LValPitch = 0;
+                RValPitch = -(float)Pitch;
             }
             else
             {
-                LValUD = z;
-                RValUD = 0;
+                LValPitch = (float)Pitch;
+                RValPitch = 0;
             }
 
-            FBText = String.Format("Roll: {0} m/s^2", x);
-            UDText = String.Format("Pitch: {0} m/s^2", y);
-            LRText = String.Format("Yaw: {0} m/s^2", z);
+            RollText = String.Format("Roll: {0}°", Roll);
+            PitchText = String.Format("Pitch: {0}°", Pitch);
+            YawText = String.Format("Yaw: {0}°", Yaw);
         }
 
         //The following are the Data Bindings for the values
-        public float RValUD
+        public float RValPitch
         {
-            get { return _rValUD; }
-            set { SetProperty(ref _rValUD, value); }
+            get { return _rValPitch; }
+            set { SetProperty(ref _rValPitch, value); }
         }
-        public float LValUD
+        public float LValPitch
         {
-            get { return _lValUD; }
-            set { SetProperty(ref _lValUD, value); }
+            get { return _lValPitch; }
+            set { SetProperty(ref _lValPitch, value); }
         }
-        public float RValFB
+        public float RValRoll
         {
-            get { return _rValFB; }
-            set { SetProperty(ref _rValFB, value); }
+            get { return _rValRoll; }
+            set { SetProperty(ref _rValRoll, value); }
         }
-        public float LValFB
+        public float LValRoll
         {
-            get { return _lValFB; }
-            set { SetProperty(ref _lValFB, value); }
+            get { return _lValRoll; }
+            set { SetProperty(ref _lValRoll, value); }
         }
-        public float RValLR
+        public float RValYaw
         {
-            get { return _rValLR; }
-            set { SetProperty(ref _rValLR, value); }
+            get { return _rValYaw; }
+            set { SetProperty(ref _rValYaw, value); }
         }
-        public float LValLR
+        public float LValYaw
         {
-            get { return _lValLR; }
-            set { SetProperty(ref _lValLR, value); }
+            get { return _lValYaw; }
+            set { SetProperty(ref _lValYaw, value); }
         }
         //The following are the Data Bindings for the maximums
-        public float RMaxUD
+        public float RMaxPitch
         {
-            get { return _rMaxUD; }
-            set { SetProperty(ref _rMaxUD, value); }
+            get { return _rMaxPitch; }
+            set { SetProperty(ref _rMaxPitch, value); }
         }
-        public float LMaxUD
+        public float LMaxPitch
         {
-            get { return _lMaxUD; }
-            set { SetProperty(ref _lMaxUD, value); }
+            get { return _lMaxPitch; }
+            set { SetProperty(ref _lMaxPitch, value); }
         }
-        public float RMaxFB
+        public float RMaxRoll
         {
-            get { return _rMaxFB; }
-            set { SetProperty(ref _rMaxFB, value); }
+            get { return _rMaxRoll; }
+            set { SetProperty(ref _rMaxRoll, value); }
         }
-        public float LMaxFB
+        public float LMaxRoll
         {
-            get { return _lMaxFB; }
-            set { SetProperty(ref _lMaxFB, value); }
+            get { return _lMaxRoll; }
+            set { SetProperty(ref _lMaxRoll, value); }
         }
-        public float RMaxLR
+        public float RMaxYaw
         {
-            get { return _rMaxLR; }
-            set { SetProperty(ref _rMaxLR, value); }
+            get { return _rMaxYaw; }
+            set { SetProperty(ref _rMaxYaw, value); }
         }
-        public float LMaxLR
+        public float LMaxYaw
         {
-            get { return _lMaxLR; }
-            set { SetProperty(ref _lMaxLR, value); }
+            get { return _lMaxYaw; }
+            set { SetProperty(ref _lMaxYaw, value); }
         }
-        public string UDText
+        public string PitchText
         {
-            get { return _udText; }
-            set { SetProperty(ref _udText, value); }
+            get { return _pitchText; }
+            set { SetProperty(ref _pitchText, value); }
         }
-        public string LRText
+        public string YawText
         {
-            get { return _lrText; }
-            set { SetProperty(ref _lrText, value); }
+            get { return _yawText; }
+            set { SetProperty(ref _yawText, value); }
         }
-        public string FBText
+        public string RollText
         {
-            get { return _fbText; }
-            set { SetProperty(ref _fbText, value); }
+            get { return _rollText; }
+            set { SetProperty(ref _rollText, value); }
         }
     }
 }

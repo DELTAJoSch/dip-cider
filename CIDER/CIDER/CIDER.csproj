@@ -80,6 +80,9 @@
     <Reference Include="OxyPlot.Wpf, Version=1.0.0.0, Culture=neutral, PublicKeyToken=75e952ba404cdbb0, processorArchitecture=MSIL">
       <HintPath>..\packages\OxyPlot.Wpf.1.0.0\lib\net45\OxyPlot.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="pilotHUD">
+      <HintPath>..\..\res\pilotHUD.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -132,6 +135,7 @@
     <Compile Include="ViewModels\AccelerationTimedViewModel.cs" />
     <Compile Include="ViewModels\AngleGraphViewModel.cs" />
     <Compile Include="ViewModels\AngleTimedViewModel.cs" />
+    <Compile Include="ViewModels\ArtificialHorizonViewModel.cs" />
     <Compile Include="ViewModels\HeightViewModel.cs" />
     <Compile Include="ViewModels\LoadViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
@@ -154,6 +158,9 @@
     </Compile>
     <Compile Include="Views\AngleTimed.xaml.cs">
       <DependentUpon>AngleTimed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ArtificialHorizon.xaml.cs">
+      <DependentUpon>ArtificialHorizon.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Height.xaml.cs">
       <DependentUpon>Height.xaml</DependentUpon>
@@ -218,6 +225,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\AngleTimed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ArtificialHorizon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

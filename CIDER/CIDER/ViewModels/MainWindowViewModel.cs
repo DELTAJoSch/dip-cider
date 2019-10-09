@@ -38,6 +38,8 @@ namespace CIDER.ViewModels
 
         private readonly DelegateCommand _changeToAccelerationTimedCommand;
 
+        private readonly DelegateCommand _changeToHorizonCommand;
+
         private bool _mapEnabled;
 
         private bool _mapAvailable;
@@ -66,6 +68,7 @@ namespace CIDER.ViewModels
             _changeToMapTimedCommand = new DelegateCommand(OnChangeToMapTimed);
             _changeToVelocityGraphCommand = new DelegateCommand(OnChangeToVelocityGraph);
             _changeToVelocityTimedCommand = new DelegateCommand(OnChangeToVelocityTimed);
+            _changeToHorizonCommand = new DelegateCommand(OnChangeToHorizonCommand);
 
             dataProvider = new DataProvider();
 
@@ -96,6 +99,7 @@ namespace CIDER.ViewModels
 
             KeyManager.MapKeyChangedEvent += KeyManager_MapKeyChangedEvent;
         }
+
         private void KeyManager_MapKeyChangedEvent(object sender, EventArgs e)
         {
             UpdateMapStatus();
@@ -112,6 +116,7 @@ namespace CIDER.ViewModels
         public ICommand ChangeToHeightCommand => _changeToHeightCommand;
         public ICommand ChangeToAngleTimedCommand => _changeToAngleTimedCommand;
         public ICommand ChangeToAngleGraphCommand => _changeToAngleGraphCommand;
+        public ICommand ChangeToHorizonCommand => _changeToHorizonCommand;
 
         public bool MapEnabled { get { return _mapEnabled; } set { SetProperty(ref _mapEnabled, value); } }
         public object FrameContent { get { return _frameContent; } private set { _frameContent = value; } }
@@ -198,6 +203,12 @@ namespace CIDER.ViewModels
         private void OnChangeToAngleGraph(object sender)
         {
             FrameContent = new AngleGraph(dataProvider);
+            RaiseEvent(new EventArgs());
+        }
+
+        private void OnChangeToHorizonCommand(object sender)
+        {
+            FrameContent = new ArtificialHorizon(dataProvider);
             RaiseEvent(new EventArgs());
         }
 

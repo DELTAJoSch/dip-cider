@@ -108,6 +108,24 @@ namespace CIDER.LoadIO
                     data.DataPointsAcceleration = Math.Min(data.XAcceleration.Count, data.YAcceleration.Count);
                     data.DataPointsAcceleration = Math.Min(data.DataPointsAcceleration, data.ZAcceleration.Count);
                 });
+
+                for (int i = 0; i < data.DataPointsAcceleration; i++)
+                {
+                    try
+                    {
+                        var Angle = ExtraMath.CalculateAngle(data.XAcceleration.ElementAt(i), data.YAcceleration.ElementAt(i), data.ZAcceleration.ElementAt(i));
+
+                        data.Roll.Add(Angle.Item1);
+                        data.Pitch.Add(Angle.Item2);
+                        data.Yaw.Add(Angle.Item3);
+                    }catch(Exception ex)
+                    {
+                        logger.Warn(ex, "Error whilst calculating Angles");
+                    }
+                }
+
+                data.DataPointsAngle = Math.Min(data.Roll.Count, data.Pitch.Count);
+                data.DataPointsAngle = Math.Min(data.DataPointsAngle, data.Yaw.Count);
             }
             catch(Exception ex)
             {
