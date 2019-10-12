@@ -6,7 +6,7 @@
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:CIDER"
         mc:Ignorable="d"
-        Title="CIDER" Height="450" Width="800" MinHeight="452" MinWidth="850" Unloaded="OnUnloaded">
+        Title="CIDER" Height="550" Width="900" MinHeight="452" MinWidth="850" Unloaded="OnUnloaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
