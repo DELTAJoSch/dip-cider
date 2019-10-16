@@ -1,10 +1,7 @@
 ﻿using CIDER.MVVMBase;
 using OxyPlot;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
@@ -48,7 +45,7 @@ namespace CIDER.ViewModels
             }
 
             PlotManager manager = new PlotManager();
-            manager.AddLineSeries(_data.Height, "Height",OxyColors.Coral);
+            manager.AddLineSeries(_data.Height, "Height", OxyColors.Coral);
 
             data = manager.GetPlotModel("Height");
             blank = new PlotModel();
@@ -103,11 +100,11 @@ namespace CIDER.ViewModels
 
                 HeightText = $"Height: {x} Fuß";
             }
-            catch(IndexOutOfRangeException ex)
+            catch (IndexOutOfRangeException ex)
             {
                 logger.Debug(ex, "no height data");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 logger.Info(ex, "Error whilst loading Data");
             }

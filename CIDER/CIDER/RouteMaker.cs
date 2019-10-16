@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER
 {
@@ -12,6 +10,7 @@ namespace CIDER
         private static double earthRadius = 6367;
 
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+
         public List<MapPolyline> CreateRoute(DataProvider _data)
         ///Summary
         ///This function creates the route and adds an arrow at the starting point
@@ -31,7 +30,7 @@ namespace CIDER
             {
                 mapPolylines.Add(GetArrow(_data.Route.First(), _data.Route.ElementAt(1)));
             }
-            catch(IndexOutOfRangeException ex)
+            catch (IndexOutOfRangeException ex)
             {
                 logger.Debug(ex, "too little elements");
             }
@@ -135,7 +134,7 @@ namespace CIDER
             //calculate coordinates of arrow tips
             Tuple<double, double> arrowPoint1 = calculateCoord(anchorPoint, bearing - arrowAngle, arrowLength);
             Tuple<double, double> arrowPoint2 = calculateCoord(anchorPoint, bearing + arrowAngle, arrowLength);
-            //go from last point in polyline to one arrow tip, then back to the 
+            //go from last point in polyline to one arrow tip, then back to the
             //last point then to the second arrow tip.
 
             arr.Add(new Location(arrowPoint1.Item1, arrowPoint1.Item2));
@@ -144,6 +143,7 @@ namespace CIDER
 
             return arr;
         }
+
         private Tuple<double, double> calculateCoord(Location origin, double brng, double arcLength)
         {
             double lat1 = ExtraMath.DegToRad(origin.Latitude);
@@ -156,6 +156,7 @@ namespace CIDER
 
             return new Tuple<double, double>(ExtraMath.RadToDeg(lat2), ExtraMath.RadToDeg(lon2));
         }
+
         private double calculateBearing(Location A, Location B)
         {
             double lat1 = ExtraMath.DegToRad(B.Latitude);

@@ -1,20 +1,15 @@
 ﻿using CIDER.MVVMBase;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace CIDER.ViewModels
 {
-    public class AboutViewModel:ViewModelBase
-        ///Summary
-        ///This is the ViewModel for the About View
-        ///The constructor takes a ProcessStarter Interface - this is so a seam for unit testing exists
-        ///On init it also sets the text in the about and information TextBlocks. They can be changed afterwards, but this is not needed in normal operation
-        ///When the button in the view is pressed, the view model responds to it by calling the function fromn the processStarter interface
+    public class AboutViewModel : ViewModelBase
+    ///Summary
+    ///This is the ViewModel for the About View
+    ///The constructor takes a ProcessStarter Interface - this is so a seam for unit testing exists
+    ///On init it also sets the text in the about and information TextBlocks. They can be changed afterwards, but this is not needed in normal operation
+    ///When the button in the view is pressed, the view model responds to it by calling the function fromn the processStarter interface
     {
         private readonly DelegateCommand _mailtoClickCommand;
         private readonly DelegateCommand _setApiKeyCommand;
@@ -38,19 +33,23 @@ namespace CIDER.ViewModels
             _handler = starter;
             _manager = manager;
         }
+
         public ICommand RequestNavigateCommand => _mailtoClickCommand;
+
         private void mailto(object sender) //executed by button
         {
             _handler.Start(new ProcessStartInfo("mailto:deltajosch@gmail.com"));
         }
 
         public ICommand SetApiKeyCommand => _setApiKeyCommand;
+
         private void setApiKey(object sender) //executed by button
         {
             _manager.Put();
         }
 
         public ICommand ChangeThemeCommand => _changeThemeCommand;
+
         private void ChangeTheme(object obj)
         {
             ThemeStyler styler = new ThemeStyler();
@@ -58,6 +57,7 @@ namespace CIDER.ViewModels
         }
 
         private string _aboutText;
+
         public string AboutText
         {
             get => _aboutText;
@@ -65,6 +65,7 @@ namespace CIDER.ViewModels
         }
 
         private string _infoText;
+
         public string InfoText
         {
             get => _infoText;

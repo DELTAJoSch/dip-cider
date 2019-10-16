@@ -1,22 +1,20 @@
 ﻿using CIDER.MVVMBase;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
-    public class ArtificialHorizonViewModel: ViewModelBase
+    public class ArtificialHorizonViewModel : ViewModelBase
     {
-        DataProvider _data;
-        double _Pitch;
-        double _Roll;
-        double _Yaw;
-        double _Velocity;
-        double _ClimbVelocity;
-        int _slMaximum;
-        int _slTickFrequency;
+        private DataProvider _data;
+        private double _Pitch;
+        private double _Roll;
+        private double _Yaw;
+        private double _Velocity;
+        private double _ClimbVelocity;
+        private int _slMaximum;
+        private int _slTickFrequency;
+
         public ArtificialHorizonViewModel(DataProvider Data)
         {
             _data = Data;
@@ -33,6 +31,7 @@ namespace CIDER.ViewModels
         public double Yaw { get { return _Yaw; } set { SetProperty(ref _Yaw, value); } }
         public double Velocity { get { return _Velocity; } set { SetProperty(ref _Velocity, value); } }
         public double ClimbVelocity { get { return _ClimbVelocity; } set { SetProperty(ref _ClimbVelocity, value); } }
+
         public int slMaximum
         {
             get { return _slMaximum; }
@@ -44,6 +43,7 @@ namespace CIDER.ViewModels
             get { return _slTickFrequency; }
             set { SetProperty(ref _slTickFrequency, value); }
         }
+
         public void SliderValueChanged(int Value)
         {
             try
@@ -56,11 +56,11 @@ namespace CIDER.ViewModels
                 {
                     Velocity = _data.Velocity.ElementAt((int)Value);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     logger.Warn(ex, "Velocity not available");
                 }
-                
+
                 try
                 {
                     ClimbVelocity = _data.Height.ElementAt((int)Value + 1) - _data.Height.ElementAt((int)Value);

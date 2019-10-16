@@ -1,13 +1,10 @@
 ﻿using CIDER.MVVMBase;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
-    public class VelocityTimedViewModel:ViewModelBase
+    public class VelocityTimedViewModel : ViewModelBase
     {
         private DataProvider _data;
         private int _slMaximum;
@@ -22,7 +19,7 @@ namespace CIDER.ViewModels
         {
             _data = data;
 
-            slMaximum = _data.DataPointsVelocity-1;
+            slMaximum = _data.DataPointsVelocity - 1;
             if (slMaximum < 1000)
                 slTickFrequency = 2;
             if (slMaximum > 1000 && slMaximum < 10000)
@@ -32,7 +29,7 @@ namespace CIDER.ViewModels
             if (slMaximum > 1000000)
                 slTickFrequency = 2000;
 
-            if((_data.DataPointsVelocity == 0) == false)
+            if ((_data.DataPointsVelocity == 0) == false)
             {
                 SliderValueChanged(0);
                 RMax = LMax = _data.Velocity.Max() + 10;
@@ -42,7 +39,6 @@ namespace CIDER.ViewModels
                 Text = "Velocity";
                 RMax = LMax = 10;
             }
-                
         }
 
         public int slMaximum
@@ -81,22 +77,26 @@ namespace CIDER.ViewModels
             get { return _rVal; }
             set { SetProperty(ref _rVal, value); }
         }
+
         public float LVal
         {
             get { return _lVal; }
             set { SetProperty(ref _lVal, value); }
         }
+
         //The following are the Data Bindings for the maximums
         public float RMax
         {
             get { return _rMax; }
             set { SetProperty(ref _rMax, value); }
         }
+
         public float LMax
         {
             get { return _lMax; }
             set { SetProperty(ref _lMax, value); }
         }
+
         public string Text
         {
             get { return _Text; }

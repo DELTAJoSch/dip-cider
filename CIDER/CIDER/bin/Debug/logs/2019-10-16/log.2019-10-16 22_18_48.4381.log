@@ -1,0 +1,26 @@
+2019-10-16 22:18:48.4381	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	Activator.CreateInstance => Activator.CreateInstance => RuntimeType.CreateInstanceImpl => Activator.CreateInstance => RuntimeType.CreateInstanceDefaultCtor => RuntimeType.CreateInstanceSlow => RuntimeTypeHandle.CreateInstance => MainWindow..ctor => MainWindowViewModel..ctor => KeyManager.Fetch	"System.IO.FileLoadException: Die Datei oder Assembly ""MahApps.Metro, Version=1.2.4.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f"" oder eine Abhängigkeit davon wurde nicht gefunden. Die gefundene Manifestdefinition der Assembly stimmt nicht mit dem Assemblyverweis überein. (Ausnahme von HRESULT: 0x80131040)
+Dateiname: ""MahApps.Metro, Version=1.2.4.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f""
+   bei BespokeFusion.MaterialMessageBox.Show(String message, String title)
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 52.
+
+=== Zustandsinformationen vor Bindung ===
+LOG: DisplayName = MahApps.Metro, Version=1.2.4.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f
+ (Fully-specified)
+LOG: Appbase = file:///H:/Dokumente/Diplomarbeit/Code/CIDER-Repository/dip-cider/CIDER/CIDER/bin/Debug/
+LOG: Ursprünglicher PrivatePath = NULL
+Aufruf von Assembly : BespokeFusion, Version=1.0.1.10, Culture=neutral, PublicKeyToken=null.
+===
+LOG: Diese Bindung startet im default-Load-Kontext.
+LOG: Die Anwendungskonfigurationsdatei wird verwendet: H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\bin\Debug\CIDER.exe.Config
+LOG: Die Hostkonfigurationsdatei wird verwendet: 
+LOG: Die Computerkonfigurationsdatei von C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config wird verwendet.
+LOG: Verweis nach der Richtlinie: MahApps.Metro, Version=1.2.4.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f
+LOG: Download von neuem URL file:///H:/Dokumente/Diplomarbeit/Code/CIDER-Repository/dip-cider/CIDER/CIDER/bin/Debug/MahApps.Metro.DLL.
+WRN: Der Vergleich des Assemblynamens führte zum Konflikt: Nebenversion.
+ERR: Das Setup der Assembly konnte nicht abgeschlossen werden (hr = 0x80131040). Die Suche wurde beendet.
+"	
+2019-10-16 22:18:48.4790	INFO	No Color Found	CIDER.ColorWriter.GetSetTheming	Activator.CreateInstance => Activator.CreateInstance => RuntimeType.CreateInstanceImpl => Activator.CreateInstance => RuntimeType.CreateInstanceDefaultCtor => RuntimeType.CreateInstanceSlow => RuntimeTypeHandle.CreateInstance => MainWindow..ctor => MainWindowViewModel..ctor => ColorWriter.GetSetTheming	"System.IndexOutOfRangeException: Der Index war außerhalb des Arraybereichs.
+   bei CIDER.ColorWriter.GetSetTheming() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ColorWriter.cs:Zeile 24."	
+2019-10-16 22:18:48.4970	WARN	Error whilst reading theme. Reverting back to standard.	CIDER.ViewModels.MainWindowViewModel..ctor	SafeReflectionInvoker.CreateInstanceCritical => Activator.CreateInstance => Activator.CreateInstance => RuntimeType.CreateInstanceImpl => Activator.CreateInstance => RuntimeType.CreateInstanceDefaultCtor => RuntimeType.CreateInstanceSlow => RuntimeTypeHandle.CreateInstance => MainWindow..ctor => MainWindowViewModel..ctor	"CIDER.ColorWriterNoColorException: Eine Ausnahme vom Typ ""CIDER.ColorWriterNoColorException"" wurde ausgelöst.
+   bei CIDER.ColorWriter.GetSetTheming() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ColorWriter.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 91."	

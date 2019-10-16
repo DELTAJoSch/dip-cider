@@ -3,18 +3,18 @@ using Microsoft.Maps.MapControl.WPF;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
-    public class MapRouteViewModel:ViewModelBase
+    public class MapRouteViewModel : ViewModelBase
     ///Summary
     ///This is the viewmodel for the map route view
     {
-        DataProvider _data;
+        private DataProvider _data;
         private ApplicationIdCredentialsProvider _apiKey;
+
         public event EventHandler RouteChangedEvent;
+
         private List<MapPolyline> _mapPolylines;
         private RouteMaker maker;
 
@@ -26,12 +26,21 @@ namespace CIDER.ViewModels
 
             maker = new RouteMaker();
 
+            MapZoomLevel = 12.6;
+
+            if (_data.Route.Count > 0)
+                MapCenter = _data.Route.First();
+            else
+                MapCenter = new Location(48.236096, 14.188624);
+
             //set the api key read from the key file
             APIKey = new ApplicationIdCredentialsProvider(data.APIKey);
         }
 
         public ApplicationIdCredentialsProvider APIKey { get { return _apiKey; } set { SetProperty(ref _apiKey, value); } }
         public List<MapPolyline> MapPolylines { get { return _mapPolylines; } private set { _mapPolylines = value; } }
+        public Location MapCenter;
+        public double MapZoomLevel;
 
         public void Initialize()
         ///Summary
@@ -41,14 +50,22 @@ namespace CIDER.ViewModels
             RaiseEvent(new EventArgs());
         }
 
-       
+        public void CalculateCenter()
+        {
+            MapZoomLevel = 12.6;
+
+            if (_data.Route.Count > 0)
+                MapCenter = _data.Route.First();
+            else
+                MapCenter = new Location(48.236096, 14.188624);
+        }
 
         private void RaiseEvent(EventArgs e)
         ///Summary
         ///This function raises the event
         {
             EventHandler handler = RouteChangedEvent;
-            if(handler!=null)
+            if (handler != null)
                 handler.Invoke(this, e);
         }
     }

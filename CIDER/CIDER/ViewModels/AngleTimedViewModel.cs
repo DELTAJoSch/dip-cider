@@ -1,9 +1,6 @@
 ﻿using CIDER.MVVMBase;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
@@ -15,6 +12,7 @@ namespace CIDER.ViewModels
 
         //private Data, all corresponding to the bindings
         private int _slMaximum;
+
         private int _slTickFrequency;
         private float _rValPitch;
         private float _lValPitch;
@@ -54,7 +52,6 @@ namespace CIDER.ViewModels
                 PitchText = "Pitch";
                 YawText = "Yaw";
             }
-
         }
 
         public int slMaximum
@@ -136,72 +133,86 @@ namespace CIDER.ViewModels
             get { return _rValPitch; }
             set { SetProperty(ref _rValPitch, value); }
         }
+
         public float LValPitch
         {
             get { return _lValPitch; }
             set { SetProperty(ref _lValPitch, value); }
         }
+
         public float RValRoll
         {
             get { return _rValRoll; }
             set { SetProperty(ref _rValRoll, value); }
         }
+
         public float LValRoll
         {
             get { return _lValRoll; }
             set { SetProperty(ref _lValRoll, value); }
         }
+
         public float RValYaw
         {
             get { return _rValYaw; }
             set { SetProperty(ref _rValYaw, value); }
         }
+
         public float LValYaw
         {
             get { return _lValYaw; }
             set { SetProperty(ref _lValYaw, value); }
         }
+
         //The following are the Data Bindings for the maximums
         public float RMaxPitch
         {
             get { return _rMaxPitch; }
             set { SetProperty(ref _rMaxPitch, value); }
         }
+
         public float LMaxPitch
         {
             get { return _lMaxPitch; }
             set { SetProperty(ref _lMaxPitch, value); }
         }
+
         public float RMaxRoll
         {
             get { return _rMaxRoll; }
             set { SetProperty(ref _rMaxRoll, value); }
         }
+
         public float LMaxRoll
         {
             get { return _lMaxRoll; }
             set { SetProperty(ref _lMaxRoll, value); }
         }
+
         public float RMaxYaw
         {
             get { return _rMaxYaw; }
             set { SetProperty(ref _rMaxYaw, value); }
         }
+
         public float LMaxYaw
         {
             get { return _lMaxYaw; }
             set { SetProperty(ref _lMaxYaw, value); }
         }
+
         public string PitchText
         {
             get { return _pitchText; }
             set { SetProperty(ref _pitchText, value); }
         }
+
         public string YawText
         {
             get { return _yawText; }
             set { SetProperty(ref _yawText, value); }
         }
+
         public string RollText
         {
             get { return _rollText; }

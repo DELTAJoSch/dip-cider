@@ -23,8 +23,7 @@
             Alpha="0"
             Beta="0"
             SpeedMsEnabled="True"
-            ClimbRateEnabled="True"
-        />
+            ClimbRateEnabled="True" />
         <Slider Grid.Row="2" Maximum="{Binding Path=slMaximum}" TickPlacement="BottomRight" TickFrequency="{Binding Path=slTickFrequency}" Name="slValue" ValueChanged="SlValue_ValueChanged" SmallChange="1" LargeChange="10" IsSnapToTickEnabled="True" />
     </Grid>
 </Page>

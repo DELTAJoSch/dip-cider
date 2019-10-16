@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER
 {
@@ -23,7 +19,7 @@ namespace CIDER
         public static Tuple<float, float, float> CalculateAngle(float AccelerationX, float AccelerationY, float AccelerationZ)
         //Calculation according to https://www.digikey.com/en/articles/techzone/2011/may/using-an-accelerometer-for-inclination-sensing
         {
-            var result = Math.Sqrt(Math.Pow(AccelerationY,2) + Math.Pow(AccelerationZ, 2));
+            var result = Math.Sqrt(Math.Pow(AccelerationY, 2) + Math.Pow(AccelerationZ, 2));
             result = AccelerationX / result;
             var Roll = Math.Atan(result);
 
