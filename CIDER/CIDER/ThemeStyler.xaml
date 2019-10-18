@@ -10,22 +10,22 @@
         Title="ThemeStyler" Height="182.07" Width="311.125" ResizeMode="NoResize" Topmost="True">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
         <GroupBox Header="Style" Margin="0,0,0.333,-0.333" Grid.RowSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="392*">
                     </ColumnDefinition>
-                    <ColumnDefinition Width="391*"/>
+                    <ColumnDefinition Width="391*" />
                 </Grid.ColumnDefinitions>
-                <Button Command="{Binding Path=DarkThemeCommand}" Content="Dark" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                <Button Command="{Binding Path=LightThemeCommand}" Content="Light" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1"/>
+                <Button Command="{Binding Path=DarkThemeCommand}" Content="Dark" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                <Button Command="{Binding Path=LightThemeCommand}" Content="Light" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" />
             </Grid>
         </GroupBox>
         <GroupBox Header="Accent" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <ComboBox Name="AccentColor" SelectionChanged="AccentColor_SelectionChanged" ItemsSource="{Binding Path=AccentColorItemSource}"/>
+            <ComboBox Name="AccentColor" SelectionChanged="AccentColor_SelectionChanged" ItemsSource="{Binding Path=AccentColorItemSource}" />
         </GroupBox>
     </Grid>
 </Control:MetroWindow>

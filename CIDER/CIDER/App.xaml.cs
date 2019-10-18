@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -14,6 +10,7 @@ namespace CIDER
     public partial class App : Application
     {
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
@@ -48,7 +45,7 @@ namespace CIDER
             finally
             {
                 logger.Fatal(ex, message);
-                MessageBox.Show("Due to an unexpected error this application is going to close. If you are able to send the log file via email, that would be appreciated.","An unexpected error ocurred.",MessageBoxButton.OK,MessageBoxImage.Error);
+                MessageBox.Show("Due to an unexpected error this application is going to close. If you are able to send the log file via email, that would be appreciated.", "An unexpected error ocurred.", MessageBoxButton.OK, MessageBoxImage.Error);
                 System.Windows.Application.Current.Shutdown(1);
             }
         }

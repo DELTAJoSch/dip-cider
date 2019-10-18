@@ -1,8 +1,8 @@
 ﻿using CIDER.ViewModels;
+using MahApps.Metro.Controls;
 using System;
 using System.Windows;
 using System.Windows.Interop;
-using MahApps.Metro.Controls;
 
 namespace CIDER
 {
@@ -12,10 +12,13 @@ namespace CIDER
     public partial class MainWindow : MetroWindow
     {
         public static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
-        MainWindowViewModel viewModel;
-        HwndSource source;
+        private MainWindowViewModel viewModel;
+        private HwndSource source;
+
         public static event EventHandler OnResizeStartEvent;
+
         public static event EventHandler OnResizeEndEvent;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -41,7 +44,8 @@ namespace CIDER
             try
             {
                 frmMain.Navigate(viewModel.FrameContent);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 logger.Warn(ex, "Error whilst changing View");
             }
@@ -70,12 +74,12 @@ namespace CIDER
 
         private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
-            if(msg == 561)
+            if (msg == 561)
             {
                 RaiseResizeStartEvent(new EventArgs());
             }
 
-            if(msg == 562)
+            if (msg == 562)
             {
                 RaiseResizeEndEvent(new EventArgs());
             }

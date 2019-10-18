@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Forms;
 
@@ -12,9 +9,12 @@ namespace CIDER
     public class KeyManager
     {
         public static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
-        DataProvider _data;
+        private DataProvider _data;
+
         public static event EventHandler MapKeyChangedEvent;
+
         private IKeyManagerReader _reader;
+
         public KeyManager(DataProvider data, IKeyManagerReader reader)
         {
             _data = data;
@@ -27,24 +27,26 @@ namespace CIDER
             {
                 string[] cfg = _reader.ReadAllLines("CIDER.cfg");
 
-                if (_reader.FileExists(cfg[0]))
+                Regex regex = new Regex(@"KEY:.*");
+                Match match = regex.Match(cfg[0]);
+
+                if (_reader.FileExists(cfg[0].Remove(0, 4)) & match.Success)
                 {
-                    string[] key = _reader.ReadAllLines(cfg[0]);
+                    string[] key = _reader.ReadAllLines(cfg[0].Remove(0, 4));
 
                     _data.APIKey = key[0];
-
                     return true;
                 }
                 else
                 {
-                    System.Windows.MessageBox.Show("To use all features correctly, please add a reference to a .key file containing an BingMaps API Key.", "BingMaps API Key", MessageBoxButton.OK, MessageBoxImage.Information);
+                    System.Windows.MessageBox.Show("To use all features correctly, please add a reference to a .key file containing an BingMaps API Key.", "BingMaps API Key", MessageBoxButton.OK, MessageBoxImage.Error);
                     logger.Info("No API Key found: Maps feature not available");
                     return false;
                 }
             }
-            catch(IndexOutOfRangeException ex)
+            catch (IndexOutOfRangeException ex)
             {
-                System.Windows.MessageBox.Show("To use all features correctly, please add a reference to a .key file containing an BingMaps API Key.", "BingMaps API Key", MessageBoxButton.OK, MessageBoxImage.Information);
+                System.Windows.MessageBox.Show("To use all features correctly, please add a reference to a .key file containing an BingMaps API Key.", "BingMaps API Key", MessageBoxButton.OK, MessageBoxImage.Error);
                 logger.Info("No API Key found: Maps feature not available");
                 return false;
             }
@@ -69,9 +71,9 @@ namespace CIDER
                 dialog.AddExtension = true;
                 dialog.DefaultExt = ".key";
 
-                if(_reader.ShowDialog(dialog) == DialogResult.OK)
+                if (_reader.ShowDialog(dialog) == DialogResult.OK)
                 {
-                    cfg[0] = dialog.FileName;
+                    cfg[0] = $"KEY:{dialog.FileName}";
 
                     _reader.WriteAllLines(cfg, "CIDER.cfg");
                     RaiseEvent(new EventArgs());
@@ -84,7 +86,7 @@ namespace CIDER
             }
             catch (IndexOutOfRangeException ex)
             {
-                _reader.WriteAllText(dialog.FileName, "CIDER.cfg");
+                _reader.WriteAllText($"KEY:{dialog.FileName}", "CIDER.cfg");
                 RaiseEvent(new EventArgs());
                 return true;
             }
@@ -106,9 +108,13 @@ namespace CIDER
     public interface IKeyManagerReader
     {
         string[] ReadAllLines(string filename);
+
         DialogResult ShowDialog(OpenFileDialog dialog);
+
         void WriteAllLines(string[] lines, string filename);
+
         void WriteAllText(string text, string filename);
+
         bool FileExists(string filename);
     }
 

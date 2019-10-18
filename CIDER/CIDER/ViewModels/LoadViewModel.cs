@@ -75,7 +75,7 @@ namespace CIDER.ViewModels
 
                 logger.Debug(e, "File Dialog Exited");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 logger.Warn(ex, "Selection failed");
             }

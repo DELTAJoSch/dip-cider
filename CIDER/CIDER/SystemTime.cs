@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER
 {
@@ -25,12 +21,13 @@ namespace CIDER
         {
             _time = DateTime.MinValue;
         }
+
         public DateTime Now
         //returns either fake time or current time
         {
             get
             {
-                if(_time == DateTime.MinValue)
+                if (_time == DateTime.MinValue)
                 {
                     return DateTime.Now;
                 }

@@ -1,13 +1,10 @@
 ﻿using CIDER.MVVMBase;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
-    public class AccelerationTimedViewModel:ViewModelBase
+    public class AccelerationTimedViewModel : ViewModelBase
     ///Summary
     ///This is the ViewModel for the AngleTimedView
     {
@@ -15,6 +12,7 @@ namespace CIDER.ViewModels
 
         //private Data, all corresponding to the bindings
         private int _slMaximum;
+
         private int _slTickFrequency;
         private float _rValUD;
         private float _lValUD;
@@ -58,7 +56,6 @@ namespace CIDER.ViewModels
                 UDText = "Up/Down";
                 LRText = "Left/Right";
             }
-
         }
 
         public int slMaximum
@@ -125,72 +122,86 @@ namespace CIDER.ViewModels
             get { return _rValUD; }
             set { SetProperty(ref _rValUD, value); }
         }
+
         public float LValUD
         {
             get { return _lValUD; }
             set { SetProperty(ref _lValUD, value); }
         }
+
         public float RValFB
         {
             get { return _rValFB; }
             set { SetProperty(ref _rValFB, value); }
         }
+
         public float LValFB
         {
             get { return _lValFB; }
             set { SetProperty(ref _lValFB, value); }
         }
+
         public float RValLR
         {
             get { return _rValLR; }
             set { SetProperty(ref _rValLR, value); }
         }
+
         public float LValLR
         {
             get { return _lValLR; }
             set { SetProperty(ref _lValLR, value); }
         }
+
         //The following are the Data Bindings for the maximums
         public float RMaxUD
         {
             get { return _rMaxUD; }
             set { SetProperty(ref _rMaxUD, value); }
         }
+
         public float LMaxUD
         {
             get { return _lMaxUD; }
             set { SetProperty(ref _lMaxUD, value); }
         }
+
         public float RMaxFB
         {
             get { return _rMaxFB; }
             set { SetProperty(ref _rMaxFB, value); }
         }
+
         public float LMaxFB
         {
             get { return _lMaxFB; }
             set { SetProperty(ref _lMaxFB, value); }
         }
+
         public float RMaxLR
         {
             get { return _rMaxLR; }
             set { SetProperty(ref _rMaxLR, value); }
         }
+
         public float LMaxLR
         {
             get { return _lMaxLR; }
             set { SetProperty(ref _lMaxLR, value); }
         }
+
         public string UDText
         {
             get { return _udText; }
             set { SetProperty(ref _udText, value); }
         }
+
         public string LRText
         {
             get { return _lrText; }
             set { SetProperty(ref _lrText, value); }
         }
+
         public string FBText
         {
             get { return _fbText; }

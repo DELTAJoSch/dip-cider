@@ -1,11 +1,6 @@
 ﻿using CIDER.MVVMBase;
 using OxyPlot;
-using OxyPlot.Series;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
@@ -14,10 +9,10 @@ namespace CIDER.ViewModels
     ///This is the View Model for the AngleGraphViewModel
     ///TODO: Make loading async or do it in an extra thread
     {
-        PlotModel _plot;
-        PlotModel data;
-        PlotModel blank;
-        DataProvider _data;
+        private PlotModel _plot;
+        private PlotModel data;
+        private PlotModel blank;
+        private DataProvider _data;
 
         public AccelerationGraphViewModel(DataProvider dataProvider)
         {
@@ -55,7 +50,7 @@ namespace CIDER.ViewModels
         }
 
         public PlotModel Plot
-         //Data Binding for the Graph
+        //Data Binding for the Graph
         {
             get { return _plot; }
             set { SetProperty(ref _plot, value); }

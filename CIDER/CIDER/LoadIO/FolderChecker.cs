@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER.LoadIO
 {
@@ -12,11 +8,12 @@ namespace CIDER.LoadIO
     ///This class implements the IChecker Interface. This class is used to check if a previously selected folder contains the correct files
     {
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+
         public bool IsCorrectFolder(string Path)
         {
             string name = GetFolderName(Path);
 
-            if(File.Exists(Path + "\\" + name +".csv") && File.Exists(Path+ "\\" + name + ".nmea"))
+            if (File.Exists(Path + "\\" + name + ".csv") && File.Exists(Path + "\\" + name + ".nmea"))
             {
                 logger.Info("Folder {0} is correct", Path);
                 return true;
@@ -29,7 +26,7 @@ namespace CIDER.LoadIO
         private string GetFolderName(string path)
         {
             string[] splitter = path.Split('\\');
-            logger.Debug("Getting folder name: {0} from path: {1}",splitter.Last(),path);
+            logger.Debug("Getting folder name: {0} from path: {1}", splitter.Last(), path);
             return splitter.Last();
         }
     }

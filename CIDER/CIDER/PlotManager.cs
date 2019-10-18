@@ -3,8 +3,6 @@ using OxyPlot.Series;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CIDER
@@ -14,6 +12,7 @@ namespace CIDER
     {
         private PlotModel _plot;
         public List<LineSeries> Series;
+
         public PlotManager()
         {
             Series = new List<LineSeries>();
@@ -49,8 +48,8 @@ namespace CIDER
                 var pdfExporter = new PdfExporter { Width = 600, Height = 400 };
                 pdfExporter.Export(_plot, stream);
             }
-
         }
+
         private async Task<List<DataPoint>> GetLineSeriesAsync(List<float> data, int interval)
         ///This Task reads all the data points and convert them to line series
         ///It´s executed asynchronously, so this doesn't block when large datasets are involved

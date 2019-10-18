@@ -1,20 +1,16 @@
 ﻿using CIDER.MVVMBase;
 using OxyPlot;
-using OxyPlot.Series;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER.ViewModels
 {
-    public class VelocityGraphViewModel: ViewModelBase, IDisposable
+    public class VelocityGraphViewModel : ViewModelBase, IDisposable
     {
         private DataProvider _data;
         private PlotModel _plot;
         private PlotModel blank;
         private PlotModel data;
+
         public VelocityGraphViewModel(DataProvider dataProvider)
         {
             _data = dataProvider;
@@ -48,7 +44,8 @@ namespace CIDER.ViewModels
             MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
         }
 
-        public PlotModel Plot {
+        public PlotModel Plot
+        {
             get
             {
                 return _plot;

@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace CIDER.LoadIO
@@ -14,6 +13,7 @@ namespace CIDER.LoadIO
     {
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private int failedParses;
+
         public async void ReadCSV(DataProvider data, string path, IRead read, MainWindowViewModel main)
         {
             logger.Debug("Starting CSV ingestion.");
@@ -118,7 +118,8 @@ namespace CIDER.LoadIO
                         data.Roll.Add(Angle.Item1);
                         data.Pitch.Add(Angle.Item2);
                         data.Yaw.Add(Angle.Item3);
-                    }catch(Exception ex)
+                    }
+                    catch (Exception ex)
                     {
                         logger.Warn(ex, "Error whilst calculating Angles");
                     }
@@ -127,7 +128,7 @@ namespace CIDER.LoadIO
                 data.DataPointsAngle = Math.Min(data.Roll.Count, data.Pitch.Count);
                 data.DataPointsAngle = Math.Min(data.DataPointsAngle, data.Yaw.Count);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 logger.Error(ex, "Error reading File");
             }
@@ -157,7 +158,7 @@ namespace CIDER.LoadIO
                                 first = false;
                             }
                         }
-                        if(vs[0] == "$GPRMC")
+                        if (vs[0] == "$GPRMC")
                         {
                             RMC(line, Data, first);
                         }
@@ -194,7 +195,6 @@ namespace CIDER.LoadIO
             {
                 logger.Info("{0} parses failed.", failedParses);
             }
-
         }
 
         private void GGA(string Nmea, DataProvider Data, bool First)
@@ -230,13 +230,13 @@ namespace CIDER.LoadIO
 
                 Data.AverageSattelitesInUse = storage.SattelitesInUse;
 
-                if(DateTime.Today != storage.Time)
+                if (DateTime.Today != storage.Time)
                     Data.RouteEndTime = storage.Time;
 
                 if (First)
                     Data.RouteStartTime = storage.Time;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 logger.Debug(ex, "Error whilst parsing");
                 failedParses++;
@@ -245,7 +245,6 @@ namespace CIDER.LoadIO
             {
                 logger.Info("{0} parses failed.", failedParses);
             }
-
         }
     }
 
@@ -273,12 +272,14 @@ namespace CIDER.LoadIO
     public interface IIO
     {
         void ReadNmea(DataProvider data, string path, IRead read, MainWindowViewModel main);
+
         void ReadCSV(DataProvider data, string path, IRead read, MainWindowViewModel main);
     }
 
     public interface IRead
     {
         string[] ReadLinesNmea(string path);
+
         string[] ReadLinesCsv(string path);
     }
 }

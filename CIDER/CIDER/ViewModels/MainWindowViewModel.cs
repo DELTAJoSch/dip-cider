@@ -2,9 +2,6 @@
 using CIDER.Views;
 using MahApps.Metro;
 using System;
-using System.Diagnostics.Tracing;
-using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace CIDER.ViewModels
@@ -14,7 +11,7 @@ namespace CIDER.ViewModels
     /*/Summary
      * This is the ViewModel for the Main Window (contains view selection buttons and frame)
      * This class handles the button presses - they change the views
-    /*/ 
+    /*/
     {
         private readonly DelegateCommand _changeToAboutCommand;
 
@@ -76,6 +73,7 @@ namespace CIDER.ViewModels
             _mapAvailable = true;
 
             KeyManager manager = new KeyManager(dataProvider, new KeyManagerReader());
+
             if (!manager.Fetch())
             {
                 MapEnabled = false;
@@ -89,7 +87,7 @@ namespace CIDER.ViewModels
 
                 ThemeManager.ChangeAppStyle(App.Current, ThemeManager.GetAccent(thm.Item2), ThemeManager.GetAppTheme(thm.Item1));
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 logger.Warn(ex, "Error whilst reading theme. Reverting back to standard.");
                 ThemeManager.ChangeAppStyle(App.Current, ThemeManager.GetAccent("Blue"), ThemeManager.GetAppTheme("BaseLight"));
@@ -128,6 +126,7 @@ namespace CIDER.ViewModels
             _mapAvailable = true;
 
             KeyManager manager = new KeyManager(dataProvider, new KeyManagerReader());
+
             if (!manager.Fetch())
             {
                 MapEnabled = false;
@@ -147,6 +146,7 @@ namespace CIDER.ViewModels
             FrameContent = new About(dataProvider);
             RaiseEvent(new EventArgs());
         }
+
         private void OnChangeToAccelerationGraph(object sender)
         {
             FrameContent = new AccelerationGraph(dataProvider);
@@ -164,6 +164,7 @@ namespace CIDER.ViewModels
             FrameContent = new Load(dataProvider, this);
             RaiseEvent(new EventArgs());
         }
+
         private void OnChangeToMapRoute(object sender)
         {
             FrameContent = new MapRoute(dataProvider);
@@ -226,6 +227,7 @@ namespace CIDER.ViewModels
 
             ButtonEnabled = state;
         }
+
         public void Dispose()
         {
             KeyManager.MapKeyChangedEvent -= KeyManager_MapKeyChangedEvent;

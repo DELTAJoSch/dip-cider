@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER
 {
@@ -10,10 +6,12 @@ namespace CIDER
     {
         public static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private IKeyManagerReader _reader;
+
         public ColorWriter(IKeyManagerReader reader)
         {
             _reader = reader;
         }
+
         public Tuple<string, string> GetSetTheming()
         {
             try

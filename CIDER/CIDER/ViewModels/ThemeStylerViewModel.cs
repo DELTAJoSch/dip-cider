@@ -2,18 +2,13 @@
 using MahApps.Metro;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Controls;
-using MahApps.Metro.Controls;
 
 namespace CIDER.ViewModels
 {
-    public class ThemeStylerViewModel: ViewModelBase
+    public class ThemeStylerViewModel : ViewModelBase
     {
         private List<string> _accentColorItemSource;
 
@@ -44,6 +39,7 @@ namespace CIDER.ViewModels
         public List<string> AccentColorItemSource { get { return _accentColorItemSource; } private set { SetProperty(ref _accentColorItemSource, value); } }
         public ICommand DarkThemeCommand => _darkThemeSelectedCommand;
         public ICommand LightThemeCommand => _lightThemeSelectedCommand;
+
         public void AccentColorChanged(string color)
         {
             var theme = ThemeManager.DetectAppStyle(Application.Current);

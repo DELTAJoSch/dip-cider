@@ -1,9 +1,6 @@
 ﻿using Microsoft.Maps.MapControl.WPF;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CIDER
 {
@@ -71,7 +68,11 @@ namespace CIDER
         public List<float> Velocity { get { return _Velocity; } set { _Velocity = value; } }
         public List<float> Height { get { return _height; } set { _height = value; } }
         public LocationCollection Route { get { return _route; } set { _route = value; } }
-        public int AverageSattelitesInUse { get { return _averageSattelitesInUse; } set
+
+        public int AverageSattelitesInUse
+        {
+            get { return _averageSattelitesInUse; }
+            set
             {
                 if (_numberOfPoints == 0)
                     _averageSattelitesInUse = value;
@@ -113,7 +114,8 @@ namespace CIDER
                 this._dataPointsVelocity = new int();
 
                 return true;
-            }catch(Exception)
+            }
+            catch (Exception)
             {
                 return false;
             }

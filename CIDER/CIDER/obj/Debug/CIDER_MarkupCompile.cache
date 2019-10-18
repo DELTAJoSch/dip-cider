@@ -12,9 +12,9 @@ DEBUG;TRACE
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\App.xaml
 171496064003
 1-2138471434
-46203650404
-1341908371257
+48-1901109593
+1361405241747
 LoadBoxWindow.xaml;MainWindow.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;ThemeStyler.xaml;Views\About.xaml;Views\AccelerationGraph.xaml;Views\AccelerationTimed.xaml;Views\AngleGraph.xaml;Views\AngleTimed.xaml;Views\ArtificialHorizon.xaml;Views\Height.xaml;Views\Load.xaml;Views\MapRoute.xaml;Views\MapTimed.xaml;Views\VelocityGraph.xaml;Views\VelocityTimed.xaml;
 
-False
+True
 

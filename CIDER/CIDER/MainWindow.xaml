@@ -6,27 +6,26 @@
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:CIDER"
         mc:Ignorable="d"
-        Title="CIDER" Height="450" Width="800" MinHeight="452" MinWidth="850" Unloaded="OnUnloaded">
+        Title="CIDER" Height="550" Width="900" MinHeight="452" MinWidth="850" Unloaded="OnUnloaded">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="11*" />
         </Grid.ColumnDefinitions>
         <StackPanel x:Name="stPanViewSelector" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,9.667">
-            <Button Content="Load" Command="{Binding Path=ChangeToLoadCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Map - Route" Command="{Binding Path=ChangeToMapRouteCommand}" IsEnabled="{Binding Path=MapEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Acc - Graph" Command="{Binding Path=ChangeToAccelerationGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Angle - Graph" Command="{Binding Path=ChangeToAngleGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Velocity - Graph" Command="{Binding Path=ChangeToVelocityGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Map - Timed" Command="{Binding Path=ChangeToMapTimedCommand}" IsEnabled="{Binding Path=MapEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Acc - Timed" Command="{Binding Path=ChangeToAccelerationTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Angle - Timed" Command="{Binding Path=ChangeToAngleTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Velocity - Timed" Command="{Binding Path=ChangeToVelocityTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Height" Command="{Binding Path=ChangeToHeightCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="Horizon" Command="{Binding Path=ChangeToHorizonCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
-            <Button Content="About" Command="{Binding Path=ChangeToAboutCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0"/>
+            <Button Content="Load" Command="{Binding Path=ChangeToLoadCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
+            <Button Content="Map - Route" Command="{Binding Path=ChangeToMapRouteCommand}" IsEnabled="{Binding Path=MapEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
+            <Button Content="Acc - Graph" Command="{Binding Path=ChangeToAccelerationGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
+            <Button Content="Angle - Graph" Command="{Binding Path=ChangeToAngleGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
+            <Button Content="Velocity - Graph" Command="{Binding Path=ChangeToVelocityGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
+            <Button Content="Map - Timed" Command="{Binding Path=ChangeToMapTimedCommand}" IsEnabled="{Binding Path=MapEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
+            <Button Content="Acc - Timed" Command="{Binding Path=ChangeToAccelerationTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
+            <Button Content="Angle - Timed" Command="{Binding Path=ChangeToAngleTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
+            <Button Content="Velocity - Timed" Command="{Binding Path=ChangeToVelocityTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
+            <Button Content="Height" Command="{Binding Path=ChangeToHeightCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
+            <Button Content="Horizon" Command="{Binding Path=ChangeToHorizonCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
+            <Button Content="About" Command="{Binding Path=ChangeToAboutCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
         </StackPanel>
-        <Frame Grid.Column="1" Margin="10,10,10.333,9.667" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="frmMain"/>
-
+        <Frame Grid.Column="1" Margin="10,10,10.333,9.667" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="frmMain" />
     </Grid>
 </Controls:MetroWindow>
