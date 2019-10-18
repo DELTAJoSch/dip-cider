@@ -53,6 +53,8 @@ namespace CIDER.ViewModels
         ///Due to the frame control being broken/bugged a mvvm approach is not doable without using external frameworks like mvvmlight
         ///Therefor the frame is just passed to the constructor - this is not optimal but it works without problems.The only possible problem is the decreased readability
         {
+            AddLicenses();
+
             //connect delegate commands to icommand handlers
             _changeToHeightCommand = new DelegateCommand(OnChangeToHeight);
             _changeToLoadCommand = new DelegateCommand(OnChangeToLoad);
@@ -231,6 +233,16 @@ namespace CIDER.ViewModels
         public void Dispose()
         {
             KeyManager.MapKeyChangedEvent -= KeyManager_MapKeyChangedEvent;
+        }
+
+        private void AddLicenses()
+        {
+            LicenseManager.AddLicense(LicenseHolder.ThisSoftwareLicense);
+            LicenseManager.AddLicense(LicenseHolder.OxyPlotLicense);
+            LicenseManager.AddLicense(LicenseHolder.NLOGLicense);
+            LicenseManager.AddLicense(LicenseHolder.docFxLicense);
+            LicenseManager.AddLicense(LicenseHolder.pilotHUDLicense);
+            LicenseManager.AddLicense(LicenseHolder.MahAppsLicense);
         }
     }
 }

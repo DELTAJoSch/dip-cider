@@ -13,7 +13,6 @@ namespace CIDER
     {
         public static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private MainWindowViewModel viewModel;
-        private HwndSource source;
 
         public static event EventHandler OnResizeStartEvent;
 

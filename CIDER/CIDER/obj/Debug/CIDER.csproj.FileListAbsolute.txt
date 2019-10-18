@@ -69,7 +69,6 @@ H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\bin\Debug\pilotHUD.dll
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\Views\ArtificialHorizon.g.cs
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\Views\ArtificialHorizon.baml
-H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\bin\Debug\MaterialDesignColors.dll
-H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\bin\Debug\MaterialDesignThemes.Wpf.dll
-H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\bin\Debug\MaterialDesignThemes.Wpf.pdb
-H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\bin\Debug\MaterialDesignThemes.Wpf.xml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\Licenses.g.cs
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\obj\Debug\Licenses.baml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\bin\Debug\CIDER.xml

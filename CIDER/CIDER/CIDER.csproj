@@ -41,6 +41,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\CIDER.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -52,7 +53,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AccelerationControl">
@@ -120,6 +121,12 @@
     <Compile Include="Exceptions.cs" />
     <Compile Include="ExtraMath.cs" />
     <Compile Include="KeyManager.cs" />
+    <Compile Include="LicenseHolder.cs" />
+    <Compile Include="LicenseManager.cs" />
+    <Compile Include="Licenses.xaml.cs">
+      <DependentUpon>Licenses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LicenseWriter.cs" />
     <Compile Include="LoadBoxWindow.xaml.cs">
       <DependentUpon>LoadBoxWindow.xaml</DependentUpon>
     </Compile>
@@ -140,6 +147,7 @@
     <Compile Include="ViewModels\AngleTimedViewModel.cs" />
     <Compile Include="ViewModels\ArtificialHorizonViewModel.cs" />
     <Compile Include="ViewModels\HeightViewModel.cs" />
+    <Compile Include="ViewModels\LicensesViewModel.cs" />
     <Compile Include="ViewModels\LoadViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\MapRouteViewModel.cs" />
@@ -183,6 +191,10 @@
     <Compile Include="Views\VelocityTimed.xaml.cs">
       <DependentUpon>VelocityTimed.xaml</DependentUpon>
     </Compile>
+    <Page Include="Licenses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LoadBoxWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -290,6 +302,7 @@
     <None Include="ClassDiagram1.cd" />
     <Content Include=".gitignore" />
     <Content Include="api\.gitignore" />
+    <Resource Include="logo.ico" />
     <Content Include="NLog.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
