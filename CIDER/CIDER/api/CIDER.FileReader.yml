@@ -1,0 +1,888 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.FileReader
+  commentId: T:CIDER.FileReader
+  id: FileReader
+  parent: CIDER
+  children:
+  - CIDER.FileReader.FileExists(System.String)
+  - CIDER.FileReader.ReadAllLines(System.String)
+  - CIDER.FileReader.ShowDialog(System.Windows.Forms.OpenFileDialog)
+  - CIDER.FileReader.WriteAllLines(System.String[],System.String)
+  - CIDER.FileReader.WriteAllText(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: FileReader
+  nameWithType: FileReader
+  fullName: CIDER.FileReader
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: FileReader
+    path: KeyManager.cs
+    startLine: 199
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThe production code implementation of the IReader interface\n"
+  example: []
+  syntax:
+    content: 'public class FileReader : IReader'
+    content.vb: >-
+      Public Class FileReader
+          Implements IReader
+  inheritance:
+  - System.Object
+  implements:
+  - CIDER.IReader
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.FileReader.FileExists(System.String)
+  commentId: M:CIDER.FileReader.FileExists(System.String)
+  id: FileExists(System.String)
+  parent: CIDER.FileReader
+  langs:
+  - csharp
+  - vb
+  name: FileExists(String)
+  nameWithType: FileReader.FileExists(String)
+  fullName: CIDER.FileReader.FileExists(System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: FileExists
+    path: KeyManager.cs
+    startLine: 206
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nChecks if a file exists\n"
+  example: []
+  syntax:
+    content: public bool FileExists(string filename)
+    parameters:
+    - id: filename
+      type: System.String
+      description: A path to the file
+    return:
+      type: System.Boolean
+      description: Returns true if the file exists
+    content.vb: Public Function FileExists(filename As String) As Boolean
+  overload: CIDER.FileReader.FileExists*
+  implements:
+  - CIDER.IReader.FileExists(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.FileReader.ReadAllLines(System.String)
+  commentId: M:CIDER.FileReader.ReadAllLines(System.String)
+  id: ReadAllLines(System.String)
+  parent: CIDER.FileReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAllLines(String)
+  nameWithType: FileReader.ReadAllLines(String)
+  fullName: CIDER.FileReader.ReadAllLines(System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ReadAllLines
+    path: KeyManager.cs
+    startLine: 216
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nReads all lines of a given file\n"
+  example: []
+  syntax:
+    content: public string[] ReadAllLines(string filename)
+    parameters:
+    - id: filename
+      type: System.String
+      description: The path of the file to be read
+    return:
+      type: System.String[]
+      description: Returns a string array of the file (line by line)
+    content.vb: Public Function ReadAllLines(filename As String) As String()
+  overload: CIDER.FileReader.ReadAllLines*
+  implements:
+  - CIDER.IReader.ReadAllLines(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.FileReader.ShowDialog(System.Windows.Forms.OpenFileDialog)
+  commentId: M:CIDER.FileReader.ShowDialog(System.Windows.Forms.OpenFileDialog)
+  id: ShowDialog(System.Windows.Forms.OpenFileDialog)
+  parent: CIDER.FileReader
+  langs:
+  - csharp
+  - vb
+  name: ShowDialog(OpenFileDialog)
+  nameWithType: FileReader.ShowDialog(OpenFileDialog)
+  fullName: CIDER.FileReader.ShowDialog(System.Windows.Forms.OpenFileDialog)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ShowDialog
+    path: KeyManager.cs
+    startLine: 226
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis function shows a openfiledialog\n"
+  example: []
+  syntax:
+    content: public DialogResult ShowDialog(OpenFileDialog dialog)
+    parameters:
+    - id: dialog
+      type: System.Windows.Forms.OpenFileDialog
+      description: The dialog to be shown
+    return:
+      type: System.Windows.Forms.DialogResult
+      description: Returns the dialogresult
+    content.vb: Public Function ShowDialog(dialog As OpenFileDialog) As DialogResult
+  overload: CIDER.FileReader.ShowDialog*
+  implements:
+  - CIDER.IReader.ShowDialog(System.Windows.Forms.OpenFileDialog)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.FileReader.WriteAllLines(System.String[],System.String)
+  commentId: M:CIDER.FileReader.WriteAllLines(System.String[],System.String)
+  id: WriteAllLines(System.String[],System.String)
+  parent: CIDER.FileReader
+  langs:
+  - csharp
+  - vb
+  name: WriteAllLines(String[], String)
+  nameWithType: FileReader.WriteAllLines(String[], String)
+  fullName: CIDER.FileReader.WriteAllLines(System.String[], System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: WriteAllLines
+    path: KeyManager.cs
+    startLine: 236
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nWrites the given lines to the specified file\n"
+  example: []
+  syntax:
+    content: public void WriteAllLines(string[] lines, string filename)
+    parameters:
+    - id: lines
+      type: System.String[]
+      description: A string array of the lines to be written
+    - id: filename
+      type: System.String
+      description: A path to the file
+    content.vb: Public Sub WriteAllLines(lines As String(), filename As String)
+  overload: CIDER.FileReader.WriteAllLines*
+  implements:
+  - CIDER.IReader.WriteAllLines(System.String[],System.String)
+  nameWithType.vb: FileReader.WriteAllLines(String(), String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CIDER.FileReader.WriteAllLines(System.String(), System.String)
+  name.vb: WriteAllLines(String(), String)
+- uid: CIDER.FileReader.WriteAllText(System.String,System.String)
+  commentId: M:CIDER.FileReader.WriteAllText(System.String,System.String)
+  id: WriteAllText(System.String,System.String)
+  parent: CIDER.FileReader
+  langs:
+  - csharp
+  - vb
+  name: WriteAllText(String, String)
+  nameWithType: FileReader.WriteAllText(String, String)
+  fullName: CIDER.FileReader.WriteAllText(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: WriteAllText
+    path: KeyManager.cs
+    startLine: 246
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis function writes the given string to the specified file\n"
+  example: []
+  syntax:
+    content: public void WriteAllText(string text, string filename)
+    parameters:
+    - id: text
+      type: System.String
+      description: The text to be written
+    - id: filename
+      type: System.String
+      description: A path to the file
+    content.vb: Public Sub WriteAllText(text As String, filename As String)
+  overload: CIDER.FileReader.WriteAllText*
+  implements:
+  - CIDER.IReader.WriteAllText(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CIDER.IReader
+  commentId: T:CIDER.IReader
+  parent: CIDER
+  name: IReader
+  nameWithType: IReader
+  fullName: CIDER.IReader
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.FileReader.FileExists*
+  commentId: Overload:CIDER.FileReader.FileExists
+  name: FileExists
+  nameWithType: FileReader.FileExists
+  fullName: CIDER.FileReader.FileExists
+- uid: CIDER.IReader.FileExists(System.String)
+  commentId: M:CIDER.IReader.FileExists(System.String)
+  parent: CIDER.IReader
+  isExternal: true
+  name: FileExists(String)
+  nameWithType: IReader.FileExists(String)
+  fullName: CIDER.IReader.FileExists(System.String)
+  spec.csharp:
+  - uid: CIDER.IReader.FileExists(System.String)
+    name: FileExists
+    nameWithType: IReader.FileExists
+    fullName: CIDER.IReader.FileExists
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.IReader.FileExists(System.String)
+    name: FileExists
+    nameWithType: IReader.FileExists
+    fullName: CIDER.IReader.FileExists
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CIDER.FileReader.ReadAllLines*
+  commentId: Overload:CIDER.FileReader.ReadAllLines
+  name: ReadAllLines
+  nameWithType: FileReader.ReadAllLines
+  fullName: CIDER.FileReader.ReadAllLines
+- uid: CIDER.IReader.ReadAllLines(System.String)
+  commentId: M:CIDER.IReader.ReadAllLines(System.String)
+  parent: CIDER.IReader
+  isExternal: true
+  name: ReadAllLines(String)
+  nameWithType: IReader.ReadAllLines(String)
+  fullName: CIDER.IReader.ReadAllLines(System.String)
+  spec.csharp:
+  - uid: CIDER.IReader.ReadAllLines(System.String)
+    name: ReadAllLines
+    nameWithType: IReader.ReadAllLines
+    fullName: CIDER.IReader.ReadAllLines
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.IReader.ReadAllLines(System.String)
+    name: ReadAllLines
+    nameWithType: IReader.ReadAllLines
+    fullName: CIDER.IReader.ReadAllLines
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: CIDER.FileReader.ShowDialog*
+  commentId: Overload:CIDER.FileReader.ShowDialog
+  name: ShowDialog
+  nameWithType: FileReader.ShowDialog
+  fullName: CIDER.FileReader.ShowDialog
+- uid: CIDER.IReader.ShowDialog(System.Windows.Forms.OpenFileDialog)
+  commentId: M:CIDER.IReader.ShowDialog(System.Windows.Forms.OpenFileDialog)
+  parent: CIDER.IReader
+  isExternal: true
+  name: ShowDialog(OpenFileDialog)
+  nameWithType: IReader.ShowDialog(OpenFileDialog)
+  fullName: CIDER.IReader.ShowDialog(System.Windows.Forms.OpenFileDialog)
+  spec.csharp:
+  - uid: CIDER.IReader.ShowDialog(System.Windows.Forms.OpenFileDialog)
+    name: ShowDialog
+    nameWithType: IReader.ShowDialog
+    fullName: CIDER.IReader.ShowDialog
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Windows.Forms.OpenFileDialog
+    name: OpenFileDialog
+    nameWithType: OpenFileDialog
+    fullName: System.Windows.Forms.OpenFileDialog
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.IReader.ShowDialog(System.Windows.Forms.OpenFileDialog)
+    name: ShowDialog
+    nameWithType: IReader.ShowDialog
+    fullName: CIDER.IReader.ShowDialog
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Windows.Forms.OpenFileDialog
+    name: OpenFileDialog
+    nameWithType: OpenFileDialog
+    fullName: System.Windows.Forms.OpenFileDialog
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Windows.Forms.OpenFileDialog
+  commentId: T:System.Windows.Forms.OpenFileDialog
+  parent: System.Windows.Forms
+  isExternal: true
+  name: OpenFileDialog
+  nameWithType: OpenFileDialog
+  fullName: System.Windows.Forms.OpenFileDialog
+- uid: System.Windows.Forms.DialogResult
+  commentId: T:System.Windows.Forms.DialogResult
+  parent: System.Windows.Forms
+  isExternal: true
+  name: DialogResult
+  nameWithType: DialogResult
+  fullName: System.Windows.Forms.DialogResult
+- uid: System.Windows.Forms
+  commentId: N:System.Windows.Forms
+  isExternal: true
+  name: System.Windows.Forms
+  nameWithType: System.Windows.Forms
+  fullName: System.Windows.Forms
+- uid: CIDER.FileReader.WriteAllLines*
+  commentId: Overload:CIDER.FileReader.WriteAllLines
+  name: WriteAllLines
+  nameWithType: FileReader.WriteAllLines
+  fullName: CIDER.FileReader.WriteAllLines
+- uid: CIDER.IReader.WriteAllLines(System.String[],System.String)
+  commentId: M:CIDER.IReader.WriteAllLines(System.String[],System.String)
+  parent: CIDER.IReader
+  isExternal: true
+  name: WriteAllLines(String[], String)
+  nameWithType: IReader.WriteAllLines(String[], String)
+  fullName: CIDER.IReader.WriteAllLines(System.String[], System.String)
+  nameWithType.vb: IReader.WriteAllLines(String(), String)
+  fullName.vb: CIDER.IReader.WriteAllLines(System.String(), System.String)
+  name.vb: WriteAllLines(String(), String)
+  spec.csharp:
+  - uid: CIDER.IReader.WriteAllLines(System.String[],System.String)
+    name: WriteAllLines
+    nameWithType: IReader.WriteAllLines
+    fullName: CIDER.IReader.WriteAllLines
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.IReader.WriteAllLines(System.String[],System.String)
+    name: WriteAllLines
+    nameWithType: IReader.WriteAllLines
+    fullName: CIDER.IReader.WriteAllLines
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CIDER.FileReader.WriteAllText*
+  commentId: Overload:CIDER.FileReader.WriteAllText
+  name: WriteAllText
+  nameWithType: FileReader.WriteAllText
+  fullName: CIDER.FileReader.WriteAllText
+- uid: CIDER.IReader.WriteAllText(System.String,System.String)
+  commentId: M:CIDER.IReader.WriteAllText(System.String,System.String)
+  parent: CIDER.IReader
+  isExternal: true
+  name: WriteAllText(String, String)
+  nameWithType: IReader.WriteAllText(String, String)
+  fullName: CIDER.IReader.WriteAllText(System.String, System.String)
+  spec.csharp:
+  - uid: CIDER.IReader.WriteAllText(System.String,System.String)
+    name: WriteAllText
+    nameWithType: IReader.WriteAllText
+    fullName: CIDER.IReader.WriteAllText
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.IReader.WriteAllText(System.String,System.String)
+    name: WriteAllText
+    nameWithType: IReader.WriteAllText
+    fullName: CIDER.IReader.WriteAllText
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

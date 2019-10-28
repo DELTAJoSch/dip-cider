@@ -36,9 +36,7 @@ items:
     content: 'public class VelocityTimedViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
       Public Class VelocityTimedViewModel
-
           Inherits ViewModelBase
-
           Implements INotifyPropertyChanged
   inheritance:
   - System.Object

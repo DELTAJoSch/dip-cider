@@ -11,6 +11,7 @@ items:
   - CIDER.ViewModels.AboutViewModel.InfoText
   - CIDER.ViewModels.AboutViewModel.RequestNavigateCommand
   - CIDER.ViewModels.AboutViewModel.SetApiKeyCommand
+  - CIDER.ViewModels.AboutViewModel.ViewLicenseCommand
   langs:
   - csharp
   - vb
@@ -25,17 +26,17 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AboutViewModel
     path: ViewModels/AboutViewModel.cs
-    startLine: 6
+    startLine: 12
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the ViewModel for the About View\nThe constructor takes a ProcessStarter Interface - this is so a seam for unit testing exists\nOn init it also sets the text in the about and information TextBlocks. They can be changed afterwards, but this is not needed in normal operation\nWhen the button in the view is pressed, the view model responds to it by calling the function fromn the processStarter interface\n"
+  example: []
   syntax:
     content: 'public class AboutViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
       Public Class AboutViewModel
-
           Inherits ViewModelBase
-
           Implements INotifyPropertyChanged
   inheritance:
   - System.Object
@@ -77,17 +78,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/AboutViewModel.cs
-    startLine: 19
+    startLine: 26
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the constructor for the About Viewmodel\n"
+  example: []
   syntax:
     content: public AboutViewModel(IProcessStarter starter, KeyManager manager)
     parameters:
     - id: starter
       type: CIDER.IProcessStarter
+      description: An object implementing the IProcessStarter interface
     - id: manager
       type: CIDER.KeyManager
+      description: A keymanager object
     content.vb: Public Sub New(starter As IProcessStarter, manager As KeyManager)
   overload: CIDER.ViewModels.AboutViewModel.#ctor*
   modifiers.csharp:
@@ -112,10 +117,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RequestNavigateCommand
     path: ViewModels/AboutViewModel.cs
-    startLine: 36
+    startLine: 47
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nCommand connected to the MailTo Button\n"
+  example: []
   syntax:
     content: public ICommand RequestNavigateCommand { get; }
     parameters: []
@@ -147,10 +154,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SetApiKeyCommand
     path: ViewModels/AboutViewModel.cs
-    startLine: 43
+    startLine: 57
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nCommand connected to the SetApiKey Button\n"
+  example: []
   syntax:
     content: public ICommand SetApiKeyCommand { get; }
     parameters: []
@@ -158,6 +167,43 @@ items:
       type: System.Windows.Input.ICommand
     content.vb: Public ReadOnly Property SetApiKeyCommand As ICommand
   overload: CIDER.ViewModels.AboutViewModel.SetApiKeyCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.AboutViewModel.ViewLicenseCommand
+  commentId: P:CIDER.ViewModels.AboutViewModel.ViewLicenseCommand
+  id: ViewLicenseCommand
+  parent: CIDER.ViewModels.AboutViewModel
+  langs:
+  - csharp
+  - vb
+  name: ViewLicenseCommand
+  nameWithType: AboutViewModel.ViewLicenseCommand
+  fullName: CIDER.ViewModels.AboutViewModel.ViewLicenseCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AboutViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ViewLicenseCommand
+    path: ViewModels/AboutViewModel.cs
+    startLine: 67
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  summary: "\nCommand connected to the &quot;View License&quot; Button\n"
+  example: []
+  syntax:
+    content: public ICommand ViewLicenseCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ViewLicenseCommand As ICommand
+  overload: CIDER.ViewModels.AboutViewModel.ViewLicenseCommand*
   modifiers.csharp:
   - public
   - get
@@ -182,10 +228,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeThemeCommand
     path: ViewModels/AboutViewModel.cs
-    startLine: 50
+    startLine: 78
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nCommand connected to the theme changer button\n"
+  example: []
   syntax:
     content: public ICommand ChangeThemeCommand { get; }
     parameters: []
@@ -217,10 +265,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AboutText
     path: ViewModels/AboutViewModel.cs
-    startLine: 60
+    startLine: 91
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nText displayed in the &quot;about&quot; textbox\n"
+  example: []
   syntax:
     content: public string AboutText { get; set; }
     parameters: []
@@ -252,10 +302,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: InfoText
     path: ViewModels/AboutViewModel.cs
-    startLine: 68
+    startLine: 102
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nText displayed in the &quot;info&quot; textbox\n"
+  example: []
   syntax:
     content: public string InfoText { get; set; }
     parameters: []
@@ -779,6 +831,11 @@ references:
   name: SetApiKeyCommand
   nameWithType: AboutViewModel.SetApiKeyCommand
   fullName: CIDER.ViewModels.AboutViewModel.SetApiKeyCommand
+- uid: CIDER.ViewModels.AboutViewModel.ViewLicenseCommand*
+  commentId: Overload:CIDER.ViewModels.AboutViewModel.ViewLicenseCommand
+  name: ViewLicenseCommand
+  nameWithType: AboutViewModel.ViewLicenseCommand
+  fullName: CIDER.ViewModels.AboutViewModel.ViewLicenseCommand
 - uid: CIDER.ViewModels.AboutViewModel.ChangeThemeCommand*
   commentId: Overload:CIDER.ViewModels.AboutViewModel.ChangeThemeCommand
   name: ChangeThemeCommand

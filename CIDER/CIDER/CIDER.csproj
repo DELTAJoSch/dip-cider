@@ -115,7 +115,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AsyncHelper.cs" />
     <Compile Include="ColorWriter.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="Exceptions.cs" />

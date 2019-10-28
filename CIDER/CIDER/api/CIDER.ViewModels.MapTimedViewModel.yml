@@ -38,9 +38,7 @@ items:
     content: 'public class MapTimedViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
       Public Class MapTimedViewModel
-
           Inherits ViewModelBase
-
           Implements INotifyPropertyChanged
   inheritance:
   - System.Object

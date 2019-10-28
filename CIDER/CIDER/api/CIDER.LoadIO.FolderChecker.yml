@@ -28,7 +28,6 @@ items:
     content: 'public class FolderChecker : IChecker'
     content.vb: >-
       Public Class FolderChecker
-
           Implements IChecker
   inheritance:
   - System.Object

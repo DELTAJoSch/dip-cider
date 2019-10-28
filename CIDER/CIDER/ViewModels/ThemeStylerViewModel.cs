@@ -26,7 +26,7 @@ namespace CIDER.ViewModels
                 source.Add(x.Name);
             });
 
-            writer = new ColorWriter(new KeyManagerReader());
+            writer = new ColorWriter(new FileReader());
 
             source.Sort();
 

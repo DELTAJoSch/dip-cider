@@ -22,10 +22,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SystemTime
     path: SystemTime.cs
-    startLine: 4
+    startLine: 8
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis class provides the current Time instead of DateTime.Now. Using this class the current time can be faked\nso it can be used in unit tests.There should be no other mentions of DateTime.Now anywhere in the production code.\n"
+  example: []
   syntax:
     content: public class SystemTime
     content.vb: Public Class SystemTime
@@ -63,15 +65,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Set
     path: SystemTime.cs
-    startLine: 12
+    startLine: 16
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nAllows setting the &quot;fake&quot; time\n"
+  example: []
   syntax:
     content: public static void Set(DateTime time)
     parameters:
     - id: time
       type: System.DateTime
+      description: The time to be set
     content.vb: Public Shared Sub Set(time As Date)
   overload: CIDER.SystemTime.Set*
   modifiers.csharp:
@@ -98,10 +103,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Reset
     path: SystemTime.cs
-    startLine: 18
+    startLine: 24
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nAllows resetting of the fake time\n"
+  example: []
   syntax:
     content: public static void Reset()
     content.vb: Public Shared Sub Reset
@@ -130,10 +137,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Now
     path: SystemTime.cs
-    startLine: 24
+    startLine: 32
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nreturns either fake time or current time\n"
+  example: []
   syntax:
     content: public DateTime Now { get; }
     parameters: []

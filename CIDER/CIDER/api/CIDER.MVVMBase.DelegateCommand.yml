@@ -34,7 +34,6 @@ items:
     content: 'public class DelegateCommand : ICommand'
     content.vb: >-
       Public Class DelegateCommand
-
           Implements ICommand
   inheritance:
   - System.Object

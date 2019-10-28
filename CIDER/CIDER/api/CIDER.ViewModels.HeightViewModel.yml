@@ -38,9 +38,7 @@ items:
     content: 'public class HeightViewModel : ViewModelBase, INotifyPropertyChanged, IDisposable'
     content.vb: >-
       Public Class HeightViewModel
-
           Inherits ViewModelBase
-
           Implements INotifyPropertyChanged, IDisposable
   inheritance:
   - System.Object

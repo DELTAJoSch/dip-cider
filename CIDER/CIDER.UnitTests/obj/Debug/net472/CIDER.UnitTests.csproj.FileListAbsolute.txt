@@ -27,3 +27,10 @@ H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\obj\Debug\net472\CIDER.UnitTests.csproj.CopyComplete
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\obj\Debug\net472\CIDER.UnitTests.dll
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\obj\Debug\net472\CIDER.UnitTests.pdb
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\MahApps.Metro.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\ControlzEx.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\System.Windows.Interactivity.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\CIDER.xml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\MahApps.Metro.pdb
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\MahApps.Metro.xml
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\ControlzEx.pdb

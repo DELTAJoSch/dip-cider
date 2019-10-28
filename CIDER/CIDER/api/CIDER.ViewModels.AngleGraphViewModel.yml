@@ -30,9 +30,7 @@ items:
     content: 'public class AngleGraphViewModel : ViewModelBase, INotifyPropertyChanged, IDisposable'
     content.vb: >-
       Public Class AngleGraphViewModel
-
           Inherits ViewModelBase
-
           Implements INotifyPropertyChanged, IDisposable
   inheritance:
   - System.Object

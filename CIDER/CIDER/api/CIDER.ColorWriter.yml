@@ -5,7 +5,7 @@ items:
   id: ColorWriter
   parent: CIDER
   children:
-  - CIDER.ColorWriter.#ctor(CIDER.IKeyManagerReader)
+  - CIDER.ColorWriter.#ctor(CIDER.IReader)
   - CIDER.ColorWriter.GetSetTheming
   - CIDER.ColorWriter.SetTheming(System.String,System.String)
   langs:
@@ -47,16 +47,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: CIDER.ColorWriter.#ctor(CIDER.IKeyManagerReader)
-  commentId: M:CIDER.ColorWriter.#ctor(CIDER.IKeyManagerReader)
-  id: '#ctor(CIDER.IKeyManagerReader)'
+- uid: CIDER.ColorWriter.#ctor(CIDER.IReader)
+  commentId: M:CIDER.ColorWriter.#ctor(CIDER.IReader)
+  id: '#ctor(CIDER.IReader)'
   parent: CIDER.ColorWriter
   langs:
   - csharp
   - vb
-  name: ColorWriter(IKeyManagerReader)
-  nameWithType: ColorWriter.ColorWriter(IKeyManagerReader)
-  fullName: CIDER.ColorWriter.ColorWriter(CIDER.IKeyManagerReader)
+  name: ColorWriter(IReader)
+  nameWithType: ColorWriter.ColorWriter(IReader)
+  fullName: CIDER.ColorWriter.ColorWriter(CIDER.IReader)
   type: Constructor
   source:
     remote:
@@ -72,12 +72,12 @@ items:
   summary: "\nThe constructor for the ColorWriter class\n"
   example: []
   syntax:
-    content: public ColorWriter(IKeyManagerReader reader)
+    content: public ColorWriter(IReader reader)
     parameters:
     - id: reader
-      type: CIDER.IKeyManagerReader
-      description: Pass a Object that implements the IKeyManagerReader here - inject unit testing mocks and fakes here
-    content.vb: Public Sub New(reader As IKeyManagerReader)
+      type: CIDER.IReader
+      description: Pass a Object that implements the IReader here - inject unit testing mocks and fakes here
+    content.vb: Public Sub New(reader As IReader)
   overload: CIDER.ColorWriter.#ctor*
   modifiers.csharp:
   - public
@@ -460,12 +460,12 @@ references:
   name: ColorWriter
   nameWithType: ColorWriter.ColorWriter
   fullName: CIDER.ColorWriter.ColorWriter
-- uid: CIDER.IKeyManagerReader
-  commentId: T:CIDER.IKeyManagerReader
+- uid: CIDER.IReader
+  commentId: T:CIDER.IReader
   parent: CIDER
-  name: IKeyManagerReader
-  nameWithType: IKeyManagerReader
-  fullName: CIDER.IKeyManagerReader
+  name: IReader
+  nameWithType: IReader
+  fullName: CIDER.IReader
 - uid: CIDER.ColorWriter.GetSetTheming*
   commentId: Overload:CIDER.ColorWriter.GetSetTheming
   name: GetSetTheming

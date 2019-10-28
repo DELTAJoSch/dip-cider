@@ -19,11 +19,11 @@
         </Grid.ColumnDefinitions>
         
         <ScrollViewer VerticalScrollBarVisibility="Auto" Width="auto" VerticalAlignment="Stretch" Height="auto" HorizontalAlignment="Stretch" Margin="10,10,10,10" Grid.ColumnSpan="2">
-            <TextBlock Text="{Binding Path=LicenseTexts}" Width="auto" VerticalAlignment="Stretch" Height="auto" HorizontalAlignment="Stretch"/>
+            <TextBlock Text="{Binding Path=LicensesText}" Width="auto" VerticalAlignment="Stretch" Height="auto" HorizontalAlignment="Stretch" Grid.ColumnSpan="2"/>
         </ScrollViewer>
 
         <CheckBox Command="{Binding Path=CheckboxStateChangedCommand}" Height="auto" Width="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="1" Content="I have read, and accept the above listed Licenses" Margin="10,10,10,10"/>
-        <Button Command="{Binding Path=CommandAcceptClick}" IsEnabled="{Binding Path=CommandAcceptEnabled}" Height="auto" Width="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,10" Grid.Column="1" Grid.Row="1" Content="Save my preferences" FontSize="20" FontStyle="Normal" FontWeight="UltraLight" Background="LightGreen"/>
+        <Button IsEnabled="{Binding Path=CommandAcceptEnabled}" Height="auto" Width="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,10" Grid.Column="1" Grid.Row="1" Content="Save my preferences" FontSize="20" FontStyle="Normal" FontWeight="UltraLight" Background="LightGreen" Click="Button_Click"/>
 
     </Grid>
 </MahApps:MetroWindow>

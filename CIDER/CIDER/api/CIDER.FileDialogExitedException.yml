@@ -22,10 +22,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileDialogExitedException
     path: Exceptions.cs
-    startLine: 4
+    startLine: 8
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis class is an exception used in filedialog handling\nIt is to be raised when the user abruptly exits the filedialog\n"
+  example: []
   syntax:
     content: >-
       [Serializable]
@@ -35,9 +37,7 @@ items:
       <Serializable>
 
       Public Class FileDialogExitedException
-
           Inherits Exception
-
           Implements ISerializable, _Exception
   inheritance:
   - System.Object
@@ -92,10 +92,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
-    startLine: 9
+    startLine: 14
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis is the standard constructor\n"
+  example: []
   syntax:
     content: public FileDialogExitedException()
     content.vb: Public Sub New
@@ -122,15 +124,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
-    startLine: 13
+    startLine: 22
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis constructor takes a custom message\n"
+  example: []
   syntax:
     content: public FileDialogExitedException(string message)
     parameters:
     - id: message
       type: System.String
+      description: The message to be sent
     content.vb: Public Sub New(message As String)
   overload: CIDER.FileDialogExitedException.#ctor*
   modifiers.csharp:
@@ -155,17 +160,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
-    startLine: 18
+    startLine: 32
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis constructor takes a message and a custom innerException\n"
+  example: []
   syntax:
     content: public FileDialogExitedException(string message, Exception inner)
     parameters:
     - id: message
       type: System.String
+      description: The message to be sent
     - id: inner
       type: System.Exception
+      description: The inner exception
     content.vb: Public Sub New(message As String, inner As Exception)
   overload: CIDER.FileDialogExitedException.#ctor*
   modifiers.csharp:

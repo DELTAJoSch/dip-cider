@@ -34,9 +34,7 @@ items:
     content: 'public class MainWindow : MetroWindow, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IAddChild, IWindowService'
     content.vb: >-
       Public Class MainWindow
-
           Inherits MetroWindow
-
           Implements DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IAddChild, IWindowService
   inheritance:
   - System.Object

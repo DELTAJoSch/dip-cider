@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CIDER</name>
+    </assembly>
+    <members>
+        <member name="T:CIDER.ColorWriter">
+            <summary>
+            This class is used to configure the config file to write and read the user-specified color settings
+            </summary>
+        </member>
+        <member name="M:CIDER.ColorWriter.#ctor(CIDER.IKeyManagerReader)">
+            <summary>
+            The constructor for the ColorWriter class
+            </summary>
+            <param name="reader">Pass a Object that implements the IKeyManagerReader here - inject unit testing mocks and fakes here</param>
+        </member>
+        <member name="M:CIDER.ColorWriter.GetSetTheming">
+            <summary>
+            This function reads the config file and gets the color and theme from the file (if available)
+            </summary>
+            <returns>A tuple with the elements Theme followed by Accent (strings) should be returned</returns>
+        </member>
+        <member name="M:CIDER.ColorWriter.SetTheming(System.String,System.String)">
+            <summary>
+            Writes the user specified Accent and Theme to the config
+            </summary>
+            <param name="Accent">This is the string name of the accent</param>
+            <param name="Theme">This is the string name of the theme</param>
+        </member>
+        <member name="T:CIDER.ExtraMath">
+            <summary>
+            This class contains static functions to calculate different equations
+            </summary>
+        </member>
+        <member name="M:CIDER.ExtraMath.DegToRad(System.Double)">
+            <summary>
+            This functions converts angles from degrees to radians
+            </summary>
+            <param name="angle">The angle in degrees</param>
+            <returns>The given angle in radians</returns>
+        </member>
+        <member name="M:CIDER.ExtraMath.RadToDeg(System.Double)">
+            <summary>
+            This functions converts angles from radians to degrees
+            </summary>
+            <param name="angle">The angle in radians</param>
+            <returns>The given angle in degrees</returns>
+        </member>
+        <member name="M:CIDER.ExtraMath.CalculateAngle(System.Single,System.Single,System.Single)">
+            <summary>
+            This function calculates an angle based on accelerometer values
+            Calculation according to https://www.digikey.com/en/articles/techzone/2011/may/using-an-accelerometer-for-inclination-sensing
+            </summary>
+            <param name="AccelerationX">The acceleration in the X direction</param>
+            <param name="AccelerationY">The acceleration in the X direction</param>
+            <param name="AccelerationZ">The acceleration in the X direction</param>
+            <returns>A tuple with the angles in x, y and z direction</returns>
+        </member>
+        <member name="T:CIDER.KeyManager">
+            <summary>
+            This class handles the file interaction for writing the path to the api key file
+            </summary>
+        </member>
+        <member name="E:CIDER.KeyManager.MapKeyChangedEvent">
+            <summary>
+            This event is fired when the api key changes
+            </summary>
+        </member>
+        <member name="M:CIDER.KeyManager.#ctor(CIDER.DataProvider,CIDER.IKeyManagerReader)">
+            <summary>
+            This is the constructor for the KeyManager class
+            </summary>
+            <param name="Data">This expects a DataProvider object to store the api key in</param>
+            <param name="Reader">Pass a Object that implements the IKeyManagerReader here - inject unit testing mocks and fakes here</param>
+        </member>
+        <member name="M:CIDER.KeyManager.Fetch">
+            <summary>
+            This function tries to fetch the api key from the key file (if available)
+            </summary>
+            <returns>This function returns a bool telling the caller if a key was found</returns>
+        </member>
+        <member name="M:CIDER.KeyManager.Put">
+            <summary>
+            This function tries to put the path of a key file into the config
+            </summary>
+            <returns>returns true if successful</returns>
+        </member>
+        <member name="T:CIDER.LicenseHolder">
+            <summary>
+            This class acts as a storage container for all the License texts used/referenced in the project.
+            </summary>
+        </member>
+        <member name="F:CIDER.LicenseHolder.ThisSoftwareLicense">
+            <summary>
+            This is the license for this project
+            </summary>
+        </member>
+        <member name="F:CIDER.LicenseHolder.MahAppsLicense">
+            <summary>
+            This is the license for the UI library MahApps
+            </summary>
+        </member>
+        <member name="F:CIDER.LicenseHolder.OxyPlotLicense">
+            <summary>
+            This is the license for the plotting library OxyPlot
+            </summary>
+        </member>
+        <member name="F:CIDER.LicenseHolder.pilotHUDLicense">
+            <summary>
+            This is the license for the artificial horizon library pilotHUD
+            </summary>
+        </member>
+        <member name="F:CIDER.LicenseHolder.NLOGLicense">
+            <summary>
+            This is the license for the logging library NLog
+            </summary>
+        </member>
+        <member name="F:CIDER.LicenseHolder.docFxLicense">
+            <summary>
+            This is the license for the documentation automation library docFx
+            </summary>
+        </member>
+        <member name="T:CIDER.LicenseManager">
+            <summary>
+            This class is a static manager class responsible for providing a quick way to get access to added license texts
+            </summary>
+        </member>
+        <member name="F:CIDER.LicenseManager.LicensesAccepted">
+            <summary>
+            This bool saves the state of the license agreement (accepted/not accepted)
+            </summary>
+        </member>
+        <member name="F:CIDER.LicenseManager.Licenses">
+            <summary>
+            This List contains all the different licenses that are used in the project
+            </summary>
+        </member>
+        <member name="M:CIDER.LicenseManager.AddLicense(System.String)">
+            <summary>
+            This functions adds a license text to the license list
+            </summary>
+            <param name="License"></param>
+        </member>
+        <member name="M:CIDER.LicenseManager.ClearLicenses">
+            <summary>
+            This function clears the license list
+            </summary>
+        </member>
+        <member name="T:CIDER.Licenses">
+            <summary>
+            This is the License Window.
+            The purpose of this Window is to provide a way to show the user all the licenses and handle all the license-agreement related issues.
+            </summary>
+            <summary>
+            Licenses
+            </summary>
+        </member>
+        <member name="M:CIDER.Licenses.#ctor">
+            <summary>
+            This is the constructor for the License Window
+            The DataContext is set here
+            </summary>
+        </member>
+        <member name="M:CIDER.Licenses.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.LicenseWriter">
+            <summary>
+            This class is used to write the state of the license agreement to the config
+            </summary>
+        </member>
+        <member name="M:CIDER.LicenseWriter.#ctor(CIDER.IKeyManagerReader)">
+            <summary>
+            This is the constructor for the LicenseWriter class
+            </summary>
+            <param name="Reader">Pass a Object that implements the IKeyManagerReader here - inject unit testing mocks and fakes here</param>
+        </member>
+        <member name="M:CIDER.LicenseWriter.WriteAgreementState(System.Boolean)">
+            <summary>
+            This function writes the state of the license agreement to the config file
+            </summary>
+            <param name="State">This is the state of the license agreement</param>
+        </member>
+        <member name="M:CIDER.LicenseWriter.ReadAgreementState">
+            <summary>
+            This function reads the license agreement state
+            </summary>
+            <returns>The return value of this function specifies wether prior data could be found on the status of the license agreement</returns>
+        </member>
+        <member name="T:CIDER.LoadBoxWindow">
+            <summary>
+            Interaction logic for LoadBoxWindow.xaml
+            </summary>
+            <summary>
+            LoadBoxWindow
+            </summary>
+        </member>
+        <member name="M:CIDER.LoadBoxWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.ThemeStyler">
+            <summary>
+            Interaction logic for ThemeStyler.xaml
+            </summary>
+            <summary>
+            ThemeStyler
+            </summary>
+        </member>
+        <member name="M:CIDER.ThemeStyler.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.ViewModels.LicensesViewModel">
+            <summary>
+            This is the ViewModel for the License Window.
+            The purpose of this class is to handle all the interaction logic for the License Window.
+            </summary>
+        </member>
+        <member name="M:CIDER.ViewModels.LicensesViewModel.#ctor">
+            <summary>
+            This is the constructor for the LicensesViewModel
+            </summary>
+        </member>
+        <member name="M:CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement">
+            <summary>
+            This function is called when the accept button is pressed, just before the window closes.
+            </summary>
+        </member>
+        <member name="P:CIDER.ViewModels.LicensesViewModel.CheckboxStateChangedCommand">
+            <summary>
+            This is the command handler for the checkbox state.
+            </summary>
+        </member>
+        <member name="P:CIDER.ViewModels.LicensesViewModel.LicensesText">
+            <summary>
+            This is the Data Binding for the license text (textbox)
+            </summary>
+        </member>
+        <member name="P:CIDER.ViewModels.LicensesViewModel.CommandAcceptEnabled">
+            <summary>
+            This is the Data Binding for the enabled state of the accept button
+            </summary>
+        </member>
+        <member name="T:CIDER.ViewModels.AboutViewModel">
+            <summary>
+            This is the ViewModel for the About View
+            The constructor takes a ProcessStarter Interface - this is so a seam for unit testing exists
+            On init it also sets the text in the about and information TextBlocks. They can be changed afterwards, but this is not needed in normal operation
+            When the button in the view is pressed, the view model responds to it by calling the function fromn the processStarter interface
+            </summary>
+        </member>
+        <member name="M:CIDER.ViewModels.AboutViewModel.#ctor(CIDER.IProcessStarter,CIDER.KeyManager)">
+            <summary>
+            This is the constructor for the About Viewmodel
+            </summary>
+            <param name="starter">An object implementing the IProcessStarter interface</param>
+            <param name="manager">A keymanager object</param>
+        </member>
+        <member name="P:CIDER.ViewModels.AboutViewModel.RequestNavigateCommand">
+            <summary>
+            Command connected to the MailTo Button
+            </summary>
+        </member>
+        <member name="P:CIDER.ViewModels.AboutViewModel.SetApiKeyCommand">
+            <summary>
+            Command connected to the SetApiKey Button
+            </summary>
+        </member>
+        <member name="P:CIDER.ViewModels.AboutViewModel.ViewLicenseCommand">
+            <summary>
+            Command connected to the "View License" Button
+            </summary>
+        </member>
+        <member name="P:CIDER.ViewModels.AboutViewModel.ChangeThemeCommand">
+            <summary>
+            Command connected to the theme changer button
+            </summary>
+        </member>
+        <member name="P:CIDER.ViewModels.AboutViewModel.AboutText">
+            <summary>
+            Text displayed in the "about" textbox
+            </summary>
+        </member>
+        <member name="P:CIDER.ViewModels.AboutViewModel.InfoText">
+            <summary>
+            Text displayed in the "info" textbox
+            </summary>
+        </member>
+        <member name="T:CIDER.ViewModels.Starter">
+            <summary>
+            A class implementing the IProcessStarter interface. Used in production code in combination with the aboutviewmodel
+            </summary>
+        </member>
+        <member name="M:CIDER.ViewModels.Starter.Start(System.Diagnostics.ProcessStartInfo)">
+            <summary>
+            The Start-function starts a specified process
+            </summary>
+            <param name="info"></param>
+        </member>
+        <member name="T:CIDER.Views.About">
+            <summary>
+            Interaction logic for About.xaml
+            </summary>
+            <summary>
+            About
+            </summary>
+        </member>
+        <member name="M:CIDER.Views.About.#ctor(CIDER.DataProvider)">
+            <summary>
+            The constructor for the About View
+            </summary>
+            <param name="data">a dataProvider object containing the track data, normally handed by the mainViewModel</param>
+        </member>
+        <member name="M:CIDER.Views.About.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.Views.AccelerationGraph">
+            <summary>
+            Interaction logic for AngleGraph.xaml
+            </summary>
+            <summary>
+            AccelerationGraph
+            </summary>
+        </member>
+        <member name="M:CIDER.Views.AccelerationGraph.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.Views.AccelerationTimed">
+            <summary>
+            Interaction logic for AngleTimed.xaml
+            </summary>
+            <summary>
+            AccelerationTimed
+            </summary>
+        </member>
+        <member name="M:CIDER.Views.AccelerationTimed.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.Views.AngleGraph">
+            <summary>
+            Interaction logic for AngleGraph.xaml
+            </summary>
+            <summary>
+            AngleGraph
+            </summary>
+        </member>
+        <member name="M:CIDER.Views.AngleGraph.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.Views.AngleTimed">
+            <summary>
+            Interaction logic for AngleTimed.xaml
+            </summary>
+            <summary>
+            AngleTimed
+            </summary>
+        </member>
+        <member name="M:CIDER.Views.AngleTimed.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.Views.ArtificialHorizon">
+            <summary>
+            Interaction logic for ArtificialHorizon.xaml
+            </summary>
+            <summary>
+            ArtificialHorizon
+            </summary>
+        </member>
+        <member name="M:CIDER.Views.ArtificialHorizon.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.Views.Height">
+            <summary>
+            Interaction logic for Height.xaml
+            </summary>
+            <summary>
+            Height
+            </summary>
+        </member>
+        <member name="M:CIDER.Views.Height.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.Views.Load">
+            <summary>
+            Interaction logic for Load.xaml
+            </summary>
+            <summary>
+            Load
+            </summary>
+        </member>
+        <member name="M:CIDER.Views.Load.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.Views.MapRoute">
+            <summary>
+            Interaction logic for MapRoute.xaml
+            </summary>
+            <summary>
+            MapRoute
+            </summary>
+        </member>
+        <member name="M:CIDER.Views.MapRoute.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.Views.MapTimed">
+            <summary>
+            Interaction logic for MapTimed.xaml
+            </summary>
+            <summary>
+            MapTimed
+            </summary>
+        </member>
+        <member name="M:CIDER.Views.MapTimed.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.Views.VelocityGraph">
+            <summary>
+            Interaction logic for VelocityGraph.xaml
+            </summary>
+            <summary>
+            VelocityGraph
+            </summary>
+        </member>
+        <member name="M:CIDER.Views.VelocityGraph.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.Views.VelocityTimed">
+            <summary>
+            Interaction logic for VelocityTimed.xaml
+            </summary>
+            <summary>
+            VelocityTimed
+            </summary>
+        </member>
+        <member name="M:CIDER.Views.VelocityTimed.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:CIDER.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:CIDER.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:CIDER.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:CIDER.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:CIDER.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:CIDER.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

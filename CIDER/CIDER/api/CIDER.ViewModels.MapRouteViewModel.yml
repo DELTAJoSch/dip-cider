@@ -35,9 +35,7 @@ items:
     content: 'public class MapRouteViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
       Public Class MapRouteViewModel
-
           Inherits ViewModelBase
-
           Implements INotifyPropertyChanged
   inheritance:
   - System.Object

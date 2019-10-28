@@ -4,8 +4,6 @@
   items:
   - uid: CIDER.App
     name: App
-  - uid: CIDER.AsyncHelper
-    name: AsyncHelper
   - uid: CIDER.ColorWriter
     name: ColorWriter
   - uid: CIDER.ColorWriterNoColorException
@@ -18,14 +16,14 @@
     name: ExtraMath
   - uid: CIDER.FileDialogExitedException
     name: FileDialogExitedException
-  - uid: CIDER.IKeyManagerReader
-    name: IKeyManagerReader
+  - uid: CIDER.FileReader
+    name: FileReader
   - uid: CIDER.IProcessStarter
     name: IProcessStarter
+  - uid: CIDER.IReader
+    name: IReader
   - uid: CIDER.KeyManager
     name: KeyManager
-  - uid: CIDER.KeyManagerReader
-    name: KeyManagerReader
   - uid: CIDER.LicenseHolder
     name: LicenseHolder
   - uid: CIDER.LicenseManager

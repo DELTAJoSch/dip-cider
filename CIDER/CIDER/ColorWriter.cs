@@ -10,13 +10,13 @@ namespace CIDER
     public class ColorWriter
     {
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
-        private IKeyManagerReader _reader;
+        private IReader _reader;
 
         /// <summary>
         /// The constructor for the ColorWriter class
         /// </summary>
-        /// <param name="reader">Pass a Object that implements the IKeyManagerReader here - inject unit testing mocks and fakes here</param>
-        public ColorWriter(IKeyManagerReader reader)
+        /// <param name="reader">Pass a Object that implements the IReader here - inject unit testing mocks and fakes here</param>
+        public ColorWriter(IReader reader)
         {
             _reader = reader;
         }

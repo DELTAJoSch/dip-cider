@@ -30,9 +30,7 @@ items:
     content: 'public class About : Page, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild'
     content.vb: >-
       Public Class About
-
           Inherits Page
-
           Implements DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild
   inheritance:
   - System.Object
@@ -665,15 +663,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/About.xaml.cs
-    startLine: 10
+    startLine: 14
   assemblies:
   - CIDER
   namespace: CIDER.Views
+  summary: "\nThe constructor for the About View\n"
+  example: []
   syntax:
     content: public About(DataProvider data)
     parameters:
     - id: data
       type: CIDER.DataProvider
+      description: a dataProvider object containing the track data, normally handed by the mainViewModel
     content.vb: Public Sub New(data As DataProvider)
   overload: CIDER.Views.About.#ctor*
   modifiers.csharp:

@@ -22,10 +22,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ColorWriterNoColorException
     path: Exceptions.cs
-    startLine: 24
+    startLine: 41
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis custom exception is used to signal that the ColorWriter was unable to find a preselected color\n"
+  example: []
   syntax:
     content: >-
       [Serializable]
@@ -35,9 +37,7 @@ items:
       <Serializable>
 
       Public Class ColorWriterNoColorException
-
           Inherits Exception
-
           Implements ISerializable, _Exception
   inheritance:
   - System.Object
@@ -92,10 +92,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
-    startLine: 29
+    startLine: 47
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis is the standard constructor\n"
+  example: []
   syntax:
     content: public ColorWriterNoColorException()
     content.vb: Public Sub New
@@ -122,15 +124,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
-    startLine: 33
+    startLine: 55
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis constructor takes a custom message\n"
+  example: []
   syntax:
     content: public ColorWriterNoColorException(string message)
     parameters:
     - id: message
       type: System.String
+      description: The message to be sent
     content.vb: Public Sub New(message As String)
   overload: CIDER.ColorWriterNoColorException.#ctor*
   modifiers.csharp:
@@ -155,17 +160,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
-    startLine: 38
+    startLine: 65
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis constructor takes a message and a custom innerException\n"
+  example: []
   syntax:
     content: public ColorWriterNoColorException(string message, Exception inner)
     parameters:
     - id: message
       type: System.String
+      description: The message to be sent
     - id: inner
       type: System.Exception
+      description: The inner exception
     content.vb: Public Sub New(message As String, inner As Exception)
   overload: CIDER.ColorWriterNoColorException.#ctor*
   modifiers.csharp:

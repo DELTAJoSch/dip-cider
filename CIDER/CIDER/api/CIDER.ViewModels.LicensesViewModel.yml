@@ -6,7 +6,7 @@ items:
   parent: CIDER.ViewModels
   children:
   - CIDER.ViewModels.LicensesViewModel.#ctor
-  - CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged
+  - CIDER.ViewModels.LicensesViewModel.CheckboxStateChangedCommand
   - CIDER.ViewModels.LicensesViewModel.CommandAcceptEnabled
   - CIDER.ViewModels.LicensesViewModel.LicensesText
   - CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement
@@ -34,9 +34,7 @@ items:
     content: 'public class LicensesViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
       Public Class LicensesViewModel
-
           Inherits ViewModelBase
-
           Implements INotifyPropertyChanged
   inheritance:
   - System.Object
@@ -124,37 +122,37 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged
-  commentId: P:CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged
-  id: CheckboxStateChanged
+- uid: CIDER.ViewModels.LicensesViewModel.CheckboxStateChangedCommand
+  commentId: P:CIDER.ViewModels.LicensesViewModel.CheckboxStateChangedCommand
+  id: CheckboxStateChangedCommand
   parent: CIDER.ViewModels.LicensesViewModel
   langs:
   - csharp
   - vb
-  name: CheckboxStateChanged
-  nameWithType: LicensesViewModel.CheckboxStateChanged
-  fullName: CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged
+  name: CheckboxStateChangedCommand
+  nameWithType: LicensesViewModel.CheckboxStateChangedCommand
+  fullName: CIDER.ViewModels.LicensesViewModel.CheckboxStateChangedCommand
   type: Property
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
       branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
-    id: CheckboxStateChanged
+    id: CheckboxStateChangedCommand
     path: ViewModels/LicensesViewModel.cs
-    startLine: 51
+    startLine: 52
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
   summary: "\nThis is the command handler for the checkbox state.\n"
   example: []
   syntax:
-    content: public ICommand CheckboxStateChanged { get; }
+    content: public ICommand CheckboxStateChangedCommand { get; }
     parameters: []
     return:
       type: System.Windows.Input.ICommand
-    content.vb: Public ReadOnly Property CheckboxStateChanged As ICommand
-  overload: CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged*
+    content.vb: Public ReadOnly Property CheckboxStateChangedCommand As ICommand
+  overload: CIDER.ViewModels.LicensesViewModel.CheckboxStateChangedCommand*
   modifiers.csharp:
   - public
   - get
@@ -179,7 +177,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicensesText
     path: ViewModels/LicensesViewModel.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -216,7 +214,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CommandAcceptEnabled
     path: ViewModels/LicensesViewModel.cs
-    startLine: 61
+    startLine: 62
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -710,11 +708,11 @@ references:
   name: SaveAcceptAgreement
   nameWithType: LicensesViewModel.SaveAcceptAgreement
   fullName: CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement
-- uid: CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged*
-  commentId: Overload:CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged
-  name: CheckboxStateChanged
-  nameWithType: LicensesViewModel.CheckboxStateChanged
-  fullName: CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged
+- uid: CIDER.ViewModels.LicensesViewModel.CheckboxStateChangedCommand*
+  commentId: Overload:CIDER.ViewModels.LicensesViewModel.CheckboxStateChangedCommand
+  name: CheckboxStateChangedCommand
+  nameWithType: LicensesViewModel.CheckboxStateChangedCommand
+  fullName: CIDER.ViewModels.LicensesViewModel.CheckboxStateChangedCommand
 - uid: System.Windows.Input.ICommand
   commentId: T:System.Windows.Input.ICommand
   parent: System.Windows.Input

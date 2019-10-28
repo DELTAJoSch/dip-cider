@@ -20,15 +20,16 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Starter
     path: ViewModels/AboutViewModel.cs
-    startLine: 75
+    startLine: 112
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nA class implementing the IProcessStarter interface. Used in production code in combination with the aboutviewmodel\n"
+  example: []
   syntax:
     content: 'public class Starter : IProcessStarter'
     content.vb: >-
       Public Class Starter
-
           Implements IProcessStarter
   inheritance:
   - System.Object
@@ -66,15 +67,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Start
     path: ViewModels/AboutViewModel.cs
-    startLine: 77
+    startLine: 118
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe Start-function starts a specified process\n"
+  example: []
   syntax:
     content: public void Start(ProcessStartInfo info)
     parameters:
     - id: info
       type: System.Diagnostics.ProcessStartInfo
+      description: ''
     content.vb: Public Sub Start(info As ProcessStartInfo)
   overload: CIDER.ViewModels.Starter.Start*
   implements:

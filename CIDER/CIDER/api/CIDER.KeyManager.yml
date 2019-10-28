@@ -5,7 +5,7 @@ items:
   id: KeyManager
   parent: CIDER
   children:
-  - CIDER.KeyManager.#ctor(CIDER.DataProvider,CIDER.IKeyManagerReader)
+  - CIDER.KeyManager.#ctor(CIDER.DataProvider,CIDER.IReader)
   - CIDER.KeyManager.Fetch
   - CIDER.KeyManager.MapKeyChangedEvent
   - CIDER.KeyManager.Put
@@ -83,16 +83,16 @@ items:
   modifiers.vb:
   - Public
   - Shared
-- uid: CIDER.KeyManager.#ctor(CIDER.DataProvider,CIDER.IKeyManagerReader)
-  commentId: M:CIDER.KeyManager.#ctor(CIDER.DataProvider,CIDER.IKeyManagerReader)
-  id: '#ctor(CIDER.DataProvider,CIDER.IKeyManagerReader)'
+- uid: CIDER.KeyManager.#ctor(CIDER.DataProvider,CIDER.IReader)
+  commentId: M:CIDER.KeyManager.#ctor(CIDER.DataProvider,CIDER.IReader)
+  id: '#ctor(CIDER.DataProvider,CIDER.IReader)'
   parent: CIDER.KeyManager
   langs:
   - csharp
   - vb
-  name: KeyManager(DataProvider, IKeyManagerReader)
-  nameWithType: KeyManager.KeyManager(DataProvider, IKeyManagerReader)
-  fullName: CIDER.KeyManager.KeyManager(CIDER.DataProvider, CIDER.IKeyManagerReader)
+  name: KeyManager(DataProvider, IReader)
+  nameWithType: KeyManager.KeyManager(DataProvider, IReader)
+  fullName: CIDER.KeyManager.KeyManager(CIDER.DataProvider, CIDER.IReader)
   type: Constructor
   source:
     remote:
@@ -108,15 +108,15 @@ items:
   summary: "\nThis is the constructor for the KeyManager class\n"
   example: []
   syntax:
-    content: public KeyManager(DataProvider Data, IKeyManagerReader Reader)
+    content: public KeyManager(DataProvider Data, IReader Reader)
     parameters:
     - id: Data
       type: CIDER.DataProvider
       description: This expects a DataProvider object to store the api key in
     - id: Reader
-      type: CIDER.IKeyManagerReader
-      description: Pass a Object that implements the IKeyManagerReader here - inject unit testing mocks and fakes here
-    content.vb: Public Sub New(Data As DataProvider, Reader As IKeyManagerReader)
+      type: CIDER.IReader
+      description: Pass a Object that implements the IReader here - inject unit testing mocks and fakes here
+    content.vb: Public Sub New(Data As DataProvider, Reader As IReader)
   overload: CIDER.KeyManager.#ctor*
   modifiers.csharp:
   - public
@@ -508,12 +508,12 @@ references:
   name: DataProvider
   nameWithType: DataProvider
   fullName: CIDER.DataProvider
-- uid: CIDER.IKeyManagerReader
-  commentId: T:CIDER.IKeyManagerReader
+- uid: CIDER.IReader
+  commentId: T:CIDER.IReader
   parent: CIDER
-  name: IKeyManagerReader
-  nameWithType: IKeyManagerReader
-  fullName: CIDER.IKeyManagerReader
+  name: IReader
+  nameWithType: IReader
+  fullName: CIDER.IReader
 - uid: CIDER.KeyManager.Fetch*
   commentId: Overload:CIDER.KeyManager.Fetch
   name: Fetch

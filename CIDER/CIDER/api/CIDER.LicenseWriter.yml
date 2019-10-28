@@ -5,7 +5,7 @@ items:
   id: LicenseWriter
   parent: CIDER
   children:
-  - CIDER.LicenseWriter.#ctor(CIDER.IKeyManagerReader)
+  - CIDER.LicenseWriter.#ctor(CIDER.IReader)
   - CIDER.LicenseWriter.ReadAgreementState
   - CIDER.LicenseWriter.WriteAgreementState(System.Boolean)
   langs:
@@ -47,16 +47,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: CIDER.LicenseWriter.#ctor(CIDER.IKeyManagerReader)
-  commentId: M:CIDER.LicenseWriter.#ctor(CIDER.IKeyManagerReader)
-  id: '#ctor(CIDER.IKeyManagerReader)'
+- uid: CIDER.LicenseWriter.#ctor(CIDER.IReader)
+  commentId: M:CIDER.LicenseWriter.#ctor(CIDER.IReader)
+  id: '#ctor(CIDER.IReader)'
   parent: CIDER.LicenseWriter
   langs:
   - csharp
   - vb
-  name: LicenseWriter(IKeyManagerReader)
-  nameWithType: LicenseWriter.LicenseWriter(IKeyManagerReader)
-  fullName: CIDER.LicenseWriter.LicenseWriter(CIDER.IKeyManagerReader)
+  name: LicenseWriter(IReader)
+  nameWithType: LicenseWriter.LicenseWriter(IReader)
+  fullName: CIDER.LicenseWriter.LicenseWriter(CIDER.IReader)
   type: Constructor
   source:
     remote:
@@ -72,12 +72,12 @@ items:
   summary: "\nThis is the constructor for the LicenseWriter class\n"
   example: []
   syntax:
-    content: public LicenseWriter(IKeyManagerReader Reader)
+    content: public LicenseWriter(IReader Reader)
     parameters:
     - id: Reader
-      type: CIDER.IKeyManagerReader
-      description: Pass a Object that implements the IKeyManagerReader here - inject unit testing mocks and fakes here
-    content.vb: Public Sub New(Reader As IKeyManagerReader)
+      type: CIDER.IReader
+      description: Pass a Object that implements the IReader here - inject unit testing mocks and fakes here
+    content.vb: Public Sub New(Reader As IReader)
   overload: CIDER.LicenseWriter.#ctor*
   modifiers.csharp:
   - public
@@ -457,12 +457,12 @@ references:
   name: LicenseWriter
   nameWithType: LicenseWriter.LicenseWriter
   fullName: CIDER.LicenseWriter.LicenseWriter
-- uid: CIDER.IKeyManagerReader
-  commentId: T:CIDER.IKeyManagerReader
+- uid: CIDER.IReader
+  commentId: T:CIDER.IReader
   parent: CIDER
-  name: IKeyManagerReader
-  nameWithType: IKeyManagerReader
-  fullName: CIDER.IKeyManagerReader
+  name: IReader
+  nameWithType: IReader
+  fullName: CIDER.IReader
 - uid: CIDER.LicenseWriter.WriteAgreementState*
   commentId: Overload:CIDER.LicenseWriter.WriteAgreementState
   name: WriteAgreementState

@@ -30,9 +30,7 @@ items:
     content: 'public class VelocityGraph : Page, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild'
     content.vb: >-
       Public Class VelocityGraph
-
           Inherits Page
-
           Implements DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild
   inheritance:
   - System.Object

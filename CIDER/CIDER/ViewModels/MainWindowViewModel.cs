@@ -6,12 +6,11 @@ using System.Windows.Input;
 
 namespace CIDER.ViewModels
 {
-    //NOTICE: due to the .net core restrictions, this class is untestable as no frame can be created inside the unit test framework
+    /// <summary>
+    /// This is the ViewModel for the Main Window (contains view selection buttons and frame)
+    /// This class handles the button presses - they change the views
+    /// </summary>
     public class MainWindowViewModel : ViewModelBase, IDisposable
-    /*/Summary
-     * This is the ViewModel for the Main Window (contains view selection buttons and frame)
-     * This class handles the button presses - they change the views
-    /*/
     {
         private readonly DelegateCommand _changeToAboutCommand;
 
@@ -47,11 +46,18 @@ namespace CIDER.ViewModels
 
         private DataProvider dataProvider;
 
+        /// <summary>
+        /// The EventHandler for the OnFrameChangeEvent
+        /// This event is fired when the selected frame changes
+        /// </summary>
         public event EventHandler OnFrameChangeEvent;
 
+        private bool _licenseAccepted;
+
+        /// <summary>
+        /// This is the constructor for the MainWindow ViewModel
+        /// </summary>
         public MainWindowViewModel()
-        ///Due to the frame control being broken/bugged a mvvm approach is not doable without using external frameworks like mvvmlight
-        ///Therefor the frame is just passed to the constructor - this is not optimal but it works without problems.The only possible problem is the decreased readability
         {
             AddLicenses();
 
@@ -74,7 +80,7 @@ namespace CIDER.ViewModels
             MapEnabled = true;
             _mapAvailable = true;
 
-            KeyManager manager = new KeyManager(dataProvider, new KeyManagerReader());
+            KeyManager manager = new KeyManager(dataProvider, new FileReader());
 
             if (!manager.Fetch())
             {
@@ -84,7 +90,7 @@ namespace CIDER.ViewModels
 
             try
             {
-                ColorWriter writer = new ColorWriter(new KeyManagerReader());
+                ColorWriter writer = new ColorWriter(new FileReader());
                 var thm = writer.GetSetTheming();
 
                 ThemeManager.ChangeAppStyle(App.Current, ThemeManager.GetAccent(thm.Item2), ThemeManager.GetAppTheme(thm.Item1));
@@ -95,7 +101,32 @@ namespace CIDER.ViewModels
                 ThemeManager.ChangeAppStyle(App.Current, ThemeManager.GetAccent("Blue"), ThemeManager.GetAppTheme("BaseLight"));
             }
 
-            ButtonState(true);
+            // Check the license
+            try
+            {
+                LicenseWriter licenseWriter = new LicenseWriter(new FileReader());
+                _licenseAccepted = licenseWriter.ReadAgreementState();
+                LicenseManager.LicensesAccepted = _licenseAccepted;
+
+                if(_licenseAccepted == false)
+                {
+                    Licenses licenses = new Licenses();
+                    licenses.Show();
+                    _licenseAccepted = LicenseManager.LicensesAccepted;
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex, "Couldn't configure License State");
+                _licenseAccepted = false;
+            }
+
+            ButtonState(false);
+            MapEnabled = false;
+
+            if (_licenseAccepted)
+                ButtonState(true);
+                MapEnabled = true;
 
             KeyManager.MapKeyChangedEvent += KeyManager_MapKeyChangedEvent;
         }
@@ -105,21 +136,79 @@ namespace CIDER.ViewModels
             UpdateMapStatus();
         }
 
+        /// <summary>
+        /// This command is connected to the "about" button
+        /// </summary>
         public ICommand ChangeToAboutCommand => _changeToAboutCommand;
+
+        /// <summary>
+        /// This command is connected to the "Acceleration Graph" button
+        /// </summary>
         public ICommand ChangeToAccelerationGraphCommand => _changeToAccelerationGraphCommand;
+
+        /// <summary>
+        /// This command is connected to the "Acceleration Timed" button
+        /// </summary>
         public ICommand ChangeToAccelerationTimedCommand => _changeToAccelerationTimedCommand;
+
+        /// <summary>
+        /// This command is connected to the "Load" button
+        /// </summary>
         public ICommand ChangeToLoadCommand => _changeToLoadCommand;
+
+        /// <summary>
+        /// This command is connected to the "Route" button
+        /// </summary>
         public ICommand ChangeToMapRouteCommand => _changeToMapRouteCommand;
+
+        /// <summary>
+        /// This command is connected to the "Map Timed" button
+        /// </summary>
         public ICommand ChangeToMapTimedCommand => _changeToMapTimedCommand;
+
+        /// <summary>
+        /// This command is connected to the "Velocity Graph" button
+        /// </summary>
         public ICommand ChangeToVelocityGraphCommand => _changeToVelocityGraphCommand;
+
+        /// <summary>
+        /// This command is connected to the "Velocity Timed" button
+        /// </summary>
         public ICommand ChangeToVelocityTimedCommand => _changeToVelocityTimedCommand;
+
+        /// <summary>
+        /// This command is connected to the "Height" button
+        /// </summary>
         public ICommand ChangeToHeightCommand => _changeToHeightCommand;
+
+        /// <summary>
+        /// This command is connected to the "Angle Timed" button
+        /// </summary>
         public ICommand ChangeToAngleTimedCommand => _changeToAngleTimedCommand;
+
+        /// <summary>
+        /// This command is connected to the "Angle Graph" button
+        /// </summary>
         public ICommand ChangeToAngleGraphCommand => _changeToAngleGraphCommand;
+
+        /// <summary>
+        /// This command is connected to the "Horizon" button
+        /// </summary>
         public ICommand ChangeToHorizonCommand => _changeToHorizonCommand;
 
+        /// <summary>
+        /// This bool is true when the map views should be enabled
+        /// </summary>
         public bool MapEnabled { get { return _mapEnabled; } set { SetProperty(ref _mapEnabled, value); } }
+
+        /// <summary>
+        /// This object contains the view to be shown in the main frame
+        /// </summary>
         public object FrameContent { get { return _frameContent; } private set { _frameContent = value; } }
+
+        /// <summary>
+        /// This bool contains´information on wether the buttons hould be enabled
+        /// </summary>
         public bool ButtonEnabled { get { return _buttonEnabled; } set { SetProperty(ref _buttonEnabled, value); } }
 
         private void UpdateMapStatus()
@@ -127,7 +216,7 @@ namespace CIDER.ViewModels
             MapEnabled = true;
             _mapAvailable = true;
 
-            KeyManager manager = new KeyManager(dataProvider, new KeyManagerReader());
+            KeyManager manager = new KeyManager(dataProvider, new FileReader());
 
             if (!manager.Fetch())
             {
@@ -136,6 +225,9 @@ namespace CIDER.ViewModels
             }
         }
 
+        /// <summary>
+        /// This function should be started to initialize the view
+        /// </summary>
         public void Initalize()
         {
             FrameContent = new About(dataProvider);
@@ -222,14 +314,24 @@ namespace CIDER.ViewModels
                 handler.Invoke(this, e);
         }
 
+        /// <summary>
+        /// This function sets the state of the buttons
+        /// </summary>
+        /// <param name="state">the state to be set (if allowed)</param>
         public void ButtonState(bool state)
         {
-            if (_mapAvailable)
-                MapEnabled = state;
+            if (_licenseAccepted)
+            {
+                if (_mapAvailable)
+                    MapEnabled = state;
 
-            ButtonEnabled = state;
+                ButtonEnabled = state;
+            }
         }
 
+        /// <summary>
+        /// As this class implements the IDisposable interface, this must be called before the GC collects this object on dereference
+        /// </summary>
         public void Dispose()
         {
             KeyManager.MapKeyChangedEvent -= KeyManager_MapKeyChangedEvent;

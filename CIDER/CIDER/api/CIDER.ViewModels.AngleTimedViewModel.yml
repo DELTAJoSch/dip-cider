@@ -46,9 +46,7 @@ items:
     content: 'public class AngleTimedViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
       Public Class AngleTimedViewModel
-
           Inherits ViewModelBase
-
           Implements INotifyPropertyChanged
   inheritance:
   - System.Object

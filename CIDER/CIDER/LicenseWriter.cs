@@ -13,14 +13,14 @@ namespace CIDER
     /// </summary>
     public class LicenseWriter
     {
-        private IKeyManagerReader keyManagerReader;
+        private IReader keyManagerReader;
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
 
         /// <summary>
         /// This is the constructor for the LicenseWriter class
         /// </summary>
-        /// <param name="Reader">Pass a Object that implements the IKeyManagerReader here - inject unit testing mocks and fakes here</param>
-        public LicenseWriter(IKeyManagerReader Reader)
+        /// <param name="Reader">Pass a Object that implements the IReader here - inject unit testing mocks and fakes here</param>
+        public LicenseWriter(IReader Reader)
         {
             keyManagerReader = Reader;
         }
@@ -80,14 +80,14 @@ namespace CIDER
             {
                 string[] cfg = keyManagerReader.ReadAllLines("CIDER.cfg");
 
-                Regex regex = new Regex(@"LIAG:(true|false)");
+                Regex regex = new Regex(@"LIAG:(true|false|True|False|TRUE|FALSE)");
 
                 foreach (string s in cfg)
                 {
                     Match match = regex.Match(s);
                     if (match.Success)
                     {
-                        LicenseManager.LicensesAccepted = Convert.ToBoolean(s.Substring(4));
+                        LicenseManager.LicensesAccepted = true;
                         return true;
                     }
                 }

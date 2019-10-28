@@ -29,7 +29,6 @@ items:
     content: 'public class Reader : IRead'
     content.vb: >-
       Public Class Reader
-
           Implements IRead
   inheritance:
   - System.Object

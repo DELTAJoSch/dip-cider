@@ -38,18 +38,19 @@ namespace CIDER.ViewModels
         public void SaveAcceptAgreement()
         {
             LicenseManager.LicensesAccepted = true;
-
+            LicenseWriter licenseWriter = new LicenseWriter(new FileReader());
+            licenseWriter.WriteAgreementState(true);
         }
 
         private void checkboxStateChanged(object obj)
         {
-            CommandAcceptEnabled = true;
+            CommandAcceptEnabled = !CommandAcceptEnabled;
         }
 
         /// <summary>
         /// This is the command handler for the checkbox state.
         /// </summary>
-        public ICommand CheckboxStateChanged => _checkboxStateChangedCommand;
+        public ICommand CheckboxStateChangedCommand => _checkboxStateChangedCommand;
 
         /// <summary>
         /// This is the Data Binding for the license text (textbox)

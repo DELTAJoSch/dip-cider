@@ -29,7 +29,6 @@ items:
     content: 'public class FileIO : IIO'
     content.vb: >-
       Public Class FileIO
-
           Implements IIO
   inheritance:
   - System.Object

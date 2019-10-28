@@ -32,9 +32,7 @@ items:
     content: 'public class LoadBoxWindow : Window, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IAddChild, IWindowService'
     content.vb: >-
       Public Class LoadBoxWindow
-
           Inherits Window
-
           Implements DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IAddChild, IWindowService
   inheritance:
   - System.Object

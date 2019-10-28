@@ -20,5 +20,15 @@ namespace CIDER.UnitTests
         {
             Assert.AreEqual(180, ExtraMath.RadToDeg(Math.PI));
         }
+
+        [Test]
+        public void ExtraMaths_CalculateAngle_ReturnsCorrectAngle()
+        {
+            var val = ExtraMath.CalculateAngle(10, 10, 10);
+
+            Assert.AreEqual(35.264389f, val.Item1);
+            Assert.AreEqual(35.264389f, val.Item2);
+            Assert.AreEqual(35.264389f, val.Item3);
+        }
     }
 }

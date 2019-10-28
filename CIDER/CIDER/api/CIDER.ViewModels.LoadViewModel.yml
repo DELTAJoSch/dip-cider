@@ -33,9 +33,7 @@ items:
     content: 'public class LoadViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
       Public Class LoadViewModel
-
           Inherits ViewModelBase
-
           Implements INotifyPropertyChanged
   inheritance:
   - System.Object

@@ -22,10 +22,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ExtraMath
     path: ExtraMath.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis class contains static functions to calculate different equations\n"
+  example: []
   syntax:
     content: public static class ExtraMath
     content.vb: Public Module ExtraMath
@@ -64,17 +66,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DegToRad
     path: ExtraMath.cs
-    startLine: 6
+    startLine: 14
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis functions converts angles from degrees to radians\n"
+  example: []
   syntax:
     content: public static double DegToRad(double angle)
     parameters:
     - id: angle
       type: System.Double
+      description: The angle in degrees
     return:
       type: System.Double
+      description: The given angle in radians
     content.vb: Public Shared Function DegToRad(angle As Double) As Double
   overload: CIDER.ExtraMath.DegToRad*
   modifiers.csharp:
@@ -101,17 +107,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RadToDeg
     path: ExtraMath.cs
-    startLine: 12
+    startLine: 24
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis functions converts angles from radians to degrees\n"
+  example: []
   syntax:
     content: public static double RadToDeg(double angle)
     parameters:
     - id: angle
       type: System.Double
+      description: The angle in radians
     return:
       type: System.Double
+      description: The given angle in degrees
     content.vb: Public Shared Function RadToDeg(angle As Double) As Double
   overload: CIDER.ExtraMath.RadToDeg*
   modifiers.csharp:
@@ -138,21 +148,27 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CalculateAngle
     path: ExtraMath.cs
-    startLine: 18
+    startLine: 37
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis function calculates an angle based on accelerometer values\nCalculation according to https://www.digikey.com/en/articles/techzone/2011/may/using-an-accelerometer-for-inclination-sensing\n"
+  example: []
   syntax:
     content: public static Tuple<float, float, float> CalculateAngle(float AccelerationX, float AccelerationY, float AccelerationZ)
     parameters:
     - id: AccelerationX
       type: System.Single
+      description: The acceleration in the X direction
     - id: AccelerationY
       type: System.Single
+      description: The acceleration in the X direction
     - id: AccelerationZ
       type: System.Single
+      description: The acceleration in the X direction
     return:
       type: System.Tuple{System.Single,System.Single,System.Single}
+      description: A tuple with the angles in x, y and z direction
     content.vb: Public Shared Function CalculateAngle(AccelerationX As Single, AccelerationY As Single, AccelerationZ As Single) As Tuple(Of Single, Single, Single)
   overload: CIDER.ExtraMath.CalculateAngle*
   modifiers.csharp:

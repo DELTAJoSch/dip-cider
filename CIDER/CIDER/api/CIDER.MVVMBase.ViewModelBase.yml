@@ -30,7 +30,6 @@ items:
     content: 'public abstract class ViewModelBase : INotifyPropertyChanged'
     content.vb: >-
       Public MustInherit Class ViewModelBase
-
           Implements INotifyPropertyChanged
   inheritance:
   - System.Object

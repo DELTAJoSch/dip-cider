@@ -58,7 +58,7 @@ namespace CIDER.UnitTests
         }
     }
 
-    public class FakeKeyManagerReader : IKeyManagerReader
+    public class FakeKeyManagerReader : IReader
     {
         public bool FileExists(string filename)
         {

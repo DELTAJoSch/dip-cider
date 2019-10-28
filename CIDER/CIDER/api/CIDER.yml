@@ -5,17 +5,16 @@ items:
   id: CIDER
   children:
   - CIDER.App
-  - CIDER.AsyncHelper
   - CIDER.ColorWriter
   - CIDER.ColorWriterNoColorException
   - CIDER.ColorWriterWritingException
   - CIDER.DataProvider
   - CIDER.ExtraMath
   - CIDER.FileDialogExitedException
-  - CIDER.IKeyManagerReader
+  - CIDER.FileReader
   - CIDER.IProcessStarter
+  - CIDER.IReader
   - CIDER.KeyManager
-  - CIDER.KeyManagerReader
   - CIDER.LicenseHolder
   - CIDER.LicenseManager
   - CIDER.Licenses
@@ -36,11 +35,6 @@ items:
   assemblies:
   - CIDER
 references:
-- uid: CIDER.AsyncHelper
-  commentId: T:CIDER.AsyncHelper
-  name: AsyncHelper
-  nameWithType: AsyncHelper
-  fullName: CIDER.AsyncHelper
 - uid: CIDER.ColorWriter
   commentId: T:CIDER.ColorWriter
   name: ColorWriter
@@ -78,17 +72,17 @@ references:
   name: KeyManager
   nameWithType: KeyManager
   fullName: CIDER.KeyManager
-- uid: CIDER.IKeyManagerReader
-  commentId: T:CIDER.IKeyManagerReader
+- uid: CIDER.IReader
+  commentId: T:CIDER.IReader
   parent: CIDER
-  name: IKeyManagerReader
-  nameWithType: IKeyManagerReader
-  fullName: CIDER.IKeyManagerReader
-- uid: CIDER.KeyManagerReader
-  commentId: T:CIDER.KeyManagerReader
-  name: KeyManagerReader
-  nameWithType: KeyManagerReader
-  fullName: CIDER.KeyManagerReader
+  name: IReader
+  nameWithType: IReader
+  fullName: CIDER.IReader
+- uid: CIDER.FileReader
+  commentId: T:CIDER.FileReader
+  name: FileReader
+  nameWithType: FileReader
+  fullName: CIDER.FileReader
 - uid: CIDER.LicenseHolder
   commentId: T:CIDER.LicenseHolder
   name: LicenseHolder

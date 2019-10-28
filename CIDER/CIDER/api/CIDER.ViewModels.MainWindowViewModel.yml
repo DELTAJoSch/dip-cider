@@ -39,17 +39,17 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MainWindowViewModel
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 9
+    startLine: 12
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the ViewModel for the Main Window (contains view selection buttons and frame)\nThis class handles the button presses - they change the views\n"
+  example: []
   syntax:
     content: 'public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged, IDisposable'
     content.vb: >-
       Public Class MainWindowViewModel
-
           Inherits ViewModelBase
-
           Implements INotifyPropertyChanged, IDisposable
   inheritance:
   - System.Object
@@ -92,10 +92,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnFrameChangeEvent
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 49
+    startLine: 52
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe EventHandler for the OnFrameChangeEvent\nThis event is fired when the selected frame changes\n"
+  example: []
   syntax:
     content: public event EventHandler OnFrameChangeEvent
     return:
@@ -123,10 +125,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 51
+    startLine: 59
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the constructor for the MainWindow ViewModel\n"
+  example: []
   syntax:
     content: public MainWindowViewModel()
     content.vb: Public Sub New
@@ -153,10 +157,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAboutCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 107
+    startLine: 141
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis command is connected to the &quot;about&quot; button\n"
+  example: []
   syntax:
     content: public ICommand ChangeToAboutCommand { get; }
     parameters: []
@@ -188,10 +194,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAccelerationGraphCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 108
+    startLine: 146
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis command is connected to the &quot;Acceleration Graph&quot; button\n"
+  example: []
   syntax:
     content: public ICommand ChangeToAccelerationGraphCommand { get; }
     parameters: []
@@ -223,10 +231,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAccelerationTimedCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 109
+    startLine: 151
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis command is connected to the &quot;Acceleration Timed&quot; button\n"
+  example: []
   syntax:
     content: public ICommand ChangeToAccelerationTimedCommand { get; }
     parameters: []
@@ -258,10 +268,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToLoadCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 110
+    startLine: 156
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis command is connected to the &quot;Load&quot; button\n"
+  example: []
   syntax:
     content: public ICommand ChangeToLoadCommand { get; }
     parameters: []
@@ -293,10 +305,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToMapRouteCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 111
+    startLine: 161
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis command is connected to the &quot;Route&quot; button\n"
+  example: []
   syntax:
     content: public ICommand ChangeToMapRouteCommand { get; }
     parameters: []
@@ -328,10 +342,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToMapTimedCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 112
+    startLine: 166
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis command is connected to the &quot;Map Timed&quot; button\n"
+  example: []
   syntax:
     content: public ICommand ChangeToMapTimedCommand { get; }
     parameters: []
@@ -363,10 +379,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToVelocityGraphCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 113
+    startLine: 171
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis command is connected to the &quot;Velocity Graph&quot; button\n"
+  example: []
   syntax:
     content: public ICommand ChangeToVelocityGraphCommand { get; }
     parameters: []
@@ -398,10 +416,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToVelocityTimedCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 114
+    startLine: 176
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis command is connected to the &quot;Velocity Timed&quot; button\n"
+  example: []
   syntax:
     content: public ICommand ChangeToVelocityTimedCommand { get; }
     parameters: []
@@ -433,10 +453,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToHeightCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 115
+    startLine: 181
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis command is connected to the &quot;Height&quot; button\n"
+  example: []
   syntax:
     content: public ICommand ChangeToHeightCommand { get; }
     parameters: []
@@ -468,10 +490,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAngleTimedCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 116
+    startLine: 186
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis command is connected to the &quot;Angle Timed&quot; button\n"
+  example: []
   syntax:
     content: public ICommand ChangeToAngleTimedCommand { get; }
     parameters: []
@@ -503,10 +527,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAngleGraphCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 117
+    startLine: 191
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis command is connected to the &quot;Angle Graph&quot; button\n"
+  example: []
   syntax:
     content: public ICommand ChangeToAngleGraphCommand { get; }
     parameters: []
@@ -538,10 +564,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToHorizonCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 118
+    startLine: 196
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis command is connected to the &quot;Horizon&quot; button\n"
+  example: []
   syntax:
     content: public ICommand ChangeToHorizonCommand { get; }
     parameters: []
@@ -573,10 +601,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapEnabled
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 120
+    startLine: 201
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis bool is true when the map views should be enabled\n"
+  example: []
   syntax:
     content: public bool MapEnabled { get; set; }
     parameters: []
@@ -608,10 +638,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FrameContent
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 121
+    startLine: 206
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis object contains the view to be shown in the main frame\n"
+  example: []
   syntax:
     content: public object FrameContent { get; }
     parameters: []
@@ -643,10 +675,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ButtonEnabled
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 122
+    startLine: 211
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis bool contains´information on wether the buttons hould be enabled\n"
+  example: []
   syntax:
     content: public bool ButtonEnabled { get; set; }
     parameters: []
@@ -678,10 +712,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Initalize
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 138
+    startLine: 230
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function should be started to initialize the view\n"
+  example: []
   syntax:
     content: public void Initalize()
     content.vb: Public Sub Initalize
@@ -708,15 +744,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ButtonState
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 224
+    startLine: 320
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function sets the state of the buttons\n"
+  example: []
   syntax:
     content: public void ButtonState(bool state)
     parameters:
     - id: state
       type: System.Boolean
+      description: the state to be set (if allowed)
     content.vb: Public Sub ButtonState(state As Boolean)
   overload: CIDER.ViewModels.MainWindowViewModel.ButtonState*
   modifiers.csharp:
@@ -741,10 +780,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 232
+    startLine: 334
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nAs this class implements the IDisposable interface, this must be called before the GC collects this object on dereference\n"
+  example: []
   syntax:
     content: public void Dispose()
     content.vb: Public Sub Dispose

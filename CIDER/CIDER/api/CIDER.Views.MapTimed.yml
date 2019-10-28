@@ -31,9 +31,7 @@ items:
     content: 'public class MapTimed : Page, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild'
     content.vb: >-
       Public Class MapTimed
-
           Inherits Page
-
           Implements DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild
   inheritance:
   - System.Object

@@ -30,9 +30,7 @@ items:
     content: 'public class App : Application, IHaveResources, IQueryAmbient'
     content.vb: >-
       Public Class App
-
           Inherits Application
-
           Implements IHaveResources, IQueryAmbient
   inheritance:
   - System.Object
@@ -119,15 +117,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnStartup
     path: App.xaml.cs
-    startLine: 13
+    startLine: 17
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis function overrides the stnadard OnStartup function\n"
+  example: []
   syntax:
     content: protected override void OnStartup(StartupEventArgs e)
     parameters:
     - id: e
       type: System.Windows.StartupEventArgs
+      description: The startup event args
     content.vb: Protected Overrides Sub OnStartup(e As StartupEventArgs)
   overridden: System.Windows.Application.OnStartup(System.Windows.StartupEventArgs)
   overload: CIDER.App.OnStartup*

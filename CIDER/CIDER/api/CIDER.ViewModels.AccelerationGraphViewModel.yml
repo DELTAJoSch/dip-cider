@@ -30,9 +30,7 @@ items:
     content: 'public class AccelerationGraphViewModel : ViewModelBase, INotifyPropertyChanged, IDisposable'
     content.vb: >-
       Public Class AccelerationGraphViewModel
-
           Inherits ViewModelBase
-
           Implements INotifyPropertyChanged, IDisposable
   inheritance:
   - System.Object

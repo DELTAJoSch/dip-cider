@@ -20,14 +20,14 @@ namespace CIDER
         /// </summary>
         public static event EventHandler MapKeyChangedEvent;
 
-        private IKeyManagerReader _reader;
+        private IReader _reader;
 
         /// <summary>
         /// This is the constructor for the KeyManager class
         /// </summary>
         /// <param name="Data">This expects a DataProvider object to store the api key in</param>
-        /// <param name="Reader">Pass a Object that implements the IKeyManagerReader here - inject unit testing mocks and fakes here</param>
-        public KeyManager(DataProvider Data, IKeyManagerReader Reader)
+        /// <param name="Reader">Pass a Object that implements the IReader here - inject unit testing mocks and fakes here</param>
+        public KeyManager(DataProvider Data, IReader Reader)
         {
             _data = Data;
             _reader = Reader;
@@ -153,41 +153,97 @@ namespace CIDER
         }
     }
 
-    public interface IKeyManagerReader
+    /// <summary>
+    /// This interface acts as a way to inject fakes into the Reading and Writing Classes
+    /// </summary>
+    public interface IReader
     {
+        /// <summary>
+        /// Reads all lines of a given file
+        /// </summary>
+        /// <param name="filename">The path of the file to be read</param>
+        /// <returns>Returns a string array of the file (line by line)</returns>
         string[] ReadAllLines(string filename);
 
+        /// <summary>
+        /// This function shows a openfiledialog
+        /// </summary>
+        /// <param name="dialog">The dialog to be shown</param>
+        /// <returns>Returns the dialogresult</returns>
         DialogResult ShowDialog(OpenFileDialog dialog);
 
+        /// <summary>
+        /// Writes the given lines to the specified file
+        /// </summary>
+        /// <param name="lines">A string array of the lines to be written</param>
+        /// <param name="filename">A path to the file</param>
         void WriteAllLines(string[] lines, string filename);
 
+        /// <summary>
+        /// This function writes the given string to the specified file
+        /// </summary>
+        /// <param name="text">The text to be written</param>
+        /// <param name="filename">A path to the file</param>
         void WriteAllText(string text, string filename);
 
+        /// <summary>
+        /// Checks if a file exists
+        /// </summary>
+        /// <param name="filename">A path to the file</param>
+        /// <returns>Returns true if the file exists</returns>
         bool FileExists(string filename);
     }
 
-    public class KeyManagerReader : IKeyManagerReader
+    /// <summary>
+    /// The production code implementation of the IReader interface
+    /// </summary>
+    public class FileReader : IReader
     {
+        /// <summary>
+        /// Checks if a file exists
+        /// </summary>
+        /// <param name="filename">A path to the file</param>
+        /// <returns>Returns true if the file exists</returns>
         public bool FileExists(string filename)
         {
             return File.Exists(filename);
         }
 
+        /// <summary>
+        /// Reads all lines of a given file
+        /// </summary>
+        /// <param name="filename">The path of the file to be read</param>
+        /// <returns>Returns a string array of the file (line by line)</returns>
         public string[] ReadAllLines(string filename)
         {
             return File.ReadAllLines(filename);
         }
 
+        /// <summary>
+        /// This function shows a openfiledialog
+        /// </summary>
+        /// <param name="dialog">The dialog to be shown</param>
+        /// <returns>Returns the dialogresult</returns>
         public DialogResult ShowDialog(OpenFileDialog dialog)
         {
             return dialog.ShowDialog();
         }
 
+        /// <summary>
+        /// Writes the given lines to the specified file
+        /// </summary>
+        /// <param name="lines">A string array of the lines to be written</param>
+        /// <param name="filename">A path to the file</param>
         public void WriteAllLines(string[] lines, string filename)
         {
             File.WriteAllLines(filename, lines);
         }
 
+        /// <summary>
+        /// This function writes the given string to the specified file
+        /// </summary>
+        /// <param name="text">The text to be written</param>
+        /// <param name="filename">A path to the file</param>
         public void WriteAllText(string text, string filename)
         {
             File.WriteAllText(filename, text);

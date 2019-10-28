@@ -30,9 +30,7 @@ items:
     content: 'public class Licenses : MetroWindow, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IAddChild, IWindowService'
     content.vb: >-
       Public Class Licenses
-
           Inherits MetroWindow
-
           Implements DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IAddChild, IWindowService
   inheritance:
   - System.Object
@@ -879,7 +877,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Licenses.xaml.cs
-    startLine: 28
+    startLine: 30
   assemblies:
   - CIDER
   namespace: CIDER

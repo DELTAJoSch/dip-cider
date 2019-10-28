@@ -29,7 +29,6 @@ items:
     content: 'public class FolderSelector : IFolderSelectionInterface'
     content.vb: >-
       Public Class FolderSelector
-
           Implements IFolderSelectionInterface
   inheritance:
   - System.Object

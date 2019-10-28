@@ -30,9 +30,7 @@ items:
     content: 'public class AngleGraph : Page, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild'
     content.vb: >-
       Public Class AngleGraph
-
           Inherits Page
-
           Implements DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild
   inheritance:
   - System.Object

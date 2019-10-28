@@ -22,6 +22,8 @@ namespace CIDER
     /// </summary>
     public partial class Licenses : MetroWindow
     {
+        private LicensesViewModel model;
+
         /// <summary>
         /// This is the constructor for the License Window
         /// The DataContext is set here
@@ -30,8 +32,14 @@ namespace CIDER
         {
             InitializeComponent();
 
-            var model = new LicensesViewModel();
+            model = new LicensesViewModel();
             this.DataContext = model;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            model.SaveAcceptAgreement();
+            this.Close();
         }
     }
 }
