@@ -1,0 +1,568 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.LicenseHolder
+  commentId: T:CIDER.LicenseHolder
+  id: LicenseHolder
+  parent: CIDER
+  children:
+  - CIDER.LicenseHolder.docFxLicense
+  - CIDER.LicenseHolder.MahAppsLicense
+  - CIDER.LicenseHolder.NLOGLicense
+  - CIDER.LicenseHolder.OxyPlotLicense
+  - CIDER.LicenseHolder.pilotHUDLicense
+  - CIDER.LicenseHolder.ThisSoftwareLicense
+  langs:
+  - csharp
+  - vb
+  name: LicenseHolder
+  nameWithType: LicenseHolder
+  fullName: CIDER.LicenseHolder
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/LicenseHolder.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LicenseHolder
+    path: LicenseHolder.cs
+    startLine: 11
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis class acts as a storage container for all the License texts used/referenced in the project.\n"
+  example: []
+  syntax:
+    content: public static class LicenseHolder
+    content.vb: Public Module LicenseHolder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: CIDER.LicenseHolder.ThisSoftwareLicense
+  commentId: F:CIDER.LicenseHolder.ThisSoftwareLicense
+  id: ThisSoftwareLicense
+  parent: CIDER.LicenseHolder
+  langs:
+  - csharp
+  - vb
+  name: ThisSoftwareLicense
+  nameWithType: LicenseHolder.ThisSoftwareLicense
+  fullName: CIDER.LicenseHolder.ThisSoftwareLicense
+  type: Field
+  source:
+    remote:
+      path: CIDER/CIDER/LicenseHolder.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ThisSoftwareLicense
+    path: LicenseHolder.cs
+    startLine: 16
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis is the license for this project\n"
+  example: []
+  syntax:
+    content: public static string ThisSoftwareLicense
+    return:
+      type: System.String
+    content.vb: Public Shared ThisSoftwareLicense As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: CIDER.LicenseHolder.MahAppsLicense
+  commentId: F:CIDER.LicenseHolder.MahAppsLicense
+  id: MahAppsLicense
+  parent: CIDER.LicenseHolder
+  langs:
+  - csharp
+  - vb
+  name: MahAppsLicense
+  nameWithType: LicenseHolder.MahAppsLicense
+  fullName: CIDER.LicenseHolder.MahAppsLicense
+  type: Field
+  source:
+    remote:
+      path: CIDER/CIDER/LicenseHolder.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: MahAppsLicense
+    path: LicenseHolder.cs
+    startLine: 573
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis is the license for the UI library MahApps\n"
+  example: []
+  syntax:
+    content: public static string MahAppsLicense
+    return:
+      type: System.String
+    content.vb: Public Shared MahAppsLicense As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: CIDER.LicenseHolder.OxyPlotLicense
+  commentId: F:CIDER.LicenseHolder.OxyPlotLicense
+  id: OxyPlotLicense
+  parent: CIDER.LicenseHolder
+  langs:
+  - csharp
+  - vb
+  name: OxyPlotLicense
+  nameWithType: LicenseHolder.OxyPlotLicense
+  fullName: CIDER.LicenseHolder.OxyPlotLicense
+  type: Field
+  source:
+    remote:
+      path: CIDER/CIDER/LicenseHolder.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: OxyPlotLicense
+    path: LicenseHolder.cs
+    startLine: 594
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis is the license for the plotting library OxyPlot\n"
+  example: []
+  syntax:
+    content: public static string OxyPlotLicense
+    return:
+      type: System.String
+    content.vb: Public Shared OxyPlotLicense As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: CIDER.LicenseHolder.pilotHUDLicense
+  commentId: F:CIDER.LicenseHolder.pilotHUDLicense
+  id: pilotHUDLicense
+  parent: CIDER.LicenseHolder
+  langs:
+  - csharp
+  - vb
+  name: pilotHUDLicense
+  nameWithType: LicenseHolder.pilotHUDLicense
+  fullName: CIDER.LicenseHolder.pilotHUDLicense
+  type: Field
+  source:
+    remote:
+      path: CIDER/CIDER/LicenseHolder.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: pilotHUDLicense
+    path: LicenseHolder.cs
+    startLine: 616
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis is the license for the artificial horizon library pilotHUD\n"
+  example: []
+  syntax:
+    content: public static string pilotHUDLicense
+    return:
+      type: System.String
+    content.vb: Public Shared pilotHUDLicense As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: CIDER.LicenseHolder.NLOGLicense
+  commentId: F:CIDER.LicenseHolder.NLOGLicense
+  id: NLOGLicense
+  parent: CIDER.LicenseHolder
+  langs:
+  - csharp
+  - vb
+  name: NLOGLicense
+  nameWithType: LicenseHolder.NLOGLicense
+  fullName: CIDER.LicenseHolder.NLOGLicense
+  type: Field
+  source:
+    remote:
+      path: CIDER/CIDER/LicenseHolder.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: NLOGLicense
+    path: LicenseHolder.cs
+    startLine: 628
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis is the license for the logging library NLog\n"
+  example: []
+  syntax:
+    content: public static string NLOGLicense
+    return:
+      type: System.String
+    content.vb: Public Shared NLOGLicense As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: CIDER.LicenseHolder.docFxLicense
+  commentId: F:CIDER.LicenseHolder.docFxLicense
+  id: docFxLicense
+  parent: CIDER.LicenseHolder
+  langs:
+  - csharp
+  - vb
+  name: docFxLicense
+  nameWithType: LicenseHolder.docFxLicense
+  fullName: CIDER.LicenseHolder.docFxLicense
+  type: Field
+  source:
+    remote:
+      path: CIDER/CIDER/LicenseHolder.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: docFxLicense
+    path: LicenseHolder.cs
+    startLine: 656
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis is the license for the documentation automation library docFx\n"
+  example: []
+  syntax:
+    content: public static string docFxLicense
+    return:
+      type: System.String
+    content.vb: Public Shared docFxLicense As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

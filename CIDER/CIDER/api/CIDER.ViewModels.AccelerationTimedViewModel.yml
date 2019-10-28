@@ -1,0 +1,1327 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.ViewModels.AccelerationTimedViewModel
+  commentId: T:CIDER.ViewModels.AccelerationTimedViewModel
+  id: AccelerationTimedViewModel
+  parent: CIDER.ViewModels
+  children:
+  - CIDER.ViewModels.AccelerationTimedViewModel.#ctor(CIDER.DataProvider)
+  - CIDER.ViewModels.AccelerationTimedViewModel.FBText
+  - CIDER.ViewModels.AccelerationTimedViewModel.LMaxFB
+  - CIDER.ViewModels.AccelerationTimedViewModel.LMaxLR
+  - CIDER.ViewModels.AccelerationTimedViewModel.LMaxUD
+  - CIDER.ViewModels.AccelerationTimedViewModel.LRText
+  - CIDER.ViewModels.AccelerationTimedViewModel.LValFB
+  - CIDER.ViewModels.AccelerationTimedViewModel.LValLR
+  - CIDER.ViewModels.AccelerationTimedViewModel.LValUD
+  - CIDER.ViewModels.AccelerationTimedViewModel.RMaxFB
+  - CIDER.ViewModels.AccelerationTimedViewModel.RMaxLR
+  - CIDER.ViewModels.AccelerationTimedViewModel.RMaxUD
+  - CIDER.ViewModels.AccelerationTimedViewModel.RValFB
+  - CIDER.ViewModels.AccelerationTimedViewModel.RValLR
+  - CIDER.ViewModels.AccelerationTimedViewModel.RValUD
+  - CIDER.ViewModels.AccelerationTimedViewModel.SliderValueChanged(System.Int32)
+  - CIDER.ViewModels.AccelerationTimedViewModel.slMaximum
+  - CIDER.ViewModels.AccelerationTimedViewModel.slTickFrequency
+  - CIDER.ViewModels.AccelerationTimedViewModel.UDText
+  langs:
+  - csharp
+  - vb
+  name: AccelerationTimedViewModel
+  nameWithType: AccelerationTimedViewModel
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: AccelerationTimedViewModel
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 6
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: 'public class AccelerationTimedViewModel : ViewModelBase, INotifyPropertyChanged'
+    content.vb: >-
+      Public Class AccelerationTimedViewModel
+
+          Inherits ViewModelBase
+
+          Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - CIDER.MVVMBase.ViewModelBase
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - CIDER.MVVMBase.ViewModelBase.logger
+  - CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  - CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.#ctor(CIDER.DataProvider)
+  commentId: M:CIDER.ViewModels.AccelerationTimedViewModel.#ctor(CIDER.DataProvider)
+  id: '#ctor(CIDER.DataProvider)'
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: AccelerationTimedViewModel(DataProvider)
+  nameWithType: AccelerationTimedViewModel.AccelerationTimedViewModel(DataProvider)
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.AccelerationTimedViewModel(CIDER.DataProvider)
+  type: Constructor
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: .ctor
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 32
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public AccelerationTimedViewModel(DataProvider data)
+    parameters:
+    - id: data
+      type: CIDER.DataProvider
+    content.vb: Public Sub New(data As DataProvider)
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.slMaximum
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.slMaximum
+  id: slMaximum
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: slMaximum
+  nameWithType: AccelerationTimedViewModel.slMaximum
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.slMaximum
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: slMaximum
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 60
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public int slMaximum { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property slMaximum As Integer
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.slMaximum*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.slTickFrequency
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.slTickFrequency
+  id: slTickFrequency
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: slTickFrequency
+  nameWithType: AccelerationTimedViewModel.slTickFrequency
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.slTickFrequency
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: slTickFrequency
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 66
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public int slTickFrequency { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property slTickFrequency As Integer
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.slTickFrequency*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.SliderValueChanged(System.Int32)
+  commentId: M:CIDER.ViewModels.AccelerationTimedViewModel.SliderValueChanged(System.Int32)
+  id: SliderValueChanged(System.Int32)
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: SliderValueChanged(Int32)
+  nameWithType: AccelerationTimedViewModel.SliderValueChanged(Int32)
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.SliderValueChanged(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: SliderValueChanged
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 72
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public void SliderValueChanged(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    content.vb: Public Sub SliderValueChanged(value As Integer)
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.SliderValueChanged*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.RValUD
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.RValUD
+  id: RValUD
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: RValUD
+  nameWithType: AccelerationTimedViewModel.RValUD
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.RValUD
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: RValUD
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 119
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float RValUD { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RValUD As Single
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.RValUD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LValUD
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.LValUD
+  id: LValUD
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: LValUD
+  nameWithType: AccelerationTimedViewModel.LValUD
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LValUD
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LValUD
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 125
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float LValUD { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LValUD As Single
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.LValUD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.RValFB
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.RValFB
+  id: RValFB
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: RValFB
+  nameWithType: AccelerationTimedViewModel.RValFB
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.RValFB
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: RValFB
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 131
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float RValFB { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RValFB As Single
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.RValFB*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LValFB
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.LValFB
+  id: LValFB
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: LValFB
+  nameWithType: AccelerationTimedViewModel.LValFB
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LValFB
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LValFB
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 137
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float LValFB { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LValFB As Single
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.LValFB*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.RValLR
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.RValLR
+  id: RValLR
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: RValLR
+  nameWithType: AccelerationTimedViewModel.RValLR
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.RValLR
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: RValLR
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 143
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float RValLR { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RValLR As Single
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.RValLR*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LValLR
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.LValLR
+  id: LValLR
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: LValLR
+  nameWithType: AccelerationTimedViewModel.LValLR
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LValLR
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LValLR
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 149
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float LValLR { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LValLR As Single
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.LValLR*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.RMaxUD
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.RMaxUD
+  id: RMaxUD
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: RMaxUD
+  nameWithType: AccelerationTimedViewModel.RMaxUD
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.RMaxUD
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: RMaxUD
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 156
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float RMaxUD { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RMaxUD As Single
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.RMaxUD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LMaxUD
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.LMaxUD
+  id: LMaxUD
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: LMaxUD
+  nameWithType: AccelerationTimedViewModel.LMaxUD
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LMaxUD
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LMaxUD
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 162
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float LMaxUD { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LMaxUD As Single
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.LMaxUD*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.RMaxFB
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.RMaxFB
+  id: RMaxFB
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: RMaxFB
+  nameWithType: AccelerationTimedViewModel.RMaxFB
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.RMaxFB
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: RMaxFB
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 168
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float RMaxFB { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RMaxFB As Single
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.RMaxFB*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LMaxFB
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.LMaxFB
+  id: LMaxFB
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: LMaxFB
+  nameWithType: AccelerationTimedViewModel.LMaxFB
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LMaxFB
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LMaxFB
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 174
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float LMaxFB { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LMaxFB As Single
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.LMaxFB*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.RMaxLR
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.RMaxLR
+  id: RMaxLR
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: RMaxLR
+  nameWithType: AccelerationTimedViewModel.RMaxLR
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.RMaxLR
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: RMaxLR
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 180
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float RMaxLR { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property RMaxLR As Single
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.RMaxLR*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LMaxLR
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.LMaxLR
+  id: LMaxLR
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: LMaxLR
+  nameWithType: AccelerationTimedViewModel.LMaxLR
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LMaxLR
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LMaxLR
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 186
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float LMaxLR { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property LMaxLR As Single
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.LMaxLR*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.UDText
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.UDText
+  id: UDText
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: UDText
+  nameWithType: AccelerationTimedViewModel.UDText
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.UDText
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: UDText
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 192
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public string UDText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UDText As String
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.UDText*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LRText
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.LRText
+  id: LRText
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: LRText
+  nameWithType: AccelerationTimedViewModel.LRText
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LRText
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LRText
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 198
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public string LRText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LRText As String
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.LRText*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.FBText
+  commentId: P:CIDER.ViewModels.AccelerationTimedViewModel.FBText
+  id: FBText
+  parent: CIDER.ViewModels.AccelerationTimedViewModel
+  langs:
+  - csharp
+  - vb
+  name: FBText
+  nameWithType: AccelerationTimedViewModel.FBText
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.FBText
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: FBText
+    path: ViewModels/AccelerationTimedViewModel.cs
+    startLine: 204
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public string FBText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FBText As String
+  overload: CIDER.ViewModels.AccelerationTimedViewModel.FBText*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER.ViewModels
+  commentId: N:CIDER.ViewModels
+  name: CIDER.ViewModels
+  nameWithType: CIDER.ViewModels
+  fullName: CIDER.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CIDER.MVVMBase.ViewModelBase
+  commentId: T:CIDER.MVVMBase.ViewModelBase
+  parent: CIDER.MVVMBase
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: CIDER.MVVMBase.ViewModelBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.logger
+  commentId: F:CIDER.MVVMBase.ViewModelBase.logger
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: logger
+  nameWithType: ViewModelBase.logger
+  fullName: CIDER.MVVMBase.ViewModelBase.logger
+- uid: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  commentId: E:CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+  fullName: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  parent: CIDER.MVVMBase.ViewModelBase
+  definition: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.MVVMBase
+  commentId: N:CIDER.MVVMBase
+  name: CIDER.MVVMBase
+  nameWithType: CIDER.MVVMBase
+  fullName: CIDER.MVVMBase
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.#ctor*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.#ctor
+  name: AccelerationTimedViewModel
+  nameWithType: AccelerationTimedViewModel.AccelerationTimedViewModel
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.AccelerationTimedViewModel
+- uid: CIDER.DataProvider
+  commentId: T:CIDER.DataProvider
+  parent: CIDER
+  name: DataProvider
+  nameWithType: DataProvider
+  fullName: CIDER.DataProvider
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.slMaximum*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.slMaximum
+  name: slMaximum
+  nameWithType: AccelerationTimedViewModel.slMaximum
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.slMaximum
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.slTickFrequency*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.slTickFrequency
+  name: slTickFrequency
+  nameWithType: AccelerationTimedViewModel.slTickFrequency
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.slTickFrequency
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.SliderValueChanged*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.SliderValueChanged
+  name: SliderValueChanged
+  nameWithType: AccelerationTimedViewModel.SliderValueChanged
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.SliderValueChanged
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.RValUD*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.RValUD
+  name: RValUD
+  nameWithType: AccelerationTimedViewModel.RValUD
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.RValUD
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LValUD*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.LValUD
+  name: LValUD
+  nameWithType: AccelerationTimedViewModel.LValUD
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LValUD
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.RValFB*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.RValFB
+  name: RValFB
+  nameWithType: AccelerationTimedViewModel.RValFB
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.RValFB
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LValFB*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.LValFB
+  name: LValFB
+  nameWithType: AccelerationTimedViewModel.LValFB
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LValFB
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.RValLR*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.RValLR
+  name: RValLR
+  nameWithType: AccelerationTimedViewModel.RValLR
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.RValLR
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LValLR*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.LValLR
+  name: LValLR
+  nameWithType: AccelerationTimedViewModel.LValLR
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LValLR
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.RMaxUD*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.RMaxUD
+  name: RMaxUD
+  nameWithType: AccelerationTimedViewModel.RMaxUD
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.RMaxUD
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LMaxUD*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.LMaxUD
+  name: LMaxUD
+  nameWithType: AccelerationTimedViewModel.LMaxUD
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LMaxUD
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.RMaxFB*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.RMaxFB
+  name: RMaxFB
+  nameWithType: AccelerationTimedViewModel.RMaxFB
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.RMaxFB
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LMaxFB*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.LMaxFB
+  name: LMaxFB
+  nameWithType: AccelerationTimedViewModel.LMaxFB
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LMaxFB
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.RMaxLR*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.RMaxLR
+  name: RMaxLR
+  nameWithType: AccelerationTimedViewModel.RMaxLR
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.RMaxLR
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LMaxLR*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.LMaxLR
+  name: LMaxLR
+  nameWithType: AccelerationTimedViewModel.LMaxLR
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LMaxLR
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.UDText*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.UDText
+  name: UDText
+  nameWithType: AccelerationTimedViewModel.UDText
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.UDText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.LRText*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.LRText
+  name: LRText
+  nameWithType: AccelerationTimedViewModel.LRText
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.LRText
+- uid: CIDER.ViewModels.AccelerationTimedViewModel.FBText*
+  commentId: Overload:CIDER.ViewModels.AccelerationTimedViewModel.FBText
+  name: FBText
+  nameWithType: AccelerationTimedViewModel.FBText
+  fullName: CIDER.ViewModels.AccelerationTimedViewModel.FBText

@@ -21,9 +21,8 @@
     "content": [
       {
         "files": [
-          "api/**.yml"
-        ],
-        "cwd": "obj"
+          "api/*.yml"
+        ]
       },
       {
         "files": [
@@ -62,7 +61,7 @@
     ],
     "dest": "_site",
     "template": [
-      "default"
+      "cider_template"
     ]
   }
 }

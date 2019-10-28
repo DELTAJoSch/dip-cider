@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.IProcessStarter
+  commentId: T:CIDER.IProcessStarter
+  id: IProcessStarter
+  parent: CIDER
+  children:
+  - CIDER.IProcessStarter.Start(System.Diagnostics.ProcessStartInfo)
+  langs:
+  - csharp
+  - vb
+  name: IProcessStarter
+  nameWithType: IProcessStarter
+  fullName: CIDER.IProcessStarter
+  type: Interface
+  source:
+    remote:
+      path: CIDER/CIDER/ProcessStarter.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: IProcessStarter
+    path: ProcessStarter.cs
+    startLine: 4
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public interface IProcessStarter
+    content.vb: Public Interface IProcessStarter
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: CIDER.IProcessStarter.Start(System.Diagnostics.ProcessStartInfo)
+  commentId: M:CIDER.IProcessStarter.Start(System.Diagnostics.ProcessStartInfo)
+  id: Start(System.Diagnostics.ProcessStartInfo)
+  parent: CIDER.IProcessStarter
+  langs:
+  - csharp
+  - vb
+  name: Start(ProcessStartInfo)
+  nameWithType: IProcessStarter.Start(ProcessStartInfo)
+  fullName: CIDER.IProcessStarter.Start(System.Diagnostics.ProcessStartInfo)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ProcessStarter.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Start
+    path: ProcessStarter.cs
+    startLine: 8
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: void Start(ProcessStartInfo info)
+    parameters:
+    - id: info
+      type: System.Diagnostics.ProcessStartInfo
+    content.vb: Sub Start(info As ProcessStartInfo)
+  overload: CIDER.IProcessStarter.Start*
+references:
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: CIDER.IProcessStarter.Start*
+  commentId: Overload:CIDER.IProcessStarter.Start
+  name: Start
+  nameWithType: IProcessStarter.Start
+  fullName: CIDER.IProcessStarter.Start
+- uid: System.Diagnostics.ProcessStartInfo
+  commentId: T:System.Diagnostics.ProcessStartInfo
+  parent: System.Diagnostics
+  isExternal: true
+  name: ProcessStartInfo
+  nameWithType: ProcessStartInfo
+  fullName: System.Diagnostics.ProcessStartInfo
+- uid: System.Diagnostics
+  commentId: N:System.Diagnostics
+  isExternal: true
+  name: System.Diagnostics
+  nameWithType: System.Diagnostics
+  fullName: System.Diagnostics

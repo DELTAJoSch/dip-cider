@@ -1,0 +1,910 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel
+  commentId: T:CIDER.ViewModels.ArtificialHorizonViewModel
+  id: ArtificialHorizonViewModel
+  parent: CIDER.ViewModels
+  children:
+  - CIDER.ViewModels.ArtificialHorizonViewModel.#ctor(CIDER.DataProvider)
+  - CIDER.ViewModels.ArtificialHorizonViewModel.ClimbVelocity
+  - CIDER.ViewModels.ArtificialHorizonViewModel.Pitch
+  - CIDER.ViewModels.ArtificialHorizonViewModel.Roll
+  - CIDER.ViewModels.ArtificialHorizonViewModel.SliderValueChanged(System.Int32)
+  - CIDER.ViewModels.ArtificialHorizonViewModel.slMaximum
+  - CIDER.ViewModels.ArtificialHorizonViewModel.slTickFrequency
+  - CIDER.ViewModels.ArtificialHorizonViewModel.Velocity
+  - CIDER.ViewModels.ArtificialHorizonViewModel.Yaw
+  langs:
+  - csharp
+  - vb
+  name: ArtificialHorizonViewModel
+  nameWithType: ArtificialHorizonViewModel
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ArtificialHorizonViewModel
+    path: ViewModels/ArtificialHorizonViewModel.cs
+    startLine: 6
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: 'public class ArtificialHorizonViewModel : ViewModelBase, INotifyPropertyChanged'
+    content.vb: >-
+      Public Class ArtificialHorizonViewModel
+
+          Inherits ViewModelBase
+
+          Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - CIDER.MVVMBase.ViewModelBase
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - CIDER.MVVMBase.ViewModelBase.logger
+  - CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  - CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.#ctor(CIDER.DataProvider)
+  commentId: M:CIDER.ViewModels.ArtificialHorizonViewModel.#ctor(CIDER.DataProvider)
+  id: '#ctor(CIDER.DataProvider)'
+  parent: CIDER.ViewModels.ArtificialHorizonViewModel
+  langs:
+  - csharp
+  - vb
+  name: ArtificialHorizonViewModel(DataProvider)
+  nameWithType: ArtificialHorizonViewModel.ArtificialHorizonViewModel(DataProvider)
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.ArtificialHorizonViewModel(CIDER.DataProvider)
+  type: Constructor
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: .ctor
+    path: ViewModels/ArtificialHorizonViewModel.cs
+    startLine: 17
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ArtificialHorizonViewModel(DataProvider Data)
+    parameters:
+    - id: Data
+      type: CIDER.DataProvider
+    content.vb: Public Sub New(Data As DataProvider)
+  overload: CIDER.ViewModels.ArtificialHorizonViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.Pitch
+  commentId: P:CIDER.ViewModels.ArtificialHorizonViewModel.Pitch
+  id: Pitch
+  parent: CIDER.ViewModels.ArtificialHorizonViewModel
+  langs:
+  - csharp
+  - vb
+  name: Pitch
+  nameWithType: ArtificialHorizonViewModel.Pitch
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.Pitch
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Pitch
+    path: ViewModels/ArtificialHorizonViewModel.cs
+    startLine: 28
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public double Pitch { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Pitch As Double
+  overload: CIDER.ViewModels.ArtificialHorizonViewModel.Pitch*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.Roll
+  commentId: P:CIDER.ViewModels.ArtificialHorizonViewModel.Roll
+  id: Roll
+  parent: CIDER.ViewModels.ArtificialHorizonViewModel
+  langs:
+  - csharp
+  - vb
+  name: Roll
+  nameWithType: ArtificialHorizonViewModel.Roll
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.Roll
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Roll
+    path: ViewModels/ArtificialHorizonViewModel.cs
+    startLine: 29
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public double Roll { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Roll As Double
+  overload: CIDER.ViewModels.ArtificialHorizonViewModel.Roll*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.Yaw
+  commentId: P:CIDER.ViewModels.ArtificialHorizonViewModel.Yaw
+  id: Yaw
+  parent: CIDER.ViewModels.ArtificialHorizonViewModel
+  langs:
+  - csharp
+  - vb
+  name: Yaw
+  nameWithType: ArtificialHorizonViewModel.Yaw
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.Yaw
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Yaw
+    path: ViewModels/ArtificialHorizonViewModel.cs
+    startLine: 30
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public double Yaw { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Yaw As Double
+  overload: CIDER.ViewModels.ArtificialHorizonViewModel.Yaw*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.Velocity
+  commentId: P:CIDER.ViewModels.ArtificialHorizonViewModel.Velocity
+  id: Velocity
+  parent: CIDER.ViewModels.ArtificialHorizonViewModel
+  langs:
+  - csharp
+  - vb
+  name: Velocity
+  nameWithType: ArtificialHorizonViewModel.Velocity
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.Velocity
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Velocity
+    path: ViewModels/ArtificialHorizonViewModel.cs
+    startLine: 31
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public double Velocity { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Velocity As Double
+  overload: CIDER.ViewModels.ArtificialHorizonViewModel.Velocity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.ClimbVelocity
+  commentId: P:CIDER.ViewModels.ArtificialHorizonViewModel.ClimbVelocity
+  id: ClimbVelocity
+  parent: CIDER.ViewModels.ArtificialHorizonViewModel
+  langs:
+  - csharp
+  - vb
+  name: ClimbVelocity
+  nameWithType: ArtificialHorizonViewModel.ClimbVelocity
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.ClimbVelocity
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ClimbVelocity
+    path: ViewModels/ArtificialHorizonViewModel.cs
+    startLine: 32
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public double ClimbVelocity { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ClimbVelocity As Double
+  overload: CIDER.ViewModels.ArtificialHorizonViewModel.ClimbVelocity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.slMaximum
+  commentId: P:CIDER.ViewModels.ArtificialHorizonViewModel.slMaximum
+  id: slMaximum
+  parent: CIDER.ViewModels.ArtificialHorizonViewModel
+  langs:
+  - csharp
+  - vb
+  name: slMaximum
+  nameWithType: ArtificialHorizonViewModel.slMaximum
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.slMaximum
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: slMaximum
+    path: ViewModels/ArtificialHorizonViewModel.cs
+    startLine: 34
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public int slMaximum { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property slMaximum As Integer
+  overload: CIDER.ViewModels.ArtificialHorizonViewModel.slMaximum*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.slTickFrequency
+  commentId: P:CIDER.ViewModels.ArtificialHorizonViewModel.slTickFrequency
+  id: slTickFrequency
+  parent: CIDER.ViewModels.ArtificialHorizonViewModel
+  langs:
+  - csharp
+  - vb
+  name: slTickFrequency
+  nameWithType: ArtificialHorizonViewModel.slTickFrequency
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.slTickFrequency
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: slTickFrequency
+    path: ViewModels/ArtificialHorizonViewModel.cs
+    startLine: 40
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public int slTickFrequency { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property slTickFrequency As Integer
+  overload: CIDER.ViewModels.ArtificialHorizonViewModel.slTickFrequency*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.SliderValueChanged(System.Int32)
+  commentId: M:CIDER.ViewModels.ArtificialHorizonViewModel.SliderValueChanged(System.Int32)
+  id: SliderValueChanged(System.Int32)
+  parent: CIDER.ViewModels.ArtificialHorizonViewModel
+  langs:
+  - csharp
+  - vb
+  name: SliderValueChanged(Int32)
+  nameWithType: ArtificialHorizonViewModel.SliderValueChanged(Int32)
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.SliderValueChanged(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: SliderValueChanged
+    path: ViewModels/ArtificialHorizonViewModel.cs
+    startLine: 46
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public void SliderValueChanged(int Value)
+    parameters:
+    - id: Value
+      type: System.Int32
+    content.vb: Public Sub SliderValueChanged(Value As Integer)
+  overload: CIDER.ViewModels.ArtificialHorizonViewModel.SliderValueChanged*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER.ViewModels
+  commentId: N:CIDER.ViewModels
+  name: CIDER.ViewModels
+  nameWithType: CIDER.ViewModels
+  fullName: CIDER.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CIDER.MVVMBase.ViewModelBase
+  commentId: T:CIDER.MVVMBase.ViewModelBase
+  parent: CIDER.MVVMBase
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: CIDER.MVVMBase.ViewModelBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.logger
+  commentId: F:CIDER.MVVMBase.ViewModelBase.logger
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: logger
+  nameWithType: ViewModelBase.logger
+  fullName: CIDER.MVVMBase.ViewModelBase.logger
+- uid: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  commentId: E:CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+  fullName: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  parent: CIDER.MVVMBase.ViewModelBase
+  definition: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.MVVMBase
+  commentId: N:CIDER.MVVMBase
+  name: CIDER.MVVMBase
+  nameWithType: CIDER.MVVMBase
+  fullName: CIDER.MVVMBase
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.#ctor*
+  commentId: Overload:CIDER.ViewModels.ArtificialHorizonViewModel.#ctor
+  name: ArtificialHorizonViewModel
+  nameWithType: ArtificialHorizonViewModel.ArtificialHorizonViewModel
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.ArtificialHorizonViewModel
+- uid: CIDER.DataProvider
+  commentId: T:CIDER.DataProvider
+  parent: CIDER
+  name: DataProvider
+  nameWithType: DataProvider
+  fullName: CIDER.DataProvider
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.Pitch*
+  commentId: Overload:CIDER.ViewModels.ArtificialHorizonViewModel.Pitch
+  name: Pitch
+  nameWithType: ArtificialHorizonViewModel.Pitch
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.Pitch
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.Roll*
+  commentId: Overload:CIDER.ViewModels.ArtificialHorizonViewModel.Roll
+  name: Roll
+  nameWithType: ArtificialHorizonViewModel.Roll
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.Roll
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.Yaw*
+  commentId: Overload:CIDER.ViewModels.ArtificialHorizonViewModel.Yaw
+  name: Yaw
+  nameWithType: ArtificialHorizonViewModel.Yaw
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.Yaw
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.Velocity*
+  commentId: Overload:CIDER.ViewModels.ArtificialHorizonViewModel.Velocity
+  name: Velocity
+  nameWithType: ArtificialHorizonViewModel.Velocity
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.Velocity
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.ClimbVelocity*
+  commentId: Overload:CIDER.ViewModels.ArtificialHorizonViewModel.ClimbVelocity
+  name: ClimbVelocity
+  nameWithType: ArtificialHorizonViewModel.ClimbVelocity
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.ClimbVelocity
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.slMaximum*
+  commentId: Overload:CIDER.ViewModels.ArtificialHorizonViewModel.slMaximum
+  name: slMaximum
+  nameWithType: ArtificialHorizonViewModel.slMaximum
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.slMaximum
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.slTickFrequency*
+  commentId: Overload:CIDER.ViewModels.ArtificialHorizonViewModel.slTickFrequency
+  name: slTickFrequency
+  nameWithType: ArtificialHorizonViewModel.slTickFrequency
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.slTickFrequency
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.SliderValueChanged*
+  commentId: Overload:CIDER.ViewModels.ArtificialHorizonViewModel.SliderValueChanged
+  name: SliderValueChanged
+  nameWithType: ArtificialHorizonViewModel.SliderValueChanged
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.SliderValueChanged

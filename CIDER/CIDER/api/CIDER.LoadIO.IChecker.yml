@@ -1,0 +1,97 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.LoadIO.IChecker
+  commentId: T:CIDER.LoadIO.IChecker
+  id: IChecker
+  parent: CIDER.LoadIO
+  children:
+  - CIDER.LoadIO.IChecker.IsCorrectFolder(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IChecker
+  nameWithType: IChecker
+  fullName: CIDER.LoadIO.IChecker
+  type: Interface
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FolderChecker.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: IChecker
+    path: LoadIO/FolderChecker.cs
+    startLine: 33
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: public interface IChecker
+    content.vb: Public Interface IChecker
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: CIDER.LoadIO.IChecker.IsCorrectFolder(System.String)
+  commentId: M:CIDER.LoadIO.IChecker.IsCorrectFolder(System.String)
+  id: IsCorrectFolder(System.String)
+  parent: CIDER.LoadIO.IChecker
+  langs:
+  - csharp
+  - vb
+  name: IsCorrectFolder(String)
+  nameWithType: IChecker.IsCorrectFolder(String)
+  fullName: CIDER.LoadIO.IChecker.IsCorrectFolder(System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FolderChecker.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: IsCorrectFolder
+    path: LoadIO/FolderChecker.cs
+    startLine: 35
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: bool IsCorrectFolder(string Path)
+    parameters:
+    - id: Path
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function IsCorrectFolder(Path As String) As Boolean
+  overload: CIDER.LoadIO.IChecker.IsCorrectFolder*
+references:
+- uid: CIDER.LoadIO
+  commentId: N:CIDER.LoadIO
+  name: CIDER.LoadIO
+  nameWithType: CIDER.LoadIO
+  fullName: CIDER.LoadIO
+- uid: CIDER.LoadIO.IChecker.IsCorrectFolder*
+  commentId: Overload:CIDER.LoadIO.IChecker.IsCorrectFolder
+  name: IsCorrectFolder
+  nameWithType: IChecker.IsCorrectFolder
+  fullName: CIDER.LoadIO.IChecker.IsCorrectFolder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

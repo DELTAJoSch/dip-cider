@@ -1,0 +1,550 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.LoadIO.Reader
+  commentId: T:CIDER.LoadIO.Reader
+  id: Reader
+  parent: CIDER.LoadIO
+  children:
+  - CIDER.LoadIO.Reader.ReadLinesCsv(System.String)
+  - CIDER.LoadIO.Reader.ReadLinesNmea(System.String)
+  langs:
+  - csharp
+  - vb
+  name: Reader
+  nameWithType: Reader
+  fullName: CIDER.LoadIO.Reader
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FileIO.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Reader
+    path: LoadIO/FileIO.cs
+    startLine: 250
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: 'public class Reader : IRead'
+    content.vb: >-
+      Public Class Reader
+
+          Implements IRead
+  inheritance:
+  - System.Object
+  implements:
+  - CIDER.LoadIO.IRead
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.LoadIO.Reader.ReadLinesCsv(System.String)
+  commentId: M:CIDER.LoadIO.Reader.ReadLinesCsv(System.String)
+  id: ReadLinesCsv(System.String)
+  parent: CIDER.LoadIO.Reader
+  langs:
+  - csharp
+  - vb
+  name: ReadLinesCsv(String)
+  nameWithType: Reader.ReadLinesCsv(String)
+  fullName: CIDER.LoadIO.Reader.ReadLinesCsv(System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FileIO.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ReadLinesCsv
+    path: LoadIO/FileIO.cs
+    startLine: 252
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: public string[] ReadLinesCsv(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String[]
+    content.vb: Public Function ReadLinesCsv(path As String) As String()
+  overload: CIDER.LoadIO.Reader.ReadLinesCsv*
+  implements:
+  - CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.LoadIO.Reader.ReadLinesNmea(System.String)
+  commentId: M:CIDER.LoadIO.Reader.ReadLinesNmea(System.String)
+  id: ReadLinesNmea(System.String)
+  parent: CIDER.LoadIO.Reader
+  langs:
+  - csharp
+  - vb
+  name: ReadLinesNmea(String)
+  nameWithType: Reader.ReadLinesNmea(String)
+  fullName: CIDER.LoadIO.Reader.ReadLinesNmea(System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FileIO.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ReadLinesNmea
+    path: LoadIO/FileIO.cs
+    startLine: 258
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: public string[] ReadLinesNmea(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String[]
+    content.vb: Public Function ReadLinesNmea(path As String) As String()
+  overload: CIDER.LoadIO.Reader.ReadLinesNmea*
+  implements:
+  - CIDER.LoadIO.IRead.ReadLinesNmea(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER.LoadIO
+  commentId: N:CIDER.LoadIO
+  name: CIDER.LoadIO
+  nameWithType: CIDER.LoadIO
+  fullName: CIDER.LoadIO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CIDER.LoadIO.IRead
+  commentId: T:CIDER.LoadIO.IRead
+  parent: CIDER.LoadIO
+  name: IRead
+  nameWithType: IRead
+  fullName: CIDER.LoadIO.IRead
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.LoadIO.Reader.ReadLinesCsv*
+  commentId: Overload:CIDER.LoadIO.Reader.ReadLinesCsv
+  name: ReadLinesCsv
+  nameWithType: Reader.ReadLinesCsv
+  fullName: CIDER.LoadIO.Reader.ReadLinesCsv
+- uid: CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
+  commentId: M:CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
+  parent: CIDER.LoadIO.IRead
+  isExternal: true
+  name: ReadLinesCsv(String)
+  nameWithType: IRead.ReadLinesCsv(String)
+  fullName: CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
+  spec.csharp:
+  - uid: CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
+    name: ReadLinesCsv
+    nameWithType: IRead.ReadLinesCsv
+    fullName: CIDER.LoadIO.IRead.ReadLinesCsv
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
+    name: ReadLinesCsv
+    nameWithType: IRead.ReadLinesCsv
+    fullName: CIDER.LoadIO.IRead.ReadLinesCsv
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: CIDER.LoadIO.Reader.ReadLinesNmea*
+  commentId: Overload:CIDER.LoadIO.Reader.ReadLinesNmea
+  name: ReadLinesNmea
+  nameWithType: Reader.ReadLinesNmea
+  fullName: CIDER.LoadIO.Reader.ReadLinesNmea
+- uid: CIDER.LoadIO.IRead.ReadLinesNmea(System.String)
+  commentId: M:CIDER.LoadIO.IRead.ReadLinesNmea(System.String)
+  parent: CIDER.LoadIO.IRead
+  isExternal: true
+  name: ReadLinesNmea(String)
+  nameWithType: IRead.ReadLinesNmea(String)
+  fullName: CIDER.LoadIO.IRead.ReadLinesNmea(System.String)
+  spec.csharp:
+  - uid: CIDER.LoadIO.IRead.ReadLinesNmea(System.String)
+    name: ReadLinesNmea
+    nameWithType: IRead.ReadLinesNmea
+    fullName: CIDER.LoadIO.IRead.ReadLinesNmea
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.LoadIO.IRead.ReadLinesNmea(System.String)
+    name: ReadLinesNmea
+    nameWithType: IRead.ReadLinesNmea
+    fullName: CIDER.LoadIO.IRead.ReadLinesNmea
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

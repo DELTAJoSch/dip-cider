@@ -1,0 +1,547 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.MVVMBase.ViewModelBase
+  commentId: T:CIDER.MVVMBase.ViewModelBase
+  id: ViewModelBase
+  parent: CIDER.MVVMBase
+  children:
+  - CIDER.MVVMBase.ViewModelBase.logger
+  - CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  - CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: CIDER.MVVMBase.ViewModelBase
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ViewModelBase
+    path: MVVMBase/ViewModelBase.cs
+    startLine: 8
+  assemblies:
+  - CIDER
+  namespace: CIDER.MVVMBase
+  syntax:
+    content: 'public abstract class ViewModelBase : INotifyPropertyChanged'
+    content.vb: >-
+      Public MustInherit Class ViewModelBase
+
+          Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - CIDER.ViewModels.AboutViewModel
+  - CIDER.ViewModels.AccelerationGraphViewModel
+  - CIDER.ViewModels.AccelerationTimedViewModel
+  - CIDER.ViewModels.AngleGraphViewModel
+  - CIDER.ViewModels.AngleTimedViewModel
+  - CIDER.ViewModels.ArtificialHorizonViewModel
+  - CIDER.ViewModels.HeightViewModel
+  - CIDER.ViewModels.LicensesViewModel
+  - CIDER.ViewModels.LoadViewModel
+  - CIDER.ViewModels.MainWindowViewModel
+  - CIDER.ViewModels.MapRouteViewModel
+  - CIDER.ViewModels.MapTimedViewModel
+  - CIDER.ViewModels.ThemeStylerViewModel
+  - CIDER.ViewModels.VelocityGraphViewModel
+  - CIDER.ViewModels.VelocityTimedViewModel
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: CIDER.MVVMBase.ViewModelBase.logger
+  commentId: F:CIDER.MVVMBase.ViewModelBase.logger
+  id: logger
+  parent: CIDER.MVVMBase.ViewModelBase
+  langs:
+  - csharp
+  - vb
+  name: logger
+  nameWithType: ViewModelBase.logger
+  fullName: CIDER.MVVMBase.ViewModelBase.logger
+  type: Field
+  source:
+    remote:
+      path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: logger
+    path: MVVMBase/ViewModelBase.cs
+    startLine: 10
+  assemblies:
+  - CIDER
+  namespace: CIDER.MVVMBase
+  syntax:
+    content: public static Logger logger
+    return:
+      type: NLog.Logger
+    content.vb: Public Shared logger As Logger
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  commentId: E:CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  id: PropertyChanged
+  parent: CIDER.MVVMBase.ViewModelBase
+  langs:
+  - csharp
+  - vb
+  name: PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+  fullName: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  type: Event
+  source:
+    remote:
+      path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: PropertyChanged
+    path: MVVMBase/ViewModelBase.cs
+    startLine: 12
+  assemblies:
+  - CIDER
+  namespace: CIDER.MVVMBase
+  syntax:
+    content: public event PropertyChangedEventHandler PropertyChanged
+    return:
+      type: System.ComponentModel.PropertyChangedEventHandler
+    content.vb: Public Event PropertyChanged As PropertyChangedEventHandler
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  id: SetProperty``1(``0@,``0,System.String)
+  parent: CIDER.MVVMBase.ViewModelBase
+  langs:
+  - csharp
+  - vb
+  name: SetProperty<T>(ref T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(ref T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(ref T, T, System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: SetProperty
+    path: MVVMBase/ViewModelBase.cs
+    startLine: 14
+  assemblies:
+  - CIDER
+  namespace: CIDER.MVVMBase
+  syntax:
+    content: protected bool SetProperty<T>(ref T field, T newValue, string propertyName = null)
+    parameters:
+    - id: field
+      type: '{T}'
+    - id: newValue
+      type: '{T}'
+    - id: propertyName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+    content.vb: Protected Function SetProperty(Of T)(ByRef field As T, newValue As T, propertyName As String = Nothing) As Boolean
+  overload: CIDER.MVVMBase.ViewModelBase.SetProperty*
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(ByRef T, T, String)
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(ByRef T, T, System.String)
+  name.vb: SetProperty(Of T)(ByRef T, T, String)
+references:
+- uid: CIDER.MVVMBase
+  commentId: N:CIDER.MVVMBase
+  name: CIDER.MVVMBase
+  nameWithType: CIDER.MVVMBase
+  fullName: CIDER.MVVMBase
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: NLog.Logger
+  commentId: T:NLog.Logger
+  parent: NLog
+  isExternal: true
+  name: Logger
+  nameWithType: Logger
+  fullName: NLog.Logger
+- uid: NLog
+  commentId: N:NLog
+  isExternal: true
+  name: NLog
+  nameWithType: NLog
+  fullName: NLog
+- uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  parent: System.ComponentModel.INotifyPropertyChanged
+  isExternal: true
+  name: PropertyChanged
+  nameWithType: INotifyPropertyChanged.PropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: System.ComponentModel.PropertyChangedEventHandler
+  commentId: T:System.ComponentModel.PropertyChangedEventHandler
+  parent: System.ComponentModel
+  isExternal: true
+  name: PropertyChangedEventHandler
+  nameWithType: PropertyChangedEventHandler
+  fullName: System.ComponentModel.PropertyChangedEventHandler
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty*
+  commentId: Overload:CIDER.MVVMBase.ViewModelBase.SetProperty
+  name: SetProperty
+  nameWithType: ViewModelBase.SetProperty
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

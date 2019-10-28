@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.LoadIO.IRead
+  commentId: T:CIDER.LoadIO.IRead
+  id: IRead
+  parent: CIDER.LoadIO
+  children:
+  - CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
+  - CIDER.LoadIO.IRead.ReadLinesNmea(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IRead
+  nameWithType: IRead
+  fullName: CIDER.LoadIO.IRead
+  type: Interface
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FileIO.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: IRead
+    path: LoadIO/FileIO.cs
+    startLine: 278
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: public interface IRead
+    content.vb: Public Interface IRead
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: CIDER.LoadIO.IRead.ReadLinesNmea(System.String)
+  commentId: M:CIDER.LoadIO.IRead.ReadLinesNmea(System.String)
+  id: ReadLinesNmea(System.String)
+  parent: CIDER.LoadIO.IRead
+  langs:
+  - csharp
+  - vb
+  name: ReadLinesNmea(String)
+  nameWithType: IRead.ReadLinesNmea(String)
+  fullName: CIDER.LoadIO.IRead.ReadLinesNmea(System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FileIO.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ReadLinesNmea
+    path: LoadIO/FileIO.cs
+    startLine: 280
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: string[] ReadLinesNmea(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String[]
+    content.vb: Function ReadLinesNmea(path As String) As String()
+  overload: CIDER.LoadIO.IRead.ReadLinesNmea*
+- uid: CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
+  commentId: M:CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
+  id: ReadLinesCsv(System.String)
+  parent: CIDER.LoadIO.IRead
+  langs:
+  - csharp
+  - vb
+  name: ReadLinesCsv(String)
+  nameWithType: IRead.ReadLinesCsv(String)
+  fullName: CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FileIO.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ReadLinesCsv
+    path: LoadIO/FileIO.cs
+    startLine: 282
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: string[] ReadLinesCsv(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String[]
+    content.vb: Function ReadLinesCsv(path As String) As String()
+  overload: CIDER.LoadIO.IRead.ReadLinesCsv*
+references:
+- uid: CIDER.LoadIO
+  commentId: N:CIDER.LoadIO
+  name: CIDER.LoadIO
+  nameWithType: CIDER.LoadIO
+  fullName: CIDER.LoadIO
+- uid: CIDER.LoadIO.IRead.ReadLinesNmea*
+  commentId: Overload:CIDER.LoadIO.IRead.ReadLinesNmea
+  name: ReadLinesNmea
+  nameWithType: IRead.ReadLinesNmea
+  fullName: CIDER.LoadIO.IRead.ReadLinesNmea
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.LoadIO.IRead.ReadLinesCsv*
+  commentId: Overload:CIDER.LoadIO.IRead.ReadLinesCsv
+  name: ReadLinesCsv
+  nameWithType: IRead.ReadLinesCsv
+  fullName: CIDER.LoadIO.IRead.ReadLinesCsv

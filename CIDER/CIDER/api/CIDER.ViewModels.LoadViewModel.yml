@@ -1,0 +1,839 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.ViewModels.LoadViewModel
+  commentId: T:CIDER.ViewModels.LoadViewModel
+  id: LoadViewModel
+  parent: CIDER.ViewModels
+  children:
+  - CIDER.ViewModels.LoadViewModel.#ctor(CIDER.DataProvider,CIDER.LoadIO.IChecker,CIDER.LoadIO.IFolderSelectionInterface,CIDER.LoadIO.FileIO,CIDER.ViewModels.MainWindowViewModel)
+  - CIDER.ViewModels.LoadViewModel.CheckImage
+  - CIDER.ViewModels.LoadViewModel.LoadClickCommand
+  - CIDER.ViewModels.LoadViewModel.LoadEnabled
+  - CIDER.ViewModels.LoadViewModel.PathText
+  - CIDER.ViewModels.LoadViewModel.SelectClickCommand
+  langs:
+  - csharp
+  - vb
+  name: LoadViewModel
+  nameWithType: LoadViewModel
+  fullName: CIDER.ViewModels.LoadViewModel
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LoadViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LoadViewModel
+    path: ViewModels/LoadViewModel.cs
+    startLine: 7
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: 'public class LoadViewModel : ViewModelBase, INotifyPropertyChanged'
+    content.vb: >-
+      Public Class LoadViewModel
+
+          Inherits ViewModelBase
+
+          Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - CIDER.MVVMBase.ViewModelBase
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - CIDER.MVVMBase.ViewModelBase.logger
+  - CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  - CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.ViewModels.LoadViewModel.#ctor(CIDER.DataProvider,CIDER.LoadIO.IChecker,CIDER.LoadIO.IFolderSelectionInterface,CIDER.LoadIO.FileIO,CIDER.ViewModels.MainWindowViewModel)
+  commentId: M:CIDER.ViewModels.LoadViewModel.#ctor(CIDER.DataProvider,CIDER.LoadIO.IChecker,CIDER.LoadIO.IFolderSelectionInterface,CIDER.LoadIO.FileIO,CIDER.ViewModels.MainWindowViewModel)
+  id: '#ctor(CIDER.DataProvider,CIDER.LoadIO.IChecker,CIDER.LoadIO.IFolderSelectionInterface,CIDER.LoadIO.FileIO,CIDER.ViewModels.MainWindowViewModel)'
+  parent: CIDER.ViewModels.LoadViewModel
+  langs:
+  - csharp
+  - vb
+  name: LoadViewModel(DataProvider, IChecker, IFolderSelectionInterface, FileIO, MainWindowViewModel)
+  nameWithType: LoadViewModel.LoadViewModel(DataProvider, IChecker, IFolderSelectionInterface, FileIO, MainWindowViewModel)
+  fullName: CIDER.ViewModels.LoadViewModel.LoadViewModel(CIDER.DataProvider, CIDER.LoadIO.IChecker, CIDER.LoadIO.IFolderSelectionInterface, CIDER.LoadIO.FileIO, CIDER.ViewModels.MainWindowViewModel)
+  type: Constructor
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LoadViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: .ctor
+    path: ViewModels/LoadViewModel.cs
+    startLine: 23
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public LoadViewModel(DataProvider data, IChecker folderChecker, IFolderSelectionInterface selector, FileIO fileIO, MainWindowViewModel main)
+    parameters:
+    - id: data
+      type: CIDER.DataProvider
+    - id: folderChecker
+      type: CIDER.LoadIO.IChecker
+    - id: selector
+      type: CIDER.LoadIO.IFolderSelectionInterface
+    - id: fileIO
+      type: CIDER.LoadIO.FileIO
+    - id: main
+      type: CIDER.ViewModels.MainWindowViewModel
+    content.vb: Public Sub New(data As DataProvider, folderChecker As IChecker, selector As IFolderSelectionInterface, fileIO As FileIO, main As MainWindowViewModel)
+  overload: CIDER.ViewModels.LoadViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.LoadViewModel.LoadClickCommand
+  commentId: P:CIDER.ViewModels.LoadViewModel.LoadClickCommand
+  id: LoadClickCommand
+  parent: CIDER.ViewModels.LoadViewModel
+  langs:
+  - csharp
+  - vb
+  name: LoadClickCommand
+  nameWithType: LoadViewModel.LoadClickCommand
+  fullName: CIDER.ViewModels.LoadViewModel.LoadClickCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LoadViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LoadClickCommand
+    path: ViewModels/LoadViewModel.cs
+    startLine: 39
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand LoadClickCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property LoadClickCommand As ICommand
+  overload: CIDER.ViewModels.LoadViewModel.LoadClickCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.LoadViewModel.SelectClickCommand
+  commentId: P:CIDER.ViewModels.LoadViewModel.SelectClickCommand
+  id: SelectClickCommand
+  parent: CIDER.ViewModels.LoadViewModel
+  langs:
+  - csharp
+  - vb
+  name: SelectClickCommand
+  nameWithType: LoadViewModel.SelectClickCommand
+  fullName: CIDER.ViewModels.LoadViewModel.SelectClickCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LoadViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: SelectClickCommand
+    path: ViewModels/LoadViewModel.cs
+    startLine: 40
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand SelectClickCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property SelectClickCommand As ICommand
+  overload: CIDER.ViewModels.LoadViewModel.SelectClickCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.LoadViewModel.PathText
+  commentId: P:CIDER.ViewModels.LoadViewModel.PathText
+  id: PathText
+  parent: CIDER.ViewModels.LoadViewModel
+  langs:
+  - csharp
+  - vb
+  name: PathText
+  nameWithType: LoadViewModel.PathText
+  fullName: CIDER.ViewModels.LoadViewModel.PathText
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LoadViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: PathText
+    path: ViewModels/LoadViewModel.cs
+    startLine: 86
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public string PathText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PathText As String
+  overload: CIDER.ViewModels.LoadViewModel.PathText*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.LoadViewModel.CheckImage
+  commentId: P:CIDER.ViewModels.LoadViewModel.CheckImage
+  id: CheckImage
+  parent: CIDER.ViewModels.LoadViewModel
+  langs:
+  - csharp
+  - vb
+  name: CheckImage
+  nameWithType: LoadViewModel.CheckImage
+  fullName: CIDER.ViewModels.LoadViewModel.CheckImage
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LoadViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: CheckImage
+    path: ViewModels/LoadViewModel.cs
+    startLine: 93
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public string CheckImage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CheckImage As String
+  overload: CIDER.ViewModels.LoadViewModel.CheckImage*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.LoadViewModel.LoadEnabled
+  commentId: P:CIDER.ViewModels.LoadViewModel.LoadEnabled
+  id: LoadEnabled
+  parent: CIDER.ViewModels.LoadViewModel
+  langs:
+  - csharp
+  - vb
+  name: LoadEnabled
+  nameWithType: LoadViewModel.LoadEnabled
+  fullName: CIDER.ViewModels.LoadViewModel.LoadEnabled
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LoadViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LoadEnabled
+    path: ViewModels/LoadViewModel.cs
+    startLine: 100
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public bool LoadEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property LoadEnabled As Boolean
+  overload: CIDER.ViewModels.LoadViewModel.LoadEnabled*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER.ViewModels
+  commentId: N:CIDER.ViewModels
+  name: CIDER.ViewModels
+  nameWithType: CIDER.ViewModels
+  fullName: CIDER.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CIDER.MVVMBase.ViewModelBase
+  commentId: T:CIDER.MVVMBase.ViewModelBase
+  parent: CIDER.MVVMBase
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: CIDER.MVVMBase.ViewModelBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.logger
+  commentId: F:CIDER.MVVMBase.ViewModelBase.logger
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: logger
+  nameWithType: ViewModelBase.logger
+  fullName: CIDER.MVVMBase.ViewModelBase.logger
+- uid: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  commentId: E:CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+  fullName: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  parent: CIDER.MVVMBase.ViewModelBase
+  definition: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.MVVMBase
+  commentId: N:CIDER.MVVMBase
+  name: CIDER.MVVMBase
+  nameWithType: CIDER.MVVMBase
+  fullName: CIDER.MVVMBase
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CIDER.ViewModels.LoadViewModel.#ctor*
+  commentId: Overload:CIDER.ViewModels.LoadViewModel.#ctor
+  name: LoadViewModel
+  nameWithType: LoadViewModel.LoadViewModel
+  fullName: CIDER.ViewModels.LoadViewModel.LoadViewModel
+- uid: CIDER.DataProvider
+  commentId: T:CIDER.DataProvider
+  parent: CIDER
+  name: DataProvider
+  nameWithType: DataProvider
+  fullName: CIDER.DataProvider
+- uid: CIDER.LoadIO.IChecker
+  commentId: T:CIDER.LoadIO.IChecker
+  parent: CIDER.LoadIO
+  name: IChecker
+  nameWithType: IChecker
+  fullName: CIDER.LoadIO.IChecker
+- uid: CIDER.LoadIO.IFolderSelectionInterface
+  commentId: T:CIDER.LoadIO.IFolderSelectionInterface
+  parent: CIDER.LoadIO
+  name: IFolderSelectionInterface
+  nameWithType: IFolderSelectionInterface
+  fullName: CIDER.LoadIO.IFolderSelectionInterface
+- uid: CIDER.LoadIO.FileIO
+  commentId: T:CIDER.LoadIO.FileIO
+  parent: CIDER.LoadIO
+  name: FileIO
+  nameWithType: FileIO
+  fullName: CIDER.LoadIO.FileIO
+- uid: CIDER.ViewModels.MainWindowViewModel
+  commentId: T:CIDER.ViewModels.MainWindowViewModel
+  parent: CIDER.ViewModels
+  name: MainWindowViewModel
+  nameWithType: MainWindowViewModel
+  fullName: CIDER.ViewModels.MainWindowViewModel
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: CIDER.LoadIO
+  commentId: N:CIDER.LoadIO
+  name: CIDER.LoadIO
+  nameWithType: CIDER.LoadIO
+  fullName: CIDER.LoadIO
+- uid: CIDER.ViewModels.LoadViewModel.LoadClickCommand*
+  commentId: Overload:CIDER.ViewModels.LoadViewModel.LoadClickCommand
+  name: LoadClickCommand
+  nameWithType: LoadViewModel.LoadClickCommand
+  fullName: CIDER.ViewModels.LoadViewModel.LoadClickCommand
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
+- uid: CIDER.ViewModels.LoadViewModel.SelectClickCommand*
+  commentId: Overload:CIDER.ViewModels.LoadViewModel.SelectClickCommand
+  name: SelectClickCommand
+  nameWithType: LoadViewModel.SelectClickCommand
+  fullName: CIDER.ViewModels.LoadViewModel.SelectClickCommand
+- uid: CIDER.ViewModels.LoadViewModel.PathText*
+  commentId: Overload:CIDER.ViewModels.LoadViewModel.PathText
+  name: PathText
+  nameWithType: LoadViewModel.PathText
+  fullName: CIDER.ViewModels.LoadViewModel.PathText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CIDER.ViewModels.LoadViewModel.CheckImage*
+  commentId: Overload:CIDER.ViewModels.LoadViewModel.CheckImage
+  name: CheckImage
+  nameWithType: LoadViewModel.CheckImage
+  fullName: CIDER.ViewModels.LoadViewModel.CheckImage
+- uid: CIDER.ViewModels.LoadViewModel.LoadEnabled*
+  commentId: Overload:CIDER.ViewModels.LoadViewModel.LoadEnabled
+  name: LoadEnabled
+  nameWithType: LoadViewModel.LoadEnabled
+  fullName: CIDER.ViewModels.LoadViewModel.LoadEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

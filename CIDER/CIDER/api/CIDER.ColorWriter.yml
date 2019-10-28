@@ -1,0 +1,596 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.ColorWriter
+  commentId: T:CIDER.ColorWriter
+  id: ColorWriter
+  parent: CIDER
+  children:
+  - CIDER.ColorWriter.#ctor(CIDER.IKeyManagerReader)
+  - CIDER.ColorWriter.GetSetTheming
+  - CIDER.ColorWriter.SetTheming(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ColorWriter
+  nameWithType: ColorWriter
+  fullName: CIDER.ColorWriter
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/ColorWriter.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ColorWriter
+    path: ColorWriter.cs
+    startLine: 9
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis class is used to configure the config file to write and read the user-specified color settings\n"
+  example: []
+  syntax:
+    content: public class ColorWriter
+    content.vb: Public Class ColorWriter
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.ColorWriter.#ctor(CIDER.IKeyManagerReader)
+  commentId: M:CIDER.ColorWriter.#ctor(CIDER.IKeyManagerReader)
+  id: '#ctor(CIDER.IKeyManagerReader)'
+  parent: CIDER.ColorWriter
+  langs:
+  - csharp
+  - vb
+  name: ColorWriter(IKeyManagerReader)
+  nameWithType: ColorWriter.ColorWriter(IKeyManagerReader)
+  fullName: CIDER.ColorWriter.ColorWriter(CIDER.IKeyManagerReader)
+  type: Constructor
+  source:
+    remote:
+      path: CIDER/CIDER/ColorWriter.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: .ctor
+    path: ColorWriter.cs
+    startLine: 18
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThe constructor for the ColorWriter class\n"
+  example: []
+  syntax:
+    content: public ColorWriter(IKeyManagerReader reader)
+    parameters:
+    - id: reader
+      type: CIDER.IKeyManagerReader
+      description: Pass a Object that implements the IKeyManagerReader here - inject unit testing mocks and fakes here
+    content.vb: Public Sub New(reader As IKeyManagerReader)
+  overload: CIDER.ColorWriter.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ColorWriter.GetSetTheming
+  commentId: M:CIDER.ColorWriter.GetSetTheming
+  id: GetSetTheming
+  parent: CIDER.ColorWriter
+  langs:
+  - csharp
+  - vb
+  name: GetSetTheming()
+  nameWithType: ColorWriter.GetSetTheming()
+  fullName: CIDER.ColorWriter.GetSetTheming()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ColorWriter.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: GetSetTheming
+    path: ColorWriter.cs
+    startLine: 27
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis function reads the config file and gets the color and theme from the file (if available)\n"
+  example: []
+  syntax:
+    content: public Tuple<string, string> GetSetTheming()
+    return:
+      type: System.Tuple{System.String,System.String}
+      description: A tuple with the elements Theme followed by Accent (strings) should be returned
+    content.vb: Public Function GetSetTheming As Tuple(Of String, String)
+  overload: CIDER.ColorWriter.GetSetTheming*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ColorWriter.SetTheming(System.String,System.String)
+  commentId: M:CIDER.ColorWriter.SetTheming(System.String,System.String)
+  id: SetTheming(System.String,System.String)
+  parent: CIDER.ColorWriter
+  langs:
+  - csharp
+  - vb
+  name: SetTheming(String, String)
+  nameWithType: ColorWriter.SetTheming(String, String)
+  fullName: CIDER.ColorWriter.SetTheming(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ColorWriter.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: SetTheming
+    path: ColorWriter.cs
+    startLine: 76
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nWrites the user specified Accent and Theme to the config\n"
+  example: []
+  syntax:
+    content: public void SetTheming(string Accent, string Theme)
+    parameters:
+    - id: Accent
+      type: System.String
+      description: This is the string name of the accent
+    - id: Theme
+      type: System.String
+      description: This is the string name of the theme
+    content.vb: Public Sub SetTheming(Accent As String, Theme As String)
+  overload: CIDER.ColorWriter.SetTheming*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.ColorWriter.#ctor*
+  commentId: Overload:CIDER.ColorWriter.#ctor
+  name: ColorWriter
+  nameWithType: ColorWriter.ColorWriter
+  fullName: CIDER.ColorWriter.ColorWriter
+- uid: CIDER.IKeyManagerReader
+  commentId: T:CIDER.IKeyManagerReader
+  parent: CIDER
+  name: IKeyManagerReader
+  nameWithType: IKeyManagerReader
+  fullName: CIDER.IKeyManagerReader
+- uid: CIDER.ColorWriter.GetSetTheming*
+  commentId: Overload:CIDER.ColorWriter.GetSetTheming
+  name: GetSetTheming
+  nameWithType: ColorWriter.GetSetTheming
+  fullName: CIDER.ColorWriter.GetSetTheming
+- uid: System.Tuple{System.String,System.String}
+  commentId: T:System.Tuple{System.String,System.String}
+  parent: System
+  definition: System.Tuple`2
+  name: Tuple<String, String>
+  nameWithType: Tuple<String, String>
+  fullName: System.Tuple<System.String, System.String>
+  nameWithType.vb: Tuple(Of String, String)
+  fullName.vb: System.Tuple(Of System.String, System.String)
+  name.vb: Tuple(Of String, String)
+  spec.csharp:
+  - uid: System.Tuple`2
+    name: Tuple
+    nameWithType: Tuple
+    fullName: System.Tuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Tuple`2
+    name: Tuple
+    nameWithType: Tuple
+    fullName: System.Tuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Tuple`2
+  commentId: T:System.Tuple`2
+  isExternal: true
+  name: Tuple<T1, T2>
+  nameWithType: Tuple<T1, T2>
+  fullName: System.Tuple<T1, T2>
+  nameWithType.vb: Tuple(Of T1, T2)
+  fullName.vb: System.Tuple(Of T1, T2)
+  name.vb: Tuple(Of T1, T2)
+  spec.csharp:
+  - uid: System.Tuple`2
+    name: Tuple
+    nameWithType: Tuple
+    fullName: System.Tuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Tuple`2
+    name: Tuple
+    nameWithType: Tuple
+    fullName: System.Tuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CIDER.ColorWriter.SetTheming*
+  commentId: Overload:CIDER.ColorWriter.SetTheming
+  name: SetTheming
+  nameWithType: ColorWriter.SetTheming
+  fullName: CIDER.ColorWriter.SetTheming
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.MVVMBase
+  commentId: N:CIDER.MVVMBase
+  id: CIDER.MVVMBase
+  children:
+  - CIDER.MVVMBase.DelegateCommand
+  - CIDER.MVVMBase.ViewModelBase
+  langs:
+  - csharp
+  - vb
+  name: CIDER.MVVMBase
+  nameWithType: CIDER.MVVMBase
+  fullName: CIDER.MVVMBase
+  type: Namespace
+  assemblies:
+  - CIDER
+references:
+- uid: CIDER.MVVMBase.ViewModelBase
+  commentId: T:CIDER.MVVMBase.ViewModelBase
+  parent: CIDER.MVVMBase
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: CIDER.MVVMBase.ViewModelBase
+- uid: CIDER.MVVMBase.DelegateCommand
+  commentId: T:CIDER.MVVMBase.DelegateCommand
+  name: DelegateCommand
+  nameWithType: DelegateCommand
+  fullName: CIDER.MVVMBase.DelegateCommand
+- uid: CIDER.MVVMBase
+  commentId: N:CIDER.MVVMBase
+  name: CIDER.MVVMBase
+  nameWithType: CIDER.MVVMBase
+  fullName: CIDER.MVVMBase

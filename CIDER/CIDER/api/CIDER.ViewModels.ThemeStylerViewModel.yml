@@ -1,0 +1,827 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.ViewModels.ThemeStylerViewModel
+  commentId: T:CIDER.ViewModels.ThemeStylerViewModel
+  id: ThemeStylerViewModel
+  parent: CIDER.ViewModels
+  children:
+  - CIDER.ViewModels.ThemeStylerViewModel.#ctor
+  - CIDER.ViewModels.ThemeStylerViewModel.AccentColorChanged(System.String)
+  - CIDER.ViewModels.ThemeStylerViewModel.AccentColorItemSource
+  - CIDER.ViewModels.ThemeStylerViewModel.DarkThemeCommand
+  - CIDER.ViewModels.ThemeStylerViewModel.LightThemeCommand
+  langs:
+  - csharp
+  - vb
+  name: ThemeStylerViewModel
+  nameWithType: ThemeStylerViewModel
+  fullName: CIDER.ViewModels.ThemeStylerViewModel
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ThemeStylerViewModel
+    path: ViewModels/ThemeStylerViewModel.cs
+    startLine: 10
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: 'public class ThemeStylerViewModel : ViewModelBase, INotifyPropertyChanged'
+    content.vb: >-
+      Public Class ThemeStylerViewModel
+
+          Inherits ViewModelBase
+
+          Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - CIDER.MVVMBase.ViewModelBase
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - CIDER.MVVMBase.ViewModelBase.logger
+  - CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  - CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.ViewModels.ThemeStylerViewModel.#ctor
+  commentId: M:CIDER.ViewModels.ThemeStylerViewModel.#ctor
+  id: '#ctor'
+  parent: CIDER.ViewModels.ThemeStylerViewModel
+  langs:
+  - csharp
+  - vb
+  name: ThemeStylerViewModel()
+  nameWithType: ThemeStylerViewModel.ThemeStylerViewModel()
+  fullName: CIDER.ViewModels.ThemeStylerViewModel.ThemeStylerViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: .ctor
+    path: ViewModels/ThemeStylerViewModel.cs
+    startLine: 19
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ThemeStylerViewModel()
+    content.vb: Public Sub New
+  overload: CIDER.ViewModels.ThemeStylerViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.ThemeStylerViewModel.AccentColorItemSource
+  commentId: P:CIDER.ViewModels.ThemeStylerViewModel.AccentColorItemSource
+  id: AccentColorItemSource
+  parent: CIDER.ViewModels.ThemeStylerViewModel
+  langs:
+  - csharp
+  - vb
+  name: AccentColorItemSource
+  nameWithType: ThemeStylerViewModel.AccentColorItemSource
+  fullName: CIDER.ViewModels.ThemeStylerViewModel.AccentColorItemSource
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: AccentColorItemSource
+    path: ViewModels/ThemeStylerViewModel.cs
+    startLine: 38
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public List<string> AccentColorItemSource { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public ReadOnly Property AccentColorItemSource As List(Of String)
+  overload: CIDER.ViewModels.ThemeStylerViewModel.AccentColorItemSource*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.ThemeStylerViewModel.DarkThemeCommand
+  commentId: P:CIDER.ViewModels.ThemeStylerViewModel.DarkThemeCommand
+  id: DarkThemeCommand
+  parent: CIDER.ViewModels.ThemeStylerViewModel
+  langs:
+  - csharp
+  - vb
+  name: DarkThemeCommand
+  nameWithType: ThemeStylerViewModel.DarkThemeCommand
+  fullName: CIDER.ViewModels.ThemeStylerViewModel.DarkThemeCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: DarkThemeCommand
+    path: ViewModels/ThemeStylerViewModel.cs
+    startLine: 39
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand DarkThemeCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property DarkThemeCommand As ICommand
+  overload: CIDER.ViewModels.ThemeStylerViewModel.DarkThemeCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.ThemeStylerViewModel.LightThemeCommand
+  commentId: P:CIDER.ViewModels.ThemeStylerViewModel.LightThemeCommand
+  id: LightThemeCommand
+  parent: CIDER.ViewModels.ThemeStylerViewModel
+  langs:
+  - csharp
+  - vb
+  name: LightThemeCommand
+  nameWithType: ThemeStylerViewModel.LightThemeCommand
+  fullName: CIDER.ViewModels.ThemeStylerViewModel.LightThemeCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LightThemeCommand
+    path: ViewModels/ThemeStylerViewModel.cs
+    startLine: 40
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand LightThemeCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property LightThemeCommand As ICommand
+  overload: CIDER.ViewModels.ThemeStylerViewModel.LightThemeCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.ThemeStylerViewModel.AccentColorChanged(System.String)
+  commentId: M:CIDER.ViewModels.ThemeStylerViewModel.AccentColorChanged(System.String)
+  id: AccentColorChanged(System.String)
+  parent: CIDER.ViewModels.ThemeStylerViewModel
+  langs:
+  - csharp
+  - vb
+  name: AccentColorChanged(String)
+  nameWithType: ThemeStylerViewModel.AccentColorChanged(String)
+  fullName: CIDER.ViewModels.ThemeStylerViewModel.AccentColorChanged(System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: AccentColorChanged
+    path: ViewModels/ThemeStylerViewModel.cs
+    startLine: 42
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public void AccentColorChanged(string color)
+    parameters:
+    - id: color
+      type: System.String
+    content.vb: Public Sub AccentColorChanged(color As String)
+  overload: CIDER.ViewModels.ThemeStylerViewModel.AccentColorChanged*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER.ViewModels
+  commentId: N:CIDER.ViewModels
+  name: CIDER.ViewModels
+  nameWithType: CIDER.ViewModels
+  fullName: CIDER.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CIDER.MVVMBase.ViewModelBase
+  commentId: T:CIDER.MVVMBase.ViewModelBase
+  parent: CIDER.MVVMBase
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: CIDER.MVVMBase.ViewModelBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.logger
+  commentId: F:CIDER.MVVMBase.ViewModelBase.logger
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: logger
+  nameWithType: ViewModelBase.logger
+  fullName: CIDER.MVVMBase.ViewModelBase.logger
+- uid: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  commentId: E:CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+  fullName: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  parent: CIDER.MVVMBase.ViewModelBase
+  definition: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.MVVMBase
+  commentId: N:CIDER.MVVMBase
+  name: CIDER.MVVMBase
+  nameWithType: CIDER.MVVMBase
+  fullName: CIDER.MVVMBase
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CIDER.ViewModels.ThemeStylerViewModel.#ctor*
+  commentId: Overload:CIDER.ViewModels.ThemeStylerViewModel.#ctor
+  name: ThemeStylerViewModel
+  nameWithType: ThemeStylerViewModel.ThemeStylerViewModel
+  fullName: CIDER.ViewModels.ThemeStylerViewModel.ThemeStylerViewModel
+- uid: CIDER.ViewModels.ThemeStylerViewModel.AccentColorItemSource*
+  commentId: Overload:CIDER.ViewModels.ThemeStylerViewModel.AccentColorItemSource
+  name: AccentColorItemSource
+  nameWithType: ThemeStylerViewModel.AccentColorItemSource
+  fullName: CIDER.ViewModels.ThemeStylerViewModel.AccentColorItemSource
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: CIDER.ViewModels.ThemeStylerViewModel.DarkThemeCommand*
+  commentId: Overload:CIDER.ViewModels.ThemeStylerViewModel.DarkThemeCommand
+  name: DarkThemeCommand
+  nameWithType: ThemeStylerViewModel.DarkThemeCommand
+  fullName: CIDER.ViewModels.ThemeStylerViewModel.DarkThemeCommand
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
+- uid: CIDER.ViewModels.ThemeStylerViewModel.LightThemeCommand*
+  commentId: Overload:CIDER.ViewModels.ThemeStylerViewModel.LightThemeCommand
+  name: LightThemeCommand
+  nameWithType: ThemeStylerViewModel.LightThemeCommand
+  fullName: CIDER.ViewModels.ThemeStylerViewModel.LightThemeCommand
+- uid: CIDER.ViewModels.ThemeStylerViewModel.AccentColorChanged*
+  commentId: Overload:CIDER.ViewModels.ThemeStylerViewModel.AccentColorChanged
+  name: AccentColorChanged
+  nameWithType: ThemeStylerViewModel.AccentColorChanged
+  fullName: CIDER.ViewModels.ThemeStylerViewModel.AccentColorChanged
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

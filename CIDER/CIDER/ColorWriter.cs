@@ -79,28 +79,6 @@ namespace CIDER
             try
             {
                 string[] cfg = _reader.ReadAllLines("CIDER.cfg");
-                string[] newcfg = { "", Theme, Accent }; ;
-
-                try
-                {
-                    newcfg[0] = cfg[0];
-                }
-                catch (IndexOutOfRangeException ex)
-                {
-                    logger.Info(ex, "no api key set");
-                    newcfg[0] = "";
-                }
-                _reader.WriteAllLines(newcfg, "CIDER.cfg");
-            }
-            catch (Exception ex)
-            {
-                logger.Error(ex, "Error whilst adding API Key");
-                throw new ColorWriterWritingException();
-            }
-
-            try
-            {
-                string[] cfg = _reader.ReadAllLines("CIDER.cfg");
 
                 Regex regex = new Regex(@"ACCENT:.*");
 
@@ -134,7 +112,7 @@ namespace CIDER
 
                 regex = new Regex(@"THEME:.*");
 
-                foreach (string s in cfg)
+                foreach (string s in (string[])fileIterationOne.ToArray(typeof(string)))
                 {
                     Match match = regex.Match(s);
 
@@ -156,7 +134,7 @@ namespace CIDER
                 if (!foundTheme)
                     fileIterationTwo.Add($"THEME:{Theme}");
 
-                _reader.WriteAllLines((string[])fileIterationTwo.ToArray(), "CIDER.cfg");
+                _reader.WriteAllLines((string[])fileIterationTwo.ToArray(typeof(string)), "CIDER.cfg");
             }
             catch (Exception ex)
             {

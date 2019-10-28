@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.LoadIO.FolderSelector
+  commentId: T:CIDER.LoadIO.FolderSelector
+  id: FolderSelector
+  parent: CIDER.LoadIO
+  children:
+  - CIDER.LoadIO.FolderSelector.LastSelected
+  - CIDER.LoadIO.FolderSelector.SelectFolder
+  langs:
+  - csharp
+  - vb
+  name: FolderSelector
+  nameWithType: FolderSelector
+  fullName: CIDER.LoadIO.FolderSelector
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FolderSelector.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: FolderSelector
+    path: LoadIO/FolderSelector.cs
+    startLine: 4
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: 'public class FolderSelector : IFolderSelectionInterface'
+    content.vb: >-
+      Public Class FolderSelector
+
+          Implements IFolderSelectionInterface
+  inheritance:
+  - System.Object
+  implements:
+  - CIDER.LoadIO.IFolderSelectionInterface
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.LoadIO.FolderSelector.LastSelected
+  commentId: P:CIDER.LoadIO.FolderSelector.LastSelected
+  id: LastSelected
+  parent: CIDER.LoadIO.FolderSelector
+  langs:
+  - csharp
+  - vb
+  name: LastSelected
+  nameWithType: FolderSelector.LastSelected
+  fullName: CIDER.LoadIO.FolderSelector.LastSelected
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FolderSelector.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LastSelected
+    path: LoadIO/FolderSelector.cs
+    startLine: 11
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: public string LastSelected { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property LastSelected As String
+  overload: CIDER.LoadIO.FolderSelector.LastSelected*
+  implements:
+  - CIDER.LoadIO.IFolderSelectionInterface.LastSelected
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.LoadIO.FolderSelector.SelectFolder
+  commentId: M:CIDER.LoadIO.FolderSelector.SelectFolder
+  id: SelectFolder
+  parent: CIDER.LoadIO.FolderSelector
+  langs:
+  - csharp
+  - vb
+  name: SelectFolder()
+  nameWithType: FolderSelector.SelectFolder()
+  fullName: CIDER.LoadIO.FolderSelector.SelectFolder()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FolderSelector.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: SelectFolder
+    path: LoadIO/FolderSelector.cs
+    startLine: 14
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: public string SelectFolder()
+    return:
+      type: System.String
+    content.vb: Public Function SelectFolder As String
+  overload: CIDER.LoadIO.FolderSelector.SelectFolder*
+  implements:
+  - CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER.LoadIO
+  commentId: N:CIDER.LoadIO
+  name: CIDER.LoadIO
+  nameWithType: CIDER.LoadIO
+  fullName: CIDER.LoadIO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CIDER.LoadIO.IFolderSelectionInterface
+  commentId: T:CIDER.LoadIO.IFolderSelectionInterface
+  parent: CIDER.LoadIO
+  name: IFolderSelectionInterface
+  nameWithType: IFolderSelectionInterface
+  fullName: CIDER.LoadIO.IFolderSelectionInterface
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.LoadIO.FolderSelector.LastSelected*
+  commentId: Overload:CIDER.LoadIO.FolderSelector.LastSelected
+  name: LastSelected
+  nameWithType: FolderSelector.LastSelected
+  fullName: CIDER.LoadIO.FolderSelector.LastSelected
+- uid: CIDER.LoadIO.IFolderSelectionInterface.LastSelected
+  commentId: P:CIDER.LoadIO.IFolderSelectionInterface.LastSelected
+  parent: CIDER.LoadIO.IFolderSelectionInterface
+  name: LastSelected
+  nameWithType: IFolderSelectionInterface.LastSelected
+  fullName: CIDER.LoadIO.IFolderSelectionInterface.LastSelected
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CIDER.LoadIO.FolderSelector.SelectFolder*
+  commentId: Overload:CIDER.LoadIO.FolderSelector.SelectFolder
+  name: SelectFolder
+  nameWithType: FolderSelector.SelectFolder
+  fullName: CIDER.LoadIO.FolderSelector.SelectFolder
+- uid: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+  commentId: M:CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+  parent: CIDER.LoadIO.IFolderSelectionInterface
+  name: SelectFolder()
+  nameWithType: IFolderSelectionInterface.SelectFolder()
+  fullName: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder()
+  spec.csharp:
+  - uid: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+    name: SelectFolder
+    nameWithType: IFolderSelectionInterface.SelectFolder
+    fullName: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+    name: SelectFolder
+    nameWithType: IFolderSelectionInterface.SelectFolder
+    fullName: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

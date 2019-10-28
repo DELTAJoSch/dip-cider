@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.LoadIO.IIO
+  commentId: T:CIDER.LoadIO.IIO
+  id: IIO
+  parent: CIDER.LoadIO
+  children:
+  - CIDER.LoadIO.IIO.ReadCSV(CIDER.DataProvider,System.String,CIDER.LoadIO.IRead,CIDER.ViewModels.MainWindowViewModel)
+  - CIDER.LoadIO.IIO.ReadNmea(CIDER.DataProvider,System.String,CIDER.LoadIO.IRead,CIDER.ViewModels.MainWindowViewModel)
+  langs:
+  - csharp
+  - vb
+  name: IIO
+  nameWithType: IIO
+  fullName: CIDER.LoadIO.IIO
+  type: Interface
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FileIO.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: IIO
+    path: LoadIO/FileIO.cs
+    startLine: 271
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: public interface IIO
+    content.vb: Public Interface IIO
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: CIDER.LoadIO.IIO.ReadNmea(CIDER.DataProvider,System.String,CIDER.LoadIO.IRead,CIDER.ViewModels.MainWindowViewModel)
+  commentId: M:CIDER.LoadIO.IIO.ReadNmea(CIDER.DataProvider,System.String,CIDER.LoadIO.IRead,CIDER.ViewModels.MainWindowViewModel)
+  id: ReadNmea(CIDER.DataProvider,System.String,CIDER.LoadIO.IRead,CIDER.ViewModels.MainWindowViewModel)
+  parent: CIDER.LoadIO.IIO
+  langs:
+  - csharp
+  - vb
+  name: ReadNmea(DataProvider, String, IRead, MainWindowViewModel)
+  nameWithType: IIO.ReadNmea(DataProvider, String, IRead, MainWindowViewModel)
+  fullName: CIDER.LoadIO.IIO.ReadNmea(CIDER.DataProvider, System.String, CIDER.LoadIO.IRead, CIDER.ViewModels.MainWindowViewModel)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FileIO.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ReadNmea
+    path: LoadIO/FileIO.cs
+    startLine: 273
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: void ReadNmea(DataProvider data, string path, IRead read, MainWindowViewModel main)
+    parameters:
+    - id: data
+      type: CIDER.DataProvider
+    - id: path
+      type: System.String
+    - id: read
+      type: CIDER.LoadIO.IRead
+    - id: main
+      type: CIDER.ViewModels.MainWindowViewModel
+    content.vb: Sub ReadNmea(data As DataProvider, path As String, read As IRead, main As MainWindowViewModel)
+  overload: CIDER.LoadIO.IIO.ReadNmea*
+- uid: CIDER.LoadIO.IIO.ReadCSV(CIDER.DataProvider,System.String,CIDER.LoadIO.IRead,CIDER.ViewModels.MainWindowViewModel)
+  commentId: M:CIDER.LoadIO.IIO.ReadCSV(CIDER.DataProvider,System.String,CIDER.LoadIO.IRead,CIDER.ViewModels.MainWindowViewModel)
+  id: ReadCSV(CIDER.DataProvider,System.String,CIDER.LoadIO.IRead,CIDER.ViewModels.MainWindowViewModel)
+  parent: CIDER.LoadIO.IIO
+  langs:
+  - csharp
+  - vb
+  name: ReadCSV(DataProvider, String, IRead, MainWindowViewModel)
+  nameWithType: IIO.ReadCSV(DataProvider, String, IRead, MainWindowViewModel)
+  fullName: CIDER.LoadIO.IIO.ReadCSV(CIDER.DataProvider, System.String, CIDER.LoadIO.IRead, CIDER.ViewModels.MainWindowViewModel)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FileIO.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ReadCSV
+    path: LoadIO/FileIO.cs
+    startLine: 275
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: void ReadCSV(DataProvider data, string path, IRead read, MainWindowViewModel main)
+    parameters:
+    - id: data
+      type: CIDER.DataProvider
+    - id: path
+      type: System.String
+    - id: read
+      type: CIDER.LoadIO.IRead
+    - id: main
+      type: CIDER.ViewModels.MainWindowViewModel
+    content.vb: Sub ReadCSV(data As DataProvider, path As String, read As IRead, main As MainWindowViewModel)
+  overload: CIDER.LoadIO.IIO.ReadCSV*
+references:
+- uid: CIDER.LoadIO
+  commentId: N:CIDER.LoadIO
+  name: CIDER.LoadIO
+  nameWithType: CIDER.LoadIO
+  fullName: CIDER.LoadIO
+- uid: CIDER.LoadIO.IIO.ReadNmea*
+  commentId: Overload:CIDER.LoadIO.IIO.ReadNmea
+  name: ReadNmea
+  nameWithType: IIO.ReadNmea
+  fullName: CIDER.LoadIO.IIO.ReadNmea
+- uid: CIDER.DataProvider
+  commentId: T:CIDER.DataProvider
+  parent: CIDER
+  name: DataProvider
+  nameWithType: DataProvider
+  fullName: CIDER.DataProvider
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CIDER.LoadIO.IRead
+  commentId: T:CIDER.LoadIO.IRead
+  parent: CIDER.LoadIO
+  name: IRead
+  nameWithType: IRead
+  fullName: CIDER.LoadIO.IRead
+- uid: CIDER.ViewModels.MainWindowViewModel
+  commentId: T:CIDER.ViewModels.MainWindowViewModel
+  parent: CIDER.ViewModels
+  name: MainWindowViewModel
+  nameWithType: MainWindowViewModel
+  fullName: CIDER.ViewModels.MainWindowViewModel
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.ViewModels
+  commentId: N:CIDER.ViewModels
+  name: CIDER.ViewModels
+  nameWithType: CIDER.ViewModels
+  fullName: CIDER.ViewModels
+- uid: CIDER.LoadIO.IIO.ReadCSV*
+  commentId: Overload:CIDER.LoadIO.IIO.ReadCSV
+  name: ReadCSV
+  nameWithType: IIO.ReadCSV
+  fullName: CIDER.LoadIO.IIO.ReadCSV

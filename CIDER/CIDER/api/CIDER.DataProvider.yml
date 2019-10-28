@@ -1,0 +1,1369 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.DataProvider
+  commentId: T:CIDER.DataProvider
+  id: DataProvider
+  parent: CIDER
+  children:
+  - CIDER.DataProvider.#ctor
+  - CIDER.DataProvider.APIKey
+  - CIDER.DataProvider.AverageSattelitesInUse
+  - CIDER.DataProvider.DataPointsAcceleration
+  - CIDER.DataProvider.DataPointsAngle
+  - CIDER.DataProvider.DataPointsVelocity
+  - CIDER.DataProvider.Heading
+  - CIDER.DataProvider.Height
+  - CIDER.DataProvider.IsValidRoute
+  - CIDER.DataProvider.Pitch
+  - CIDER.DataProvider.Pressure
+  - CIDER.DataProvider.Roll
+  - CIDER.DataProvider.Route
+  - CIDER.DataProvider.RouteDate
+  - CIDER.DataProvider.RouteEndTime
+  - CIDER.DataProvider.RouteName
+  - CIDER.DataProvider.RouteStartTime
+  - CIDER.DataProvider.Velocity
+  - CIDER.DataProvider.XAcceleration
+  - CIDER.DataProvider.YAcceleration
+  - CIDER.DataProvider.Yaw
+  - CIDER.DataProvider.ZAcceleration
+  langs:
+  - csharp
+  - vb
+  name: DataProvider
+  nameWithType: DataProvider
+  fullName: CIDER.DataProvider
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: DataProvider
+    path: DataProvider.cs
+    startLine: 6
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public class DataProvider
+    content.vb: Public Class DataProvider
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.DataProvider.#ctor
+  commentId: M:CIDER.DataProvider.#ctor
+  id: '#ctor'
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: DataProvider()
+  nameWithType: DataProvider.DataProvider()
+  fullName: CIDER.DataProvider.DataProvider()
+  type: Constructor
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: .ctor
+    path: DataProvider.cs
+    startLine: 11
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public DataProvider()
+    content.vb: Public Sub New
+  overload: CIDER.DataProvider.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.RouteName
+  commentId: P:CIDER.DataProvider.RouteName
+  id: RouteName
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: RouteName
+  nameWithType: DataProvider.RouteName
+  fullName: CIDER.DataProvider.RouteName
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: RouteName
+    path: DataProvider.cs
+    startLine: 50
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public string RouteName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RouteName As String
+  overload: CIDER.DataProvider.RouteName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.APIKey
+  commentId: P:CIDER.DataProvider.APIKey
+  id: APIKey
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: APIKey
+  nameWithType: DataProvider.APIKey
+  fullName: CIDER.DataProvider.APIKey
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: APIKey
+    path: DataProvider.cs
+    startLine: 51
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public string APIKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property APIKey As String
+  overload: CIDER.DataProvider.APIKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.RouteDate
+  commentId: P:CIDER.DataProvider.RouteDate
+  id: RouteDate
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: RouteDate
+  nameWithType: DataProvider.RouteDate
+  fullName: CIDER.DataProvider.RouteDate
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: RouteDate
+    path: DataProvider.cs
+    startLine: 52
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public DateTime RouteDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property RouteDate As Date
+  overload: CIDER.DataProvider.RouteDate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.RouteStartTime
+  commentId: P:CIDER.DataProvider.RouteStartTime
+  id: RouteStartTime
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: RouteStartTime
+  nameWithType: DataProvider.RouteStartTime
+  fullName: CIDER.DataProvider.RouteStartTime
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: RouteStartTime
+    path: DataProvider.cs
+    startLine: 53
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public DateTime RouteStartTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property RouteStartTime As Date
+  overload: CIDER.DataProvider.RouteStartTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.RouteEndTime
+  commentId: P:CIDER.DataProvider.RouteEndTime
+  id: RouteEndTime
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: RouteEndTime
+  nameWithType: DataProvider.RouteEndTime
+  fullName: CIDER.DataProvider.RouteEndTime
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: RouteEndTime
+    path: DataProvider.cs
+    startLine: 54
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public DateTime RouteEndTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property RouteEndTime As Date
+  overload: CIDER.DataProvider.RouteEndTime*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.IsValidRoute
+  commentId: P:CIDER.DataProvider.IsValidRoute
+  id: IsValidRoute
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: IsValidRoute
+  nameWithType: DataProvider.IsValidRoute
+  fullName: CIDER.DataProvider.IsValidRoute
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: IsValidRoute
+    path: DataProvider.cs
+    startLine: 55
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public bool IsValidRoute { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsValidRoute As Boolean
+  overload: CIDER.DataProvider.IsValidRoute*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.DataPointsAcceleration
+  commentId: P:CIDER.DataProvider.DataPointsAcceleration
+  id: DataPointsAcceleration
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: DataPointsAcceleration
+  nameWithType: DataProvider.DataPointsAcceleration
+  fullName: CIDER.DataProvider.DataPointsAcceleration
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: DataPointsAcceleration
+    path: DataProvider.cs
+    startLine: 56
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public int DataPointsAcceleration { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DataPointsAcceleration As Integer
+  overload: CIDER.DataProvider.DataPointsAcceleration*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.DataPointsVelocity
+  commentId: P:CIDER.DataProvider.DataPointsVelocity
+  id: DataPointsVelocity
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: DataPointsVelocity
+  nameWithType: DataProvider.DataPointsVelocity
+  fullName: CIDER.DataProvider.DataPointsVelocity
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: DataPointsVelocity
+    path: DataProvider.cs
+    startLine: 57
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public int DataPointsVelocity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DataPointsVelocity As Integer
+  overload: CIDER.DataProvider.DataPointsVelocity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.Pressure
+  commentId: P:CIDER.DataProvider.Pressure
+  id: Pressure
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: Pressure
+  nameWithType: DataProvider.Pressure
+  fullName: CIDER.DataProvider.Pressure
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Pressure
+    path: DataProvider.cs
+    startLine: 58
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public List<float> Pressure { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public Property Pressure As List(Of Single)
+  overload: CIDER.DataProvider.Pressure*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.XAcceleration
+  commentId: P:CIDER.DataProvider.XAcceleration
+  id: XAcceleration
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: XAcceleration
+  nameWithType: DataProvider.XAcceleration
+  fullName: CIDER.DataProvider.XAcceleration
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: XAcceleration
+    path: DataProvider.cs
+    startLine: 59
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public List<float> XAcceleration { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public Property XAcceleration As List(Of Single)
+  overload: CIDER.DataProvider.XAcceleration*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.YAcceleration
+  commentId: P:CIDER.DataProvider.YAcceleration
+  id: YAcceleration
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: YAcceleration
+  nameWithType: DataProvider.YAcceleration
+  fullName: CIDER.DataProvider.YAcceleration
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: YAcceleration
+    path: DataProvider.cs
+    startLine: 60
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public List<float> YAcceleration { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public Property YAcceleration As List(Of Single)
+  overload: CIDER.DataProvider.YAcceleration*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.ZAcceleration
+  commentId: P:CIDER.DataProvider.ZAcceleration
+  id: ZAcceleration
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: ZAcceleration
+  nameWithType: DataProvider.ZAcceleration
+  fullName: CIDER.DataProvider.ZAcceleration
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ZAcceleration
+    path: DataProvider.cs
+    startLine: 61
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public List<float> ZAcceleration { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public Property ZAcceleration As List(Of Single)
+  overload: CIDER.DataProvider.ZAcceleration*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.Roll
+  commentId: P:CIDER.DataProvider.Roll
+  id: Roll
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: Roll
+  nameWithType: DataProvider.Roll
+  fullName: CIDER.DataProvider.Roll
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Roll
+    path: DataProvider.cs
+    startLine: 62
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public List<float> Roll { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public Property Roll As List(Of Single)
+  overload: CIDER.DataProvider.Roll*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.Pitch
+  commentId: P:CIDER.DataProvider.Pitch
+  id: Pitch
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: Pitch
+  nameWithType: DataProvider.Pitch
+  fullName: CIDER.DataProvider.Pitch
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Pitch
+    path: DataProvider.cs
+    startLine: 63
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public List<float> Pitch { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public Property Pitch As List(Of Single)
+  overload: CIDER.DataProvider.Pitch*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.Yaw
+  commentId: P:CIDER.DataProvider.Yaw
+  id: Yaw
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: Yaw
+  nameWithType: DataProvider.Yaw
+  fullName: CIDER.DataProvider.Yaw
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Yaw
+    path: DataProvider.cs
+    startLine: 64
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public List<float> Yaw { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public Property Yaw As List(Of Single)
+  overload: CIDER.DataProvider.Yaw*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.DataPointsAngle
+  commentId: P:CIDER.DataProvider.DataPointsAngle
+  id: DataPointsAngle
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: DataPointsAngle
+  nameWithType: DataProvider.DataPointsAngle
+  fullName: CIDER.DataProvider.DataPointsAngle
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: DataPointsAngle
+    path: DataProvider.cs
+    startLine: 65
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public int DataPointsAngle { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DataPointsAngle As Integer
+  overload: CIDER.DataProvider.DataPointsAngle*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.Heading
+  commentId: P:CIDER.DataProvider.Heading
+  id: Heading
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: Heading
+  nameWithType: DataProvider.Heading
+  fullName: CIDER.DataProvider.Heading
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Heading
+    path: DataProvider.cs
+    startLine: 66
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public List<float> Heading { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public Property Heading As List(Of Single)
+  overload: CIDER.DataProvider.Heading*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.Velocity
+  commentId: P:CIDER.DataProvider.Velocity
+  id: Velocity
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: Velocity
+  nameWithType: DataProvider.Velocity
+  fullName: CIDER.DataProvider.Velocity
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Velocity
+    path: DataProvider.cs
+    startLine: 67
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public List<float> Velocity { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public Property Velocity As List(Of Single)
+  overload: CIDER.DataProvider.Velocity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.Height
+  commentId: P:CIDER.DataProvider.Height
+  id: Height
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: DataProvider.Height
+  fullName: CIDER.DataProvider.Height
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Height
+    path: DataProvider.cs
+    startLine: 68
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public List<float> Height { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public Property Height As List(Of Single)
+  overload: CIDER.DataProvider.Height*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.Route
+  commentId: P:CIDER.DataProvider.Route
+  id: Route
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: Route
+  nameWithType: DataProvider.Route
+  fullName: CIDER.DataProvider.Route
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Route
+    path: DataProvider.cs
+    startLine: 69
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public LocationCollection Route { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maps.MapControl.WPF.LocationCollection
+    content.vb: Public Property Route As LocationCollection
+  overload: CIDER.DataProvider.Route*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.DataProvider.AverageSattelitesInUse
+  commentId: P:CIDER.DataProvider.AverageSattelitesInUse
+  id: AverageSattelitesInUse
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: AverageSattelitesInUse
+  nameWithType: DataProvider.AverageSattelitesInUse
+  fullName: CIDER.DataProvider.AverageSattelitesInUse
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: AverageSattelitesInUse
+    path: DataProvider.cs
+    startLine: 71
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public int AverageSattelitesInUse { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property AverageSattelitesInUse As Integer
+  overload: CIDER.DataProvider.AverageSattelitesInUse*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.DataProvider.#ctor*
+  commentId: Overload:CIDER.DataProvider.#ctor
+  name: DataProvider
+  nameWithType: DataProvider.DataProvider
+  fullName: CIDER.DataProvider.DataProvider
+- uid: CIDER.DataProvider.RouteName*
+  commentId: Overload:CIDER.DataProvider.RouteName
+  name: RouteName
+  nameWithType: DataProvider.RouteName
+  fullName: CIDER.DataProvider.RouteName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CIDER.DataProvider.APIKey*
+  commentId: Overload:CIDER.DataProvider.APIKey
+  name: APIKey
+  nameWithType: DataProvider.APIKey
+  fullName: CIDER.DataProvider.APIKey
+- uid: CIDER.DataProvider.RouteDate*
+  commentId: Overload:CIDER.DataProvider.RouteDate
+  name: RouteDate
+  nameWithType: DataProvider.RouteDate
+  fullName: CIDER.DataProvider.RouteDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: CIDER.DataProvider.RouteStartTime*
+  commentId: Overload:CIDER.DataProvider.RouteStartTime
+  name: RouteStartTime
+  nameWithType: DataProvider.RouteStartTime
+  fullName: CIDER.DataProvider.RouteStartTime
+- uid: CIDER.DataProvider.RouteEndTime*
+  commentId: Overload:CIDER.DataProvider.RouteEndTime
+  name: RouteEndTime
+  nameWithType: DataProvider.RouteEndTime
+  fullName: CIDER.DataProvider.RouteEndTime
+- uid: CIDER.DataProvider.IsValidRoute*
+  commentId: Overload:CIDER.DataProvider.IsValidRoute
+  name: IsValidRoute
+  nameWithType: DataProvider.IsValidRoute
+  fullName: CIDER.DataProvider.IsValidRoute
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CIDER.DataProvider.DataPointsAcceleration*
+  commentId: Overload:CIDER.DataProvider.DataPointsAcceleration
+  name: DataPointsAcceleration
+  nameWithType: DataProvider.DataPointsAcceleration
+  fullName: CIDER.DataProvider.DataPointsAcceleration
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: CIDER.DataProvider.DataPointsVelocity*
+  commentId: Overload:CIDER.DataProvider.DataPointsVelocity
+  name: DataPointsVelocity
+  nameWithType: DataProvider.DataPointsVelocity
+  fullName: CIDER.DataProvider.DataPointsVelocity
+- uid: CIDER.DataProvider.Pressure*
+  commentId: Overload:CIDER.DataProvider.Pressure
+  name: Pressure
+  nameWithType: DataProvider.Pressure
+  fullName: CIDER.DataProvider.Pressure
+- uid: System.Collections.Generic.List{System.Single}
+  commentId: T:System.Collections.Generic.List{System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Single>
+  nameWithType: List<Single>
+  fullName: System.Collections.Generic.List<System.Single>
+  nameWithType.vb: List(Of Single)
+  fullName.vb: System.Collections.Generic.List(Of System.Single)
+  name.vb: List(Of Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: CIDER.DataProvider.XAcceleration*
+  commentId: Overload:CIDER.DataProvider.XAcceleration
+  name: XAcceleration
+  nameWithType: DataProvider.XAcceleration
+  fullName: CIDER.DataProvider.XAcceleration
+- uid: CIDER.DataProvider.YAcceleration*
+  commentId: Overload:CIDER.DataProvider.YAcceleration
+  name: YAcceleration
+  nameWithType: DataProvider.YAcceleration
+  fullName: CIDER.DataProvider.YAcceleration
+- uid: CIDER.DataProvider.ZAcceleration*
+  commentId: Overload:CIDER.DataProvider.ZAcceleration
+  name: ZAcceleration
+  nameWithType: DataProvider.ZAcceleration
+  fullName: CIDER.DataProvider.ZAcceleration
+- uid: CIDER.DataProvider.Roll*
+  commentId: Overload:CIDER.DataProvider.Roll
+  name: Roll
+  nameWithType: DataProvider.Roll
+  fullName: CIDER.DataProvider.Roll
+- uid: CIDER.DataProvider.Pitch*
+  commentId: Overload:CIDER.DataProvider.Pitch
+  name: Pitch
+  nameWithType: DataProvider.Pitch
+  fullName: CIDER.DataProvider.Pitch
+- uid: CIDER.DataProvider.Yaw*
+  commentId: Overload:CIDER.DataProvider.Yaw
+  name: Yaw
+  nameWithType: DataProvider.Yaw
+  fullName: CIDER.DataProvider.Yaw
+- uid: CIDER.DataProvider.DataPointsAngle*
+  commentId: Overload:CIDER.DataProvider.DataPointsAngle
+  name: DataPointsAngle
+  nameWithType: DataProvider.DataPointsAngle
+  fullName: CIDER.DataProvider.DataPointsAngle
+- uid: CIDER.DataProvider.Heading*
+  commentId: Overload:CIDER.DataProvider.Heading
+  name: Heading
+  nameWithType: DataProvider.Heading
+  fullName: CIDER.DataProvider.Heading
+- uid: CIDER.DataProvider.Velocity*
+  commentId: Overload:CIDER.DataProvider.Velocity
+  name: Velocity
+  nameWithType: DataProvider.Velocity
+  fullName: CIDER.DataProvider.Velocity
+- uid: CIDER.DataProvider.Height*
+  commentId: Overload:CIDER.DataProvider.Height
+  name: Height
+  nameWithType: DataProvider.Height
+  fullName: CIDER.DataProvider.Height
+- uid: CIDER.DataProvider.Route*
+  commentId: Overload:CIDER.DataProvider.Route
+  name: Route
+  nameWithType: DataProvider.Route
+  fullName: CIDER.DataProvider.Route
+- uid: Microsoft.Maps.MapControl.WPF.LocationCollection
+  commentId: T:Microsoft.Maps.MapControl.WPF.LocationCollection
+  parent: Microsoft.Maps.MapControl.WPF
+  isExternal: true
+  name: LocationCollection
+  nameWithType: LocationCollection
+  fullName: Microsoft.Maps.MapControl.WPF.LocationCollection
+- uid: Microsoft.Maps.MapControl.WPF
+  commentId: N:Microsoft.Maps.MapControl.WPF
+  isExternal: true
+  name: Microsoft.Maps.MapControl.WPF
+  nameWithType: Microsoft.Maps.MapControl.WPF
+  fullName: Microsoft.Maps.MapControl.WPF
+- uid: CIDER.DataProvider.AverageSattelitesInUse*
+  commentId: Overload:CIDER.DataProvider.AverageSattelitesInUse
+  name: AverageSattelitesInUse
+  nameWithType: DataProvider.AverageSattelitesInUse
+  fullName: CIDER.DataProvider.AverageSattelitesInUse

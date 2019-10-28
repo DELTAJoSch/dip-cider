@@ -1,0 +1,533 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.KeyManager
+  commentId: T:CIDER.KeyManager
+  id: KeyManager
+  parent: CIDER
+  children:
+  - CIDER.KeyManager.#ctor(CIDER.DataProvider,CIDER.IKeyManagerReader)
+  - CIDER.KeyManager.Fetch
+  - CIDER.KeyManager.MapKeyChangedEvent
+  - CIDER.KeyManager.Put
+  langs:
+  - csharp
+  - vb
+  name: KeyManager
+  nameWithType: KeyManager
+  fullName: CIDER.KeyManager
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: KeyManager
+    path: KeyManager.cs
+    startLine: 12
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis class handles the file interaction for writing the path to the api key file\n"
+  example: []
+  syntax:
+    content: public class KeyManager
+    content.vb: Public Class KeyManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.KeyManager.MapKeyChangedEvent
+  commentId: E:CIDER.KeyManager.MapKeyChangedEvent
+  id: MapKeyChangedEvent
+  parent: CIDER.KeyManager
+  langs:
+  - csharp
+  - vb
+  name: MapKeyChangedEvent
+  nameWithType: KeyManager.MapKeyChangedEvent
+  fullName: CIDER.KeyManager.MapKeyChangedEvent
+  type: Event
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: MapKeyChangedEvent
+    path: KeyManager.cs
+    startLine: 20
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis event is fired when the api key changes\n"
+  example: []
+  syntax:
+    content: public static event EventHandler MapKeyChangedEvent
+    return:
+      type: System.EventHandler
+    content.vb: Public Shared Event MapKeyChangedEvent As EventHandler
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: CIDER.KeyManager.#ctor(CIDER.DataProvider,CIDER.IKeyManagerReader)
+  commentId: M:CIDER.KeyManager.#ctor(CIDER.DataProvider,CIDER.IKeyManagerReader)
+  id: '#ctor(CIDER.DataProvider,CIDER.IKeyManagerReader)'
+  parent: CIDER.KeyManager
+  langs:
+  - csharp
+  - vb
+  name: KeyManager(DataProvider, IKeyManagerReader)
+  nameWithType: KeyManager.KeyManager(DataProvider, IKeyManagerReader)
+  fullName: CIDER.KeyManager.KeyManager(CIDER.DataProvider, CIDER.IKeyManagerReader)
+  type: Constructor
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: .ctor
+    path: KeyManager.cs
+    startLine: 29
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis is the constructor for the KeyManager class\n"
+  example: []
+  syntax:
+    content: public KeyManager(DataProvider Data, IKeyManagerReader Reader)
+    parameters:
+    - id: Data
+      type: CIDER.DataProvider
+      description: This expects a DataProvider object to store the api key in
+    - id: Reader
+      type: CIDER.IKeyManagerReader
+      description: Pass a Object that implements the IKeyManagerReader here - inject unit testing mocks and fakes here
+    content.vb: Public Sub New(Data As DataProvider, Reader As IKeyManagerReader)
+  overload: CIDER.KeyManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.KeyManager.Fetch
+  commentId: M:CIDER.KeyManager.Fetch
+  id: Fetch
+  parent: CIDER.KeyManager
+  langs:
+  - csharp
+  - vb
+  name: Fetch()
+  nameWithType: KeyManager.Fetch()
+  fullName: CIDER.KeyManager.Fetch()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Fetch
+    path: KeyManager.cs
+    startLine: 39
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis function tries to fetch the api key from the key file (if available)\n"
+  example: []
+  syntax:
+    content: public bool Fetch()
+    return:
+      type: System.Boolean
+      description: This function returns a bool telling the caller if a key was found
+    content.vb: Public Function Fetch As Boolean
+  overload: CIDER.KeyManager.Fetch*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.KeyManager.Put
+  commentId: M:CIDER.KeyManager.Put
+  id: Put
+  parent: CIDER.KeyManager
+  langs:
+  - csharp
+  - vb
+  name: Put()
+  nameWithType: KeyManager.Put()
+  fullName: CIDER.KeyManager.Put()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Put
+    path: KeyManager.cs
+    startLine: 80
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis function tries to put the path of a key file into the config\n"
+  example: []
+  syntax:
+    content: public bool Put()
+    return:
+      type: System.Boolean
+      description: returns true if successful
+    content.vb: Public Function Put As Boolean
+  overload: CIDER.KeyManager.Put*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: CIDER.KeyManager.#ctor*
+  commentId: Overload:CIDER.KeyManager.#ctor
+  name: KeyManager
+  nameWithType: KeyManager.KeyManager
+  fullName: CIDER.KeyManager.KeyManager
+- uid: CIDER.DataProvider
+  commentId: T:CIDER.DataProvider
+  parent: CIDER
+  name: DataProvider
+  nameWithType: DataProvider
+  fullName: CIDER.DataProvider
+- uid: CIDER.IKeyManagerReader
+  commentId: T:CIDER.IKeyManagerReader
+  parent: CIDER
+  name: IKeyManagerReader
+  nameWithType: IKeyManagerReader
+  fullName: CIDER.IKeyManagerReader
+- uid: CIDER.KeyManager.Fetch*
+  commentId: Overload:CIDER.KeyManager.Fetch
+  name: Fetch
+  nameWithType: KeyManager.Fetch
+  fullName: CIDER.KeyManager.Fetch
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CIDER.KeyManager.Put*
+  commentId: Overload:CIDER.KeyManager.Put
+  name: Put
+  nameWithType: KeyManager.Put
+  fullName: CIDER.KeyManager.Put

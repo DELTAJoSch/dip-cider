@@ -62,7 +62,7 @@ namespace CIDER
                 if (!foundLIAG)
                     list.Add($"LIAG:{State.ToString()}");
 
-                keyManagerReader.WriteAllLines((string[])list.ToArray(), "CIDER.cfg");
+                keyManagerReader.WriteAllLines((string[])list.ToArray(typeof(string)), "CIDER.cfg");
             }
             catch (Exception ex)
             {

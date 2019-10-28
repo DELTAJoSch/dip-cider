@@ -1,0 +1,828 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.PlotManager
+  commentId: T:CIDER.PlotManager
+  id: PlotManager
+  parent: CIDER
+  children:
+  - CIDER.PlotManager.#ctor
+  - CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String)
+  - CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String,OxyPlot.OxyColor)
+  - CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String,OxyPlot.OxyColor,System.Int32)
+  - CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String,System.Int32)
+  - CIDER.PlotManager.CreatePDF(System.String,System.String)
+  - CIDER.PlotManager.GetPlotModel(System.String)
+  - CIDER.PlotManager.Series
+  langs:
+  - csharp
+  - vb
+  name: PlotManager
+  nameWithType: PlotManager
+  fullName: CIDER.PlotManager
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/PlotManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: PlotManager
+    path: PlotManager.cs
+    startLine: 9
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public class PlotManager
+    content.vb: Public Class PlotManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.PlotManager.Series
+  commentId: F:CIDER.PlotManager.Series
+  id: Series
+  parent: CIDER.PlotManager
+  langs:
+  - csharp
+  - vb
+  name: Series
+  nameWithType: PlotManager.Series
+  fullName: CIDER.PlotManager.Series
+  type: Field
+  source:
+    remote:
+      path: CIDER/CIDER/PlotManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Series
+    path: PlotManager.cs
+    startLine: 13
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public List<LineSeries> Series
+    return:
+      type: System.Collections.Generic.List{OxyPlot.Series.LineSeries}
+    content.vb: Public Series As List(Of LineSeries)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.PlotManager.#ctor
+  commentId: M:CIDER.PlotManager.#ctor
+  id: '#ctor'
+  parent: CIDER.PlotManager
+  langs:
+  - csharp
+  - vb
+  name: PlotManager()
+  nameWithType: PlotManager.PlotManager()
+  fullName: CIDER.PlotManager.PlotManager()
+  type: Constructor
+  source:
+    remote:
+      path: CIDER/CIDER/PlotManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: .ctor
+    path: PlotManager.cs
+    startLine: 15
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public PlotManager()
+    content.vb: Public Sub New
+  overload: CIDER.PlotManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.PlotManager.GetPlotModel(System.String)
+  commentId: M:CIDER.PlotManager.GetPlotModel(System.String)
+  id: GetPlotModel(System.String)
+  parent: CIDER.PlotManager
+  langs:
+  - csharp
+  - vb
+  name: GetPlotModel(String)
+  nameWithType: PlotManager.GetPlotModel(String)
+  fullName: CIDER.PlotManager.GetPlotModel(System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/PlotManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: GetPlotModel
+    path: PlotManager.cs
+    startLine: 20
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public PlotModel GetPlotModel(string Title)
+    parameters:
+    - id: Title
+      type: System.String
+    return:
+      type: OxyPlot.PlotModel
+    content.vb: Public Function GetPlotModel(Title As String) As PlotModel
+  overload: CIDER.PlotManager.GetPlotModel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.PlotManager.CreatePDF(System.String,System.String)
+  commentId: M:CIDER.PlotManager.CreatePDF(System.String,System.String)
+  id: CreatePDF(System.String,System.String)
+  parent: CIDER.PlotManager
+  langs:
+  - csharp
+  - vb
+  name: CreatePDF(String, String)
+  nameWithType: PlotManager.CreatePDF(String, String)
+  fullName: CIDER.PlotManager.CreatePDF(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/PlotManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: CreatePDF
+    path: PlotManager.cs
+    startLine: 41
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public void CreatePDF(string Title, string fileName)
+    parameters:
+    - id: Title
+      type: System.String
+    - id: fileName
+      type: System.String
+    content.vb: Public Sub CreatePDF(Title As String, fileName As String)
+  overload: CIDER.PlotManager.CreatePDF*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String)
+  commentId: M:CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String)
+  id: AddLineSeries(System.Collections.Generic.List{System.Single},System.String)
+  parent: CIDER.PlotManager
+  langs:
+  - csharp
+  - vb
+  name: AddLineSeries(List<Single>, String)
+  nameWithType: PlotManager.AddLineSeries(List<Single>, String)
+  fullName: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List<System.Single>, System.String)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/PlotManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: AddLineSeries
+    path: PlotManager.cs
+    startLine: 86
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public void AddLineSeries(List<float> data, string name)
+    parameters:
+    - id: data
+      type: System.Collections.Generic.List{System.Single}
+    - id: name
+      type: System.String
+    content.vb: Public Sub AddLineSeries(data As List(Of Single), name As String)
+  overload: CIDER.PlotManager.AddLineSeries*
+  nameWithType.vb: PlotManager.AddLineSeries(List(Of Single), String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List(Of System.Single), System.String)
+  name.vb: AddLineSeries(List(Of Single), String)
+- uid: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String,OxyPlot.OxyColor)
+  commentId: M:CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String,OxyPlot.OxyColor)
+  id: AddLineSeries(System.Collections.Generic.List{System.Single},System.String,OxyPlot.OxyColor)
+  parent: CIDER.PlotManager
+  langs:
+  - csharp
+  - vb
+  name: AddLineSeries(List<Single>, String, OxyColor)
+  nameWithType: PlotManager.AddLineSeries(List<Single>, String, OxyColor)
+  fullName: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List<System.Single>, System.String, OxyPlot.OxyColor)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/PlotManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: AddLineSeries
+    path: PlotManager.cs
+    startLine: 93
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public void AddLineSeries(List<float> data, string name, OxyColor color)
+    parameters:
+    - id: data
+      type: System.Collections.Generic.List{System.Single}
+    - id: name
+      type: System.String
+    - id: color
+      type: OxyPlot.OxyColor
+    content.vb: Public Sub AddLineSeries(data As List(Of Single), name As String, color As OxyColor)
+  overload: CIDER.PlotManager.AddLineSeries*
+  nameWithType.vb: PlotManager.AddLineSeries(List(Of Single), String, OxyColor)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List(Of System.Single), System.String, OxyPlot.OxyColor)
+  name.vb: AddLineSeries(List(Of Single), String, OxyColor)
+- uid: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String,OxyPlot.OxyColor,System.Int32)
+  commentId: M:CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String,OxyPlot.OxyColor,System.Int32)
+  id: AddLineSeries(System.Collections.Generic.List{System.Single},System.String,OxyPlot.OxyColor,System.Int32)
+  parent: CIDER.PlotManager
+  langs:
+  - csharp
+  - vb
+  name: AddLineSeries(List<Single>, String, OxyColor, Int32)
+  nameWithType: PlotManager.AddLineSeries(List<Single>, String, OxyColor, Int32)
+  fullName: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List<System.Single>, System.String, OxyPlot.OxyColor, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/PlotManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: AddLineSeries
+    path: PlotManager.cs
+    startLine: 98
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public void AddLineSeries(List<float> data, string name, OxyColor color, int interval)
+    parameters:
+    - id: data
+      type: System.Collections.Generic.List{System.Single}
+    - id: name
+      type: System.String
+    - id: color
+      type: OxyPlot.OxyColor
+    - id: interval
+      type: System.Int32
+    content.vb: Public Sub AddLineSeries(data As List(Of Single), name As String, color As OxyColor, interval As Integer)
+  overload: CIDER.PlotManager.AddLineSeries*
+  nameWithType.vb: PlotManager.AddLineSeries(List(Of Single), String, OxyColor, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List(Of System.Single), System.String, OxyPlot.OxyColor, System.Int32)
+  name.vb: AddLineSeries(List(Of Single), String, OxyColor, Int32)
+- uid: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String,System.Int32)
+  commentId: M:CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String,System.Int32)
+  id: AddLineSeries(System.Collections.Generic.List{System.Single},System.String,System.Int32)
+  parent: CIDER.PlotManager
+  langs:
+  - csharp
+  - vb
+  name: AddLineSeries(List<Single>, String, Int32)
+  nameWithType: PlotManager.AddLineSeries(List<Single>, String, Int32)
+  fullName: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List<System.Single>, System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/PlotManager.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: AddLineSeries
+    path: PlotManager.cs
+    startLine: 103
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  syntax:
+    content: public void AddLineSeries(List<float> data, string name, int interval)
+    parameters:
+    - id: data
+      type: System.Collections.Generic.List{System.Single}
+    - id: name
+      type: System.String
+    - id: interval
+      type: System.Int32
+    content.vb: Public Sub AddLineSeries(data As List(Of Single), name As String, interval As Integer)
+  overload: CIDER.PlotManager.AddLineSeries*
+  nameWithType.vb: PlotManager.AddLineSeries(List(Of Single), String, Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List(Of System.Single), System.String, System.Int32)
+  name.vb: AddLineSeries(List(Of Single), String, Int32)
+references:
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{OxyPlot.Series.LineSeries}
+  commentId: T:System.Collections.Generic.List{OxyPlot.Series.LineSeries}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<LineSeries>
+  nameWithType: List<LineSeries>
+  fullName: System.Collections.Generic.List<OxyPlot.Series.LineSeries>
+  nameWithType.vb: List(Of LineSeries)
+  fullName.vb: System.Collections.Generic.List(Of OxyPlot.Series.LineSeries)
+  name.vb: List(Of LineSeries)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: OxyPlot.Series.LineSeries
+    name: LineSeries
+    nameWithType: LineSeries
+    fullName: OxyPlot.Series.LineSeries
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: OxyPlot.Series.LineSeries
+    name: LineSeries
+    nameWithType: LineSeries
+    fullName: OxyPlot.Series.LineSeries
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: CIDER.PlotManager.#ctor*
+  commentId: Overload:CIDER.PlotManager.#ctor
+  name: PlotManager
+  nameWithType: PlotManager.PlotManager
+  fullName: CIDER.PlotManager.PlotManager
+- uid: CIDER.PlotManager.GetPlotModel*
+  commentId: Overload:CIDER.PlotManager.GetPlotModel
+  name: GetPlotModel
+  nameWithType: PlotManager.GetPlotModel
+  fullName: CIDER.PlotManager.GetPlotModel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: OxyPlot.PlotModel
+  commentId: T:OxyPlot.PlotModel
+  parent: OxyPlot
+  isExternal: true
+  name: PlotModel
+  nameWithType: PlotModel
+  fullName: OxyPlot.PlotModel
+- uid: OxyPlot
+  commentId: N:OxyPlot
+  isExternal: true
+  name: OxyPlot
+  nameWithType: OxyPlot
+  fullName: OxyPlot
+- uid: CIDER.PlotManager.CreatePDF*
+  commentId: Overload:CIDER.PlotManager.CreatePDF
+  name: CreatePDF
+  nameWithType: PlotManager.CreatePDF
+  fullName: CIDER.PlotManager.CreatePDF
+- uid: CIDER.PlotManager.AddLineSeries*
+  commentId: Overload:CIDER.PlotManager.AddLineSeries
+  name: AddLineSeries
+  nameWithType: PlotManager.AddLineSeries
+  fullName: CIDER.PlotManager.AddLineSeries
+- uid: System.Collections.Generic.List{System.Single}
+  commentId: T:System.Collections.Generic.List{System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Single>
+  nameWithType: List<Single>
+  fullName: System.Collections.Generic.List<System.Single>
+  nameWithType.vb: List(Of Single)
+  fullName.vb: System.Collections.Generic.List(Of System.Single)
+  name.vb: List(Of Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: OxyPlot.OxyColor
+  commentId: T:OxyPlot.OxyColor
+  parent: OxyPlot
+  isExternal: true
+  name: OxyColor
+  nameWithType: OxyColor
+  fullName: OxyPlot.OxyColor
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

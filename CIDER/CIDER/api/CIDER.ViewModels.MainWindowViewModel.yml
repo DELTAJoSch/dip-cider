@@ -1,0 +1,1382 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.ViewModels.MainWindowViewModel
+  commentId: T:CIDER.ViewModels.MainWindowViewModel
+  id: MainWindowViewModel
+  parent: CIDER.ViewModels
+  children:
+  - CIDER.ViewModels.MainWindowViewModel.#ctor
+  - CIDER.ViewModels.MainWindowViewModel.ButtonEnabled
+  - CIDER.ViewModels.MainWindowViewModel.ButtonState(System.Boolean)
+  - CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand
+  - CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationGraphCommand
+  - CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationTimedCommand
+  - CIDER.ViewModels.MainWindowViewModel.ChangeToAngleGraphCommand
+  - CIDER.ViewModels.MainWindowViewModel.ChangeToAngleTimedCommand
+  - CIDER.ViewModels.MainWindowViewModel.ChangeToHeightCommand
+  - CIDER.ViewModels.MainWindowViewModel.ChangeToHorizonCommand
+  - CIDER.ViewModels.MainWindowViewModel.ChangeToLoadCommand
+  - CIDER.ViewModels.MainWindowViewModel.ChangeToMapRouteCommand
+  - CIDER.ViewModels.MainWindowViewModel.ChangeToMapTimedCommand
+  - CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityGraphCommand
+  - CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityTimedCommand
+  - CIDER.ViewModels.MainWindowViewModel.Dispose
+  - CIDER.ViewModels.MainWindowViewModel.FrameContent
+  - CIDER.ViewModels.MainWindowViewModel.Initalize
+  - CIDER.ViewModels.MainWindowViewModel.MapEnabled
+  - CIDER.ViewModels.MainWindowViewModel.OnFrameChangeEvent
+  langs:
+  - csharp
+  - vb
+  name: MainWindowViewModel
+  nameWithType: MainWindowViewModel
+  fullName: CIDER.ViewModels.MainWindowViewModel
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: MainWindowViewModel
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 9
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: 'public class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged, IDisposable'
+    content.vb: >-
+      Public Class MainWindowViewModel
+
+          Inherits ViewModelBase
+
+          Implements INotifyPropertyChanged, IDisposable
+  inheritance:
+  - System.Object
+  - CIDER.MVVMBase.ViewModelBase
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - System.IDisposable
+  inheritedMembers:
+  - CIDER.MVVMBase.ViewModelBase.logger
+  - CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  - CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.ViewModels.MainWindowViewModel.OnFrameChangeEvent
+  commentId: E:CIDER.ViewModels.MainWindowViewModel.OnFrameChangeEvent
+  id: OnFrameChangeEvent
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: OnFrameChangeEvent
+  nameWithType: MainWindowViewModel.OnFrameChangeEvent
+  fullName: CIDER.ViewModels.MainWindowViewModel.OnFrameChangeEvent
+  type: Event
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: OnFrameChangeEvent
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 49
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public event EventHandler OnFrameChangeEvent
+    return:
+      type: System.EventHandler
+    content.vb: Public Event OnFrameChangeEvent As EventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.MainWindowViewModel.#ctor
+  commentId: M:CIDER.ViewModels.MainWindowViewModel.#ctor
+  id: '#ctor'
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: MainWindowViewModel()
+  nameWithType: MainWindowViewModel.MainWindowViewModel()
+  fullName: CIDER.ViewModels.MainWindowViewModel.MainWindowViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: .ctor
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 51
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public MainWindowViewModel()
+    content.vb: Public Sub New
+  overload: CIDER.ViewModels.MainWindowViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand
+  id: ChangeToAboutCommand
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeToAboutCommand
+  nameWithType: MainWindowViewModel.ChangeToAboutCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ChangeToAboutCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 107
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand ChangeToAboutCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeToAboutCommand As ICommand
+  overload: CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationGraphCommand
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationGraphCommand
+  id: ChangeToAccelerationGraphCommand
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeToAccelerationGraphCommand
+  nameWithType: MainWindowViewModel.ChangeToAccelerationGraphCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationGraphCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ChangeToAccelerationGraphCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 108
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand ChangeToAccelerationGraphCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeToAccelerationGraphCommand As ICommand
+  overload: CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationGraphCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationTimedCommand
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationTimedCommand
+  id: ChangeToAccelerationTimedCommand
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeToAccelerationTimedCommand
+  nameWithType: MainWindowViewModel.ChangeToAccelerationTimedCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationTimedCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ChangeToAccelerationTimedCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 109
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand ChangeToAccelerationTimedCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeToAccelerationTimedCommand As ICommand
+  overload: CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationTimedCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToLoadCommand
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ChangeToLoadCommand
+  id: ChangeToLoadCommand
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeToLoadCommand
+  nameWithType: MainWindowViewModel.ChangeToLoadCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToLoadCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ChangeToLoadCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 110
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand ChangeToLoadCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeToLoadCommand As ICommand
+  overload: CIDER.ViewModels.MainWindowViewModel.ChangeToLoadCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToMapRouteCommand
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ChangeToMapRouteCommand
+  id: ChangeToMapRouteCommand
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeToMapRouteCommand
+  nameWithType: MainWindowViewModel.ChangeToMapRouteCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToMapRouteCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ChangeToMapRouteCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 111
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand ChangeToMapRouteCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeToMapRouteCommand As ICommand
+  overload: CIDER.ViewModels.MainWindowViewModel.ChangeToMapRouteCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToMapTimedCommand
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ChangeToMapTimedCommand
+  id: ChangeToMapTimedCommand
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeToMapTimedCommand
+  nameWithType: MainWindowViewModel.ChangeToMapTimedCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToMapTimedCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ChangeToMapTimedCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 112
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand ChangeToMapTimedCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeToMapTimedCommand As ICommand
+  overload: CIDER.ViewModels.MainWindowViewModel.ChangeToMapTimedCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityGraphCommand
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityGraphCommand
+  id: ChangeToVelocityGraphCommand
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeToVelocityGraphCommand
+  nameWithType: MainWindowViewModel.ChangeToVelocityGraphCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityGraphCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ChangeToVelocityGraphCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 113
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand ChangeToVelocityGraphCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeToVelocityGraphCommand As ICommand
+  overload: CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityGraphCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityTimedCommand
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityTimedCommand
+  id: ChangeToVelocityTimedCommand
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeToVelocityTimedCommand
+  nameWithType: MainWindowViewModel.ChangeToVelocityTimedCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityTimedCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ChangeToVelocityTimedCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 114
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand ChangeToVelocityTimedCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeToVelocityTimedCommand As ICommand
+  overload: CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityTimedCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToHeightCommand
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ChangeToHeightCommand
+  id: ChangeToHeightCommand
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeToHeightCommand
+  nameWithType: MainWindowViewModel.ChangeToHeightCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToHeightCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ChangeToHeightCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 115
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand ChangeToHeightCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeToHeightCommand As ICommand
+  overload: CIDER.ViewModels.MainWindowViewModel.ChangeToHeightCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToAngleTimedCommand
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ChangeToAngleTimedCommand
+  id: ChangeToAngleTimedCommand
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeToAngleTimedCommand
+  nameWithType: MainWindowViewModel.ChangeToAngleTimedCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToAngleTimedCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ChangeToAngleTimedCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 116
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand ChangeToAngleTimedCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeToAngleTimedCommand As ICommand
+  overload: CIDER.ViewModels.MainWindowViewModel.ChangeToAngleTimedCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToAngleGraphCommand
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ChangeToAngleGraphCommand
+  id: ChangeToAngleGraphCommand
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeToAngleGraphCommand
+  nameWithType: MainWindowViewModel.ChangeToAngleGraphCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToAngleGraphCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ChangeToAngleGraphCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 117
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand ChangeToAngleGraphCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeToAngleGraphCommand As ICommand
+  overload: CIDER.ViewModels.MainWindowViewModel.ChangeToAngleGraphCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToHorizonCommand
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ChangeToHorizonCommand
+  id: ChangeToHorizonCommand
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ChangeToHorizonCommand
+  nameWithType: MainWindowViewModel.ChangeToHorizonCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToHorizonCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ChangeToHorizonCommand
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 118
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ICommand ChangeToHorizonCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property ChangeToHorizonCommand As ICommand
+  overload: CIDER.ViewModels.MainWindowViewModel.ChangeToHorizonCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.MapEnabled
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.MapEnabled
+  id: MapEnabled
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: MapEnabled
+  nameWithType: MainWindowViewModel.MapEnabled
+  fullName: CIDER.ViewModels.MainWindowViewModel.MapEnabled
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: MapEnabled
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 120
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public bool MapEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property MapEnabled As Boolean
+  overload: CIDER.ViewModels.MainWindowViewModel.MapEnabled*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.MainWindowViewModel.FrameContent
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.FrameContent
+  id: FrameContent
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: FrameContent
+  nameWithType: MainWindowViewModel.FrameContent
+  fullName: CIDER.ViewModels.MainWindowViewModel.FrameContent
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: FrameContent
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 121
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public object FrameContent { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public ReadOnly Property FrameContent As Object
+  overload: CIDER.ViewModels.MainWindowViewModel.FrameContent*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MainWindowViewModel.ButtonEnabled
+  commentId: P:CIDER.ViewModels.MainWindowViewModel.ButtonEnabled
+  id: ButtonEnabled
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ButtonEnabled
+  nameWithType: MainWindowViewModel.ButtonEnabled
+  fullName: CIDER.ViewModels.MainWindowViewModel.ButtonEnabled
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ButtonEnabled
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 122
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public bool ButtonEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ButtonEnabled As Boolean
+  overload: CIDER.ViewModels.MainWindowViewModel.ButtonEnabled*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.MainWindowViewModel.Initalize
+  commentId: M:CIDER.ViewModels.MainWindowViewModel.Initalize
+  id: Initalize
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: Initalize()
+  nameWithType: MainWindowViewModel.Initalize()
+  fullName: CIDER.ViewModels.MainWindowViewModel.Initalize()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Initalize
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 138
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public void Initalize()
+    content.vb: Public Sub Initalize
+  overload: CIDER.ViewModels.MainWindowViewModel.Initalize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.MainWindowViewModel.ButtonState(System.Boolean)
+  commentId: M:CIDER.ViewModels.MainWindowViewModel.ButtonState(System.Boolean)
+  id: ButtonState(System.Boolean)
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: ButtonState(Boolean)
+  nameWithType: MainWindowViewModel.ButtonState(Boolean)
+  fullName: CIDER.ViewModels.MainWindowViewModel.ButtonState(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ButtonState
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 224
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public void ButtonState(bool state)
+    parameters:
+    - id: state
+      type: System.Boolean
+    content.vb: Public Sub ButtonState(state As Boolean)
+  overload: CIDER.ViewModels.MainWindowViewModel.ButtonState*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.MainWindowViewModel.Dispose
+  commentId: M:CIDER.ViewModels.MainWindowViewModel.Dispose
+  id: Dispose
+  parent: CIDER.ViewModels.MainWindowViewModel
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: MainWindowViewModel.Dispose()
+  fullName: CIDER.ViewModels.MainWindowViewModel.Dispose()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Dispose
+    path: ViewModels/MainWindowViewModel.cs
+    startLine: 232
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: CIDER.ViewModels.MainWindowViewModel.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER.ViewModels
+  commentId: N:CIDER.ViewModels
+  name: CIDER.ViewModels
+  nameWithType: CIDER.ViewModels
+  fullName: CIDER.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CIDER.MVVMBase.ViewModelBase
+  commentId: T:CIDER.MVVMBase.ViewModelBase
+  parent: CIDER.MVVMBase
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: CIDER.MVVMBase.ViewModelBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: CIDER.MVVMBase.ViewModelBase.logger
+  commentId: F:CIDER.MVVMBase.ViewModelBase.logger
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: logger
+  nameWithType: ViewModelBase.logger
+  fullName: CIDER.MVVMBase.ViewModelBase.logger
+- uid: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  commentId: E:CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+  fullName: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  parent: CIDER.MVVMBase.ViewModelBase
+  definition: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.MVVMBase
+  commentId: N:CIDER.MVVMBase
+  name: CIDER.MVVMBase
+  nameWithType: CIDER.MVVMBase
+  fullName: CIDER.MVVMBase
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: CIDER.ViewModels.MainWindowViewModel.#ctor*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.#ctor
+  name: MainWindowViewModel
+  nameWithType: MainWindowViewModel.MainWindowViewModel
+  fullName: CIDER.ViewModels.MainWindowViewModel.MainWindowViewModel
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand
+  name: ChangeToAboutCommand
+  nameWithType: MainWindowViewModel.ChangeToAboutCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationGraphCommand*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationGraphCommand
+  name: ChangeToAccelerationGraphCommand
+  nameWithType: MainWindowViewModel.ChangeToAccelerationGraphCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationGraphCommand
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationTimedCommand*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationTimedCommand
+  name: ChangeToAccelerationTimedCommand
+  nameWithType: MainWindowViewModel.ChangeToAccelerationTimedCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToAccelerationTimedCommand
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToLoadCommand*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToLoadCommand
+  name: ChangeToLoadCommand
+  nameWithType: MainWindowViewModel.ChangeToLoadCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToLoadCommand
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToMapRouteCommand*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToMapRouteCommand
+  name: ChangeToMapRouteCommand
+  nameWithType: MainWindowViewModel.ChangeToMapRouteCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToMapRouteCommand
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToMapTimedCommand*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToMapTimedCommand
+  name: ChangeToMapTimedCommand
+  nameWithType: MainWindowViewModel.ChangeToMapTimedCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToMapTimedCommand
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityGraphCommand*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityGraphCommand
+  name: ChangeToVelocityGraphCommand
+  nameWithType: MainWindowViewModel.ChangeToVelocityGraphCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityGraphCommand
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityTimedCommand*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityTimedCommand
+  name: ChangeToVelocityTimedCommand
+  nameWithType: MainWindowViewModel.ChangeToVelocityTimedCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToVelocityTimedCommand
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToHeightCommand*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToHeightCommand
+  name: ChangeToHeightCommand
+  nameWithType: MainWindowViewModel.ChangeToHeightCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToHeightCommand
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToAngleTimedCommand*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToAngleTimedCommand
+  name: ChangeToAngleTimedCommand
+  nameWithType: MainWindowViewModel.ChangeToAngleTimedCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToAngleTimedCommand
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToAngleGraphCommand*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToAngleGraphCommand
+  name: ChangeToAngleGraphCommand
+  nameWithType: MainWindowViewModel.ChangeToAngleGraphCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToAngleGraphCommand
+- uid: CIDER.ViewModels.MainWindowViewModel.ChangeToHorizonCommand*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToHorizonCommand
+  name: ChangeToHorizonCommand
+  nameWithType: MainWindowViewModel.ChangeToHorizonCommand
+  fullName: CIDER.ViewModels.MainWindowViewModel.ChangeToHorizonCommand
+- uid: CIDER.ViewModels.MainWindowViewModel.MapEnabled*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.MapEnabled
+  name: MapEnabled
+  nameWithType: MainWindowViewModel.MapEnabled
+  fullName: CIDER.ViewModels.MainWindowViewModel.MapEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CIDER.ViewModels.MainWindowViewModel.FrameContent*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.FrameContent
+  name: FrameContent
+  nameWithType: MainWindowViewModel.FrameContent
+  fullName: CIDER.ViewModels.MainWindowViewModel.FrameContent
+- uid: CIDER.ViewModels.MainWindowViewModel.ButtonEnabled*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ButtonEnabled
+  name: ButtonEnabled
+  nameWithType: MainWindowViewModel.ButtonEnabled
+  fullName: CIDER.ViewModels.MainWindowViewModel.ButtonEnabled
+- uid: CIDER.ViewModels.MainWindowViewModel.Initalize*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.Initalize
+  name: Initalize
+  nameWithType: MainWindowViewModel.Initalize
+  fullName: CIDER.ViewModels.MainWindowViewModel.Initalize
+- uid: CIDER.ViewModels.MainWindowViewModel.ButtonState*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ButtonState
+  name: ButtonState
+  nameWithType: MainWindowViewModel.ButtonState
+  fullName: CIDER.ViewModels.MainWindowViewModel.ButtonState
+- uid: CIDER.ViewModels.MainWindowViewModel.Dispose*
+  commentId: Overload:CIDER.ViewModels.MainWindowViewModel.Dispose
+  name: Dispose
+  nameWithType: MainWindowViewModel.Dispose
+  fullName: CIDER.ViewModels.MainWindowViewModel.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

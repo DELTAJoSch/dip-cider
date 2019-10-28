@@ -1,0 +1,1048 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.ViewModels.HeightViewModel
+  commentId: T:CIDER.ViewModels.HeightViewModel
+  id: HeightViewModel
+  parent: CIDER.ViewModels
+  children:
+  - CIDER.ViewModels.HeightViewModel.#ctor(CIDER.DataProvider)
+  - CIDER.ViewModels.HeightViewModel.Dispose
+  - CIDER.ViewModels.HeightViewModel.HeightMaxL
+  - CIDER.ViewModels.HeightViewModel.HeightMaxR
+  - CIDER.ViewModels.HeightViewModel.HeightText
+  - CIDER.ViewModels.HeightViewModel.HeightValL
+  - CIDER.ViewModels.HeightViewModel.HeightValR
+  - CIDER.ViewModels.HeightViewModel.Plot
+  - CIDER.ViewModels.HeightViewModel.slMaximum
+  - CIDER.ViewModels.HeightViewModel.slTickFrequency
+  - CIDER.ViewModels.HeightViewModel.slValueChanged(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: HeightViewModel
+  nameWithType: HeightViewModel
+  fullName: CIDER.ViewModels.HeightViewModel
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: HeightViewModel
+    path: ViewModels/HeightViewModel.cs
+    startLine: 7
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: 'public class HeightViewModel : ViewModelBase, INotifyPropertyChanged, IDisposable'
+    content.vb: >-
+      Public Class HeightViewModel
+
+          Inherits ViewModelBase
+
+          Implements INotifyPropertyChanged, IDisposable
+  inheritance:
+  - System.Object
+  - CIDER.MVVMBase.ViewModelBase
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - System.IDisposable
+  inheritedMembers:
+  - CIDER.MVVMBase.ViewModelBase.logger
+  - CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  - CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.ViewModels.HeightViewModel.#ctor(CIDER.DataProvider)
+  commentId: M:CIDER.ViewModels.HeightViewModel.#ctor(CIDER.DataProvider)
+  id: '#ctor(CIDER.DataProvider)'
+  parent: CIDER.ViewModels.HeightViewModel
+  langs:
+  - csharp
+  - vb
+  name: HeightViewModel(DataProvider)
+  nameWithType: HeightViewModel.HeightViewModel(DataProvider)
+  fullName: CIDER.ViewModels.HeightViewModel.HeightViewModel(CIDER.DataProvider)
+  type: Constructor
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: .ctor
+    path: ViewModels/HeightViewModel.cs
+    startLine: 21
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public HeightViewModel(DataProvider dataProvider)
+    parameters:
+    - id: dataProvider
+      type: CIDER.DataProvider
+    content.vb: Public Sub New(dataProvider As DataProvider)
+  overload: CIDER.ViewModels.HeightViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.HeightViewModel.Dispose
+  commentId: M:CIDER.ViewModels.HeightViewModel.Dispose
+  id: Dispose
+  parent: CIDER.ViewModels.HeightViewModel
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: HeightViewModel.Dispose()
+  fullName: CIDER.ViewModels.HeightViewModel.Dispose()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Dispose
+    path: ViewModels/HeightViewModel.cs
+    startLine: 68
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: CIDER.ViewModels.HeightViewModel.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.HeightViewModel.HeightMaxL
+  commentId: P:CIDER.ViewModels.HeightViewModel.HeightMaxL
+  id: HeightMaxL
+  parent: CIDER.ViewModels.HeightViewModel
+  langs:
+  - csharp
+  - vb
+  name: HeightMaxL
+  nameWithType: HeightViewModel.HeightMaxL
+  fullName: CIDER.ViewModels.HeightViewModel.HeightMaxL
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: HeightMaxL
+    path: ViewModels/HeightViewModel.cs
+    startLine: 74
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float HeightMaxL { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property HeightMaxL As Single
+  overload: CIDER.ViewModels.HeightViewModel.HeightMaxL*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.HeightViewModel.HeightMaxR
+  commentId: P:CIDER.ViewModels.HeightViewModel.HeightMaxR
+  id: HeightMaxR
+  parent: CIDER.ViewModels.HeightViewModel
+  langs:
+  - csharp
+  - vb
+  name: HeightMaxR
+  nameWithType: HeightViewModel.HeightMaxR
+  fullName: CIDER.ViewModels.HeightViewModel.HeightMaxR
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: HeightMaxR
+    path: ViewModels/HeightViewModel.cs
+    startLine: 75
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float HeightMaxR { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property HeightMaxR As Single
+  overload: CIDER.ViewModels.HeightViewModel.HeightMaxR*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.HeightViewModel.HeightValL
+  commentId: P:CIDER.ViewModels.HeightViewModel.HeightValL
+  id: HeightValL
+  parent: CIDER.ViewModels.HeightViewModel
+  langs:
+  - csharp
+  - vb
+  name: HeightValL
+  nameWithType: HeightViewModel.HeightValL
+  fullName: CIDER.ViewModels.HeightViewModel.HeightValL
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: HeightValL
+    path: ViewModels/HeightViewModel.cs
+    startLine: 76
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float HeightValL { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property HeightValL As Single
+  overload: CIDER.ViewModels.HeightViewModel.HeightValL*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.HeightViewModel.HeightValR
+  commentId: P:CIDER.ViewModels.HeightViewModel.HeightValR
+  id: HeightValR
+  parent: CIDER.ViewModels.HeightViewModel
+  langs:
+  - csharp
+  - vb
+  name: HeightValR
+  nameWithType: HeightViewModel.HeightValR
+  fullName: CIDER.ViewModels.HeightViewModel.HeightValR
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: HeightValR
+    path: ViewModels/HeightViewModel.cs
+    startLine: 77
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float HeightValR { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property HeightValR As Single
+  overload: CIDER.ViewModels.HeightViewModel.HeightValR*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.HeightViewModel.slTickFrequency
+  commentId: P:CIDER.ViewModels.HeightViewModel.slTickFrequency
+  id: slTickFrequency
+  parent: CIDER.ViewModels.HeightViewModel
+  langs:
+  - csharp
+  - vb
+  name: slTickFrequency
+  nameWithType: HeightViewModel.slTickFrequency
+  fullName: CIDER.ViewModels.HeightViewModel.slTickFrequency
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: slTickFrequency
+    path: ViewModels/HeightViewModel.cs
+    startLine: 78
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float slTickFrequency { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property slTickFrequency As Single
+  overload: CIDER.ViewModels.HeightViewModel.slTickFrequency*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.HeightViewModel.slMaximum
+  commentId: P:CIDER.ViewModels.HeightViewModel.slMaximum
+  id: slMaximum
+  parent: CIDER.ViewModels.HeightViewModel
+  langs:
+  - csharp
+  - vb
+  name: slMaximum
+  nameWithType: HeightViewModel.slMaximum
+  fullName: CIDER.ViewModels.HeightViewModel.slMaximum
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: slMaximum
+    path: ViewModels/HeightViewModel.cs
+    startLine: 79
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public float slMaximum { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property slMaximum As Single
+  overload: CIDER.ViewModels.HeightViewModel.slMaximum*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.HeightViewModel.HeightText
+  commentId: P:CIDER.ViewModels.HeightViewModel.HeightText
+  id: HeightText
+  parent: CIDER.ViewModels.HeightViewModel
+  langs:
+  - csharp
+  - vb
+  name: HeightText
+  nameWithType: HeightViewModel.HeightText
+  fullName: CIDER.ViewModels.HeightViewModel.HeightText
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: HeightText
+    path: ViewModels/HeightViewModel.cs
+    startLine: 80
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public string HeightText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property HeightText As String
+  overload: CIDER.ViewModels.HeightViewModel.HeightText*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.HeightViewModel.Plot
+  commentId: P:CIDER.ViewModels.HeightViewModel.Plot
+  id: Plot
+  parent: CIDER.ViewModels.HeightViewModel
+  langs:
+  - csharp
+  - vb
+  name: Plot
+  nameWithType: HeightViewModel.Plot
+  fullName: CIDER.ViewModels.HeightViewModel.Plot
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Plot
+    path: ViewModels/HeightViewModel.cs
+    startLine: 81
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public PlotModel Plot { get; set; }
+    parameters: []
+    return:
+      type: OxyPlot.PlotModel
+    content.vb: Public Property Plot As PlotModel
+  overload: CIDER.ViewModels.HeightViewModel.Plot*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.HeightViewModel.slValueChanged(System.Int32)
+  commentId: M:CIDER.ViewModels.HeightViewModel.slValueChanged(System.Int32)
+  id: slValueChanged(System.Int32)
+  parent: CIDER.ViewModels.HeightViewModel
+  langs:
+  - csharp
+  - vb
+  name: slValueChanged(Int32)
+  nameWithType: HeightViewModel.slValueChanged(Int32)
+  fullName: CIDER.ViewModels.HeightViewModel.slValueChanged(System.Int32)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: slValueChanged
+    path: ViewModels/HeightViewModel.cs
+    startLine: 83
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public void slValueChanged(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    content.vb: Public Sub slValueChanged(value As Integer)
+  overload: CIDER.ViewModels.HeightViewModel.slValueChanged*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER.ViewModels
+  commentId: N:CIDER.ViewModels
+  name: CIDER.ViewModels
+  nameWithType: CIDER.ViewModels
+  fullName: CIDER.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CIDER.MVVMBase.ViewModelBase
+  commentId: T:CIDER.MVVMBase.ViewModelBase
+  parent: CIDER.MVVMBase
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: CIDER.MVVMBase.ViewModelBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: CIDER.MVVMBase.ViewModelBase.logger
+  commentId: F:CIDER.MVVMBase.ViewModelBase.logger
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: logger
+  nameWithType: ViewModelBase.logger
+  fullName: CIDER.MVVMBase.ViewModelBase.logger
+- uid: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  commentId: E:CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+  fullName: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  parent: CIDER.MVVMBase.ViewModelBase
+  definition: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.MVVMBase
+  commentId: N:CIDER.MVVMBase
+  name: CIDER.MVVMBase
+  nameWithType: CIDER.MVVMBase
+  fullName: CIDER.MVVMBase
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CIDER.ViewModels.HeightViewModel.#ctor*
+  commentId: Overload:CIDER.ViewModels.HeightViewModel.#ctor
+  name: HeightViewModel
+  nameWithType: HeightViewModel.HeightViewModel
+  fullName: CIDER.ViewModels.HeightViewModel.HeightViewModel
+- uid: CIDER.DataProvider
+  commentId: T:CIDER.DataProvider
+  parent: CIDER
+  name: DataProvider
+  nameWithType: DataProvider
+  fullName: CIDER.DataProvider
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: CIDER.ViewModels.HeightViewModel.Dispose*
+  commentId: Overload:CIDER.ViewModels.HeightViewModel.Dispose
+  name: Dispose
+  nameWithType: HeightViewModel.Dispose
+  fullName: CIDER.ViewModels.HeightViewModel.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CIDER.ViewModels.HeightViewModel.HeightMaxL*
+  commentId: Overload:CIDER.ViewModels.HeightViewModel.HeightMaxL
+  name: HeightMaxL
+  nameWithType: HeightViewModel.HeightMaxL
+  fullName: CIDER.ViewModels.HeightViewModel.HeightMaxL
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: CIDER.ViewModels.HeightViewModel.HeightMaxR*
+  commentId: Overload:CIDER.ViewModels.HeightViewModel.HeightMaxR
+  name: HeightMaxR
+  nameWithType: HeightViewModel.HeightMaxR
+  fullName: CIDER.ViewModels.HeightViewModel.HeightMaxR
+- uid: CIDER.ViewModels.HeightViewModel.HeightValL*
+  commentId: Overload:CIDER.ViewModels.HeightViewModel.HeightValL
+  name: HeightValL
+  nameWithType: HeightViewModel.HeightValL
+  fullName: CIDER.ViewModels.HeightViewModel.HeightValL
+- uid: CIDER.ViewModels.HeightViewModel.HeightValR*
+  commentId: Overload:CIDER.ViewModels.HeightViewModel.HeightValR
+  name: HeightValR
+  nameWithType: HeightViewModel.HeightValR
+  fullName: CIDER.ViewModels.HeightViewModel.HeightValR
+- uid: CIDER.ViewModels.HeightViewModel.slTickFrequency*
+  commentId: Overload:CIDER.ViewModels.HeightViewModel.slTickFrequency
+  name: slTickFrequency
+  nameWithType: HeightViewModel.slTickFrequency
+  fullName: CIDER.ViewModels.HeightViewModel.slTickFrequency
+- uid: CIDER.ViewModels.HeightViewModel.slMaximum*
+  commentId: Overload:CIDER.ViewModels.HeightViewModel.slMaximum
+  name: slMaximum
+  nameWithType: HeightViewModel.slMaximum
+  fullName: CIDER.ViewModels.HeightViewModel.slMaximum
+- uid: CIDER.ViewModels.HeightViewModel.HeightText*
+  commentId: Overload:CIDER.ViewModels.HeightViewModel.HeightText
+  name: HeightText
+  nameWithType: HeightViewModel.HeightText
+  fullName: CIDER.ViewModels.HeightViewModel.HeightText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CIDER.ViewModels.HeightViewModel.Plot*
+  commentId: Overload:CIDER.ViewModels.HeightViewModel.Plot
+  name: Plot
+  nameWithType: HeightViewModel.Plot
+  fullName: CIDER.ViewModels.HeightViewModel.Plot
+- uid: OxyPlot.PlotModel
+  commentId: T:OxyPlot.PlotModel
+  parent: OxyPlot
+  isExternal: true
+  name: PlotModel
+  nameWithType: PlotModel
+  fullName: OxyPlot.PlotModel
+- uid: OxyPlot
+  commentId: N:OxyPlot
+  isExternal: true
+  name: OxyPlot
+  nameWithType: OxyPlot
+  fullName: OxyPlot
+- uid: CIDER.ViewModels.HeightViewModel.slValueChanged*
+  commentId: Overload:CIDER.ViewModels.HeightViewModel.slValueChanged
+  name: slValueChanged
+  nameWithType: HeightViewModel.slValueChanged
+  fullName: CIDER.ViewModels.HeightViewModel.slValueChanged
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

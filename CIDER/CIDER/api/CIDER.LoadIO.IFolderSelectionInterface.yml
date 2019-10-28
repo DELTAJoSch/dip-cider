@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.LoadIO.IFolderSelectionInterface
+  commentId: T:CIDER.LoadIO.IFolderSelectionInterface
+  id: IFolderSelectionInterface
+  parent: CIDER.LoadIO
+  children:
+  - CIDER.LoadIO.IFolderSelectionInterface.LastSelected
+  - CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+  langs:
+  - csharp
+  - vb
+  name: IFolderSelectionInterface
+  nameWithType: IFolderSelectionInterface
+  fullName: CIDER.LoadIO.IFolderSelectionInterface
+  type: Interface
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FolderSelector.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: IFolderSelectionInterface
+    path: LoadIO/FolderSelector.cs
+    startLine: 33
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: public interface IFolderSelectionInterface
+    content.vb: Public Interface IFolderSelectionInterface
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+  commentId: M:CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+  id: SelectFolder
+  parent: CIDER.LoadIO.IFolderSelectionInterface
+  langs:
+  - csharp
+  - vb
+  name: SelectFolder()
+  nameWithType: IFolderSelectionInterface.SelectFolder()
+  fullName: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FolderSelector.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: SelectFolder
+    path: LoadIO/FolderSelector.cs
+    startLine: 37
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: string SelectFolder()
+    return:
+      type: System.String
+    content.vb: Function SelectFolder As String
+  overload: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder*
+- uid: CIDER.LoadIO.IFolderSelectionInterface.LastSelected
+  commentId: P:CIDER.LoadIO.IFolderSelectionInterface.LastSelected
+  id: LastSelected
+  parent: CIDER.LoadIO.IFolderSelectionInterface
+  langs:
+  - csharp
+  - vb
+  name: LastSelected
+  nameWithType: IFolderSelectionInterface.LastSelected
+  fullName: CIDER.LoadIO.IFolderSelectionInterface.LastSelected
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/LoadIO/FolderSelector.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LastSelected
+    path: LoadIO/FolderSelector.cs
+    startLine: 39
+  assemblies:
+  - CIDER
+  namespace: CIDER.LoadIO
+  syntax:
+    content: string LastSelected { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property LastSelected As String
+  overload: CIDER.LoadIO.IFolderSelectionInterface.LastSelected*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: CIDER.LoadIO
+  commentId: N:CIDER.LoadIO
+  name: CIDER.LoadIO
+  nameWithType: CIDER.LoadIO
+  fullName: CIDER.LoadIO
+- uid: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder*
+  commentId: Overload:CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+  name: SelectFolder
+  nameWithType: IFolderSelectionInterface.SelectFolder
+  fullName: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.LoadIO.IFolderSelectionInterface.LastSelected*
+  commentId: Overload:CIDER.LoadIO.IFolderSelectionInterface.LastSelected
+  name: LastSelected
+  nameWithType: IFolderSelectionInterface.LastSelected
+  fullName: CIDER.LoadIO.IFolderSelectionInterface.LastSelected

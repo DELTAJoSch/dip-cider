@@ -1,0 +1,74 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.LoadIO
+  commentId: N:CIDER.LoadIO
+  id: CIDER.LoadIO
+  children:
+  - CIDER.LoadIO.FileIO
+  - CIDER.LoadIO.FolderChecker
+  - CIDER.LoadIO.FolderSelector
+  - CIDER.LoadIO.IChecker
+  - CIDER.LoadIO.IFolderSelectionInterface
+  - CIDER.LoadIO.IIO
+  - CIDER.LoadIO.IRead
+  - CIDER.LoadIO.Reader
+  langs:
+  - csharp
+  - vb
+  name: CIDER.LoadIO
+  nameWithType: CIDER.LoadIO
+  fullName: CIDER.LoadIO
+  type: Namespace
+  assemblies:
+  - CIDER
+references:
+- uid: CIDER.LoadIO.FileIO
+  commentId: T:CIDER.LoadIO.FileIO
+  parent: CIDER.LoadIO
+  name: FileIO
+  nameWithType: FileIO
+  fullName: CIDER.LoadIO.FileIO
+- uid: CIDER.LoadIO.Reader
+  commentId: T:CIDER.LoadIO.Reader
+  name: Reader
+  nameWithType: Reader
+  fullName: CIDER.LoadIO.Reader
+- uid: CIDER.LoadIO.IIO
+  commentId: T:CIDER.LoadIO.IIO
+  parent: CIDER.LoadIO
+  name: IIO
+  nameWithType: IIO
+  fullName: CIDER.LoadIO.IIO
+- uid: CIDER.LoadIO.IRead
+  commentId: T:CIDER.LoadIO.IRead
+  parent: CIDER.LoadIO
+  name: IRead
+  nameWithType: IRead
+  fullName: CIDER.LoadIO.IRead
+- uid: CIDER.LoadIO.FolderChecker
+  commentId: T:CIDER.LoadIO.FolderChecker
+  name: FolderChecker
+  nameWithType: FolderChecker
+  fullName: CIDER.LoadIO.FolderChecker
+- uid: CIDER.LoadIO.IChecker
+  commentId: T:CIDER.LoadIO.IChecker
+  parent: CIDER.LoadIO
+  name: IChecker
+  nameWithType: IChecker
+  fullName: CIDER.LoadIO.IChecker
+- uid: CIDER.LoadIO.FolderSelector
+  commentId: T:CIDER.LoadIO.FolderSelector
+  name: FolderSelector
+  nameWithType: FolderSelector
+  fullName: CIDER.LoadIO.FolderSelector
+- uid: CIDER.LoadIO.IFolderSelectionInterface
+  commentId: T:CIDER.LoadIO.IFolderSelectionInterface
+  parent: CIDER.LoadIO
+  name: IFolderSelectionInterface
+  nameWithType: IFolderSelectionInterface
+  fullName: CIDER.LoadIO.IFolderSelectionInterface
+- uid: CIDER.LoadIO
+  commentId: N:CIDER.LoadIO
+  name: CIDER.LoadIO
+  nameWithType: CIDER.LoadIO
+  fullName: CIDER.LoadIO

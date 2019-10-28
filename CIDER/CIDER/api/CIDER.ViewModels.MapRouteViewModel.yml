@@ -1,0 +1,943 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.ViewModels.MapRouteViewModel
+  commentId: T:CIDER.ViewModels.MapRouteViewModel
+  id: MapRouteViewModel
+  parent: CIDER.ViewModels
+  children:
+  - CIDER.ViewModels.MapRouteViewModel.#ctor(CIDER.DataProvider)
+  - CIDER.ViewModels.MapRouteViewModel.APIKey
+  - CIDER.ViewModels.MapRouteViewModel.CalculateCenter
+  - CIDER.ViewModels.MapRouteViewModel.Initialize
+  - CIDER.ViewModels.MapRouteViewModel.MapCenter
+  - CIDER.ViewModels.MapRouteViewModel.MapPolylines
+  - CIDER.ViewModels.MapRouteViewModel.MapZoomLevel
+  - CIDER.ViewModels.MapRouteViewModel.RouteChangedEvent
+  langs:
+  - csharp
+  - vb
+  name: MapRouteViewModel
+  nameWithType: MapRouteViewModel
+  fullName: CIDER.ViewModels.MapRouteViewModel
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: MapRouteViewModel
+    path: ViewModels/MapRouteViewModel.cs
+    startLine: 8
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: 'public class MapRouteViewModel : ViewModelBase, INotifyPropertyChanged'
+    content.vb: >-
+      Public Class MapRouteViewModel
+
+          Inherits ViewModelBase
+
+          Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - CIDER.MVVMBase.ViewModelBase
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - CIDER.MVVMBase.ViewModelBase.logger
+  - CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  - CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.ViewModels.MapRouteViewModel.RouteChangedEvent
+  commentId: E:CIDER.ViewModels.MapRouteViewModel.RouteChangedEvent
+  id: RouteChangedEvent
+  parent: CIDER.ViewModels.MapRouteViewModel
+  langs:
+  - csharp
+  - vb
+  name: RouteChangedEvent
+  nameWithType: MapRouteViewModel.RouteChangedEvent
+  fullName: CIDER.ViewModels.MapRouteViewModel.RouteChangedEvent
+  type: Event
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: RouteChangedEvent
+    path: ViewModels/MapRouteViewModel.cs
+    startLine: 15
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public event EventHandler RouteChangedEvent
+    return:
+      type: System.EventHandler
+    content.vb: Public Event RouteChangedEvent As EventHandler
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.MapRouteViewModel.#ctor(CIDER.DataProvider)
+  commentId: M:CIDER.ViewModels.MapRouteViewModel.#ctor(CIDER.DataProvider)
+  id: '#ctor(CIDER.DataProvider)'
+  parent: CIDER.ViewModels.MapRouteViewModel
+  langs:
+  - csharp
+  - vb
+  name: MapRouteViewModel(DataProvider)
+  nameWithType: MapRouteViewModel.MapRouteViewModel(DataProvider)
+  fullName: CIDER.ViewModels.MapRouteViewModel.MapRouteViewModel(CIDER.DataProvider)
+  type: Constructor
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: .ctor
+    path: ViewModels/MapRouteViewModel.cs
+    startLine: 20
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public MapRouteViewModel(DataProvider data)
+    parameters:
+    - id: data
+      type: CIDER.DataProvider
+    content.vb: Public Sub New(data As DataProvider)
+  overload: CIDER.ViewModels.MapRouteViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.MapRouteViewModel.APIKey
+  commentId: P:CIDER.ViewModels.MapRouteViewModel.APIKey
+  id: APIKey
+  parent: CIDER.ViewModels.MapRouteViewModel
+  langs:
+  - csharp
+  - vb
+  name: APIKey
+  nameWithType: MapRouteViewModel.APIKey
+  fullName: CIDER.ViewModels.MapRouteViewModel.APIKey
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: APIKey
+    path: ViewModels/MapRouteViewModel.cs
+    startLine: 39
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public ApplicationIdCredentialsProvider APIKey { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Maps.MapControl.WPF.ApplicationIdCredentialsProvider
+    content.vb: Public Property APIKey As ApplicationIdCredentialsProvider
+  overload: CIDER.ViewModels.MapRouteViewModel.APIKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.MapRouteViewModel.MapPolylines
+  commentId: P:CIDER.ViewModels.MapRouteViewModel.MapPolylines
+  id: MapPolylines
+  parent: CIDER.ViewModels.MapRouteViewModel
+  langs:
+  - csharp
+  - vb
+  name: MapPolylines
+  nameWithType: MapRouteViewModel.MapPolylines
+  fullName: CIDER.ViewModels.MapRouteViewModel.MapPolylines
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: MapPolylines
+    path: ViewModels/MapRouteViewModel.cs
+    startLine: 40
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public List<MapPolyline> MapPolylines { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Microsoft.Maps.MapControl.WPF.MapPolyline}
+    content.vb: Public ReadOnly Property MapPolylines As List(Of MapPolyline)
+  overload: CIDER.ViewModels.MapRouteViewModel.MapPolylines*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.MapRouteViewModel.MapCenter
+  commentId: F:CIDER.ViewModels.MapRouteViewModel.MapCenter
+  id: MapCenter
+  parent: CIDER.ViewModels.MapRouteViewModel
+  langs:
+  - csharp
+  - vb
+  name: MapCenter
+  nameWithType: MapRouteViewModel.MapCenter
+  fullName: CIDER.ViewModels.MapRouteViewModel.MapCenter
+  type: Field
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: MapCenter
+    path: ViewModels/MapRouteViewModel.cs
+    startLine: 41
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public Location MapCenter
+    return:
+      type: Microsoft.Maps.MapControl.WPF.Location
+    content.vb: Public MapCenter As Location
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.MapRouteViewModel.MapZoomLevel
+  commentId: F:CIDER.ViewModels.MapRouteViewModel.MapZoomLevel
+  id: MapZoomLevel
+  parent: CIDER.ViewModels.MapRouteViewModel
+  langs:
+  - csharp
+  - vb
+  name: MapZoomLevel
+  nameWithType: MapRouteViewModel.MapZoomLevel
+  fullName: CIDER.ViewModels.MapRouteViewModel.MapZoomLevel
+  type: Field
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: MapZoomLevel
+    path: ViewModels/MapRouteViewModel.cs
+    startLine: 42
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public double MapZoomLevel
+    return:
+      type: System.Double
+    content.vb: Public MapZoomLevel As Double
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.MapRouteViewModel.Initialize
+  commentId: M:CIDER.ViewModels.MapRouteViewModel.Initialize
+  id: Initialize
+  parent: CIDER.ViewModels.MapRouteViewModel
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: MapRouteViewModel.Initialize()
+  fullName: CIDER.ViewModels.MapRouteViewModel.Initialize()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Initialize
+    path: ViewModels/MapRouteViewModel.cs
+    startLine: 44
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public void Initialize()
+    content.vb: Public Sub Initialize
+  overload: CIDER.ViewModels.MapRouteViewModel.Initialize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.MapRouteViewModel.CalculateCenter
+  commentId: M:CIDER.ViewModels.MapRouteViewModel.CalculateCenter
+  id: CalculateCenter
+  parent: CIDER.ViewModels.MapRouteViewModel
+  langs:
+  - csharp
+  - vb
+  name: CalculateCenter()
+  nameWithType: MapRouteViewModel.CalculateCenter()
+  fullName: CIDER.ViewModels.MapRouteViewModel.CalculateCenter()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: CalculateCenter
+    path: ViewModels/MapRouteViewModel.cs
+    startLine: 52
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  syntax:
+    content: public void CalculateCenter()
+    content.vb: Public Sub CalculateCenter
+  overload: CIDER.ViewModels.MapRouteViewModel.CalculateCenter*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER.ViewModels
+  commentId: N:CIDER.ViewModels
+  name: CIDER.ViewModels
+  nameWithType: CIDER.ViewModels
+  fullName: CIDER.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CIDER.MVVMBase.ViewModelBase
+  commentId: T:CIDER.MVVMBase.ViewModelBase
+  parent: CIDER.MVVMBase
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: CIDER.MVVMBase.ViewModelBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.logger
+  commentId: F:CIDER.MVVMBase.ViewModelBase.logger
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: logger
+  nameWithType: ViewModelBase.logger
+  fullName: CIDER.MVVMBase.ViewModelBase.logger
+- uid: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  commentId: E:CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+  fullName: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  parent: CIDER.MVVMBase.ViewModelBase
+  definition: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.MVVMBase
+  commentId: N:CIDER.MVVMBase
+  name: CIDER.MVVMBase
+  nameWithType: CIDER.MVVMBase
+  fullName: CIDER.MVVMBase
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
+- uid: CIDER.ViewModels.MapRouteViewModel.#ctor*
+  commentId: Overload:CIDER.ViewModels.MapRouteViewModel.#ctor
+  name: MapRouteViewModel
+  nameWithType: MapRouteViewModel.MapRouteViewModel
+  fullName: CIDER.ViewModels.MapRouteViewModel.MapRouteViewModel
+- uid: CIDER.DataProvider
+  commentId: T:CIDER.DataProvider
+  parent: CIDER
+  name: DataProvider
+  nameWithType: DataProvider
+  fullName: CIDER.DataProvider
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: CIDER.ViewModels.MapRouteViewModel.APIKey*
+  commentId: Overload:CIDER.ViewModels.MapRouteViewModel.APIKey
+  name: APIKey
+  nameWithType: MapRouteViewModel.APIKey
+  fullName: CIDER.ViewModels.MapRouteViewModel.APIKey
+- uid: Microsoft.Maps.MapControl.WPF.ApplicationIdCredentialsProvider
+  commentId: T:Microsoft.Maps.MapControl.WPF.ApplicationIdCredentialsProvider
+  parent: Microsoft.Maps.MapControl.WPF
+  isExternal: true
+  name: ApplicationIdCredentialsProvider
+  nameWithType: ApplicationIdCredentialsProvider
+  fullName: Microsoft.Maps.MapControl.WPF.ApplicationIdCredentialsProvider
+- uid: Microsoft.Maps.MapControl.WPF
+  commentId: N:Microsoft.Maps.MapControl.WPF
+  isExternal: true
+  name: Microsoft.Maps.MapControl.WPF
+  nameWithType: Microsoft.Maps.MapControl.WPF
+  fullName: Microsoft.Maps.MapControl.WPF
+- uid: CIDER.ViewModels.MapRouteViewModel.MapPolylines*
+  commentId: Overload:CIDER.ViewModels.MapRouteViewModel.MapPolylines
+  name: MapPolylines
+  nameWithType: MapRouteViewModel.MapPolylines
+  fullName: CIDER.ViewModels.MapRouteViewModel.MapPolylines
+- uid: System.Collections.Generic.List{Microsoft.Maps.MapControl.WPF.MapPolyline}
+  commentId: T:System.Collections.Generic.List{Microsoft.Maps.MapControl.WPF.MapPolyline}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MapPolyline>
+  nameWithType: List<MapPolyline>
+  fullName: System.Collections.Generic.List<Microsoft.Maps.MapControl.WPF.MapPolyline>
+  nameWithType.vb: List(Of MapPolyline)
+  fullName.vb: System.Collections.Generic.List(Of Microsoft.Maps.MapControl.WPF.MapPolyline)
+  name.vb: List(Of MapPolyline)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Maps.MapControl.WPF.MapPolyline
+    name: MapPolyline
+    nameWithType: MapPolyline
+    fullName: Microsoft.Maps.MapControl.WPF.MapPolyline
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Maps.MapControl.WPF.MapPolyline
+    name: MapPolyline
+    nameWithType: MapPolyline
+    fullName: Microsoft.Maps.MapControl.WPF.MapPolyline
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Maps.MapControl.WPF.Location
+  commentId: T:Microsoft.Maps.MapControl.WPF.Location
+  parent: Microsoft.Maps.MapControl.WPF
+  isExternal: true
+  name: Location
+  nameWithType: Location
+  fullName: Microsoft.Maps.MapControl.WPF.Location
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: CIDER.ViewModels.MapRouteViewModel.Initialize*
+  commentId: Overload:CIDER.ViewModels.MapRouteViewModel.Initialize
+  name: Initialize
+  nameWithType: MapRouteViewModel.Initialize
+  fullName: CIDER.ViewModels.MapRouteViewModel.Initialize
+- uid: CIDER.ViewModels.MapRouteViewModel.CalculateCenter*
+  commentId: Overload:CIDER.ViewModels.MapRouteViewModel.CalculateCenter
+  name: CalculateCenter
+  nameWithType: MapRouteViewModel.CalculateCenter
+  fullName: CIDER.ViewModels.MapRouteViewModel.CalculateCenter

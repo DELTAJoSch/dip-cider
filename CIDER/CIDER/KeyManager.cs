@@ -124,7 +124,7 @@ namespace CIDER
                         if (!foundKEY)
                             list.Add($"KEY:{dialog.FileName}");
 
-                        _reader.WriteAllLines((string[])list.ToArray(), "CIDER.cfg");
+                        _reader.WriteAllLines((string[])list.ToArray(typeof(string)), "CIDER.cfg");
 
                     }
                     catch (Exception ex)

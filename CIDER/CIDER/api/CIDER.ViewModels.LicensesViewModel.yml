@@ -1,0 +1,754 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.ViewModels.LicensesViewModel
+  commentId: T:CIDER.ViewModels.LicensesViewModel
+  id: LicensesViewModel
+  parent: CIDER.ViewModels
+  children:
+  - CIDER.ViewModels.LicensesViewModel.#ctor
+  - CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged
+  - CIDER.ViewModels.LicensesViewModel.CommandAcceptEnabled
+  - CIDER.ViewModels.LicensesViewModel.LicensesText
+  - CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement
+  langs:
+  - csharp
+  - vb
+  name: LicensesViewModel
+  nameWithType: LicensesViewModel
+  fullName: CIDER.ViewModels.LicensesViewModel
+  type: Class
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LicensesViewModel
+    path: ViewModels/LicensesViewModel.cs
+    startLine: 14
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  summary: "\nThis is the ViewModel for the License Window.\nThe purpose of this class is to handle all the interaction logic for the License Window.\n"
+  example: []
+  syntax:
+    content: 'public class LicensesViewModel : ViewModelBase, INotifyPropertyChanged'
+    content.vb: >-
+      Public Class LicensesViewModel
+
+          Inherits ViewModelBase
+
+          Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - CIDER.MVVMBase.ViewModelBase
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - CIDER.MVVMBase.ViewModelBase.logger
+  - CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  - CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: CIDER.ViewModels.LicensesViewModel.#ctor
+  commentId: M:CIDER.ViewModels.LicensesViewModel.#ctor
+  id: '#ctor'
+  parent: CIDER.ViewModels.LicensesViewModel
+  langs:
+  - csharp
+  - vb
+  name: LicensesViewModel()
+  nameWithType: LicensesViewModel.LicensesViewModel()
+  fullName: CIDER.ViewModels.LicensesViewModel.LicensesViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: .ctor
+    path: ViewModels/LicensesViewModel.cs
+    startLine: 23
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  summary: "\nThis is the constructor for the LicensesViewModel\n"
+  example: []
+  syntax:
+    content: public LicensesViewModel()
+    content.vb: Public Sub New
+  overload: CIDER.ViewModels.LicensesViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement
+  commentId: M:CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement
+  id: SaveAcceptAgreement
+  parent: CIDER.ViewModels.LicensesViewModel
+  langs:
+  - csharp
+  - vb
+  name: SaveAcceptAgreement()
+  nameWithType: LicensesViewModel.SaveAcceptAgreement()
+  fullName: CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: SaveAcceptAgreement
+    path: ViewModels/LicensesViewModel.cs
+    startLine: 37
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  summary: "\nThis function is called when the accept button is pressed, just before the window closes.\n"
+  example: []
+  syntax:
+    content: public void SaveAcceptAgreement()
+    content.vb: Public Sub SaveAcceptAgreement
+  overload: CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged
+  commentId: P:CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged
+  id: CheckboxStateChanged
+  parent: CIDER.ViewModels.LicensesViewModel
+  langs:
+  - csharp
+  - vb
+  name: CheckboxStateChanged
+  nameWithType: LicensesViewModel.CheckboxStateChanged
+  fullName: CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: CheckboxStateChanged
+    path: ViewModels/LicensesViewModel.cs
+    startLine: 51
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  summary: "\nThis is the command handler for the checkbox state.\n"
+  example: []
+  syntax:
+    content: public ICommand CheckboxStateChanged { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property CheckboxStateChanged As ICommand
+  overload: CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: CIDER.ViewModels.LicensesViewModel.LicensesText
+  commentId: P:CIDER.ViewModels.LicensesViewModel.LicensesText
+  id: LicensesText
+  parent: CIDER.ViewModels.LicensesViewModel
+  langs:
+  - csharp
+  - vb
+  name: LicensesText
+  nameWithType: LicensesViewModel.LicensesText
+  fullName: CIDER.ViewModels.LicensesViewModel.LicensesText
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LicensesText
+    path: ViewModels/LicensesViewModel.cs
+    startLine: 56
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  summary: "\nThis is the Data Binding for the license text (textbox)\n"
+  example: []
+  syntax:
+    content: public string LicensesText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LicensesText As String
+  overload: CIDER.ViewModels.LicensesViewModel.LicensesText*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.LicensesViewModel.CommandAcceptEnabled
+  commentId: P:CIDER.ViewModels.LicensesViewModel.CommandAcceptEnabled
+  id: CommandAcceptEnabled
+  parent: CIDER.ViewModels.LicensesViewModel
+  langs:
+  - csharp
+  - vb
+  name: CommandAcceptEnabled
+  nameWithType: LicensesViewModel.CommandAcceptEnabled
+  fullName: CIDER.ViewModels.LicensesViewModel.CommandAcceptEnabled
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: CommandAcceptEnabled
+    path: ViewModels/LicensesViewModel.cs
+    startLine: 61
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  summary: "\nThis is the Data Binding for the enabled state of the accept button\n"
+  example: []
+  syntax:
+    content: public bool CommandAcceptEnabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property CommandAcceptEnabled As Boolean
+  overload: CIDER.ViewModels.LicensesViewModel.CommandAcceptEnabled*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: CIDER.ViewModels
+  commentId: N:CIDER.ViewModels
+  name: CIDER.ViewModels
+  nameWithType: CIDER.ViewModels
+  fullName: CIDER.ViewModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CIDER.MVVMBase.ViewModelBase
+  commentId: T:CIDER.MVVMBase.ViewModelBase
+  parent: CIDER.MVVMBase
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: CIDER.MVVMBase.ViewModelBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.logger
+  commentId: F:CIDER.MVVMBase.ViewModelBase.logger
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: logger
+  nameWithType: ViewModelBase.logger
+  fullName: CIDER.MVVMBase.ViewModelBase.logger
+- uid: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  commentId: E:CIDER.MVVMBase.ViewModelBase.PropertyChanged
+  parent: CIDER.MVVMBase.ViewModelBase
+  name: PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+  fullName: CIDER.MVVMBase.ViewModelBase.PropertyChanged
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  parent: CIDER.MVVMBase.ViewModelBase
+  definition: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.MVVMBase
+  commentId: N:CIDER.MVVMBase
+  name: CIDER.MVVMBase
+  nameWithType: CIDER.MVVMBase
+  fullName: CIDER.MVVMBase
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+- uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  name: SetProperty<T>(T, T, String)
+  nameWithType: ViewModelBase.SetProperty<T>(T, T, String)
+  fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>(T, T, System.String)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)(T, T, System.String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty<T>
+    nameWithType: ViewModelBase.SetProperty<T>
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.MVVMBase.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty(Of T)
+    nameWithType: ViewModelBase.SetProperty(Of T)
+    fullName: CIDER.MVVMBase.ViewModelBase.SetProperty(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: CIDER.ViewModels.LicensesViewModel.#ctor*
+  commentId: Overload:CIDER.ViewModels.LicensesViewModel.#ctor
+  name: LicensesViewModel
+  nameWithType: LicensesViewModel.LicensesViewModel
+  fullName: CIDER.ViewModels.LicensesViewModel.LicensesViewModel
+- uid: CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement*
+  commentId: Overload:CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement
+  name: SaveAcceptAgreement
+  nameWithType: LicensesViewModel.SaveAcceptAgreement
+  fullName: CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement
+- uid: CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged*
+  commentId: Overload:CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged
+  name: CheckboxStateChanged
+  nameWithType: LicensesViewModel.CheckboxStateChanged
+  fullName: CIDER.ViewModels.LicensesViewModel.CheckboxStateChanged
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
+- uid: CIDER.ViewModels.LicensesViewModel.LicensesText*
+  commentId: Overload:CIDER.ViewModels.LicensesViewModel.LicensesText
+  name: LicensesText
+  nameWithType: LicensesViewModel.LicensesText
+  fullName: CIDER.ViewModels.LicensesViewModel.LicensesText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: CIDER.ViewModels.LicensesViewModel.CommandAcceptEnabled*
+  commentId: Overload:CIDER.ViewModels.LicensesViewModel.CommandAcceptEnabled
+  name: CommandAcceptEnabled
+  nameWithType: LicensesViewModel.CommandAcceptEnabled
+  fullName: CIDER.ViewModels.LicensesViewModel.CommandAcceptEnabled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
