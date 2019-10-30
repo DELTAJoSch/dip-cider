@@ -21,10 +21,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Reader
     path: LoadIO/FileIO.cs
-    startLine: 250
+    startLine: 270
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis class implements the IRead interface. It is used to load the contents of trhe selected files\n"
+  example: []
   syntax:
     content: 'public class Reader : IRead'
     content.vb: >-
@@ -66,18 +68,22 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadLinesCsv
     path: LoadIO/FileIO.cs
-    startLine: 252
+    startLine: 277
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis reads all the lines in a .csv file\n"
+  example: []
   syntax:
-    content: public string[] ReadLinesCsv(string path)
+    content: public string[] ReadLinesCsv(string Path)
     parameters:
-    - id: path
+    - id: Path
       type: System.String
+      description: A path to the .csv file
     return:
       type: System.String[]
-    content.vb: Public Function ReadLinesCsv(path As String) As String()
+      description: Returns a string array with the file contents
+    content.vb: Public Function ReadLinesCsv(Path As String) As String()
   overload: CIDER.LoadIO.Reader.ReadLinesCsv*
   implements:
   - CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
@@ -103,18 +109,22 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadLinesNmea
     path: LoadIO/FileIO.cs
-    startLine: 258
+    startLine: 288
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis reads all the lines in a .nmea file\n"
+  example: []
   syntax:
-    content: public string[] ReadLinesNmea(string path)
+    content: public string[] ReadLinesNmea(string Path)
     parameters:
-    - id: path
+    - id: Path
       type: System.String
+      description: A path to the .nmea file
     return:
       type: System.String[]
-    content.vb: Public Function ReadLinesNmea(path As String) As String()
+      description: Returns a string array with the file contents
+    content.vb: Public Function ReadLinesNmea(Path As String) As String()
   overload: CIDER.LoadIO.Reader.ReadLinesNmea*
   implements:
   - CIDER.LoadIO.IRead.ReadLinesNmea(System.String)

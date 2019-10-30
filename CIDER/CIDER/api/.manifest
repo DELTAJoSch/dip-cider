@@ -18,6 +18,7 @@
   "CIDER.DataProvider.#ctor": "CIDER.DataProvider.yml",
   "CIDER.DataProvider.APIKey": "CIDER.DataProvider.yml",
   "CIDER.DataProvider.AverageSattelitesInUse": "CIDER.DataProvider.yml",
+  "CIDER.DataProvider.ClearData": "CIDER.DataProvider.yml",
   "CIDER.DataProvider.DataPointsAcceleration": "CIDER.DataProvider.yml",
   "CIDER.DataProvider.DataPointsAngle": "CIDER.DataProvider.yml",
   "CIDER.DataProvider.DataPointsVelocity": "CIDER.DataProvider.yml",

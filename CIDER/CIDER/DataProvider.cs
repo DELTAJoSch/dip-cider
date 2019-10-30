@@ -171,9 +171,11 @@ namespace CIDER
             }
         }
 
-        internal bool ClearData()
-        //  This allows the load function to clear the data. If if this is not done the data just keeps on being added to the end of the existing data - growing indefinitely
-        //  The only other option to this would be to create a new object to write into and then do a deep copy into this object.
+        /// <summary>
+        /// This function allows to clear the data stored in this object - without creating a new one
+        /// </summary>
+        /// <returns>True if the function was sucessful</returns>
+        public bool ClearData()
         {
             try
             {

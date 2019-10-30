@@ -21,10 +21,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FolderSelector
     path: LoadIO/FolderSelector.cs
-    startLine: 4
+    startLine: 8
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis class implements the Folderselectioninterface. This class can show a Userinterface allowing the user to select a folder.\nIf the user exits the dialog without selecting a folder, an exception will be thrown\n"
+  example: []
   syntax:
     content: 'public class FolderSelector : IFolderSelectionInterface'
     content.vb: >-
@@ -66,10 +68,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LastSelected
     path: LoadIO/FolderSelector.cs
-    startLine: 11
+    startLine: 16
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis property contains the path last selected by the user\n"
+  example: []
   syntax:
     content: public string LastSelected { get; }
     parameters: []
@@ -103,14 +107,17 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SelectFolder
     path: LoadIO/FolderSelector.cs
-    startLine: 14
+    startLine: 22
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis Function shows a Dialog prompting the user to select a folder\n"
+  example: []
   syntax:
     content: public string SelectFolder()
     return:
       type: System.String
+      description: A Path to the selected file
     content.vb: Public Function SelectFolder As String
   overload: CIDER.LoadIO.FolderSelector.SelectFolder*
   implements:

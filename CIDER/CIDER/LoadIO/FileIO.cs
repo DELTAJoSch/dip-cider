@@ -9,21 +9,31 @@ using System.Threading.Tasks;
 
 namespace CIDER.LoadIO
 {
+    /// <summary>
+    /// This class contains all the necessary parsing and file IO used in loading a CIDER data folder
+    /// </summary>
     public class FileIO : IIO
     {
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private int failedParses;
 
-        public async void ReadCSV(DataProvider data, string path, IRead read, MainWindowViewModel main)
+        /// <summary>
+        /// This function reads the .csv part of the data folder
+        /// </summary>
+        /// <param name="Data">A DataProvider object to store the ingested data in</param>
+        /// <param name="Path">A path to the folder to the .csv file</param>
+        /// <param name="Read">An object implementing the IRead interface</param>
+        /// <param name="Main">A MainWindowViewModel object to toggle the buttons from</param>
+        public async void ReadCSV(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main)
         {
             logger.Debug("Starting CSV ingestion.");
 
             try
             {
-                main.ButtonState(false);
+                Main.ButtonState(false);
                 await Task.Run(() =>
                 {
-                    string[] lines = read.ReadLinesCsv(path);
+                    string[] lines = Read.ReadLinesCsv(Path);
 
                     List<Tuple<float, float>> DataLsb = new List<Tuple<float, float>>();
 
@@ -35,13 +45,13 @@ namespace CIDER.LoadIO
                         {
                             try
                             {
-                                data.RouteDate = Convert.ToDateTime(split[1]);
+                                Data.RouteDate = Convert.ToDateTime(split[1]);
                             }
                             catch (Exception ex)
                             {
                                 logger.Error(ex, "Couldn't convert to DateTime");
                             }
-                            data.RouteName = split[2];
+                            Data.RouteName = split[2];
                         }
 
                         if (split[0] == "Dat")
@@ -50,9 +60,9 @@ namespace CIDER.LoadIO
                             {
                                 var tp = new Tuple<float, float, float>(float.Parse(split[1]), float.Parse(split[2]), float.Parse(split[3]));
 
-                                data.XAcceleration.Add(tp.Item1);
-                                data.YAcceleration.Add(tp.Item2);
-                                data.ZAcceleration.Add(tp.Item3);
+                                Data.XAcceleration.Add(tp.Item1);
+                                Data.YAcceleration.Add(tp.Item2);
+                                Data.ZAcceleration.Add(tp.Item3);
                             }
                             catch (Exception ex)
                             {
@@ -80,7 +90,7 @@ namespace CIDER.LoadIO
                                     heading = Math.Atan(xGaussData / yGaussData) * (180 / Math.PI);
                                 }
 
-                                data.Heading.Add((float)heading);
+                                Data.Heading.Add((float)heading);
                             }
                             catch (Exception ex)
                             {
@@ -88,7 +98,7 @@ namespace CIDER.LoadIO
                             }
                             try
                             {
-                                data.Height.Add(float.Parse(split[6]));
+                                Data.Height.Add(float.Parse(split[6]));
                             }
                             catch (Exception ex)
                             {
@@ -96,7 +106,7 @@ namespace CIDER.LoadIO
                             }
                             try
                             {
-                                data.Pressure.Add(float.Parse(split[7]));
+                                Data.Pressure.Add(float.Parse(split[7]));
                             }
                             catch (Exception ex)
                             {
@@ -105,19 +115,19 @@ namespace CIDER.LoadIO
                         }
                     }
 
-                    data.DataPointsAcceleration = Math.Min(data.XAcceleration.Count, data.YAcceleration.Count);
-                    data.DataPointsAcceleration = Math.Min(data.DataPointsAcceleration, data.ZAcceleration.Count);
+                    Data.DataPointsAcceleration = Math.Min(Data.XAcceleration.Count, Data.YAcceleration.Count);
+                    Data.DataPointsAcceleration = Math.Min(Data.DataPointsAcceleration, Data.ZAcceleration.Count);
                 });
 
-                for (int i = 0; i < data.DataPointsAcceleration; i++)
+                for (int i = 0; i < Data.DataPointsAcceleration; i++)
                 {
                     try
                     {
-                        var Angle = ExtraMath.CalculateAngle(data.XAcceleration.ElementAt(i), data.YAcceleration.ElementAt(i), data.ZAcceleration.ElementAt(i));
+                        var Angle = ExtraMath.CalculateAngle(Data.XAcceleration.ElementAt(i), Data.YAcceleration.ElementAt(i), Data.ZAcceleration.ElementAt(i));
 
-                        data.Roll.Add(Angle.Item1);
-                        data.Pitch.Add(Angle.Item2);
-                        data.Yaw.Add(Angle.Item3);
+                        Data.Roll.Add(Angle.Item1);
+                        Data.Pitch.Add(Angle.Item2);
+                        Data.Yaw.Add(Angle.Item3);
                     }
                     catch (Exception ex)
                     {
@@ -125,8 +135,8 @@ namespace CIDER.LoadIO
                     }
                 }
 
-                data.DataPointsAngle = Math.Min(data.Roll.Count, data.Pitch.Count);
-                data.DataPointsAngle = Math.Min(data.DataPointsAngle, data.Yaw.Count);
+                Data.DataPointsAngle = Math.Min(Data.Roll.Count, Data.Pitch.Count);
+                Data.DataPointsAngle = Math.Min(Data.DataPointsAngle, Data.Yaw.Count);
             }
             catch (Exception ex)
             {
@@ -135,7 +145,14 @@ namespace CIDER.LoadIO
             logger.Debug("CSV ingestion finished.");
         }
 
-        public async void ReadNmea(DataProvider Data, string path, IRead read, MainWindowViewModel main)
+        /// <summary>
+        /// This function ingests the .nmea file of a valid CIDER data folder
+        /// </summary>
+        /// <param name="Data">A DataProvider object to store the ingested data in</param>
+        /// <param name="Path">A path to the folder to the .nmea file</param>
+        /// <param name="Read">An object implementing the IRead interface</param>
+        /// <param name="Main">A MainWindowViewModel object to toggle the buttons from</param>
+        public async void ReadNmea(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main)
         {
             failedParses = 0;
             bool first = true;
@@ -145,7 +162,7 @@ namespace CIDER.LoadIO
             {
                 try
                 {
-                    string[] lines = read.ReadLinesNmea(path);
+                    string[] lines = Read.ReadLinesNmea(Path);
 
                     foreach (string line in lines)
                     {
@@ -171,7 +188,7 @@ namespace CIDER.LoadIO
             });
 
             logger.Debug("NMEA ingestion finished.");
-            main.ButtonState(true);
+            Main.ButtonState(true);
         }
 
         private void RMC(string Nmea, DataProvider Data, bool First)
@@ -248,38 +265,82 @@ namespace CIDER.LoadIO
         }
     }
 
+    /// <summary>
+    /// This class implements the IRead interface. It is used to load the contents of trhe selected files
+    /// </summary>
     public class Reader : IRead
     {
-        public string[] ReadLinesCsv(string path)
+        /// <summary>
+        /// This reads all the lines in a .csv file
+        /// </summary>
+        /// <param name="Path">A path to the .csv file</param>
+        /// <returns>Returns a string array with the file contents</returns>
+        public string[] ReadLinesCsv(string Path)
         {
-            string name = GetFolderName(path);
-            return File.ReadAllLines(path + "\\" + name + ".csv");
+            string name = GetFolderName(Path);
+            return File.ReadAllLines($"{Path}\\{name}.csv");
         }
 
-        public string[] ReadLinesNmea(string path)
+        /// <summary>
+        /// This reads all the lines in a .nmea file
+        /// </summary>
+        /// <param name="Path">A path to the .nmea file</param>
+        /// <returns>Returns a string array with the file contents</returns>
+        public string[] ReadLinesNmea(string Path)
         {
-            string name = GetFolderName(path);
-            return File.ReadAllLines(path + "\\" + name + ".nmea");
+            string name = GetFolderName(Path);
+            return File.ReadAllLines($"{Path}\\{name}.nmea");
         }
 
-        private string GetFolderName(string path)
+        private string GetFolderName(string Path)
         {
-            string[] splitter = path.Split('\\');
+            string[] splitter = Path.Split('\\');
             return splitter.Last();
         }
     }
 
+    /// <summary>
+    /// This interface should be implemented by classes being used to parse nmea and csv files
+    /// </summary>
     public interface IIO
     {
-        void ReadNmea(DataProvider data, string path, IRead read, MainWindowViewModel main);
+        /// <summary>
+        /// This function should ingest the .nmea file of a valid CIDER data folder
+        /// </summary>
+        /// <param name="Data">A DataProvider object to store the ingested data in</param>
+        /// <param name="Path">A path to the folder to the .nmea file</param>
+        /// <param name="Read">An object implementing the IRead interface</param>
+        /// <param name="Main">A MainWindowViewModel object to toggle the buttons from</param>
+        void ReadNmea(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main);
 
-        void ReadCSV(DataProvider data, string path, IRead read, MainWindowViewModel main);
+        /// <summary>
+        /// This function should ingest the .csv file of a valid CIDER data folder
+        /// </summary>
+        /// <param name="Data">A DataProvider object to store the ingested data in</param>
+        /// <param name="Path">A path to the folder to the .nmea file</param>
+        /// <param name="Read">An object implementing the IRead interface</param>
+        /// <param name="Main">A MainWindowViewModel object to toggle the buttons from</param>
+        void ReadCSV(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main);
     }
 
+    /// <summary>
+    /// This interface should be implemented by classes being used to read nmea and csv files
+    /// </summary>
     public interface IRead
     {
-        string[] ReadLinesNmea(string path);
+        /// <summary>
+        /// This function should return the file contents of a .nmea file
+        /// </summary>
+        /// <param name="Path">A path to the file</param>
+        /// <returns>The file contents</returns>
+        string[] ReadLinesNmea(string Path);
 
-        string[] ReadLinesCsv(string path);
+
+        /// <summary>
+        /// This function should return the contents of a .csv file
+        /// </summary>
+        /// <param name="Path">A path to the file</param>
+        /// <returns>The file contents</returns>
+        string[] ReadLinesCsv(string Path);
     }
 }

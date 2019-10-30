@@ -21,10 +21,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IRead
     path: LoadIO/FileIO.cs
-    startLine: 278
+    startLine: 328
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis interface should be implemented by classes being used to read nmea and csv files\n"
+  example: []
   syntax:
     content: public interface IRead
     content.vb: Public Interface IRead
@@ -52,18 +54,22 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadLinesNmea
     path: LoadIO/FileIO.cs
-    startLine: 280
+    startLine: 335
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis function should return the file contents of a .nmea file\n"
+  example: []
   syntax:
-    content: string[] ReadLinesNmea(string path)
+    content: string[] ReadLinesNmea(string Path)
     parameters:
-    - id: path
+    - id: Path
       type: System.String
+      description: A path to the file
     return:
       type: System.String[]
-    content.vb: Function ReadLinesNmea(path As String) As String()
+      description: The file contents
+    content.vb: Function ReadLinesNmea(Path As String) As String()
   overload: CIDER.LoadIO.IRead.ReadLinesNmea*
 - uid: CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
   commentId: M:CIDER.LoadIO.IRead.ReadLinesCsv(System.String)
@@ -83,18 +89,22 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadLinesCsv
     path: LoadIO/FileIO.cs
-    startLine: 282
+    startLine: 343
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis function should return the contents of a .csv file\n"
+  example: []
   syntax:
-    content: string[] ReadLinesCsv(string path)
+    content: string[] ReadLinesCsv(string Path)
     parameters:
-    - id: path
+    - id: Path
       type: System.String
+      description: A path to the file
     return:
       type: System.String[]
-    content.vb: Function ReadLinesCsv(path As String) As String()
+      description: The file contents
+    content.vb: Function ReadLinesCsv(Path As String) As String()
   overload: CIDER.LoadIO.IRead.ReadLinesCsv*
 references:
 - uid: CIDER.LoadIO

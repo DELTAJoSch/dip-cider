@@ -20,10 +20,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IChecker
     path: LoadIO/FolderChecker.cs
-    startLine: 33
+    startLine: 42
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThe IChecker interface is supposed to be inherited by functions used for checking the data integrity of a folder\n"
+  example: []
   syntax:
     content: public interface IChecker
     content.vb: Public Interface IChecker
@@ -51,17 +53,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IsCorrectFolder
     path: LoadIO/FolderChecker.cs
-    startLine: 35
+    startLine: 49
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis function should be called to check a particular folder.\n"
+  example: []
   syntax:
     content: bool IsCorrectFolder(string Path)
     parameters:
     - id: Path
       type: System.String
+      description: A path to the selected folder
     return:
       type: System.Boolean
+      description: This function should return true if the data in the stored in the folder is ok.
     content.vb: Function IsCorrectFolder(Path As String) As Boolean
   overload: CIDER.LoadIO.IChecker.IsCorrectFolder*
 references:

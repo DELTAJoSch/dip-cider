@@ -21,10 +21,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileIO
     path: LoadIO/FileIO.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis class contains all the necessary parsing and file IO used in loading a CIDER data folder\n"
+  example: []
   syntax:
     content: 'public class FileIO : IIO'
     content.vb: >-
@@ -66,22 +68,28 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadCSV
     path: LoadIO/FileIO.cs
-    startLine: 16
+    startLine: 26
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis function reads the .csv part of the data folder\n"
+  example: []
   syntax:
-    content: public void ReadCSV(DataProvider data, string path, IRead read, MainWindowViewModel main)
+    content: public void ReadCSV(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main)
     parameters:
-    - id: data
+    - id: Data
       type: CIDER.DataProvider
-    - id: path
+      description: A DataProvider object to store the ingested data in
+    - id: Path
       type: System.String
-    - id: read
+      description: A path to the folder to the .csv file
+    - id: Read
       type: CIDER.LoadIO.IRead
-    - id: main
+      description: An object implementing the IRead interface
+    - id: Main
       type: CIDER.ViewModels.MainWindowViewModel
-    content.vb: Public Sub ReadCSV(data As DataProvider, path As String, read As IRead, main As MainWindowViewModel)
+      description: A MainWindowViewModel object to toggle the buttons from
+    content.vb: Public Sub ReadCSV(Data As DataProvider, Path As String, Read As IRead, Main As MainWindowViewModel)
   overload: CIDER.LoadIO.FileIO.ReadCSV*
   implements:
   - CIDER.LoadIO.IIO.ReadCSV(CIDER.DataProvider,System.String,CIDER.LoadIO.IRead,CIDER.ViewModels.MainWindowViewModel)
@@ -107,22 +115,28 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadNmea
     path: LoadIO/FileIO.cs
-    startLine: 137
+    startLine: 154
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis function ingests the .nmea file of a valid CIDER data folder\n"
+  example: []
   syntax:
-    content: public void ReadNmea(DataProvider Data, string path, IRead read, MainWindowViewModel main)
+    content: public void ReadNmea(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main)
     parameters:
     - id: Data
       type: CIDER.DataProvider
-    - id: path
+      description: A DataProvider object to store the ingested data in
+    - id: Path
       type: System.String
-    - id: read
+      description: A path to the folder to the .nmea file
+    - id: Read
       type: CIDER.LoadIO.IRead
-    - id: main
+      description: An object implementing the IRead interface
+    - id: Main
       type: CIDER.ViewModels.MainWindowViewModel
-    content.vb: Public Sub ReadNmea(Data As DataProvider, path As String, read As IRead, main As MainWindowViewModel)
+      description: A MainWindowViewModel object to toggle the buttons from
+    content.vb: Public Sub ReadNmea(Data As DataProvider, Path As String, Read As IRead, Main As MainWindowViewModel)
   overload: CIDER.LoadIO.FileIO.ReadNmea*
   implements:
   - CIDER.LoadIO.IIO.ReadNmea(CIDER.DataProvider,System.String,CIDER.LoadIO.IRead,CIDER.ViewModels.MainWindowViewModel)

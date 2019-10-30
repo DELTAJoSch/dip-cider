@@ -8,6 +8,7 @@ items:
   - CIDER.DataProvider.#ctor
   - CIDER.DataProvider.APIKey
   - CIDER.DataProvider.AverageSattelitesInUse
+  - CIDER.DataProvider.ClearData
   - CIDER.DataProvider.DataPointsAcceleration
   - CIDER.DataProvider.DataPointsAngle
   - CIDER.DataProvider.DataPointsVelocity
@@ -875,6 +876,41 @@ items:
   - set
   modifiers.vb:
   - Public
+- uid: CIDER.DataProvider.ClearData
+  commentId: M:CIDER.DataProvider.ClearData
+  id: ClearData
+  parent: CIDER.DataProvider
+  langs:
+  - csharp
+  - vb
+  name: ClearData()
+  nameWithType: DataProvider.ClearData()
+  fullName: CIDER.DataProvider.ClearData()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/DataProvider.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ClearData
+    path: DataProvider.cs
+    startLine: 177
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis function allows to clear the data stored in this object - without creating a new one\n"
+  example: []
+  syntax:
+    content: public bool ClearData()
+    return:
+      type: System.Boolean
+      description: True if the function was sucessful
+    content.vb: Public Function ClearData As Boolean
+  overload: CIDER.DataProvider.ClearData*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 references:
 - uid: CIDER
   commentId: N:CIDER
@@ -1413,3 +1449,8 @@ references:
   name: AverageSattelitesInUse
   nameWithType: DataProvider.AverageSattelitesInUse
   fullName: CIDER.DataProvider.AverageSattelitesInUse
+- uid: CIDER.DataProvider.ClearData*
+  commentId: Overload:CIDER.DataProvider.ClearData
+  name: ClearData
+  nameWithType: DataProvider.ClearData
+  fullName: CIDER.DataProvider.ClearData

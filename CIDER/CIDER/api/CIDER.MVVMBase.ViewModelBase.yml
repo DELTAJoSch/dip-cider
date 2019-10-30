@@ -22,10 +22,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ViewModelBase
     path: MVVMBase/ViewModelBase.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
+  summary: "\nThis class is the base class for all viewmodels used in thís project\n"
+  example: []
   syntax:
     content: 'public abstract class ViewModelBase : INotifyPropertyChanged'
     content.vb: >-
@@ -85,10 +87,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: logger
     path: MVVMBase/ViewModelBase.cs
-    startLine: 10
+    startLine: 16
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
+  summary: "\nThe logger used by the ViewModels\n"
+  example: []
   syntax:
     content: public static Logger logger
     return:
@@ -118,10 +122,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PropertyChanged
     path: MVVMBase/ViewModelBase.cs
-    startLine: 12
+    startLine: 21
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
+  summary: "\nThis event is the PropertyChangedEvent raised when the UI needs to be updated\n"
+  example: []
   syntax:
     content: public event PropertyChangedEventHandler PropertyChanged
     return:
@@ -151,23 +157,30 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SetProperty
     path: MVVMBase/ViewModelBase.cs
-    startLine: 14
+    startLine: 31
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
+  summary: "\nThis Function sets a property of the passed type\n"
+  example: []
   syntax:
     content: protected bool SetProperty<T>(ref T field, T newValue, string propertyName = null)
     parameters:
     - id: field
       type: '{T}'
+      description: The private variable the data is stored in
     - id: newValue
       type: '{T}'
+      description: The new value
     - id: propertyName
       type: System.String
+      description: The name of the property
     typeParameters:
     - id: T
+      description: The type of the property
     return:
       type: System.Boolean
+      description: returns a bool on the state of the function
     content.vb: Protected Function SetProperty(Of T)(ByRef field As T, newValue As T, propertyName As String = Nothing) As Boolean
   overload: CIDER.MVVMBase.ViewModelBase.SetProperty*
   nameWithType.vb: ViewModelBase.SetProperty(Of T)(ByRef T, T, String)

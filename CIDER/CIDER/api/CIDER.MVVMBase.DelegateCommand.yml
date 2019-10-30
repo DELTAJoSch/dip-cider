@@ -26,10 +26,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DelegateCommand
     path: MVVMBase/ViewModelBase.cs
-    startLine: 26
+    startLine: 46
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
+  summary: "\nThis class implements the ICommand interface and is used when a command is triggered\n"
+  example: []
   syntax:
     content: 'public class DelegateCommand : ICommand'
     content.vb: >-
@@ -71,17 +73,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: MVVMBase/ViewModelBase.cs
-    startLine: 32
+    startLine: 57
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
+  summary: "\nThis constructor takes the Action to be executed as well as a function to check wether the action can be executed\n"
+  example: []
   syntax:
     content: public DelegateCommand(Action<object> executeAction, Func<object, bool> canExecuteAction)
     parameters:
     - id: executeAction
       type: System.Action{System.Object}
+      description: The action to be executed
     - id: canExecuteAction
       type: System.Func{System.Object,System.Boolean}
+      description: A function to call before executing the action
     content.vb: Public Sub New(executeAction As Action(Of Object), canExecuteAction As Func(Of Object, Boolean))
   overload: CIDER.MVVMBase.DelegateCommand.#ctor*
   nameWithType.vb: DelegateCommand.DelegateCommand(Action(Of Object), Func(Of Object, Boolean))
@@ -109,15 +115,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: MVVMBase/ViewModelBase.cs
-    startLine: 38
+    startLine: 67
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
+  summary: "\nThis constructor only takes the action to be executed\n"
+  example: []
   syntax:
     content: public DelegateCommand(Action<object> executeAction)
     parameters:
     - id: executeAction
       type: System.Action{System.Object}
+      description: The action to be executed
     content.vb: Public Sub New(executeAction As Action(Of Object))
   overload: CIDER.MVVMBase.DelegateCommand.#ctor*
   nameWithType.vb: DelegateCommand.DelegateCommand(Action(Of Object))
@@ -145,15 +154,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: MVVMBase/ViewModelBase.cs
-    startLine: 44
+    startLine: 77
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
+  summary: "\n\n"
+  example: []
   syntax:
     content: public DelegateCommand(ICommand changeTheme)
     parameters:
     - id: changeTheme
       type: System.Windows.Input.ICommand
+      description: ''
     content.vb: Public Sub New(changeTheme As ICommand)
   overload: CIDER.MVVMBase.DelegateCommand.#ctor*
   modifiers.csharp:
@@ -178,15 +190,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Execute
     path: MVVMBase/ViewModelBase.cs
-    startLine: 49
+    startLine: 86
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
+  summary: "\nThis sets the action to be executed\n"
+  example: []
   syntax:
     content: public void Execute(object parameter)
     parameters:
     - id: parameter
       type: System.Object
+      description: ''
     content.vb: Public Sub Execute(parameter As Object)
   overload: CIDER.MVVMBase.DelegateCommand.Execute*
   implements:
@@ -213,17 +228,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CanExecute
     path: MVVMBase/ViewModelBase.cs
-    startLine: 51
+    startLine: 93
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
+  summary: "\nThis invokes the specified function\n"
+  example: []
   syntax:
     content: public bool CanExecute(object parameter)
     parameters:
     - id: parameter
       type: System.Object
+      description: The object to be executed
     return:
       type: System.Boolean
+      description: ''
     content.vb: Public Function CanExecute(parameter As Object) As Boolean
   overload: CIDER.MVVMBase.DelegateCommand.CanExecute*
   implements:
@@ -250,10 +269,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CanExecuteChanged
     path: MVVMBase/ViewModelBase.cs
-    startLine: 53
+    startLine: 98
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
+  summary: "\nThis event is raised when the state of the execution of the object changes\n"
+  example: []
   syntax:
     content: public event EventHandler CanExecuteChanged
     return:
@@ -283,10 +304,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: InvokeCanExecuteChanged
     path: MVVMBase/ViewModelBase.cs
-    startLine: 55
+    startLine: 103
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
+  summary: "\nThis functions executes the specified action if the action can be invoked\n"
+  example: []
   syntax:
     content: public void InvokeCanExecuteChanged()
     content.vb: Public Sub InvokeCanExecuteChanged

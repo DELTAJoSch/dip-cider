@@ -21,10 +21,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IFolderSelectionInterface
     path: LoadIO/FolderSelector.cs
-    startLine: 33
+    startLine: 43
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis Interface implements functions used for selecting folders. It can be used as a way to inject mocks and stubs.\n"
+  example: []
   syntax:
     content: public interface IFolderSelectionInterface
     content.vb: Public Interface IFolderSelectionInterface
@@ -52,14 +54,17 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SelectFolder
     path: LoadIO/FolderSelector.cs
-    startLine: 37
+    startLine: 49
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis Function should prompt the user to select a folder\n"
+  example: []
   syntax:
     content: string SelectFolder()
     return:
       type: System.String
+      description: A string with the path
     content.vb: Function SelectFolder As String
   overload: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder*
 - uid: CIDER.LoadIO.IFolderSelectionInterface.LastSelected
@@ -80,10 +85,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LastSelected
     path: LoadIO/FolderSelector.cs
-    startLine: 39
+    startLine: 54
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
+  summary: "\nThis string is supposed to contain the last selected path\n"
+  example: []
   syntax:
     content: string LastSelected { get; }
     parameters: []

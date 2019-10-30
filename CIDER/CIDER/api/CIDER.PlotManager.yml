@@ -27,10 +27,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PlotManager
     path: PlotManager.cs
-    startLine: 9
+    startLine: 12
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis class is used to create plots\n"
+  example: []
   syntax:
     content: public class PlotManager
     content.vb: Public Class PlotManager
@@ -68,10 +70,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Series
     path: PlotManager.cs
-    startLine: 13
+    startLine: 19
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis list contains all the line series in a plot\n"
+  example: []
   syntax:
     content: public List<LineSeries> Series
     return:
@@ -99,10 +103,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: PlotManager.cs
-    startLine: 15
+    startLine: 24
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis is the constructor for the PlotManager class\n"
+  example: []
   syntax:
     content: public PlotManager()
     content.vb: Public Sub New
@@ -129,17 +135,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: GetPlotModel
     path: PlotManager.cs
-    startLine: 20
+    startLine: 34
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis function is used to get a plotmodel\n"
+  example: []
   syntax:
     content: public PlotModel GetPlotModel(string Title)
     parameters:
     - id: Title
       type: System.String
+      description: This is the Title of the plot returned
     return:
       type: OxyPlot.PlotModel
+      description: Returns a plotmodel
     content.vb: Public Function GetPlotModel(Title As String) As PlotModel
   overload: CIDER.PlotManager.GetPlotModel*
   modifiers.csharp:
@@ -164,17 +174,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CreatePDF
     path: PlotManager.cs
-    startLine: 41
+    startLine: 60
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis function creates a pdf from a plotmodel\n"
+  example: []
   syntax:
     content: public void CreatePDF(string Title, string fileName)
     parameters:
     - id: Title
       type: System.String
+      description: Title of the plot
     - id: fileName
       type: System.String
+      description: Path to the file
     content.vb: Public Sub CreatePDF(Title As String, fileName As String)
   overload: CIDER.PlotManager.CreatePDF*
   modifiers.csharp:
@@ -199,17 +213,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 86
+    startLine: 110
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis function adds a new lineseries to the plot\n"
+  example: []
   syntax:
     content: public void AddLineSeries(List<float> data, string name)
     parameters:
     - id: data
       type: System.Collections.Generic.List{System.Single}
+      description: The data to be shown
     - id: name
       type: System.String
+      description: The name of the lineseries
     content.vb: Public Sub AddLineSeries(data As List(Of Single), name As String)
   overload: CIDER.PlotManager.AddLineSeries*
   nameWithType.vb: PlotManager.AddLineSeries(List(Of Single), String)
@@ -237,19 +255,24 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 93
+    startLine: 123
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis function adds a new lineseries to the plot\n"
+  example: []
   syntax:
     content: public void AddLineSeries(List<float> data, string name, OxyColor color)
     parameters:
     - id: data
       type: System.Collections.Generic.List{System.Single}
+      description: The data to be shown
     - id: name
       type: System.String
+      description: The name of the lineseries
     - id: color
       type: OxyPlot.OxyColor
+      description: the color of the lineseries
     content.vb: Public Sub AddLineSeries(data As List(Of Single), name As String, color As OxyColor)
   overload: CIDER.PlotManager.AddLineSeries*
   nameWithType.vb: PlotManager.AddLineSeries(List(Of Single), String, OxyColor)
@@ -277,21 +300,27 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 98
+    startLine: 135
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis function adds a new lineseries to the plot\n"
+  example: []
   syntax:
     content: public void AddLineSeries(List<float> data, string name, OxyColor color, int interval)
     parameters:
     - id: data
       type: System.Collections.Generic.List{System.Single}
+      description: The data to be shown
     - id: name
       type: System.String
+      description: The name of the lineseries
     - id: color
       type: OxyPlot.OxyColor
+      description: the color of the lineseries
     - id: interval
       type: System.Int32
+      description: the interval between the points
     content.vb: Public Sub AddLineSeries(data As List(Of Single), name As String, color As OxyColor, interval As Integer)
   overload: CIDER.PlotManager.AddLineSeries*
   nameWithType.vb: PlotManager.AddLineSeries(List(Of Single), String, OxyColor, Int32)
@@ -319,19 +348,24 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 103
+    startLine: 146
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis function adds a new lineseries to the plot\n"
+  example: []
   syntax:
     content: public void AddLineSeries(List<float> data, string name, int interval)
     parameters:
     - id: data
       type: System.Collections.Generic.List{System.Single}
+      description: The data to be shown
     - id: name
       type: System.String
+      description: The name of the lineseries
     - id: interval
       type: System.Int32
+      description: the interval between the points
     content.vb: Public Sub AddLineSeries(data As List(Of Single), name As String, interval As Integer)
   overload: CIDER.PlotManager.AddLineSeries*
   nameWithType.vb: PlotManager.AddLineSeries(List(Of Single), String, Int32)
