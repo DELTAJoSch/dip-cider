@@ -63,5 +63,51 @@
     "template": [
       "cider_template"
     ]
+  },
+  "pdf": {
+    "content": [
+      {
+        "files": [
+          "api/*.yml"
+        ]
+      },
+      {
+        "files": [
+          "api/*.md",
+          "articles/**.md",
+          "pdf/toc.yml",
+          "*.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**",
+          "_site_pdf/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**",
+          "_site_pdf/**"
+        ]
+      }
+    ],
+    "dest": "_site_pdf"
   }
 }

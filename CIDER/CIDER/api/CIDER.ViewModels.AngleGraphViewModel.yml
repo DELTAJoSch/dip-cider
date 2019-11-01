@@ -149,7 +149,7 @@ items:
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
-  summary: "\nThis contains the PlotModel to be shwon on the page\n"
+  summary: "\nThis contains the PlotModel to be shown on the page\n"
   example: []
   syntax:
     content: public PlotModel Plot { get; set; }

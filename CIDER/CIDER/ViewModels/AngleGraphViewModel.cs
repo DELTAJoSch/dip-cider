@@ -57,7 +57,7 @@ namespace CIDER.ViewModels
         }
 
         /// <summary>
-        /// This contains the PlotModel to be shwon on the page
+        /// This contains the PlotModel to be shown on the page
         /// </summary>
         public PlotModel Plot
         {

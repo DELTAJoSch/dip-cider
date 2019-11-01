@@ -283,6 +283,8 @@
     <None Include="articles\toc.md" />
     <None Include="docfx.json" />
     <None Include="index.md" />
+    <None Include="pdf\frontpage.md" />
+    <None Include="pdf\toc.yml" />
     <None Include="toc.yml" />
     <Resource Include="Resources\Entypo-license.txt" />
     <Resource Include="Resources\Entypo.ttf" />
