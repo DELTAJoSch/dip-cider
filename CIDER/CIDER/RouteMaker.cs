@@ -5,15 +5,21 @@ using System.Linq;
 
 namespace CIDER
 {
+    /// <summary>
+    /// This class is used to create routes for the display on the map
+    /// </summary>
     public class RouteMaker
     {
         private static double earthRadius = 6367;
 
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
 
-        public List<MapPolyline> CreateRoute(DataProvider _data)
-        ///Summary
-        ///This function creates the route and adds an arrow at the starting point
+        /// <summary>
+        /// This function creates the route and adds an arrow at the starting point
+        /// </summary>
+        /// <param name="Data">A DataProvider object that contains the gps locations of the route</param>
+        /// <returns>A List with polylines to display on the map</returns>
+        public List<MapPolyline> CreateRoute(DataProvider Data)
         {
             List<MapPolyline> mapPolylines = new List<MapPolyline>();
 
@@ -21,14 +27,14 @@ namespace CIDER
 
             SetupPolyline(polyline);
 
-            polyline.Locations = _data.Route;
+            polyline.Locations = Data.Route;
 
             mapPolylines.Clear();
             mapPolylines.Add(polyline);
 
             try
             {
-                mapPolylines.Add(GetArrow(_data.Route.First(), _data.Route.ElementAt(1)));
+                mapPolylines.Add(GetArrow(Data.Route.First(), Data.Route.ElementAt(1)));
             }
             catch (IndexOutOfRangeException ex)
             {
@@ -42,9 +48,13 @@ namespace CIDER
             return mapPolylines;
         }
 
-        public List<MapPolyline> CreateRoute(DataProvider _data, int NumberOfPoints)
-        ///Summary
-        ///This function creates the route up to the specified number of points and adds an arrow at the starting point
+        /// <summary>
+        /// This function creates the route up to the specified number of points and adds an arrow at the starting point
+        /// </summary>
+        /// <param name="Data">A DataProvider object that contains the gps locations of the route</param>
+        /// <param name="NumberOfPoints">The number of locations to include</param>
+        /// <returns>A list of polylines to display</returns>
+        public List<MapPolyline> CreateRoute(DataProvider Data, int NumberOfPoints)
         {
             List<MapPolyline> mapPolylines = new List<MapPolyline>();
 
@@ -58,7 +68,7 @@ namespace CIDER
             {
                 for (int i = 0; i < NumberOfPoints; i++)
                 {
-                    locations.Add(_data.Route.ElementAt(i));
+                    locations.Add(Data.Route.ElementAt(i));
                 }
             }
             catch (ArgumentOutOfRangeException ex)
@@ -73,7 +83,7 @@ namespace CIDER
 
             try
             {
-                mapPolylines.Add(GetArrow(_data.Route.First(), _data.Route.ElementAt(1)));
+                mapPolylines.Add(GetArrow(Data.Route.First(), Data.Route.ElementAt(1)));
             }
             catch (IndexOutOfRangeException ex)
             {
@@ -95,8 +105,8 @@ namespace CIDER
         }
 
         private MapPolyline GetArrow(Location a, Location b)
-        ///Summary
-        ///This function creates the arrow
+        //  Summary
+        //  This function creates the arrow
         {
             MapPolyline polyline = new MapPolyline();
             polyline.Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.Aqua);
@@ -118,24 +128,24 @@ namespace CIDER
         }
 
         private LocationCollection generatePolylinePointsWithArrow(Location anchor, Location towards)
-        ///Summary:
-        ///This code was adapted and translated from https://rbrundritt.wordpress.com/2009/05/31/drawing-arrow-heads-on-polylines/
+        //  Summary:
+        //  This code was adapted and translated from https://rbrundritt.wordpress.com/2009/05/31/drawing-arrow-heads-on-polylines/
         {
             LocationCollection arr = new LocationCollection();
 
-            //last point in polyline array
+            //  last point in polyline array
             Location anchorPoint = anchor;
-            //bearing from first point to second point in pointline array
+            //  bearing from first point to second point in pointline array
             double bearing = calculateBearing(anchorPoint, towards);
-            //length of arrow head lines in km
+            //  length of arrow head lines in km
             double arrowLength = 0.15;
-            //angle of arrow lines relative to polyline in degrees
+            //  angle of arrow lines relative to polyline in degrees
             double arrowAngle = 40;
-            //calculate coordinates of arrow tips
+            //  calculate coordinates of arrow tips
             Tuple<double, double> arrowPoint1 = calculateCoord(anchorPoint, bearing - arrowAngle, arrowLength);
             Tuple<double, double> arrowPoint2 = calculateCoord(anchorPoint, bearing + arrowAngle, arrowLength);
-            //go from last point in polyline to one arrow tip, then back to the
-            //last point then to the second arrow tip.
+            //  go from last point in polyline to one arrow tip, then back to the
+            //  last point then to the second arrow tip.
 
             arr.Add(new Location(arrowPoint1.Item1, arrowPoint1.Item2));
             arr.Add(anchorPoint);

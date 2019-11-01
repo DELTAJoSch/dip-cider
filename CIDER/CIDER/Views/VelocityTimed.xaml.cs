@@ -5,12 +5,16 @@ using System.Windows.Controls;
 namespace CIDER.Views
 {
     /// <summary>
-    /// Interaction logic for VelocityTimed.xaml
+    /// Interaction logic for VelocityTimed page
     /// </summary>
     public partial class VelocityTimed : Page
     {
         private VelocityTimedViewModel model;
 
+        /// <summary>
+        /// This is the constructor of hte VelocityTimed page
+        /// </summary>
+        /// <param name="data">A DataProvider object to read the data from</param>
         public VelocityTimed(DataProvider data)
         {
             InitializeComponent();

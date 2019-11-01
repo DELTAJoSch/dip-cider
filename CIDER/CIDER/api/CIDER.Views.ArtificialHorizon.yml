@@ -24,7 +24,7 @@ items:
   assemblies:
   - CIDER
   namespace: CIDER.Views
-  summary: "\nInteraction logic for ArtificialHorizon.xaml\n"
+  summary: "\nInteraction logic for the ArtificialHorizon page\n"
   example: []
   syntax:
     content: 'public class ArtificialHorizon : Page, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild'
@@ -663,15 +663,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/ArtificialHorizon.xaml.cs
-    startLine: 13
+    startLine: 17
   assemblies:
   - CIDER
   namespace: CIDER.Views
+  summary: "\nThe constructor for the ArtificialHorizon page\n"
+  example: []
   syntax:
     content: public ArtificialHorizon(DataProvider data)
     parameters:
     - id: data
       type: CIDER.DataProvider
+      description: A DataPRovider object to read the data from
     content.vb: Public Sub New(data As DataProvider)
   overload: CIDER.Views.ArtificialHorizon.#ctor*
   modifiers.csharp:

@@ -11,13 +11,22 @@ namespace CIDER
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
-        public static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private MainWindowViewModel viewModel;
 
+        /// <summary>
+        /// This is the event that is raised when the resizing of the window begins
+        /// </summary>
         public static event EventHandler OnResizeStartEvent;
 
+        /// <summary>
+        /// This is the event that is raised when the resize of the window ends
+        /// </summary>
         public static event EventHandler OnResizeEndEvent;
 
+        /// <summary>
+        /// This is the constructo for the main window
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -31,9 +40,15 @@ namespace CIDER
             viewModel.Initalize();
         }
 
+        /// <summary>
+        /// This function overrides the standard onsourceinitialized function
+        /// </summary>
+        /// <param name="e">The event args of the init event</param>
         protected override void OnSourceInitialized(EventArgs e)
         {
             base.OnSourceInitialized(e);
+
+            // This gets the Window handle and connects our own wndproc check so we can raise custom events
             HwndSource source = PresentationSource.FromVisual(this) as HwndSource;
             source.AddHook(WndProc);
         }

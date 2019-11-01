@@ -6,7 +6,6 @@ items:
   parent: CIDER
   children:
   - CIDER.MainWindow.#ctor
-  - CIDER.MainWindow.logger
   - CIDER.MainWindow.OnResizeEndEvent
   - CIDER.MainWindow.OnResizeStartEvent
   - CIDER.MainWindow.OnSourceInitialized(System.EventArgs)
@@ -862,39 +861,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: CIDER.MainWindow.logger
-  commentId: F:CIDER.MainWindow.logger
-  id: logger
-  parent: CIDER.MainWindow
-  langs:
-  - csharp
-  - vb
-  name: logger
-  nameWithType: MainWindow.logger
-  fullName: CIDER.MainWindow.logger
-  type: Field
-  source:
-    remote:
-      path: CIDER/CIDER/MainWindow.xaml.cs
-      branch: master
-      repo: git@github.com:DELTAJoSch/dip-cider.git
-    id: logger
-    path: MainWindow.xaml.cs
-    startLine: 13
-  assemblies:
-  - CIDER
-  namespace: CIDER
-  syntax:
-    content: public static Logger logger
-    return:
-      type: NLog.Logger
-    content.vb: Public Shared logger As Logger
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
 - uid: CIDER.MainWindow.OnResizeStartEvent
   commentId: E:CIDER.MainWindow.OnResizeStartEvent
   id: OnResizeStartEvent
@@ -913,10 +879,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnResizeStartEvent
     path: MainWindow.xaml.cs
-    startLine: 16
+    startLine: 19
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis is the event that is raised when the resizing of the window begins\n"
+  example: []
   syntax:
     content: public static event EventHandler OnResizeStartEvent
     return:
@@ -946,10 +914,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnResizeEndEvent
     path: MainWindow.xaml.cs
-    startLine: 18
+    startLine: 24
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis is the event that is raised when the resize of the window ends\n"
+  example: []
   syntax:
     content: public static event EventHandler OnResizeEndEvent
     return:
@@ -979,10 +949,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: MainWindow.xaml.cs
-    startLine: 20
+    startLine: 29
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis is the constructo for the main window\n"
+  example: []
   syntax:
     content: public MainWindow()
     content.vb: Public Sub New
@@ -1009,15 +981,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnSourceInitialized
     path: MainWindow.xaml.cs
-    startLine: 33
+    startLine: 46
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis function overrides the standard onsourceinitialized function\n"
+  example: []
   syntax:
     content: protected override void OnSourceInitialized(EventArgs e)
     parameters:
     - id: e
       type: System.EventArgs
+      description: The event args of the init event
     content.vb: Protected Overrides Sub OnSourceInitialized(e As EventArgs)
   overridden: System.Windows.Window.OnSourceInitialized(System.EventArgs)
   overload: CIDER.MainWindow.OnSourceInitialized*
@@ -14884,19 +14859,6 @@ references:
   name: System.Windows.Markup
   nameWithType: System.Windows.Markup
   fullName: System.Windows.Markup
-- uid: NLog.Logger
-  commentId: T:NLog.Logger
-  parent: NLog
-  isExternal: true
-  name: Logger
-  nameWithType: Logger
-  fullName: NLog.Logger
-- uid: NLog
-  commentId: N:NLog
-  isExternal: true
-  name: NLog
-  nameWithType: NLog
-  fullName: NLog
 - uid: System.EventHandler
   commentId: T:System.EventHandler
   parent: System

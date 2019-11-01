@@ -123,7 +123,7 @@ namespace CIDER.UnitTests
         }
     }
 
-    public class FolderManager : IFolderSelectionInterface
+    public class FolderManager : IFolderSelector
     {
         public FolderManager()
         {

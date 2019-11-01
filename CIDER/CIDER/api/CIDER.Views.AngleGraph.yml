@@ -24,7 +24,7 @@ items:
   assemblies:
   - CIDER
   namespace: CIDER.Views
-  summary: "\nInteraction logic for AngleGraph.xaml\n"
+  summary: "\nInteraction logic for the AngleGraph page\n"
   example: []
   syntax:
     content: 'public class AngleGraph : Page, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild'
@@ -663,16 +663,19 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/AngleGraph.xaml.cs
-    startLine: 13
+    startLine: 17
   assemblies:
   - CIDER
   namespace: CIDER.Views
+  summary: "\nThe constructor for the AngleGraph page\n"
+  example: []
   syntax:
-    content: public AngleGraph(DataProvider _data)
+    content: public AngleGraph(DataProvider Data)
     parameters:
-    - id: _data
+    - id: Data
       type: CIDER.DataProvider
-    content.vb: Public Sub New(_data As DataProvider)
+      description: A DataProvidrt object to read the data from
+    content.vb: Public Sub New(Data As DataProvider)
   overload: CIDER.Views.AngleGraph.#ctor*
   modifiers.csharp:
   - public

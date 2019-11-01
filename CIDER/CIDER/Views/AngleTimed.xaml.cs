@@ -5,12 +5,16 @@ using System.Windows.Controls;
 namespace CIDER.Views
 {
     /// <summary>
-    /// Interaction logic for AngleTimed.xaml
+    /// Interaction logic for the AngleTimed page
     /// </summary>
     public partial class AngleTimed : Page
     {
         private AngleTimedViewModel model;
 
+        /// <summary>
+        /// The constructor for the angle timed page
+        /// </summary>
+        /// <param name="data">A DataProvider object to read the data from</param>
         public AngleTimed(DataProvider data)
         {
             InitializeComponent();

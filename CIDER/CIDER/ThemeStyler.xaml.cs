@@ -11,6 +11,9 @@ namespace CIDER
     {
         private ThemeStylerViewModel model;
 
+        /// <summary>
+        /// The constructor for the ThemeStyle Window
+        /// </summary>
         public ThemeStyler()
         {
             InitializeComponent();

@@ -32,8 +32,6 @@
     name: Licenses
   - uid: CIDER.LicenseWriter
     name: LicenseWriter
-  - uid: CIDER.LoadBoxWindow
-    name: LoadBoxWindow
   - uid: CIDER.MainWindow
     name: MainWindow
   - uid: CIDER.PlotManager
@@ -55,8 +53,8 @@
     name: FolderSelector
   - uid: CIDER.LoadIO.IChecker
     name: IChecker
-  - uid: CIDER.LoadIO.IFolderSelectionInterface
-    name: IFolderSelectionInterface
+  - uid: CIDER.LoadIO.IFolderSelector
+    name: IFolderSelector
   - uid: CIDER.LoadIO.IIO
     name: IIO
   - uid: CIDER.LoadIO.IRead

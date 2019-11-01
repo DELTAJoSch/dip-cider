@@ -28,14 +28,14 @@ items:
   summary: "\nThis class implements the Folderselectioninterface. This class can show a Userinterface allowing the user to select a folder.\nIf the user exits the dialog without selecting a folder, an exception will be thrown\n"
   example: []
   syntax:
-    content: 'public class FolderSelector : IFolderSelectionInterface'
+    content: 'public class FolderSelector : IFolderSelector'
     content.vb: >-
       Public Class FolderSelector
-          Implements IFolderSelectionInterface
+          Implements IFolderSelector
   inheritance:
   - System.Object
   implements:
-  - CIDER.LoadIO.IFolderSelectionInterface
+  - CIDER.LoadIO.IFolderSelector
   inheritedMembers:
   - System.Object.ToString
   - System.Object.Equals(System.Object)
@@ -82,7 +82,7 @@ items:
     content.vb: Public ReadOnly Property LastSelected As String
   overload: CIDER.LoadIO.FolderSelector.LastSelected*
   implements:
-  - CIDER.LoadIO.IFolderSelectionInterface.LastSelected
+  - CIDER.LoadIO.IFolderSelector.LastSelected
   modifiers.csharp:
   - public
   - get
@@ -121,7 +121,7 @@ items:
     content.vb: Public Function SelectFolder As String
   overload: CIDER.LoadIO.FolderSelector.SelectFolder*
   implements:
-  - CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+  - CIDER.LoadIO.IFolderSelector.SelectFolder
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -139,12 +139,12 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: CIDER.LoadIO.IFolderSelectionInterface
-  commentId: T:CIDER.LoadIO.IFolderSelectionInterface
+- uid: CIDER.LoadIO.IFolderSelector
+  commentId: T:CIDER.LoadIO.IFolderSelector
   parent: CIDER.LoadIO
-  name: IFolderSelectionInterface
-  nameWithType: IFolderSelectionInterface
-  fullName: CIDER.LoadIO.IFolderSelectionInterface
+  name: IFolderSelector
+  nameWithType: IFolderSelector
+  fullName: CIDER.LoadIO.IFolderSelector
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -435,12 +435,12 @@ references:
   name: LastSelected
   nameWithType: FolderSelector.LastSelected
   fullName: CIDER.LoadIO.FolderSelector.LastSelected
-- uid: CIDER.LoadIO.IFolderSelectionInterface.LastSelected
-  commentId: P:CIDER.LoadIO.IFolderSelectionInterface.LastSelected
-  parent: CIDER.LoadIO.IFolderSelectionInterface
+- uid: CIDER.LoadIO.IFolderSelector.LastSelected
+  commentId: P:CIDER.LoadIO.IFolderSelector.LastSelected
+  parent: CIDER.LoadIO.IFolderSelector
   name: LastSelected
-  nameWithType: IFolderSelectionInterface.LastSelected
-  fullName: CIDER.LoadIO.IFolderSelectionInterface.LastSelected
+  nameWithType: IFolderSelector.LastSelected
+  fullName: CIDER.LoadIO.IFolderSelector.LastSelected
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -453,17 +453,17 @@ references:
   name: SelectFolder
   nameWithType: FolderSelector.SelectFolder
   fullName: CIDER.LoadIO.FolderSelector.SelectFolder
-- uid: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
-  commentId: M:CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
-  parent: CIDER.LoadIO.IFolderSelectionInterface
+- uid: CIDER.LoadIO.IFolderSelector.SelectFolder
+  commentId: M:CIDER.LoadIO.IFolderSelector.SelectFolder
+  parent: CIDER.LoadIO.IFolderSelector
   name: SelectFolder()
-  nameWithType: IFolderSelectionInterface.SelectFolder()
-  fullName: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder()
+  nameWithType: IFolderSelector.SelectFolder()
+  fullName: CIDER.LoadIO.IFolderSelector.SelectFolder()
   spec.csharp:
-  - uid: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+  - uid: CIDER.LoadIO.IFolderSelector.SelectFolder
     name: SelectFolder
-    nameWithType: IFolderSelectionInterface.SelectFolder
-    fullName: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+    nameWithType: IFolderSelector.SelectFolder
+    fullName: CIDER.LoadIO.IFolderSelector.SelectFolder
   - name: (
     nameWithType: (
     fullName: (
@@ -471,10 +471,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+  - uid: CIDER.LoadIO.IFolderSelector.SelectFolder
     name: SelectFolder
-    nameWithType: IFolderSelectionInterface.SelectFolder
-    fullName: CIDER.LoadIO.IFolderSelectionInterface.SelectFolder
+    nameWithType: IFolderSelector.SelectFolder
+    fullName: CIDER.LoadIO.IFolderSelector.SelectFolder
   - name: (
     nameWithType: (
     fullName: (

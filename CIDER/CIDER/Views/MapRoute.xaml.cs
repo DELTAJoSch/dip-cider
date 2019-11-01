@@ -7,12 +7,16 @@ using System.Windows.Controls;
 namespace CIDER.Views
 {
     /// <summary>
-    /// Interaction logic for MapRoute.xaml
+    /// Interaction logic for the map route page
     /// </summary>
     public partial class MapRoute : Page
     {
         private MapRouteViewModel model;
 
+        /// <summary>
+        /// The constructor for the MapRoute page
+        /// </summary>
+        /// <param name="data">A DataProvider object to read the data from</param>
         public MapRoute(DataProvider data)
         {
             InitializeComponent();

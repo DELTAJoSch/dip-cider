@@ -22,10 +22,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccelerationGraphViewModel
     path: ViewModels/AccelerationGraphViewModel.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe ViewModel for the acceleration graph\n"
+  example: []
   syntax:
     content: 'public class AccelerationGraphViewModel : ViewModelBase, INotifyPropertyChanged, IDisposable'
     content.vb: >-
@@ -73,15 +75,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/AccelerationGraphViewModel.cs
-    startLine: 16
+    startLine: 20
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the constructor for the AccelerationGraphViewModel\n"
+  example: []
   syntax:
     content: public AccelerationGraphViewModel(DataProvider dataProvider)
     parameters:
     - id: dataProvider
       type: CIDER.DataProvider
+      description: A DataProvider object to read the data from
     content.vb: Public Sub New(dataProvider As DataProvider)
   overload: CIDER.ViewModels.AccelerationGraphViewModel.#ctor*
   modifiers.csharp:
@@ -106,10 +111,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/AccelerationGraphViewModel.cs
-    startLine: 45
+    startLine: 52
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nAs this class implements the IDisposable interface this function needs to be called before the GC can clean up an instance of this class\n"
+  example: []
   syntax:
     content: public void Dispose()
     content.vb: Public Sub Dispose
@@ -138,10 +145,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Plot
     path: ViewModels/AccelerationGraphViewModel.cs
-    startLine: 51
+    startLine: 61
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the PlotModel to be displayed by the plot\n"
+  example: []
   syntax:
     content: public PlotModel Plot { get; set; }
     parameters: []

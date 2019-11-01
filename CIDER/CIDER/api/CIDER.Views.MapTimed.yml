@@ -25,7 +25,7 @@ items:
   assemblies:
   - CIDER
   namespace: CIDER.Views
-  summary: "\nInteraction logic for MapTimed.xaml\n"
+  summary: "\nInteraction logic for the MapTimed page\n"
   example: []
   syntax:
     content: 'public class MapTimed : Page, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild'
@@ -664,15 +664,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/MapTimed.xaml.cs
-    startLine: 15
+    startLine: 19
   assemblies:
   - CIDER
   namespace: CIDER.Views
+  summary: "\nThis is the constructor of the MapTimed page\n"
+  example: []
   syntax:
     content: public MapTimed(DataProvider data)
     parameters:
     - id: data
       type: CIDER.DataProvider
+      description: ''
     content.vb: Public Sub New(data As DataProvider)
   overload: CIDER.Views.MapTimed.#ctor*
   modifiers.csharp:
@@ -697,17 +700,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slValueChanged
     path: Views/MapTimed.xaml.cs
-    startLine: 39
+    startLine: 48
   assemblies:
   - CIDER
   namespace: CIDER.Views
+  summary: "\nThis function is called when the slider value changes\n"
+  example: []
   syntax:
     content: public void slValueChanged(object sender, EventArgs e)
     parameters:
     - id: sender
       type: System.Object
+      description: The object that called this method
     - id: e
       type: System.EventArgs
+      description: The event args this was called with
     content.vb: Public Sub slValueChanged(sender As Object, e As EventArgs)
   overload: CIDER.Views.MapTimed.slValueChanged*
   modifiers.csharp:

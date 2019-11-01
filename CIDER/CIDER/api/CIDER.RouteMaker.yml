@@ -21,10 +21,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteMaker
     path: RouteMaker.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis class is used to create routes for the display on the map\n"
+  example: []
   syntax:
     content: public class RouteMaker
     content.vb: Public Class RouteMaker
@@ -62,18 +64,22 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CreateRoute
     path: RouteMaker.cs
-    startLine: 13
+    startLine: 21
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis function creates the route and adds an arrow at the starting point\n"
+  example: []
   syntax:
-    content: public List<MapPolyline> CreateRoute(DataProvider _data)
+    content: public List<MapPolyline> CreateRoute(DataProvider Data)
     parameters:
-    - id: _data
+    - id: Data
       type: CIDER.DataProvider
+      description: A DataProvider object that contains the gps locations of the route
     return:
       type: System.Collections.Generic.List{Microsoft.Maps.MapControl.WPF.MapPolyline}
-    content.vb: Public Function CreateRoute(_data As DataProvider) As List(Of MapPolyline)
+      description: A List with polylines to display on the map
+    content.vb: Public Function CreateRoute(Data As DataProvider) As List(Of MapPolyline)
   overload: CIDER.RouteMaker.CreateRoute*
   modifiers.csharp:
   - public
@@ -97,20 +103,25 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CreateRoute
     path: RouteMaker.cs
-    startLine: 44
+    startLine: 56
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThis function creates the route up to the specified number of points and adds an arrow at the starting point\n"
+  example: []
   syntax:
-    content: public List<MapPolyline> CreateRoute(DataProvider _data, int NumberOfPoints)
+    content: public List<MapPolyline> CreateRoute(DataProvider Data, int NumberOfPoints)
     parameters:
-    - id: _data
+    - id: Data
       type: CIDER.DataProvider
+      description: A DataProvider object that contains the gps locations of the route
     - id: NumberOfPoints
       type: System.Int32
+      description: The number of locations to include
     return:
       type: System.Collections.Generic.List{Microsoft.Maps.MapControl.WPF.MapPolyline}
-    content.vb: Public Function CreateRoute(_data As DataProvider, NumberOfPoints As Integer) As List(Of MapPolyline)
+      description: A list of polylines to display
+    content.vb: Public Function CreateRoute(Data As DataProvider, NumberOfPoints As Integer) As List(Of MapPolyline)
   overload: CIDER.RouteMaker.CreateRoute*
   modifiers.csharp:
   - public

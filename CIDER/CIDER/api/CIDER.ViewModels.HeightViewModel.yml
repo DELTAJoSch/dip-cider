@@ -30,10 +30,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightViewModel
     path: ViewModels/HeightViewModel.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the ViewModel for the Height page\n"
+  example: []
   syntax:
     content: 'public class HeightViewModel : ViewModelBase, INotifyPropertyChanged, IDisposable'
     content.vb: >-
@@ -81,15 +83,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/HeightViewModel.cs
-    startLine: 21
+    startLine: 28
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the constructor for the HeightViewModel page\n"
+  example: []
   syntax:
     content: public HeightViewModel(DataProvider dataProvider)
     parameters:
     - id: dataProvider
       type: CIDER.DataProvider
+      description: A DataProvider object to read the data from
     content.vb: Public Sub New(dataProvider As DataProvider)
   overload: CIDER.ViewModels.HeightViewModel.#ctor*
   modifiers.csharp:
@@ -114,10 +119,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/HeightViewModel.cs
-    startLine: 68
+    startLine: 78
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function needs to be called before the object is dereferenced so the GC can collect it\n"
+  example: []
   syntax:
     content: public void Dispose()
     content.vb: Public Sub Dispose
@@ -146,10 +153,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightMaxL
     path: ViewModels/HeightViewModel.cs
-    startLine: 74
+    startLine: 87
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the maximum of the value of the left height progress bar\n"
+  example: []
   syntax:
     content: public float HeightMaxL { get; set; }
     parameters: []
@@ -181,10 +190,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightMaxR
     path: ViewModels/HeightViewModel.cs
-    startLine: 75
+    startLine: 92
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the maximum of the value of the right height progress bar\n"
+  example: []
   syntax:
     content: public float HeightMaxR { get; set; }
     parameters: []
@@ -216,10 +227,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightValL
     path: ViewModels/HeightViewModel.cs
-    startLine: 76
+    startLine: 97
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the value of the left height progress bar\n"
+  example: []
   syntax:
     content: public float HeightValL { get; set; }
     parameters: []
@@ -251,10 +264,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightValR
     path: ViewModels/HeightViewModel.cs
-    startLine: 77
+    startLine: 102
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the value of the right height progress bar\n"
+  example: []
   syntax:
     content: public float HeightValR { get; set; }
     parameters: []
@@ -286,10 +301,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/HeightViewModel.cs
-    startLine: 78
+    startLine: 107
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the tick frequency of the slider\n"
+  example: []
   syntax:
     content: public float slTickFrequency { get; set; }
     parameters: []
@@ -321,10 +338,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/HeightViewModel.cs
-    startLine: 79
+    startLine: 112
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the maximum of the slider\n"
+  example: []
   syntax:
     content: public float slMaximum { get; set; }
     parameters: []
@@ -356,10 +375,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightText
     path: ViewModels/HeightViewModel.cs
-    startLine: 80
+    startLine: 117
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the text to be displayed next to the height progress bar\n"
+  example: []
   syntax:
     content: public string HeightText { get; set; }
     parameters: []
@@ -391,10 +412,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Plot
     path: ViewModels/HeightViewModel.cs
-    startLine: 81
+    startLine: 122
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the Plot to be shown in the plot area\n"
+  example: []
   syntax:
     content: public PlotModel Plot { get; set; }
     parameters: []
@@ -426,15 +449,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slValueChanged
     path: ViewModels/HeightViewModel.cs
-    startLine: 83
+    startLine: 128
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function should be called when the slider value changes\n"
+  example: []
   syntax:
     content: public void slValueChanged(int value)
     parameters:
     - id: value
       type: System.Int32
+      description: The value of the slider
     content.vb: Public Sub slValueChanged(value As Integer)
   overload: CIDER.ViewModels.HeightViewModel.slValueChanged*
   modifiers.csharp:

@@ -663,17 +663,21 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/Load.xaml.cs
-    startLine: 12
+    startLine: 17
   assemblies:
   - CIDER
   namespace: CIDER.Views
+  summary: "\nThis is the constructor for the Load page\n"
+  example: []
   syntax:
     content: public Load(DataProvider data, MainWindowViewModel main)
     parameters:
     - id: data
       type: CIDER.DataProvider
+      description: A DataProvider object to store the data in
     - id: main
       type: CIDER.ViewModels.MainWindowViewModel
+      description: An instance of the MainWindowViewModel
     content.vb: Public Sub New(data As DataProvider, main As MainWindowViewModel)
   overload: CIDER.Views.Load.#ctor*
   modifiers.csharp:

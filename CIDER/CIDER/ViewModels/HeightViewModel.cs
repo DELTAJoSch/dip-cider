@@ -5,6 +5,9 @@ using System.Linq;
 
 namespace CIDER.ViewModels
 {
+    /// <summary>
+    /// This is the ViewModel for the Height page
+    /// </summary>
     public class HeightViewModel : ViewModelBase, IDisposable
     {
         private float _heightMaxL;
@@ -19,6 +22,10 @@ namespace CIDER.ViewModels
         private PlotModel data;
         private PlotModel blank;
 
+        /// <summary>
+        /// This is the constructor for the HeightViewModel page
+        /// </summary>
+        /// <param name="dataProvider">A DataProvider object to read the data from</param>
         public HeightViewModel(DataProvider dataProvider)
         {
             _data = dataProvider;
@@ -66,21 +73,59 @@ namespace CIDER.ViewModels
             Plot = blank;
         }
 
+        /// <summary>
+        /// This function needs to be called before the object is dereferenced so the GC can collect it
+        /// </summary>
         public void Dispose()
         {
             MainWindow.OnResizeStartEvent -= MainWindow_OnResizeStartEvent;
             MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
         }
 
+        /// <summary>
+        /// This contains the maximum of the value of the left height progress bar
+        /// </summary>
         public float HeightMaxL { get { return _heightMaxL; } set { SetProperty(ref _heightMaxL, value); } }
+
+        /// <summary>
+        /// This contains the maximum of the value of the right height progress bar
+        /// </summary>
         public float HeightMaxR { get { return _heightMaxR; } set { SetProperty(ref _heightMaxR, value); } }
+
+        /// <summary>
+        /// This contains the value of the left height progress bar
+        /// </summary>
         public float HeightValL { get { return _heightValL; } set { SetProperty(ref _heightValL, value); } }
+
+        /// <summary>
+        /// This contains the value of the right height progress bar
+        /// </summary>
         public float HeightValR { get { return _heightValR; } set { SetProperty(ref _heightValR, value); } }
+
+        /// <summary>
+        /// This contains the tick frequency of the slider
+        /// </summary>
         public float slTickFrequency { get { return _slTickFrequency; } set { SetProperty(ref _slTickFrequency, value); } }
+
+        /// <summary>
+        /// This contains the maximum of the slider
+        /// </summary>
         public float slMaximum { get { return _slMaximum; } set { SetProperty(ref _slMaximum, value); } }
+
+        /// <summary>
+        /// This contains the text to be displayed next to the height progress bar
+        /// </summary>
         public string HeightText { get { return _heightText; } set { SetProperty(ref _heightText, value); } }
+
+        /// <summary>
+        /// This contains the Plot to be shown in the plot area
+        /// </summary>
         public PlotModel Plot { get { return _plot; } set { SetProperty(ref _plot, value); } }
 
+        /// <summary>
+        /// This function should be called when the slider value changes
+        /// </summary>
+        /// <param name="value">The value of the slider</param>
         public void slValueChanged(int value)
         {
             try

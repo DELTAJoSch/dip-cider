@@ -877,10 +877,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ThemeStyler.xaml.cs
-    startLine: 13
+    startLine: 16
   assemblies:
   - CIDER
   namespace: CIDER
+  summary: "\nThe constructor for the ThemeStyle Window\n"
+  example: []
   syntax:
     content: public ThemeStyler()
     content.vb: Public Sub New

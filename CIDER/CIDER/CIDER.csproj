@@ -126,9 +126,6 @@
       <DependentUpon>Licenses.xaml</DependentUpon>
     </Compile>
     <Compile Include="LicenseWriter.cs" />
-    <Compile Include="LoadBoxWindow.xaml.cs">
-      <DependentUpon>LoadBoxWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="LoadIO\FileIO.cs" />
     <Compile Include="LoadIO\FolderChecker.cs" />
     <Compile Include="LoadIO\FolderSelector.cs" />
@@ -191,10 +188,6 @@
       <DependentUpon>VelocityTimed.xaml</DependentUpon>
     </Compile>
     <Page Include="Licenses.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="LoadBoxWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

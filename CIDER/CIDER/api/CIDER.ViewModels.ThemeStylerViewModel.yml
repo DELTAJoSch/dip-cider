@@ -24,10 +24,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ThemeStylerViewModel
     path: ViewModels/ThemeStylerViewModel.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe ViewModel for the ThemeStyler window\n"
+  example: []
   syntax:
     content: 'public class ThemeStylerViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
@@ -74,10 +76,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/ThemeStylerViewModel.cs
-    startLine: 19
+    startLine: 25
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe constructor for the ThemeStyler viewmodel\n"
+  example: []
   syntax:
     content: public ThemeStylerViewModel()
     content.vb: Public Sub New
@@ -104,10 +108,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccentColorItemSource
     path: ViewModels/ThemeStylerViewModel.cs
-    startLine: 38
+    startLine: 47
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis list contains all available accent colors\n"
+  example: []
   syntax:
     content: public List<string> AccentColorItemSource { get; }
     parameters: []
@@ -139,10 +145,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DarkThemeCommand
     path: ViewModels/ThemeStylerViewModel.cs
-    startLine: 39
+    startLine: 52
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the command that is fired when the dark theme button is pressed\n"
+  example: []
   syntax:
     content: public ICommand DarkThemeCommand { get; }
     parameters: []
@@ -174,10 +182,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LightThemeCommand
     path: ViewModels/ThemeStylerViewModel.cs
-    startLine: 40
+    startLine: 57
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the command that is fired when the light theme button is pressed\n"
+  example: []
   syntax:
     content: public ICommand LightThemeCommand { get; }
     parameters: []
@@ -209,15 +219,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccentColorChanged
     path: ViewModels/ThemeStylerViewModel.cs
-    startLine: 42
+    startLine: 63
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function is called when a new color is selected\n"
+  example: []
   syntax:
     content: public void AccentColorChanged(string color)
     parameters:
     - id: color
       type: System.String
+      description: The name of the selected color
     content.vb: Public Sub AccentColorChanged(color As String)
   overload: CIDER.ViewModels.ThemeStylerViewModel.AccentColorChanged*
   modifiers.csharp:

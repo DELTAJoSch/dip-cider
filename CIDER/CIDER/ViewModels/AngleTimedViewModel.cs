@@ -4,9 +4,10 @@ using System.Linq;
 
 namespace CIDER.ViewModels
 {
+    /// <summary>
+    /// This is the ViewModel for the AngleTimed page
+    /// </summary>
     public class AngleTimedViewModel : ViewModelBase
-    ///Summary
-    ///This is the ViewModel for the AngleTimedView
     {
         private DataProvider _data;
 
@@ -30,6 +31,10 @@ namespace CIDER.ViewModels
         private string _rollText;
         private string _yawText;
 
+        /// <summary>
+        /// This is the constructor for the AngleTimedViewModel
+        /// </summary>
+        /// <param name="data">A DataProvider object to read the data from</param>
         public AngleTimedViewModel(DataProvider data)
         {
             _data = data;
@@ -54,21 +59,29 @@ namespace CIDER.ViewModels
             }
         }
 
+        /// <summary>
+        /// This contains the maximum of the slider
+        /// </summary>
         public int slMaximum
         {
             get { return _slMaximum; }
             set { SetProperty(ref _slMaximum, value); }
         }
 
+        /// <summary>
+        /// This contains the frequency of the slider ticks
+        /// </summary>
         public int slTickFrequency
         {
             get { return _slTickFrequency; }
             set { SetProperty(ref _slTickFrequency, value); }
         }
 
+        /// <summary>
+        /// This should be called when the slider value changes
+        /// </summary>
+        /// <param name="Value">The value of the slider</param>
         public void SliderValueChanged(int Value)
-        ///Called when the slider changes its value (or when loading)
-        ///Sets the correct values of the double progress bars
         {
             var Roll = _data.Roll.ElementAt(Value);
             var Pitch = _data.Pitch.ElementAt(Value);
@@ -128,36 +141,54 @@ namespace CIDER.ViewModels
         }
 
         //The following are the Data Bindings for the values
+        /// <summary>
+        /// This contains the value for the right pitch progbar
+        /// </summary>
         public float RValPitch
         {
             get { return _rValPitch; }
             set { SetProperty(ref _rValPitch, value); }
         }
 
+        /// <summary>
+        /// This contains the value for the left pitch progbar
+        /// </summary>
         public float LValPitch
         {
             get { return _lValPitch; }
             set { SetProperty(ref _lValPitch, value); }
         }
 
+        /// <summary>
+        /// This contains the value for the right roll progbar
+        /// </summary>
         public float RValRoll
         {
             get { return _rValRoll; }
             set { SetProperty(ref _rValRoll, value); }
         }
 
+        /// <summary>
+        /// This contains the value for the left roll progbar
+        /// </summary>
         public float LValRoll
         {
             get { return _lValRoll; }
             set { SetProperty(ref _lValRoll, value); }
         }
 
+        /// <summary>
+        /// This contains the value for the right yaw progbar
+        /// </summary>
         public float RValYaw
         {
             get { return _rValYaw; }
             set { SetProperty(ref _rValYaw, value); }
         }
 
+        /// <summary>
+        /// This contains the value for the left yaw progbar
+        /// </summary>
         public float LValYaw
         {
             get { return _lValYaw; }
@@ -165,54 +196,81 @@ namespace CIDER.ViewModels
         }
 
         //The following are the Data Bindings for the maximums
+        /// <summary>
+        /// this contains the value of the maximum of the right pitch progbar
+        /// </summary>
         public float RMaxPitch
         {
             get { return _rMaxPitch; }
             set { SetProperty(ref _rMaxPitch, value); }
         }
 
+        /// <summary>
+        /// this contains the value of the maximum of the left pitch progbar
+        /// </summary>
         public float LMaxPitch
         {
             get { return _lMaxPitch; }
             set { SetProperty(ref _lMaxPitch, value); }
         }
 
+        /// <summary>
+        /// this contains the value of the maximum of the right roll progbar
+        /// </summary>
         public float RMaxRoll
         {
             get { return _rMaxRoll; }
             set { SetProperty(ref _rMaxRoll, value); }
         }
 
+        /// <summary>
+        /// this contains the value of the maximum of the left roll progbar
+        /// </summary>
         public float LMaxRoll
         {
             get { return _lMaxRoll; }
             set { SetProperty(ref _lMaxRoll, value); }
         }
 
+        /// <summary>
+        /// this contains the value of the maximum of the right yaw progbar
+        /// </summary>
         public float RMaxYaw
         {
             get { return _rMaxYaw; }
             set { SetProperty(ref _rMaxYaw, value); }
         }
 
+        /// <summary>
+        /// this contains the value of the maximum of the left yaw progbar
+        /// </summary>
         public float LMaxYaw
         {
             get { return _lMaxYaw; }
             set { SetProperty(ref _lMaxYaw, value); }
         }
 
+        /// <summary>
+        /// This contains to be displayed next to the pitch progbars
+        /// </summary>
         public string PitchText
         {
             get { return _pitchText; }
             set { SetProperty(ref _pitchText, value); }
         }
 
+        /// <summary>
+        /// This contains to be displayed next to the yaw progbars
+        /// </summary>
         public string YawText
         {
             get { return _yawText; }
             set { SetProperty(ref _yawText, value); }
         }
 
+        /// <summary>
+        /// This contains to be displayed next to the roll progbars
+        /// </summary>
         public string RollText
         {
             get { return _rollText; }

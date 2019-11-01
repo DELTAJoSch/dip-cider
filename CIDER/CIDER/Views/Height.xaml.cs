@@ -5,12 +5,16 @@ using System.Windows.Controls;
 namespace CIDER.Views
 {
     /// <summary>
-    /// Interaction logic for Height.xaml
+    /// Interaction logic for the Height page
     /// </summary>
     public partial class Height : Page
     {
         private HeightViewModel model;
 
+        /// <summary>
+        /// This is the constructor for the Height page
+        /// </summary>
+        /// <param name="data">A DataProvider object to read the data from</param>
         public Height(DataProvider data)
         {
             InitializeComponent();

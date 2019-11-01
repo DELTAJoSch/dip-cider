@@ -4,16 +4,20 @@ using System;
 
 namespace CIDER.ViewModels
 {
+    /// <summary>
+    /// This is the ViewModel for the AngleGraph page
+    /// </summary>
     public class AngleGraphViewModel : ViewModelBase, IDisposable
-    ///Summary
-    ///This is the View Model for the AngleGraphViewModel
-    ///TODO: Make loading async or do it in an extra thread
     {
         private PlotModel _plot;
         private PlotModel data;
         private PlotModel blank;
         private DataProvider _data;
 
+        /// <summary>
+        /// This is the constructor for the AngleGraphViewModel
+        /// </summary>
+        /// <param name="dataProvider">A DataProvider object to read the data from</param>
         public AngleGraphViewModel(DataProvider dataProvider)
         {
             _data = dataProvider;
@@ -43,14 +47,19 @@ namespace CIDER.ViewModels
             Plot = blank;
         }
 
+        /// <summary>
+        /// As this class implements the IDisposable interface, this function needs to be called before the GC can collect the instance
+        /// </summary>
         public void Dispose()
         {
             MainWindow.OnResizeStartEvent -= MainWindow_OnResizeStartEvent;
             MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
         }
 
+        /// <summary>
+        /// This contains the PlotModel to be shwon on the page
+        /// </summary>
         public PlotModel Plot
-        //Data Binding for the Graph
         {
             get { return _plot; }
             set { SetProperty(ref _plot, value); }

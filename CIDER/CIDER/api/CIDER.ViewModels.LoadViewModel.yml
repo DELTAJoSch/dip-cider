@@ -5,7 +5,7 @@ items:
   id: LoadViewModel
   parent: CIDER.ViewModels
   children:
-  - CIDER.ViewModels.LoadViewModel.#ctor(CIDER.DataProvider,CIDER.LoadIO.IChecker,CIDER.LoadIO.IFolderSelectionInterface,CIDER.LoadIO.FileIO,CIDER.ViewModels.MainWindowViewModel)
+  - CIDER.ViewModels.LoadViewModel.#ctor(CIDER.DataProvider,CIDER.LoadIO.IChecker,CIDER.LoadIO.IFolderSelector,CIDER.LoadIO.FileIO,CIDER.ViewModels.MainWindowViewModel)
   - CIDER.ViewModels.LoadViewModel.CheckImage
   - CIDER.ViewModels.LoadViewModel.LoadClickCommand
   - CIDER.ViewModels.LoadViewModel.LoadEnabled
@@ -25,10 +25,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LoadViewModel
     path: ViewModels/LoadViewModel.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe ViewModel for the Load page.\n"
+  example: []
   syntax:
     content: 'public class LoadViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
@@ -57,16 +59,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: CIDER.ViewModels.LoadViewModel.#ctor(CIDER.DataProvider,CIDER.LoadIO.IChecker,CIDER.LoadIO.IFolderSelectionInterface,CIDER.LoadIO.FileIO,CIDER.ViewModels.MainWindowViewModel)
-  commentId: M:CIDER.ViewModels.LoadViewModel.#ctor(CIDER.DataProvider,CIDER.LoadIO.IChecker,CIDER.LoadIO.IFolderSelectionInterface,CIDER.LoadIO.FileIO,CIDER.ViewModels.MainWindowViewModel)
-  id: '#ctor(CIDER.DataProvider,CIDER.LoadIO.IChecker,CIDER.LoadIO.IFolderSelectionInterface,CIDER.LoadIO.FileIO,CIDER.ViewModels.MainWindowViewModel)'
+- uid: CIDER.ViewModels.LoadViewModel.#ctor(CIDER.DataProvider,CIDER.LoadIO.IChecker,CIDER.LoadIO.IFolderSelector,CIDER.LoadIO.FileIO,CIDER.ViewModels.MainWindowViewModel)
+  commentId: M:CIDER.ViewModels.LoadViewModel.#ctor(CIDER.DataProvider,CIDER.LoadIO.IChecker,CIDER.LoadIO.IFolderSelector,CIDER.LoadIO.FileIO,CIDER.ViewModels.MainWindowViewModel)
+  id: '#ctor(CIDER.DataProvider,CIDER.LoadIO.IChecker,CIDER.LoadIO.IFolderSelector,CIDER.LoadIO.FileIO,CIDER.ViewModels.MainWindowViewModel)'
   parent: CIDER.ViewModels.LoadViewModel
   langs:
   - csharp
   - vb
-  name: LoadViewModel(DataProvider, IChecker, IFolderSelectionInterface, FileIO, MainWindowViewModel)
-  nameWithType: LoadViewModel.LoadViewModel(DataProvider, IChecker, IFolderSelectionInterface, FileIO, MainWindowViewModel)
-  fullName: CIDER.ViewModels.LoadViewModel.LoadViewModel(CIDER.DataProvider, CIDER.LoadIO.IChecker, CIDER.LoadIO.IFolderSelectionInterface, CIDER.LoadIO.FileIO, CIDER.ViewModels.MainWindowViewModel)
+  name: LoadViewModel(DataProvider, IChecker, IFolderSelector, FileIO, MainWindowViewModel)
+  nameWithType: LoadViewModel.LoadViewModel(DataProvider, IChecker, IFolderSelector, FileIO, MainWindowViewModel)
+  fullName: CIDER.ViewModels.LoadViewModel.LoadViewModel(CIDER.DataProvider, CIDER.LoadIO.IChecker, CIDER.LoadIO.IFolderSelector, CIDER.LoadIO.FileIO, CIDER.ViewModels.MainWindowViewModel)
   type: Constructor
   source:
     remote:
@@ -75,24 +77,31 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/LoadViewModel.cs
-    startLine: 23
+    startLine: 32
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the constructor for the LoadViewModel\n"
+  example: []
   syntax:
-    content: public LoadViewModel(DataProvider data, IChecker folderChecker, IFolderSelectionInterface selector, FileIO fileIO, MainWindowViewModel main)
+    content: public LoadViewModel(DataProvider data, IChecker folderChecker, IFolderSelector selector, FileIO fileIO, MainWindowViewModel main)
     parameters:
     - id: data
       type: CIDER.DataProvider
+      description: A DataProvider object to store the ingested data in
     - id: folderChecker
       type: CIDER.LoadIO.IChecker
+      description: An object implementing the IChecker interface to check the folders integrity
     - id: selector
-      type: CIDER.LoadIO.IFolderSelectionInterface
+      type: CIDER.LoadIO.IFolderSelector
+      description: An object implementing the IFolderSelector interface used to select the folder
     - id: fileIO
       type: CIDER.LoadIO.FileIO
+      description: An object implementing the FileIO
     - id: main
       type: CIDER.ViewModels.MainWindowViewModel
-    content.vb: Public Sub New(data As DataProvider, folderChecker As IChecker, selector As IFolderSelectionInterface, fileIO As FileIO, main As MainWindowViewModel)
+      description: An instance of the MainWindowViewModel
+    content.vb: Public Sub New(data As DataProvider, folderChecker As IChecker, selector As IFolderSelector, fileIO As FileIO, main As MainWindowViewModel)
   overload: CIDER.ViewModels.LoadViewModel.#ctor*
   modifiers.csharp:
   - public
@@ -116,10 +125,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LoadClickCommand
     path: ViewModels/LoadViewModel.cs
-    startLine: 39
+    startLine: 50
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe command fired when the loadButon is clicked\n"
+  example: []
   syntax:
     content: public ICommand LoadClickCommand { get; }
     parameters: []
@@ -151,10 +162,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SelectClickCommand
     path: ViewModels/LoadViewModel.cs
-    startLine: 40
+    startLine: 55
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe command fired when the select folder button is clicked\n"
+  example: []
   syntax:
     content: public ICommand SelectClickCommand { get; }
     parameters: []
@@ -186,10 +199,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PathText
     path: ViewModels/LoadViewModel.cs
-    startLine: 86
+    startLine: 104
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe string to display in the text box containig the path\n"
+  example: []
   syntax:
     content: public string PathText { get; set; }
     parameters: []
@@ -221,10 +236,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CheckImage
     path: ViewModels/LoadViewModel.cs
-    startLine: 93
+    startLine: 113
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nimage location for the correct folder / wrong folder structure icon\n"
+  example: []
   syntax:
     content: public string CheckImage { get; set; }
     parameters: []
@@ -256,10 +273,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LoadEnabled
     path: ViewModels/LoadViewModel.cs
-    startLine: 100
+    startLine: 122
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nbool for enabling load button\n"
+  example: []
   syntax:
     content: public bool LoadEnabled { get; set; }
     parameters: []
@@ -755,12 +774,12 @@ references:
   name: IChecker
   nameWithType: IChecker
   fullName: CIDER.LoadIO.IChecker
-- uid: CIDER.LoadIO.IFolderSelectionInterface
-  commentId: T:CIDER.LoadIO.IFolderSelectionInterface
+- uid: CIDER.LoadIO.IFolderSelector
+  commentId: T:CIDER.LoadIO.IFolderSelector
   parent: CIDER.LoadIO
-  name: IFolderSelectionInterface
-  nameWithType: IFolderSelectionInterface
-  fullName: CIDER.LoadIO.IFolderSelectionInterface
+  name: IFolderSelector
+  nameWithType: IFolderSelector
+  fullName: CIDER.LoadIO.IFolderSelector
 - uid: CIDER.LoadIO.FileIO
   commentId: T:CIDER.LoadIO.FileIO
   parent: CIDER.LoadIO

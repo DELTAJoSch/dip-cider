@@ -5,16 +5,20 @@ using System.Windows.Controls;
 namespace CIDER.Views
 {
     /// <summary>
-    /// Interaction logic for AngleGraph.xaml
+    /// Interaction logic for AccelerationGraph page
     /// </summary>
     public partial class AccelerationGraph : Page
     {
         private AccelerationGraphViewModel model;
 
-        public AccelerationGraph(DataProvider _data)
+        /// <summary>
+        /// This is the constructor for the AccelerationGraph page
+        /// </summary>
+        /// <param name="Data">A DataProvider object to read the data from</param>
+        public AccelerationGraph(DataProvider Data)
         {
             InitializeComponent();
-            model = new AccelerationGraphViewModel(_data);
+            model = new AccelerationGraphViewModel(Data);
             this.DataContext = model;
         }
 

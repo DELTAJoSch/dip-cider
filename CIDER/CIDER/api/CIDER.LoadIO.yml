@@ -8,7 +8,7 @@ items:
   - CIDER.LoadIO.FolderChecker
   - CIDER.LoadIO.FolderSelector
   - CIDER.LoadIO.IChecker
-  - CIDER.LoadIO.IFolderSelectionInterface
+  - CIDER.LoadIO.IFolderSelector
   - CIDER.LoadIO.IIO
   - CIDER.LoadIO.IRead
   - CIDER.LoadIO.Reader
@@ -61,12 +61,12 @@ references:
   name: FolderSelector
   nameWithType: FolderSelector
   fullName: CIDER.LoadIO.FolderSelector
-- uid: CIDER.LoadIO.IFolderSelectionInterface
-  commentId: T:CIDER.LoadIO.IFolderSelectionInterface
+- uid: CIDER.LoadIO.IFolderSelector
+  commentId: T:CIDER.LoadIO.IFolderSelector
   parent: CIDER.LoadIO
-  name: IFolderSelectionInterface
-  nameWithType: IFolderSelectionInterface
-  fullName: CIDER.LoadIO.IFolderSelectionInterface
+  name: IFolderSelector
+  nameWithType: IFolderSelector
+  fullName: CIDER.LoadIO.IFolderSelector
 - uid: CIDER.LoadIO
   commentId: N:CIDER.LoadIO
   name: CIDER.LoadIO

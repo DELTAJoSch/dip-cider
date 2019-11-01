@@ -38,10 +38,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccelerationTimedViewModel
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the ViewModel for the AccelerationTimedView\n"
+  example: []
   syntax:
     content: 'public class AccelerationTimedViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
@@ -88,15 +90,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 32
+    startLine: 37
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the constructor for the AccelerationTimedViewModel\n"
+  example: []
   syntax:
     content: public AccelerationTimedViewModel(DataProvider data)
     parameters:
     - id: data
       type: CIDER.DataProvider
+      description: A DataProvider object to read the data from
     content.vb: Public Sub New(data As DataProvider)
   overload: CIDER.ViewModels.AccelerationTimedViewModel.#ctor*
   modifiers.csharp:
@@ -121,10 +126,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 60
+    startLine: 68
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the maxximum of the slider\n"
+  example: []
   syntax:
     content: public int slMaximum { get; set; }
     parameters: []
@@ -156,10 +163,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 66
+    startLine: 77
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the frequency of slider ticks\n"
+  example: []
   syntax:
     content: public int slTickFrequency { get; set; }
     parameters: []
@@ -191,15 +200,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 72
+    startLine: 87
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function should be called when the value of the slider changes\n"
+  example: []
   syntax:
     content: public void SliderValueChanged(int value)
     parameters:
     - id: value
       type: System.Int32
+      description: This is the value of the slider
     content.vb: Public Sub SliderValueChanged(value As Integer)
   overload: CIDER.ViewModels.AccelerationTimedViewModel.SliderValueChanged*
   modifiers.csharp:
@@ -224,10 +236,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValUD
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 119
+    startLine: 135
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe value of the right up-down progBar\n"
+  example: []
   syntax:
     content: public float RValUD { get; set; }
     parameters: []
@@ -259,10 +273,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValUD
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 125
+    startLine: 144
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe value of the left up-down progBar\n"
+  example: []
   syntax:
     content: public float LValUD { get; set; }
     parameters: []
@@ -294,10 +310,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValFB
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 131
+    startLine: 153
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe value of the right forwards-backwards progBar\n"
+  example: []
   syntax:
     content: public float RValFB { get; set; }
     parameters: []
@@ -329,10 +347,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValFB
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 137
+    startLine: 162
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe value of the left forwards-backwards progBar\n"
+  example: []
   syntax:
     content: public float LValFB { get; set; }
     parameters: []
@@ -364,10 +384,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValLR
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 143
+    startLine: 171
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe value of the right left-right progBar\n"
+  example: []
   syntax:
     content: public float RValLR { get; set; }
     parameters: []
@@ -399,10 +421,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValLR
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 149
+    startLine: 180
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe value of the left left-right progBar\n"
+  example: []
   syntax:
     content: public float LValLR { get; set; }
     parameters: []
@@ -434,10 +458,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxUD
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 156
+    startLine: 190
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the value for the maximum of the right up-down progBar\n"
+  example: []
   syntax:
     content: public float RMaxUD { get; set; }
     parameters: []
@@ -469,10 +495,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxUD
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 162
+    startLine: 199
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the value for the maximum of the left up-down progBar\n"
+  example: []
   syntax:
     content: public float LMaxUD { get; set; }
     parameters: []
@@ -504,10 +532,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxFB
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 168
+    startLine: 208
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the value for the maximum of the right forward-backward progBar\n"
+  example: []
   syntax:
     content: public float RMaxFB { get; set; }
     parameters: []
@@ -539,10 +569,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxFB
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 174
+    startLine: 217
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the value for the maximum of the left forward-backward progBar\n"
+  example: []
   syntax:
     content: public float LMaxFB { get; set; }
     parameters: []
@@ -574,10 +606,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxLR
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 180
+    startLine: 226
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the value for the maximum of the right left-right progBar\n"
+  example: []
   syntax:
     content: public float RMaxLR { get; set; }
     parameters: []
@@ -609,10 +643,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxLR
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 186
+    startLine: 235
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the value for the maximum of the left left-right progBar\n"
+  example: []
   syntax:
     content: public float LMaxLR { get; set; }
     parameters: []
@@ -644,10 +680,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: UDText
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 192
+    startLine: 244
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the text to be shown with the up-down progBar\n"
+  example: []
   syntax:
     content: public string UDText { get; set; }
     parameters: []
@@ -679,10 +717,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LRText
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 198
+    startLine: 253
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the text to be shown with the left-right progBar\n"
+  example: []
   syntax:
     content: public string LRText { get; set; }
     parameters: []
@@ -714,10 +754,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FBText
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 204
+    startLine: 262
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the text to be shown with the forward-backward progBar\n"
+  example: []
   syntax:
     content: public string FBText { get; set; }
     parameters: []

@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace CIDER.ViewModels
 {
+    /// <summary>
+    /// This is the ViewModel for the VelocityTimed page
+    /// </summary>
     public class VelocityTimedViewModel : ViewModelBase
     {
         private DataProvider _data;
@@ -15,6 +18,10 @@ namespace CIDER.ViewModels
         private float _lMax;
         private string _Text;
 
+        /// <summary>
+        /// This is the constructor for the VelocityTimedViewModle
+        /// </summary>
+        /// <param name="data">A DataProvider object to read the data from</param>
         public VelocityTimedViewModel(DataProvider data)
         {
             _data = data;
@@ -41,18 +48,28 @@ namespace CIDER.ViewModels
             }
         }
 
+        /// <summary>
+        /// This contains the maximum value of the slider
+        /// </summary>
         public int slMaximum
         {
             get { return _slMaximum; }
             set { SetProperty(ref _slMaximum, value); }
         }
 
+        /// <summary>
+        /// This contains the tick frequency of the slider
+        /// </summary>
         public int slTickFrequency
         {
             get { return _slTickFrequency; }
             set { SetProperty(ref _slTickFrequency, value); }
         }
 
+        /// <summary>
+        /// This function should be called when the slider value changes
+        /// </summary>
+        /// <param name="value">The value of the slider</param>
         public void SliderValueChanged(int value)
         {
             float x = _data.Velocity.ElementAt(value);
@@ -72,12 +89,18 @@ namespace CIDER.ViewModels
         }
 
         //The following are the Data Bindings for the values
+        /// <summary>
+        /// This is the value of the right progress bar
+        /// </summary>
         public float RVal
         {
             get { return _rVal; }
             set { SetProperty(ref _rVal, value); }
         }
 
+        /// <summary>
+        /// This is the value of the left progress bar
+        /// </summary>
         public float LVal
         {
             get { return _lVal; }
@@ -85,18 +108,27 @@ namespace CIDER.ViewModels
         }
 
         //The following are the Data Bindings for the maximums
+        /// <summary>
+        /// This is the maximum of the value of the right progress bar
+        /// </summary>
         public float RMax
         {
             get { return _rMax; }
             set { SetProperty(ref _rMax, value); }
         }
 
+        /// <summary>
+        /// This is the maximum of the left value of the progress bar
+        /// </summary>
         public float LMax
         {
             get { return _lMax; }
             set { SetProperty(ref _lMax, value); }
         }
 
+        /// <summary>
+        /// This contains the text to be displayed next to the progress bars
+        /// </summary>
         public string Text
         {
             get { return _Text; }

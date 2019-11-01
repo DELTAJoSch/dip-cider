@@ -24,7 +24,7 @@ items:
   assemblies:
   - CIDER
   namespace: CIDER.Views
-  summary: "\nInteraction logic for VelocityGraph.xaml\n"
+  summary: "\nInteraction logic for the VelocityGraph page\n"
   example: []
   syntax:
     content: 'public class VelocityGraph : Page, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild'
@@ -663,15 +663,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/VelocityGraph.xaml.cs
-    startLine: 13
+    startLine: 17
   assemblies:
   - CIDER
   namespace: CIDER.Views
+  summary: "\nThis is the constructor of the VelocityGraph page\n"
+  example: []
   syntax:
     content: public VelocityGraph(DataProvider data)
     parameters:
     - id: data
       type: CIDER.DataProvider
+      description: A DataProvider object to read the data from
     content.vb: Public Sub New(data As DataProvider)
   overload: CIDER.Views.VelocityGraph.#ctor*
   modifiers.csharp:

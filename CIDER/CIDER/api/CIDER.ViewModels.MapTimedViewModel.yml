@@ -13,9 +13,9 @@ items:
   - CIDER.ViewModels.MapTimedViewModel.MapPolylines
   - CIDER.ViewModels.MapTimedViewModel.MapZoomLevel
   - CIDER.ViewModels.MapTimedViewModel.RouteChangedEvent
+  - CIDER.ViewModels.MapTimedViewModel.SliderValueChanged(System.Int32)
   - CIDER.ViewModels.MapTimedViewModel.slMaximum
   - CIDER.ViewModels.MapTimedViewModel.slTickFrequency
-  - CIDER.ViewModels.MapTimedViewModel.UpdateRoute(System.Int32)
   langs:
   - csharp
   - vb
@@ -30,10 +30,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapTimedViewModel
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the ViewModel for the MapTimed page\n"
+  example: []
   syntax:
     content: 'public class MapTimedViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
@@ -80,10 +82,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteChangedEvent
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 19
+    startLine: 25
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis event is raised when the route changed\n"
+  example: []
   syntax:
     content: public event EventHandler RouteChangedEvent
     return:
@@ -111,15 +115,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 21
+    startLine: 31
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the constructor for the MapTimedViewModel\n"
+  example: []
   syntax:
     content: public MapTimedViewModel(DataProvider data)
     parameters:
     - id: data
       type: CIDER.DataProvider
+      description: A DataProvider object to read the data from
     content.vb: Public Sub New(data As DataProvider)
   overload: CIDER.ViewModels.MapTimedViewModel.#ctor*
   modifiers.csharp:
@@ -144,10 +151,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: APIKey
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 49
+    startLine: 62
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe API Key for the map view\n"
+  example: []
   syntax:
     content: public ApplicationIdCredentialsProvider APIKey { get; set; }
     parameters: []
@@ -179,10 +188,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapPolylines
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 50
+    startLine: 67
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nA List of polylines to be shown on the map\n"
+  example: []
   syntax:
     content: public List<MapPolyline> MapPolylines { get; }
     parameters: []
@@ -214,10 +225,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 52
+    startLine: 72
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe maximum of the slider\n"
+  example: []
   syntax:
     content: public int slMaximum { get; set; }
     parameters: []
@@ -249,10 +262,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapCenter
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 58
+    startLine: 81
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe location of the center of the map\n"
+  example: []
   syntax:
     content: public Location MapCenter { get; set; }
     parameters: []
@@ -284,10 +299,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapZoomLevel
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 64
+    startLine: 90
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe zoom level of the map\n"
+  example: []
   syntax:
     content: public double MapZoomLevel { get; set; }
     parameters: []
@@ -319,10 +336,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 70
+    startLine: 99
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThe tick frequency of the slider\n"
+  example: []
   syntax:
     content: public int slTickFrequency { get; set; }
     parameters: []
@@ -354,10 +373,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Init
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 76
+    startLine: 108
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function should be called right after the constructor\n"
+  example: []
   syntax:
     content: public void Init()
     content.vb: Public Sub Init
@@ -366,35 +387,38 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: CIDER.ViewModels.MapTimedViewModel.UpdateRoute(System.Int32)
-  commentId: M:CIDER.ViewModels.MapTimedViewModel.UpdateRoute(System.Int32)
-  id: UpdateRoute(System.Int32)
+- uid: CIDER.ViewModels.MapTimedViewModel.SliderValueChanged(System.Int32)
+  commentId: M:CIDER.ViewModels.MapTimedViewModel.SliderValueChanged(System.Int32)
+  id: SliderValueChanged(System.Int32)
   parent: CIDER.ViewModels.MapTimedViewModel
   langs:
   - csharp
   - vb
-  name: UpdateRoute(Int32)
-  nameWithType: MapTimedViewModel.UpdateRoute(Int32)
-  fullName: CIDER.ViewModels.MapTimedViewModel.UpdateRoute(System.Int32)
+  name: SliderValueChanged(Int32)
+  nameWithType: MapTimedViewModel.SliderValueChanged(Int32)
+  fullName: CIDER.ViewModels.MapTimedViewModel.SliderValueChanged(System.Int32)
   type: Method
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
       branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
-    id: UpdateRoute
+    id: SliderValueChanged
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 84
+    startLine: 120
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function should be called when the slider value changes\n"
+  example: []
   syntax:
-    content: public void UpdateRoute(int value)
+    content: public void SliderValueChanged(int value)
     parameters:
     - id: value
       type: System.Int32
-    content.vb: Public Sub UpdateRoute(value As Integer)
-  overload: CIDER.ViewModels.MapTimedViewModel.UpdateRoute*
+      description: The value of the slider
+    content.vb: Public Sub SliderValueChanged(value As Integer)
+  overload: CIDER.ViewModels.MapTimedViewModel.SliderValueChanged*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -417,10 +441,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CalculateCenter
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 102
+    startLine: 138
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function calculates the location of the map center\n"
+  example: []
   syntax:
     content: public void CalculateCenter()
     content.vb: Public Sub CalculateCenter
@@ -1075,11 +1101,11 @@ references:
   name: Init
   nameWithType: MapTimedViewModel.Init
   fullName: CIDER.ViewModels.MapTimedViewModel.Init
-- uid: CIDER.ViewModels.MapTimedViewModel.UpdateRoute*
-  commentId: Overload:CIDER.ViewModels.MapTimedViewModel.UpdateRoute
-  name: UpdateRoute
-  nameWithType: MapTimedViewModel.UpdateRoute
-  fullName: CIDER.ViewModels.MapTimedViewModel.UpdateRoute
+- uid: CIDER.ViewModels.MapTimedViewModel.SliderValueChanged*
+  commentId: Overload:CIDER.ViewModels.MapTimedViewModel.SliderValueChanged
+  name: SliderValueChanged
+  nameWithType: MapTimedViewModel.SliderValueChanged
+  fullName: CIDER.ViewModels.MapTimedViewModel.SliderValueChanged
 - uid: CIDER.ViewModels.MapTimedViewModel.CalculateCenter*
   commentId: Overload:CIDER.ViewModels.MapTimedViewModel.CalculateCenter
   name: CalculateCenter

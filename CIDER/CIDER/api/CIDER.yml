@@ -19,7 +19,6 @@ items:
   - CIDER.LicenseManager
   - CIDER.Licenses
   - CIDER.LicenseWriter
-  - CIDER.LoadBoxWindow
   - CIDER.MainWindow
   - CIDER.PlotManager
   - CIDER.RouteMaker
@@ -103,11 +102,6 @@ references:
   name: LicenseWriter
   nameWithType: LicenseWriter
   fullName: CIDER.LicenseWriter
-- uid: CIDER.LoadBoxWindow
-  commentId: T:CIDER.LoadBoxWindow
-  name: LoadBoxWindow
-  nameWithType: LoadBoxWindow
-  fullName: CIDER.LoadBoxWindow
 - uid: CIDER.PlotManager
   commentId: T:CIDER.PlotManager
   name: PlotManager

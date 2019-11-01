@@ -24,7 +24,7 @@ items:
   assemblies:
   - CIDER
   namespace: CIDER.Views
-  summary: "\nInteraction logic for AngleGraph.xaml\n"
+  summary: "\nInteraction logic for AccelerationGraph page\n"
   example: []
   syntax:
     content: 'public class AccelerationGraph : Page, DUCE.IResource, IAnimatable, IFrameworkInputElement, IInputElement, ISupportInitialize, IHaveResources, IQueryAmbient, IWindowService, IAddChild'
@@ -663,16 +663,19 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/AccelerationGraph.xaml.cs
-    startLine: 13
+    startLine: 17
   assemblies:
   - CIDER
   namespace: CIDER.Views
+  summary: "\nThis is the constructor for the AccelerationGraph page\n"
+  example: []
   syntax:
-    content: public AccelerationGraph(DataProvider _data)
+    content: public AccelerationGraph(DataProvider Data)
     parameters:
-    - id: _data
+    - id: Data
       type: CIDER.DataProvider
-    content.vb: Public Sub New(_data As DataProvider)
+      description: A DataProvider object to read the data from
+    content.vb: Public Sub New(Data As DataProvider)
   overload: CIDER.Views.AccelerationGraph.#ctor*
   modifiers.csharp:
   - public

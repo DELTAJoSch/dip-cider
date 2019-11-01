@@ -28,10 +28,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: VelocityTimedViewModel
     path: ViewModels/VelocityTimedViewModel.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the ViewModel for the VelocityTimed page\n"
+  example: []
   syntax:
     content: 'public class VelocityTimedViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
@@ -78,15 +80,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/VelocityTimedViewModel.cs
-    startLine: 17
+    startLine: 24
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the constructor for the VelocityTimedViewModle\n"
+  example: []
   syntax:
     content: public VelocityTimedViewModel(DataProvider data)
     parameters:
     - id: data
       type: CIDER.DataProvider
+      description: A DataProvider object to read the data from
     content.vb: Public Sub New(data As DataProvider)
   overload: CIDER.ViewModels.VelocityTimedViewModel.#ctor*
   modifiers.csharp:
@@ -111,10 +116,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/VelocityTimedViewModel.cs
-    startLine: 43
+    startLine: 53
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the maximum value of the slider\n"
+  example: []
   syntax:
     content: public int slMaximum { get; set; }
     parameters: []
@@ -146,10 +153,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/VelocityTimedViewModel.cs
-    startLine: 49
+    startLine: 62
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the tick frequency of the slider\n"
+  example: []
   syntax:
     content: public int slTickFrequency { get; set; }
     parameters: []
@@ -181,15 +190,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/VelocityTimedViewModel.cs
-    startLine: 55
+    startLine: 72
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function should be called when the slider value changes\n"
+  example: []
   syntax:
     content: public void SliderValueChanged(int value)
     parameters:
     - id: value
       type: System.Int32
+      description: The value of the slider
     content.vb: Public Sub SliderValueChanged(value As Integer)
   overload: CIDER.ViewModels.VelocityTimedViewModel.SliderValueChanged*
   modifiers.csharp:
@@ -214,10 +226,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RVal
     path: ViewModels/VelocityTimedViewModel.cs
-    startLine: 74
+    startLine: 94
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the value of the right progress bar\n"
+  example: []
   syntax:
     content: public float RVal { get; set; }
     parameters: []
@@ -249,10 +263,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LVal
     path: ViewModels/VelocityTimedViewModel.cs
-    startLine: 80
+    startLine: 103
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the value of the left progress bar\n"
+  example: []
   syntax:
     content: public float LVal { get; set; }
     parameters: []
@@ -284,10 +300,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMax
     path: ViewModels/VelocityTimedViewModel.cs
-    startLine: 87
+    startLine: 113
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the maximum of the value of the right progress bar\n"
+  example: []
   syntax:
     content: public float RMax { get; set; }
     parameters: []
@@ -319,10 +337,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMax
     path: ViewModels/VelocityTimedViewModel.cs
-    startLine: 93
+    startLine: 122
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the maximum of the left value of the progress bar\n"
+  example: []
   syntax:
     content: public float LMax { get; set; }
     parameters: []
@@ -354,10 +374,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Text
     path: ViewModels/VelocityTimedViewModel.cs
-    startLine: 99
+    startLine: 131
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the text to be displayed next to the progress bars\n"
+  example: []
   syntax:
     content: public string Text { get; set; }
     parameters: []

@@ -4,6 +4,9 @@ using System;
 
 namespace CIDER.ViewModels
 {
+    /// <summary>
+    /// This is the ViewModel for the VelocityGraph page
+    /// </summary>
     public class VelocityGraphViewModel : ViewModelBase, IDisposable
     {
         private DataProvider _data;
@@ -11,6 +14,10 @@ namespace CIDER.ViewModels
         private PlotModel blank;
         private PlotModel data;
 
+        /// <summary>
+        /// This is the constructor of the VelocityGraphViewModel
+        /// </summary>
+        /// <param name="dataProvider">A DataProvider object to read the data from</param>
         public VelocityGraphViewModel(DataProvider dataProvider)
         {
             _data = dataProvider;
@@ -38,12 +45,18 @@ namespace CIDER.ViewModels
             Plot = blank;
         }
 
+        /// <summary>
+        /// This function needs to be called before dereferencing an instance of this class so the GC can collect it
+        /// </summary>
         public void Dispose()
         {
             MainWindow.OnResizeStartEvent -= MainWindow_OnResizeStartEvent;
             MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
         }
 
+        /// <summary>
+        /// This contains the plot to be shown
+        /// </summary>
         public PlotModel Plot
         {
             get

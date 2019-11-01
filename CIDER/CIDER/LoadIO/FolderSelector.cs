@@ -6,7 +6,7 @@ namespace CIDER.LoadIO
     /// This class implements the Folderselectioninterface. This class can show a Userinterface allowing the user to select a folder.
     /// If the user exits the dialog without selecting a folder, an exception will be thrown
     /// </summary>
-    public class FolderSelector : IFolderSelectionInterface
+    public class FolderSelector : IFolderSelector
     {
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private string _lastSelected;
@@ -41,7 +41,7 @@ namespace CIDER.LoadIO
     /// <summary>
     /// This Interface implements functions used for selecting folders. It can be used as a way to inject mocks and stubs.
     /// </summary>
-    public interface IFolderSelectionInterface
+    public interface IFolderSelector
     {
         /// <summary>
         /// This Function should prompt the user to select a folder

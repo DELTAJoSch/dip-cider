@@ -8,6 +8,9 @@ using System.Windows.Input;
 
 namespace CIDER.ViewModels
 {
+    /// <summary>
+    /// The ViewModel for the ThemeStyler window
+    /// </summary>
     public class ThemeStylerViewModel : ViewModelBase
     {
         private List<string> _accentColorItemSource;
@@ -17,6 +20,9 @@ namespace CIDER.ViewModels
 
         private ColorWriter writer;
 
+        /// <summary>
+        /// The constructor for the ThemeStyler viewmodel
+        /// </summary>
         public ThemeStylerViewModel()
         {
             List<String> source = new List<String>();
@@ -36,10 +42,25 @@ namespace CIDER.ViewModels
             _darkThemeSelectedCommand = new DelegateCommand(DarkThemeSelectedCommand);
         }
 
+        /// <summary>
+        /// This list contains all available accent colors
+        /// </summary>
         public List<string> AccentColorItemSource { get { return _accentColorItemSource; } private set { SetProperty(ref _accentColorItemSource, value); } }
+
+        /// <summary>
+        /// This is the command that is fired when the dark theme button is pressed
+        /// </summary>
         public ICommand DarkThemeCommand => _darkThemeSelectedCommand;
+
+        /// <summary>
+        /// This is the command that is fired when the light theme button is pressed
+        /// </summary>
         public ICommand LightThemeCommand => _lightThemeSelectedCommand;
 
+        /// <summary>
+        /// This function is called when a new color is selected
+        /// </summary>
+        /// <param name="color">The name of the selected color</param>
         public void AccentColorChanged(string color)
         {
             var theme = ThemeManager.DetectAppStyle(Application.Current);

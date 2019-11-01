@@ -38,10 +38,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AngleTimedViewModel
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the ViewModel for the AngleTimed page\n"
+  example: []
   syntax:
     content: 'public class AngleTimedViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
@@ -88,15 +90,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 32
+    startLine: 37
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the constructor for the AngleTimedViewModel\n"
+  example: []
   syntax:
     content: public AngleTimedViewModel(DataProvider data)
     parameters:
     - id: data
       type: CIDER.DataProvider
+      description: A DataProvider object to read the data from
     content.vb: Public Sub New(data As DataProvider)
   overload: CIDER.ViewModels.AngleTimedViewModel.#ctor*
   modifiers.csharp:
@@ -121,10 +126,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 56
+    startLine: 64
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the maximum of the slider\n"
+  example: []
   syntax:
     content: public int slMaximum { get; set; }
     parameters: []
@@ -156,10 +163,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 62
+    startLine: 73
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the frequency of the slider ticks\n"
+  example: []
   syntax:
     content: public int slTickFrequency { get; set; }
     parameters: []
@@ -191,15 +200,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 68
+    startLine: 83
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis should be called when the slider value changes\n"
+  example: []
   syntax:
     content: public void SliderValueChanged(int Value)
     parameters:
     - id: Value
       type: System.Int32
+      description: The value of the slider
     content.vb: Public Sub SliderValueChanged(Value As Integer)
   overload: CIDER.ViewModels.AngleTimedViewModel.SliderValueChanged*
   modifiers.csharp:
@@ -224,10 +236,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValPitch
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 130
+    startLine: 146
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the value for the right pitch progbar\n"
+  example: []
   syntax:
     content: public float RValPitch { get; set; }
     parameters: []
@@ -259,10 +273,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValPitch
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 136
+    startLine: 155
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the value for the left pitch progbar\n"
+  example: []
   syntax:
     content: public float LValPitch { get; set; }
     parameters: []
@@ -294,10 +310,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValRoll
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 142
+    startLine: 164
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the value for the right roll progbar\n"
+  example: []
   syntax:
     content: public float RValRoll { get; set; }
     parameters: []
@@ -329,10 +347,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValRoll
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 148
+    startLine: 173
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the value for the left roll progbar\n"
+  example: []
   syntax:
     content: public float LValRoll { get; set; }
     parameters: []
@@ -364,10 +384,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValYaw
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 154
+    startLine: 182
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the value for the right yaw progbar\n"
+  example: []
   syntax:
     content: public float RValYaw { get; set; }
     parameters: []
@@ -399,10 +421,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValYaw
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 160
+    startLine: 191
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the value for the left yaw progbar\n"
+  example: []
   syntax:
     content: public float LValYaw { get; set; }
     parameters: []
@@ -434,10 +458,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxPitch
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 167
+    startLine: 201
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nthis contains the value of the maximum of the right pitch progbar\n"
+  example: []
   syntax:
     content: public float RMaxPitch { get; set; }
     parameters: []
@@ -469,10 +495,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxPitch
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 173
+    startLine: 210
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nthis contains the value of the maximum of the left pitch progbar\n"
+  example: []
   syntax:
     content: public float LMaxPitch { get; set; }
     parameters: []
@@ -504,10 +532,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxRoll
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 179
+    startLine: 219
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nthis contains the value of the maximum of the right roll progbar\n"
+  example: []
   syntax:
     content: public float RMaxRoll { get; set; }
     parameters: []
@@ -539,10 +569,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxRoll
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 185
+    startLine: 228
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nthis contains the value of the maximum of the left roll progbar\n"
+  example: []
   syntax:
     content: public float LMaxRoll { get; set; }
     parameters: []
@@ -574,10 +606,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxYaw
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 191
+    startLine: 237
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nthis contains the value of the maximum of the right yaw progbar\n"
+  example: []
   syntax:
     content: public float RMaxYaw { get; set; }
     parameters: []
@@ -609,10 +643,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxYaw
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 197
+    startLine: 246
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nthis contains the value of the maximum of the left yaw progbar\n"
+  example: []
   syntax:
     content: public float LMaxYaw { get; set; }
     parameters: []
@@ -644,10 +680,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PitchText
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 203
+    startLine: 255
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains to be displayed next to the pitch progbars\n"
+  example: []
   syntax:
     content: public string PitchText { get; set; }
     parameters: []
@@ -679,10 +717,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: YawText
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 209
+    startLine: 264
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains to be displayed next to the yaw progbars\n"
+  example: []
   syntax:
     content: public string YawText { get; set; }
     parameters: []
@@ -714,10 +754,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RollText
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 215
+    startLine: 273
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains to be displayed next to the roll progbars\n"
+  example: []
   syntax:
     content: public string RollText { get; set; }
     parameters: []

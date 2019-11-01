@@ -27,10 +27,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapRouteViewModel
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the ViewModel of the MapRoute page\n"
+  example: []
   syntax:
     content: 'public class MapRouteViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
@@ -77,10 +79,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteChangedEvent
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 15
+    startLine: 19
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis event is raised when the route changes\n"
+  example: []
   syntax:
     content: public event EventHandler RouteChangedEvent
     return:
@@ -108,15 +112,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 20
+    startLine: 28
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the constructor for the MapRouteViewModel\n"
+  example: []
   syntax:
     content: public MapRouteViewModel(DataProvider data)
     parameters:
     - id: data
       type: CIDER.DataProvider
+      description: A DataProvider object to read the data from
     content.vb: Public Sub New(data As DataProvider)
   overload: CIDER.ViewModels.MapRouteViewModel.#ctor*
   modifiers.csharp:
@@ -141,10 +148,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: APIKey
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 39
+    startLine: 50
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the APIKey for the map\n"
+  example: []
   syntax:
     content: public ApplicationIdCredentialsProvider APIKey { get; set; }
     parameters: []
@@ -176,10 +185,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapPolylines
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 40
+    startLine: 55
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is a list of polylines to display on the map\n"
+  example: []
   syntax:
     content: public List<MapPolyline> MapPolylines { get; }
     parameters: []
@@ -211,10 +222,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapCenter
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 41
+    startLine: 60
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the map center\n"
+  example: []
   syntax:
     content: public Location MapCenter
     return:
@@ -242,10 +255,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapZoomLevel
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 42
+    startLine: 65
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the zoom level of the map\n"
+  example: []
   syntax:
     content: public double MapZoomLevel
     return:
@@ -273,10 +288,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Initialize
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 44
+    startLine: 70
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function draws the route. It needs to be called after the constructor finishes\n"
+  example: []
   syntax:
     content: public void Initialize()
     content.vb: Public Sub Initialize
@@ -303,10 +320,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CalculateCenter
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 52
+    startLine: 79
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function calculates the center of the map\n"
+  example: []
   syntax:
     content: public void CalculateCenter()
     content.vb: Public Sub CalculateCenter

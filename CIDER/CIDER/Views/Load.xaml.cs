@@ -10,6 +10,11 @@ namespace CIDER.Views
     {
         private DataProvider _dataProvider;
 
+        /// <summary>
+        /// This is the constructor for the Load page
+        /// </summary>
+        /// <param name="data">A DataProvider object to store the data in</param>
+        /// <param name="main">An instance of the MainWindowViewModel</param>
         public Load(DataProvider data, MainWindowViewModel main)
         {
             InitializeComponent();

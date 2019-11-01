@@ -28,10 +28,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ArtificialHorizonViewModel
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the ViewModel for the ArtificiaHorizon page\n"
+  example: []
   syntax:
     content: 'public class ArtificialHorizonViewModel : ViewModelBase, INotifyPropertyChanged'
     content.vb: >-
@@ -78,15 +80,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 17
+    startLine: 24
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis is the constructor for the ArtificialHorizonViewModel\n"
+  example: []
   syntax:
     content: public ArtificialHorizonViewModel(DataProvider Data)
     parameters:
     - id: Data
       type: CIDER.DataProvider
+      description: A DataPRovider object to read the data from
     content.vb: Public Sub New(Data As DataProvider)
   overload: CIDER.ViewModels.ArtificialHorizonViewModel.#ctor*
   modifiers.csharp:
@@ -111,10 +116,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Pitch
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 28
+    startLine: 38
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the value of the current pitch\n"
+  example: []
   syntax:
     content: public double Pitch { get; set; }
     parameters: []
@@ -146,10 +153,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Roll
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 29
+    startLine: 43
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the calue of the current roll angle\n"
+  example: []
   syntax:
     content: public double Roll { get; set; }
     parameters: []
@@ -181,10 +190,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Yaw
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 30
+    startLine: 48
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the value of the current yaw angle\n"
+  example: []
   syntax:
     content: public double Yaw { get; set; }
     parameters: []
@@ -216,10 +227,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Velocity
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 31
+    startLine: 53
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the value of the current velocity\n"
+  example: []
   syntax:
     content: public double Velocity { get; set; }
     parameters: []
@@ -251,10 +264,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ClimbVelocity
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 32
+    startLine: 58
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the current climb velocity\n"
+  example: []
   syntax:
     content: public double ClimbVelocity { get; set; }
     parameters: []
@@ -286,10 +301,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 34
+    startLine: 63
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the maximum value of the slider\n"
+  example: []
   syntax:
     content: public int slMaximum { get; set; }
     parameters: []
@@ -321,10 +338,12 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 40
+    startLine: 72
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis contains the slider tick frequency\n"
+  example: []
   syntax:
     content: public int slTickFrequency { get; set; }
     parameters: []
@@ -356,15 +375,18 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 46
+    startLine: 82
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
+  summary: "\nThis function should be called when the slider changes its value\n"
+  example: []
   syntax:
     content: public void SliderValueChanged(int Value)
     parameters:
     - id: Value
       type: System.Int32
+      description: The value of the slider
     content.vb: Public Sub SliderValueChanged(Value As Integer)
   overload: CIDER.ViewModels.ArtificialHorizonViewModel.SliderValueChanged*
   modifiers.csharp:
