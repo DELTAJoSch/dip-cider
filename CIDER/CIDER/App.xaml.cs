@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro;
+using System;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -17,6 +18,25 @@ namespace CIDER
         /// <param name="e">The startup event args</param>
         protected override void OnStartup(StartupEventArgs e)
         {
+            ThemeManager.AddAccent("CIDER_Standard", new Uri("pack://application:,,,/Themes/CIDER_Standard.xaml"));
+
+            try
+            {
+                ColorWriter writer = new ColorWriter(new FileReader());
+                var thm = writer.GetSetTheming();
+
+                ThemeManager.ChangeAppStyle(App.Current, ThemeManager.GetAccent(thm.Item2), ThemeManager.GetAppTheme(thm.Item1));
+            }
+            catch (Exception ex)
+            {
+                logger.Warn(ex, "Error whilst reading theme. Reverting back to standard.");
+
+                // now change app style to the custom accent and current theme
+                ThemeManager.ChangeAppStyle(Application.Current,
+                                            ThemeManager.GetAccent("CIDER_Standard"),
+                                            ThemeManager.GetAppTheme("BaseLight"));
+            }
+
             base.OnStartup(e);
 
             SetupExceptionHandling();

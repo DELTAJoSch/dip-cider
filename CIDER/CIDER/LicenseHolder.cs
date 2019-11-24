@@ -12,6 +12,25 @@ namespace CIDER
     public static class LicenseHolder
     {
         /// <summary>
+        /// This contains the license state
+        /// </summary>
+        public static bool AcceptedLicense { get { return _acceptedLicense; } set { _acceptedLicense = value; RaiseEvent(new EventArgs()); } }
+
+        private static bool _acceptedLicense = false;
+
+        /// <summary>
+        /// This event is raised when the license state changes
+        /// </summary>
+        public static event EventHandler LicenseChangedEvent;
+
+        private static void RaiseEvent(EventArgs e)
+        {
+            EventHandler handler = LicenseChangedEvent;
+            if (handler != null)
+                handler.Invoke(new object(), e);
+        }
+
+        /// <summary>
         /// This is the license for this project
         /// </summary>
         public static string ThisSoftwareLicense = "This Software:\r\n                    GNU GENERAL PUBLIC LICENSE\r\n" +

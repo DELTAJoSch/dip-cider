@@ -40,6 +40,7 @@ namespace CIDER.ViewModels
             LicenseManager.LicensesAccepted = true;
             LicenseWriter licenseWriter = new LicenseWriter(new FileReader());
             licenseWriter.WriteAgreementState(true);
+            LicenseHolder.AcceptedLicense = true;
         }
 
         private void checkboxStateChanged(object obj)

@@ -82,23 +82,20 @@ namespace CIDER.ViewModels
 
             KeyManager manager = new KeyManager(dataProvider, new FileReader());
 
+            var reader = new FileReader();
+            if (!reader.FileExists("CIDER.cfg"))
+                reader.WriteAllText("", "CIDER.cfg");
+
             if (!manager.Fetch())
             {
                 MapEnabled = false;
                 _mapAvailable = false;
             }
 
-            try
+            if(ThemeManager.DetectAppStyle().Item1 == ThemeManager.GetAppTheme("BaseDark"))
             {
-                ColorWriter writer = new ColorWriter(new FileReader());
-                var thm = writer.GetSetTheming();
-
-                ThemeManager.ChangeAppStyle(App.Current, ThemeManager.GetAccent(thm.Item2), ThemeManager.GetAppTheme(thm.Item1));
-            }
-            catch (Exception ex)
-            {
-                logger.Warn(ex, "Error whilst reading theme. Reverting back to standard.");
-                ThemeManager.ChangeAppStyle(App.Current, ThemeManager.GetAccent("Blue"), ThemeManager.GetAppTheme("BaseLight"));
+                var theme = ThemeManager.DetectAppStyle();
+                ThemeManager.ChangeAppTheme(App.Current, "BaseDark");
             }
 
             // Check the license
@@ -126,9 +123,18 @@ namespace CIDER.ViewModels
 
             if (_licenseAccepted)
                 ButtonState(true);
-                MapEnabled = true;
 
             KeyManager.MapKeyChangedEvent += KeyManager_MapKeyChangedEvent;
+            LicenseHolder.LicenseChangedEvent += LicenseHolder_LicenseChangedEvent;
+        }
+
+        private void LicenseHolder_LicenseChangedEvent(object sender, EventArgs e)
+        {
+            if (LicenseHolder.AcceptedLicense)
+            {
+                _licenseAccepted = true;
+                ButtonState(true);
+            }
         }
 
         private void KeyManager_MapKeyChangedEvent(object sender, EventArgs e)
@@ -335,6 +341,7 @@ namespace CIDER.ViewModels
         public void Dispose()
         {
             KeyManager.MapKeyChangedEvent -= KeyManager_MapKeyChangedEvent;
+            LicenseHolder.LicenseChangedEvent -= LicenseHolder_LicenseChangedEvent;
         }
 
         private void AddLicenses()

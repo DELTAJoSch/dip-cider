@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\App.xaml
-171756577351
+18458364265
 3302758221
 51-468259070
 1341908371257
-Licenses.xaml;MainWindow.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;ThemeStyler.xaml;Views\About.xaml;Views\AccelerationGraph.xaml;Views\AccelerationTimed.xaml;Views\AngleGraph.xaml;Views\AngleTimed.xaml;Views\ArtificialHorizon.xaml;Views\Height.xaml;Views\Load.xaml;Views\MapRoute.xaml;Views\MapTimed.xaml;Views\VelocityGraph.xaml;Views\VelocityTimed.xaml;
-
+Licenses.xaml;MainWindow.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;ThemeStyler.xaml;Themes\CIDER_Standard.xaml;Views\About.xaml;Views\AccelerationGraph.xaml;Views\AccelerationTimed.xaml;Views\AngleGraph.xaml;Views\AngleTimed.xaml;Views\ArtificialHorizon.xaml;Views\Height.xaml;Views\Load.xaml;Views\MapRoute.xaml;Views\MapTimed.xaml;Views\VelocityGraph.xaml;Views\VelocityTimed.xaml;
+splashmain.png
 False
 

@@ -157,7 +157,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAboutCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 141
+    startLine: 147
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -194,7 +194,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAccelerationGraphCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 146
+    startLine: 152
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -231,7 +231,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAccelerationTimedCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 151
+    startLine: 157
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -268,7 +268,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToLoadCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 156
+    startLine: 162
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -305,7 +305,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToMapRouteCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 161
+    startLine: 167
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -342,7 +342,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToMapTimedCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 166
+    startLine: 172
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -379,7 +379,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToVelocityGraphCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 171
+    startLine: 177
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -416,7 +416,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToVelocityTimedCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 176
+    startLine: 182
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -453,7 +453,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToHeightCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 181
+    startLine: 187
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -490,7 +490,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAngleTimedCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 186
+    startLine: 192
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -527,7 +527,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAngleGraphCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 191
+    startLine: 197
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -564,7 +564,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToHorizonCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 196
+    startLine: 202
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -601,7 +601,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapEnabled
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 201
+    startLine: 207
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -638,7 +638,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FrameContent
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 206
+    startLine: 212
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -675,7 +675,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ButtonEnabled
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 211
+    startLine: 217
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -712,7 +712,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Initalize
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 230
+    startLine: 236
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -744,7 +744,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ButtonState
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 320
+    startLine: 326
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -780,7 +780,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 334
+    startLine: 340
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

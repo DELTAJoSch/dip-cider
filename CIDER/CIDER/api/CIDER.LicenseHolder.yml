@@ -5,7 +5,9 @@ items:
   id: LicenseHolder
   parent: CIDER
   children:
+  - CIDER.LicenseHolder.AcceptedLicense
   - CIDER.LicenseHolder.docFxLicense
+  - CIDER.LicenseHolder.LicenseChangedEvent
   - CIDER.LicenseHolder.MahAppsLicense
   - CIDER.LicenseHolder.NLOGLicense
   - CIDER.LicenseHolder.OxyPlotLicense
@@ -51,6 +53,80 @@ items:
   modifiers.vb:
   - Public
   - Module
+- uid: CIDER.LicenseHolder.AcceptedLicense
+  commentId: P:CIDER.LicenseHolder.AcceptedLicense
+  id: AcceptedLicense
+  parent: CIDER.LicenseHolder
+  langs:
+  - csharp
+  - vb
+  name: AcceptedLicense
+  nameWithType: LicenseHolder.AcceptedLicense
+  fullName: CIDER.LicenseHolder.AcceptedLicense
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/LicenseHolder.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: AcceptedLicense
+    path: LicenseHolder.cs
+    startLine: 16
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis contains the license state\n"
+  example: []
+  syntax:
+    content: public static bool AcceptedLicense { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property AcceptedLicense As Boolean
+  overload: CIDER.LicenseHolder.AcceptedLicense*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: CIDER.LicenseHolder.LicenseChangedEvent
+  commentId: E:CIDER.LicenseHolder.LicenseChangedEvent
+  id: LicenseChangedEvent
+  parent: CIDER.LicenseHolder
+  langs:
+  - csharp
+  - vb
+  name: LicenseChangedEvent
+  nameWithType: LicenseHolder.LicenseChangedEvent
+  fullName: CIDER.LicenseHolder.LicenseChangedEvent
+  type: Event
+  source:
+    remote:
+      path: CIDER/CIDER/LicenseHolder.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: LicenseChangedEvent
+    path: LicenseHolder.cs
+    startLine: 23
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis event is raised when the license state changes\n"
+  example: []
+  syntax:
+    content: public static event EventHandler LicenseChangedEvent
+    return:
+      type: System.EventHandler
+    content.vb: Public Shared Event LicenseChangedEvent As EventHandler
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 - uid: CIDER.LicenseHolder.ThisSoftwareLicense
   commentId: F:CIDER.LicenseHolder.ThisSoftwareLicense
   id: ThisSoftwareLicense
@@ -69,7 +145,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ThisSoftwareLicense
     path: LicenseHolder.cs
-    startLine: 16
+    startLine: 35
   assemblies:
   - CIDER
   namespace: CIDER
@@ -104,7 +180,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MahAppsLicense
     path: LicenseHolder.cs
-    startLine: 573
+    startLine: 592
   assemblies:
   - CIDER
   namespace: CIDER
@@ -139,7 +215,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OxyPlotLicense
     path: LicenseHolder.cs
-    startLine: 594
+    startLine: 613
   assemblies:
   - CIDER
   namespace: CIDER
@@ -174,7 +250,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: pilotHUDLicense
     path: LicenseHolder.cs
-    startLine: 616
+    startLine: 635
   assemblies:
   - CIDER
   namespace: CIDER
@@ -209,7 +285,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: NLOGLicense
     path: LicenseHolder.cs
-    startLine: 628
+    startLine: 647
   assemblies:
   - CIDER
   namespace: CIDER
@@ -244,7 +320,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: docFxLicense
     path: LicenseHolder.cs
-    startLine: 656
+    startLine: 675
   assemblies:
   - CIDER
   namespace: CIDER
@@ -559,6 +635,25 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: CIDER.LicenseHolder.AcceptedLicense*
+  commentId: Overload:CIDER.LicenseHolder.AcceptedLicense
+  name: AcceptedLicense
+  nameWithType: LicenseHolder.AcceptedLicense
+  fullName: CIDER.LicenseHolder.AcceptedLicense
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
 - uid: System.String
   commentId: T:System.String
   parent: System

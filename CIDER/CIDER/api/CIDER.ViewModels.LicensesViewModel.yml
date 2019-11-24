@@ -140,7 +140,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CheckboxStateChangedCommand
     path: ViewModels/LicensesViewModel.cs
-    startLine: 52
+    startLine: 53
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -177,7 +177,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicensesText
     path: ViewModels/LicensesViewModel.cs
-    startLine: 57
+    startLine: 58
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -214,7 +214,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CommandAcceptEnabled
     path: ViewModels/LicensesViewModel.cs
-    startLine: 62
+    startLine: 63
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
