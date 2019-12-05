@@ -1,4 +1,6 @@
-﻿#About View
+﻿#
+
+##About View
 
 The "about" view is the standard (startup) view of the application. The "about" view contains multiple features:
 <p style="text-align: center;">
@@ -9,7 +11,7 @@ The "about" view is the standard (startup) view of the application. The "about" 
 3. E-MAIL US! - press this button to open your e-mail program and send an e-mail to us
 4. VIEW LICENSES - press this button to open the license manager
 
-#Theme Manager
+##Theme Manager
 
 The theme manager allows you to change the look and feel of the application. You can select a light and a dark theme as well as different accent colours. The settings will be remembered for the next startups.
 <p style="text-align: center;">
@@ -153,9 +155,37 @@ The theme manager allows you to change the look and feel of the application. You
 </table>
 </p>
 
-#Map Views
+##Map Views
 
-##Map - Route
+The map views are only available if a valid key was added to the application. If you have not done this already, head to [__this tutorial__](how_to.html#setup) on how to do that.
 
+###Map - Route
+The map-route view allows seeing the recorded route on bing maps. The view will automatically focus on the route. The start direction is marked by a bright blue arrow, following the arrows direction follows the recorded data. If no route is loaded, the map will be focused on Linz-Hörsching airport.
 
-##Map - Timed
+![The Map Route View](../images/map_route.png)
+
+###Map - Timed
+The map-timed view shows the recorded route and a slider. Adjusting the slider gradually increases the shown part of the route. The shown part is increased on a per-data-point basis so you can slowly show the flown route.
+
+![The Map Timed View](../images/map_timed.png)
+
+##Load View
+The load view is used to select a valid dataset. Pressing the "..."-button opens a menu where a folder can be selected. After accepting the selected folder by pressing "Ok", the application checks the validity and data integrity of the selected folder. If the check fails, a red cross is displayed. If the check passes, a green tick is displayed. If the green tick is displayed, the "Load"-button is set to be available. Pressing the "Load"-button loads the selected data. During the loading procedure, the navigation bar to the side of the application turns grey. When the loading process is finished, the buttons are made available again.
+
+The load view:
+![The Load View](../images/load.png)
+
+The view with a valid dataset:
+![The green tick](../images/green_tick.png)
+
+The view with an invalid dataset:
+![The red cross](../images/red_cross.png)
+
+##The Height View
+The height view shows the height of the plane. There are two parts: The frist part shows a graph of the flight height over the duration of the flight. The second part shows the current height, adjustable by a slider found at the bottom of the view. You can also enter a specific value (only numbers without comma!) in the box found to the right of the slider - this will set the value of the slider to the entered value.
+
+The height view:
+![Height view](../images/height.png)
+
+##The Angle Views
+###Angle Timed
