@@ -744,7 +744,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ButtonState
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 326
+    startLine: 328
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -780,7 +780,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 340
+    startLine: 342
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

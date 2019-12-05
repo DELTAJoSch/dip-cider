@@ -323,27 +323,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Deltazocker\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\johan\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Dokumente\\Diplomarbeit\\Code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER.UnitTests\\CIDER.UnitTests.csproj",
+      "projectUniqueName": "D:\\Dokumente\\Diplomarbeit\\code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER.UnitTests\\CIDER.UnitTests.csproj",
       "projectName": "CIDER.UnitTests",
-      "projectPath": "H:\\Dokumente\\Diplomarbeit\\Code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER.UnitTests\\CIDER.UnitTests.csproj",
-      "packagesPath": "C:\\Users\\Deltazocker\\.nuget\\packages\\",
-      "outputPath": "H:\\Dokumente\\Diplomarbeit\\Code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER.UnitTests\\obj\\",
+      "projectPath": "D:\\Dokumente\\Diplomarbeit\\code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER.UnitTests\\CIDER.UnitTests.csproj",
+      "packagesPath": "C:\\Users\\johan\\.nuget\\packages\\",
+      "outputPath": "D:\\Dokumente\\Diplomarbeit\\code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Deltazocker\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\johan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net472"
@@ -355,8 +352,8 @@
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "H:\\Dokumente\\Diplomarbeit\\Code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER\\CIDER.csproj": {
-              "projectPath": "H:\\Dokumente\\Diplomarbeit\\Code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER\\CIDER.csproj"
+            "D:\\Dokumente\\Diplomarbeit\\code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER\\CIDER.csproj": {
+              "projectPath": "D:\\Dokumente\\Diplomarbeit\\code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER\\CIDER.csproj"
             }
           }
         }
@@ -390,7 +387,8 @@
             "target": "Package",
             "version": "[3.10.1, )"
           }
-        }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

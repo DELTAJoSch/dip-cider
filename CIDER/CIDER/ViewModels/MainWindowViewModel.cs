@@ -236,6 +236,8 @@ namespace CIDER.ViewModels
         /// </summary>
         public void Initalize()
         {
+            FrameContent = new Load(dataProvider, this);
+            RaiseEvent(new EventArgs());
             FrameContent = new About(dataProvider);
             RaiseEvent(new EventArgs());
         }

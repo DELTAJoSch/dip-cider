@@ -50,7 +50,7 @@ namespace CIDER
                     Match match = regex.Match(s);
                     if (_reader.FileExists(s.Remove(0, 4)) & match.Success)
                     {
-                        string[] key = _reader.ReadAllLines(cfg[0].Remove(0, 4));
+                        string[] key = _reader.ReadAllLines(s.Remove(0, 4));
 
                         _data.APIKey = key[0];
                         return true;

@@ -6,13 +6,17 @@
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:CIDER"
         mc:Ignorable="d"
-        Title="CIDER" Height="550" Width="900" MinHeight="452" MinWidth="850" Unloaded="OnUnloaded">
+        Title="CIDER" Height="560" Width="900" MinHeight="560" MinWidth="900" Unloaded="OnUnloaded">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="488*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="11*" />
         </Grid.ColumnDefinitions>
-        <StackPanel x:Name="stPanViewSelector" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,9.667">
+        <StackPanel x:Name="stPanViewSelector" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,9.6,9.8" Grid.RowSpan="2">
             <Button Content="Load" Command="{Binding Path=ChangeToLoadCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
             <Button Content="Map - Route" Command="{Binding Path=ChangeToMapRouteCommand}" IsEnabled="{Binding Path=MapEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
             <Button Content="Acc - Graph" Command="{Binding Path=ChangeToAccelerationGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
@@ -26,6 +30,6 @@
             <Button Content="Horizon" Command="{Binding Path=ChangeToHorizonCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
             <Button Content="About" Command="{Binding Path=ChangeToAboutCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
         </StackPanel>
-        <Frame Grid.Column="1" Margin="10,10,10.333,9.667" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="frmMain" />
+        <Frame Grid.Column="1" Margin="10.4,10,10.6,9.8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="frmMain" Grid.RowSpan="2" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Controls:MetroWindow>
