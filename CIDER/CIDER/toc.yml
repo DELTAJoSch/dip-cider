@@ -1,6 +1,9 @@
 - name: Articles
   href: articles
   homepage: articles/intro.html
+- name: Articles - German
+  href: articles_german
+  homepage: articles_german/intro_german.html
 - name: API Documentation
   href: obj/api/
   homepage: api/index.md

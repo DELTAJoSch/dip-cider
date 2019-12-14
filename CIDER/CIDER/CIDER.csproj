@@ -289,6 +289,11 @@
     <None Include="articles\toc.md" />
     <None Include="articles\toc.yml" />
     <None Include="articles\views.md" />
+    <None Include="articles_german\how_to_german.md" />
+    <None Include="articles_german\intro_german.md" />
+    <None Include="articles_german\toc.md" />
+    <None Include="articles_german\toc.yml" />
+    <None Include="articles_german\views_german.md" />
     <None Include="docfx.json" />
     <None Include="index.md" />
     <None Include="pdf\frontpage.md" />

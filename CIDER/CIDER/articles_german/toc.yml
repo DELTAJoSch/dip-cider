@@ -1,0 +1,6 @@
+﻿- name: Einleitung
+  href: intro_german.md
+- name: Getting Started
+  href: how_to_german.md
+- name: Die Anzeigeflächen
+  href: views_german.md

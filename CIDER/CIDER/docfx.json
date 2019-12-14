@@ -28,6 +28,8 @@
         "files": [
           "api/*.md",
           "articles/**.md",
+          "articles_german/**.md",
+          "articles_german/toc.yml",
           "articles/toc.yml",
           "toc.yml",
           "*.md"
@@ -75,7 +77,9 @@
       {
         "files": [
           "api/*.md",
+          "images/*.png",
           "articles/**.md",
+          "articles_german/**.md",
           "pdf/toc.yml",
           "*.md"
         ],

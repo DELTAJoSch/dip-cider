@@ -1,4 +1,5 @@
-﻿#
+﻿#The Views
+The following article is going to explain the different views available in the application and what their use is.
 
 ##About View
 
@@ -6,7 +7,7 @@ The "about" view is the standard (startup) view of the application. The "about" 
 <p style="text-align: center;">
 ![About View](../images/load.png)
 </p>
-1. SET API KEY - press this button to set the reference to an api key (.key) file
+1. SET API KEY - press this button to set the reference to an API key (.key) file
 2. CHANGE THEME - press this button to open the theme manager
 3. E-MAIL US! - press this button to open your e-mail program and send an e-mail to us
 4. VIEW LICENSES - press this button to open the license manager
@@ -160,7 +161,7 @@ The theme manager allows you to change the look and feel of the application. You
 The map views are only available if a valid key was added to the application. If you have not done this already, head to [__this tutorial__](how_to.html#setup) on how to do that.
 
 ###Map - Route
-The map-route view allows seeing the recorded route on bing maps. The view will automatically focus on the route. The start direction is marked by a bright blue arrow, following the arrows direction follows the recorded data. If no route is loaded, the map will be focused on Linz-Hörsching airport.
+The map-route view allows seeing the recorded route on bing maps. The view will automatically focus on the route. The start direction is marked by a bright blue arrow, following the direction of the arrow follows the recorded data. If no route is loaded, the map will be focused on Linz-Hörsching airport.
 
 ![The Map Route View](../images/map_route.png)
 
@@ -182,10 +183,57 @@ The view with an invalid dataset:
 ![The red cross](../images/red_cross.png)
 
 ##The Height View
-The height view shows the height of the plane. There are two parts: The frist part shows a graph of the flight height over the duration of the flight. The second part shows the current height, adjustable by a slider found at the bottom of the view. You can also enter a specific value (only numbers without comma!) in the box found to the right of the slider - this will set the value of the slider to the entered value.
+The height view shows the height of the plane. There are two parts: The first part shows a graph of the flight height throughout the flight. The second part shows the current height, adjustable by a slider found at the bottom of the view. You can also enter a specific value (only numbers without comma!) in the box found to the right of the slider - this will set the value of the slider to the entered value.
 
 The height view:
 ![Height view](../images/height.png)
 
 ##The Angle Views
 ###Angle Timed
+Using the angle-timed view you can watch the roll, pitch, and yaw angles of the plane at every point. The data point shown can be selected using the slider at the bottom of the page. Alternatively, you could also enter a value in the text field next to the slider.
+
+The angle-timed view:
+![Acceleration timed](../images/angle_timed.png)
+
+###Angle Graph
+The angle-graph view shows the roll, pitch, and yaw angles over the whole duration of the recording.
+
+The angle-graph view:
+![Angle graph](../images/angle_graph.png)
+
+##The Acceleration Views
+###Acceleration Timed
+The acceleration-timed view can be used to access the recorded acceleration data in all 3 directions. The data point shown can be selected using the slider at the bottom of the page. Alternatively, you could also enter a value in the text field next to the slider.
+
+The acceleration-timed view:
+![Acceleration timed](../images/acc_timed.png)
+
+###Acceleration Graph
+The acceleration-graph view shows the accelerations in the three directions as a graph. The whole duration of the flight is printed to the graph.
+
+The acceleration-graph view:
+![Acceleration graph](../images/acc_graph.png)
+
+##The Velocity Views
+###Velocity Timed
+The velocity-timed view shows the velocity of the airplane at the currently selected time. The data can be selected using the slider or by manually entering a number in the box to the left of the slider.
+
+The velocity-timed view:
+![Velocity timed](../images/velocity_timed.png)
+
+###Velocity Graph
+The velocity-graph view can be used to display the velocity of the airplane throughout the flight.
+
+The velocity-graph view:
+![Velocity graph](../images/velocity_graph.png)
+
+##The Artificial Horizon
+The artificial horizon is a view that unites almost all of the recorded values in one place. Just like in a real airplane, you can see the climb rate, the heading, the velocity, and the roll and pitch angles.
+
+The artificial horizon looks like this:
+![Artificial horizon](../images/art_horizon.png)
+
+##The license manager
+The license manager is the first window shown when you start the application for the first time. It contains all the necessary licenses and agreements. To be able to use the software as intended you need to accept the licenses and press the green button in the bottom left corner of the view.
+
+![license manager](../images/license_manager.png)

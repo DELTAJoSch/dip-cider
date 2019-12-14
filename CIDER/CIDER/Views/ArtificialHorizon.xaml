@@ -19,10 +19,10 @@
             PitchAngle="{Binding Path=Pitch}"
             YawAngle="{Binding Path=Yaw}"
             ClimbRate="{Binding Path=ClimbVelocity}"
-            SpeedMs="{Binding Path=Velocity}"
+            SpeedKt="{Binding Path=Velocity}"
             Alpha="0"
             Beta="0"
-            SpeedMsEnabled="True"
+            SpeedKtEnabled="True"
             ClimbRateEnabled="True" />
         <Slider Grid.Row="2" Maximum="{Binding Path=slMaximum}" TickPlacement="BottomRight" TickFrequency="{Binding Path=slTickFrequency}" Name="slValue" ValueChanged="SlValue_ValueChanged" SmallChange="1" LargeChange="10" IsSnapToTickEnabled="True" />
     </Grid>

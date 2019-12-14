@@ -143,7 +143,7 @@ namespace CIDER.ViewModels
                     HeightValR = 0;
                 }
 
-                HeightText = $"Height: {x} Fuß";
+                HeightText = $"Height: {x} ft";
             }
             catch (IndexOutOfRangeException ex)
             {
