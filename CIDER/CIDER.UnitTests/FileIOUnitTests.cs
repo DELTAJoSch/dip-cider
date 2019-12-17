@@ -9,6 +9,7 @@ namespace CIDER.UnitTests
 {
     public class FileIOUnitTests
     {
+        /*
         [Test]
         public void ReadCSV_WhenCalled_CorrectDate()
         {
@@ -16,7 +17,7 @@ namespace CIDER.UnitTests
             FileIO iO = new FileIO();
             DataProvider data = new DataProvider();
 
-            iO.ReadCSV(data, "", reader, new ViewModels.MainWindowViewModel());
+            iO.ReadCSV(data, "", reader, fakeViewModel);
 
             Assert.AreEqual(new DateTime(2019, 08, 26), data.RouteDate);
         }
@@ -106,7 +107,7 @@ namespace CIDER.UnitTests
             Assert.AreEqual(x, data.XVelocity);
             Assert.AreEqual(y, data.YVelocity);
             Assert.AreEqual(z, data.ZVelocity);
-            */
+            
         }
 
         [Test]
@@ -138,6 +139,7 @@ namespace CIDER.UnitTests
 
             Assert.AreEqual(12, data.AverageSattelitesInUse);
         }
+    */
     }
 
     public class FakeReader : IRead

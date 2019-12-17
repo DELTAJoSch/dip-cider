@@ -115,7 +115,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadNmea
     path: LoadIO/FileIO.cs
-    startLine: 154
+    startLine: 123
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO

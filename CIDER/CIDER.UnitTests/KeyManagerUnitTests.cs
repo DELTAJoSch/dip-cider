@@ -33,7 +33,7 @@ namespace CIDER.UnitTests
 
             manager.Put();
 
-            Assert.AreEqual("w.key", reader.NewFileName);
+            Assert.AreEqual("KEY:w.key", reader.NewFileName);
         }
 
         [Test]
@@ -69,7 +69,7 @@ namespace CIDER.UnitTests
         {
             if (filename == "CIDER.cfg")
             {
-                string[] vs = { "x.key" };
+                string[] vs = { "KEY:x.key" };
                 return vs;
             }
             else if(filename == "x.key")

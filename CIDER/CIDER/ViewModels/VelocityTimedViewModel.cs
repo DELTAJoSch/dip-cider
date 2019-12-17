@@ -85,7 +85,7 @@ namespace CIDER.ViewModels
                 RVal = 0;
             }
 
-            Text = String.Format("Velocity: {0} m/s", x);
+            Text = String.Format("Velocity: {0} kt", x);
         }
 
         //The following are the Data Bindings for the values

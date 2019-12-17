@@ -26,30 +26,5 @@ namespace CIDER
         {
             return angle * (180.0 / Math.PI);
         }
-
-        /// <summary>
-        /// This function calculates an angle based on accelerometer values
-        /// Calculation according to https://www.digikey.com/en/articles/techzone/2011/may/using-an-accelerometer-for-inclination-sensing
-        /// </summary>
-        /// <param name="AccelerationX">The acceleration in the X direction</param>
-        /// <param name="AccelerationY">The acceleration in the X direction</param>
-        /// <param name="AccelerationZ">The acceleration in the X direction</param>
-        /// <returns>A tuple with the angles in x, y and z direction</returns>
-        public static Tuple<float, float, float> CalculateAngle(float AccelerationX, float AccelerationY, float AccelerationZ)
-        {
-            var result = Math.Sqrt(Math.Pow(AccelerationY, 2) + Math.Pow(AccelerationZ, 2));
-            result = AccelerationX / result;
-            var Roll = Math.Atan(result);
-
-            result = Math.Sqrt(Math.Pow(AccelerationZ, 2) + Math.Pow(AccelerationX, 2));
-            result = AccelerationY / result;
-            var Pitch = Math.Atan(result);
-
-            result = Math.Sqrt(Math.Pow(AccelerationY, 2) + Math.Pow(AccelerationX, 2));
-            result = AccelerationX / result;
-            var Yaw = Math.Atan(result);
-
-            return new Tuple<float, float, float>((float)RadToDeg(Roll), (float)RadToDeg(Pitch), (float)RadToDeg(Yaw));
-        }
     }
 }

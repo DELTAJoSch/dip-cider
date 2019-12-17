@@ -39,7 +39,6 @@
   "CIDER.DataProvider.Yaw": "CIDER.DataProvider.yml",
   "CIDER.DataProvider.ZAcceleration": "CIDER.DataProvider.yml",
   "CIDER.ExtraMath": "CIDER.ExtraMath.yml",
-  "CIDER.ExtraMath.CalculateAngle(System.Single,System.Single,System.Single)": "CIDER.ExtraMath.yml",
   "CIDER.ExtraMath.DegToRad(System.Double)": "CIDER.ExtraMath.yml",
   "CIDER.ExtraMath.RadToDeg(System.Double)": "CIDER.ExtraMath.yml",
   "CIDER.FileDialogExitedException": "CIDER.FileDialogExitedException.yml",

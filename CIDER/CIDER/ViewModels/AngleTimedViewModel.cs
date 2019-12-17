@@ -87,21 +87,6 @@ namespace CIDER.ViewModels
             var Pitch = _data.Pitch.ElementAt(Value);
             var Yaw = _data.Yaw.ElementAt(Value);
 
-            if (Roll > 180)
-                Roll -= 360;
-            if (Roll < -180)
-                Roll += 360;
-
-            if (Pitch > 180)
-                Pitch -= 360;
-            if (Pitch < -180)
-                Pitch += 360;
-
-            if (Yaw > 180)
-                Yaw -= 360;
-            if (Yaw < -180)
-                Yaw += 360;
-
             if (Roll < 0)
             {
                 LValRoll = 0;

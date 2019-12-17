@@ -70,27 +70,12 @@ namespace CIDER.LoadIO
                             }
                             try
                             {
-                                var tp = new Tuple<float, float>(float.Parse(split[4]), float.Parse(split[5]));
+                                var tp = new Tuple<float, float, float>(float.Parse(split[4]), float.Parse(split[5]), float.Parse(split[6]));
 
-                                var xGaussData = tp.Item1 * 0.48828125;
-                                var yGaussData = tp.Item2 * 0.48828125;
-
-                                double heading;
-
-                                if ((xGaussData == 0) && (yGaussData < 0))
-                                {
-                                    heading = 90;
-                                }
-                                else if ((xGaussData == 0) && (yGaussData >= 0))
-                                {
-                                    heading = 0;
-                                }
-                                else
-                                {
-                                    heading = Math.Atan(xGaussData / yGaussData) * (180 / Math.PI);
-                                }
-
-                                Data.Heading.Add((float)heading);
+                                Data.Roll.Add(tp.Item1);
+                                Data.Pitch.Add(tp.Item2);
+                                Data.Yaw.Add(tp.Item3);
+                                Data.Heading.Add(tp.Item3);
                             }
                             catch (Exception ex)
                             {
@@ -98,7 +83,7 @@ namespace CIDER.LoadIO
                             }
                             try
                             {
-                                Data.Height.Add(float.Parse(split[6]));
+                                Data.Height.Add(float.Parse(split[7]));
                             }
                             catch (Exception ex)
                             {
@@ -106,7 +91,7 @@ namespace CIDER.LoadIO
                             }
                             try
                             {
-                                Data.Pressure.Add(float.Parse(split[7]));
+                                Data.Pressure.Add(float.Parse(split[8]));
                             }
                             catch (Exception ex)
                             {
@@ -118,22 +103,6 @@ namespace CIDER.LoadIO
                     Data.DataPointsAcceleration = Math.Min(Data.XAcceleration.Count, Data.YAcceleration.Count);
                     Data.DataPointsAcceleration = Math.Min(Data.DataPointsAcceleration, Data.ZAcceleration.Count);
                 });
-
-                for (int i = 0; i < Data.DataPointsAcceleration; i++)
-                {
-                    try
-                    {
-                        var Angle = ExtraMath.CalculateAngle(Data.XAcceleration.ElementAt(i), Data.YAcceleration.ElementAt(i), Data.ZAcceleration.ElementAt(i));
-
-                        Data.Roll.Add(Angle.Item1);
-                        Data.Pitch.Add(Angle.Item2);
-                        Data.Yaw.Add(Angle.Item3);
-                    }
-                    catch (Exception ex)
-                    {
-                        logger.Warn(ex, "Error whilst calculating Angles");
-                    }
-                }
 
                 Data.DataPointsAngle = Math.Min(Data.Roll.Count, Data.Pitch.Count);
                 Data.DataPointsAngle = Math.Min(Data.DataPointsAngle, Data.Yaw.Count);
