@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicensesViewModel
     path: ViewModels/LicensesViewModel.cs
@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/LicensesViewModel.cs
@@ -104,7 +104,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SaveAcceptAgreement
     path: ViewModels/LicensesViewModel.cs
@@ -136,7 +136,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CheckboxStateChangedCommand
     path: ViewModels/LicensesViewModel.cs
@@ -173,7 +173,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicensesText
     path: ViewModels/LicensesViewModel.cs
@@ -210,7 +210,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CommandAcceptEnabled
     path: ViewModels/LicensesViewModel.cs

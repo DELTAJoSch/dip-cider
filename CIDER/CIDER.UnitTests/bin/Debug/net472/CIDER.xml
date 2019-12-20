@@ -347,6 +347,23 @@
             <param name="text">The text to be written</param>
             <param name="filename">A path to the file</param>
         </member>
+        <member name="T:CIDER.IKeyManager">
+            <summary>
+            This interface can used for unit testing
+            </summary>
+        </member>
+        <member name="M:CIDER.IKeyManager.Put">
+            <summary>
+            This function should be used to put a new key into a file.
+            </summary>
+            <returns>true if successful</returns>
+        </member>
+        <member name="M:CIDER.IKeyManager.Fetch">
+            <summary>
+            This function should be used to fetch a key.
+            </summary>
+            <returns>true if sucessful</returns>
+        </member>
         <member name="T:CIDER.LicenseHolder">
             <summary>
             This class acts as a storage container for all the License texts used/referenced in the project.
@@ -436,6 +453,16 @@
         <member name="M:CIDER.Licenses.InitializeComponent">
             <summary>
             InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CIDER.ILicense">
+            <summary>
+            This interface is used for unit testing
+            </summary>
+        </member>
+        <member name="M:CIDER.ILicense.Show">
+            <summary>
+            This function is called to show the License View
             </summary>
         </member>
         <member name="T:CIDER.LicenseWriter">
@@ -1249,7 +1276,7 @@
             This event is fired when the selected frame changes
             </summary>
         </member>
-        <member name="M:CIDER.ViewModels.MainWindowViewModel.#ctor">
+        <member name="M:CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.KeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)">
             <summary>
             This is the constructor for the MainWindow ViewModel
             </summary>
@@ -1565,12 +1592,13 @@
             When the button in the view is pressed, the view model responds to it by calling the function fromn the processStarter interface
             </summary>
         </member>
-        <member name="M:CIDER.ViewModels.AboutViewModel.#ctor(CIDER.IProcessStarter,CIDER.KeyManager)">
+        <member name="M:CIDER.ViewModels.AboutViewModel.#ctor(CIDER.IProcessStarter,CIDER.IKeyManager,CIDER.ILicense)">
             <summary>
             This is the constructor for the About Viewmodel
             </summary>
             <param name="starter">An object implementing the IProcessStarter interface</param>
             <param name="manager">A keymanager object</param>
+            <param name="license">An object implementing the ILicense interface</param>
         </member>
         <member name="P:CIDER.ViewModels.AboutViewModel.RequestNavigateCommand">
             <summary>
@@ -1612,6 +1640,16 @@
             The Start-function starts a specified process
             </summary>
             <param name="info"></param>
+        </member>
+        <member name="T:CIDER.ViewModels.Licenser">
+            <summary>
+            The implementation of ILicense for production
+            </summary>
+        </member>
+        <member name="M:CIDER.ViewModels.Licenser.Show">
+            <summary>
+            This function shows the license view
+            </summary>
         </member>
         <member name="T:CIDER.Views.About">
             <summary>

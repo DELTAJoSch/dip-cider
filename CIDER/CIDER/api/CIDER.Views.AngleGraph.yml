@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/AngleGraph.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AngleGraph
     path: Views/AngleGraph.xaml.cs
@@ -659,7 +659,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/AngleGraph.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/AngleGraph.xaml.cs

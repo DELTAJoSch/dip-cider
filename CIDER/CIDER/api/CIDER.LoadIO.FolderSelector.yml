@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FolderSelector.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FolderSelector
     path: LoadIO/FolderSelector.cs
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FolderSelector.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LastSelected
     path: LoadIO/FolderSelector.cs
@@ -103,7 +103,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FolderSelector.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SelectFolder
     path: LoadIO/FolderSelector.cs

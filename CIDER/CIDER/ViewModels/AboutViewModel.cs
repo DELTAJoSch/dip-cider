@@ -17,14 +17,16 @@ namespace CIDER.ViewModels
         private readonly DelegateCommand _changeThemeCommand;
         private readonly DelegateCommand _viewLicenseCommand;
         private readonly IProcessStarter _handler;
-        private KeyManager _manager;
+        private IKeyManager _manager;
+        private ILicense _license;
 
         /// <summary>
         /// This is the constructor for the About Viewmodel
         /// </summary>
         /// <param name="starter">An object implementing the IProcessStarter interface</param>
         /// <param name="manager">A keymanager object</param>
-        public AboutViewModel(IProcessStarter starter, KeyManager manager)
+        /// <param name="license">An object implementing the ILicense interface</param>
+        public AboutViewModel(IProcessStarter starter, IKeyManager manager, ILicense license)
         {
             _mailtoClickCommand = new DelegateCommand(mailto);
             _setApiKeyCommand = new DelegateCommand(setApiKey);
@@ -40,6 +42,7 @@ namespace CIDER.ViewModels
 
             _handler = starter;
             _manager = manager;
+            _license = license;
         }
 
         /// <summary>
@@ -69,8 +72,7 @@ namespace CIDER.ViewModels
 
         private void ViewLicense(object sender)
         {
-            Licenses licenses = new Licenses();
-            licenses.Show();
+            _license.Show();
         }
 
         /// <summary>
@@ -78,7 +80,7 @@ namespace CIDER.ViewModels
         /// </summary>
         public ICommand ChangeThemeCommand => _changeThemeCommand;
 
-        private void ChangeTheme(object obj)
+        private void ChangeTheme(object sender)
         {
             ThemeStyler styler = new ThemeStyler();
             styler.Show();
@@ -119,6 +121,21 @@ namespace CIDER.ViewModels
         public void Start(ProcessStartInfo info)
         {
             Process.Start(info);
+        }
+    }
+
+    /// <summary>
+    /// The implementation of ILicense for production
+    /// </summary>
+    public class Licenser : ILicense
+    {
+        /// <summary>
+        /// This function shows the license view
+        /// </summary>
+        public void Show()
+        {
+            Licenses licenses = new Licenses();
+            licenses.Show();
         }
     }
 }

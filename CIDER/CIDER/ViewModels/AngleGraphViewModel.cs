@@ -28,7 +28,7 @@ namespace CIDER.ViewModels
             manager.AddLineSeries(_data.Pitch, "Pitch", OxyColors.Chartreuse);
             manager.AddLineSeries(_data.Yaw, "Yaw", OxyColors.Gold);
 
-            data = manager.GetPlotModel("Angle");
+            data = manager.GetPlotModel("Angle").Result;
             blank = new PlotModel();
             blank.Title = "Angle";
             Plot = data;

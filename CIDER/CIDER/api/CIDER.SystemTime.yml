@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/SystemTime.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SystemTime
     path: SystemTime.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/SystemTime.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Set
     path: SystemTime.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/SystemTime.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Reset
     path: SystemTime.cs
@@ -133,7 +133,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/SystemTime.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Now
     path: SystemTime.cs

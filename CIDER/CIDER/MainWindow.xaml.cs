@@ -31,7 +31,9 @@ namespace CIDER
         {
             InitializeComponent();
 
-            viewModel = new MainWindowViewModel();
+            var data = new DataProvider();
+
+            viewModel = new MainWindowViewModel(new KeyManager(data, new FileReader()), data, new FileReader());
 
             DataContext = viewModel;
 

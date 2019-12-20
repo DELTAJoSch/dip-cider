@@ -57,7 +57,7 @@ namespace CIDER.ViewModels
         /// <summary>
         /// This is the constructor for the MainWindow ViewModel
         /// </summary>
-        public MainWindowViewModel()
+        public MainWindowViewModel(KeyManager manager, DataProvider data, IReader reader, bool IsTesting = false)
         {
             AddLicenses();
 
@@ -75,14 +75,11 @@ namespace CIDER.ViewModels
             _changeToVelocityTimedCommand = new DelegateCommand(OnChangeToVelocityTimed);
             _changeToHorizonCommand = new DelegateCommand(OnChangeToHorizonCommand);
 
-            dataProvider = new DataProvider();
+            dataProvider = data;
 
             MapEnabled = true;
             _mapAvailable = true;
 
-            KeyManager manager = new KeyManager(dataProvider, new FileReader());
-
-            var reader = new FileReader();
             if (!reader.FileExists("CIDER.cfg"))
                 reader.WriteAllText("", "CIDER.cfg");
 
@@ -92,10 +89,13 @@ namespace CIDER.ViewModels
                 _mapAvailable = false;
             }
 
-            if(ThemeManager.DetectAppStyle().Item1 == ThemeManager.GetAppTheme("BaseDark"))
+            if (!IsTesting)
             {
-                var theme = ThemeManager.DetectAppStyle();
-                ThemeManager.ChangeAppTheme(App.Current, "BaseDark");
+                if (ThemeManager.DetectAppStyle().Item1 == ThemeManager.GetAppTheme("BaseDark"))
+                {
+                    var theme = ThemeManager.DetectAppStyle();
+                    ThemeManager.ChangeAppTheme(App.Current, "BaseDark");
+                }
             }
 
             // Check the license

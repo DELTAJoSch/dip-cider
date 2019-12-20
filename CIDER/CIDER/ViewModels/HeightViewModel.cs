@@ -54,7 +54,7 @@ namespace CIDER.ViewModels
             PlotManager manager = new PlotManager();
             manager.AddLineSeries(_data.Height, "Height", OxyColors.Coral);
 
-            data = manager.GetPlotModel("Height");
+            data = manager.GetPlotModel("Height").Result;
             blank = new PlotModel();
             blank.Title = "Height";
             Plot = data;

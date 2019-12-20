@@ -1,0 +1,27 @@
+2019-12-20 17:50:57.9818	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadNmea_WhenCalled_CorrectTime => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 17:50:58.2771	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadNmea_WhenCalled_CorrectTime => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 17:50:58.2771	DEBUG	Starting NMEA ingestion.	CIDER.LoadIO.FileIO+<ReadNmea>d__3.MoveNext	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadNmea_WhenCalled_CorrectTime => FileIO.ReadNmea => AsyncVoidMethodBuilder.Start => <ReadNmea>d__3.MoveNext		
+2019-12-20 17:52:35.0768	INFO	0 parses failed.	CIDER.LoadIO.FileIO.GGA	Task.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem => Task.ExecuteEntry => Task.ExecuteWithThreadLocal => ExecutionContext.Run => ExecutionContext.RunInternal => Task.ExecutionContextCallback => Task.Execute => Task.InnerInvoke => <>c__DisplayClass3_0.<ReadNmea>b__0 => FileIO.GGA		
+2019-12-20 17:52:35.0768	INFO	0 parses failed.	CIDER.LoadIO.FileIO.RMC	Task.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem => Task.ExecuteEntry => Task.ExecuteWithThreadLocal => ExecutionContext.Run => ExecutionContext.RunInternal => Task.ExecutionContextCallback => Task.Execute => Task.InnerInvoke => <>c__DisplayClass3_0.<ReadNmea>b__0 => FileIO.RMC		
+2019-12-20 17:52:35.0768	DEBUG	NMEA ingestion finished.	CIDER.LoadIO.FileIO+<ReadNmea>d__3.MoveNext	AwaitTaskContinuation.RunOrScheduleAction => ContinuationWrapper.Invoke => <>c__DisplayClass11_0.<OutputWaitEtwEvents>b__0 => ContinuationWrapper.Invoke => <>c__DisplayClass4_0.<OutputAsyncCausalityEvents>b__0 => MoveNextRunner.Run => ExecutionContext.Run => ExecutionContext.RunInternal => MoveNextRunner.InvokeMoveNext => <ReadNmea>d__3.MoveNext		

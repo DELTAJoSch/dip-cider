@@ -5,7 +5,7 @@ items:
   id: AboutViewModel
   parent: CIDER.ViewModels
   children:
-  - CIDER.ViewModels.AboutViewModel.#ctor(CIDER.IProcessStarter,CIDER.KeyManager)
+  - CIDER.ViewModels.AboutViewModel.#ctor(CIDER.IProcessStarter,CIDER.IKeyManager,CIDER.ILicense)
   - CIDER.ViewModels.AboutViewModel.AboutText
   - CIDER.ViewModels.AboutViewModel.ChangeThemeCommand
   - CIDER.ViewModels.AboutViewModel.InfoText
@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AboutViewModel
     path: ViewModels/AboutViewModel.cs
@@ -60,40 +60,43 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: CIDER.ViewModels.AboutViewModel.#ctor(CIDER.IProcessStarter,CIDER.KeyManager)
-  commentId: M:CIDER.ViewModels.AboutViewModel.#ctor(CIDER.IProcessStarter,CIDER.KeyManager)
-  id: '#ctor(CIDER.IProcessStarter,CIDER.KeyManager)'
+- uid: CIDER.ViewModels.AboutViewModel.#ctor(CIDER.IProcessStarter,CIDER.IKeyManager,CIDER.ILicense)
+  commentId: M:CIDER.ViewModels.AboutViewModel.#ctor(CIDER.IProcessStarter,CIDER.IKeyManager,CIDER.ILicense)
+  id: '#ctor(CIDER.IProcessStarter,CIDER.IKeyManager,CIDER.ILicense)'
   parent: CIDER.ViewModels.AboutViewModel
   langs:
   - csharp
   - vb
-  name: AboutViewModel(IProcessStarter, KeyManager)
-  nameWithType: AboutViewModel.AboutViewModel(IProcessStarter, KeyManager)
-  fullName: CIDER.ViewModels.AboutViewModel.AboutViewModel(CIDER.IProcessStarter, CIDER.KeyManager)
+  name: AboutViewModel(IProcessStarter, IKeyManager, ILicense)
+  nameWithType: AboutViewModel.AboutViewModel(IProcessStarter, IKeyManager, ILicense)
+  fullName: CIDER.ViewModels.AboutViewModel.AboutViewModel(CIDER.IProcessStarter, CIDER.IKeyManager, CIDER.ILicense)
   type: Constructor
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/AboutViewModel.cs
-    startLine: 26
+    startLine: 28
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
   summary: "\nThis is the constructor for the About Viewmodel\n"
   example: []
   syntax:
-    content: public AboutViewModel(IProcessStarter starter, KeyManager manager)
+    content: public AboutViewModel(IProcessStarter starter, IKeyManager manager, ILicense license)
     parameters:
     - id: starter
       type: CIDER.IProcessStarter
       description: An object implementing the IProcessStarter interface
     - id: manager
-      type: CIDER.KeyManager
+      type: CIDER.IKeyManager
       description: A keymanager object
-    content.vb: Public Sub New(starter As IProcessStarter, manager As KeyManager)
+    - id: license
+      type: CIDER.ILicense
+      description: An object implementing the ILicense interface
+    content.vb: Public Sub New(starter As IProcessStarter, manager As IKeyManager, license As ILicense)
   overload: CIDER.ViewModels.AboutViewModel.#ctor*
   modifiers.csharp:
   - public
@@ -113,11 +116,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RequestNavigateCommand
     path: ViewModels/AboutViewModel.cs
-    startLine: 47
+    startLine: 50
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -150,11 +153,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SetApiKeyCommand
     path: ViewModels/AboutViewModel.cs
-    startLine: 57
+    startLine: 60
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -187,11 +190,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ViewLicenseCommand
     path: ViewModels/AboutViewModel.cs
-    startLine: 67
+    startLine: 70
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -224,11 +227,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeThemeCommand
     path: ViewModels/AboutViewModel.cs
-    startLine: 78
+    startLine: 80
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -261,11 +264,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AboutText
     path: ViewModels/AboutViewModel.cs
-    startLine: 91
+    startLine: 93
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -298,11 +301,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: InfoText
     path: ViewModels/AboutViewModel.cs
-    startLine: 102
+    startLine: 104
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -797,12 +800,18 @@ references:
   name: IProcessStarter
   nameWithType: IProcessStarter
   fullName: CIDER.IProcessStarter
-- uid: CIDER.KeyManager
-  commentId: T:CIDER.KeyManager
+- uid: CIDER.IKeyManager
+  commentId: T:CIDER.IKeyManager
   parent: CIDER
-  name: KeyManager
-  nameWithType: KeyManager
-  fullName: CIDER.KeyManager
+  name: IKeyManager
+  nameWithType: IKeyManager
+  fullName: CIDER.IKeyManager
+- uid: CIDER.ILicense
+  commentId: T:CIDER.ILicense
+  parent: CIDER
+  name: ILicense
+  nameWithType: ILicense
+  fullName: CIDER.ILicense
 - uid: CIDER
   commentId: N:CIDER
   name: CIDER

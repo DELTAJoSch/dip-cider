@@ -16,11 +16,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Starter
     path: ViewModels/AboutViewModel.cs
-    startLine: 112
+    startLine: 114
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -63,11 +63,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Start
     path: ViewModels/AboutViewModel.cs
-    startLine: 118
+    startLine: 120
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

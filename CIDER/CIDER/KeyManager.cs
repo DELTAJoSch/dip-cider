@@ -10,7 +10,7 @@ namespace CIDER
     /// <summary>
     /// This class handles the file interaction for writing the path to the api key file
     /// </summary>
-    public class KeyManager
+    public class KeyManager : IKeyManager
     {
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private DataProvider _data;
@@ -248,5 +248,23 @@ namespace CIDER
         {
             File.WriteAllText(filename, text);
         }
+    }
+
+    /// <summary>
+    /// This interface can used for unit testing
+    /// </summary>
+    public interface IKeyManager
+    {
+        /// <summary>
+        /// This function should be used to put a new key into a file.
+        /// </summary>
+        /// <returns>true if successful</returns>
+        bool Put();
+
+        /// <summary>
+        /// This function should be used to fetch a key.
+        /// </summary>
+        /// <returns>true if sucessful</returns>
+        bool Fetch();
     }
 }
