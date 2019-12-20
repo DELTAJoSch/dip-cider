@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/RouteMaker.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteMaker
     path: RouteMaker.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/RouteMaker.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CreateRoute
     path: RouteMaker.cs
@@ -71,7 +71,10 @@ items:
   summary: "\nThis function creates the route and adds an arrow at the starting point\n"
   example: []
   syntax:
-    content: public List<MapPolyline> CreateRoute(DataProvider Data)
+    content: >-
+      [STAThread]
+
+      public List<MapPolyline> CreateRoute(DataProvider Data)
     parameters:
     - id: Data
       type: CIDER.DataProvider
@@ -79,8 +82,15 @@ items:
     return:
       type: System.Collections.Generic.List{Microsoft.Maps.MapControl.WPF.MapPolyline}
       description: A List with polylines to display on the map
-    content.vb: Public Function CreateRoute(Data As DataProvider) As List(Of MapPolyline)
+    content.vb: >-
+      <STAThread>
+
+      Public Function CreateRoute(Data As DataProvider) As List(Of MapPolyline)
   overload: CIDER.RouteMaker.CreateRoute*
+  attributes:
+  - type: System.STAThreadAttribute
+    ctor: System.STAThreadAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -99,11 +109,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/RouteMaker.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CreateRoute
     path: RouteMaker.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - CIDER
   namespace: CIDER

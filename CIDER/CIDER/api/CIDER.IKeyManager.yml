@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.IKeyManager
+  commentId: T:CIDER.IKeyManager
+  id: IKeyManager
+  parent: CIDER
+  children:
+  - CIDER.IKeyManager.Fetch
+  - CIDER.IKeyManager.Put
+  langs:
+  - csharp
+  - vb
+  name: IKeyManager
+  nameWithType: IKeyManager
+  fullName: CIDER.IKeyManager
+  type: Interface
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: unit-testing
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: IKeyManager
+    path: KeyManager.cs
+    startLine: 255
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis interface can used for unit testing\n"
+  example: []
+  syntax:
+    content: public interface IKeyManager
+    content.vb: Public Interface IKeyManager
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: CIDER.IKeyManager.Put
+  commentId: M:CIDER.IKeyManager.Put
+  id: Put
+  parent: CIDER.IKeyManager
+  langs:
+  - csharp
+  - vb
+  name: Put()
+  nameWithType: IKeyManager.Put()
+  fullName: CIDER.IKeyManager.Put()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: unit-testing
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Put
+    path: KeyManager.cs
+    startLine: 261
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis function should be used to put a new key into a file.\n"
+  example: []
+  syntax:
+    content: bool Put()
+    return:
+      type: System.Boolean
+      description: true if successful
+    content.vb: Function Put As Boolean
+  overload: CIDER.IKeyManager.Put*
+- uid: CIDER.IKeyManager.Fetch
+  commentId: M:CIDER.IKeyManager.Fetch
+  id: Fetch
+  parent: CIDER.IKeyManager
+  langs:
+  - csharp
+  - vb
+  name: Fetch()
+  nameWithType: IKeyManager.Fetch()
+  fullName: CIDER.IKeyManager.Fetch()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/KeyManager.cs
+      branch: unit-testing
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Fetch
+    path: KeyManager.cs
+    startLine: 267
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis function should be used to fetch a key.\n"
+  example: []
+  syntax:
+    content: bool Fetch()
+    return:
+      type: System.Boolean
+      description: true if sucessful
+    content.vb: Function Fetch As Boolean
+  overload: CIDER.IKeyManager.Fetch*
+references:
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: CIDER.IKeyManager.Put*
+  commentId: Overload:CIDER.IKeyManager.Put
+  name: Put
+  nameWithType: IKeyManager.Put
+  fullName: CIDER.IKeyManager.Put
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: CIDER.IKeyManager.Fetch*
+  commentId: Overload:CIDER.IKeyManager.Fetch
+  name: Fetch
+  nameWithType: IKeyManager.Fetch
+  fullName: CIDER.IKeyManager.Fetch

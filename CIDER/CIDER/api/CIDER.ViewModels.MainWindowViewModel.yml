@@ -5,7 +5,7 @@ items:
   id: MainWindowViewModel
   parent: CIDER.ViewModels
   children:
-  - CIDER.ViewModels.MainWindowViewModel.#ctor
+  - CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.KeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)
   - CIDER.ViewModels.MainWindowViewModel.ButtonEnabled
   - CIDER.ViewModels.MainWindowViewModel.ButtonState(System.Boolean)
   - CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand
@@ -35,7 +35,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MainWindowViewModel
     path: ViewModels/MainWindowViewModel.cs
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnFrameChangeEvent
     path: ViewModels/MainWindowViewModel.cs
@@ -107,21 +107,21 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: CIDER.ViewModels.MainWindowViewModel.#ctor
-  commentId: M:CIDER.ViewModels.MainWindowViewModel.#ctor
-  id: '#ctor'
+- uid: CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.KeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)
+  commentId: M:CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.KeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)
+  id: '#ctor(CIDER.KeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)'
   parent: CIDER.ViewModels.MainWindowViewModel
   langs:
   - csharp
   - vb
-  name: MainWindowViewModel()
-  nameWithType: MainWindowViewModel.MainWindowViewModel()
-  fullName: CIDER.ViewModels.MainWindowViewModel.MainWindowViewModel()
+  name: MainWindowViewModel(KeyManager, DataProvider, IReader, Boolean)
+  nameWithType: MainWindowViewModel.MainWindowViewModel(KeyManager, DataProvider, IReader, Boolean)
+  fullName: CIDER.ViewModels.MainWindowViewModel.MainWindowViewModel(CIDER.KeyManager, CIDER.DataProvider, CIDER.IReader, System.Boolean)
   type: Constructor
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/MainWindowViewModel.cs
@@ -132,8 +132,17 @@ items:
   summary: "\nThis is the constructor for the MainWindow ViewModel\n"
   example: []
   syntax:
-    content: public MainWindowViewModel()
-    content.vb: Public Sub New
+    content: public MainWindowViewModel(KeyManager manager, DataProvider data, IReader reader, bool IsTesting = false)
+    parameters:
+    - id: manager
+      type: CIDER.KeyManager
+    - id: data
+      type: CIDER.DataProvider
+    - id: reader
+      type: CIDER.IReader
+    - id: IsTesting
+      type: System.Boolean
+    content.vb: Public Sub New(manager As KeyManager, data As DataProvider, reader As IReader, IsTesting As Boolean = False)
   overload: CIDER.ViewModels.MainWindowViewModel.#ctor*
   modifiers.csharp:
   - public
@@ -153,7 +162,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAboutCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -190,7 +199,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAccelerationGraphCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -227,7 +236,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAccelerationTimedCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -264,7 +273,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToLoadCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -301,7 +310,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToMapRouteCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -338,7 +347,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToMapTimedCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -375,7 +384,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToVelocityGraphCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -412,7 +421,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToVelocityTimedCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -449,7 +458,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToHeightCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -486,7 +495,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAngleTimedCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -523,7 +532,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAngleGraphCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -560,7 +569,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToHorizonCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -597,7 +606,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapEnabled
     path: ViewModels/MainWindowViewModel.cs
@@ -634,7 +643,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FrameContent
     path: ViewModels/MainWindowViewModel.cs
@@ -671,7 +680,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ButtonEnabled
     path: ViewModels/MainWindowViewModel.cs
@@ -708,7 +717,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Initalize
     path: ViewModels/MainWindowViewModel.cs
@@ -740,7 +749,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ButtonState
     path: ViewModels/MainWindowViewModel.cs
@@ -776,7 +785,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/MainWindowViewModel.cs
@@ -1280,6 +1289,36 @@ references:
   name: MainWindowViewModel
   nameWithType: MainWindowViewModel.MainWindowViewModel
   fullName: CIDER.ViewModels.MainWindowViewModel.MainWindowViewModel
+- uid: CIDER.KeyManager
+  commentId: T:CIDER.KeyManager
+  parent: CIDER
+  name: KeyManager
+  nameWithType: KeyManager
+  fullName: CIDER.KeyManager
+- uid: CIDER.DataProvider
+  commentId: T:CIDER.DataProvider
+  parent: CIDER
+  name: DataProvider
+  nameWithType: DataProvider
+  fullName: CIDER.DataProvider
+- uid: CIDER.IReader
+  commentId: T:CIDER.IReader
+  parent: CIDER
+  name: IReader
+  nameWithType: IReader
+  fullName: CIDER.IReader
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
 - uid: CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand*
   commentId: Overload:CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand
   name: ChangeToAboutCommand
@@ -1358,13 +1397,6 @@ references:
   name: MapEnabled
   nameWithType: MainWindowViewModel.MapEnabled
   fullName: CIDER.ViewModels.MainWindowViewModel.MapEnabled
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
 - uid: CIDER.ViewModels.MainWindowViewModel.FrameContent*
   commentId: Overload:CIDER.ViewModels.MainWindowViewModel.FrameContent
   name: FrameContent

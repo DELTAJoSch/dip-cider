@@ -32,14 +32,14 @@ namespace CIDER
         /// </summary>
         /// <param name="Title">This is the Title of the plot returned</param>
         /// <returns>Returns a plotmodel</returns>
-        public PlotModel GetPlotModel(string Title)
+        public async Task<PlotModel> GetPlotModel(string Title)
         {
-            Create(Title);
+            await Create(Title);
 
             return _plot;
         }
 
-        private async void Create(string Title)
+        private async Task Create(string Title)
         {
             //Create a new PlotModel
             PlotModel CreatePlot = new PlotModel();
@@ -58,9 +58,9 @@ namespace CIDER
         /// </summary>
         /// <param name="Title">Title of the plot</param>
         /// <param name="fileName">Path to the file</param>
-        public void CreatePDF(string Title, string fileName)
+        public async Task CreatePDF(string Title, string fileName)
         {
-            Create(Title);
+            await Create(Title);
 
             using (var stream = File.Create(fileName))
             {

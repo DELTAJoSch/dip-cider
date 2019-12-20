@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ExtraMath.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ExtraMath
     path: ExtraMath.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ExtraMath.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DegToRad
     path: ExtraMath.cs
@@ -102,7 +102,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ExtraMath.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RadToDeg
     path: ExtraMath.cs

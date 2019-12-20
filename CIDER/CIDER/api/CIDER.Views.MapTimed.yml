@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/MapTimed.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapTimed
     path: Views/MapTimed.xaml.cs
@@ -660,7 +660,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/MapTimed.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/MapTimed.xaml.cs
@@ -696,7 +696,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/MapTimed.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slValueChanged
     path: Views/MapTimed.xaml.cs

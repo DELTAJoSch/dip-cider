@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileReader
     path: KeyManager.cs
@@ -67,7 +67,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileExists
     path: KeyManager.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadAllLines
     path: KeyManager.cs
@@ -149,7 +149,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ShowDialog
     path: KeyManager.cs
@@ -190,7 +190,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: WriteAllLines
     path: KeyManager.cs
@@ -234,7 +234,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: WriteAllText
     path: KeyManager.cs

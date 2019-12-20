@@ -16,7 +16,7 @@ namespace CIDER.Views
         {
             InitializeComponent();
 
-            var context = new AboutViewModel(new Starter(), new KeyManager(data, new FileReader()));
+            var context = new AboutViewModel(new Starter(), new KeyManager(data, new FileReader()), new Licenser());
             this.DataContext = context;
         }
     }

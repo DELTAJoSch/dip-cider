@@ -1,0 +1,628 @@
+2019-12-20 16:49:32.0356	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectAcceleration => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.2498	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectAcceleration => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.2498	DEBUG	Starting CSV ingestion.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectAcceleration => FileIO.ReadCSV => AsyncVoidMethodBuilder.Start => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.2498	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectAcceleration => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.2498	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectAcceleration => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.2498	DEBUG	Starting CSV ingestion.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectAcceleration => FileIO.ReadCSV => AsyncVoidMethodBuilder.Start => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.2577	DEBUG	CSV ingestion finished.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	Task.Finish => Task.FinishStageTwo => Task.FinishStageThree => Task.FinishContinuations => AwaitTaskContinuation.RunOrScheduleAction => MoveNextRunner.Run => ExecutionContext.Run => ExecutionContext.RunInternal => MoveNextRunner.InvokeMoveNext => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.2577	DEBUG	CSV ingestion finished.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	Task.Finish => Task.FinishStageTwo => Task.FinishStageThree => Task.FinishContinuations => AwaitTaskContinuation.RunOrScheduleAction => MoveNextRunner.Run => ExecutionContext.Run => ExecutionContext.RunInternal => MoveNextRunner.InvokeMoveNext => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3004	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectDate => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3004	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectDate => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3004	DEBUG	Starting CSV ingestion.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectDate => FileIO.ReadCSV => AsyncVoidMethodBuilder.Start => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3004	DEBUG	CSV ingestion finished.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	Task.Finish => Task.FinishStageTwo => Task.FinishStageThree => Task.FinishContinuations => AwaitTaskContinuation.RunOrScheduleAction => MoveNextRunner.Run => ExecutionContext.Run => ExecutionContext.RunInternal => MoveNextRunner.InvokeMoveNext => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3004	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectHeight => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3004	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectHeight => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3004	DEBUG	Starting CSV ingestion.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectHeight => FileIO.ReadCSV => AsyncVoidMethodBuilder.Start => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3004	DEBUG	CSV ingestion finished.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	Task.Finish => Task.FinishStageTwo => Task.FinishStageThree => Task.FinishContinuations => AwaitTaskContinuation.RunOrScheduleAction => MoveNextRunner.Run => ExecutionContext.Run => ExecutionContext.RunInternal => MoveNextRunner.InvokeMoveNext => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3053	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectPressure => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3053	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectPressure => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3053	DEBUG	Starting CSV ingestion.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectPressure => FileIO.ReadCSV => AsyncVoidMethodBuilder.Start => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3053	DEBUG	CSV ingestion finished.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	Task.Finish => Task.FinishStageTwo => Task.FinishStageThree => Task.FinishContinuations => AwaitTaskContinuation.RunOrScheduleAction => MoveNextRunner.Run => ExecutionContext.Run => ExecutionContext.RunInternal => MoveNextRunner.InvokeMoveNext => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3053	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectRouteName => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3053	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectRouteName => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3053	DEBUG	Starting CSV ingestion.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectRouteName => FileIO.ReadCSV => AsyncVoidMethodBuilder.Start => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3053	DEBUG	CSV ingestion finished.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	Task.Finish => Task.FinishStageTwo => Task.FinishStageThree => Task.FinishContinuations => AwaitTaskContinuation.RunOrScheduleAction => MoveNextRunner.Run => ExecutionContext.Run => ExecutionContext.RunInternal => MoveNextRunner.InvokeMoveNext => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3053	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectStartTime => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3053	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectStartTime => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3053	DEBUG	Starting CSV ingestion.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectStartTime => FileIO.ReadCSV => AsyncVoidMethodBuilder.Start => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3053	DEBUG	CSV ingestion finished.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	Task.Finish => Task.FinishStageTwo => Task.FinishStageThree => Task.FinishContinuations => AwaitTaskContinuation.RunOrScheduleAction => MoveNextRunner.Run => ExecutionContext.Run => ExecutionContext.RunInternal => MoveNextRunner.InvokeMoveNext => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3053	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectVelocity => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3053	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectVelocity => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3053	DEBUG	Starting CSV ingestion.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadCSV_WhenCalled_CorrectVelocity => FileIO.ReadCSV => AsyncVoidMethodBuilder.Start => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3053	DEBUG	CSV ingestion finished.	CIDER.LoadIO.FileIO+<ReadCSV>d__2.MoveNext	Task.Finish => Task.FinishStageTwo => Task.FinishStageThree => Task.FinishContinuations => AwaitTaskContinuation.RunOrScheduleAction => MoveNextRunner.Run => ExecutionContext.Run => ExecutionContext.RunInternal => MoveNextRunner.InvokeMoveNext => <ReadCSV>d__2.MoveNext		
+2019-12-20 16:49:32.3053	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadNmea_WhenCalled_CorrectSattelitesInUse => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3053	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadNmea_WhenCalled_CorrectSattelitesInUse => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3053	DEBUG	Starting NMEA ingestion.	CIDER.LoadIO.FileIO+<ReadNmea>d__3.MoveNext	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadNmea_WhenCalled_CorrectSattelitesInUse => FileIO.ReadNmea => AsyncVoidMethodBuilder.Start => <ReadNmea>d__3.MoveNext		
+2019-12-20 16:49:32.3053	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadNmea_WhenCalled_CorrectTime => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3053	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadNmea_WhenCalled_CorrectTime => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3053	DEBUG	Starting NMEA ingestion.	CIDER.LoadIO.FileIO+<ReadNmea>d__3.MoveNext	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => FileIOUnitTests.ReadNmea_WhenCalled_CorrectTime => FileIO.ReadNmea => AsyncVoidMethodBuilder.Start => <ReadNmea>d__3.MoveNext		
+2019-12-20 16:49:32.3053	INFO	0 parses failed.	CIDER.LoadIO.FileIO.GGA	Task.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem => Task.ExecuteEntry => Task.ExecuteWithThreadLocal => ExecutionContext.Run => ExecutionContext.RunInternal => Task.ExecutionContextCallback => Task.Execute => Task.InnerInvoke => <>c__DisplayClass3_0.<ReadNmea>b__0 => FileIO.GGA		
+2019-12-20 16:49:32.3053	INFO	0 parses failed.	CIDER.LoadIO.FileIO.GGA	Task.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem => Task.ExecuteEntry => Task.ExecuteWithThreadLocal => ExecutionContext.Run => ExecutionContext.RunInternal => Task.ExecutionContextCallback => Task.Execute => Task.InnerInvoke => <>c__DisplayClass3_0.<ReadNmea>b__0 => FileIO.GGA		
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_CallsEvent => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_CallsEvent => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_CallsEvent => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_CallsEvent => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_CallsEvent => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	INFO	0 parses failed.	CIDER.LoadIO.FileIO.RMC	Task.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem => Task.ExecuteEntry => Task.ExecuteWithThreadLocal => ExecutionContext.Run => ExecutionContext.RunInternal => Task.ExecutionContextCallback => Task.Execute => Task.InnerInvoke => <>c__DisplayClass3_0.<ReadNmea>b__0 => FileIO.RMC		
+2019-12-20 16:49:32.3223	DEBUG	NMEA ingestion finished.	CIDER.LoadIO.FileIO+<ReadNmea>d__3.MoveNext	Task.Finish => Task.FinishStageTwo => Task.FinishStageThree => Task.FinishContinuations => AwaitTaskContinuation.RunOrScheduleAction => MoveNextRunner.Run => ExecutionContext.Run => ExecutionContext.RunInternal => MoveNextRunner.InvokeMoveNext => <ReadNmea>d__3.MoveNext		
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_CallsEvent => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_CallsEvent => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_CallsEvent => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_CallsEvent => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_CallsEvent => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_ReturnsValue => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	INFO	0 parses failed.	CIDER.LoadIO.FileIO.RMC	Task.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem => Task.ExecuteEntry => Task.ExecuteWithThreadLocal => ExecutionContext.Run => ExecutionContext.RunInternal => Task.ExecutionContextCallback => Task.Execute => Task.InnerInvoke => <>c__DisplayClass3_0.<ReadNmea>b__0 => FileIO.RMC		
+2019-12-20 16:49:32.3223	DEBUG	NMEA ingestion finished.	CIDER.LoadIO.FileIO+<ReadNmea>d__3.MoveNext	Task.Finish => Task.FinishStageTwo => Task.FinishStageThree => Task.FinishContinuations => AwaitTaskContinuation.RunOrScheduleAction => MoveNextRunner.Run => ExecutionContext.Run => ExecutionContext.RunInternal => MoveNextRunner.InvokeMoveNext => <ReadNmea>d__3.MoveNext		
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_ReturnsValue => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_ReturnsValue => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_ReturnsValue => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_ReturnsValue => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_ReturnsValue => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_ReturnsValue => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_ReturnsValue => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_ReturnsValue => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3223	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => KeyManagerUnitTests.KeyManager_Put_ReturnsValue => KeyManager.Put => KeyManager.RaiseEvent => EventHandler.Invoke => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 44."	
+2019-12-20 16:49:32.3373	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_CallsFolderChecker => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3373	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_CallsFolderChecker => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3373	DEBUG	Select Clicked	CIDER.ViewModels.LoadViewModel.OnSelectClick	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_CallsFolderChecker => DelegateCommand.Execute => LoadViewModel.OnSelectClick		
+2019-12-20 16:49:32.3373	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_CallsFolderSelector => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3373	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_CallsFolderSelector => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3373	DEBUG	Select Clicked	CIDER.ViewModels.LoadViewModel.OnSelectClick	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_CallsFolderSelector => DelegateCommand.Execute => LoadViewModel.OnSelectClick		
+2019-12-20 16:49:32.3373	DEBUG	Getting folder name: return from path: return	CIDER.LoadIO.FolderChecker.GetFolderName	MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_CallsFolderSelector => DelegateCommand.Execute => LoadViewModel.OnSelectClick => FolderChecker.IsCorrectFolder => FolderChecker.GetFolderName		
+2019-12-20 16:49:32.3373	INFO	Folder return is invalid	CIDER.LoadIO.FolderChecker.IsCorrectFolder	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_CallsFolderSelector => DelegateCommand.Execute => LoadViewModel.OnSelectClick => FolderChecker.IsCorrectFolder		
+2019-12-20 16:49:32.3373	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_ReceivesStringOfSelectedFile => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3373	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_ReceivesStringOfSelectedFile => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3373	DEBUG	Select Clicked	CIDER.ViewModels.LoadViewModel.OnSelectClick	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_ReceivesStringOfSelectedFile => DelegateCommand.Execute => LoadViewModel.OnSelectClick		
+2019-12-20 16:49:32.3373	DEBUG	Getting folder name: return from path: return	CIDER.LoadIO.FolderChecker.GetFolderName	MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_ReceivesStringOfSelectedFile => DelegateCommand.Execute => LoadViewModel.OnSelectClick => FolderChecker.IsCorrectFolder => FolderChecker.GetFolderName		
+2019-12-20 16:49:32.3373	INFO	Folder return is invalid	CIDER.LoadIO.FolderChecker.IsCorrectFolder	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClicked_ReceivesStringOfSelectedFile => DelegateCommand.Execute => LoadViewModel.OnSelectClick => FolderChecker.IsCorrectFolder		
+2019-12-20 16:49:32.3373	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickedError_ReceivesSelectorError => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3373	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickedError_ReceivesSelectorError => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3373	DEBUG	Select Clicked	CIDER.ViewModels.LoadViewModel.OnSelectClick	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickedError_ReceivesSelectorError => DelegateCommand.Execute => LoadViewModel.OnSelectClick		
+2019-12-20 16:49:32.3373	DEBUG	Getting folder name: return from path: return	CIDER.LoadIO.FolderChecker.GetFolderName	MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickedError_ReceivesSelectorError => DelegateCommand.Execute => LoadViewModel.OnSelectClick => FolderChecker.IsCorrectFolder => FolderChecker.GetFolderName		
+2019-12-20 16:49:32.3373	INFO	Folder return is invalid	CIDER.LoadIO.FolderChecker.IsCorrectFolder	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickedError_ReceivesSelectorError => DelegateCommand.Execute => LoadViewModel.OnSelectClick => FolderChecker.IsCorrectFolder		
+2019-12-20 16:49:32.3373	DEBUG	Select Clicked	CIDER.ViewModels.LoadViewModel.OnSelectClick	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickedError_ReceivesSelectorError => DelegateCommand.Execute => LoadViewModel.OnSelectClick		
+2019-12-20 16:49:32.3373	DEBUG	File Dialog Exited	CIDER.ViewModels.LoadViewModel.OnSelectClick	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickedError_ReceivesSelectorError => DelegateCommand.Execute => LoadViewModel.OnSelectClick	"CIDER.FileDialogExitedException: Eine Ausnahme vom Typ ""CIDER.FileDialogExitedException"" wurde ausgelöst.
+   bei CIDER.UnitTests.FolderManager.SelectFolder() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\LoadViewModelUnitTests.cs:Zeile 146.
+   bei CIDER.ViewModels.LoadViewModel.OnSelectClick(Object sender) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\LoadViewModel.cs:Zeile 74."	
+2019-12-20 16:49:32.3562	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickekCorrectFolder_SetsCheckmark => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3562	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickekCorrectFolder_SetsCheckmark => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3562	DEBUG	Select Clicked	CIDER.ViewModels.LoadViewModel.OnSelectClick	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickekCorrectFolder_SetsCheckmark => DelegateCommand.Execute => LoadViewModel.OnSelectClick		
+2019-12-20 16:49:32.3562	WARN	Error whilst reading license agreement status	CIDER.LicenseWriter.ReadAgreementState	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickekWrongFolder_SetsBlocked => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => LicenseWriter.ReadAgreementState	"System.IO.FileNotFoundException: Die Datei ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg"" konnte nicht gefunden werden.
+Dateiname: ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Common7\ServiceHub\Hosts\ServiceHub.Host.CLR.AnyCPU\CIDER.cfg""
+   bei System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   bei System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   bei System.IO.StreamReader..ctor(String path, Encoding encoding)
+   bei System.IO.File.InternalReadAllLines(String path, Encoding encoding)
+   bei System.IO.File.ReadAllLines(String path)
+   bei CIDER.FileReader.ReadAllLines(String filename) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 219.
+   bei CIDER.LicenseWriter.ReadAgreementState() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\LicenseWriter.cs:Zeile 81."	
+2019-12-20 16:49:32.3562	ERROR	Couldn't configure License State	CIDER.ViewModels.MainWindowViewModel..ctor	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickekWrongFolder_SetsBlocked => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor	"System.InvalidOperationException: Beim aufrufenden Thread muss es sich um einen STA-Thread handeln, da dies für viele Komponenten der Benutzeroberfläche erforderlich ist.
+   bei System.Windows.Input.InputManager..ctor()
+   bei System.Windows.Input.InputManager.GetCurrentInputManagerImpl()
+   bei System.Windows.Input.KeyboardNavigation..ctor()
+   bei System.Windows.FrameworkElement.FrameworkServices..ctor()
+   bei System.Windows.FrameworkElement.EnsureFrameworkServices()
+   bei System.Windows.FrameworkElement..ctor()
+   bei System.Windows.Controls.Control..ctor()
+   bei System.Windows.Window..ctor()
+   bei MahApps.Metro.Controls.MetroWindow..ctor() in C:\projects\mahapps-metro\src\MahApps.Metro\Controls\MetroWindow.cs:Zeile 951.
+   bei CIDER.Licenses..ctor() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\Licenses.xaml.cs:Zeile 31.
+   bei CIDER.ViewModels.MainWindowViewModel..ctor(KeyManager manager, DataProvider data, IReader reader, Boolean IsTesting) in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\ViewModels\MainWindowViewModel.cs:Zeile 110."	
+2019-12-20 16:49:32.3562	DEBUG	Select Clicked	CIDER.ViewModels.LoadViewModel.OnSelectClick	TestMethodCommand.RunTestMethod => TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => LoadViewModelUnitTests.LoadViewModel_OnSelectClickekWrongFolder_SetsBlocked => DelegateCommand.Execute => LoadViewModel.OnSelectClick		

@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ColorWriter.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ColorWriter
     path: ColorWriter.cs
@@ -61,7 +61,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ColorWriter.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ColorWriter.cs
@@ -97,7 +97,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ColorWriter.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: GetSetTheming
     path: ColorWriter.cs
@@ -132,7 +132,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ColorWriter.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SetTheming
     path: ColorWriter.cs

@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicenseHolder
     path: LicenseHolder.cs
@@ -67,7 +67,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AcceptedLicense
     path: LicenseHolder.cs
@@ -106,7 +106,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicenseChangedEvent
     path: LicenseHolder.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ThisSoftwareLicense
     path: LicenseHolder.cs
@@ -176,7 +176,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MahAppsLicense
     path: LicenseHolder.cs
@@ -211,7 +211,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OxyPlotLicense
     path: LicenseHolder.cs
@@ -246,7 +246,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: pilotHUDLicense
     path: LicenseHolder.cs
@@ -281,7 +281,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: NLOGLicense
     path: LicenseHolder.cs
@@ -316,7 +316,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: docFxLicense
     path: LicenseHolder.cs

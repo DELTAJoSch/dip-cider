@@ -12,15 +12,38 @@ namespace CIDER.UnitTests
     class AboutViewModelUnitTests
     {
         [Test]
-        [Ignore("broken")]
         public void AboutViewModel_MailtoClick_CallsProcessStarter()
         {
             var handler = Substitute.For<TestStarter>();
-            AboutViewModel about = new AboutViewModel(handler, new KeyManager(new DataProvider(), new FileReader()));
+            AboutViewModel about = new AboutViewModel(handler, new KeyManager(new DataProvider(), new FileReader()), new Licenser());
 
-            //about.RequestNavigate.Execute(this);
+            about.RequestNavigateCommand.Execute(this);
 
             handler.ReceivedWithAnyArgs().Start(default);
+        }
+
+        [Test]
+        public void AboutViewModel_SetAPIKey_CallsKeyManager()
+        {
+            var keymanager = Substitute.For<TestKeyManager>();
+            AboutViewModel about = new AboutViewModel(new TestStarter(), keymanager, new Licenser());
+
+            about.SetApiKeyCommand.Execute(this);
+
+            keymanager.ReceivedWithAnyArgs().Put();
+
+        }
+
+        [Test]
+        public void AboutViewModel_ViewLicense_CallsLicenseShower()
+        {
+            var licenser = Substitute.For<TestLicenser>();
+            AboutViewModel about = new AboutViewModel(new TestStarter(), new KeyManager(new DataProvider(), new FileReader()), licenser);
+
+            about.ViewLicenseCommand.Execute(this);
+
+            licenser.ReceivedWithAnyArgs().Show();
+
         }
 
         [TestCase("AboutText")]
@@ -29,7 +52,7 @@ namespace CIDER.UnitTests
         {
             var handler = Substitute.For<TestStarter>();
             bool wasCalled = false;
-            AboutViewModel about = new AboutViewModel(handler, new KeyManager(new DataProvider(), new FileReader()));
+            AboutViewModel about = new AboutViewModel(handler, new KeyManager(new DataProvider(), new FileReader()), new Licenser());
             about.PropertyChanged += (o, e) => { wasCalled = true; };
 
             if(methodName == "AboutText")
@@ -53,6 +76,27 @@ namespace CIDER.UnitTests
         public void Start(ProcessStartInfo info)
         {
             
+        }
+    }
+
+    public class TestLicenser : ILicense
+    {
+        public void Show()
+        {
+        
+        }
+    }
+
+    public class TestKeyManager : IKeyManager
+    {
+        public bool Fetch()
+        {
+            return true;
+        }
+
+        public bool Put()
+        {
+            return true;
         }
     }
 }

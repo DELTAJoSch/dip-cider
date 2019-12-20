@@ -81,7 +81,7 @@ namespace CIDER.UnitTests
             TestList.Add(2);
 
             manager.AddLineSeries(TestList, "Test", OxyColors.Aqua, 2);
-            PlotModel model = manager.GetPlotModel("Model");
+            PlotModel model = manager.GetPlotModel("Model").Result;
 
             Assert.AreEqual("Model", model.Title);
             Assert.AreEqual("Test", model.Series.ElementAt(0).Title);

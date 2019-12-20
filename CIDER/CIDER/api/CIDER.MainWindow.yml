@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MainWindow.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MainWindow
     path: MainWindow.xaml.cs
@@ -875,7 +875,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MainWindow.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnResizeStartEvent
     path: MainWindow.xaml.cs
@@ -910,7 +910,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MainWindow.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnResizeEndEvent
     path: MainWindow.xaml.cs
@@ -945,7 +945,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MainWindow.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: MainWindow.xaml.cs
@@ -977,11 +977,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MainWindow.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnSourceInitialized
     path: MainWindow.xaml.cs
-    startLine: 46
+    startLine: 48
   assemblies:
   - CIDER
   namespace: CIDER

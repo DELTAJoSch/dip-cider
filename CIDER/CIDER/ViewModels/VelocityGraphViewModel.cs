@@ -26,7 +26,7 @@ namespace CIDER.ViewModels
 
             manager.AddLineSeries(_data.Velocity, "Vel", OxyColors.IndianRed);
 
-            data = manager.GetPlotModel("Velocity");
+            data = manager.GetPlotModel("Velocity").Result;
             blank = new PlotModel();
             blank.Title = "Velocity";
             Plot = data;

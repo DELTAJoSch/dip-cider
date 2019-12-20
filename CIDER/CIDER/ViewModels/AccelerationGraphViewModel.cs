@@ -28,7 +28,7 @@ namespace CIDER.ViewModels
             manager.AddLineSeries(_data.YAcceleration, "L/R", OxyColors.Chartreuse);
             manager.AddLineSeries(_data.ZAcceleration, "U/D", OxyColors.Gold);
 
-            data = manager.GetPlotModel("Acceleration");
+            data = manager.GetPlotModel("Acceleration").Result;
             blank = new PlotModel();
             blank.Title = "Acceleration";
             Plot = data;
