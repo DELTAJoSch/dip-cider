@@ -5,7 +5,7 @@ items:
   id: MainWindowViewModel
   parent: CIDER.ViewModels
   children:
-  - CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.KeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)
+  - CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.IKeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)
   - CIDER.ViewModels.MainWindowViewModel.ButtonEnabled
   - CIDER.ViewModels.MainWindowViewModel.ButtonState(System.Boolean)
   - CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand
@@ -92,7 +92,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnFrameChangeEvent
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 52
+    startLine: 54
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -107,16 +107,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.KeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)
-  commentId: M:CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.KeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)
-  id: '#ctor(CIDER.KeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)'
+- uid: CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.IKeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)
+  commentId: M:CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.IKeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)
+  id: '#ctor(CIDER.IKeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)'
   parent: CIDER.ViewModels.MainWindowViewModel
   langs:
   - csharp
   - vb
-  name: MainWindowViewModel(KeyManager, DataProvider, IReader, Boolean)
-  nameWithType: MainWindowViewModel.MainWindowViewModel(KeyManager, DataProvider, IReader, Boolean)
-  fullName: CIDER.ViewModels.MainWindowViewModel.MainWindowViewModel(CIDER.KeyManager, CIDER.DataProvider, CIDER.IReader, System.Boolean)
+  name: MainWindowViewModel(IKeyManager, DataProvider, IReader, Boolean)
+  nameWithType: MainWindowViewModel.MainWindowViewModel(IKeyManager, DataProvider, IReader, Boolean)
+  fullName: CIDER.ViewModels.MainWindowViewModel.MainWindowViewModel(CIDER.IKeyManager, CIDER.DataProvider, CIDER.IReader, System.Boolean)
   type: Constructor
   source:
     remote:
@@ -125,24 +125,24 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 59
+    startLine: 61
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
   summary: "\nThis is the constructor for the MainWindow ViewModel\n"
   example: []
   syntax:
-    content: public MainWindowViewModel(KeyManager manager, DataProvider data, IReader reader, bool IsTesting = false)
+    content: public MainWindowViewModel(IKeyManager Manager, DataProvider data, IReader reader, bool IsTesting = false)
     parameters:
-    - id: manager
-      type: CIDER.KeyManager
+    - id: Manager
+      type: CIDER.IKeyManager
     - id: data
       type: CIDER.DataProvider
     - id: reader
       type: CIDER.IReader
     - id: IsTesting
       type: System.Boolean
-    content.vb: Public Sub New(manager As KeyManager, data As DataProvider, reader As IReader, IsTesting As Boolean = False)
+    content.vb: Public Sub New(Manager As IKeyManager, data As DataProvider, reader As IReader, IsTesting As Boolean = False)
   overload: CIDER.ViewModels.MainWindowViewModel.#ctor*
   modifiers.csharp:
   - public
@@ -166,7 +166,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAboutCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 147
+    startLine: 151
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -203,7 +203,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAccelerationGraphCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 152
+    startLine: 156
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -240,7 +240,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAccelerationTimedCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 157
+    startLine: 161
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -277,7 +277,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToLoadCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 162
+    startLine: 166
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -314,7 +314,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToMapRouteCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 167
+    startLine: 171
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -351,7 +351,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToMapTimedCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 172
+    startLine: 176
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -388,7 +388,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToVelocityGraphCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 177
+    startLine: 181
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -425,7 +425,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToVelocityTimedCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 182
+    startLine: 186
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -462,7 +462,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToHeightCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 187
+    startLine: 191
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -499,7 +499,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAngleTimedCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 192
+    startLine: 196
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -536,7 +536,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAngleGraphCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 197
+    startLine: 201
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -573,7 +573,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToHorizonCommand
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 202
+    startLine: 206
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -610,7 +610,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapEnabled
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 207
+    startLine: 211
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -647,7 +647,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FrameContent
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 212
+    startLine: 216
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -684,7 +684,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ButtonEnabled
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 217
+    startLine: 221
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -721,7 +721,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Initalize
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 236
+    startLine: 238
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -753,7 +753,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ButtonState
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 328
+    startLine: 330
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -789,7 +789,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/MainWindowViewModel.cs
-    startLine: 342
+    startLine: 344
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -1289,12 +1289,12 @@ references:
   name: MainWindowViewModel
   nameWithType: MainWindowViewModel.MainWindowViewModel
   fullName: CIDER.ViewModels.MainWindowViewModel.MainWindowViewModel
-- uid: CIDER.KeyManager
-  commentId: T:CIDER.KeyManager
+- uid: CIDER.IKeyManager
+  commentId: T:CIDER.IKeyManager
   parent: CIDER
-  name: KeyManager
-  nameWithType: KeyManager
-  fullName: CIDER.KeyManager
+  name: IKeyManager
+  nameWithType: IKeyManager
+  fullName: CIDER.IKeyManager
 - uid: CIDER.DataProvider
   commentId: T:CIDER.DataProvider
   parent: CIDER

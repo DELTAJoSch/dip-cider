@@ -11,7 +11,9 @@
     <PackageReference Include="nunit" Version="3.10.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
-    <PackageReference Include="OxyPlot.Core" Version="1.0.0" />
+    <PackageReference Include="NUnitTestAdapter.WithFramework" Version="2.0.0" />
+    <PackageReference Include="OxyPlot.Core" Version="2.0.0" />
+    <PackageReference Include="OxyPlot.Wpf" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,9 +21,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="AccelerationControl">
+      <HintPath>..\..\res\AccelerationControl.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Maps.MapControl.WPF">
       <HintPath>G:\BingMaps\V1\Libraries\Microsoft.Maps.MapControl.WPF.dll</HintPath>
     </Reference>
+    <Reference Include="pilotHUD">
+      <HintPath>..\..\res\pilotHUD.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework">
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationFramework.dll</HintPath>
     </Reference>

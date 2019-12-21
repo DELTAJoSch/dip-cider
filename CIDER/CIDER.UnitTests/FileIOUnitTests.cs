@@ -136,7 +136,7 @@ namespace CIDER.UnitTests
 
             await iO.ReadNmea(data, "", reader, Factories.GetMainWindowViewModelStub());
 
-            DateTime dateTime = new DateTime(2019,12,20);
+            DateTime dateTime = DateTime.Today;
             dateTime = dateTime.AddHours(09);
             dateTime = dateTime.AddMinutes(11);
             dateTime = dateTime.AddSeconds(24);

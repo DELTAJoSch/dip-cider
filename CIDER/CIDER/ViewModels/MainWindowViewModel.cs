@@ -46,6 +46,8 @@ namespace CIDER.ViewModels
 
         private DataProvider dataProvider;
 
+        private IKeyManager manager;
+
         /// <summary>
         /// The EventHandler for the OnFrameChangeEvent
         /// This event is fired when the selected frame changes
@@ -57,7 +59,7 @@ namespace CIDER.ViewModels
         /// <summary>
         /// This is the constructor for the MainWindow ViewModel
         /// </summary>
-        public MainWindowViewModel(KeyManager manager, DataProvider data, IReader reader, bool IsTesting = false)
+        public MainWindowViewModel(IKeyManager Manager, DataProvider data, IReader reader, bool IsTesting = false)
         {
             AddLicenses();
 
@@ -76,6 +78,8 @@ namespace CIDER.ViewModels
             _changeToHorizonCommand = new DelegateCommand(OnChangeToHorizonCommand);
 
             dataProvider = data;
+
+            manager = Manager;
 
             MapEnabled = true;
             _mapAvailable = true;
@@ -101,7 +105,7 @@ namespace CIDER.ViewModels
             // Check the license
             try
             {
-                LicenseWriter licenseWriter = new LicenseWriter(new FileReader());
+                LicenseWriter licenseWriter = new LicenseWriter(reader);
                 _licenseAccepted = licenseWriter.ReadAgreementState();
                 LicenseManager.LicensesAccepted = _licenseAccepted;
 
@@ -221,8 +225,6 @@ namespace CIDER.ViewModels
         {
             MapEnabled = true;
             _mapAvailable = true;
-
-            KeyManager manager = new KeyManager(dataProvider, new FileReader());
 
             if (!manager.Fetch())
             {

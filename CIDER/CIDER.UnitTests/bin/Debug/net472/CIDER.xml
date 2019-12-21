@@ -1276,7 +1276,7 @@
             This event is fired when the selected frame changes
             </summary>
         </member>
-        <member name="M:CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.KeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)">
+        <member name="M:CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.IKeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)">
             <summary>
             This is the constructor for the MainWindow ViewModel
             </summary>

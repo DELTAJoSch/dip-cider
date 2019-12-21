@@ -21,7 +21,6 @@ H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\Microsoft.Maps.MapControl.WPF.xml
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\NLog.xml
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\obj\Debug\net472\CIDER.UnitTests.csprojAssemblyReference.cache
-H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\obj\Debug\net472\CIDER.UnitTests.csproj.CoreCompileInputs.cache
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\obj\Debug\net472\CIDER.UnitTests.AssemblyInfoInputs.cache
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\obj\Debug\net472\CIDER.UnitTests.AssemblyInfo.cs
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\obj\Debug\net472\CIDER.UnitTests.csproj.CopyComplete
@@ -34,3 +33,12 @@ H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\MahApps.Metro.pdb
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\MahApps.Metro.xml
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\ControlzEx.pdb
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\CIDER.UnitTests.dll.config
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\NUnit.VisualStudio.TestAdapter.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\nunit.core.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\nunit.core.interfaces.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\nunit.util.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\obj\Debug\net472\CIDER.UnitTests.dll.config
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\OxyPlot.Wpf.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\AccelerationControl.dll
+H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\pilotHUD.dll
