@@ -69,7 +69,6 @@ references:
   fullName: CIDER.ExtraMath
 - uid: CIDER.KeyManager
   commentId: T:CIDER.KeyManager
-  parent: CIDER
   name: KeyManager
   nameWithType: KeyManager
   fullName: CIDER.KeyManager

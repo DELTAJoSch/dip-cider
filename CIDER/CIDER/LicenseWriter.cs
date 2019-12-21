@@ -13,7 +13,7 @@ namespace CIDER
     /// </summary>
     public class LicenseWriter
     {
-        private IReader keyManagerReader;
+        private IReader Reader;
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
 
         /// <summary>
@@ -22,7 +22,7 @@ namespace CIDER
         /// <param name="Reader">Pass a Object that implements the IReader here - inject unit testing mocks and fakes here</param>
         public LicenseWriter(IReader Reader)
         {
-            keyManagerReader = Reader;
+            this.Reader = Reader;
         }
 
         /// <summary>
@@ -33,9 +33,9 @@ namespace CIDER
         {
             try
             {
-                string[] cfg = keyManagerReader.ReadAllLines("CIDER.cfg");
+                string[] cfg = Reader.ReadAllLines("CIDER.cfg");
 
-                Regex regex = new Regex(@"LIAG:(true|false)");
+                Regex regex = new Regex(@"LIAG:(true|false|True|False|TRUE|FALSE)");
 
                 ArrayList list = new ArrayList();
                 bool foundLIAG = false;
@@ -62,7 +62,7 @@ namespace CIDER
                 if (!foundLIAG)
                     list.Add($"LIAG:{State.ToString()}");
 
-                keyManagerReader.WriteAllLines((string[])list.ToArray(typeof(string)), "CIDER.cfg");
+                Reader.WriteAllLines((string[])list.ToArray(typeof(string)), "CIDER.cfg");
             }
             catch (Exception ex)
             {
@@ -78,17 +78,23 @@ namespace CIDER
         {
             try
             {
-                string[] cfg = keyManagerReader.ReadAllLines("CIDER.cfg");
+                string[] cfg = Reader.ReadAllLines("CIDER.cfg");
 
-                Regex regex = new Regex(@"LIAG:(true|false|True|False|TRUE|FALSE)");
+                Regex regexTrue = new Regex(@"LIAG:(true|True|TRUE)");
+                Regex regexFalse = new Regex(@"LIAG:(false|False|FALSE)");
 
                 foreach (string s in cfg)
                 {
-                    Match match = regex.Match(s);
-                    if (match.Success)
+                    Match matchTrue = regexTrue.Match(s);
+                    Match matchFalse = regexFalse.Match(s);
+                    if (matchTrue.Success)
                     {
                         LicenseManager.LicensesAccepted = true;
                         return true;
+                    }else if (matchFalse.Success)
+                    {
+                        LicenseManager.LicensesAccepted = false;
+                        return false;
                     }
                 }
 

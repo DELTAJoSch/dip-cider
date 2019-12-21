@@ -1,0 +1,8 @@
+2019-12-21 15:45:25.0127	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	TestMethodCommand.RunNonAsyncTestMethod => MethodWrapper.Invoke => Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MainWindowViewModelUnitTest.MainWindowViewModel_MapState_ChangeCorrectly => Factories.GetMainWindowViewModelStub => MainWindowViewModel..ctor => KeyManager.Fetch	"System.ArgumentOutOfRangeException: Der Index und die Anzahl müssen sich auf eine Position in der Zeichenfolge beziehen.
+Parametername: count
+   bei System.String.Remove(Int32 startIndex, Int32 count)
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 51."	
+2019-12-21 15:47:38.9228	WARN	Error whilst reading API Keys	CIDER.KeyManager.Fetch	Reflect.InvokeMethod => RuntimeMethodInfo.Invoke => RuntimeMethodInfo.UnsafeInvokeInternal => RuntimeMethodHandle.InvokeMethod => MainWindowViewModelUnitTest.MainWindowViewModel_MapState_ChangeCorrectly => KeyManager.Put => KeyManager.RaiseEvent => MainWindowViewModel.KeyManager_MapKeyChangedEvent => MainWindowViewModel.UpdateMapStatus => KeyManager.Fetch	"System.ArgumentOutOfRangeException: Der Index und die Anzahl müssen sich auf eine Position in der Zeichenfolge beziehen.
+Parametername: count
+   bei System.String.Remove(Int32 startIndex, Int32 count)
+   bei CIDER.KeyManager.Fetch() in H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER\KeyManager.cs:Zeile 51."	

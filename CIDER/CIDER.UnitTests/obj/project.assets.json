@@ -75,13 +75,46 @@
           "build/net35/NUnit3TestAdapter.props": {}
         }
       },
-      "OxyPlot.Core/1.0.0": {
+      "NUnitTestAdapter.WithFramework/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/NUnit.VisualStudio.TestAdapter.dll": {},
+          "lib/nunit.core.dll": {},
+          "lib/nunit.core.interfaces.dll": {},
+          "lib/nunit.framework.dll": {},
+          "lib/nunit.util.dll": {}
+        },
+        "runtime": {
+          "lib/NUnit.VisualStudio.TestAdapter.dll": {},
+          "lib/nunit.core.dll": {},
+          "lib/nunit.core.interfaces.dll": {},
+          "lib/nunit.framework.dll": {},
+          "lib/nunit.util.dll": {}
+        }
+      },
+      "OxyPlot.Core/2.0.0": {
         "type": "package",
         "compile": {
           "lib/net45/OxyPlot.dll": {}
         },
         "runtime": {
           "lib/net45/OxyPlot.dll": {}
+        }
+      },
+      "OxyPlot.Wpf/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "2.0.0"
+        },
+        "frameworkAssemblies": [
+          "ReachFramework",
+          "System.Printing"
+        ],
+        "compile": {
+          "lib/net45/OxyPlot.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/OxyPlot.Wpf.dll": {}
         }
       },
       "System.Threading.Tasks.Extensions/4.3.0": {
@@ -259,35 +292,55 @@
         "nunit3testadapter.nuspec"
       ]
     },
-    "OxyPlot.Core/1.0.0": {
-      "sha512": "4CdN5a7xg7rdXAn0MqofQQV7Y2mt0e8nch3Zko5XSien2eTZo+lkkX9IjMhipMiwu2/SQnggS3ZMzvhEThRnIw==",
+    "NUnitTestAdapter.WithFramework/2.0.0": {
+      "sha512": "K4c5RuLsj6jybgVt9QV/sm3F0vBvLLMoxFK0dj1vhP3R4JhRE8OMkMBu6M8NAGkBwykZUCxvZIyZCsXRd3DVDg==",
       "type": "package",
-      "path": "oxyplot.core/1.0.0",
+      "path": "nunittestadapter.withframework/2.0.0",
+      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "AUTHORS",
-        "CHANGELOG.md",
-        "CONTRIBUTORS",
-        "LICENSE",
-        "README.md",
-        "lib/net40-client/OxyPlot.XML",
-        "lib/net40-client/OxyPlot.dll",
-        "lib/net40-client/OxyPlot.pdb",
-        "lib/net40/OxyPlot.XML",
-        "lib/net40/OxyPlot.dll",
-        "lib/net40/OxyPlot.pdb",
+        "lib/NUnit.VisualStudio.TestAdapter.dll",
+        "lib/nunit.core.dll",
+        "lib/nunit.core.interfaces.dll",
+        "lib/nunit.framework.dll",
+        "lib/nunit.framework.xml",
+        "lib/nunit.util.dll",
+        "nunittestadapter.withframework.2.0.0.nupkg.sha512",
+        "nunittestadapter.withframework.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "OxyPlot.Core/2.0.0": {
+      "sha512": "gAbLVa+DxMNk1qtfzDQVU+lZ7XKRCKqQu6oYRFB1f6wVqseHL2EMk5Nlmw2rqkYEGHhxUxsPdjjAgJtzKVDacA==",
+      "type": "package",
+      "path": "oxyplot.core/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
         "lib/net45/OxyPlot.dll",
-        "lib/net45/OxyPlot.pdb",
         "lib/net45/OxyPlot.xml",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.pdb",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.xml",
-        "lib/sl5/OxyPlot.XML",
-        "lib/sl5/OxyPlot.dll",
-        "lib/sl5/OxyPlot.pdb",
-        "oxyplot.core.1.0.0.nupkg.sha512",
+        "lib/netstandard1.0/OxyPlot.dll",
+        "lib/netstandard1.0/OxyPlot.xml",
+        "oxyplot.core.2.0.0.nupkg.sha512",
         "oxyplot.core.nuspec"
+      ]
+    },
+    "OxyPlot.Wpf/2.0.0": {
+      "sha512": "kmTfOnRPYkqucU2qYZaXeSKG3+6Y9gLHl1IfU2KSMBx0LsSx9yAfecIeBfgh7WDxCRPgSqOPL2BNUXtuv4VrcQ==",
+      "type": "package",
+      "path": "oxyplot.wpf/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
+        "lib/net45/OxyPlot.Wpf.dll",
+        "lib/net45/OxyPlot.Wpf.xml",
+        "lib/netcoreapp3.0/OxyPlot.Wpf.dll",
+        "lib/netcoreapp3.0/OxyPlot.Wpf.xml",
+        "oxyplot.wpf.2.0.0.nupkg.sha512",
+        "oxyplot.wpf.nuspec"
       ]
     },
     "System.Threading.Tasks.Extensions/4.3.0": {
@@ -318,7 +371,9 @@
       "Microsoft.NET.Test.Sdk >= 15.8.0",
       "NSubstitute >= 4.2.1",
       "NUnit3TestAdapter >= 3.10.0",
-      "OxyPlot.Core >= 1.0.0",
+      "NUnitTestAdapter.WithFramework >= 2.0.0",
+      "OxyPlot.Core >= 2.0.0",
+      "OxyPlot.Wpf >= 2.0.0",
       "nunit >= 3.10.1"
     ]
   },
@@ -382,15 +437,24 @@
             "target": "Package",
             "version": "[3.10.0, )"
           },
+          "NUnitTestAdapter.WithFramework": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "OxyPlot.Core": {
             "target": "Package",
-            "version": "[1.0.0, )"
+            "version": "[2.0.0, )"
+          },
+          "OxyPlot.Wpf": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "nunit": {
             "target": "Package",
             "version": "[3.10.1, )"
           }
-        }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

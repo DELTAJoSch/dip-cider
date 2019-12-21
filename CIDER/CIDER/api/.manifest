@@ -243,7 +243,7 @@
   "CIDER.ViewModels.LoadViewModel.PathText": "CIDER.ViewModels.LoadViewModel.yml",
   "CIDER.ViewModels.LoadViewModel.SelectClickCommand": "CIDER.ViewModels.LoadViewModel.yml",
   "CIDER.ViewModels.MainWindowViewModel": "CIDER.ViewModels.MainWindowViewModel.yml",
-  "CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.KeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)": "CIDER.ViewModels.MainWindowViewModel.yml",
+  "CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.IKeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)": "CIDER.ViewModels.MainWindowViewModel.yml",
   "CIDER.ViewModels.MainWindowViewModel.ButtonEnabled": "CIDER.ViewModels.MainWindowViewModel.yml",
   "CIDER.ViewModels.MainWindowViewModel.ButtonState(System.Boolean)": "CIDER.ViewModels.MainWindowViewModel.yml",
   "CIDER.ViewModels.MainWindowViewModel.ChangeToAboutCommand": "CIDER.ViewModels.MainWindowViewModel.yml",

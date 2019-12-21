@@ -60,6 +60,13 @@ namespace CIDER.UnitTests
 
     public class FakeKeyManagerReader : IReader
     {
+        private bool hasKey;
+
+        public FakeKeyManagerReader(bool hasKey = true)
+        {
+            this.hasKey = hasKey;
+        }
+
         public bool FileExists(string filename)
         {
             return true;
@@ -67,7 +74,7 @@ namespace CIDER.UnitTests
 
         public string[] ReadAllLines(string filename)
         {
-            if (filename == "CIDER.cfg")
+            if (filename == "CIDER.cfg" && hasKey == true)
             {
                 string[] vs = { "KEY:x.key" };
                 return vs;
@@ -75,6 +82,11 @@ namespace CIDER.UnitTests
             else if(filename == "x.key")
             {
                 string[] vs = { "abc" };
+                return vs;
+            }
+            else if(filename == "CIDER.cfg" && hasKey == false)
+            {
+                string[] vs = { "" };
                 return vs;
             }
             else

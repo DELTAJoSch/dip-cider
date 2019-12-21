@@ -55,12 +55,12 @@ namespace CIDER.ViewModels
         /// </summary>
         public ICommand SelectClickCommand => _selectClickCommand;
 
-        private void OnLoadClick(object sender)
+        private async void OnLoadClick(object sender)
         {
             _dataProvider.ClearData();
 
-            _fileIO.ReadCSV(_dataProvider, _path, new Reader(), _main);
-            _fileIO.ReadNmea(_dataProvider, _path, new Reader(), _main);
+            await _fileIO.ReadCSV(_dataProvider, _path, new Reader(), _main);
+            await _fileIO.ReadNmea(_dataProvider, _path, new Reader(), _main);
 
             logger.Debug("Load Clicked");
         }

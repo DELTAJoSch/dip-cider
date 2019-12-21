@@ -99,7 +99,7 @@ namespace CIDER
 
         private void SetupPolyline(MapPolyline polyline)
         {
-            polyline.Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.LawnGreen);
+            polyline.Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Colors.Orange);
             polyline.StrokeThickness = 3.5;
             polyline.Opacity = 0.9;
         }
