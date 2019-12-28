@@ -17,14 +17,17 @@ namespace CIDER.ViewModels
         private readonly DelegateCommand _checkboxStateChangedCommand;
         private bool _commandAcceptEnabled;
         private string _licensesText;
+        private LicenseWriter writer;
 
         /// <summary>
         /// This is the constructor for the LicensesViewModel
         /// </summary>
-        public LicensesViewModel()
+        public LicensesViewModel(LicenseWriter Writer)
         {
             CommandAcceptEnabled = false;
             _checkboxStateChangedCommand = new DelegateCommand(checkboxStateChanged);
+
+            writer = Writer;
 
             Parallel.ForEach(LicenseManager.Licenses, s =>
             {
@@ -38,8 +41,7 @@ namespace CIDER.ViewModels
         public void SaveAcceptAgreement()
         {
             LicenseManager.LicensesAccepted = true;
-            LicenseWriter licenseWriter = new LicenseWriter(new FileReader());
-            licenseWriter.WriteAgreementState(true);
+            writer.WriteAgreementState(true);
             LicenseHolder.AcceptedLicense = true;
         }
 

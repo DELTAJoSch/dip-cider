@@ -26,7 +26,7 @@ namespace CIDER.Views
 
             model.RouteChangedEvent += Model_RouteChangedEvent;
 
-            model.Init();
+            model.Initialize();
 
             map.SetView(model.MapCenter, model.MapZoomLevel);
         }

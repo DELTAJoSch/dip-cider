@@ -32,7 +32,7 @@ namespace CIDER
         {
             InitializeComponent();
 
-            model = new LicensesViewModel();
+            model = new LicensesViewModel(new LicenseWriter(new FileReader()));
             this.DataContext = model;
         }
 

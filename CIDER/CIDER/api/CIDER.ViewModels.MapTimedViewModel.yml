@@ -8,7 +8,7 @@ items:
   - CIDER.ViewModels.MapTimedViewModel.#ctor(CIDER.DataProvider)
   - CIDER.ViewModels.MapTimedViewModel.APIKey
   - CIDER.ViewModels.MapTimedViewModel.CalculateCenter
-  - CIDER.ViewModels.MapTimedViewModel.Init
+  - CIDER.ViewModels.MapTimedViewModel.Initialize
   - CIDER.ViewModels.MapTimedViewModel.MapCenter
   - CIDER.ViewModels.MapTimedViewModel.MapPolylines
   - CIDER.ViewModels.MapTimedViewModel.MapZoomLevel
@@ -355,23 +355,23 @@ items:
   - set
   modifiers.vb:
   - Public
-- uid: CIDER.ViewModels.MapTimedViewModel.Init
-  commentId: M:CIDER.ViewModels.MapTimedViewModel.Init
-  id: Init
+- uid: CIDER.ViewModels.MapTimedViewModel.Initialize
+  commentId: M:CIDER.ViewModels.MapTimedViewModel.Initialize
+  id: Initialize
   parent: CIDER.ViewModels.MapTimedViewModel
   langs:
   - csharp
   - vb
-  name: Init()
-  nameWithType: MapTimedViewModel.Init()
-  fullName: CIDER.ViewModels.MapTimedViewModel.Init()
+  name: Initialize()
+  nameWithType: MapTimedViewModel.Initialize()
+  fullName: CIDER.ViewModels.MapTimedViewModel.Initialize()
   type: Method
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
       branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
-    id: Init
+    id: Initialize
     path: ViewModels/MapTimedViewModel.cs
     startLine: 108
   assemblies:
@@ -380,9 +380,9 @@ items:
   summary: "\nThis function should be called right after the constructor\n"
   example: []
   syntax:
-    content: public void Init()
-    content.vb: Public Sub Init
-  overload: CIDER.ViewModels.MapTimedViewModel.Init*
+    content: public void Initialize()
+    content.vb: Public Sub Initialize
+  overload: CIDER.ViewModels.MapTimedViewModel.Initialize*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -1096,11 +1096,11 @@ references:
   name: slTickFrequency
   nameWithType: MapTimedViewModel.slTickFrequency
   fullName: CIDER.ViewModels.MapTimedViewModel.slTickFrequency
-- uid: CIDER.ViewModels.MapTimedViewModel.Init*
-  commentId: Overload:CIDER.ViewModels.MapTimedViewModel.Init
-  name: Init
-  nameWithType: MapTimedViewModel.Init
-  fullName: CIDER.ViewModels.MapTimedViewModel.Init
+- uid: CIDER.ViewModels.MapTimedViewModel.Initialize*
+  commentId: Overload:CIDER.ViewModels.MapTimedViewModel.Initialize
+  name: Initialize
+  nameWithType: MapTimedViewModel.Initialize
+  fullName: CIDER.ViewModels.MapTimedViewModel.Initialize
 - uid: CIDER.ViewModels.MapTimedViewModel.SliderValueChanged*
   commentId: Overload:CIDER.ViewModels.MapTimedViewModel.SliderValueChanged
   name: SliderValueChanged
