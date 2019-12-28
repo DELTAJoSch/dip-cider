@@ -1199,7 +1199,7 @@
             The purpose of this class is to handle all the interaction logic for the License Window.
             </summary>
         </member>
-        <member name="M:CIDER.ViewModels.LicensesViewModel.#ctor">
+        <member name="M:CIDER.ViewModels.LicensesViewModel.#ctor(CIDER.LicenseWriter)">
             <summary>
             This is the constructor for the LicensesViewModel
             </summary>
@@ -1464,7 +1464,7 @@
             The tick frequency of the slider
             </summary>
         </member>
-        <member name="M:CIDER.ViewModels.MapTimedViewModel.Init">
+        <member name="M:CIDER.ViewModels.MapTimedViewModel.Initialize">
             <summary>
             This function should be called right after the constructor
             </summary>

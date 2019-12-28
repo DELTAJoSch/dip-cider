@@ -112,6 +112,7 @@ references:
   fullName: CIDER.ILicense
 - uid: CIDER.LicenseWriter
   commentId: T:CIDER.LicenseWriter
+  parent: CIDER
   name: LicenseWriter
   nameWithType: LicenseWriter
   fullName: CIDER.LicenseWriter

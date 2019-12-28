@@ -106,7 +106,7 @@ namespace CIDER.ViewModels
         /// <summary>
         /// This function should be called right after the constructor
         /// </summary>
-        public void Init()
+        public void Initialize()
         {
             if (_data.Route.Count != 0)
             {
