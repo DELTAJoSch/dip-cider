@@ -47,7 +47,7 @@ namespace CIDER.ViewModels
 
             AboutText = "This Software is Licensed under the GNU GPL - v3.\nThis Software was designed and written by Johannes Schiemer for his school diploma " +
                 "project. The software is designed to be used in conjunction with the FDR built and engineered by Klaus Obermüller and Alexander Stoiber.\nWe are NOT responsible for any " +
-                "damages created through misuse, user errors ore unexpected behaviour." +
+                "damages created through misuse, user errors ore unexpected behaviour. Icons by Smashicons from Flaticons.com" +
                 "\nCredits: See the Licenses";
             InfoText = "To load a new Track please select the 'Load' menu option. After loading you should be able to select " +
                 "any of the other menu options where you can enjoy the full functionality of this program";
