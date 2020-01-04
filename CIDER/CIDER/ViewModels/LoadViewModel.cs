@@ -88,9 +88,9 @@ namespace CIDER.ViewModels
 
                 // Set the Is Valid Folder Icon
                 if (_folderChecker.IsCorrectFolder(_path) == true)
-                    CheckImage = @"~\..\..\Icons\success.png";
+                    CheckImage = @"..\Icons\002-success.png";
                 else
-                    CheckImage = @"~\..\..\Icons\forbidden.png";
+                    CheckImage = @"..\Icons\001-error.png";
 
                 LoadEnabled = true;
             }

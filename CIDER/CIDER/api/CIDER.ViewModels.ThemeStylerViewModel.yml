@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ThemeStylerViewModel
     path: ViewModels/ThemeStylerViewModel.cs
@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/ThemeStylerViewModel.cs
@@ -104,7 +104,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccentColorItemSource
     path: ViewModels/ThemeStylerViewModel.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DarkThemeCommand
     path: ViewModels/ThemeStylerViewModel.cs
@@ -178,7 +178,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LightThemeCommand
     path: ViewModels/ThemeStylerViewModel.cs
@@ -215,7 +215,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccentColorChanged
     path: ViewModels/ThemeStylerViewModel.cs

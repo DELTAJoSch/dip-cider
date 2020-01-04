@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/App.xaml.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: App
     path: App.xaml.cs
@@ -113,7 +113,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/App.xaml.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnStartup
     path: App.xaml.cs

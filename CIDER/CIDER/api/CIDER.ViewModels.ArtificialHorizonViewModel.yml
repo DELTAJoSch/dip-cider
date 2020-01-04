@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ArtificialHorizonViewModel
     path: ViewModels/ArtificialHorizonViewModel.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/ArtificialHorizonViewModel.cs
@@ -112,7 +112,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Pitch
     path: ViewModels/ArtificialHorizonViewModel.cs
@@ -149,7 +149,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Roll
     path: ViewModels/ArtificialHorizonViewModel.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Yaw
     path: ViewModels/ArtificialHorizonViewModel.cs
@@ -223,7 +223,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Velocity
     path: ViewModels/ArtificialHorizonViewModel.cs
@@ -260,7 +260,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ClimbVelocity
     path: ViewModels/ArtificialHorizonViewModel.cs
@@ -297,7 +297,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/ArtificialHorizonViewModel.cs
@@ -334,7 +334,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/ArtificialHorizonViewModel.cs
@@ -371,7 +371,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/ArtificialHorizonViewModel.cs

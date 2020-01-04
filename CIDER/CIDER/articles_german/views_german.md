@@ -171,16 +171,16 @@ Die map-timed Ansicht zeigt die aufgenommene Route und einen Schieberegler. Wenn
 ![map timed](../images/map_timed.png)
 
 ##Load-Ansicht
-Die load-Ansicht wird verwendet, um einen gültigen Datensatz auszuwählen. Durch Drücken der "..."-Taste wird ein Menü geöffnet, in dem ein Ordner ausgewählt werden kann. Nachdem der ausgewählte Ordner durch Drücken von "Ok" akzeptiert wurde, überprüft die Anwendung die Gültigkeit und Datenintegrität des ausgewählten Ordners. Wenn die Prüfung fehlschlägt, wird ein rotes Kreuz angezeigt. Wenn die Prüfung erfolgreich war, wird ein grünes Häkchen angezeigt. Wenn der grüne Haken angezeigt wird, wird die Schaltfläche "Load" so verfügbar. Durch Drücken der "Load"-Taste werden die ausgewählten Daten geladen. Während des Ladevorgangs wird die Navigationsleiste an der Seite der Anwendung grau. Nach Abschluss des Ladevorgangs werden die Schaltflächen wieder zur Verfügung gestellt.
+Die load-Ansicht wird verwendet, um einen gültigen Datensatz auszuwählen. Durch Drücken der "..."-Taste wird ein Menü geöffnet, in dem ein Ordner ausgewählt werden kann. Nachdem der ausgewählte Ordner durch Drücken von "Ok" akzeptiert wurde, überprüft die Anwendung die Gültigkeit und Datenintegrität des ausgewählten Ordners. Wenn die Prüfung fehlschlägt, wird ein Kreuz angezeigt. Wenn die Prüfung erfolgreich war, wird ein Häkchen angezeigt. Wenn der Haken angezeigt wird, wird die Schaltfläche "Load" so verfügbar. Durch Drücken der "Load"-Taste werden die ausgewählten Daten geladen. Während des Ladevorgangs wird die Navigationsleiste an der Seite der Anwendung grau. Nach Abschluss des Ladevorgangs werden die Schaltflächen wieder zur Verfügung gestellt.
 
 Die Load-Ansicht:
 ![load view](../images/load.png)
 
 Die Ansicht mit einem gültigen Datensatz:
-![green tick](../images/green_tick.png)
+![tick](../images/green_tick.png)
 
 Die Ansicht mit einem ungültigen Datensatz:
-![red cross](../images/red_cross.png)
+![cross](../images/red_cross.png)
 
 ##Die Höhenansicht
 Die height-Ansicht zeigt die Höhe des Flugzeuges. Sie besteht aus zwei Teilen: Der erste Teil zeigt ein Diagramm der Flughöhe über die Dauer des gesamten Fluges. Der zweite Teil zeigt die aktuelle Höhe, einstellbar über einen Schieberegler am unteren Rand der Ansicht. Sie können auch einen bestimmten Wert (nur Zahlen ohne Komma!) in das Feld rechts neben dem Schieberegler eingeben - dadurch wird der Wert des Schiebers auf den eingegebenen Wert gesetzt.

@@ -22,20 +22,82 @@
             <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="11*" />
         </Grid.ColumnDefinitions>
-        <StackPanel x:Name="stPanViewSelector" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,9.6,9.8" Grid.RowSpan="2">
-            <Button Content="Load" Command="{Binding Path=ChangeToLoadCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
-            <Button Content="Map - Route" Command="{Binding Path=ChangeToMapRouteCommand}" IsEnabled="{Binding Path=MapEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
-            <Button Content="Acc - Graph" Command="{Binding Path=ChangeToAccelerationGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
-            <Button Content="Angle - Graph" Command="{Binding Path=ChangeToAngleGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
-            <Button Content="Velocity - Graph" Command="{Binding Path=ChangeToVelocityGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
-            <Button Content="Map - Timed" Command="{Binding Path=ChangeToMapTimedCommand}" IsEnabled="{Binding Path=MapEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
-            <Button Content="Acc - Timed" Command="{Binding Path=ChangeToAccelerationTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
-            <Button Content="Angle - Timed" Command="{Binding Path=ChangeToAngleTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
-            <Button Content="Velocity - Timed" Command="{Binding Path=ChangeToVelocityTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
-            <Button Content="Height" Command="{Binding Path=ChangeToHeightCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
-            <Button Content="Horizon" Command="{Binding Path=ChangeToHorizonCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
-            <Button Content="About" Command="{Binding Path=ChangeToAboutCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" />
-        </StackPanel>
+        <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,10" Grid.RowSpan="2" CanContentScroll="True">
+            <StackPanel x:Name="stPanViewSelector" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,0" Grid.RowSpan="2">
+                <Button Command="{Binding Path=ChangeToLoadCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" Background="#FFF7F7F7">
+                    <StackPanel>
+                        <Image Source="Icons/028-cloud-computing.png" Stretch="Uniform" Height="30"></Image>
+                        <Label Content="Load" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding Path=ChangeToMapRouteCommand}" IsEnabled="{Binding Path=MapEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" >
+                    <StackPanel>
+                        <Image Source="Icons/015-pins.png" Stretch="Uniform" Height="30"></Image>
+                        <Label Content="Map-Route" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding Path=ChangeToAccelerationGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" >
+                    <StackPanel>
+                        <Image Source="Icons/027-fast-forward.png" Stretch="Uniform" Height="30"></Image>
+                        <Label Content="Acc - Graph" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding Path=ChangeToAngleGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" >
+                    <StackPanel>
+                        <Image Source="Icons/025-spin-1.png" Stretch="Uniform" Height="30"></Image>
+                        <Label Content="Angle - Graph" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding Path=ChangeToVelocityGraphCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" >
+                    <StackPanel>
+                        <Image Source="Icons/006-time.png" Stretch="Uniform" Height="30"></Image>
+                        <Label Content="Velocity - Graph" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding Path=ChangeToMapTimedCommand}" IsEnabled="{Binding Path=MapEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" >
+                    <StackPanel>
+                        <Image Source="Icons/014-maps.png" Stretch="Uniform" Height="30"></Image>
+                        <Label Content="Map - Timed" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding Path=ChangeToAccelerationTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" >
+                    <StackPanel>
+                        <Image Source="Icons/026-right-arrow.png" Stretch="Uniform" Height="30"></Image>
+                        <Label Content="Acc - Timed" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding Path=ChangeToAngleTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" >
+                    <StackPanel>
+                        <Image Source="Icons/024-spin.png" Stretch="Uniform" Height="30"></Image>
+                        <Label Content="Angle - Timed" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding Path=ChangeToVelocityTimedCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" >
+                    <StackPanel>
+                        <Image Source="Icons/017-timer-1.png" Stretch="Uniform" Height="30"></Image>
+                        <Label Content="Velocity - Timed" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding Path=ChangeToHeightCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" >
+                    <StackPanel>
+                        <Image Source="Icons/023-ruler.png" Stretch="Uniform" Height="30"></Image>
+                        <Label Content="Height" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding Path=ChangeToHorizonCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" >
+                    <StackPanel>
+                        <Image Source="Icons/012-tv.png" Stretch="Uniform" Height="30"></Image>
+                        <Label Content="Horizon" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding Path=ChangeToAboutCommand}" IsEnabled="{Binding Path=ButtonEnabled}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,0" >
+                    <StackPanel>
+                        <Image Source="Icons/008-settings.png" Stretch="Uniform" Height="30"></Image>
+                        <Label Content="About" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </ScrollViewer>
         <Frame Grid.Column="1" Margin="10.4,10,10.6,9.8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="frmMain" Grid.RowSpan="2" NavigationUIVisibility="Hidden"/>
     </Grid>
 </Controls:MetroWindow>

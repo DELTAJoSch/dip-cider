@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationGraphViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccelerationGraphViewModel
     path: ViewModels/AccelerationGraphViewModel.cs
@@ -71,7 +71,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationGraphViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/AccelerationGraphViewModel.cs
@@ -107,7 +107,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationGraphViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/AccelerationGraphViewModel.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationGraphViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Plot
     path: ViewModels/AccelerationGraphViewModel.cs

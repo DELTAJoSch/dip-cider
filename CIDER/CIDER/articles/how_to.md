@@ -20,6 +20,6 @@ After successfully installing the application, launch the application. You will 
 
 1. Head to the load view
 2. Press "..."
-3. If you see a green tick mark, press "Load"
+3. If you see a tick mark, press "Load"
 
 You successfully loaded the track.

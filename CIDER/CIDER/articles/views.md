@@ -171,16 +171,16 @@ The map-timed view shows the recorded route and a slider. Adjusting the slider g
 ![The Map Timed View](../images/map_timed.png)
 
 ##Load View
-The load view is used to select a valid dataset. Pressing the "..."-button opens a menu where a folder can be selected. After accepting the selected folder by pressing "Ok", the application checks the validity and data integrity of the selected folder. If the check fails, a red cross is displayed. If the check passes, a green tick is displayed. If the green tick is displayed, the "Load"-button is set to be available. Pressing the "Load"-button loads the selected data. During the loading procedure, the navigation bar to the side of the application turns grey. When the loading process is finished, the buttons are made available again.
+The load view is used to select a valid dataset. Pressing the "..."-button opens a menu where a folder can be selected. After accepting the selected folder by pressing "Ok", the application checks the validity and data integrity of the selected folder. If the check fails, a cross is displayed. If the check passes, a tick is displayed. If the tick is displayed, the "Load"-button is set to be available. Pressing the "Load"-button loads the selected data. During the loading procedure, the navigation bar to the side of the application turns grey. When the loading process is finished, the buttons are made available again.
 
 The load view:
 ![The Load View](../images/load.png)
 
 The view with a valid dataset:
-![The green tick](../images/green_tick.png)
+![The tick](../images/green_tick.png)
 
 The view with an invalid dataset:
-![The red cross](../images/red_cross.png)
+![The cross](../images/red_cross.png)
 
 ##The Height View
 The height view shows the height of the plane. There are two parts: The first part shows a graph of the flight height throughout the flight. The second part shows the current height, adjustable by a slider found at the bottom of the view. You can also enter a specific value (only numbers without comma!) in the box found to the right of the slider - this will set the value of the slider to the entered value.

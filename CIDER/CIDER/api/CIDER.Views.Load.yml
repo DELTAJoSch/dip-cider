@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/Load.xaml.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Load
     path: Views/Load.xaml.cs
@@ -659,7 +659,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/Load.xaml.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/Load.xaml.cs

@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: KeyManager
     path: KeyManager.cs
@@ -66,7 +66,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapKeyChangedEvent
     path: KeyManager.cs
@@ -101,7 +101,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: KeyManager.cs
@@ -140,7 +140,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Fetch
     path: KeyManager.cs
@@ -177,7 +177,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Put
     path: KeyManager.cs

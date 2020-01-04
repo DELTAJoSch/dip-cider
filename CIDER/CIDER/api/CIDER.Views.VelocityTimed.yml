@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/VelocityTimed.xaml.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: VelocityTimed
     path: Views/VelocityTimed.xaml.cs
@@ -659,7 +659,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/VelocityTimed.xaml.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/VelocityTimed.xaml.cs

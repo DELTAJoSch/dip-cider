@@ -20,6 +20,6 @@ Nach erfolgreicher Installation der Anwendung starten Sie bitte die Anwendung. E
 
 1. Zum Menüpunkt "Load" gehen
 2. Drücken Sie "...".
-3. Wenn Sie eine grüne Markierung sehen, drücken Sie "Load".
+3. Wenn Sie einen Haken sehen, drücken Sie "Load".
 
 Sie haben den Track erfolgreich geladen.

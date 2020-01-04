@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseManager.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicenseManager
     path: LicenseManager.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseManager.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicensesAccepted
     path: LicenseManager.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseManager.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Licenses
     path: LicenseManager.cs
@@ -135,7 +135,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseManager.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLicense
     path: LicenseManager.cs
@@ -173,7 +173,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseManager.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ClearLicenses
     path: LicenseManager.cs

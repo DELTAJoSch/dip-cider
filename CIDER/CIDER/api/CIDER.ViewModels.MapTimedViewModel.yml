@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapTimedViewModel
     path: ViewModels/MapTimedViewModel.cs
@@ -78,7 +78,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteChangedEvent
     path: ViewModels/MapTimedViewModel.cs
@@ -111,7 +111,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/MapTimedViewModel.cs
@@ -147,7 +147,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: APIKey
     path: ViewModels/MapTimedViewModel.cs
@@ -184,7 +184,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapPolylines
     path: ViewModels/MapTimedViewModel.cs
@@ -221,7 +221,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/MapTimedViewModel.cs
@@ -258,7 +258,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapCenter
     path: ViewModels/MapTimedViewModel.cs
@@ -295,7 +295,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapZoomLevel
     path: ViewModels/MapTimedViewModel.cs
@@ -332,7 +332,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/MapTimedViewModel.cs
@@ -369,7 +369,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Initialize
     path: ViewModels/MapTimedViewModel.cs
@@ -401,7 +401,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/MapTimedViewModel.cs
@@ -437,7 +437,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapTimedViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CalculateCenter
     path: ViewModels/MapTimedViewModel.cs

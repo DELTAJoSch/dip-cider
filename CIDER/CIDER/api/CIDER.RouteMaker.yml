@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/RouteMaker.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteMaker
     path: RouteMaker.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/RouteMaker.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CreateRoute
     path: RouteMaker.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/RouteMaker.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CreateRoute
     path: RouteMaker.cs

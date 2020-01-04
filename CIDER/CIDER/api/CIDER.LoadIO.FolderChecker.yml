@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FolderChecker.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FolderChecker
     path: LoadIO/FolderChecker.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FolderChecker.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IsCorrectFolder
     path: LoadIO/FolderChecker.cs

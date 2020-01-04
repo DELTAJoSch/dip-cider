@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FileIO.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IRead
     path: LoadIO/FileIO.cs
@@ -50,7 +50,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FileIO.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadLinesNmea
     path: LoadIO/FileIO.cs
@@ -85,7 +85,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FileIO.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadLinesCsv
     path: LoadIO/FileIO.cs

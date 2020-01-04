@@ -20,9 +20,29 @@
             <ColumnDefinition Width="50*" />
             <ColumnDefinition Width="171*" />
         </Grid.ColumnDefinitions>
-        <Button Content="..." HorizontalAlignment="Stretch" Command="{Binding Path=SelectClickCommand}" Margin="10,10.333,10,8.667" Grid.Row="2" VerticalAlignment="Stretch" Width="auto" Height="auto" FontSize="30" Grid.ColumnSpan="3" />
+        <Button HorizontalAlignment="Stretch" Command="{Binding Path=SelectClickCommand}" Margin="10,10.333,10,8.667" Grid.Row="2" VerticalAlignment="Stretch" Width="auto" Height="auto" FontSize="30" Grid.ColumnSpan="3" >
+            <Grid Margin="0,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="60*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="../Icons/010-more.png" Stretch="Uniform" Height="auto" Grid.Column="0"></Image>
+                <Label Content="Select Folder" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Column="1" Margin="10,0,0,0"/>
+            </Grid>
+        </Button>
         <Image HorizontalAlignment="Stretch" Height="auto" Margin="10,10,10,10" Grid.Row="0" VerticalAlignment="Stretch" Width="auto" Source="{Binding Path=CheckImage}" Stretch="Uniform" Grid.ColumnSpan="2" Grid.RowSpan="2" />
-        <Button Content="LOAD" HorizontalAlignment="Stretch" IsEnabled="{Binding Path=LoadEnabled}" Command="{Binding Path=LoadClickCommand}" Grid.Row="3" VerticalAlignment="Stretch" Width="auto" Grid.ColumnSpan="3" Height="auto" FontSize="30" Margin="10,10.333,10,10" />
+        <Button HorizontalAlignment="Stretch" IsEnabled="{Binding Path=LoadEnabled}" Command="{Binding Path=LoadClickCommand}" Grid.Row="3" VerticalAlignment="Stretch" Width="auto" Grid.ColumnSpan="3" Height="auto" FontSize="30" Margin="10,10.333,10,10" >
+            <Grid Margin="0,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="60*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="../Icons/009-folder.png" Stretch="Uniform" Height="auto" Grid.Column="0"></Image>
+                <Label Content="Load" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.Column="1" Margin="10,0,0,0"/>
+            </Grid>
+        </Button>
         <ScrollViewer Grid.Column="2" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalScrollBarVisibility="Auto" VerticalAlignment="Stretch" Height="auto" Width="auto" Grid.RowSpan="2">
             <TextBlock Grid.Column="2" HorizontalAlignment="Stretch" Margin="10,10,10,10" Grid.Row="1" FontSize="30" TextWrapping="Wrap" Text="{Binding Path=PathText}" VerticalAlignment="Stretch" Height="auto" Width="auto" />
         </ScrollViewer>

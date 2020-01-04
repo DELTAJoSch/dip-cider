@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LoadViewModel
     path: ViewModels/LoadViewModel.cs
@@ -73,7 +73,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/LoadViewModel.cs
@@ -121,7 +121,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LoadClickCommand
     path: ViewModels/LoadViewModel.cs
@@ -158,7 +158,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SelectClickCommand
     path: ViewModels/LoadViewModel.cs
@@ -195,7 +195,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PathText
     path: ViewModels/LoadViewModel.cs
@@ -232,7 +232,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CheckImage
     path: ViewModels/LoadViewModel.cs
@@ -269,7 +269,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LoadEnabled
     path: ViewModels/LoadViewModel.cs

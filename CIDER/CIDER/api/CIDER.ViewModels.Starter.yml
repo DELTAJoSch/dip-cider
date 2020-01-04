@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Starter
     path: ViewModels/AboutViewModel.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Start
     path: ViewModels/AboutViewModel.cs

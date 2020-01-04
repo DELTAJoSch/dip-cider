@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Licenses.xaml.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Licenses
     path: Licenses.xaml.cs
@@ -873,7 +873,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Licenses.xaml.cs
-      branch: unit-testing
+      branch: UiRedesign
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Licenses.xaml.cs
