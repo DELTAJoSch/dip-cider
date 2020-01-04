@@ -24,7 +24,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/VelocityTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: VelocityTimedViewModel
     path: ViewModels/VelocityTimedViewModel.cs
@@ -76,7 +80,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/VelocityTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/VelocityTimedViewModel.cs
@@ -112,7 +120,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/VelocityTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/VelocityTimedViewModel.cs
@@ -149,7 +161,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/VelocityTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/VelocityTimedViewModel.cs
@@ -186,7 +202,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/VelocityTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/VelocityTimedViewModel.cs
@@ -222,7 +242,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/VelocityTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RVal
     path: ViewModels/VelocityTimedViewModel.cs
@@ -259,7 +283,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/VelocityTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LVal
     path: ViewModels/VelocityTimedViewModel.cs
@@ -296,7 +324,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/VelocityTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMax
     path: ViewModels/VelocityTimedViewModel.cs
@@ -333,7 +365,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/VelocityTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMax
     path: ViewModels/VelocityTimedViewModel.cs
@@ -370,7 +406,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/VelocityTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Text
     path: ViewModels/VelocityTimedViewModel.cs

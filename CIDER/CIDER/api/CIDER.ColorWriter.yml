@@ -18,7 +18,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ColorWriter.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ColorWriter
     path: ColorWriter.cs
@@ -61,7 +65,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ColorWriter.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ColorWriter.cs
@@ -97,7 +105,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ColorWriter.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: GetSetTheming
     path: ColorWriter.cs
@@ -132,7 +144,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ColorWriter.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SetTheming
     path: ColorWriter.cs

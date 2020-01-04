@@ -23,7 +23,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapRouteViewModel
     path: ViewModels/MapRouteViewModel.cs
@@ -75,7 +79,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteChangedEvent
     path: ViewModels/MapRouteViewModel.cs
@@ -108,7 +116,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/MapRouteViewModel.cs
@@ -144,7 +156,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: APIKey
     path: ViewModels/MapRouteViewModel.cs
@@ -181,7 +197,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapPolylines
     path: ViewModels/MapRouteViewModel.cs
@@ -218,7 +238,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapCenter
     path: ViewModels/MapRouteViewModel.cs
@@ -251,7 +275,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapZoomLevel
     path: ViewModels/MapRouteViewModel.cs
@@ -284,7 +312,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Initialize
     path: ViewModels/MapRouteViewModel.cs
@@ -316,7 +348,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CalculateCenter
     path: ViewModels/MapRouteViewModel.cs

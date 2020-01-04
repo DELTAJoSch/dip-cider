@@ -17,7 +17,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FolderSelector.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FolderSelector
     path: LoadIO/FolderSelector.cs
@@ -64,7 +68,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FolderSelector.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LastSelected
     path: LoadIO/FolderSelector.cs
@@ -103,7 +111,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FolderSelector.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SelectFolder
     path: LoadIO/FolderSelector.cs

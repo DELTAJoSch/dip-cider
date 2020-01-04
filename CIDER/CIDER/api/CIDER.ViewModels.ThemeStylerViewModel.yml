@@ -20,7 +20,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ThemeStylerViewModel
     path: ViewModels/ThemeStylerViewModel.cs
@@ -72,7 +76,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/ThemeStylerViewModel.cs
@@ -104,7 +112,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccentColorItemSource
     path: ViewModels/ThemeStylerViewModel.cs
@@ -141,7 +153,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DarkThemeCommand
     path: ViewModels/ThemeStylerViewModel.cs
@@ -178,7 +194,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LightThemeCommand
     path: ViewModels/ThemeStylerViewModel.cs
@@ -215,7 +235,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccentColorChanged
     path: ViewModels/ThemeStylerViewModel.cs

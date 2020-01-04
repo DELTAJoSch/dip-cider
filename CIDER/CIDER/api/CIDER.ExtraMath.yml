@@ -17,7 +17,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ExtraMath.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ExtraMath
     path: ExtraMath.cs
@@ -61,7 +65,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ExtraMath.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DegToRad
     path: ExtraMath.cs
@@ -102,7 +110,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ExtraMath.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RadToDeg
     path: ExtraMath.cs

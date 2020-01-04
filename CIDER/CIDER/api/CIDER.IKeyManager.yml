@@ -17,7 +17,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IKeyManager
     path: KeyManager.cs
@@ -50,7 +54,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Put
     path: KeyManager.cs
@@ -81,7 +89,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Fetch
     path: KeyManager.cs

@@ -18,7 +18,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/SystemTime.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SystemTime
     path: SystemTime.cs
@@ -61,7 +65,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/SystemTime.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Set
     path: SystemTime.cs
@@ -99,7 +107,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/SystemTime.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Reset
     path: SystemTime.cs
@@ -133,7 +145,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/SystemTime.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Now
     path: SystemTime.cs

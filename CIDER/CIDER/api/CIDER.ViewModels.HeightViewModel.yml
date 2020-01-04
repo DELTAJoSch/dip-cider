@@ -26,7 +26,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightViewModel
     path: ViewModels/HeightViewModel.cs
@@ -79,7 +83,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/HeightViewModel.cs
@@ -115,7 +123,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/HeightViewModel.cs
@@ -149,7 +161,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightMaxL
     path: ViewModels/HeightViewModel.cs
@@ -186,7 +202,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightMaxR
     path: ViewModels/HeightViewModel.cs
@@ -223,7 +243,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightValL
     path: ViewModels/HeightViewModel.cs
@@ -260,7 +284,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightValR
     path: ViewModels/HeightViewModel.cs
@@ -297,7 +325,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/HeightViewModel.cs
@@ -334,7 +366,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/HeightViewModel.cs
@@ -371,7 +407,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightText
     path: ViewModels/HeightViewModel.cs
@@ -408,7 +448,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Plot
     path: ViewModels/HeightViewModel.cs
@@ -445,7 +489,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slValueChanged
     path: ViewModels/HeightViewModel.cs

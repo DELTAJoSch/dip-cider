@@ -34,7 +34,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AngleTimedViewModel
     path: ViewModels/AngleTimedViewModel.cs
@@ -86,7 +90,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/AngleTimedViewModel.cs
@@ -122,7 +130,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/AngleTimedViewModel.cs
@@ -159,7 +171,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/AngleTimedViewModel.cs
@@ -196,7 +212,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/AngleTimedViewModel.cs
@@ -232,7 +252,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValPitch
     path: ViewModels/AngleTimedViewModel.cs
@@ -269,7 +293,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValPitch
     path: ViewModels/AngleTimedViewModel.cs
@@ -306,7 +334,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValRoll
     path: ViewModels/AngleTimedViewModel.cs
@@ -343,7 +375,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValRoll
     path: ViewModels/AngleTimedViewModel.cs
@@ -380,7 +416,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValYaw
     path: ViewModels/AngleTimedViewModel.cs
@@ -417,7 +457,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValYaw
     path: ViewModels/AngleTimedViewModel.cs
@@ -454,7 +498,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxPitch
     path: ViewModels/AngleTimedViewModel.cs
@@ -491,7 +539,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxPitch
     path: ViewModels/AngleTimedViewModel.cs
@@ -528,7 +580,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxRoll
     path: ViewModels/AngleTimedViewModel.cs
@@ -565,7 +621,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxRoll
     path: ViewModels/AngleTimedViewModel.cs
@@ -602,7 +662,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxYaw
     path: ViewModels/AngleTimedViewModel.cs
@@ -639,7 +703,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxYaw
     path: ViewModels/AngleTimedViewModel.cs
@@ -676,7 +744,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PitchText
     path: ViewModels/AngleTimedViewModel.cs
@@ -713,7 +785,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: YawText
     path: ViewModels/AngleTimedViewModel.cs
@@ -750,7 +826,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RollText
     path: ViewModels/AngleTimedViewModel.cs

@@ -22,7 +22,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AboutViewModel
     path: ViewModels/AboutViewModel.cs
@@ -74,7 +78,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/AboutViewModel.cs
@@ -116,7 +124,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RequestNavigateCommand
     path: ViewModels/AboutViewModel.cs
@@ -153,7 +165,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SetApiKeyCommand
     path: ViewModels/AboutViewModel.cs
@@ -190,7 +206,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ViewLicenseCommand
     path: ViewModels/AboutViewModel.cs
@@ -227,7 +247,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeThemeCommand
     path: ViewModels/AboutViewModel.cs
@@ -264,7 +288,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AboutText
     path: ViewModels/AboutViewModel.cs
@@ -301,7 +329,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
+<<<<<<< HEAD
       branch: UiRedesign
+=======
+      branch: unit-testing
+>>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: InfoText
     path: ViewModels/AboutViewModel.cs
