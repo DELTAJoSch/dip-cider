@@ -22,7 +22,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AngleGraphViewModel
     path: ViewModels/AngleGraphViewModel.cs
-    startLine: 9
+    startLine: 21
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -75,7 +75,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/AngleGraphViewModel.cs
-    startLine: 20
+    startLine: 32
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -111,7 +111,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/AngleGraphViewModel.cs
-    startLine: 52
+    startLine: 64
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -145,7 +145,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Plot
     path: ViewModels/AngleGraphViewModel.cs
-    startLine: 61
+    startLine: 73
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

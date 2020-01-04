@@ -23,7 +23,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicenseManager
     path: LicenseManager.cs
-    startLine: 11
+    startLine: 23
   assemblies:
   - CIDER
   namespace: CIDER
@@ -67,7 +67,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicensesAccepted
     path: LicenseManager.cs
-    startLine: 16
+    startLine: 28
   assemblies:
   - CIDER
   namespace: CIDER
@@ -102,7 +102,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Licenses
     path: LicenseManager.cs
-    startLine: 21
+    startLine: 33
   assemblies:
   - CIDER
   namespace: CIDER
@@ -139,7 +139,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLicense
     path: LicenseManager.cs
-    startLine: 27
+    startLine: 39
   assemblies:
   - CIDER
   namespace: CIDER
@@ -177,7 +177,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ClearLicenses
     path: LicenseManager.cs
-    startLine: 35
+    startLine: 47
   assemblies:
   - CIDER
   namespace: CIDER

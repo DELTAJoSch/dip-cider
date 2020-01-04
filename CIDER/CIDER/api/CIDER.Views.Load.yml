@@ -20,7 +20,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Load
     path: Views/Load.xaml.cs
-    startLine: 8
+    startLine: 20
   assemblies:
   - CIDER
   namespace: CIDER.Views
@@ -663,7 +663,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/Load.xaml.cs
-    startLine: 17
+    startLine: 29
   assemblies:
   - CIDER
   namespace: CIDER.Views

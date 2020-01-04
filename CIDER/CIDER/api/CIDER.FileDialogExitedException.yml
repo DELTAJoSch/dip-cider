@@ -22,7 +22,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileDialogExitedException
     path: Exceptions.cs
-    startLine: 8
+    startLine: 20
   assemblies:
   - CIDER
   namespace: CIDER
@@ -92,7 +92,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
-    startLine: 14
+    startLine: 26
   assemblies:
   - CIDER
   namespace: CIDER
@@ -124,7 +124,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
-    startLine: 22
+    startLine: 34
   assemblies:
   - CIDER
   namespace: CIDER
@@ -160,7 +160,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
-    startLine: 32
+    startLine: 44
   assemblies:
   - CIDER
   namespace: CIDER

@@ -22,7 +22,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ColorWriterNoColorException
     path: Exceptions.cs
-    startLine: 41
+    startLine: 53
   assemblies:
   - CIDER
   namespace: CIDER
@@ -92,7 +92,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
-    startLine: 47
+    startLine: 59
   assemblies:
   - CIDER
   namespace: CIDER
@@ -124,7 +124,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
-    startLine: 55
+    startLine: 67
   assemblies:
   - CIDER
   namespace: CIDER
@@ -160,7 +160,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
-    startLine: 65
+    startLine: 77
   assemblies:
   - CIDER
   namespace: CIDER

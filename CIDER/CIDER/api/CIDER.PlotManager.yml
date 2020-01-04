@@ -27,7 +27,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PlotManager
     path: PlotManager.cs
-    startLine: 12
+    startLine: 24
   assemblies:
   - CIDER
   namespace: CIDER
@@ -70,7 +70,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Series
     path: PlotManager.cs
-    startLine: 19
+    startLine: 31
   assemblies:
   - CIDER
   namespace: CIDER
@@ -103,7 +103,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: PlotManager.cs
-    startLine: 24
+    startLine: 36
   assemblies:
   - CIDER
   namespace: CIDER
@@ -135,7 +135,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: GetPlotModel
     path: PlotManager.cs
-    startLine: 34
+    startLine: 46
   assemblies:
   - CIDER
   namespace: CIDER
@@ -174,7 +174,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CreatePDF
     path: PlotManager.cs
-    startLine: 60
+    startLine: 72
   assemblies:
   - CIDER
   namespace: CIDER
@@ -215,7 +215,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 110
+    startLine: 122
   assemblies:
   - CIDER
   namespace: CIDER
@@ -257,7 +257,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 123
+    startLine: 135
   assemblies:
   - CIDER
   namespace: CIDER
@@ -302,7 +302,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 135
+    startLine: 147
   assemblies:
   - CIDER
   namespace: CIDER
@@ -350,7 +350,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 146
+    startLine: 158
   assemblies:
   - CIDER
   namespace: CIDER

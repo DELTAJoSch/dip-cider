@@ -20,7 +20,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Licenser
     path: ViewModels/AboutViewModel.cs
-    startLine: 129
+    startLine: 141
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -67,7 +67,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Show
     path: ViewModels/AboutViewModel.cs
-    startLine: 134
+    startLine: 146
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

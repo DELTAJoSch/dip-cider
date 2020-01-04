@@ -28,7 +28,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ArtificialHorizonViewModel
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 9
+    startLine: 21
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -80,7 +80,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 24
+    startLine: 36
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -116,7 +116,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Pitch
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 38
+    startLine: 50
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -153,7 +153,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Roll
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 43
+    startLine: 55
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -190,7 +190,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Yaw
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 48
+    startLine: 60
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -227,7 +227,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Velocity
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 53
+    startLine: 65
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -264,7 +264,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ClimbVelocity
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 58
+    startLine: 70
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -301,7 +301,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 63
+    startLine: 75
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -338,7 +338,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 72
+    startLine: 84
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -375,7 +375,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 82
+    startLine: 94
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
