@@ -26,11 +26,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightViewModel
     path: ViewModels/HeightViewModel.cs
-    startLine: 10
+    startLine: 22
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -79,11 +79,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/HeightViewModel.cs
-    startLine: 28
+    startLine: 40
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -115,11 +115,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/HeightViewModel.cs
-    startLine: 78
+    startLine: 90
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -149,11 +149,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightMaxL
     path: ViewModels/HeightViewModel.cs
-    startLine: 87
+    startLine: 99
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -186,11 +186,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightMaxR
     path: ViewModels/HeightViewModel.cs
-    startLine: 92
+    startLine: 104
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -223,11 +223,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightValL
     path: ViewModels/HeightViewModel.cs
-    startLine: 97
+    startLine: 109
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -260,11 +260,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightValR
     path: ViewModels/HeightViewModel.cs
-    startLine: 102
+    startLine: 114
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -297,11 +297,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/HeightViewModel.cs
-    startLine: 107
+    startLine: 119
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -334,11 +334,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/HeightViewModel.cs
-    startLine: 112
+    startLine: 124
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -371,11 +371,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightText
     path: ViewModels/HeightViewModel.cs
-    startLine: 117
+    startLine: 129
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -408,11 +408,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Plot
     path: ViewModels/HeightViewModel.cs
-    startLine: 122
+    startLine: 134
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -445,11 +445,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slValueChanged
     path: ViewModels/HeightViewModel.cs
-    startLine: 128
+    startLine: 140
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

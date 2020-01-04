@@ -20,11 +20,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ThemeStylerViewModel
     path: ViewModels/ThemeStylerViewModel.cs
-    startLine: 13
+    startLine: 25
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -72,11 +72,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/ThemeStylerViewModel.cs
-    startLine: 25
+    startLine: 37
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -104,11 +104,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccentColorItemSource
     path: ViewModels/ThemeStylerViewModel.cs
-    startLine: 47
+    startLine: 59
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -141,11 +141,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DarkThemeCommand
     path: ViewModels/ThemeStylerViewModel.cs
-    startLine: 52
+    startLine: 64
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -178,11 +178,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LightThemeCommand
     path: ViewModels/ThemeStylerViewModel.cs
-    startLine: 57
+    startLine: 69
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -215,11 +215,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ThemeStylerViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccentColorChanged
     path: ViewModels/ThemeStylerViewModel.cs
-    startLine: 63
+    startLine: 75
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

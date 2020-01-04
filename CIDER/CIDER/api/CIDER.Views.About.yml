@@ -16,11 +16,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/About.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: About
     path: Views/About.xaml.cs
-    startLine: 8
+    startLine: 20
   assemblies:
   - CIDER
   namespace: CIDER.Views
@@ -659,11 +659,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/About.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/About.xaml.cs
-    startLine: 14
+    startLine: 26
   assemblies:
   - CIDER
   namespace: CIDER.Views

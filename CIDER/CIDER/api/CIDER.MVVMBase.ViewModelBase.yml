@@ -18,11 +18,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ViewModelBase
     path: MVVMBase/ViewModelBase.cs
-    startLine: 11
+    startLine: 23
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
@@ -83,11 +83,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: logger
     path: MVVMBase/ViewModelBase.cs
-    startLine: 16
+    startLine: 28
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
@@ -118,11 +118,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PropertyChanged
     path: MVVMBase/ViewModelBase.cs
-    startLine: 21
+    startLine: 33
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
@@ -153,11 +153,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SetProperty
     path: MVVMBase/ViewModelBase.cs
-    startLine: 31
+    startLine: 43
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase

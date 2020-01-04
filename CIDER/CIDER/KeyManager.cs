@@ -1,4 +1,16 @@
-﻿using System;
+﻿/* Copyright (C) 2020  Johannes Schiemer 
+	This program is free software: you can redistribute it and/or modify 
+	it under the terms of the GNU General Public License as published by 
+	the Free Software Foundation, either version 3 of the License, or 
+	(at your option) any later version. 
+	This program is distributed in the hope that it will be useful, 
+	but WITHOUT ANY WARRANTY; without even the implied warranty of 
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+	GNU General Public License for more details. 
+	You should have received a copy of the GNU General Public License 
+	along with this program.  If not, see <https://www.gnu.org/licenses/>. 
+*/
+using System;
 using System.Collections;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -10,7 +22,7 @@ namespace CIDER
     /// <summary>
     /// This class handles the file interaction for writing the path to the api key file
     /// </summary>
-    public class KeyManager
+    public class KeyManager : IKeyManager
     {
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private DataProvider _data;
@@ -248,5 +260,23 @@ namespace CIDER
         {
             File.WriteAllText(filename, text);
         }
+    }
+
+    /// <summary>
+    /// This interface can used for unit testing
+    /// </summary>
+    public interface IKeyManager
+    {
+        /// <summary>
+        /// This function should be used to put a new key into a file.
+        /// </summary>
+        /// <returns>true if successful</returns>
+        bool Put();
+
+        /// <summary>
+        /// This function should be used to fetch a key.
+        /// </summary>
+        /// <returns>true if sucessful</returns>
+        bool Fetch();
     }
 }

@@ -17,11 +17,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ExtraMath.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ExtraMath
     path: ExtraMath.cs
-    startLine: 7
+    startLine: 19
   assemblies:
   - CIDER
   namespace: CIDER
@@ -61,11 +61,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ExtraMath.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DegToRad
     path: ExtraMath.cs
-    startLine: 14
+    startLine: 26
   assemblies:
   - CIDER
   namespace: CIDER
@@ -102,11 +102,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ExtraMath.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RadToDeg
     path: ExtraMath.cs
-    startLine: 24
+    startLine: 36
   assemblies:
   - CIDER
   namespace: CIDER

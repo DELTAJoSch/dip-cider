@@ -1,4 +1,16 @@
-﻿using CIDER.MVVMBase;
+﻿/* Copyright (C) 2020  Johannes Schiemer 
+	This program is free software: you can redistribute it and/or modify 
+	it under the terms of the GNU General Public License as published by 
+	the Free Software Foundation, either version 3 of the License, or 
+	(at your option) any later version. 
+	This program is distributed in the hope that it will be useful, 
+	but WITHOUT ANY WARRANTY; without even the implied warranty of 
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+	GNU General Public License for more details. 
+	You should have received a copy of the GNU General Public License 
+	along with this program.  If not, see <https://www.gnu.org/licenses/>. 
+*/
+using CIDER.MVVMBase;
 using CIDER.Views;
 using MahApps.Metro;
 using System;
@@ -46,6 +58,8 @@ namespace CIDER.ViewModels
 
         private DataProvider dataProvider;
 
+        private IKeyManager manager;
+
         /// <summary>
         /// The EventHandler for the OnFrameChangeEvent
         /// This event is fired when the selected frame changes
@@ -57,7 +71,7 @@ namespace CIDER.ViewModels
         /// <summary>
         /// This is the constructor for the MainWindow ViewModel
         /// </summary>
-        public MainWindowViewModel()
+        public MainWindowViewModel(IKeyManager Manager, DataProvider data, IReader reader, bool IsTesting = false)
         {
             AddLicenses();
 
@@ -75,14 +89,13 @@ namespace CIDER.ViewModels
             _changeToVelocityTimedCommand = new DelegateCommand(OnChangeToVelocityTimed);
             _changeToHorizonCommand = new DelegateCommand(OnChangeToHorizonCommand);
 
-            dataProvider = new DataProvider();
+            dataProvider = data;
+
+            manager = Manager;
 
             MapEnabled = true;
             _mapAvailable = true;
 
-            KeyManager manager = new KeyManager(dataProvider, new FileReader());
-
-            var reader = new FileReader();
             if (!reader.FileExists("CIDER.cfg"))
                 reader.WriteAllText("", "CIDER.cfg");
 
@@ -92,16 +105,19 @@ namespace CIDER.ViewModels
                 _mapAvailable = false;
             }
 
-            if(ThemeManager.DetectAppStyle().Item1 == ThemeManager.GetAppTheme("BaseDark"))
+            if (!IsTesting)
             {
-                var theme = ThemeManager.DetectAppStyle();
-                ThemeManager.ChangeAppTheme(App.Current, "BaseDark");
+                if (ThemeManager.DetectAppStyle().Item1 == ThemeManager.GetAppTheme("BaseDark"))
+                {
+                    var theme = ThemeManager.DetectAppStyle();
+                    ThemeManager.ChangeAppTheme(App.Current, "BaseDark");
+                }
             }
 
             // Check the license
             try
             {
-                LicenseWriter licenseWriter = new LicenseWriter(new FileReader());
+                LicenseWriter licenseWriter = new LicenseWriter(reader);
                 _licenseAccepted = licenseWriter.ReadAgreementState();
                 LicenseManager.LicensesAccepted = _licenseAccepted;
 
@@ -221,8 +237,6 @@ namespace CIDER.ViewModels
         {
             MapEnabled = true;
             _mapAvailable = true;
-
-            KeyManager manager = new KeyManager(dataProvider, new FileReader());
 
             if (!manager.Fetch())
             {

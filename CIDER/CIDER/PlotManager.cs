@@ -1,4 +1,16 @@
-﻿using OxyPlot;
+﻿/* Copyright (C) 2020  Johannes Schiemer 
+	This program is free software: you can redistribute it and/or modify 
+	it under the terms of the GNU General Public License as published by 
+	the Free Software Foundation, either version 3 of the License, or 
+	(at your option) any later version. 
+	This program is distributed in the hope that it will be useful, 
+	but WITHOUT ANY WARRANTY; without even the implied warranty of 
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+	GNU General Public License for more details. 
+	You should have received a copy of the GNU General Public License 
+	along with this program.  If not, see <https://www.gnu.org/licenses/>. 
+*/
+using OxyPlot;
 using OxyPlot.Series;
 using System;
 using System.Collections.Generic;
@@ -32,14 +44,14 @@ namespace CIDER
         /// </summary>
         /// <param name="Title">This is the Title of the plot returned</param>
         /// <returns>Returns a plotmodel</returns>
-        public PlotModel GetPlotModel(string Title)
+        public async Task<PlotModel> GetPlotModel(string Title)
         {
-            Create(Title);
+            await Create(Title);
 
             return _plot;
         }
 
-        private async void Create(string Title)
+        private async Task Create(string Title)
         {
             //Create a new PlotModel
             PlotModel CreatePlot = new PlotModel();
@@ -58,9 +70,9 @@ namespace CIDER
         /// </summary>
         /// <param name="Title">Title of the plot</param>
         /// <param name="fileName">Path to the file</param>
-        public void CreatePDF(string Title, string fileName)
+        public async Task CreatePDF(string Title, string fileName)
         {
-            Create(Title);
+            await Create(Title);
 
             using (var stream = File.Create(fileName))
             {

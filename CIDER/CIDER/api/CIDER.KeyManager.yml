@@ -19,21 +19,25 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: KeyManager
     path: KeyManager.cs
-    startLine: 12
+    startLine: 24
   assemblies:
   - CIDER
   namespace: CIDER
   summary: "\nThis class handles the file interaction for writing the path to the api key file\n"
   example: []
   syntax:
-    content: public class KeyManager
-    content.vb: Public Class KeyManager
+    content: 'public class KeyManager : IKeyManager'
+    content.vb: >-
+      Public Class KeyManager
+          Implements IKeyManager
   inheritance:
   - System.Object
+  implements:
+  - CIDER.IKeyManager
   inheritedMembers:
   - System.Object.ToString
   - System.Object.Equals(System.Object)
@@ -62,11 +66,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapKeyChangedEvent
     path: KeyManager.cs
-    startLine: 20
+    startLine: 32
   assemblies:
   - CIDER
   namespace: CIDER
@@ -97,11 +101,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: KeyManager.cs
-    startLine: 29
+    startLine: 41
   assemblies:
   - CIDER
   namespace: CIDER
@@ -136,11 +140,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Fetch
     path: KeyManager.cs
-    startLine: 39
+    startLine: 51
   assemblies:
   - CIDER
   namespace: CIDER
@@ -153,6 +157,8 @@ items:
       description: This function returns a bool telling the caller if a key was found
     content.vb: Public Function Fetch As Boolean
   overload: CIDER.KeyManager.Fetch*
+  implements:
+  - CIDER.IKeyManager.Fetch
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -171,11 +177,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Put
     path: KeyManager.cs
-    startLine: 80
+    startLine: 92
   assemblies:
   - CIDER
   namespace: CIDER
@@ -188,6 +194,8 @@ items:
       description: returns true if successful
     content.vb: Public Function Put As Boolean
   overload: CIDER.KeyManager.Put*
+  implements:
+  - CIDER.IKeyManager.Put
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -205,6 +213,12 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
+- uid: CIDER.IKeyManager
+  commentId: T:CIDER.IKeyManager
+  parent: CIDER
+  name: IKeyManager
+  nameWithType: IKeyManager
+  fullName: CIDER.IKeyManager
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
@@ -519,6 +533,34 @@ references:
   name: Fetch
   nameWithType: KeyManager.Fetch
   fullName: CIDER.KeyManager.Fetch
+- uid: CIDER.IKeyManager.Fetch
+  commentId: M:CIDER.IKeyManager.Fetch
+  parent: CIDER.IKeyManager
+  name: Fetch()
+  nameWithType: IKeyManager.Fetch()
+  fullName: CIDER.IKeyManager.Fetch()
+  spec.csharp:
+  - uid: CIDER.IKeyManager.Fetch
+    name: Fetch
+    nameWithType: IKeyManager.Fetch
+    fullName: CIDER.IKeyManager.Fetch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.IKeyManager.Fetch
+    name: Fetch
+    nameWithType: IKeyManager.Fetch
+    fullName: CIDER.IKeyManager.Fetch
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -531,3 +573,31 @@ references:
   name: Put
   nameWithType: KeyManager.Put
   fullName: CIDER.KeyManager.Put
+- uid: CIDER.IKeyManager.Put
+  commentId: M:CIDER.IKeyManager.Put
+  parent: CIDER.IKeyManager
+  name: Put()
+  nameWithType: IKeyManager.Put()
+  fullName: CIDER.IKeyManager.Put()
+  spec.csharp:
+  - uid: CIDER.IKeyManager.Put
+    name: Put
+    nameWithType: IKeyManager.Put
+    fullName: CIDER.IKeyManager.Put
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: CIDER.IKeyManager.Put
+    name: Put
+    nameWithType: IKeyManager.Put
+    fullName: CIDER.IKeyManager.Put
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

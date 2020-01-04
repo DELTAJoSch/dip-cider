@@ -17,11 +17,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FileIO.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IRead
     path: LoadIO/FileIO.cs
-    startLine: 297
+    startLine: 309
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
@@ -50,11 +50,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FileIO.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadLinesNmea
     path: LoadIO/FileIO.cs
-    startLine: 304
+    startLine: 316
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
@@ -85,11 +85,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FileIO.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadLinesCsv
     path: LoadIO/FileIO.cs
-    startLine: 312
+    startLine: 324
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO

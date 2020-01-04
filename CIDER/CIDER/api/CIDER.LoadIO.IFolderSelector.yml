@@ -17,11 +17,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FolderSelector.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IFolderSelector
     path: LoadIO/FolderSelector.cs
-    startLine: 43
+    startLine: 55
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
@@ -50,11 +50,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FolderSelector.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SelectFolder
     path: LoadIO/FolderSelector.cs
-    startLine: 49
+    startLine: 61
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
@@ -81,11 +81,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FolderSelector.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LastSelected
     path: LoadIO/FolderSelector.cs
-    startLine: 54
+    startLine: 66
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO

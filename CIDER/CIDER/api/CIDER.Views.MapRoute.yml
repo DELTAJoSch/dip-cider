@@ -16,11 +16,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/MapRoute.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapRoute
     path: Views/MapRoute.xaml.cs
-    startLine: 11
+    startLine: 23
   assemblies:
   - CIDER
   namespace: CIDER.Views
@@ -659,11 +659,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/MapRoute.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/MapRoute.xaml.cs
-    startLine: 19
+    startLine: 31
   assemblies:
   - CIDER
   namespace: CIDER.Views

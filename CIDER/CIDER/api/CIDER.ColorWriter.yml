@@ -18,11 +18,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ColorWriter.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ColorWriter
     path: ColorWriter.cs
-    startLine: 9
+    startLine: 21
   assemblies:
   - CIDER
   namespace: CIDER
@@ -61,11 +61,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ColorWriter.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ColorWriter.cs
-    startLine: 18
+    startLine: 30
   assemblies:
   - CIDER
   namespace: CIDER
@@ -97,11 +97,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ColorWriter.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: GetSetTheming
     path: ColorWriter.cs
-    startLine: 27
+    startLine: 39
   assemblies:
   - CIDER
   namespace: CIDER
@@ -132,11 +132,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ColorWriter.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SetTheming
     path: ColorWriter.cs
-    startLine: 76
+    startLine: 88
   assemblies:
   - CIDER
   namespace: CIDER

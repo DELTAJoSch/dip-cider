@@ -23,11 +23,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PlotManager
     path: PlotManager.cs
-    startLine: 12
+    startLine: 24
   assemblies:
   - CIDER
   namespace: CIDER
@@ -66,11 +66,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Series
     path: PlotManager.cs
-    startLine: 19
+    startLine: 31
   assemblies:
   - CIDER
   namespace: CIDER
@@ -99,11 +99,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: PlotManager.cs
-    startLine: 24
+    startLine: 36
   assemblies:
   - CIDER
   namespace: CIDER
@@ -131,26 +131,26 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: GetPlotModel
     path: PlotManager.cs
-    startLine: 34
+    startLine: 46
   assemblies:
   - CIDER
   namespace: CIDER
   summary: "\nThis function is used to get a plotmodel\n"
   example: []
   syntax:
-    content: public PlotModel GetPlotModel(string Title)
+    content: public Task<PlotModel> GetPlotModel(string Title)
     parameters:
     - id: Title
       type: System.String
       description: This is the Title of the plot returned
     return:
-      type: OxyPlot.PlotModel
+      type: System.Threading.Tasks.Task{OxyPlot.PlotModel}
       description: Returns a plotmodel
-    content.vb: Public Function GetPlotModel(Title As String) As PlotModel
+    content.vb: Public Function GetPlotModel(Title As String) As Task(Of PlotModel)
   overload: CIDER.PlotManager.GetPlotModel*
   modifiers.csharp:
   - public
@@ -170,18 +170,18 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CreatePDF
     path: PlotManager.cs
-    startLine: 60
+    startLine: 72
   assemblies:
   - CIDER
   namespace: CIDER
   summary: "\nThis function creates a pdf from a plotmodel\n"
   example: []
   syntax:
-    content: public void CreatePDF(string Title, string fileName)
+    content: public Task CreatePDF(string Title, string fileName)
     parameters:
     - id: Title
       type: System.String
@@ -189,7 +189,9 @@ items:
     - id: fileName
       type: System.String
       description: Path to the file
-    content.vb: Public Sub CreatePDF(Title As String, fileName As String)
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function CreatePDF(Title As String, fileName As String) As Task
   overload: CIDER.PlotManager.CreatePDF*
   modifiers.csharp:
   - public
@@ -209,11 +211,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 110
+    startLine: 122
   assemblies:
   - CIDER
   namespace: CIDER
@@ -251,11 +253,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 123
+    startLine: 135
   assemblies:
   - CIDER
   namespace: CIDER
@@ -296,11 +298,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 135
+    startLine: 147
   assemblies:
   - CIDER
   namespace: CIDER
@@ -344,11 +346,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 146
+    startLine: 158
   assemblies:
   - CIDER
   namespace: CIDER
@@ -779,24 +781,107 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: OxyPlot.PlotModel
-  commentId: T:OxyPlot.PlotModel
-  parent: OxyPlot
+- uid: System.Threading.Tasks.Task{OxyPlot.PlotModel}
+  commentId: T:System.Threading.Tasks.Task{OxyPlot.PlotModel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PlotModel>
+  nameWithType: Task<PlotModel>
+  fullName: System.Threading.Tasks.Task<OxyPlot.PlotModel>
+  nameWithType.vb: Task(Of PlotModel)
+  fullName.vb: System.Threading.Tasks.Task(Of OxyPlot.PlotModel)
+  name.vb: Task(Of PlotModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: OxyPlot.PlotModel
+    name: PlotModel
+    nameWithType: PlotModel
+    fullName: OxyPlot.PlotModel
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: OxyPlot.PlotModel
+    name: PlotModel
+    nameWithType: PlotModel
+    fullName: OxyPlot.PlotModel
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
   isExternal: true
-  name: PlotModel
-  nameWithType: PlotModel
-  fullName: OxyPlot.PlotModel
-- uid: OxyPlot
-  commentId: N:OxyPlot
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
   isExternal: true
-  name: OxyPlot
-  nameWithType: OxyPlot
-  fullName: OxyPlot
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
 - uid: CIDER.PlotManager.CreatePDF*
   commentId: Overload:CIDER.PlotManager.CreatePDF
   name: CreatePDF
   nameWithType: PlotManager.CreatePDF
   fullName: CIDER.PlotManager.CreatePDF
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
 - uid: CIDER.PlotManager.AddLineSeries*
   commentId: Overload:CIDER.PlotManager.AddLineSeries
   name: AddLineSeries
@@ -853,6 +938,12 @@ references:
   name: OxyColor
   nameWithType: OxyColor
   fullName: OxyPlot.OxyColor
+- uid: OxyPlot
+  commentId: N:OxyPlot
+  isExternal: true
+  name: OxyPlot
+  nameWithType: OxyPlot
+  fullName: OxyPlot
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System

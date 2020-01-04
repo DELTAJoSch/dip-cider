@@ -38,11 +38,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DataProvider
     path: DataProvider.cs
-    startLine: 9
+    startLine: 21
   assemblies:
   - CIDER
   namespace: CIDER
@@ -81,11 +81,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: DataProvider.cs
-    startLine: 14
+    startLine: 26
   assemblies:
   - CIDER
   namespace: CIDER
@@ -113,11 +113,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteName
     path: DataProvider.cs
-    startLine: 56
+    startLine: 68
   assemblies:
   - CIDER
   namespace: CIDER
@@ -150,11 +150,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: APIKey
     path: DataProvider.cs
-    startLine: 61
+    startLine: 73
   assemblies:
   - CIDER
   namespace: CIDER
@@ -187,11 +187,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteDate
     path: DataProvider.cs
-    startLine: 66
+    startLine: 78
   assemblies:
   - CIDER
   namespace: CIDER
@@ -224,11 +224,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteStartTime
     path: DataProvider.cs
-    startLine: 71
+    startLine: 83
   assemblies:
   - CIDER
   namespace: CIDER
@@ -261,11 +261,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteEndTime
     path: DataProvider.cs
-    startLine: 76
+    startLine: 88
   assemblies:
   - CIDER
   namespace: CIDER
@@ -298,11 +298,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IsValidRoute
     path: DataProvider.cs
-    startLine: 81
+    startLine: 93
   assemblies:
   - CIDER
   namespace: CIDER
@@ -335,11 +335,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DataPointsAcceleration
     path: DataProvider.cs
-    startLine: 86
+    startLine: 98
   assemblies:
   - CIDER
   namespace: CIDER
@@ -372,11 +372,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DataPointsVelocity
     path: DataProvider.cs
-    startLine: 91
+    startLine: 103
   assemblies:
   - CIDER
   namespace: CIDER
@@ -409,11 +409,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Pressure
     path: DataProvider.cs
-    startLine: 96
+    startLine: 108
   assemblies:
   - CIDER
   namespace: CIDER
@@ -446,11 +446,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: XAcceleration
     path: DataProvider.cs
-    startLine: 101
+    startLine: 113
   assemblies:
   - CIDER
   namespace: CIDER
@@ -483,11 +483,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: YAcceleration
     path: DataProvider.cs
-    startLine: 106
+    startLine: 118
   assemblies:
   - CIDER
   namespace: CIDER
@@ -520,11 +520,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ZAcceleration
     path: DataProvider.cs
-    startLine: 111
+    startLine: 123
   assemblies:
   - CIDER
   namespace: CIDER
@@ -557,11 +557,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Roll
     path: DataProvider.cs
-    startLine: 116
+    startLine: 128
   assemblies:
   - CIDER
   namespace: CIDER
@@ -594,11 +594,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Pitch
     path: DataProvider.cs
-    startLine: 121
+    startLine: 133
   assemblies:
   - CIDER
   namespace: CIDER
@@ -631,11 +631,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Yaw
     path: DataProvider.cs
-    startLine: 126
+    startLine: 138
   assemblies:
   - CIDER
   namespace: CIDER
@@ -668,11 +668,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DataPointsAngle
     path: DataProvider.cs
-    startLine: 131
+    startLine: 143
   assemblies:
   - CIDER
   namespace: CIDER
@@ -705,11 +705,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Heading
     path: DataProvider.cs
-    startLine: 136
+    startLine: 148
   assemblies:
   - CIDER
   namespace: CIDER
@@ -742,11 +742,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Velocity
     path: DataProvider.cs
-    startLine: 141
+    startLine: 153
   assemblies:
   - CIDER
   namespace: CIDER
@@ -779,11 +779,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Height
     path: DataProvider.cs
-    startLine: 146
+    startLine: 158
   assemblies:
   - CIDER
   namespace: CIDER
@@ -816,11 +816,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Route
     path: DataProvider.cs
-    startLine: 151
+    startLine: 163
   assemblies:
   - CIDER
   namespace: CIDER
@@ -853,11 +853,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AverageSattelitesInUse
     path: DataProvider.cs
-    startLine: 156
+    startLine: 168
   assemblies:
   - CIDER
   namespace: CIDER
@@ -890,11 +890,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/DataProvider.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ClearData
     path: DataProvider.cs
-    startLine: 177
+    startLine: 189
   assemblies:
   - CIDER
   namespace: CIDER

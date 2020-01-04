@@ -11,6 +11,7 @@ items:
   - CIDER.ViewModels.AngleTimedViewModel
   - CIDER.ViewModels.ArtificialHorizonViewModel
   - CIDER.ViewModels.HeightViewModel
+  - CIDER.ViewModels.Licenser
   - CIDER.ViewModels.LicensesViewModel
   - CIDER.ViewModels.LoadViewModel
   - CIDER.ViewModels.MainWindowViewModel
@@ -111,6 +112,11 @@ references:
   name: Starter
   nameWithType: Starter
   fullName: CIDER.ViewModels.Starter
+- uid: CIDER.ViewModels.Licenser
+  commentId: T:CIDER.ViewModels.Licenser
+  name: Licenser
+  nameWithType: Licenser
+  fullName: CIDER.ViewModels.Licenser
 - uid: CIDER.ViewModels
   commentId: N:CIDER.ViewModels
   name: CIDER.ViewModels

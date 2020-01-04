@@ -23,11 +23,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapRouteViewModel
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 11
+    startLine: 23
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -75,11 +75,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteChangedEvent
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 19
+    startLine: 31
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -108,11 +108,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 28
+    startLine: 40
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -144,11 +144,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: APIKey
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 50
+    startLine: 62
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -181,11 +181,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapPolylines
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 55
+    startLine: 67
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -218,11 +218,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapCenter
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 60
+    startLine: 72
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -251,11 +251,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapZoomLevel
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 65
+    startLine: 77
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -284,11 +284,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Initialize
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 70
+    startLine: 82
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -316,11 +316,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CalculateCenter
     path: ViewModels/MapRouteViewModel.cs
-    startLine: 79
+    startLine: 91
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

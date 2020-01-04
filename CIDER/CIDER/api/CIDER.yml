@@ -12,6 +12,8 @@ items:
   - CIDER.ExtraMath
   - CIDER.FileDialogExitedException
   - CIDER.FileReader
+  - CIDER.IKeyManager
+  - CIDER.ILicense
   - CIDER.IProcessStarter
   - CIDER.IReader
   - CIDER.KeyManager
@@ -67,7 +69,6 @@ references:
   fullName: CIDER.ExtraMath
 - uid: CIDER.KeyManager
   commentId: T:CIDER.KeyManager
-  parent: CIDER
   name: KeyManager
   nameWithType: KeyManager
   fullName: CIDER.KeyManager
@@ -82,6 +83,12 @@ references:
   name: FileReader
   nameWithType: FileReader
   fullName: CIDER.FileReader
+- uid: CIDER.IKeyManager
+  commentId: T:CIDER.IKeyManager
+  parent: CIDER
+  name: IKeyManager
+  nameWithType: IKeyManager
+  fullName: CIDER.IKeyManager
 - uid: CIDER.LicenseHolder
   commentId: T:CIDER.LicenseHolder
   name: LicenseHolder
@@ -97,8 +104,15 @@ references:
   name: Licenses
   nameWithType: Licenses
   fullName: CIDER.Licenses
+- uid: CIDER.ILicense
+  commentId: T:CIDER.ILicense
+  parent: CIDER
+  name: ILicense
+  nameWithType: ILicense
+  fullName: CIDER.ILicense
 - uid: CIDER.LicenseWriter
   commentId: T:CIDER.LicenseWriter
+  parent: CIDER
   name: LicenseWriter
   nameWithType: LicenseWriter
   fullName: CIDER.LicenseWriter

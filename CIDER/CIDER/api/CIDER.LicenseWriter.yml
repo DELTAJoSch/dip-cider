@@ -18,11 +18,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseWriter.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicenseWriter
     path: LicenseWriter.cs
-    startLine: 13
+    startLine: 25
   assemblies:
   - CIDER
   namespace: CIDER
@@ -61,11 +61,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseWriter.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: LicenseWriter.cs
-    startLine: 22
+    startLine: 34
   assemblies:
   - CIDER
   namespace: CIDER
@@ -97,11 +97,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseWriter.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: WriteAgreementState
     path: LicenseWriter.cs
-    startLine: 31
+    startLine: 43
   assemblies:
   - CIDER
   namespace: CIDER
@@ -133,11 +133,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseWriter.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadAgreementState
     path: LicenseWriter.cs
-    startLine: 76
+    startLine: 88
   assemblies:
   - CIDER
   namespace: CIDER

@@ -22,11 +22,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: DelegateCommand
     path: MVVMBase/ViewModelBase.cs
-    startLine: 46
+    startLine: 58
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
@@ -69,11 +69,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: MVVMBase/ViewModelBase.cs
-    startLine: 57
+    startLine: 69
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
@@ -111,11 +111,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: MVVMBase/ViewModelBase.cs
-    startLine: 67
+    startLine: 79
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
@@ -150,11 +150,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: MVVMBase/ViewModelBase.cs
-    startLine: 77
+    startLine: 89
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
@@ -186,11 +186,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Execute
     path: MVVMBase/ViewModelBase.cs
-    startLine: 86
+    startLine: 98
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
@@ -224,11 +224,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CanExecute
     path: MVVMBase/ViewModelBase.cs
-    startLine: 93
+    startLine: 105
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
@@ -265,11 +265,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CanExecuteChanged
     path: MVVMBase/ViewModelBase.cs
-    startLine: 98
+    startLine: 110
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase
@@ -300,11 +300,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: InvokeCanExecuteChanged
     path: MVVMBase/ViewModelBase.cs
-    startLine: 103
+    startLine: 115
   assemblies:
   - CIDER
   namespace: CIDER.MVVMBase

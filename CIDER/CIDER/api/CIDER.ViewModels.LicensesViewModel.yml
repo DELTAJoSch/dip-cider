@@ -5,7 +5,7 @@ items:
   id: LicensesViewModel
   parent: CIDER.ViewModels
   children:
-  - CIDER.ViewModels.LicensesViewModel.#ctor
+  - CIDER.ViewModels.LicensesViewModel.#ctor(CIDER.LicenseWriter)
   - CIDER.ViewModels.LicensesViewModel.CheckboxStateChangedCommand
   - CIDER.ViewModels.LicensesViewModel.CommandAcceptEnabled
   - CIDER.ViewModels.LicensesViewModel.LicensesText
@@ -20,11 +20,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicensesViewModel
     path: ViewModels/LicensesViewModel.cs
-    startLine: 14
+    startLine: 26
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -58,33 +58,36 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: CIDER.ViewModels.LicensesViewModel.#ctor
-  commentId: M:CIDER.ViewModels.LicensesViewModel.#ctor
-  id: '#ctor'
+- uid: CIDER.ViewModels.LicensesViewModel.#ctor(CIDER.LicenseWriter)
+  commentId: M:CIDER.ViewModels.LicensesViewModel.#ctor(CIDER.LicenseWriter)
+  id: '#ctor(CIDER.LicenseWriter)'
   parent: CIDER.ViewModels.LicensesViewModel
   langs:
   - csharp
   - vb
-  name: LicensesViewModel()
-  nameWithType: LicensesViewModel.LicensesViewModel()
-  fullName: CIDER.ViewModels.LicensesViewModel.LicensesViewModel()
+  name: LicensesViewModel(LicenseWriter)
+  nameWithType: LicensesViewModel.LicensesViewModel(LicenseWriter)
+  fullName: CIDER.ViewModels.LicensesViewModel.LicensesViewModel(CIDER.LicenseWriter)
   type: Constructor
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/LicensesViewModel.cs
-    startLine: 23
+    startLine: 36
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
   summary: "\nThis is the constructor for the LicensesViewModel\n"
   example: []
   syntax:
-    content: public LicensesViewModel()
-    content.vb: Public Sub New
+    content: public LicensesViewModel(LicenseWriter Writer)
+    parameters:
+    - id: Writer
+      type: CIDER.LicenseWriter
+    content.vb: Public Sub New(Writer As LicenseWriter)
   overload: CIDER.ViewModels.LicensesViewModel.#ctor*
   modifiers.csharp:
   - public
@@ -104,11 +107,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SaveAcceptAgreement
     path: ViewModels/LicensesViewModel.cs
-    startLine: 37
+    startLine: 52
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -136,11 +139,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CheckboxStateChangedCommand
     path: ViewModels/LicensesViewModel.cs
-    startLine: 53
+    startLine: 67
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -173,11 +176,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicensesText
     path: ViewModels/LicensesViewModel.cs
-    startLine: 58
+    startLine: 72
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -210,11 +213,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CommandAcceptEnabled
     path: ViewModels/LicensesViewModel.cs
-    startLine: 63
+    startLine: 77
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -703,6 +706,17 @@ references:
   name: LicensesViewModel
   nameWithType: LicensesViewModel.LicensesViewModel
   fullName: CIDER.ViewModels.LicensesViewModel.LicensesViewModel
+- uid: CIDER.LicenseWriter
+  commentId: T:CIDER.LicenseWriter
+  parent: CIDER
+  name: LicenseWriter
+  nameWithType: LicenseWriter
+  fullName: CIDER.LicenseWriter
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
 - uid: CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement*
   commentId: Overload:CIDER.ViewModels.LicensesViewModel.SaveAcceptAgreement
   name: SaveAcceptAgreement

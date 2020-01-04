@@ -18,6 +18,10 @@
     name: FileDialogExitedException
   - uid: CIDER.FileReader
     name: FileReader
+  - uid: CIDER.IKeyManager
+    name: IKeyManager
+  - uid: CIDER.ILicense
+    name: ILicense
   - uid: CIDER.IProcessStarter
     name: IProcessStarter
   - uid: CIDER.IReader
@@ -85,6 +89,8 @@
     name: ArtificialHorizonViewModel
   - uid: CIDER.ViewModels.HeightViewModel
     name: HeightViewModel
+  - uid: CIDER.ViewModels.Licenser
+    name: Licenser
   - uid: CIDER.ViewModels.LicensesViewModel
     name: LicensesViewModel
   - uid: CIDER.ViewModels.LoadViewModel

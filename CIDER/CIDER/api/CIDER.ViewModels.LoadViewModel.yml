@@ -21,11 +21,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LoadViewModel
     path: ViewModels/LoadViewModel.cs
-    startLine: 10
+    startLine: 22
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -73,11 +73,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/LoadViewModel.cs
-    startLine: 32
+    startLine: 44
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -121,11 +121,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LoadClickCommand
     path: ViewModels/LoadViewModel.cs
-    startLine: 50
+    startLine: 62
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -158,11 +158,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SelectClickCommand
     path: ViewModels/LoadViewModel.cs
-    startLine: 55
+    startLine: 67
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -195,11 +195,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PathText
     path: ViewModels/LoadViewModel.cs
-    startLine: 104
+    startLine: 116
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -232,11 +232,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CheckImage
     path: ViewModels/LoadViewModel.cs
-    startLine: 113
+    startLine: 125
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -269,11 +269,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LoadViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LoadEnabled
     path: ViewModels/LoadViewModel.cs
-    startLine: 122
+    startLine: 134
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

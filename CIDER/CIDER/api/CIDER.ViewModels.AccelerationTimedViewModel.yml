@@ -34,11 +34,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccelerationTimedViewModel
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 9
+    startLine: 21
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -86,11 +86,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 37
+    startLine: 49
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -122,11 +122,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 68
+    startLine: 80
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -159,11 +159,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 77
+    startLine: 89
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -196,11 +196,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 87
+    startLine: 99
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -232,11 +232,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValUD
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 135
+    startLine: 147
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -269,11 +269,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValUD
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 144
+    startLine: 156
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -306,11 +306,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValFB
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 153
+    startLine: 165
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -343,11 +343,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValFB
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 162
+    startLine: 174
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -380,11 +380,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValLR
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 171
+    startLine: 183
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -417,11 +417,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValLR
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 180
+    startLine: 192
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -454,11 +454,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxUD
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 190
+    startLine: 202
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -491,11 +491,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxUD
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 199
+    startLine: 211
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -528,11 +528,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxFB
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 208
+    startLine: 220
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -565,11 +565,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxFB
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 217
+    startLine: 229
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -602,11 +602,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxLR
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 226
+    startLine: 238
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -639,11 +639,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxLR
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 235
+    startLine: 247
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -676,11 +676,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: UDText
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 244
+    startLine: 256
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -713,11 +713,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LRText
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 253
+    startLine: 265
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -750,11 +750,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AccelerationTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FBText
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 262
+    startLine: 274
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

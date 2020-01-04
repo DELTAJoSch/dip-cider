@@ -125,6 +125,7 @@
     <Compile Include="Licenses.xaml.cs">
       <DependentUpon>Licenses.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LicenseStarter.cs" />
     <Compile Include="LicenseWriter.cs" />
     <Compile Include="LoadIO\FileIO.cs" />
     <Compile Include="LoadIO\FolderChecker.cs" />

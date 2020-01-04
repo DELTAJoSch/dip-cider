@@ -1,4 +1,16 @@
-﻿using CIDER.ViewModels;
+﻿/* Copyright (C) 2020  Johannes Schiemer 
+	This program is free software: you can redistribute it and/or modify 
+	it under the terms of the GNU General Public License as published by 
+	the Free Software Foundation, either version 3 of the License, or 
+	(at your option) any later version. 
+	This program is distributed in the hope that it will be useful, 
+	but WITHOUT ANY WARRANTY; without even the implied warranty of 
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+	GNU General Public License for more details. 
+	You should have received a copy of the GNU General Public License 
+	along with this program.  If not, see <https://www.gnu.org/licenses/>. 
+*/
+using CIDER.ViewModels;
 using Microsoft.Maps.MapControl.WPF;
 using NmeaParser;
 using System;
@@ -24,7 +36,7 @@ namespace CIDER.LoadIO
         /// <param name="Path">A path to the folder to the .csv file</param>
         /// <param name="Read">An object implementing the IRead interface</param>
         /// <param name="Main">A MainWindowViewModel object to toggle the buttons from</param>
-        public async void ReadCSV(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main)
+        public async Task ReadCSV(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main)
         {
             logger.Debug("Starting CSV ingestion.");
 
@@ -121,7 +133,7 @@ namespace CIDER.LoadIO
         /// <param name="Path">A path to the folder to the .nmea file</param>
         /// <param name="Read">An object implementing the IRead interface</param>
         /// <param name="Main">A MainWindowViewModel object to toggle the buttons from</param>
-        public async void ReadNmea(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main)
+        public async Task ReadNmea(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main)
         {
             failedParses = 0;
             bool first = true;
@@ -280,7 +292,7 @@ namespace CIDER.LoadIO
         /// <param name="Path">A path to the folder to the .nmea file</param>
         /// <param name="Read">An object implementing the IRead interface</param>
         /// <param name="Main">A MainWindowViewModel object to toggle the buttons from</param>
-        void ReadNmea(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main);
+        Task ReadNmea(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main);
 
         /// <summary>
         /// This function should ingest the .csv file of a valid CIDER data folder
@@ -289,7 +301,7 @@ namespace CIDER.LoadIO
         /// <param name="Path">A path to the folder to the .nmea file</param>
         /// <param name="Read">An object implementing the IRead interface</param>
         /// <param name="Main">A MainWindowViewModel object to toggle the buttons from</param>
-        void ReadCSV(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main);
+        Task ReadCSV(DataProvider Data, string Path, IRead Read, MainWindowViewModel Main);
     }
 
     /// <summary>

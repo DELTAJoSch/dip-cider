@@ -23,11 +23,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicenseHolder
     path: LicenseHolder.cs
-    startLine: 11
+    startLine: 23
   assemblies:
   - CIDER
   namespace: CIDER
@@ -67,11 +67,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AcceptedLicense
     path: LicenseHolder.cs
-    startLine: 16
+    startLine: 28
   assemblies:
   - CIDER
   namespace: CIDER
@@ -106,11 +106,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicenseChangedEvent
     path: LicenseHolder.cs
-    startLine: 23
+    startLine: 35
   assemblies:
   - CIDER
   namespace: CIDER
@@ -141,11 +141,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ThisSoftwareLicense
     path: LicenseHolder.cs
-    startLine: 35
+    startLine: 47
   assemblies:
   - CIDER
   namespace: CIDER
@@ -176,11 +176,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MahAppsLicense
     path: LicenseHolder.cs
-    startLine: 592
+    startLine: 604
   assemblies:
   - CIDER
   namespace: CIDER
@@ -211,11 +211,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OxyPlotLicense
     path: LicenseHolder.cs
-    startLine: 613
+    startLine: 625
   assemblies:
   - CIDER
   namespace: CIDER
@@ -246,11 +246,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: pilotHUDLicense
     path: LicenseHolder.cs
-    startLine: 635
+    startLine: 647
   assemblies:
   - CIDER
   namespace: CIDER
@@ -281,11 +281,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: NLOGLicense
     path: LicenseHolder.cs
-    startLine: 647
+    startLine: 659
   assemblies:
   - CIDER
   namespace: CIDER
@@ -316,11 +316,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: docFxLicense
     path: LicenseHolder.cs
-    startLine: 675
+    startLine: 687
   assemblies:
   - CIDER
   namespace: CIDER

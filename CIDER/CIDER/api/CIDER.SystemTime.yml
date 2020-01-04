@@ -18,11 +18,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/SystemTime.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SystemTime
     path: SystemTime.cs
-    startLine: 8
+    startLine: 20
   assemblies:
   - CIDER
   namespace: CIDER
@@ -61,11 +61,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/SystemTime.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Set
     path: SystemTime.cs
-    startLine: 16
+    startLine: 28
   assemblies:
   - CIDER
   namespace: CIDER
@@ -99,11 +99,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/SystemTime.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Reset
     path: SystemTime.cs
-    startLine: 24
+    startLine: 36
   assemblies:
   - CIDER
   namespace: CIDER
@@ -133,11 +133,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/SystemTime.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Now
     path: SystemTime.cs
-    startLine: 32
+    startLine: 44
   assemblies:
   - CIDER
   namespace: CIDER

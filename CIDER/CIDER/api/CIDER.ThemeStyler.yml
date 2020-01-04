@@ -16,11 +16,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ThemeStyler.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ThemeStyler
     path: ThemeStyler.xaml.cs
-    startLine: 9
+    startLine: 21
   assemblies:
   - CIDER
   namespace: CIDER
@@ -873,11 +873,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ThemeStyler.xaml.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ThemeStyler.xaml.cs
-    startLine: 16
+    startLine: 28
   assemblies:
   - CIDER
   namespace: CIDER

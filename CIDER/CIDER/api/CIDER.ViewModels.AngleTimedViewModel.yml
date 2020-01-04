@@ -34,11 +34,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AngleTimedViewModel
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 9
+    startLine: 21
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -86,11 +86,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 37
+    startLine: 49
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -122,11 +122,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 64
+    startLine: 76
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -159,11 +159,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 73
+    startLine: 85
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -196,11 +196,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 83
+    startLine: 95
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -232,11 +232,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValPitch
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 131
+    startLine: 143
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -269,11 +269,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValPitch
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 140
+    startLine: 152
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -306,11 +306,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValRoll
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 149
+    startLine: 161
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -343,11 +343,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValRoll
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 158
+    startLine: 170
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -380,11 +380,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValYaw
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 167
+    startLine: 179
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -417,11 +417,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValYaw
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 176
+    startLine: 188
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -454,11 +454,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxPitch
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 186
+    startLine: 198
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -491,11 +491,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxPitch
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 195
+    startLine: 207
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -528,11 +528,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxRoll
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 204
+    startLine: 216
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -565,11 +565,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxRoll
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 213
+    startLine: 225
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -602,11 +602,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxYaw
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 222
+    startLine: 234
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -639,11 +639,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxYaw
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 231
+    startLine: 243
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -676,11 +676,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PitchText
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 240
+    startLine: 252
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -713,11 +713,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: YawText
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 249
+    startLine: 261
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -750,11 +750,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AngleTimedViewModel.cs
-      branch: master
+      branch: unit-testing
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RollText
     path: ViewModels/AngleTimedViewModel.cs
-    startLine: 258
+    startLine: 270
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

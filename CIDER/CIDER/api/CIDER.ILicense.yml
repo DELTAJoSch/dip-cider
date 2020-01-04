@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: CIDER.ILicense
+  commentId: T:CIDER.ILicense
+  id: ILicense
+  parent: CIDER
+  children:
+  - CIDER.ILicense.Show
+  langs:
+  - csharp
+  - vb
+  name: ILicense
+  nameWithType: ILicense
+  fullName: CIDER.ILicense
+  type: Interface
+  source:
+    remote:
+      path: CIDER/CIDER/LicenseStarter.cs
+      branch: unit-testing
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: ILicense
+    path: LicenseStarter.cs
+    startLine: 23
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis interface is used for unit testing\n"
+  example: []
+  syntax:
+    content: public interface ILicense
+    content.vb: Public Interface ILicense
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: CIDER.ILicense.Show
+  commentId: M:CIDER.ILicense.Show
+  id: Show
+  parent: CIDER.ILicense
+  langs:
+  - csharp
+  - vb
+  name: Show()
+  nameWithType: ILicense.Show()
+  fullName: CIDER.ILicense.Show()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/LicenseStarter.cs
+      branch: unit-testing
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Show
+    path: LicenseStarter.cs
+    startLine: 28
+  assemblies:
+  - CIDER
+  namespace: CIDER
+  summary: "\nThis function is called to show the License View\n"
+  example: []
+  syntax:
+    content: void Show()
+    content.vb: Sub Show
+  overload: CIDER.ILicense.Show*
+references:
+- uid: CIDER
+  commentId: N:CIDER
+  name: CIDER
+  nameWithType: CIDER
+  fullName: CIDER
+- uid: CIDER.ILicense.Show*
+  commentId: Overload:CIDER.ILicense.Show
+  name: Show
+  nameWithType: ILicense.Show
+  fullName: CIDER.ILicense.Show
