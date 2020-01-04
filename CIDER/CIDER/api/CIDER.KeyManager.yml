@@ -23,7 +23,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: KeyManager
     path: KeyManager.cs
-    startLine: 12
+    startLine: 24
   assemblies:
   - CIDER
   namespace: CIDER
@@ -70,7 +70,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapKeyChangedEvent
     path: KeyManager.cs
-    startLine: 20
+    startLine: 32
   assemblies:
   - CIDER
   namespace: CIDER
@@ -105,7 +105,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: KeyManager.cs
-    startLine: 29
+    startLine: 41
   assemblies:
   - CIDER
   namespace: CIDER
@@ -144,7 +144,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Fetch
     path: KeyManager.cs
-    startLine: 39
+    startLine: 51
   assemblies:
   - CIDER
   namespace: CIDER
@@ -181,7 +181,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Put
     path: KeyManager.cs
-    startLine: 80
+    startLine: 92
   assemblies:
   - CIDER
   namespace: CIDER

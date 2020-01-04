@@ -21,7 +21,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapTimed
     path: Views/MapTimed.xaml.cs
-    startLine: 11
+    startLine: 23
   assemblies:
   - CIDER
   namespace: CIDER.Views
@@ -664,7 +664,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/MapTimed.xaml.cs
-    startLine: 19
+    startLine: 31
   assemblies:
   - CIDER
   namespace: CIDER.Views
@@ -700,7 +700,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slValueChanged
     path: Views/MapTimed.xaml.cs
-    startLine: 48
+    startLine: 60
   assemblies:
   - CIDER
   namespace: CIDER.Views

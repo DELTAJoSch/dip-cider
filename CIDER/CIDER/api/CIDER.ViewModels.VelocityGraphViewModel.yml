@@ -22,7 +22,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: VelocityGraphViewModel
     path: ViewModels/VelocityGraphViewModel.cs
-    startLine: 9
+    startLine: 21
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -75,7 +75,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/VelocityGraphViewModel.cs
-    startLine: 20
+    startLine: 32
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -111,7 +111,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/VelocityGraphViewModel.cs
-    startLine: 50
+    startLine: 62
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -145,7 +145,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Plot
     path: ViewModels/VelocityGraphViewModel.cs
-    startLine: 59
+    startLine: 71
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

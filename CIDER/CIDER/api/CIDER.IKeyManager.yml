@@ -21,7 +21,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IKeyManager
     path: KeyManager.cs
-    startLine: 255
+    startLine: 267
   assemblies:
   - CIDER
   namespace: CIDER
@@ -54,7 +54,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Put
     path: KeyManager.cs
-    startLine: 261
+    startLine: 273
   assemblies:
   - CIDER
   namespace: CIDER
@@ -85,7 +85,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Fetch
     path: KeyManager.cs
-    startLine: 267
+    startLine: 279
   assemblies:
   - CIDER
   namespace: CIDER

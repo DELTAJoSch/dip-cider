@@ -20,7 +20,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IProcessStarter
     path: ProcessStarter.cs
-    startLine: 7
+    startLine: 19
   assemblies:
   - CIDER
   namespace: CIDER
@@ -53,7 +53,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Start
     path: ProcessStarter.cs
-    startLine: 13
+    startLine: 25
   assemblies:
   - CIDER
   namespace: CIDER

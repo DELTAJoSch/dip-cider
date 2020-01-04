@@ -24,7 +24,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicensesViewModel
     path: ViewModels/LicensesViewModel.cs
-    startLine: 14
+    startLine: 26
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -76,7 +76,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/LicensesViewModel.cs
-    startLine: 24
+    startLine: 36
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -111,7 +111,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SaveAcceptAgreement
     path: ViewModels/LicensesViewModel.cs
-    startLine: 40
+    startLine: 52
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -143,7 +143,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CheckboxStateChangedCommand
     path: ViewModels/LicensesViewModel.cs
-    startLine: 55
+    startLine: 67
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -180,7 +180,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicensesText
     path: ViewModels/LicensesViewModel.cs
-    startLine: 60
+    startLine: 72
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -217,7 +217,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CommandAcceptEnabled
     path: ViewModels/LicensesViewModel.cs
-    startLine: 65
+    startLine: 77
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

@@ -26,7 +26,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AboutViewModel
     path: ViewModels/AboutViewModel.cs
-    startLine: 12
+    startLine: 24
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -78,7 +78,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/AboutViewModel.cs
-    startLine: 28
+    startLine: 40
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -120,7 +120,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RequestNavigateCommand
     path: ViewModels/AboutViewModel.cs
-    startLine: 50
+    startLine: 62
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -157,7 +157,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SetApiKeyCommand
     path: ViewModels/AboutViewModel.cs
-    startLine: 60
+    startLine: 72
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -194,7 +194,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ViewLicenseCommand
     path: ViewModels/AboutViewModel.cs
-    startLine: 70
+    startLine: 82
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -231,7 +231,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeThemeCommand
     path: ViewModels/AboutViewModel.cs
-    startLine: 80
+    startLine: 92
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -268,7 +268,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AboutText
     path: ViewModels/AboutViewModel.cs
-    startLine: 93
+    startLine: 105
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -305,7 +305,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: InfoText
     path: ViewModels/AboutViewModel.cs
-    startLine: 104
+    startLine: 116
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

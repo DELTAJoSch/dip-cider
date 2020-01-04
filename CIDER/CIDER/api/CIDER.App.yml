@@ -20,7 +20,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: App
     path: App.xaml.cs
-    startLine: 10
+    startLine: 22
   assemblies:
   - CIDER
   namespace: CIDER
@@ -117,7 +117,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnStartup
     path: App.xaml.cs
-    startLine: 18
+    startLine: 30
   assemblies:
   - CIDER
   namespace: CIDER

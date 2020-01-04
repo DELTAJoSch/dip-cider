@@ -30,7 +30,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapTimedViewModel
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 11
+    startLine: 23
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -82,7 +82,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteChangedEvent
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 25
+    startLine: 37
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -115,7 +115,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 31
+    startLine: 43
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -151,7 +151,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: APIKey
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 62
+    startLine: 74
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -188,7 +188,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapPolylines
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 67
+    startLine: 79
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -225,7 +225,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 72
+    startLine: 84
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -262,7 +262,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapCenter
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 81
+    startLine: 93
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -299,7 +299,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapZoomLevel
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 90
+    startLine: 102
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -336,7 +336,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 99
+    startLine: 111
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -373,7 +373,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Initialize
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 108
+    startLine: 120
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -405,7 +405,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 120
+    startLine: 132
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -441,7 +441,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CalculateCenter
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 138
+    startLine: 150
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

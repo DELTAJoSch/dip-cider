@@ -24,7 +24,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileReader
     path: KeyManager.cs
-    startLine: 199
+    startLine: 211
   assemblies:
   - CIDER
   namespace: CIDER
@@ -71,7 +71,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileExists
     path: KeyManager.cs
-    startLine: 206
+    startLine: 218
   assemblies:
   - CIDER
   namespace: CIDER
@@ -112,7 +112,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadAllLines
     path: KeyManager.cs
-    startLine: 216
+    startLine: 228
   assemblies:
   - CIDER
   namespace: CIDER
@@ -153,7 +153,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ShowDialog
     path: KeyManager.cs
-    startLine: 226
+    startLine: 238
   assemblies:
   - CIDER
   namespace: CIDER
@@ -194,7 +194,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: WriteAllLines
     path: KeyManager.cs
-    startLine: 236
+    startLine: 248
   assemblies:
   - CIDER
   namespace: CIDER
@@ -238,7 +238,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: WriteAllText
     path: KeyManager.cs
-    startLine: 246
+    startLine: 258
   assemblies:
   - CIDER
   namespace: CIDER

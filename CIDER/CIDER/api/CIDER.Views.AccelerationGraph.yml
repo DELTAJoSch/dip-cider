@@ -20,7 +20,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AccelerationGraph
     path: Views/AccelerationGraph.xaml.cs
-    startLine: 9
+    startLine: 21
   assemblies:
   - CIDER
   namespace: CIDER.Views
@@ -663,7 +663,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/AccelerationGraph.xaml.cs
-    startLine: 17
+    startLine: 29
   assemblies:
   - CIDER
   namespace: CIDER.Views
