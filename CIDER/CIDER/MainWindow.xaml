@@ -8,6 +8,12 @@
         mc:Ignorable="d"
         Title="CIDER" Height="560" Width="900" MinHeight="560" MinWidth="900" Unloaded="OnUnloaded">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FFFE5E00" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="34*"/>
             <RowDefinition Height="488*"/>
