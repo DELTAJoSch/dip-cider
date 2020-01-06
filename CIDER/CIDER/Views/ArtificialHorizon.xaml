@@ -7,13 +7,18 @@
       xmlns:local="clr-namespace:CIDER.Views"
       mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ArtificialHorizon">
+      Title="ArtificialHorizon" Unloaded="Page_Unloaded">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="121*" />
             <RowDefinition Height="29*" />
         </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        
         <pilotHUD:hudControl
             RollAngle="{Binding Path=Roll}"
             PitchAngle="{Binding Path=Pitch}"
@@ -23,7 +28,14 @@
             Alpha="0"
             Beta="0"
             SpeedKtEnabled="True"
-            ClimbRateEnabled="True" />
+            ClimbRateEnabled="True" 
+            Grid.ColumnSpan="2"/>
         <Slider Grid.Row="2" Maximum="{Binding Path=slMaximum}" TickPlacement="BottomRight" TickFrequency="{Binding Path=slTickFrequency}" Name="slValue" ValueChanged="SlValue_ValueChanged" SmallChange="1" LargeChange="10" IsSnapToTickEnabled="True" />
+        <Button Grid.Column="1" Grid.Row="1" Command="{Binding Path=PlayPauseClickedCommand}" Height="auto" Width="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="1,1,1,1">
+            <StackPanel>
+                <Image Source="../Icons/play.png" Stretch="Uniform" Height="30"></Image>
+                <Label Content="Play/Pause" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center"/>
+            </StackPanel>
+        </Button>
     </Grid>
 </Page>

@@ -15,6 +15,7 @@ using Microsoft.Maps.MapControl.WPF;
 using NmeaParser;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -70,7 +71,7 @@ namespace CIDER.LoadIO
                         {
                             try
                             {
-                                var tp = new Tuple<float, float, float>(float.Parse(split[1]), float.Parse(split[2]), float.Parse(split[3]));
+                                var tp = new Tuple<float, float, float>(float.Parse(split[1], CultureInfo.InvariantCulture), float.Parse(split[2], CultureInfo.InvariantCulture), float.Parse(split[3], CultureInfo.InvariantCulture));
 
                                 Data.XAcceleration.Add(tp.Item1);
                                 Data.YAcceleration.Add(tp.Item2);
@@ -82,7 +83,7 @@ namespace CIDER.LoadIO
                             }
                             try
                             {
-                                var tp = new Tuple<float, float, float>(float.Parse(split[4]), float.Parse(split[5]), float.Parse(split[6]));
+                                var tp = new Tuple<float, float, float>(float.Parse(split[4], CultureInfo.InvariantCulture), float.Parse(split[5], CultureInfo.InvariantCulture), float.Parse(split[6], CultureInfo.InvariantCulture));
 
                                 Data.Roll.Add(tp.Item1);
                                 Data.Pitch.Add(tp.Item2);
@@ -95,7 +96,7 @@ namespace CIDER.LoadIO
                             }
                             try
                             {
-                                Data.Height.Add(float.Parse(split[7]));
+                                Data.Height.Add(float.Parse(split[7], CultureInfo.InvariantCulture));
                             }
                             catch (Exception ex)
                             {
@@ -103,7 +104,7 @@ namespace CIDER.LoadIO
                             }
                             try
                             {
-                                Data.Pressure.Add(float.Parse(split[8]));
+                                Data.Pressure.Add(float.Parse(split[8], CultureInfo.InvariantCulture));
                             }
                             catch (Exception ex)
                             {

@@ -7,7 +7,9 @@ items:
   children:
   - CIDER.ViewModels.ArtificialHorizonViewModel.#ctor(CIDER.DataProvider)
   - CIDER.ViewModels.ArtificialHorizonViewModel.ClimbVelocity
+  - CIDER.ViewModels.ArtificialHorizonViewModel.Dispose
   - CIDER.ViewModels.ArtificialHorizonViewModel.Pitch
+  - CIDER.ViewModels.ArtificialHorizonViewModel.PlayPauseClickedCommand
   - CIDER.ViewModels.ArtificialHorizonViewModel.Roll
   - CIDER.ViewModels.ArtificialHorizonViewModel.SliderValueChanged(System.Int32)
   - CIDER.ViewModels.ArtificialHorizonViewModel.slMaximum
@@ -24,31 +26,28 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ArtificialHorizonViewModel
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 21
+    startLine: 23
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
   summary: "\nThis is the ViewModel for the ArtificiaHorizon page\n"
   example: []
   syntax:
-    content: 'public class ArtificialHorizonViewModel : ViewModelBase, INotifyPropertyChanged'
+    content: 'public class ArtificialHorizonViewModel : ViewModelBase, INotifyPropertyChanged, IDisposable'
     content.vb: >-
       Public Class ArtificialHorizonViewModel
           Inherits ViewModelBase
-          Implements INotifyPropertyChanged
+          Implements INotifyPropertyChanged, IDisposable
   inheritance:
   - System.Object
   - CIDER.MVVMBase.ViewModelBase
   implements:
   - System.ComponentModel.INotifyPropertyChanged
+  - System.IDisposable
   inheritedMembers:
   - CIDER.MVVMBase.ViewModelBase.logger
   - CIDER.MVVMBase.ViewModelBase.PropertyChanged
@@ -80,15 +79,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 36
+    startLine: 42
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -106,6 +101,43 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.PlayPauseClickedCommand
+  commentId: P:CIDER.ViewModels.ArtificialHorizonViewModel.PlayPauseClickedCommand
+  id: PlayPauseClickedCommand
+  parent: CIDER.ViewModels.ArtificialHorizonViewModel
+  langs:
+  - csharp
+  - vb
+  name: PlayPauseClickedCommand
+  nameWithType: ArtificialHorizonViewModel.PlayPauseClickedCommand
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.PlayPauseClickedCommand
+  type: Property
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: PlayPauseClickedCommand
+    path: ViewModels/ArtificialHorizonViewModel.cs
+    startLine: 62
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  summary: "\nCommand connected to the MailTo Button\n"
+  example: []
+  syntax:
+    content: public ICommand PlayPauseClickedCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Public ReadOnly Property PlayPauseClickedCommand As ICommand
+  overload: CIDER.ViewModels.ArtificialHorizonViewModel.PlayPauseClickedCommand*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
 - uid: CIDER.ViewModels.ArtificialHorizonViewModel.Pitch
   commentId: P:CIDER.ViewModels.ArtificialHorizonViewModel.Pitch
   id: Pitch
@@ -120,15 +152,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Pitch
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 50
+    startLine: 67
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -161,15 +189,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Roll
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 55
+    startLine: 72
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -202,15 +226,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Yaw
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 60
+    startLine: 77
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -243,15 +263,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Velocity
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 65
+    startLine: 82
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -284,15 +300,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ClimbVelocity
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 70
+    startLine: 87
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -325,15 +337,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 75
+    startLine: 92
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -366,15 +374,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 84
+    startLine: 101
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -407,15 +411,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/ArtificialHorizonViewModel.cs
-    startLine: 94
+    startLine: 111
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -429,6 +429,40 @@ items:
       description: The value of the slider
     content.vb: Public Sub SliderValueChanged(Value As Integer)
   overload: CIDER.ViewModels.ArtificialHorizonViewModel.SliderValueChanged*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.Dispose
+  commentId: M:CIDER.ViewModels.ArtificialHorizonViewModel.Dispose
+  id: Dispose
+  parent: CIDER.ViewModels.ArtificialHorizonViewModel
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ArtificialHorizonViewModel.Dispose()
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.Dispose()
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/ArtificialHorizonViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Dispose
+    path: ViewModels/ArtificialHorizonViewModel.cs
+    startLine: 178
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  summary: "\nThis function disposes of the object.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: CIDER.ViewModels.ArtificialHorizonViewModel.Dispose*
+  implements:
+  - System.IDisposable.Dispose
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -459,6 +493,13 @@ references:
   name: INotifyPropertyChanged
   nameWithType: INotifyPropertyChanged
   fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
 - uid: CIDER.MVVMBase.ViewModelBase.logger
   commentId: F:CIDER.MVVMBase.ViewModelBase.logger
   parent: CIDER.MVVMBase.ViewModelBase
@@ -914,6 +955,24 @@ references:
   name: CIDER
   nameWithType: CIDER
   fullName: CIDER
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.PlayPauseClickedCommand*
+  commentId: Overload:CIDER.ViewModels.ArtificialHorizonViewModel.PlayPauseClickedCommand
+  name: PlayPauseClickedCommand
+  nameWithType: ArtificialHorizonViewModel.PlayPauseClickedCommand
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.PlayPauseClickedCommand
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
 - uid: CIDER.ViewModels.ArtificialHorizonViewModel.Pitch*
   commentId: Overload:CIDER.ViewModels.ArtificialHorizonViewModel.Pitch
   name: Pitch
@@ -968,3 +1027,39 @@ references:
   name: SliderValueChanged
   nameWithType: ArtificialHorizonViewModel.SliderValueChanged
   fullName: CIDER.ViewModels.ArtificialHorizonViewModel.SliderValueChanged
+- uid: CIDER.ViewModels.ArtificialHorizonViewModel.Dispose*
+  commentId: Overload:CIDER.ViewModels.ArtificialHorizonViewModel.Dispose
+  name: Dispose
+  nameWithType: ArtificialHorizonViewModel.Dispose
+  fullName: CIDER.ViewModels.ArtificialHorizonViewModel.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

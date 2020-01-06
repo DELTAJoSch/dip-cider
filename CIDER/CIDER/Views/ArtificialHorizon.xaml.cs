@@ -38,5 +38,10 @@ namespace CIDER.Views
         {
             model.SliderValueChanged((int)slValue.Value);
         }
+
+        private void Page_Unloaded(object sender, RoutedEventArgs e)
+        {
+            model.Dispose();
+        }
     }
 }

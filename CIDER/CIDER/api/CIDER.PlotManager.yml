@@ -23,11 +23,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PlotManager
     path: PlotManager.cs
@@ -70,11 +66,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Series
     path: PlotManager.cs
@@ -107,11 +99,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: PlotManager.cs
@@ -143,11 +131,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: GetPlotModel
     path: PlotManager.cs
@@ -186,11 +170,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CreatePDF
     path: PlotManager.cs
@@ -231,11 +211,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
@@ -277,11 +253,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
@@ -326,11 +298,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
@@ -378,11 +346,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs

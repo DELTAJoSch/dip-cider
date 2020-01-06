@@ -13,13 +13,15 @@
 using CIDER.MVVMBase;
 using System;
 using System.Linq;
+using System.Windows.Forms;
+using System.Windows.Input;
 
 namespace CIDER.ViewModels
 {
     /// <summary>
     /// This is the ViewModel for the ArtificiaHorizon page
     /// </summary>
-    public class ArtificialHorizonViewModel : ViewModelBase
+    public class ArtificialHorizonViewModel : ViewModelBase, IDisposable
     {
         private DataProvider _data;
         private double _Pitch;
@@ -29,6 +31,10 @@ namespace CIDER.ViewModels
         private double _ClimbVelocity;
         private int _slMaximum;
         private int _slTickFrequency;
+        private bool playing = false;
+        private readonly Timer playTimer;
+        private int playFrame;
+        private readonly DelegateCommand _playPauseClickedCommand;
 
         /// <summary>
         /// This is the constructor for the ArtificialHorizonViewModel
@@ -36,14 +42,25 @@ namespace CIDER.ViewModels
         /// <param name="Data">A DataPRovider object to read the data from</param>
         public ArtificialHorizonViewModel(DataProvider Data)
         {
+            _playPauseClickedCommand = new DelegateCommand(PlayPause);
+
             _data = Data;
+
+            playTimer = new Timer();
 
             slMaximum = _data.DataPointsAngle;
             slTickFrequency = slMaximum / 200;
 
             if (slTickFrequency < 1)
                 slTickFrequency = 1;
+
+            slTickFrequency = 1;
         }
+
+        /// <summary>
+        /// Command connected to the MailTo Button
+        /// </summary>
+        public ICommand PlayPauseClickedCommand => _playPauseClickedCommand;
 
         /// <summary>
         /// This contains the value of the current pitch
@@ -121,6 +138,54 @@ namespace CIDER.ViewModels
             catch (Exception ex)
             {
                 logger.Warn(ex, "Couldn't calculate Angle");
+            }
+        }
+
+        private void PlayPause(object sender)
+        {
+            if (playing)
+            {
+                playTimer.Stop();
+                playTimer.Tick -= PlayTimer_Tick;
+            }
+            else
+            {
+                playFrame = 0;
+                playTimer.Interval = 50;
+                playTimer.Tick += PlayTimer_Tick;
+                playTimer.Start();
+            }
+
+            playing = !playing;
+        }
+
+        private void PlayTimer_Tick(object sender, EventArgs e)
+        {
+            if(playFrame < slMaximum)
+            {
+                SliderValueChanged(playFrame);
+                playFrame++;
+            }
+            else
+            {
+                PlayPause(this);
+                SliderValueChanged(0);
+            }
+        }
+
+        /// <summary>
+        /// This function disposes of the object.
+        /// </summary>
+        public void Dispose()
+        {
+            try
+            {
+                playTimer.Tick -= PlayTimer_Tick;
+                playTimer.Stop();
+            }
+            catch(Exception ex)
+            {
+                logger.Error(ex, "Error during Disposal");
             }
         }
     }

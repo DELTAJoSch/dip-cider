@@ -23,11 +23,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicenseHolder
     path: LicenseHolder.cs
@@ -71,11 +67,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AcceptedLicense
     path: LicenseHolder.cs
@@ -114,11 +106,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicenseChangedEvent
     path: LicenseHolder.cs
@@ -153,11 +141,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ThisSoftwareLicense
     path: LicenseHolder.cs
@@ -192,11 +176,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MahAppsLicense
     path: LicenseHolder.cs
@@ -231,11 +211,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OxyPlotLicense
     path: LicenseHolder.cs
@@ -270,11 +246,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: pilotHUDLicense
     path: LicenseHolder.cs
@@ -309,11 +281,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: NLOGLicense
     path: LicenseHolder.cs
@@ -348,11 +316,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseHolder.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: docFxLicense
     path: LicenseHolder.cs

@@ -18,11 +18,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Exceptions.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileDialogExitedException
     path: Exceptions.cs
@@ -92,11 +88,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Exceptions.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
@@ -128,11 +120,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Exceptions.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs
@@ -168,11 +156,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Exceptions.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Exceptions.cs

@@ -35,11 +35,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MainWindowViewModel
     path: ViewModels/MainWindowViewModel.cs
@@ -92,11 +88,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnFrameChangeEvent
     path: ViewModels/MainWindowViewModel.cs
@@ -129,11 +121,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/MainWindowViewModel.cs
@@ -174,11 +162,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAboutCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -215,11 +199,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAccelerationGraphCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -256,11 +236,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAccelerationTimedCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -297,11 +273,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToLoadCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -338,11 +310,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToMapRouteCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -379,11 +347,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToMapTimedCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -420,11 +384,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToVelocityGraphCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -461,11 +421,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToVelocityTimedCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -502,11 +458,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToHeightCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -543,11 +495,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAngleTimedCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -584,11 +532,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToAngleGraphCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -625,11 +569,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ChangeToHorizonCommand
     path: ViewModels/MainWindowViewModel.cs
@@ -666,11 +606,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapEnabled
     path: ViewModels/MainWindowViewModel.cs
@@ -707,11 +643,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FrameContent
     path: ViewModels/MainWindowViewModel.cs
@@ -748,11 +680,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ButtonEnabled
     path: ViewModels/MainWindowViewModel.cs
@@ -789,11 +717,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Initalize
     path: ViewModels/MainWindowViewModel.cs
@@ -825,11 +749,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ButtonState
     path: ViewModels/MainWindowViewModel.cs
@@ -865,11 +785,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MainWindowViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/MainWindowViewModel.cs

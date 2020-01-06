@@ -20,11 +20,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IReader
     path: KeyManager.cs
@@ -57,11 +53,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadAllLines
     path: KeyManager.cs
@@ -96,11 +88,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ShowDialog
     path: KeyManager.cs
@@ -135,11 +123,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: WriteAllLines
     path: KeyManager.cs
@@ -177,11 +161,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: WriteAllText
     path: KeyManager.cs
@@ -216,11 +196,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileExists
     path: KeyManager.cs

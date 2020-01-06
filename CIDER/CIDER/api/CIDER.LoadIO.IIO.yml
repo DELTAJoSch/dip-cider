@@ -17,15 +17,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FileIO.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IIO
     path: LoadIO/FileIO.cs
-    startLine: 285
+    startLine: 286
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
@@ -54,15 +50,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FileIO.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadNmea
     path: LoadIO/FileIO.cs
-    startLine: 294
+    startLine: 295
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
@@ -101,15 +93,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FileIO.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadCSV
     path: LoadIO/FileIO.cs
-    startLine: 303
+    startLine: 304
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO

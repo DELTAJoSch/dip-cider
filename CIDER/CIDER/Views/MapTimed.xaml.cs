@@ -61,7 +61,6 @@ namespace CIDER.Views
         public void slValueChanged(object sender, EventArgs e)
         {
             model.SliderValueChanged((int)slValue.Value);
-            model.CalculateCenter();
 
             map.SetView(model.MapCenter, model.MapZoomLevel);
         }
