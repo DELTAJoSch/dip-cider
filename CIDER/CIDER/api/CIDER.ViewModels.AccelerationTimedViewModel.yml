@@ -126,7 +126,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 80
+    startLine: 96
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -163,7 +163,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 89
+    startLine: 105
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -200,7 +200,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SliderValueChanged
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 99
+    startLine: 115
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -236,7 +236,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValUD
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 147
+    startLine: 163
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -273,7 +273,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValUD
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 156
+    startLine: 172
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -310,7 +310,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValFB
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 165
+    startLine: 181
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -347,7 +347,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValFB
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 174
+    startLine: 190
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -384,7 +384,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RValLR
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 183
+    startLine: 199
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -421,7 +421,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LValLR
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 192
+    startLine: 208
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -458,7 +458,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxUD
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 202
+    startLine: 218
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -495,7 +495,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxUD
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 211
+    startLine: 227
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -532,7 +532,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxFB
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 220
+    startLine: 236
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -569,7 +569,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxFB
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 229
+    startLine: 245
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -606,7 +606,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RMaxLR
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 238
+    startLine: 254
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -643,7 +643,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LMaxLR
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 247
+    startLine: 263
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -680,7 +680,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: UDText
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 256
+    startLine: 272
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -717,7 +717,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LRText
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 265
+    startLine: 281
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -754,7 +754,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FBText
     path: ViewModels/AccelerationTimedViewModel.cs
-    startLine: 274
+    startLine: 290
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels

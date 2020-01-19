@@ -133,6 +133,7 @@ namespace CIDER.ViewModels
         public void SliderValueChanged(int value)
         {
             MapPolylines = maker.CreateRoute(_data, value);
+            MapCenter = _data.Route.ElementAt(value);
 
             RaiseEvent(new EventArgs());
         }

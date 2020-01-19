@@ -61,7 +61,23 @@ namespace CIDER.ViewModels
             if (slMaximum > 1000000)
                 slTickFrequency = 2000;
 
-            RMaxFB = LMaxFB = RMaxLR = LMaxLR = RMaxUD = LMaxUD = 400;
+            try
+            {
+                var xmax = data.XAcceleration.Max((float x) => { x = Math.Abs(x); return x; });
+                var ymax = data.YAcceleration.Max((float x) => { x = Math.Abs(x); return x; });
+                var zmax = data.ZAcceleration.Max((float x) => { x = Math.Abs(x); return x; });
+
+                float MaxAcc = Math.Max(xmax, ymax);
+                MaxAcc = Math.Max(MaxAcc, zmax);
+
+                RMaxFB = LMaxFB = RMaxLR = LMaxLR = RMaxUD = LMaxUD = MaxAcc;
+            }
+            catch(System.InvalidOperationException ex)
+            {
+                logger.Warn(ex, "No values found");
+
+                RMaxFB = LMaxFB = RMaxLR = LMaxLR = RMaxUD = LMaxUD = 0;
+            }
 
             if ((_data.DataPointsAcceleration == 0) == false)
             {
@@ -137,8 +153,8 @@ namespace CIDER.ViewModels
             }
 
             FBText = String.Format("Forwards/Backwards: {0} m/s^2", x);
-            UDText = String.Format("Up/Down: {0} m/s^2", y);
-            LRText = String.Format("Left/Right: {0} m/s^2", z);
+            UDText = String.Format("Up/Down: {0} m/s^2", z);
+            LRText = String.Format("Left/Right: {0} m/s^2", y);
         }
 
         //The following are the Data Bindings for the values

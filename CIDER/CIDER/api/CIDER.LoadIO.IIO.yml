@@ -21,7 +21,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IIO
     path: LoadIO/FileIO.cs
-    startLine: 285
+    startLine: 286
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
@@ -54,7 +54,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadNmea
     path: LoadIO/FileIO.cs
-    startLine: 294
+    startLine: 295
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO
@@ -97,7 +97,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadCSV
     path: LoadIO/FileIO.cs
-    startLine: 303
+    startLine: 304
   assemblies:
   - CIDER
   namespace: CIDER.LoadIO

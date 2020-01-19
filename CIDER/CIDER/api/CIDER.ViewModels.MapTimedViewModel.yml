@@ -441,7 +441,7 @@ items:
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CalculateCenter
     path: ViewModels/MapTimedViewModel.cs
-    startLine: 150
+    startLine: 151
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
