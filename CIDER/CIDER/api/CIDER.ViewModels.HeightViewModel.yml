@@ -7,6 +7,7 @@ items:
   children:
   - CIDER.ViewModels.HeightViewModel.#ctor(CIDER.DataProvider)
   - CIDER.ViewModels.HeightViewModel.Dispose
+  - CIDER.ViewModels.HeightViewModel.Dispose(System.Boolean)
   - CIDER.ViewModels.HeightViewModel.HeightMaxL
   - CIDER.ViewModels.HeightViewModel.HeightMaxR
   - CIDER.ViewModels.HeightViewModel.HeightText
@@ -26,11 +27,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightViewModel
     path: ViewModels/HeightViewModel.cs
@@ -83,15 +80,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/HeightViewModel.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -123,19 +116,15 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Dispose
     path: ViewModels/HeightViewModel.cs
-    startLine: 90
+    startLine: 91
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
-  summary: "\nThis function needs to be called before the object is dereferenced so the GC can collect it\n"
+  summary: "\nAs this class implements the IDisposable interface, this function needs to be called before the GC can collect the instance\n"
   example: []
   syntax:
     content: public void Dispose()
@@ -147,6 +136,44 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: CIDER.ViewModels.HeightViewModel.Dispose(System.Boolean)
+  commentId: M:CIDER.ViewModels.HeightViewModel.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: CIDER.ViewModels.HeightViewModel
+  langs:
+  - csharp
+  - vb
+  name: Dispose(Boolean)
+  nameWithType: HeightViewModel.Dispose(Boolean)
+  fullName: CIDER.ViewModels.HeightViewModel.Dispose(System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: CIDER/CIDER/ViewModels/HeightViewModel.cs
+      branch: master
+      repo: git@github.com:DELTAJoSch/dip-cider.git
+    id: Dispose
+    path: ViewModels/HeightViewModel.cs
+    startLine: 101
+  assemblies:
+  - CIDER
+  namespace: CIDER.ViewModels
+  summary: "\nThis function is called by the public Dispose Method\n"
+  example: []
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: ''
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: CIDER.ViewModels.HeightViewModel.Dispose*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
 - uid: CIDER.ViewModels.HeightViewModel.HeightMaxL
   commentId: P:CIDER.ViewModels.HeightViewModel.HeightMaxL
   id: HeightMaxL
@@ -161,15 +188,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightMaxL
     path: ViewModels/HeightViewModel.cs
-    startLine: 99
+    startLine: 118
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -202,15 +225,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightMaxR
     path: ViewModels/HeightViewModel.cs
-    startLine: 104
+    startLine: 123
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -243,15 +262,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightValL
     path: ViewModels/HeightViewModel.cs
-    startLine: 109
+    startLine: 128
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -284,15 +299,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightValR
     path: ViewModels/HeightViewModel.cs
-    startLine: 114
+    startLine: 133
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -325,15 +336,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slTickFrequency
     path: ViewModels/HeightViewModel.cs
-    startLine: 119
+    startLine: 138
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -366,15 +373,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slMaximum
     path: ViewModels/HeightViewModel.cs
-    startLine: 124
+    startLine: 143
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -407,15 +410,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: HeightText
     path: ViewModels/HeightViewModel.cs
-    startLine: 129
+    startLine: 148
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -448,15 +447,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Plot
     path: ViewModels/HeightViewModel.cs
-    startLine: 134
+    startLine: 153
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -489,15 +484,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/HeightViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: slValueChanged
     path: ViewModels/HeightViewModel.cs
-    startLine: 140
+    startLine: 159
   assemblies:
   - CIDER
   namespace: CIDER.ViewModels
@@ -1039,6 +1030,13 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: CIDER.ViewModels.HeightViewModel.HeightMaxL*
   commentId: Overload:CIDER.ViewModels.HeightViewModel.HeightMaxL
   name: HeightMaxL

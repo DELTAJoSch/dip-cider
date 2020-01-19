@@ -108,7 +108,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
             viewModel.SelectClickCommand.Execute(this);
 
             //Assert
-            Assert.AreEqual(@"~\..\..\Icons\success.png", viewModel.CheckImage);
+            Assert.AreEqual(@"..\Icons\002-success.png", viewModel.CheckImage);
         }
 
         [Test]
@@ -124,7 +124,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
 
             viewModel.SelectClickCommand.Execute(this);
 
-            Assert.AreEqual(@"~\..\..\Icons\forbidden.png", viewModel.CheckImage);
+            Assert.AreEqual(@"..\Icons\001-error.png", viewModel.CheckImage);
         }
 
         public FolderManager GetFolderManager()

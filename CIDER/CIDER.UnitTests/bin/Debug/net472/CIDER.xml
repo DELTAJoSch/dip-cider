@@ -846,8 +846,14 @@
         </member>
         <member name="M:CIDER.ViewModels.AccelerationGraphViewModel.Dispose">
             <summary>
-            As this class implements the IDisposable interface this function needs to be called before the GC can clean up an instance of this class
+            As this class implements the IDisposable interface, this function needs to be called before the GC can collect the instance
             </summary>
+        </member>
+        <member name="M:CIDER.ViewModels.AccelerationGraphViewModel.Dispose(System.Boolean)">
+            <summary>
+            This function is called by the public Dispose Method
+            </summary>
+            <param name="disposing"></param>
         </member>
         <member name="P:CIDER.ViewModels.AccelerationGraphViewModel.Plot">
             <summary>
@@ -971,6 +977,12 @@
             <summary>
             As this class implements the IDisposable interface, this function needs to be called before the GC can collect the instance
             </summary>
+        </member>
+        <member name="M:CIDER.ViewModels.AngleGraphViewModel.Dispose(System.Boolean)">
+            <summary>
+            This function is called by the public Dispose Method
+            </summary>
+            <param name="disposing"></param>
         </member>
         <member name="P:CIDER.ViewModels.AngleGraphViewModel.Plot">
             <summary>
@@ -1144,8 +1156,14 @@
         </member>
         <member name="M:CIDER.ViewModels.HeightViewModel.Dispose">
             <summary>
-            This function needs to be called before the object is dereferenced so the GC can collect it
+            As this class implements the IDisposable interface, this function needs to be called before the GC can collect the instance
             </summary>
+        </member>
+        <member name="M:CIDER.ViewModels.HeightViewModel.Dispose(System.Boolean)">
+            <summary>
+            This function is called by the public Dispose Method
+            </summary>
+            <param name="disposing"></param>
         </member>
         <member name="P:CIDER.ViewModels.HeightViewModel.HeightMaxL">
             <summary>
@@ -1369,8 +1387,14 @@
         </member>
         <member name="M:CIDER.ViewModels.MainWindowViewModel.Dispose">
             <summary>
-            As this class implements the IDisposable interface, this must be called before the GC collects this object on dereference
+            As this class implements the IDisposable interface, this function needs to be called before the GC can collect the instance
             </summary>
+        </member>
+        <member name="M:CIDER.ViewModels.MainWindowViewModel.Dispose(System.Boolean)">
+            <summary>
+            This function is called by the public Dispose Method
+            </summary>
+            <param name="disposing"></param>
         </member>
         <member name="T:CIDER.ViewModels.MapRouteViewModel">
             <summary>
@@ -1524,8 +1548,14 @@
         </member>
         <member name="M:CIDER.ViewModels.VelocityGraphViewModel.Dispose">
             <summary>
-            This function needs to be called before dereferencing an instance of this class so the GC can collect it
+            As this class implements the IDisposable interface, this function needs to be called before the GC can collect the instance
             </summary>
+        </member>
+        <member name="M:CIDER.ViewModels.VelocityGraphViewModel.Dispose(System.Boolean)">
+            <summary>
+            This function is called by the public Dispose Method
+            </summary>
+            <param name="disposing"></param>
         </member>
         <member name="P:CIDER.ViewModels.VelocityGraphViewModel.Plot">
             <summary>

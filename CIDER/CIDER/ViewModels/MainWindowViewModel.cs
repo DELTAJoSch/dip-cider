@@ -67,6 +67,7 @@ namespace CIDER.ViewModels
         public event EventHandler OnFrameChangeEvent;
 
         private bool _licenseAccepted;
+        private bool disposed = false;
 
         /// <summary>
         /// This is the constructor for the MainWindow ViewModel
@@ -352,12 +353,30 @@ namespace CIDER.ViewModels
         }
 
         /// <summary>
-        /// As this class implements the IDisposable interface, this must be called before the GC collects this object on dereference
+        /// As this class implements the IDisposable interface, this function needs to be called before the GC can collect the instance
         /// </summary>
         public void Dispose()
         {
-            KeyManager.MapKeyChangedEvent -= KeyManager_MapKeyChangedEvent;
-            LicenseHolder.LicenseChangedEvent -= LicenseHolder_LicenseChangedEvent;
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// This function is called by the public Dispose Method
+        /// </summary>
+        /// <param name="disposing"></param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposed)
+                return;
+
+            if (disposing)
+            {
+                KeyManager.MapKeyChangedEvent -= KeyManager_MapKeyChangedEvent;
+                LicenseHolder.LicenseChangedEvent -= LicenseHolder_LicenseChangedEvent;
+            }
+
+            disposed = true;
         }
 
         private void AddLicenses()

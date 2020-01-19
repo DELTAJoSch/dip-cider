@@ -25,6 +25,7 @@ namespace CIDER.ViewModels
         private PlotModel data;
         private PlotModel blank;
         private DataProvider _data;
+        private bool disposed = false;
 
         /// <summary>
         /// This is the constructor for the AccelerationGraphViewModel
@@ -36,9 +37,9 @@ namespace CIDER.ViewModels
 
             PlotManager manager = new PlotManager();
 
-            manager.AddLineSeries(_data.XAcceleration, "F/B", OxyColors.Blue);
-            manager.AddLineSeries(_data.YAcceleration, "L/R", OxyColors.Chartreuse);
-            manager.AddLineSeries(_data.ZAcceleration, "U/D", OxyColors.Gold);
+            manager.AddLineSeries(_data.XAcceleration, "F/B [m/s^2]", OxyColors.Blue);
+            manager.AddLineSeries(_data.YAcceleration, "L/R [m/s^2]", OxyColors.Chartreuse);
+            manager.AddLineSeries(_data.ZAcceleration, "U/D [m/s^2]", OxyColors.Gold);
 
             data = manager.GetPlotModel("Acceleration").Result;
             blank = new PlotModel();
@@ -60,12 +61,30 @@ namespace CIDER.ViewModels
         }
 
         /// <summary>
-        /// As this class implements the IDisposable interface this function needs to be called before the GC can clean up an instance of this class
+        /// As this class implements the IDisposable interface, this function needs to be called before the GC can collect the instance
         /// </summary>
         public void Dispose()
         {
-            MainWindow.OnResizeStartEvent -= MainWindow_OnResizeStartEvent;
-            MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// This function is called by the public Dispose Method
+        /// </summary>
+        /// <param name="disposing"></param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposed)
+                return;
+
+            if (disposing)
+            {
+                MainWindow.OnResizeStartEvent -= MainWindow_OnResizeStartEvent;
+                MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
+            }
+
+            disposed = true;
         }
 
         /// <summary>

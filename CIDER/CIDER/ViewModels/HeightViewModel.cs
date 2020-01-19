@@ -33,6 +33,7 @@ namespace CIDER.ViewModels
         private DataProvider _data;
         private PlotModel data;
         private PlotModel blank;
+        private bool disposed = false;
 
         /// <summary>
         /// This is the constructor for the HeightViewModel page
@@ -64,7 +65,7 @@ namespace CIDER.ViewModels
             }
 
             PlotManager manager = new PlotManager();
-            manager.AddLineSeries(_data.Height, "Height", OxyColors.Coral);
+            manager.AddLineSeries(_data.Height, "Height [ft]", OxyColors.Coral);
 
             data = manager.GetPlotModel("Height").Result;
             blank = new PlotModel();
@@ -86,12 +87,30 @@ namespace CIDER.ViewModels
         }
 
         /// <summary>
-        /// This function needs to be called before the object is dereferenced so the GC can collect it
+        /// As this class implements the IDisposable interface, this function needs to be called before the GC can collect the instance
         /// </summary>
         public void Dispose()
         {
-            MainWindow.OnResizeStartEvent -= MainWindow_OnResizeStartEvent;
-            MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// This function is called by the public Dispose Method
+        /// </summary>
+        /// <param name="disposing"></param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposed)
+                return;
+
+            if (disposing)
+            {
+                MainWindow.OnResizeStartEvent -= MainWindow_OnResizeStartEvent;
+                MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
+            }
+
+            disposed = true;
         }
 
         /// <summary>

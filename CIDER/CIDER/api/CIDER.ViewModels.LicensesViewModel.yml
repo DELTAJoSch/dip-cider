@@ -20,11 +20,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicensesViewModel
     path: ViewModels/LicensesViewModel.cs
@@ -76,11 +72,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/LicensesViewModel.cs
@@ -115,11 +107,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SaveAcceptAgreement
     path: ViewModels/LicensesViewModel.cs
@@ -151,11 +139,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CheckboxStateChangedCommand
     path: ViewModels/LicensesViewModel.cs
@@ -192,11 +176,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: LicensesText
     path: ViewModels/LicensesViewModel.cs
@@ -233,11 +213,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/LicensesViewModel.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CommandAcceptEnabled
     path: ViewModels/LicensesViewModel.cs

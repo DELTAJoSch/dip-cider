@@ -20,15 +20,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: IReader
     path: KeyManager.cs
-    startLine: 170
+    startLine: 175
   assemblies:
   - CIDER
   namespace: CIDER
@@ -57,15 +53,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadAllLines
     path: KeyManager.cs
-    startLine: 177
+    startLine: 182
   assemblies:
   - CIDER
   namespace: CIDER
@@ -96,15 +88,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ShowDialog
     path: KeyManager.cs
-    startLine: 184
+    startLine: 189
   assemblies:
   - CIDER
   namespace: CIDER
@@ -135,15 +123,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: WriteAllLines
     path: KeyManager.cs
-    startLine: 191
+    startLine: 196
   assemblies:
   - CIDER
   namespace: CIDER
@@ -177,15 +161,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: WriteAllText
     path: KeyManager.cs
-    startLine: 198
+    startLine: 203
   assemblies:
   - CIDER
   namespace: CIDER
@@ -216,15 +196,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileExists
     path: KeyManager.cs
-    startLine: 205
+    startLine: 210
   assemblies:
   - CIDER
   namespace: CIDER

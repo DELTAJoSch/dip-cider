@@ -65,22 +65,6 @@ namespace CIDER
             _plot = CreatePlot;
         }
 
-        /// <summary>
-        /// This function creates a pdf from a plotmodel
-        /// </summary>
-        /// <param name="Title">Title of the plot</param>
-        /// <param name="fileName">Path to the file</param>
-        public async Task CreatePDF(string Title, string fileName)
-        {
-            await Create(Title);
-
-            using (var stream = File.Create(fileName))
-            {
-                var pdfExporter = new PdfExporter { Width = 600, Height = 400 };
-                pdfExporter.Export(_plot, stream);
-            }
-        }
-
         private async Task<List<DataPoint>> GetLineSeriesAsync(List<float> data, int interval)
         //  This Task reads all the data points and convert them to line series
         //  It´s executed asynchronously, so this doesn't block when large datasets are involved

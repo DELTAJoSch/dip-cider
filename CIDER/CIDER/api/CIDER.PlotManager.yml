@@ -10,7 +10,6 @@ items:
   - CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String,OxyPlot.OxyColor)
   - CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String,OxyPlot.OxyColor,System.Int32)
   - CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String,System.Int32)
-  - CIDER.PlotManager.CreatePDF(System.String,System.String)
   - CIDER.PlotManager.GetPlotModel(System.String)
   - CIDER.PlotManager.Series
   langs:
@@ -23,11 +22,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PlotManager
     path: PlotManager.cs
@@ -70,11 +65,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Series
     path: PlotManager.cs
@@ -107,11 +98,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: PlotManager.cs
@@ -143,11 +130,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: GetPlotModel
     path: PlotManager.cs
@@ -172,51 +155,6 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: CIDER.PlotManager.CreatePDF(System.String,System.String)
-  commentId: M:CIDER.PlotManager.CreatePDF(System.String,System.String)
-  id: CreatePDF(System.String,System.String)
-  parent: CIDER.PlotManager
-  langs:
-  - csharp
-  - vb
-  name: CreatePDF(String, String)
-  nameWithType: PlotManager.CreatePDF(String, String)
-  fullName: CIDER.PlotManager.CreatePDF(System.String, System.String)
-  type: Method
-  source:
-    remote:
-      path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
-      repo: git@github.com:DELTAJoSch/dip-cider.git
-    id: CreatePDF
-    path: PlotManager.cs
-    startLine: 72
-  assemblies:
-  - CIDER
-  namespace: CIDER
-  summary: "\nThis function creates a pdf from a plotmodel\n"
-  example: []
-  syntax:
-    content: public Task CreatePDF(string Title, string fileName)
-    parameters:
-    - id: Title
-      type: System.String
-      description: Title of the plot
-    - id: fileName
-      type: System.String
-      description: Path to the file
-    return:
-      type: System.Threading.Tasks.Task
-    content.vb: Public Function CreatePDF(Title As String, fileName As String) As Task
-  overload: CIDER.PlotManager.CreatePDF*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 - uid: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String)
   commentId: M:CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String)
   id: AddLineSeries(System.Collections.Generic.List{System.Single},System.String)
@@ -231,15 +169,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 122
+    startLine: 106
   assemblies:
   - CIDER
   namespace: CIDER
@@ -277,15 +211,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 135
+    startLine: 119
   assemblies:
   - CIDER
   namespace: CIDER
@@ -326,15 +256,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 147
+    startLine: 131
   assemblies:
   - CIDER
   namespace: CIDER
@@ -378,15 +304,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
-    startLine: 158
+    startLine: 142
   assemblies:
   - CIDER
   namespace: CIDER
@@ -906,18 +828,6 @@ references:
   name: System.Threading.Tasks
   nameWithType: System.Threading.Tasks
   fullName: System.Threading.Tasks
-- uid: CIDER.PlotManager.CreatePDF*
-  commentId: Overload:CIDER.PlotManager.CreatePDF
-  name: CreatePDF
-  nameWithType: PlotManager.CreatePDF
-  fullName: CIDER.PlotManager.CreatePDF
-- uid: System.Threading.Tasks.Task
-  commentId: T:System.Threading.Tasks.Task
-  parent: System.Threading.Tasks
-  isExternal: true
-  name: Task
-  nameWithType: Task
-  fullName: System.Threading.Tasks.Task
 - uid: CIDER.PlotManager.AddLineSeries*
   commentId: Overload:CIDER.PlotManager.AddLineSeries
   name: AddLineSeries

@@ -4,6 +4,7 @@
 !define PRODUCT_NAME "CIDER"
 !define PRODUCT_VERSION "1.0"
 !define PRODUCT_PUBLISHER "Johannes Schiemer"
+!define PRODUCT_WEB_SITE "https://github.com/DELTAJoSch/dip-cider"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\CIDER.exe"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
 !define PRODUCT_UNINST_ROOT_KEY "HKLM"
@@ -24,14 +25,17 @@
 ; Welcome page
 !insertmacro MUI_PAGE_WELCOME
 ; License page
-!define MUI_LICENSEPAGE_CHECKBOX
+!define MUI_LICENSEPAGE_RADIOBUTTONS
 !insertmacro MUI_PAGE_LICENSE "licenses.txt"
+; Components page
+!insertmacro MUI_PAGE_COMPONENTS
 ; Directory page
 !insertmacro MUI_PAGE_DIRECTORY
 ; Instfiles page
 !insertmacro MUI_PAGE_INSTFILES
 ; Finish page
 !define MUI_FINISHPAGE_RUN "$INSTDIR\CIDER.exe"
+!define MUI_FINISHPAGE_SHOWREADME "$INSTDIR\Docs\CIDER_articles.pdf"
 !insertmacro MUI_PAGE_FINISH
 
 ; Uninstaller pages
@@ -44,7 +48,7 @@
 ; MUI end ------
 
 Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-OutFile "CIDER-Setup.exe"
+OutFile "CIDER_Setup.exe"
 InstallDir "$PROGRAMFILES\CIDER"
 InstallDirRegKey HKLM "${PRODUCT_DIR_REGKEY}" ""
 ShowInstDetails show
@@ -56,7 +60,7 @@ FunctionEnd
 
 Section "Hauptgruppe" SEC01
   SetOutPath "$INSTDIR"
-  SetOverwrite ifnewer
+  SetOverwrite on
   File "..\CIDER\CIDER\bin\Release\CIDER.exe"
   CreateDirectory "$SMPROGRAMS\CIDER"
   CreateShortCut "$SMPROGRAMS\CIDER\CIDER.lnk" "$INSTDIR\CIDER.exe"
@@ -67,14 +71,24 @@ Section "Hauptgruppe" SEC01
   File "..\CIDER\CIDER\bin\Release\MahApps.Metro.IconPacks.dll"
   File "..\CIDER\CIDER\bin\Release\Microsoft.Maps.MapControl.WPF.dll"
   File "..\CIDER\CIDER\bin\Release\NLog.dll"
-  File "..\CIDER\CIDER\bin\Release\NLog.config"
   File "..\CIDER\CIDER\bin\Release\OxyPlot.dll"
+  File "..\CIDER\CIDER\bin\Release\NmeaParser.dll"
   File "..\CIDER\CIDER\bin\Release\OxyPlot.Wpf.dll"
   File "..\CIDER\CIDER\bin\Release\pilotHUD.dll"
   File "..\CIDER\CIDER\bin\Release\System.Windows.Interactivity.dll"
+  File "..\CIDER\CIDER\bin\Release\NLog.config"
+SectionEnd
+
+Section "Dokumentation" SEC02
+  SetOutPath "$INSTDIR\Docs"
+  File "..\CIDER\CIDER\_site_pdf\CIDER_articles.pdf"
+  File "..\CIDER\CIDER\_site_pdf\CIDER_articles_german.pdf"
 SectionEnd
 
 Section -AdditionalIcons
+  SetOutPath $INSTDIR
+  WriteIniStr "$INSTDIR\${PRODUCT_NAME}.url" "InternetShortcut" "URL" "${PRODUCT_WEB_SITE}"
+  CreateShortCut "$SMPROGRAMS\CIDER\Website.lnk" "$INSTDIR\${PRODUCT_NAME}.url"
   CreateShortCut "$SMPROGRAMS\CIDER\Uninstall.lnk" "$INSTDIR\uninst.exe"
 SectionEnd
 
@@ -85,8 +99,15 @@ Section -Post
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "UninstallString" "$INSTDIR\uninst.exe"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayIcon" "$INSTDIR\CIDER.exe"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayVersion" "${PRODUCT_VERSION}"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "URLInfoAbout" "${PRODUCT_WEB_SITE}"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "Publisher" "${PRODUCT_PUBLISHER}"
 SectionEnd
+
+; Section descriptions
+!insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC01} ""
+  !insertmacro MUI_DESCRIPTION_TEXT ${SEC02} ""
+!insertmacro MUI_FUNCTION_DESCRIPTION_END
 
 
 Function un.onUninstSuccess
@@ -101,12 +122,16 @@ Function un.onInit
 FunctionEnd
 
 Section Uninstall
+  Delete "$INSTDIR\${PRODUCT_NAME}.url"
   Delete "$INSTDIR\uninst.exe"
+  Delete "$INSTDIR\Docs\CIDER_articles_german.pdf"
+  Delete "$INSTDIR\Docs\CIDER_articles.pdf"
+  Delete "$INSTDIR\NLog.config"
   Delete "$INSTDIR\System.Windows.Interactivity.dll"
   Delete "$INSTDIR\pilotHUD.dll"
   Delete "$INSTDIR\OxyPlot.Wpf.dll"
+  Delete "$INSTDIR\NmeaParser.dll"
   Delete "$INSTDIR\OxyPlot.dll"
-  Delete "$INSTDIR\NLog.config"
   Delete "$INSTDIR\NLog.dll"
   Delete "$INSTDIR\Microsoft.Maps.MapControl.WPF.dll"
   Delete "$INSTDIR\MahApps.Metro.IconPacks.dll"
@@ -116,10 +141,12 @@ Section Uninstall
   Delete "$INSTDIR\CIDER.exe"
 
   Delete "$SMPROGRAMS\CIDER\Uninstall.lnk"
+  Delete "$SMPROGRAMS\CIDER\Website.lnk"
   Delete "$DESKTOP\CIDER.lnk"
   Delete "$SMPROGRAMS\CIDER\CIDER.lnk"
 
   RMDir "$SMPROGRAMS\CIDER"
+  RMDir "$INSTDIR\Docs"
   RMDir "$INSTDIR"
 
   DeleteRegKey ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}"

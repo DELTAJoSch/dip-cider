@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CIDER.App" Collapsed="true">
+    <Position X="43.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ColorWriter" Collapsed="true">
+    <Position X="34.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAACACAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ColorWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.DataProvider" Collapsed="true">
+    <Position X="39.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAABUiAQYEDAPBkAAAAAAoAACAgA5BAyqCEAFA=</HashCode>
+      <FileName>DataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.FileDialogExitedException" Collapsed="true">
+    <Position X="45" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ColorWriterNoColorException" Collapsed="true">
+    <Position X="36.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ColorWriterWritingException" Collapsed="true">
+    <Position X="38" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ExtraMath" Collapsed="true">
+    <Position X="43.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExtraMath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.KeyManager" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAABAAAAAACAAEAAAABAAAAAAAAAAAAAEAAAAg=</HashCode>
+      <FileName>KeyManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.FileReader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABCAAAAEAAAAAAAACAAAAAAEAAAA=</HashCode>
+      <FileName>KeyManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.LicenseHolder" Collapsed="true">
+    <Position X="45" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgEAAAAAAAAAEAAAAAAAQAIgAAAAgAAAAAAFAAAAA=</HashCode>
+      <FileName>LicenseHolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.LicenseManager" Collapsed="true">
+    <Position X="34.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAEAAAAAAAAAAAAAAEBAAAAAAAAAA=</HashCode>
+      <FileName>LicenseManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.Licenses" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Licenses.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.LicenseWriter" Collapsed="true">
+    <Position X="39.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAACAAAAACAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>LicenseWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAQKgAAAQAAAAAAAABAQAAAAgA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.PlotManager" Collapsed="true">
+    <Position X="36.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAABAAAAAQAAAAAAAAAAAAEAAAABAAAIAAAE=</HashCode>
+      <FileName>PlotManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.RouteMaker" Collapsed="true">
+    <Position X="41.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACgAAACBAAQCAAAECAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RouteMaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.SystemTime" Collapsed="true">
+    <Position X="34.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgBAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ThemeStyler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>ThemeStyler.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.LoadIO.FileIO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAACAAAAgAAAAAgAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>LoadIO\FileIO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.LoadIO.Reader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAQAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoadIO\FileIO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.LoadIO.FolderChecker" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAQAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoadIO\FolderChecker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.LoadIO.FolderSelector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAASAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoadIO\FolderSelector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.MVVMBase.ViewModelBase" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAgAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MVVMBase\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CIDER.MVVMBase.DelegateCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAACAAQAAEAAAAEAAAAAAAAAAAAAABAQAAA=</HashCode>
+      <FileName>MVVMBase\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.Properties.Resources" Collapsed="true">
+    <Position X="39.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.Properties.Settings" Collapsed="true">
+    <Position X="43.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ViewModels.AboutViewModel" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAiIAEAAAAAGAAQAAGAAAAAAACRAAAAAaIAg=</HashCode>
+      <FileName>ViewModels\AboutViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ViewModels.Starter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AboutViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.ViewModels.Licenser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AboutViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.ViewModels.AccelerationGraphViewModel" Collapsed="true">
+    <Position X="20.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABCBAAgAAAAAAAAAAAAAAAAAACAAUAAAgAAA=</HashCode>
+      <FileName>ViewModels\AccelerationGraphViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CIDER.ViewModels.AccelerationTimedViewModel" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEyAQABQFCAAAGUQRRSEhQAAACAAQAAEAQAACIAAAEE=</HashCode>
+      <FileName>ViewModels\AccelerationTimedViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ViewModels.AngleGraphViewModel" Collapsed="true">
+    <Position X="29.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABCBAAgAAAAAAAAAAAAAAAAAACAAUAAAgAAA=</HashCode>
+      <FileName>ViewModels\AngleGraphViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CIDER.ViewModels.AngleTimedViewModel" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgGwIAYLCAAEABIFoAChAAgAoACAAAMADRAAQAAAAk=</HashCode>
+      <FileName>ViewModels\AngleTimedViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ViewModels.ArtificialHorizonViewModel" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgAAAQQBACAAAEQACAABAAAAAIAAAAEAABAAAgEAAQ=</HashCode>
+      <FileName>ViewModels\ArtificialHorizonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ViewModels.HeightViewModel" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMgAAAAQBCBAAgABBAAABAAAAAAABAABCAA0CACgBCg=</HashCode>
+      <FileName>ViewModels\HeightViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CIDER.ViewModels.LicensesViewModel" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAQAAAAAAgAAAAAAAAAAAIAAQAAQRAAAEAAAAA=</HashCode>
+      <FileName>ViewModels\LicensesViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ViewModels.LoadViewModel" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGAABAAAAAQHAAAAIEAAAABAQACAAAEAACACEAAAgEA=</HashCode>
+      <FileName>ViewModels\LoadViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ViewModels.MainWindowViewModel" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gGiIgEABAKggkAhGAYBVoAIEEkQJSBABAALAgEgEAAA=</HashCode>
+      <FileName>ViewModels\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CIDER.ViewModels.MapRouteViewModel" Collapsed="true">
+    <Position X="27.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAQAAACAQAIAAAACAADgAAAAAgEAAAAg=</HashCode>
+      <FileName>ViewModels\MapRouteViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ViewModels.MapTimedViewModel" Collapsed="true">
+    <Position X="32" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgAAAAQBAAAAQAAACAQBIAAAACAADgEAAACgEAAAAg=</HashCode>
+      <FileName>ViewModels\MapTimedViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ViewModels.ThemeStylerViewModel" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BKCAAAAAAAgQAAAAAAAAEAAAAEAAAAAAAQAAAAQAAAA=</HashCode>
+      <FileName>ViewModels\ThemeStylerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.ViewModels.VelocityGraphViewModel" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABCBAAgAAAAAAAAAAAAAAAAAACAAUAAAgAAA=</HashCode>
+      <FileName>ViewModels\VelocityGraphViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CIDER.ViewModels.VelocityTimedViewModel" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgACAAQhAAQAAAAAAAABAAAAQQAAAAEBAAQCAAAAAY=</HashCode>
+      <FileName>ViewModels\VelocityTimedViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CIDER.Views.About" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\About.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.Views.AccelerationGraph" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Views\AccelerationGraph.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.Views.AccelerationTimed" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAA=</HashCode>
+      <FileName>Views\AccelerationTimed.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.Views.AngleGraph" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Views\AngleGraph.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.Views.AngleTimed" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAA=</HashCode>
+      <FileName>Views\AngleTimed.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.Views.ArtificialHorizon" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAIAAA=</HashCode>
+      <FileName>Views\ArtificialHorizon.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.Views.Height" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAIBAA=</HashCode>
+      <FileName>Views\Height.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.Views.Load" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="41.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Load.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.Views.MapRoute" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAIA=</HashCode>
+      <FileName>Views\MapRoute.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.Views.MapTimed" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBIA=</HashCode>
+      <FileName>Views\MapTimed.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.Views.VelocityGraph" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Views\VelocityGraph.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CIDER.Views.VelocityTimed" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAA=</HashCode>
+      <FileName>Views\VelocityTimed.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="CIDER.IReader" Collapsed="true">
+    <Position X="34.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABCAAAAEAAAAAAAACAAAAAAEAAAA=</HashCode>
+      <FileName>KeyManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CIDER.IKeyManager" Collapsed="true">
+    <Position X="39.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>KeyManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CIDER.ILicense" Collapsed="true">
+    <Position X="41.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LicenseStarter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CIDER.IProcessStarter" Collapsed="true">
+    <Position X="43.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProcessStarter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CIDER.LoadIO.IIO" Collapsed="true">
+    <Position X="38" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>LoadIO\FileIO.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CIDER.LoadIO.IRead" Collapsed="true">
+    <Position X="45" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoadIO\FileIO.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CIDER.LoadIO.IChecker" Collapsed="true">
+    <Position X="34.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoadIO\FolderChecker.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CIDER.LoadIO.IFolderSelector" Collapsed="true">
+    <Position X="36.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoadIO\FolderSelector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -12,12 +12,12 @@
     <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Grid.RowDefinitions>
             <RowDefinition Height="44*" />
-            <RowDefinition Height="31*" />
+            <RowDefinition Height="10*" />
         </Grid.RowDefinitions>
         <Grid VerticalAlignment="Stretch" Margin="10" Grid.Row="1" HorizontalAlignment="Stretch">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="636*" />
-                <ColumnDefinition Width="145*" />
+                <ColumnDefinition Width="80*" />
             </Grid.ColumnDefinitions>
             <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Right" Margin="10,10,10,10"  Grid.Column="1" Grid.ColumnSpan="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
             <Slider Maximum="{Binding Path=slMaximum}" TickPlacement="BottomRight" TickFrequency="{Binding Path=slTickFrequency}" Name="slValue" ValueChanged="slValueChanged" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SmallChange="1" LargeChange="10" IsSnapToTickEnabled="True" Margin="10,0,10.333,0" Grid.ColumnSpan="1" Grid.Column="0" />

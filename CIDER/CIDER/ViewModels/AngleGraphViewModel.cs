@@ -25,6 +25,7 @@ namespace CIDER.ViewModels
         private PlotModel data;
         private PlotModel blank;
         private DataProvider _data;
+        private bool disposed = false;
 
         /// <summary>
         /// This is the constructor for the AngleGraphViewModel
@@ -36,9 +37,9 @@ namespace CIDER.ViewModels
 
             PlotManager manager = new PlotManager();
 
-            manager.AddLineSeries(_data.Roll, "Roll", OxyColors.Blue);
-            manager.AddLineSeries(_data.Pitch, "Pitch", OxyColors.Chartreuse);
-            manager.AddLineSeries(_data.Yaw, "Yaw", OxyColors.Gold);
+            manager.AddLineSeries(_data.Roll, "Roll [°]", OxyColors.Blue);
+            manager.AddLineSeries(_data.Pitch, "Pitch [°]", OxyColors.Chartreuse);
+            manager.AddLineSeries(_data.Yaw, "Yaw [°]", OxyColors.Gold);
 
             data = manager.GetPlotModel("Angle").Result;
             blank = new PlotModel();
@@ -64,8 +65,26 @@ namespace CIDER.ViewModels
         /// </summary>
         public void Dispose()
         {
-            MainWindow.OnResizeStartEvent -= MainWindow_OnResizeStartEvent;
-            MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        /// <summary>
+        /// This function is called by the public Dispose Method
+        /// </summary>
+        /// <param name="disposing"></param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposed)
+                return;
+
+            if (disposing)
+            {
+                MainWindow.OnResizeStartEvent -= MainWindow_OnResizeStartEvent;
+                MainWindow.OnResizeEndEvent -= MainWindow_OnResizeEndEvent;
+            }
+
+            disposed = true;
         }
 
         /// <summary>

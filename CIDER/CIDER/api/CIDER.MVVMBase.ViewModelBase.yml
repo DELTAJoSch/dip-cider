@@ -18,11 +18,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ViewModelBase
     path: MVVMBase/ViewModelBase.cs
@@ -87,11 +83,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: logger
     path: MVVMBase/ViewModelBase.cs
@@ -126,11 +118,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PropertyChanged
     path: MVVMBase/ViewModelBase.cs
@@ -165,11 +153,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/MVVMBase/ViewModelBase.cs
-<<<<<<< HEAD
-      branch: UiRedesign
-=======
-      branch: unit-testing
->>>>>>> 3cb47a03b74e6ac30d9e6f930117987a866e69e1
+      branch: master
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: SetProperty
     path: MVVMBase/ViewModelBase.cs
