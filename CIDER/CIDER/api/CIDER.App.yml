@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/App.xaml.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: App
     path: App.xaml.cs
@@ -113,7 +113,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/App.xaml.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: OnStartup
     path: App.xaml.cs
@@ -121,7 +121,7 @@ items:
   assemblies:
   - CIDER
   namespace: CIDER
-  summary: "\nThis function overrides the stnadard OnStartup function\n"
+  summary: "\nThis function overrides the standard OnStartup function\n"
   example: []
   syntax:
     content: protected override void OnStartup(StartupEventArgs e)

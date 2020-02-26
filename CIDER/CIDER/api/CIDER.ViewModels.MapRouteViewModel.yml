@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapRouteViewModel
     path: ViewModels/MapRouteViewModel.cs
@@ -75,7 +75,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteChangedEvent
     path: ViewModels/MapRouteViewModel.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: ViewModels/MapRouteViewModel.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: APIKey
     path: ViewModels/MapRouteViewModel.cs
@@ -181,7 +181,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapPolylines
     path: ViewModels/MapRouteViewModel.cs
@@ -218,7 +218,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapCenter
     path: ViewModels/MapRouteViewModel.cs
@@ -251,7 +251,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: MapZoomLevel
     path: ViewModels/MapRouteViewModel.cs
@@ -284,7 +284,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Initialize
     path: ViewModels/MapRouteViewModel.cs
@@ -316,7 +316,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/MapRouteViewModel.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CalculateCenter
     path: ViewModels/MapRouteViewModel.cs

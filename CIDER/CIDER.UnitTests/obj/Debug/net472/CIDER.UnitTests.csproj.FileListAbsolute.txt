@@ -30,9 +30,6 @@ H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\ControlzEx.dll
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\System.Windows.Interactivity.dll
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\CIDER.xml
-H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\MahApps.Metro.pdb
-H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\MahApps.Metro.xml
-H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\ControlzEx.pdb
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\CIDER.UnitTests.dll.config
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\NUnit.VisualStudio.TestAdapter.dll
 H:\Dokumente\Diplomarbeit\Code\CIDER-Repository\dip-cider\CIDER\CIDER.UnitTests\bin\Debug\net472\nunit.core.dll

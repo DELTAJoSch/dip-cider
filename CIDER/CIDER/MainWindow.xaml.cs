@@ -12,6 +12,7 @@
 */
 using CIDER.ViewModels;
 using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
 using System;
 using System.Windows;
 using System.Windows.Interop;
@@ -25,6 +26,7 @@ namespace CIDER
     {
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private MainWindowViewModel viewModel;
+        private bool firstRender = true;
 
         /// <summary>
         /// This is the event that is raised when the resizing of the window begins
@@ -45,13 +47,11 @@ namespace CIDER
 
             var data = new DataProvider();
 
-            viewModel = new MainWindowViewModel(new KeyManager(data, new FileReader()), data, new FileReader());
+            viewModel = new MainWindowViewModel(new KeyManager(data, new FileReader()), data, new FileReader(), DialogCoordinator.Instance);
 
             DataContext = viewModel;
 
             viewModel.OnFrameChangeEvent += ViewModel_OnFrameChangeEvent;
-
-            viewModel.Initalize();
         }
 
         /// <summary>
@@ -84,6 +84,11 @@ namespace CIDER
             viewModel.OnFrameChangeEvent -= ViewModel_OnFrameChangeEvent;
 
             viewModel.Dispose();
+        }
+
+        private void OnLoaded(object sender, RoutedEventArgs e)
+        {
+            viewModel.Initalize();
         }
 
         private void RaiseResizeStartEvent(EventArgs e)

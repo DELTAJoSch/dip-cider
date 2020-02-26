@@ -20,11 +20,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileReader
     path: KeyManager.cs
-    startLine: 216
+    startLine: 211
   assemblies:
   - CIDER
   namespace: CIDER
@@ -67,11 +67,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileExists
     path: KeyManager.cs
-    startLine: 223
+    startLine: 218
   assemblies:
   - CIDER
   namespace: CIDER
@@ -108,11 +108,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadAllLines
     path: KeyManager.cs
-    startLine: 233
+    startLine: 228
   assemblies:
   - CIDER
   namespace: CIDER
@@ -149,11 +149,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ShowDialog
     path: KeyManager.cs
-    startLine: 243
+    startLine: 238
   assemblies:
   - CIDER
   namespace: CIDER
@@ -190,11 +190,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: WriteAllLines
     path: KeyManager.cs
-    startLine: 253
+    startLine: 248
   assemblies:
   - CIDER
   namespace: CIDER
@@ -234,11 +234,11 @@ items:
   source:
     remote:
       path: CIDER/CIDER/KeyManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: WriteAllText
     path: KeyManager.cs
-    startLine: 263
+    startLine: 258
   assemblies:
   - CIDER
   namespace: CIDER

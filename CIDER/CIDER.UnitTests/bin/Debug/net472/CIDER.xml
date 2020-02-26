@@ -680,7 +680,7 @@
         </member>
         <member name="M:CIDER.MVVMBase.DelegateCommand.Execute(System.Object)">
             <summary>
-            This sets the action to be executed
+            This executes the action
             </summary>
             <param name="parameter"></param>
         </member>
@@ -722,13 +722,6 @@
             </summary>
             <param name="Title">This is the Title of the plot returned</param>
             <returns>Returns a plotmodel</returns>
-        </member>
-        <member name="M:CIDER.PlotManager.CreatePDF(System.String,System.String)">
-            <summary>
-            This function creates a pdf from a plotmodel
-            </summary>
-            <param name="Title">Title of the plot</param>
-            <param name="fileName">Path to the file</param>
         </member>
         <member name="M:CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String)">
             <summary>
@@ -1102,6 +1095,11 @@
             </summary>
             <param name="Data">A DataPRovider object to read the data from</param>
         </member>
+        <member name="P:CIDER.ViewModels.ArtificialHorizonViewModel.PlayPauseClickedCommand">
+            <summary>
+            Command connected to the MailTo Button
+            </summary>
+        </member>
         <member name="P:CIDER.ViewModels.ArtificialHorizonViewModel.Pitch">
             <summary>
             This contains the value of the current pitch
@@ -1142,6 +1140,11 @@
             This function should be called when the slider changes its value
             </summary>
             <param name="Value">The value of the slider</param>
+        </member>
+        <member name="M:CIDER.ViewModels.ArtificialHorizonViewModel.Dispose">
+            <summary>
+            This function disposes of the object.
+            </summary>
         </member>
         <member name="T:CIDER.ViewModels.HeightViewModel">
             <summary>
@@ -1294,7 +1297,7 @@
             This event is fired when the selected frame changes
             </summary>
         </member>
-        <member name="M:CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.IKeyManager,CIDER.DataProvider,CIDER.IReader,System.Boolean)">
+        <member name="M:CIDER.ViewModels.MainWindowViewModel.#ctor(CIDER.IKeyManager,CIDER.DataProvider,CIDER.IReader,MahApps.Metro.Controls.Dialogs.IDialogCoordinator,System.Boolean)">
             <summary>
             This is the constructor for the MainWindow ViewModel
             </summary>
@@ -1927,7 +1930,7 @@
         </member>
         <member name="M:CIDER.App.OnStartup(System.Windows.StartupEventArgs)">
             <summary>
-            This function overrides the stnadard OnStartup function
+            This function overrides the standard OnStartup function
             </summary>
             <param name="e">The startup event args</param>
         </member>

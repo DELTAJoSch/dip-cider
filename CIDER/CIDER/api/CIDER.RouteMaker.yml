@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/RouteMaker.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: RouteMaker
     path: RouteMaker.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/RouteMaker.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CreateRoute
     path: RouteMaker.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/RouteMaker.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: CreateRoute
     path: RouteMaker.cs

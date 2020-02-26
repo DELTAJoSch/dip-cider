@@ -10,6 +10,7 @@
 	You should have received a copy of the GNU General Public License 
 	along with this program.  If not, see <https://www.gnu.org/licenses/>. 
 */
+using MahApps.Metro.Controls.Dialogs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,7 @@ namespace CIDER.UnitTests
             var read = new FakeLicenseReader();
             read.state = license;
 
-            return new ViewModels.MainWindowViewModel(new KeyManager(new DataProvider(), new FakeKeyManagerReader(hasKey)), new DataProvider(), read, true);
+            return new ViewModels.MainWindowViewModel(new KeyManager(new DataProvider(), new FakeKeyManagerReader(hasKey)), new DataProvider(), read, DialogCoordinator.Instance, true);
         }
 
         public static DataProvider GetRouteData()

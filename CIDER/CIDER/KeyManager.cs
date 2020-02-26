@@ -70,11 +70,6 @@ namespace CIDER
                     }
                 }
 
-                Dispatcher.CurrentDispatcher.BeginInvoke(new Action(() =>
-                {
-                    System.Windows.MessageBox.Show("To use all features correctly, please add a reference to a .key file containing an BingMaps API Key.", "BingMaps API Key", MessageBoxButton.OK, MessageBoxImage.Error);
-                }));
-
                 logger.Info("No API Key found: Maps feature not available");
                 return false;
             }

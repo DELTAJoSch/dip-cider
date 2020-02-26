@@ -14,6 +14,29 @@
           "lib/net45/Castle.Core.dll": {}
         }
       },
+      "ControlzEx/3.0.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net462/ControlzEx.dll": {},
+          "lib/net462/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net462/ControlzEx.dll": {},
+          "lib/net462/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "MahApps.Metro/1.6.5": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[3.0.2.4, 4.0.0)"
+        },
+        "compile": {
+          "lib/net47/MahApps.Metro.dll": {}
+        },
+        "runtime": {
+          "lib/net47/MahApps.Metro.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/15.8.0": {
         "type": "package",
         "compile": {
@@ -161,6 +184,49 @@
         "lib/netstandard1.5/Castle.Core.dll",
         "lib/netstandard1.5/Castle.Core.xml",
         "readme.txt"
+      ]
+    },
+    "ControlzEx/3.0.2.4": {
+      "sha512": "5pgvHE329JDDPwPHCVJe93yxu3CPl2wPh6ma1watUAGjvBtNSMkDcyzvwZcHSryihA/y4Ml3OmDYz9vj7Fg6Xg==",
+      "type": "package",
+      "path": "controlzex/3.0.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "controlzex.3.0.2.4.nupkg.sha512",
+        "controlzex.nuspec",
+        "lib/net40/ControlzEx.dll",
+        "lib/net40/ControlzEx.pdb",
+        "lib/net40/System.Windows.Interactivity.dll",
+        "lib/net45/ControlzEx.dll",
+        "lib/net45/ControlzEx.pdb",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/net462/ControlzEx.dll",
+        "lib/net462/ControlzEx.pdb",
+        "lib/net462/System.Windows.Interactivity.dll"
+      ]
+    },
+    "MahApps.Metro/1.6.5": {
+      "sha512": "XFxACnPbTAZ9qYcXMqFDLXXEpAbLj3BYaXqwH8NoY0sfSAYepEpE4C53Nd6AI4TnQ+nmDugtO8dwsAXPtt0SXQ==",
+      "type": "package",
+      "path": "mahapps.metro/1.6.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/MahApps.Metro.dll",
+        "lib/net40/MahApps.Metro.pdb",
+        "lib/net40/MahApps.Metro.xml",
+        "lib/net45/MahApps.Metro.dll",
+        "lib/net45/MahApps.Metro.pdb",
+        "lib/net45/MahApps.Metro.xml",
+        "lib/net46/MahApps.Metro.dll",
+        "lib/net46/MahApps.Metro.pdb",
+        "lib/net46/MahApps.Metro.xml",
+        "lib/net47/MahApps.Metro.dll",
+        "lib/net47/MahApps.Metro.pdb",
+        "lib/net47/MahApps.Metro.xml",
+        "mahapps.metro.1.6.5.nupkg.sha512",
+        "mahapps.metro.nuspec"
       ]
     },
     "Microsoft.CodeCoverage/15.8.0": {
@@ -368,6 +434,7 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
       "CIDER >= 1.0.0",
+      "MahApps.Metro >= 1.6.5",
       "Microsoft.NET.Test.Sdk >= 15.8.0",
       "NSubstitute >= 4.2.1",
       "NUnit3TestAdapter >= 3.10.0",
@@ -378,24 +445,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\johan\\.nuget\\packages\\": {},
+    "C:\\Users\\Deltazocker\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dokumente\\Diplomarbeit\\code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER.UnitTests\\CIDER.UnitTests.csproj",
+      "projectUniqueName": "H:\\Dokumente\\Diplomarbeit\\Code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER.UnitTests\\CIDER.UnitTests.csproj",
       "projectName": "CIDER.UnitTests",
-      "projectPath": "D:\\Dokumente\\Diplomarbeit\\code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER.UnitTests\\CIDER.UnitTests.csproj",
-      "packagesPath": "C:\\Users\\johan\\.nuget\\packages\\",
-      "outputPath": "D:\\Dokumente\\Diplomarbeit\\code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER.UnitTests\\obj\\",
+      "projectPath": "H:\\Dokumente\\Diplomarbeit\\Code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER.UnitTests\\CIDER.UnitTests.csproj",
+      "packagesPath": "C:\\Users\\Deltazocker\\.nuget\\packages\\",
+      "outputPath": "H:\\Dokumente\\Diplomarbeit\\Code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\johan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Deltazocker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net472"
@@ -407,8 +477,8 @@
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "D:\\Dokumente\\Diplomarbeit\\code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER\\CIDER.csproj": {
-              "projectPath": "D:\\Dokumente\\Diplomarbeit\\code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER\\CIDER.csproj"
+            "H:\\Dokumente\\Diplomarbeit\\Code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER\\CIDER.csproj": {
+              "projectPath": "H:\\Dokumente\\Diplomarbeit\\Code\\CIDER-Repository\\dip-cider\\CIDER\\CIDER\\CIDER.csproj"
             }
           }
         }
@@ -422,6 +492,10 @@
     "frameworks": {
       "net472": {
         "dependencies": {
+          "MahApps.Metro": {
+            "target": "Package",
+            "version": "[1.6.5, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[15.8.0, )"
@@ -451,7 +525,7 @@
             "version": "[3.10.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

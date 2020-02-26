@@ -25,7 +25,7 @@ namespace CIDER
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
 
         /// <summary>
-        /// This function overrides the stnadard OnStartup function
+        /// This function overrides the standard OnStartup function
         /// </summary>
         /// <param name="e">The startup event args</param>
         protected override void OnStartup(StartupEventArgs e)

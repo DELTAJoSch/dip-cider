@@ -13,8 +13,11 @@
 using CIDER.MVVMBase;
 using CIDER.Views;
 using MahApps.Metro;
+using MahApps.Metro.Controls.Dialogs;
 using System;
+using System.Windows;
 using System.Windows.Input;
+using System.Windows.Threading;
 
 namespace CIDER.ViewModels
 {
@@ -58,6 +61,8 @@ namespace CIDER.ViewModels
 
         private DataProvider dataProvider;
 
+        private IDialogCoordinator coordinator;
+
         private IKeyManager manager;
 
         /// <summary>
@@ -68,11 +73,12 @@ namespace CIDER.ViewModels
 
         private bool _licenseAccepted;
         private bool disposed = false;
+        private bool displayApiKeyInfo = false;
 
         /// <summary>
         /// This is the constructor for the MainWindow ViewModel
         /// </summary>
-        public MainWindowViewModel(IKeyManager Manager, DataProvider data, IReader reader, bool IsTesting = false)
+        public MainWindowViewModel(IKeyManager Manager, DataProvider data, IReader reader, IDialogCoordinator dialogCoordinator,bool IsTesting = false)
         {
             AddLicenses();
 
@@ -92,6 +98,8 @@ namespace CIDER.ViewModels
 
             dataProvider = data;
 
+            coordinator = dialogCoordinator;
+
             manager = Manager;
 
             MapEnabled = true;
@@ -104,6 +112,7 @@ namespace CIDER.ViewModels
             {
                 MapEnabled = false;
                 _mapAvailable = false;
+                displayApiKeyInfo = true;
             }
 
             if (!IsTesting)
@@ -251,6 +260,12 @@ namespace CIDER.ViewModels
         /// </summary>
         public void Initalize()
         {
+            if (displayApiKeyInfo)
+            {
+                displayApiKeyInfo = false;
+                coordinator.ShowMessageAsync(this, "API KEY", "No Bing MAps API Key was found. Add an API Key to unlock alll features.");
+            }
+
             FrameContent = new Load(dataProvider, this);
             RaiseEvent(new EventArgs());
             FrameContent = new About(dataProvider);
