@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Starter
     path: ViewModels/AboutViewModel.cs
@@ -63,7 +63,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/ViewModels/AboutViewModel.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Start
     path: ViewModels/AboutViewModel.cs

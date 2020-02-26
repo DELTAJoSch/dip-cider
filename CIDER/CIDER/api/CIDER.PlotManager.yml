@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: PlotManager
     path: PlotManager.cs
@@ -65,7 +65,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Series
     path: PlotManager.cs
@@ -98,7 +98,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: PlotManager.cs
@@ -130,7 +130,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: GetPlotModel
     path: PlotManager.cs
@@ -155,50 +155,6 @@ items:
   - public
   modifiers.vb:
   - Public
-<<<<<<< HEAD
-=======
-- uid: CIDER.PlotManager.CreatePDF(System.String,System.String)
-  commentId: M:CIDER.PlotManager.CreatePDF(System.String,System.String)
-  id: CreatePDF(System.String,System.String)
-  parent: CIDER.PlotManager
-  langs:
-  - csharp
-  - vb
-  name: CreatePDF(String, String)
-  nameWithType: PlotManager.CreatePDF(String, String)
-  fullName: CIDER.PlotManager.CreatePDF(System.String, System.String)
-  type: Method
-  source:
-    remote:
-      path: CIDER/CIDER/PlotManager.cs
-      branch: master
-      repo: git@github.com:DELTAJoSch/dip-cider.git
-    id: CreatePDF
-    path: PlotManager.cs
-    startLine: 72
-  assemblies:
-  - CIDER
-  namespace: CIDER
-  summary: "\nThis function creates a pdf from a plotmodel\n"
-  example: []
-  syntax:
-    content: public Task CreatePDF(string Title, string fileName)
-    parameters:
-    - id: Title
-      type: System.String
-      description: Title of the plot
-    - id: fileName
-      type: System.String
-      description: Path to the file
-    return:
-      type: System.Threading.Tasks.Task
-    content.vb: Public Function CreatePDF(Title As String, fileName As String) As Task
-  overload: CIDER.PlotManager.CreatePDF*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
->>>>>>> fed4cb20e4f32e4d5eba1e8b6baa437783bb83ff
 - uid: CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String)
   commentId: M:CIDER.PlotManager.AddLineSeries(System.Collections.Generic.List{System.Single},System.String)
   id: AddLineSeries(System.Collections.Generic.List{System.Single},System.String)
@@ -213,7 +169,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
@@ -255,7 +211,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
@@ -300,7 +256,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs
@@ -348,7 +304,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/PlotManager.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: AddLineSeries
     path: PlotManager.cs

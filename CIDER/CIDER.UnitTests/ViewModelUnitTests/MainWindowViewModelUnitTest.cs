@@ -11,6 +11,7 @@
 	along with this program.  If not, see <https://www.gnu.org/licenses/>. 
 */
 using CIDER.ViewModels;
+using MahApps.Metro.Controls.Dialogs;
 using NSubstitute;
 using NUnit.Framework;
 using System;
@@ -51,7 +52,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
         public void MainWindowViewModel_NavigateToAbout_NavigatesCorrectly()
         {
             var keymanager = Substitute.For<TestKeyManager>();
-            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), true);
+            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), DialogCoordinator.Instance, true);
 
             main.OnFrameChangeEvent += Main_OnFrameChangeEvent;
 
@@ -65,7 +66,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
         public void MainWindowViewModel_NavigateToAccelerationGraph_NavigatesCorrectly()
         {
             var keymanager = Substitute.For<TestKeyManager>();
-            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), true);
+            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), DialogCoordinator.Instance, true);
 
             main.OnFrameChangeEvent += Main_OnFrameChangeEvent;
 
@@ -80,7 +81,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
         public void MainWindowViewModel_NavigateToAccelerationTimed_NavigatesCorrectly()
         {
             var keymanager = Substitute.For<TestKeyManager>();
-            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), true);
+            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), DialogCoordinator.Instance, true);
 
             main.OnFrameChangeEvent += Main_OnFrameChangeEvent;
 
@@ -95,7 +96,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
         public void MainWindowViewModel_NavigateToAngleGraph_NavigatesCorrectly()
         {
             var keymanager = Substitute.For<TestKeyManager>();
-            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), true);
+            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), DialogCoordinator.Instance, true);
 
             main.OnFrameChangeEvent += Main_OnFrameChangeEvent;
 
@@ -110,7 +111,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
         public void MainWindowViewModel_NavigateToAngleTimed_NavigatesCorrectly()
         {
             var keymanager = Substitute.For<TestKeyManager>();
-            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), true);
+            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), DialogCoordinator.Instance, true);
 
             main.OnFrameChangeEvent += Main_OnFrameChangeEvent;
 
@@ -125,7 +126,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
         public void MainWindowViewModel_NavigateToArtificialHorizon_NavigatesCorrectly()
         {
             var keymanager = Substitute.For<TestKeyManager>();
-            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), true);
+            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), DialogCoordinator.Instance, true);
 
             main.OnFrameChangeEvent += Main_OnFrameChangeEvent;
 
@@ -140,7 +141,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
         public void MainWindowViewModel_NavigateToHeight_NavigatesCorrectly()
         {
             var keymanager = Substitute.For<TestKeyManager>();
-            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), true);
+            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), DialogCoordinator.Instance, true);
 
             main.OnFrameChangeEvent += Main_OnFrameChangeEvent;
 
@@ -155,7 +156,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
         public void MainWindowViewModel_NavigateToVelocityGraph_NavigatesCorrectly()
         {
             var keymanager = Substitute.For<TestKeyManager>();
-            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), true);
+            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), DialogCoordinator.Instance, true);
 
             main.OnFrameChangeEvent += Main_OnFrameChangeEvent;
 
@@ -170,7 +171,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
         public void MainWindowViewModel_NavigateToVelocityTimed_NavigatesCorrectly()
         {
             var keymanager = Substitute.For<TestKeyManager>();
-            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), true);
+            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), DialogCoordinator.Instance, true);
 
             main.OnFrameChangeEvent += Main_OnFrameChangeEvent;
 
@@ -185,7 +186,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
         public void MainWindowViewModel_NavigateToMapRoute_NavigatesCorrectly()
         {
             var keymanager = Substitute.For<TestKeyManager>();
-            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), true);
+            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), DialogCoordinator.Instance, true);
 
             main.OnFrameChangeEvent += Main_OnFrameChangeEvent;
 
@@ -200,7 +201,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
         public void MainWindowViewModel_NavigateToMapTimed_NavigatesCorrectly()
         {
             var keymanager = Substitute.For<TestKeyManager>();
-            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), true);
+            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), DialogCoordinator.Instance, true);
 
             main.OnFrameChangeEvent += Main_OnFrameChangeEvent;
 
@@ -215,7 +216,7 @@ namespace CIDER.UnitTests.ViewModelUnitTests
         public void MainWindowViewModel_NavigateToLoad_NavigatesCorrectly()
         {
             var keymanager = Substitute.For<TestKeyManager>();
-            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), true);
+            MainWindowViewModel main = new MainWindowViewModel(keymanager, new DataProvider(), new FakeLicenseReader(), DialogCoordinator.Instance, true);
 
             main.OnFrameChangeEvent += Main_OnFrameChangeEvent;
 

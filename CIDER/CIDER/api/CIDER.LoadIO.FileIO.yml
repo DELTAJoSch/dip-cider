@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FileIO.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: FileIO
     path: LoadIO/FileIO.cs
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FileIO.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadCSV
     path: LoadIO/FileIO.cs
@@ -113,7 +113,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LoadIO/FileIO.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ReadNmea
     path: LoadIO/FileIO.cs

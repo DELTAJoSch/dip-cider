@@ -93,7 +93,7 @@ namespace CIDER.MVVMBase
         }
 
         /// <summary>
-        /// This sets the action to be executed
+        /// This executes the action
         /// </summary>
         /// <param name="parameter"></param>
         public void Execute(object parameter) => _executeAction(parameter);

@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseStarter.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: ILicense
     path: LicenseStarter.cs
@@ -49,7 +49,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/LicenseStarter.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Show
     path: LicenseStarter.cs

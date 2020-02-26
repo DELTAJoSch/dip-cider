@@ -6,7 +6,9 @@
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:CIDER"
         mc:Ignorable="d"
-        Title="CIDER" Height="560" Width="900" MinHeight="560" MinWidth="900" Unloaded="OnUnloaded">
+        xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+        Dialog:DialogParticipation.Register="{Binding}"
+        Title="CIDER" Height="560" Width="900" MinHeight="560" MinWidth="900" Unloaded="OnUnloaded" Loaded="OnLoaded">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="1,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">

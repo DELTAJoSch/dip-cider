@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/Height.xaml.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: Height
     path: Views/Height.xaml.cs
@@ -659,7 +659,7 @@ items:
   source:
     remote:
       path: CIDER/CIDER/Views/Height.xaml.cs
-      branch: master
+      branch: V1.1---diploma_end
       repo: git@github.com:DELTAJoSch/dip-cider.git
     id: .ctor
     path: Views/Height.xaml.cs
